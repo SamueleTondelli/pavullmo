@@ -1,0 +1,21 @@
+[project]
+name = "pavullmo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "SamueleTondelli", email = "samueletondelli92@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "datasets<4.0.0",
+    "sentencepiece>=0.2.2",
+    "tqdm>=4.70.0",
+]
+
+[project.scripts]
+pavullmo = "pavullmo:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
