@@ -1,15 +1,13 @@
 [project]
 name = "pavullmo"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
+description = "A small decoder-only language model for Italian"
 authors = [
     { name = "SamueleTondelli", email = "samueletondelli92@gmail.com" }
 ]
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "datasets<4.0.0",
-    "flash-attn==2.8.3; sys_platform == 'linux' and platform_machine == 'x86_64'",
     "sentencepiece>=0.2.2",
     "tensorboard==2.21.0",
     "torch==2.9.1",
@@ -29,7 +27,6 @@ pavullmo-check = "pavullmo.check_environment:main"
 torch = [
     { index = "pytorch-cu128", marker = "sys_platform == 'linux' and platform_machine == 'x86_64'" },
 ]
-flash-attn = { url = "https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3%2Bcu12torch2.9cxx11abiTRUE-cp312-cp312-linux_x86_64.whl" }
 
 [[tool.uv.index]]
 name = "pytorch-cu128"
