@@ -541,6 +541,11 @@ def main() -> None:
     print(json.dumps(settings, indent=2), flush=True)
     writer.add_text("configuration", json.dumps(settings, indent=2), 0)
 
+    total_params = sum(p.numel() for p in model.parameters())
+    print(f"Total model parameters: {total_params}")
+    trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    print(f"\tTrainable: {trainable_params}")
+
     global_step = 0
     final_train_loss: float | None = None
     final_validation_loss: float | None = None
