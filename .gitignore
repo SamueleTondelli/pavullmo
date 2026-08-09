@@ -9,3 +9,9 @@ wheels/
 # Virtual environments
 .venv
 .uv-cache/
+
+# Generated pre-tokenized datasets
+/dataset/ds/
+
+# Local TensorBoard runs
+/runs/
