@@ -15,3 +15,6 @@ wheels/
 
 # Local TensorBoard runs
 /runs/
+
+scripts
+models
