@@ -18,7 +18,9 @@ class RoPE(nn.Module):
         self.head_dim = head_dim
 
         # pre-compute RoPE frequencies
-        inv_freq = base ** (-torch.arange(0, head_dim, 2, dtype=torch.float32) / head_dim)
+        inv_freq = base ** (
+            -torch.arange(0, head_dim, 2, dtype=torch.float32) / head_dim
+        )
 
         positions = torch.arange(seq_len, dtype=torch.float32)
         # [seq_len, head_dim / 2]
@@ -208,10 +210,10 @@ class DecoderTransformer(nn.Module):
             for _ in range(n_blocks)
         )
         self.norm = nn.RMSNorm(embed_dim)
-        self.lm_head = nn.Linear(embed_dim, vocab_size, bias=False)
 
     def forward(self, x):
         x = self.embeddings(x)
         for layer in self.layers:
             x = layer(x)
-        return self.lm_head(self.norm(x))
+        x = self.norm(x)
+        return F.linear(x, self.embeddings.weight, bias=None)
