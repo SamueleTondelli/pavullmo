@@ -14,13 +14,25 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+import re
 from typing import Sequence
 
 
 DEFAULT_VOLUME_NAME = "pavullmo-datasets"
 DEFAULT_DATASET_DIR = Path(__file__).resolve().parent / "ds"
 REMOTE_DATASET_DIR = "/"
-EXPECTED_ARTIFACTS = ("train_10m", "train_100m", "train_1b", "validation")
+DATASET_PREFIX_PATTERN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
+
+
+def expected_artifacts(prefix: str) -> tuple[str, str, str, str]:
+    if prefix:
+        return (
+            f"train_{prefix}_10m",
+            f"train_{prefix}_100m",
+            f"train_{prefix}_1b",
+            f"validation_{prefix}",
+        )
+    return ("train_10m", "train_100m", "train_1b", "validation")
 
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
@@ -40,6 +52,11 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
         type=Path,
         default=DEFAULT_DATASET_DIR,
         help=f"local artifact directory (default: {DEFAULT_DATASET_DIR})",
+    )
+    parser.add_argument(
+        "--dataset-prefix",
+        default="",
+        help="tokenizer-specific artifact prefix created by build_dataset.py",
     )
     parser.add_argument(
         "--environment",
@@ -128,7 +145,9 @@ def validate_artifact(artifact_dir: Path) -> tuple[int, int]:
     return token_count, total_bytes
 
 
-def validate_dataset_dir(dataset_dir: Path) -> tuple[int, int, int]:
+def validate_dataset_dir(
+    dataset_dir: Path, dataset_prefix: str = ""
+) -> tuple[int, int, int]:
     """Ensure all expected artifacts are complete before starting an upload."""
 
     if not dataset_dir.is_dir():
@@ -140,7 +159,7 @@ def validate_dataset_dir(dataset_dir: Path) -> tuple[int, int, int]:
     total_tokens = 0
     total_bytes = 0
     total_files = 0
-    for artifact_name in EXPECTED_ARTIFACTS:
+    for artifact_name in expected_artifacts(dataset_prefix):
         artifact_dir = dataset_dir / artifact_name
         if not artifact_dir.is_dir():
             raise FileNotFoundError(f"dataset artifact not found: {artifact_dir}")
@@ -178,9 +197,18 @@ def main(argv: Sequence[str] | None = None) -> None:
     args = parse_args(argv)
     if not args.volume_name.strip():
         raise ValueError("--volume-name cannot be empty")
+    if args.dataset_prefix and not DATASET_PREFIX_PATTERN.fullmatch(
+        args.dataset_prefix
+    ):
+        raise ValueError(
+            "--dataset-prefix must start with an ASCII letter or digit and "
+            "contain only letters, digits, '.', '_', and '-'"
+        )
 
     dataset_dir = args.dataset_dir.expanduser().resolve()
-    total_tokens, total_bytes, total_files = validate_dataset_dir(dataset_dir)
+    total_tokens, total_bytes, total_files = validate_dataset_dir(
+        dataset_dir, args.dataset_prefix
+    )
     print(
         f"Validated {total_files} files in {dataset_dir}: "
         f"{total_tokens:,} tokens, {total_bytes / (1024**3):.2f} GiB"

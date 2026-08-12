@@ -6,6 +6,7 @@ import json
 import math
 import os
 import random
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -66,6 +67,14 @@ SEED = int(os.environ.get("SEED", 42))
 
 # Data, evaluation, and runtime settings.
 DATASET_VARIANT = os.environ.get("DATASET_VARIANT", "10m").lower()
+DATASET_PREFIX = os.environ.get("DATASET_PREFIX", "").strip()
+if DATASET_PREFIX and not re.fullmatch(
+    r"[A-Za-z0-9][A-Za-z0-9._-]*", DATASET_PREFIX
+):
+    raise ValueError(
+        "DATASET_PREFIX must start with an ASCII letter or digit and contain "
+        "only letters, digits, '.', '_', and '-'"
+    )
 DATASET_DIR = Path(
     os.environ.get("DATASET_DIR", str(PROJECT_DIR / "dataset" / "ds"))
 ).expanduser()
@@ -418,8 +427,12 @@ def main() -> None:
     torch.manual_seed(SEED)
     torch.cuda.manual_seed_all(SEED)
 
-    train_dir = DATASET_DIR / f"train_{DATASET_VARIANT}"
-    validation_dir = DATASET_DIR / "validation"
+    if DATASET_PREFIX:
+        train_dir = DATASET_DIR / f"train_{DATASET_PREFIX}_{DATASET_VARIANT}"
+        validation_dir = DATASET_DIR / f"validation_{DATASET_PREFIX}"
+    else:
+        train_dir = DATASET_DIR / f"train_{DATASET_VARIANT}"
+        validation_dir = DATASET_DIR / "validation"
     train_dataset = TokenBlockDataset(train_dir, SEQ_LEN)
     validation_dataset = TokenBlockDataset(validation_dir, SEQ_LEN)
     validate_configuration(train_dataset)
@@ -502,6 +515,8 @@ def main() -> None:
         "WEIGHT_DECAY": WEIGHT_DECAY,
         "MAX_GRAD_NORM": MAX_GRAD_NORM,
         "SEED": SEED,
+        "DATASET_PREFIX": DATASET_PREFIX,
+        "DATASET_VARIANT": DATASET_VARIANT,
         "VALIDATION_INTERVAL": VALIDATION_INTERVAL,
         "VALIDATION_STEPS": VALIDATION_STEPS,
         "COMPILE_MODEL": COMPILE_MODEL,
@@ -509,6 +524,7 @@ def main() -> None:
     }
     settings = {
         "experiment_name": EXPERIMENT_NAME,
+        "dataset_prefix": DATASET_PREFIX,
         "dataset_variant": DATASET_VARIANT,
         "train_tokens": train_dataset.total_tokens,
         "validation_tokens": validation_dataset.total_tokens,

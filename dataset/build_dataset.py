@@ -1,10 +1,11 @@
 """Build local, pre-tokenized clean_mc4_it datasets.
 
 The training artifacts are deterministic prefixes of the ``tiny`` training
-split containing exactly 10M, 100M, and 1B tokens. Every source document is
-encoded as ``[BOS, *content_tokens, EOS]`` before it is appended to the token
-stream. A size boundary can therefore cut through the final document; this is
-an artifact boundary, not a document boundary, and is recorded in metadata.
+split with source-text budgets of 10M, 100M, and 1B UTF-8 bytes. The document
+that reaches or exceeds a budget is included in full, so artifacts always end
+at a document boundary and may exceed their byte budget by one document. Every
+source document is encoded as ``[BOS, *content_tokens, EOS]`` before it is
+appended to the token stream.
 
 The complete ``tiny`` validation split is encoded with the same document
 boundary policy. Tokens are stored in sharded, little-endian uint16 files so
@@ -18,6 +19,7 @@ from array import array
 import hashlib
 import json
 from pathlib import Path
+import re
 import shutil
 import sys
 from typing import Iterable, Sequence
@@ -29,10 +31,11 @@ from tqdm import tqdm
 
 DATASET_NAME = "gsarti/clean_mc4_it"
 DATASET_VARIANT = "tiny"
-TRAIN_TARGETS = {
-    "10m": 10_000_000,
-    "100m": 100_000_000,
-    "1b": 1_000_000_000,
+# these sizes correspond to 10M, 100M and 1B tokens with 16k tokenizer
+TRAIN_BYTE_BUDGETS = {
+    "42m": 42_100_000,
+    "421m": 421_000_000,
+    "4b": 4_210_000_000,
 }
 DEFAULT_SHARD_TOKENS = 50_000_000  # 100 MB per full uint16 shard.
 UINT16_MAX = 65_535
@@ -40,12 +43,13 @@ UINT16_MAX = 65_535
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_TOKENIZER = PROJECT_ROOT / "src" / "tokenizer" / "tokenizer.model"
 DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent / "ds"
+DATASET_PREFIX_PATTERN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Pre-tokenize 10M, 100M, and 1B-token training prefixes and the "
+            "Pre-tokenize 10M, 100M, and 1B-byte training prefixes and the "
             "complete tiny validation split of clean_mc4_it."
         )
     )
@@ -62,13 +66,18 @@ def parse_args() -> argparse.Namespace:
         help=f"artifact directory (default: {DEFAULT_OUTPUT_DIR})",
     )
     parser.add_argument(
+        "--dataset-prefix",
+        default="",
+        help=(
+            "prefix used to distinguish tokenizer-specific artifacts; for "
+            "example, '4k' creates train_4k_10m and validation_4k"
+        ),
+    )
+    parser.add_argument(
         "--shard-tokens",
         type=int,
         default=DEFAULT_SHARD_TOKENS,
-        help=(
-            "maximum tokens per binary shard "
-            f"(default: {DEFAULT_SHARD_TOKENS:,})"
-        ),
+        help=(f"maximum tokens per binary shard (default: {DEFAULT_SHARD_TOKENS:,})"),
     )
     parser.add_argument(
         "--dataset-revision",
@@ -81,6 +90,22 @@ def parse_args() -> argparse.Namespace:
         help="replace existing artifacts inside --output-dir",
     )
     return parser.parse_args()
+
+
+def validate_dataset_prefix(prefix: str) -> None:
+    if prefix and not DATASET_PREFIX_PATTERN.fullmatch(prefix):
+        raise ValueError(
+            "--dataset-prefix must start with an ASCII letter or digit and "
+            "contain only letters, digits, '.', '_', and '-'"
+        )
+
+
+def training_artifact_name(prefix: str, size: str) -> str:
+    return f"train_{prefix}_{size}" if prefix else f"train_{size}"
+
+
+def validation_artifact_name(prefix: str) -> str:
+    return f"validation_{prefix}" if prefix else "validation"
 
 
 def sha256_file(path: Path) -> str:
@@ -197,7 +222,9 @@ class ArtifactBuilder:
 
     def _validate_child(self, path: Path) -> None:
         if path.parent != self.output_root:
-            raise ValueError(f"refusing to manage path outside output directory: {path}")
+            raise ValueError(
+                f"refusing to manage path outside output directory: {path}"
+            )
 
     def finish(self, metadata: dict[str, object]) -> None:
         self.writer.close()
@@ -220,7 +247,9 @@ class ArtifactBuilder:
         )
         if self.final_dir.exists():
             if not self.overwrite:
-                raise FileExistsError(f"artifact appeared while building: {self.final_dir}")
+                raise FileExistsError(
+                    f"artifact appeared while building: {self.final_dir}"
+                )
             shutil.rmtree(self.final_dir)
         self.temporary_dir.rename(self.final_dir)
 
@@ -238,9 +267,7 @@ def validate_tokenizer(tokenizer: spm.SentencePieceProcessor) -> None:
         )
 
 
-def encode_document(
-    tokenizer: spm.SentencePieceProcessor, text: str
-) -> list[int]:
+def encode_document(tokenizer: spm.SentencePieceProcessor, text: str) -> list[int]:
     content = tokenizer.encode(text.strip(), out_type=int)
     return [tokenizer.bos_id(), *content, tokenizer.eos_id()]
 
@@ -293,22 +320,32 @@ def build_training_artifacts(
     shard_tokens: int,
     revision: str,
     overwrite: bool,
-) -> None:
+    dataset_prefix: str = "",
+) -> dict[str, int]:
     builders = {
-        name: ArtifactBuilder(output_dir, f"train_{name}", shard_tokens, overwrite)
-        for name in TRAIN_TARGETS
+        name: ArtifactBuilder(
+            output_dir,
+            training_artifact_name(dataset_prefix, name),
+            shard_tokens,
+            overwrite,
+        )
+        for name in TRAIN_BYTE_BUDGETS
     }
-    completed_at_boundary = {name: False for name in TRAIN_TARGETS}
-    documents_seen_at_completion = {name: 0 for name in TRAIN_TARGETS}
-    nonempty_seen_at_completion = {name: 0 for name in TRAIN_TARGETS}
+    source_bytes_at_completion = {name: 0 for name in TRAIN_BYTE_BUDGETS}
+    documents_seen_at_completion = {name: 0 for name in TRAIN_BYTE_BUDGETS}
+    nonempty_seen_at_completion = {name: 0 for name in TRAIN_BYTE_BUDGETS}
     documents_seen = 0
     nonempty_documents_seen = 0
+    source_bytes_seen = 0
+    largest_name = max(TRAIN_BYTE_BUDGETS, key=TRAIN_BYTE_BUDGETS.get)
+    largest_budget = TRAIN_BYTE_BUDGETS[largest_name]
 
     progress = tqdm(
-        total=max(TRAIN_TARGETS.values()),
-        desc="Tokenizing tiny train",
-        unit="tok",
+        total=largest_budget,
+        desc="Reading tiny train",
+        unit="B",
         unit_scale=True,
+        unit_divisor=1024,
     )
     for document in dataset_stream("train", revision):
         documents_seen += 1
@@ -316,37 +353,42 @@ def build_training_artifacts(
         if not isinstance(text, str) or not text.strip():
             continue
 
+        text = text.strip()
         nonempty_documents_seen += 1
+        document_bytes = len(text.encode("utf-8"))
         tokens = encode_document(tokenizer, text)
-        previous_largest_count = builders["1b"].writer.total_tokens
+        previous_source_bytes = source_bytes_seen
+        source_bytes_seen += document_bytes
 
-        for name, target in TRAIN_TARGETS.items():
-            builder = builders[name]
-            remaining = target - builder.writer.total_tokens
-            if remaining <= 0:
+        for name, byte_budget in TRAIN_BYTE_BUDGETS.items():
+            if source_bytes_at_completion[name] != 0:
                 continue
 
-            take = min(remaining, len(tokens))
-            builder.writer.write(tokens[:take])
-            if builder.writer.total_tokens == target:
-                completed_at_boundary[name] = take == len(tokens)
+            builders[name].writer.write(tokens)
+            if source_bytes_seen >= byte_budget:
+                source_bytes_at_completion[name] = source_bytes_seen
                 documents_seen_at_completion[name] = documents_seen
                 nonempty_seen_at_completion[name] = nonempty_documents_seen
 
-        progress.update(builders["1b"].writer.total_tokens - previous_largest_count)
-        if builders["1b"].writer.total_tokens == TRAIN_TARGETS["1b"]:
+        progress.update(
+            min(source_bytes_seen, largest_budget)
+            - min(previous_source_bytes, largest_budget)
+        )
+        if source_bytes_at_completion[largest_name]:
             break
     progress.close()
 
-    largest_count = builders["1b"].writer.total_tokens
-    if largest_count != TRAIN_TARGETS["1b"]:
+    if source_bytes_seen < largest_budget:
         raise RuntimeError(
             "training stream ended after "
-            f"{largest_count:,} tokens, before the 1,000,000,000-token target"
+            f"{source_bytes_seen:,} source bytes, before the "
+            f"{largest_budget:,}-byte budget"
         )
 
-    for name, target in TRAIN_TARGETS.items():
+    token_counts: dict[str, int] = {}
+    for name, byte_budget in TRAIN_BYTE_BUDGETS.items():
         builder = builders[name]
+        source_byte_count = source_bytes_at_completion[name]
         builder.finish(
             {
                 **common_metadata(
@@ -356,14 +398,28 @@ def build_training_artifacts(
                     "train",
                     revision,
                 ),
-                "target_token_count": target,
+                "dataset_prefix": dataset_prefix,
+                "source_text_byte_budget": byte_budget,
+                "source_text_byte_count": source_byte_count,
+                "source_text_byte_overshoot": source_byte_count - byte_budget,
                 "source_documents_seen": documents_seen_at_completion[name],
                 "nonempty_source_documents_seen": nonempty_seen_at_completion[name],
-                "ends_at_document_boundary": completed_at_boundary[name],
-                "is_prefix_of": "train_1b" if name != "1b" else None,
+                "ends_at_document_boundary": True,
+                "is_prefix_of": (
+                    training_artifact_name(dataset_prefix, largest_name)
+                    if name != largest_name
+                    else None
+                ),
             }
         )
-        print(f"Built {builder.final_dir}: {target:,} tokens")
+        print(
+            f"Built {builder.final_dir}: {builder.writer.total_tokens:,} tokens "
+            f"from {source_byte_count:,} source bytes "
+            f"(budget: {byte_budget:,})"
+        )
+        token_counts[builder.final_dir.name] = builder.writer.total_tokens
+
+    return token_counts
 
 
 def build_validation_artifact(
@@ -374,22 +430,37 @@ def build_validation_artifact(
     shard_tokens: int,
     revision: str,
     overwrite: bool,
-) -> None:
-    builder = ArtifactBuilder(output_dir, "validation", shard_tokens, overwrite)
+    dataset_prefix: str = "",
+) -> int:
+    builder = ArtifactBuilder(
+        output_dir,
+        validation_artifact_name(dataset_prefix),
+        shard_tokens,
+        overwrite,
+    )
     documents_seen = 0
     documents_written = 0
+    source_bytes_written = 0
 
-    for document in tqdm(
-        dataset_stream("validation", revision),
+    progress = tqdm(
         desc="Tokenizing tiny validation",
-        unit="docs",
-    ):
+        unit="B",
+        unit_scale=True,
+        unit_divisor=1024,
+    )
+    for document in dataset_stream("validation", revision):
         documents_seen += 1
         text = document.get("text")
         if not isinstance(text, str) or not text.strip():
             continue
+
+        text = text.strip()
+        document_bytes = len(text.encode("utf-8"))
         builder.writer.write(encode_document(tokenizer, text))
         documents_written += 1
+        source_bytes_written += document_bytes
+        progress.update(document_bytes)
+    progress.close()
 
     builder.finish(
         {
@@ -400,6 +471,8 @@ def build_validation_artifact(
                 "validation",
                 revision,
             ),
+            "dataset_prefix": dataset_prefix,
+            "source_text_byte_count": source_bytes_written,
             "source_documents_seen": documents_seen,
             "documents_written": documents_written,
             "ends_at_document_boundary": True,
@@ -409,10 +482,12 @@ def build_validation_artifact(
         f"Built {builder.final_dir}: {builder.writer.total_tokens:,} tokens "
         f"from {documents_written:,} documents"
     )
+    return builder.writer.total_tokens
 
 
 def main() -> None:
     args = parse_args()
+    validate_dataset_prefix(args.dataset_prefix)
     if args.shard_tokens <= 0:
         raise ValueError("--shard-tokens must be greater than zero")
     if not args.tokenizer.is_file():
@@ -423,7 +498,7 @@ def main() -> None:
     validate_tokenizer(tokenizer)
     tokenizer_sha256 = sha256_file(args.tokenizer)
 
-    build_training_artifacts(
+    token_counts = build_training_artifacts(
         tokenizer=tokenizer,
         tokenizer_path=args.tokenizer,
         tokenizer_sha256=tokenizer_sha256,
@@ -431,8 +506,10 @@ def main() -> None:
         shard_tokens=args.shard_tokens,
         revision=args.dataset_revision,
         overwrite=args.overwrite,
+        dataset_prefix=args.dataset_prefix,
     )
-    build_validation_artifact(
+    validation_name = validation_artifact_name(args.dataset_prefix)
+    token_counts[validation_name] = build_validation_artifact(
         tokenizer=tokenizer,
         tokenizer_path=args.tokenizer,
         tokenizer_sha256=tokenizer_sha256,
@@ -440,7 +517,12 @@ def main() -> None:
         shard_tokens=args.shard_tokens,
         revision=args.dataset_revision,
         overwrite=args.overwrite,
+        dataset_prefix=args.dataset_prefix,
     )
+
+    print("\nToken counts by split:")
+    for split, token_count in token_counts.items():
+        print(f"  {split}: {token_count:,} tokens")
 
 
 if __name__ == "__main__":

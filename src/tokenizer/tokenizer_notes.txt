@@ -19,6 +19,12 @@ medium      50,000,000 20,000,000,000     51,360,470,904
 large       75,000,000 30,000,000,000     77,040,706,356
 full       103,000,000 41,000,000,000    105,288,965,354
 
+Token counts by split:
+  train_4k_42m: 16,587,507 tokens
+  train_4k_421m: 165,547,537 tokens
+  train_4k_4b: 1,655,721,769 tokens
+  validation_4k: 13,992,848 tokens
+
 
 8k stats:
 Sample (tiny train)
@@ -37,6 +43,12 @@ medium      50,000,000 20,000,000,000     35,879,530,703
 large       75,000,000 30,000,000,000     53,819,296,055
 full       103,000,000 41,000,000,000     73,553,037,941
 
+Token counts by split:
+  train_8k_42m: 11,602,544 tokens
+  train_8k_421m: 115,740,409 tokens
+  train_8k_4b: 1,157,839,254 tokens
+  validation_8k: 9,784,153 tokens
+
 
 16k stats:
 Sample (tiny train)
@@ -44,7 +56,7 @@ Sample (tiny train)
   words:      42,082,789
   tokens:     64,468,287
   tokens/word: 1.5319
-  chars/token: 4.2122
+  chars/token: 4.2122 -> 4.21GB = 1B tokens
 
 Estimated training tokens
 split             docs          words             tokens
@@ -54,3 +66,9 @@ small       20,000,000  8,000,000,000     12,255,516,050
 medium      50,000,000 20,000,000,000     30,638,790,124
 large       75,000,000 30,000,000,000     45,958,185,186
 full       103,000,000 41,000,000,000     62,809,519,754
+
+Token counts by split:
+  train_16k_42m: 9,915,198 tokens
+  train_16k_421m: 98,888,867 tokens
+  train_16k_4b: 989,446,018 tokens
+  validation_16k: 8,361,799 tokens
