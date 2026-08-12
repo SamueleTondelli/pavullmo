@@ -1,0 +1,56 @@
+# Tokenizer notes
+
+All three tokenizer trained on the first 1GB (1073741824 B) of text of tiny.
+
+4k stats:
+Sample (tiny train)
+  documents:  100,000
+  words:      42,082,789
+  tokens:     108,069,593
+  tokens/word: 2.5680
+  chars/token: 2.5128
+
+Estimated training tokens
+split             docs          words             tokens
+--------------------------------------------------------
+tiny        10,000,000  4,000,000,000     10,272,094,181
+small       20,000,000  8,000,000,000     20,544,188,362
+medium      50,000,000 20,000,000,000     51,360,470,904
+large       75,000,000 30,000,000,000     77,040,706,356
+full       103,000,000 41,000,000,000    105,288,965,354
+
+
+8k stats:
+Sample (tiny train)
+  documents:  100,000
+  words:      42,082,789
+  tokens:     75,495,536
+  tokens/word: 1.7940
+  chars/token: 3.5970
+
+Estimated training tokens
+split             docs          words             tokens
+--------------------------------------------------------
+tiny        10,000,000  4,000,000,000      7,175,906,141
+small       20,000,000  8,000,000,000     14,351,812,281
+medium      50,000,000 20,000,000,000     35,879,530,703
+large       75,000,000 30,000,000,000     53,819,296,055
+full       103,000,000 41,000,000,000     73,553,037,941
+
+
+16k stats:
+Sample (tiny train)
+  documents:  100,000
+  words:      42,082,789
+  tokens:     64,468,287
+  tokens/word: 1.5319
+  chars/token: 4.2122
+
+Estimated training tokens
+split             docs          words             tokens
+--------------------------------------------------------
+tiny        10,000,000  4,000,000,000      6,127,758,025
+small       20,000,000  8,000,000,000     12,255,516,050
+medium      50,000,000 20,000,000,000     30,638,790,124
+large       75,000,000 30,000,000,000     45,958,185,186
+full       103,000,000 41,000,000,000     62,809,519,754
