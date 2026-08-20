@@ -11,7 +11,6 @@ import torch
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 MODEL_DIR = SCRIPT_DIR.parent / "model"
-TOKENIZER_PATH = SCRIPT_DIR.parent / "tokenizer" / "tokenizer.model"
 sys.path.insert(0, str(MODEL_DIR))
 
 from model import DecoderTransformer
@@ -40,6 +39,7 @@ def parse_args() -> argparse.Namespace:
         description="Interactively generate text with a PavuLLMo checkpoint."
     )
     parser.add_argument("model", type=Path, help="path to the model checkpoint")
+    parser.add_argument("tokenizer", type=Path, help="path to tokenizer")
     return parser.parse_args()
 
 
@@ -136,7 +136,9 @@ def generate(
     )
     with autocast_context:
         for _ in range(min(MAX_NEW_TOKENS, available_tokens)):
-            input_ids = torch.tensor(token_ids, dtype=torch.long, device=device)[None, :]
+            input_ids = torch.tensor(token_ids, dtype=torch.long, device=device)[
+                None, :
+            ]
             logits = model(input_ids)[0, -1]
             next_token = sample_next_token(logits, blocked_ids)
 
@@ -152,7 +154,7 @@ def main() -> None:
     args = parse_args()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    tokenizer = spm.SentencePieceProcessor(model_file=str(TOKENIZER_PATH))
+    tokenizer = spm.SentencePieceProcessor(model_file=str(args.tokenizer))
     model, vocab_size, sequence_length = load_model(args.model, device)
     if tokenizer.vocab_size() != vocab_size:
         raise ValueError(
