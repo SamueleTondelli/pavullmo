@@ -2,7 +2,8 @@
 
 The pre-tokenized dataset Volume is mounted read-only. TensorBoard events,
 final model weights, and the run CSV are stored on a separate persistent
-Volume and explicitly committed when the remote function exits.
+Volume and explicitly committed when the remote function exits. After a
+successful run, its remote CSV row is also appended to the local run CSV.
 
 Launch from the project root with:
 
@@ -15,6 +16,7 @@ for a training run that should survive the local terminal closing.
 
 from __future__ import annotations
 
+import csv
 import os
 from pathlib import Path
 
@@ -25,6 +27,17 @@ REMOTE_SOURCE_ROOT = "/workspace/src"
 DATASET_MOUNT_PATH = "/datasets"
 OUTPUT_MOUNT_PATH = "/outputs"
 TENSORBOARD_PORT = 6006
+REMOTE_RUNS_CSV = Path(OUTPUT_MOUNT_PATH) / "pretrain_runs.csv"
+LOCAL_RUNS_CSV = Path(__file__).resolve().with_name("pretrain_runs.csv")
+RUN_RESULT_FIELDS = (
+    "experiment_name",
+    "dataset_variant",
+    "train_loss",
+    "validation_loss",
+    "train_script",
+    "model_path",
+    "config",
+)
 
 APP_NAME = "pavullmo-pretrain-base"
 DATASET_VOLUME_NAME = os.environ.get(
@@ -120,6 +133,42 @@ def _stop_process(process: object) -> None:
         process.wait(timeout=5)
 
 
+def _read_last_run_result(csv_path: Path) -> dict[str, str]:
+    with csv_path.open(encoding="utf-8", newline="") as file:
+        reader = csv.DictReader(file)
+        if tuple(reader.fieldnames or ()) != RUN_RESULT_FIELDS:
+            raise ValueError(
+                f"unexpected run CSV columns in {csv_path}: {reader.fieldnames}"
+            )
+        rows = list(reader)
+
+    if not rows:
+        raise ValueError(f"run CSV has no result rows: {csv_path}")
+    return {field: rows[-1][field] for field in RUN_RESULT_FIELDS}
+
+
+def _append_local_run_result(
+    csv_path: Path, run_result: dict[str, str]
+) -> None:
+    if set(run_result) != set(RUN_RESULT_FIELDS):
+        raise ValueError(f"unexpected run result fields: {sorted(run_result)}")
+
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+    write_header = not csv_path.exists() or csv_path.stat().st_size == 0
+    if not write_header:
+        with csv_path.open(encoding="utf-8", newline="") as file:
+            reader = csv.reader(file)
+            header = tuple(next(reader, ()))
+        if header != RUN_RESULT_FIELDS:
+            raise ValueError(f"unexpected local run CSV columns in {csv_path}: {header}")
+
+    with csv_path.open("a", encoding="utf-8", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=RUN_RESULT_FIELDS)
+        if write_header:
+            writer.writeheader()
+        writer.writerow(run_result)
+
+
 @app.function(
     gpu=MODAL_GPU,
     cpu=MODAL_CPU,
@@ -130,7 +179,7 @@ def _stop_process(process: object) -> None:
         OUTPUT_MOUNT_PATH: output_volume,
     },
 )
-def train(pretrain_environment: dict[str, str]) -> None:
+def train(pretrain_environment: dict[str, str]) -> dict[str, str]:
     import subprocess
     import sys
 
@@ -139,7 +188,7 @@ def train(pretrain_environment: dict[str, str]) -> None:
         {
             "DATASET_DIR": DATASET_MOUNT_PATH,
             "LOG_DIR": f"{OUTPUT_MOUNT_PATH}/runs",
-            "RUNS_CSV": f"{OUTPUT_MOUNT_PATH}/pretrain_runs.csv",
+            "RUNS_CSV": str(REMOTE_RUNS_CSV),
             "MODEL_OUTPUT_DIR": f"{OUTPUT_MOUNT_PATH}/models",
             "TRAIN_SCRIPT": Path(__file__).name,
         }
@@ -175,6 +224,7 @@ def train(pretrain_environment: dict[str, str]) -> None:
             from pavullmo.pretrain_base import main as pretrain_main
 
             pretrain_main()
+            run_result = _read_last_run_result(REMOTE_RUNS_CSV)
     finally:
         _stop_process(tensorboard_process)
         output_volume.commit()
@@ -182,6 +232,8 @@ def train(pretrain_environment: dict[str, str]) -> None:
             f"Committed training outputs to Volume {OUTPUT_VOLUME_NAME!r}",
             flush=True,
         )
+
+    return run_result
 
 
 @app.local_entrypoint()
@@ -195,4 +247,6 @@ def main() -> None:
         f"Starting Modal training with dataset Volume {DATASET_VOLUME_NAME!r} "
         f"and output Volume {OUTPUT_VOLUME_NAME!r}"
     )
-    train.remote(pretrain_environment)
+    run_result = train.remote(pretrain_environment)
+    _append_local_run_result(LOCAL_RUNS_CSV, run_result)
+    print(f"Appended remote run result to local CSV {LOCAL_RUNS_CSV}")

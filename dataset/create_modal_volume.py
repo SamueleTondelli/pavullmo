@@ -4,9 +4,9 @@ Run this script locally after ``dataset/build_dataset.py`` has finished:
 
     uv run --extra cloud python dataset/create_modal_volume.py
 
-The Volume root mirrors ``dataset/ds`` so it can later be mounted directly at
-the training script's ``DATASET_DIR``. Existing remote files are not
-overwritten unless ``--force`` is passed explicitly.
+The Volume root contains every tokenizer-specific artifact so it can later be
+mounted directly at the training script's ``DATASET_DIR``. Existing remote
+files are not overwritten unless ``--force`` is passed explicitly.
 """
 
 from __future__ import annotations
@@ -14,25 +14,22 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
-import re
 from typing import Sequence
 
 
 DEFAULT_VOLUME_NAME = "pavullmo-datasets"
 DEFAULT_DATASET_DIR = Path(__file__).resolve().parent / "ds"
 REMOTE_DATASET_DIR = "/"
-DATASET_PREFIX_PATTERN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
-
-
-def expected_artifacts(prefix: str) -> tuple[str, str, str, str]:
-    if prefix:
-        return (
-            f"train_{prefix}_10m",
-            f"train_{prefix}_100m",
-            f"train_{prefix}_1b",
-            f"validation_{prefix}",
-        )
-    return ("train_10m", "train_100m", "train_1b", "validation")
+TOKENIZER_PREFIXES = ("4k", "8k", "16k")
+DATASET_VARIANTS = ("42m", "421m", "4b")
+EXPECTED_ARTIFACTS = tuple(
+    [
+        f"train_{prefix}_{variant}"
+        for prefix in TOKENIZER_PREFIXES
+        for variant in DATASET_VARIANTS
+    ]
+    + [f"validation_{prefix}" for prefix in TOKENIZER_PREFIXES]
+)
 
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
@@ -52,11 +49,6 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
         type=Path,
         default=DEFAULT_DATASET_DIR,
         help=f"local artifact directory (default: {DEFAULT_DATASET_DIR})",
-    )
-    parser.add_argument(
-        "--dataset-prefix",
-        default="",
-        help="tokenizer-specific artifact prefix created by build_dataset.py",
     )
     parser.add_argument(
         "--environment",
@@ -145,9 +137,7 @@ def validate_artifact(artifact_dir: Path) -> tuple[int, int]:
     return token_count, total_bytes
 
 
-def validate_dataset_dir(
-    dataset_dir: Path, dataset_prefix: str = ""
-) -> tuple[int, int, int]:
+def validate_dataset_dir(dataset_dir: Path) -> tuple[int, int, int]:
     """Ensure all expected artifacts are complete before starting an upload."""
 
     if not dataset_dir.is_dir():
@@ -159,7 +149,7 @@ def validate_dataset_dir(
     total_tokens = 0
     total_bytes = 0
     total_files = 0
-    for artifact_name in expected_artifacts(dataset_prefix):
+    for artifact_name in EXPECTED_ARTIFACTS:
         artifact_dir = dataset_dir / artifact_name
         if not artifact_dir.is_dir():
             raise FileNotFoundError(f"dataset artifact not found: {artifact_dir}")
@@ -190,25 +180,20 @@ def upload_dataset(
         create_if_missing=True,
     )
     with volume.batch_upload(force=force) as upload:
-        upload.put_directory(dataset_dir, REMOTE_DATASET_DIR)
+        for artifact_name in EXPECTED_ARTIFACTS:
+            upload.put_directory(
+                dataset_dir / artifact_name,
+                f"{REMOTE_DATASET_DIR}{artifact_name}",
+            )
 
 
 def main(argv: Sequence[str] | None = None) -> None:
     args = parse_args(argv)
     if not args.volume_name.strip():
         raise ValueError("--volume-name cannot be empty")
-    if args.dataset_prefix and not DATASET_PREFIX_PATTERN.fullmatch(
-        args.dataset_prefix
-    ):
-        raise ValueError(
-            "--dataset-prefix must start with an ASCII letter or digit and "
-            "contain only letters, digits, '.', '_', and '-'"
-        )
 
     dataset_dir = args.dataset_dir.expanduser().resolve()
-    total_tokens, total_bytes, total_files = validate_dataset_dir(
-        dataset_dir, args.dataset_prefix
-    )
+    total_tokens, total_bytes, total_files = validate_dataset_dir(dataset_dir)
     print(
         f"Validated {total_files} files in {dataset_dir}: "
         f"{total_tokens:,} tokens, {total_bytes / (1024**3):.2f} GiB"
