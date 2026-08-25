@@ -40,18 +40,12 @@ EVALUATION_RESULT_FIELDS = (
 )
 
 APP_NAME = "pavullmo-evaluate-base"
-DATASET_VOLUME_NAME = os.environ.get(
-    "MODAL_DATASET_VOLUME_NAME", "pavullmo-datasets"
-)
-OUTPUT_VOLUME_NAME = os.environ.get(
-    "MODAL_OUTPUT_VOLUME_NAME", "pavullmo-training"
-)
+DATASET_VOLUME_NAME = os.environ.get("MODAL_DATASET_VOLUME_NAME", "pavullmo-datasets")
+OUTPUT_VOLUME_NAME = os.environ.get("MODAL_OUTPUT_VOLUME_NAME", "pavullmo-training")
 MODAL_GPU = os.environ.get("MODAL_GPU", "L4")
 MODAL_CPU = float(os.environ.get("MODAL_CPU", "4"))
 MODAL_MEMORY_MB = int(os.environ.get("MODAL_MEMORY_MB", "32768"))
-MODAL_TIMEOUT_SECONDS = int(
-    os.environ.get("MODAL_TIMEOUT_SECONDS", str(24 * 60 * 60))
-)
+MODAL_TIMEOUT_SECONDS = int(os.environ.get("MODAL_TIMEOUT_SECONDS", str(24 * 60 * 60)))
 
 EVALUATION_ENVIRONMENT_VARIABLES = (
     "BATCH_SIZE",
@@ -105,8 +99,7 @@ def _read_last_evaluation_result(csv_path: Path) -> dict[str, str]:
         reader = csv.DictReader(file)
         if tuple(reader.fieldnames or ()) != EVALUATION_RESULT_FIELDS:
             raise ValueError(
-                f"unexpected evaluation CSV columns in {csv_path}: "
-                f"{reader.fieldnames}"
+                f"unexpected evaluation CSV columns in {csv_path}: {reader.fieldnames}"
             )
         rows = list(reader)
 
@@ -155,9 +148,7 @@ def _append_local_evaluation_result(
         OUTPUT_MOUNT_PATH: output_volume,
     },
 )
-def evaluate(
-    model: str, evaluation_environment: dict[str, str]
-) -> dict[str, str]:
+def evaluate(model: str, evaluation_environment: dict[str, str]) -> dict[str, str]:
     import subprocess
     import sys
 
@@ -170,7 +161,7 @@ def evaluate(
             [
                 sys.executable,
                 "-m",
-                "pavullmo.evaluate_base",
+                "scaling.evaluate_base",
                 "--model",
                 remote_model,
                 "--csv",

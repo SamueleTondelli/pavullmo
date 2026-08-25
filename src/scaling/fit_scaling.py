@@ -432,6 +432,77 @@ def human_count(value: float, _position: float | None = None) -> str:
     return f"{value:g}"
 
 
+def unobserved_grid_points(data: ScalingData) -> np.ndarray:
+    unique_parameters = np.unique(data.parameters)
+    unique_tokens = np.unique(data.train_tokens)
+    discrete_parameters, discrete_tokens = np.meshgrid(
+        unique_parameters, unique_tokens
+    )
+    discrete_pairs = np.column_stack(
+        (discrete_parameters.ravel(), discrete_tokens.ravel())
+    )
+    observed_pairs = set(zip(data.parameters, data.train_tokens, strict=True))
+    missing = [
+        pair
+        for pair in discrete_pairs
+        if (pair[0], pair[1]) not in observed_pairs
+    ]
+    if not missing:
+        return np.empty((0, 2), dtype=np.float64)
+    return np.asarray(missing, dtype=np.float64)
+
+
+def predict_unobserved_grid(
+    data: ScalingData,
+    fits: list[LawFit],
+    validation_scale: float,
+) -> list[dict[str, float | int]]:
+    points = unobserved_grid_points(data)
+    if not points.size:
+        return []
+
+    predictions: dict[str, np.ndarray] = {}
+    for fit in fits:
+        fixed_k = 1.0 if fit.name == "Chinchilla" else None
+        predictions[fit.name.lower()] = predict(
+            np.asarray(fit.result.x),
+            points[:, 0] / data.parameter_reference,
+            points[:, 1] / data.token_reference,
+            fixed_k,
+        ) * validation_scale
+
+    return [
+        {
+            "parameters": int(parameters),
+            "train_tokens": int(train_tokens),
+            "skaling": float(predictions["skaling"][index]),
+            "chinchilla": float(predictions["chinchilla"][index]),
+        }
+        for index, (parameters, train_tokens) in enumerate(points)
+    ]
+
+
+def print_unobserved_grid(
+    predictions: list[dict[str, float | int]], validation_metric: str
+) -> None:
+    print(f"\nUnobserved grid predictions ({validation_metric}):")
+    if not predictions:
+        print("  none")
+        return
+
+    print(
+        f"{'parameters':>14} {'train_tokens':>14} "
+        f"{'Skaling':>14} {'Chinchilla':>14}"
+    )
+    for row in predictions:
+        print(
+            f"{int(row['parameters']):>14,} "
+            f"{int(row['train_tokens']):>14,} "
+            f"{float(row['skaling']):>14.8f} "
+            f"{float(row['chinchilla']):>14.8f}"
+        )
+
+
 def plot_scaling_curves(
     data: ScalingData,
     fits: list[LawFit],
@@ -487,23 +558,7 @@ def plot_scaling_curves(
             fixed_k,
         )
 
-    unique_parameters = np.unique(data.parameters)
-    unique_tokens = np.unique(data.train_tokens)
-    discrete_parameters, discrete_tokens = np.meshgrid(
-        unique_parameters, unique_tokens
-    )
-    discrete_pairs = np.column_stack(
-        (discrete_parameters.ravel(), discrete_tokens.ravel())
-    )
-    observed_pairs = set(zip(data.parameters, data.train_tokens, strict=True))
-    unobserved_pairs = np.asarray(
-        [
-            pair
-            for pair in discrete_pairs
-            if (pair[0], pair[1]) not in observed_pairs
-        ],
-        dtype=np.float64,
-    )
+    unobserved_pairs = unobserved_grid_points(data)
 
     figure, axes = plt.subplots(2, 2, figsize=(14, 10), constrained_layout=True)
     curve_axes = axes[0]
@@ -780,7 +835,12 @@ def main() -> None:
     }
     if validation_metadata is not None:
         summary["plot"]["validation_metadata"] = validation_metadata
+    unobserved_predictions = predict_unobserved_grid(
+        data, fits, validation_scale
+    )
+    summary["unobserved_grid_predictions"] = unobserved_predictions
     print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+    print_unobserved_grid(unobserved_predictions, validation_metric)
 
     if args.results_json is not None:
         args.results_json.parent.mkdir(parents=True, exist_ok=True)
