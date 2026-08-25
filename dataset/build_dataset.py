@@ -31,11 +31,14 @@ from tqdm import tqdm
 
 DATASET_NAME = "gsarti/clean_mc4_it"
 DATASET_VARIANT = "tiny"
-# these sizes correspond to 10M, 100M and 1B tokens with 16k tokenizer
 TRAIN_BYTE_BUDGETS = {
-    "42m": 42_100_000,
-    "421m": 421_000_000,
-    "4b": 4_210_000_000,
+    "42m": 42_100_000,  # 10M
+    "90m": 90_000_000,
+    "195m": 195_000_000,
+    "421m": 421_000_000,  # 100M
+    "907m": 907_000_000,
+    "1b9": 1_954_000_000,
+    "4b": 4_210_000_000,  # 1B
 }
 DEFAULT_SHARD_TOKENS = 50_000_000  # 100 MB per full uint16 shard.
 UINT16_MAX = 65_535
