@@ -21,7 +21,7 @@ DEFAULT_VOLUME_NAME = "pavullmo-datasets"
 DEFAULT_DATASET_DIR = Path(__file__).resolve().parent / "ds"
 REMOTE_DATASET_DIR = "/"
 TOKENIZER_PREFIXES = ("4k", "8k", "16k")
-DATASET_VARIANTS = ("42m", "421m", "4b")
+DATASET_VARIANTS = ("195m",)
 EXPECTED_ARTIFACTS = tuple(
     [
         f"train_{prefix}_{variant}"
@@ -198,10 +198,7 @@ def main(argv: Sequence[str] | None = None) -> None:
         f"Validated {total_files} files in {dataset_dir}: "
         f"{total_tokens:,} tokens, {total_bytes / (1024**3):.2f} GiB"
     )
-    print(
-        f"Uploading to Modal Volume {args.volume_name!r} at "
-        f"{REMOTE_DATASET_DIR}..."
-    )
+    print(f"Uploading to Modal Volume {args.volume_name!r} at {REMOTE_DATASET_DIR}...")
     upload_dataset(
         dataset_dir=dataset_dir,
         volume_name=args.volume_name,
