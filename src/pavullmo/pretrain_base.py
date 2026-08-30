@@ -8,6 +8,7 @@ import os
 import random
 import re
 import sys
+import time
 from pathlib import Path
 from typing import Any
 
@@ -48,10 +49,14 @@ ATTN_HEADS = int(os.environ.get("ATTN_HEADS", 8))
 FFN_DIM = int(os.environ.get("FFN_DIM", 1536))
 SEQ_LEN = int(os.environ.get("SEQ_LEN", 1024))
 ROPE_BASE = float(os.environ.get("ROPE_BASE", 10000.0))
+INITIALIZATION = os.environ.get("INITIALIZATION", "pytorch_default").strip().lower()
+INITIALIZATION_STD = float(os.environ.get("INITIALIZATION_STD", 0.02))
 
 # Training hyperparameters.
 LR = float(os.environ.get("LR", 1e-3))
 MIN_LR = float(os.environ.get("MIN_LR", 0.0))
+LR_SCHEDULER = os.environ.get("LR_SCHEDULER", "cosine").strip().lower()
+WSD_DECAY_FRACTION = float(os.environ.get("WSD_DECAY_FRACTION", 0.2))
 ADAM_BETA1 = float(os.environ.get("ADAM_BETA1", 0.9))
 ADAM_BETA2 = float(os.environ.get("ADAM_BETA2", 0.95))
 ADAM_EPS = float(os.environ.get("ADAM_EPS", 1e-8))
@@ -91,6 +96,7 @@ MODEL_OUTPUT_DIR = Path(
 ).expanduser()
 TRAIN_SCRIPT = os.environ.get("TRAIN_SCRIPT", Path(__file__).name)
 TENSORBOARD_FLUSH_SECS = int(os.environ.get("TENSORBOARD_FLUSH_SECS", 5))
+DIAGNOSTICS_INTERVAL = int(os.environ.get("DIAGNOSTICS_INTERVAL", 100))
 COMPILE_MODEL = env_bool("COMPILE_MODEL", True)
 COMPILE_MODE = os.environ.get("COMPILE_MODE", "default")
 
@@ -217,12 +223,19 @@ def validate_configuration(train_dataset: TokenBlockDataset) -> None:
         "EPOCHS": EPOCHS,
         "VALIDATION_INTERVAL": VALIDATION_INTERVAL,
         "VALIDATION_STEPS": VALIDATION_STEPS,
+        "DIAGNOSTICS_INTERVAL": DIAGNOSTICS_INTERVAL,
     }
     invalid = {name: value for name, value in positive_values.items() if value <= 0}
     if invalid:
         raise ValueError(f"these settings must be positive: {invalid}")
     if WARMUP_STEPS < 0:
         raise ValueError("WARMUP_STEPS must be non-negative")
+    if LR_SCHEDULER not in {"cosine", "wsd"}:
+        raise ValueError("LR_SCHEDULER must be either 'cosine' or 'wsd'")
+    if not 0.0 < WSD_DECAY_FRACTION <= 1.0:
+        raise ValueError("WSD_DECAY_FRACTION must be in (0, 1]")
+    if INITIALIZATION_STD <= 0.0:
+        raise ValueError("INITIALIZATION_STD must be positive")
     if MAX_STEPS < 0:
         raise ValueError("MAX_STEPS must be non-negative")
     if NUM_WORKERS < 0:
@@ -282,18 +295,171 @@ def build_scheduler(
         )
 
     minimum_ratio = MIN_LR / LR
-    decay_steps = total_steps - WARMUP_STEPS
+    post_warmup_steps = total_steps - WARMUP_STEPS
+
+    if LR_SCHEDULER == "wsd":
+        wsd_stable_steps, wsd_decay_steps = wsd_phase_steps(total_steps)
 
     def lr_multiplier(step: int) -> float:
         if WARMUP_STEPS and step < WARMUP_STEPS:
             return (step + 1) / WARMUP_STEPS
 
-        progress = (step - WARMUP_STEPS) / max(1, decay_steps - 1)
+        if LR_SCHEDULER == "cosine":
+            progress = (step - WARMUP_STEPS) / max(1, post_warmup_steps - 1)
+            progress = min(max(progress, 0.0), 1.0)
+            cosine = 0.5 * (1.0 + math.cos(math.pi * progress))
+            return minimum_ratio + (1.0 - minimum_ratio) * cosine
+
+        decay_start = WARMUP_STEPS + wsd_stable_steps
+        if step < decay_start:
+            return 1.0
+        if wsd_decay_steps == 1:
+            return minimum_ratio
+
+        progress = (step - decay_start) / (wsd_decay_steps - 1)
         progress = min(max(progress, 0.0), 1.0)
-        cosine = 0.5 * (1.0 + math.cos(math.pi * progress))
-        return minimum_ratio + (1.0 - minimum_ratio) * cosine
+        return 1.0 - (1.0 - minimum_ratio) * progress
 
     return LambdaLR(optimizer, lr_lambda=lr_multiplier)
+
+
+def wsd_phase_steps(total_steps: int) -> tuple[int, int]:
+    """Return stable and decay steps after warmup for the configured WSD run."""
+
+    post_warmup_steps = total_steps - WARMUP_STEPS
+    decay_steps = max(1, math.ceil(post_warmup_steps * WSD_DECAY_FRACTION))
+    return post_warmup_steps - decay_steps, decay_steps
+
+
+def build_adamw_parameter_groups(
+    model: torch.nn.Module,
+) -> list[dict[str, Any]]:
+    """Decay hidden matrix weights, excluding embeddings, norms, and biases."""
+
+    decay_parameters: list[torch.nn.Parameter] = []
+    no_decay_parameters: list[torch.nn.Parameter] = []
+    for name, parameter in model.named_parameters():
+        if not parameter.requires_grad:
+            continue
+        if parameter.ndim >= 2 and name != "embeddings.weight":
+            decay_parameters.append(parameter)
+        else:
+            no_decay_parameters.append(parameter)
+
+    return [
+        {"params": decay_parameters, "weight_decay": WEIGHT_DECAY},
+        {"params": no_decay_parameters, "weight_decay": 0.0},
+    ]
+
+
+def tensor_collection_stats(
+    tensors: list[torch.Tensor],
+) -> tuple[float, float, int]:
+    """Return the global L2 norm, RMS, and element count of tensors."""
+
+    if not tensors:
+        return 0.0, 0.0, 0
+
+    sum_of_squares = torch.zeros((), device=tensors[0].device, dtype=torch.float32)
+    element_count = 0
+    for tensor in tensors:
+        detached = tensor.detach()
+        sum_of_squares = sum_of_squares + detached.float().square().sum()
+        element_count += detached.numel()
+
+    norm = math.sqrt(sum_of_squares.item())
+    rms = norm / math.sqrt(element_count)
+    return norm, rms, element_count
+
+
+def gradient_group_name(parameter_name: str) -> str:
+    if parameter_name == "embeddings.weight":
+        return "embeddings"
+    if ".attn.c_attn." in parameter_name:
+        return "attention_qkv"
+    if ".attn.c_proj." in parameter_name:
+        return "attention_output"
+    if ".ffn.w1." in parameter_name or ".ffn.w3." in parameter_name:
+        return "ffn_input_gate"
+    if ".ffn.w2." in parameter_name:
+        return "ffn_output"
+    if "_norm." in parameter_name or parameter_name == "norm.weight":
+        return "norms"
+    return "other"
+
+
+def gradient_norms_by_group(model: torch.nn.Module) -> dict[str, float]:
+    grouped_gradients: dict[str, list[torch.Tensor]] = {}
+    for name, parameter in model.named_parameters():
+        if parameter.grad is None:
+            continue
+        group_name = gradient_group_name(name)
+        grouped_gradients.setdefault(group_name, []).append(parameter.grad)
+
+    return {
+        group_name: tensor_collection_stats(gradients)[0]
+        for group_name, gradients in grouped_gradients.items()
+    }
+
+
+def sampled_logit_stats(logits: torch.Tensor) -> tuple[float, float]:
+    """Measure a small, evenly strided logit sample to limit diagnostics cost."""
+
+    sequence_stride = max(1, logits.size(-2) // 16)
+    vocabulary_stride = max(1, logits.size(-1) // 1024)
+    sample = logits.detach()[
+        ..., ::sequence_stride, ::vocabulary_stride
+    ].float()
+    rms = sample.square().mean().sqrt().item()
+    absolute_max = sample.abs().max().item()
+    return rms, absolute_max
+
+
+@torch.no_grad()
+def adamw_update_stats(
+    optimizer: torch.optim.AdamW,
+) -> tuple[float, float]:
+    """Reconstruct the last AdamW parameter update without copying parameters."""
+
+    sum_of_squares: torch.Tensor | None = None
+    element_count = 0
+    for group in optimizer.param_groups:
+        parameters = [
+            parameter
+            for parameter in group["params"]
+            if optimizer.state.get(parameter, {}).get("step") is not None
+        ]
+        if not parameters:
+            continue
+
+        step = int(optimizer.state[parameters[0]]["step"].item())
+        beta1, beta2 = group["betas"]
+        step_size = group["lr"] / (1.0 - beta1**step)
+        square_root_bias_correction2 = math.sqrt(1.0 - beta2**step)
+        decay_factor = 1.0 - group["lr"] * group["weight_decay"]
+
+        for parameter in parameters:
+            state = optimizer.state[parameter]
+            denominator = (
+                state["exp_avg_sq"].sqrt() / square_root_bias_correction2
+            ).add(group["eps"])
+            adaptive_update = state["exp_avg"] * (step_size / denominator)
+            update = -(
+                parameter.detach() * (group["lr"] * group["weight_decay"])
+                + adaptive_update
+            ) / decay_factor
+            update_sum_of_squares = update.float().square().sum()
+            sum_of_squares = (
+                update_sum_of_squares
+                if sum_of_squares is None
+                else sum_of_squares + update_sum_of_squares
+            )
+            element_count += parameter.numel()
+
+    if sum_of_squares is None or element_count == 0:
+        return 0.0, 0.0
+    update_norm = math.sqrt(sum_of_squares.item())
+    return update_norm, update_norm / math.sqrt(element_count)
 
 
 def config_string(hyperparameters: dict[str, object]) -> str:
@@ -460,6 +626,11 @@ def main() -> None:
             f"WARMUP_STEPS={WARMUP_STEPS} must be smaller than the "
             f"{total_steps} optimizer steps in this run"
         )
+    if LR_SCHEDULER == "wsd":
+        wsd_stable_steps, wsd_decay_steps = wsd_phase_steps(total_steps)
+    else:
+        wsd_stable_steps = None
+        wsd_decay_steps = None
 
     model = DecoderTransformer(
         vocab_size=VOCAB_SIZE,
@@ -470,14 +641,17 @@ def main() -> None:
         dropout=DROPOUT,
         seq_len=SEQ_LEN,
         rope_base=ROPE_BASE,
+        initialization=INITIALIZATION,
+        initialization_std=INITIALIZATION_STD,
     ).to(device)
 
+    optimizer_parameter_groups = build_adamw_parameter_groups(model)
     optimizer = torch.optim.AdamW(
-        model.parameters(),
+        optimizer_parameter_groups,
         lr=LR,
         betas=(ADAM_BETA1, ADAM_BETA2),
         eps=ADAM_EPS,
-        weight_decay=WEIGHT_DECAY,
+        weight_decay=0.0,
         fused=True,
     )
     scheduler = build_scheduler(optimizer, total_steps)
@@ -493,6 +667,12 @@ def main() -> None:
         flush_secs=TENSORBOARD_FLUSH_SECS,
     )
     parameter_count = sum(parameter.numel() for parameter in model.parameters())
+    decayed_parameter_count = sum(
+        parameter.numel() for parameter in optimizer_parameter_groups[0]["params"]
+    )
+    no_decay_parameter_count = sum(
+        parameter.numel() for parameter in optimizer_parameter_groups[1]["params"]
+    )
     hyperparameters: dict[str, object] = {
         "VOCAB_SIZE": VOCAB_SIZE,
         "N_BLOCKS": N_BLOCKS,
@@ -501,8 +681,12 @@ def main() -> None:
         "FFN_DIM": FFN_DIM,
         "SEQ_LEN": SEQ_LEN,
         "ROPE_BASE": ROPE_BASE,
+        "INITIALIZATION": INITIALIZATION,
+        "INITIALIZATION_STD": INITIALIZATION_STD,
         "LR": LR,
         "MIN_LR": MIN_LR,
+        "LR_SCHEDULER": LR_SCHEDULER,
+        "WSD_DECAY_FRACTION": WSD_DECAY_FRACTION,
         "ADAM_BETA1": ADAM_BETA1,
         "ADAM_BETA2": ADAM_BETA2,
         "ADAM_EPS": ADAM_EPS,
@@ -519,6 +703,7 @@ def main() -> None:
         "DATASET_VARIANT": DATASET_VARIANT,
         "VALIDATION_INTERVAL": VALIDATION_INTERVAL,
         "VALIDATION_STEPS": VALIDATION_STEPS,
+        "DIAGNOSTICS_INTERVAL": DIAGNOSTICS_INTERVAL,
         "COMPILE_MODEL": COMPILE_MODEL,
         "COMPILE_MODE": COMPILE_MODE,
     }
@@ -529,6 +714,8 @@ def main() -> None:
         "train_tokens": train_dataset.total_tokens,
         "validation_tokens": validation_dataset.total_tokens,
         "parameters": parameter_count,
+        "initialization": INITIALIZATION,
+        "initialization_std": INITIALIZATION_STD,
         "sequence_length": SEQ_LEN,
         "micro_batch_size": BATCH_SIZE,
         "gradient_accumulation_steps": GRAD_ACCUM_STEPS,
@@ -538,14 +725,21 @@ def main() -> None:
         "total_steps": total_steps,
         "learning_rate": LR,
         "minimum_learning_rate": MIN_LR,
+        "lr_scheduler": LR_SCHEDULER,
+        "wsd_decay_fraction": WSD_DECAY_FRACTION,
+        "wsd_stable_steps": wsd_stable_steps,
+        "wsd_decay_steps": wsd_decay_steps,
         "adam_beta1": ADAM_BETA1,
         "adam_beta2": ADAM_BETA2,
         "adam_epsilon": ADAM_EPS,
         "warmup_steps": WARMUP_STEPS,
         "weight_decay": WEIGHT_DECAY,
+        "decayed_parameters": decayed_parameter_count,
+        "no_decay_parameters": no_decay_parameter_count,
         "max_gradient_norm": MAX_GRAD_NORM,
         "validation_interval": VALIDATION_INTERVAL,
         "validation_steps": VALIDATION_STEPS,
+        "diagnostics_interval": DIAGNOSTICS_INTERVAL,
         "tensorboard_flush_seconds": TENSORBOARD_FLUSH_SECS,
         "runs_csv": str(RUNS_CSV),
         "model_output_dir": str(MODEL_OUTPUT_DIR),
@@ -556,6 +750,18 @@ def main() -> None:
     }
     print(json.dumps(settings, indent=2), flush=True)
     writer.add_text("configuration", json.dumps(settings, indent=2), 0)
+    writer.add_scalar("model/parameter_count", parameter_count, 0)
+
+    initial_parameter_norm, initial_parameter_rms, _ = tensor_collection_stats(
+        list(model.parameters())
+    )
+    embedding_norm, embedding_rms, _ = tensor_collection_stats(
+        [model.embeddings.weight]
+    )
+    writer.add_scalar("diagnostics/parameter_norm", initial_parameter_norm, 0)
+    writer.add_scalar("diagnostics/parameter_rms", initial_parameter_rms, 0)
+    writer.add_scalar("diagnostics/embedding_norm", embedding_norm, 0)
+    writer.add_scalar("diagnostics/embedding_rms", embedding_rms, 0)
 
     total_params = sum(p.numel() for p in model.parameters())
     print(f"Total model parameters: {total_params}")
@@ -563,6 +769,13 @@ def main() -> None:
     print(f"\tTrainable: {trainable_params}")
 
     global_step = 0
+    tokens_seen = 0
+    clipped_steps = 0
+    tokens_per_step = BATCH_SIZE * GRAD_ACCUM_STEPS * SEQ_LEN
+    throughput_window_tokens = 0
+    throughput_window_steps = 0
+    throughput_window_start = time.perf_counter()
+    uniform_loss = math.log(VOCAB_SIZE)
     final_train_loss: float | None = None
     final_validation_loss: float | None = None
     model.train()
@@ -595,6 +808,22 @@ def main() -> None:
                     accumulated_loss += loss.detach().item()
                     (loss / GRAD_ACCUM_STEPS).backward()
 
+                next_step = global_step + 1
+                should_log_diagnostics = (
+                    next_step == 1
+                    or next_step % DIAGNOSTICS_INTERVAL == 0
+                    or next_step == total_steps
+                )
+                if should_log_diagnostics:
+                    gradient_group_norms = gradient_norms_by_group(model)
+                    parameter_norm, parameter_rms, _ = tensor_collection_stats(
+                        list(model.parameters())
+                    )
+                    embedding_norm, embedding_rms, _ = tensor_collection_stats(
+                        [model.embeddings.weight]
+                    )
+                    logit_rms, logit_absolute_max = sampled_logit_stats(logits)
+
                 grad_norm = torch.nn.utils.clip_grad_norm_(
                     model.parameters(),
                     max_norm=MAX_GRAD_NORM if MAX_GRAD_NORM > 0.0 else float("inf"),
@@ -602,15 +831,117 @@ def main() -> None:
                 )
                 learning_rate = optimizer.param_groups[0]["lr"]
                 optimizer.step()
+                if should_log_diagnostics:
+                    update_norm, update_rms = adamw_update_stats(optimizer)
                 scheduler.step()
                 global_step += 1
+                tokens_seen += tokens_per_step
+                throughput_window_tokens += tokens_per_step
+                throughput_window_steps += 1
 
                 train_loss = accumulated_loss / GRAD_ACCUM_STEPS
                 final_train_loss = train_loss
                 gradient_norm = grad_norm.item()
+                if MAX_GRAD_NORM > 0.0:
+                    clip_coefficient = min(
+                        1.0,
+                        MAX_GRAD_NORM / (gradient_norm + 1e-6),
+                    )
+                    gradient_clipped = gradient_norm > MAX_GRAD_NORM
+                else:
+                    clip_coefficient = 1.0
+                    gradient_clipped = False
+                clipped_steps += int(gradient_clipped)
+
                 writer.add_scalar("train/loss", train_loss, global_step)
+                writer.add_scalar(
+                    "train/loss_vs_uniform",
+                    train_loss - uniform_loss,
+                    global_step,
+                )
+                if train_loss < math.log(sys.float_info.max):
+                    writer.add_scalar(
+                        "train/perplexity",
+                        math.exp(train_loss),
+                        global_step,
+                    )
                 writer.add_scalar("train/gradient_norm", gradient_norm, global_step)
+                writer.add_scalar(
+                    "train/gradient_rms",
+                    gradient_norm / math.sqrt(trainable_params),
+                    global_step,
+                )
+                writer.add_scalar(
+                    "train/clip_coefficient", clip_coefficient, global_step
+                )
+                writer.add_scalar(
+                    "train/gradient_clipped", float(gradient_clipped), global_step
+                )
+                writer.add_scalar(
+                    "train/clip_fraction", clipped_steps / global_step, global_step
+                )
                 writer.add_scalar("train/learning_rate", learning_rate, global_step)
+                writer.add_scalar("train/tokens_seen", tokens_seen, global_step)
+
+                if should_log_diagnostics:
+                    writer.add_scalar(
+                        "diagnostics/parameter_norm", parameter_norm, global_step
+                    )
+                    writer.add_scalar(
+                        "diagnostics/parameter_rms", parameter_rms, global_step
+                    )
+                    writer.add_scalar(
+                        "diagnostics/embedding_norm", embedding_norm, global_step
+                    )
+                    writer.add_scalar(
+                        "diagnostics/embedding_rms", embedding_rms, global_step
+                    )
+                    writer.add_scalar(
+                        "diagnostics/gradient_to_parameter_norm",
+                        gradient_norm / max(parameter_norm, 1e-12),
+                        global_step,
+                    )
+                    writer.add_scalar(
+                        "diagnostics/update_norm", update_norm, global_step
+                    )
+                    writer.add_scalar(
+                        "diagnostics/update_rms", update_rms, global_step
+                    )
+                    writer.add_scalar(
+                        "diagnostics/update_to_parameter_norm",
+                        update_norm / max(parameter_norm, 1e-12),
+                        global_step,
+                    )
+                    writer.add_scalar(
+                        "diagnostics/logit_rms_sample", logit_rms, global_step
+                    )
+                    writer.add_scalar(
+                        "diagnostics/logit_absolute_max_sample",
+                        logit_absolute_max,
+                        global_step,
+                    )
+                    for group_name, group_norm in gradient_group_norms.items():
+                        writer.add_scalar(
+                            f"gradient_groups/{group_name}",
+                            group_norm,
+                            global_step,
+                        )
+                    gibibyte = 1024**3
+                    writer.add_scalar(
+                        "system/cuda_memory_allocated_gib",
+                        torch.cuda.memory_allocated(device) / gibibyte,
+                        global_step,
+                    )
+                    writer.add_scalar(
+                        "system/cuda_memory_reserved_gib",
+                        torch.cuda.memory_reserved(device) / gibibyte,
+                        global_step,
+                    )
+                    writer.add_scalar(
+                        "system/cuda_peak_memory_allocated_gib",
+                        torch.cuda.max_memory_allocated(device) / gibibyte,
+                        global_step,
+                    )
                 print(
                     f"step={global_step}/{total_steps} epoch={epoch + 1}/{EPOCHS} "
                     f"loss={train_loss:.6f} grad_norm={gradient_norm:.6f} "
@@ -621,6 +952,22 @@ def main() -> None:
                 should_validate = (
                     global_step % VALIDATION_INTERVAL == 0 or global_step == total_steps
                 )
+                if should_log_diagnostics or should_validate:
+                    torch.cuda.synchronize(device)
+                    throughput_elapsed = time.perf_counter() - throughput_window_start
+                    writer.add_scalar(
+                        "performance/tokens_per_second",
+                        throughput_window_tokens / throughput_elapsed,
+                        global_step,
+                    )
+                    writer.add_scalar(
+                        "performance/optimizer_step_seconds",
+                        throughput_elapsed / throughput_window_steps,
+                        global_step,
+                    )
+                    throughput_window_tokens = 0
+                    throughput_window_steps = 0
+                    throughput_window_start = time.perf_counter()
                 if should_validate:
                     val_loss = validation_loss(
                         train_model,
@@ -630,12 +977,24 @@ def main() -> None:
                     )
                     final_validation_loss = val_loss
                     writer.add_scalar("validation/loss", val_loss, global_step)
+                    writer.add_scalar(
+                        "validation/loss_vs_uniform",
+                        val_loss - uniform_loss,
+                        global_step,
+                    )
+                    if val_loss < math.log(sys.float_info.max):
+                        writer.add_scalar(
+                            "validation/perplexity",
+                            math.exp(val_loss),
+                            global_step,
+                        )
                     writer.flush()
                     print(
                         f"step={global_step}/{total_steps} "
                         f"validation_loss={val_loss:.6f}",
                         flush=True,
                     )
+                    throughput_window_start = time.perf_counter()
             if global_step >= total_steps:
                 break
     finally:

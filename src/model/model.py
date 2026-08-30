@@ -3,6 +3,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
+INITIALIZATION_RECIPES = frozenset({"pytorch_default", "olmo", "gpt_scaled"})
+BASE_INITIALIZATION_STD = 0.02
+
+
 class RoPE(nn.Module):
     def __init__(self, seq_len: int, head_dim: int, base: float = 10000.0):
         super().__init__()
@@ -195,8 +199,22 @@ class DecoderTransformer(nn.Module):
         dropout: float,
         seq_len: int = 2048,
         rope_base: float = 10000.0,
+        initialization: str = "pytorch_default",
+        initialization_std: float = BASE_INITIALIZATION_STD,
     ):
         super().__init__()
+        initialization = initialization.strip().lower()
+        if initialization not in INITIALIZATION_RECIPES:
+            choices = ", ".join(sorted(INITIALIZATION_RECIPES))
+            raise ValueError(
+                f"unknown initialization recipe {initialization!r}; choose from {choices}"
+            )
+        if initialization_std <= 0.0:
+            raise ValueError("initialization_std must be positive")
+
+        self.initialization = initialization
+        self.initialization_std = initialization_std
+        self.n_blocks = n_blocks
         self.embeddings = nn.Embedding(vocab_size, embed_dim)
         self.layers = nn.ModuleList(
             TransformerBlock(
@@ -210,6 +228,37 @@ class DecoderTransformer(nn.Module):
             for _ in range(n_blocks)
         )
         self.norm = nn.RMSNorm(embed_dim)
+
+        if initialization != "pytorch_default":
+            self.reset_parameters()
+
+    @torch.no_grad()
+    def reset_parameters(self) -> None:
+        """Apply the configured transformer initialization recipe."""
+
+        if self.initialization == "pytorch_default":
+            for module in self.modules():
+                if module is not self and hasattr(module, "reset_parameters"):
+                    module.reset_parameters()
+            return
+
+        for module in self.modules():
+            if isinstance(module, (nn.Linear, nn.Embedding)):
+                nn.init.normal_(
+                    module.weight,
+                    mean=0.0,
+                    std=self.initialization_std,
+                )
+                if isinstance(module, nn.Linear) and module.bias is not None:
+                    nn.init.zeros_(module.bias)
+            elif isinstance(module, nn.RMSNorm):
+                module.reset_parameters()
+
+        if self.initialization == "gpt_scaled":
+            residual_std = self.initialization_std / (2 * self.n_blocks) ** 0.5
+            for layer in self.layers:
+                nn.init.normal_(layer.attn.c_proj.weight, mean=0.0, std=residual_std)
+                nn.init.normal_(layer.ffn.w2.weight, mean=0.0, std=residual_std)
 
     def forward(self, x):
         x = self.embeddings(x)
