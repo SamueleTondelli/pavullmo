@@ -77,6 +77,7 @@ def load_model(
         dropout=float(hyperparameters["DROPOUT"]),
         seq_len=int(hyperparameters["SEQ_LEN"]),
         rope_base=float(hyperparameters["ROPE_BASE"]),
+        qk_norm=bool(hyperparameters["QK_NORM"]),
     )
 
     state_dict = checkpoint.get("model_state_dict")

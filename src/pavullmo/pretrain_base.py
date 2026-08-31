@@ -51,6 +51,7 @@ SEQ_LEN = int(os.environ.get("SEQ_LEN", 1024))
 ROPE_BASE = float(os.environ.get("ROPE_BASE", 10000.0))
 INITIALIZATION = os.environ.get("INITIALIZATION", "pytorch_default").strip().lower()
 INITIALIZATION_STD = float(os.environ.get("INITIALIZATION_STD", 0.02))
+QK_NORM = env_bool("QK_NORM", False)
 
 # Training hyperparameters.
 LR = float(os.environ.get("LR", 1e-3))
@@ -67,6 +68,7 @@ EPOCHS = int(os.environ.get("EPOCHS", 1))
 MAX_STEPS = int(os.environ.get("MAX_STEPS", 0))
 DROPOUT = float(os.environ.get("DROPOUT", 0.0))
 WEIGHT_DECAY = float(os.environ.get("WEIGHT_DECAY", 1e-5))
+Z_LOSS_COEFFICIENT = float(os.environ.get("Z_LOSS_COEFFICIENT", 0.0))
 MAX_GRAD_NORM = float(os.environ.get("MAX_GRAD_NORM", 1.0))
 SEED = int(os.environ.get("SEED", 42))
 
@@ -246,6 +248,8 @@ def validate_configuration(train_dataset: TokenBlockDataset) -> None:
         raise ValueError("DROPOUT must be between 0 and 1")
     if WEIGHT_DECAY < 0.0:
         raise ValueError("WEIGHT_DECAY must be non-negative")
+    if Z_LOSS_COEFFICIENT < 0.0:
+        raise ValueError("Z_LOSS_COEFFICIENT must be non-negative")
     if not 0.0 <= MIN_LR <= LR:
         raise ValueError("MIN_LR must be between zero and LR")
     if not 0.0 <= ADAM_BETA1 < 1.0 or not 0.0 <= ADAM_BETA2 < 1.0:
@@ -413,6 +417,27 @@ def sampled_logit_stats(logits: torch.Tensor) -> tuple[float, float]:
     rms = sample.square().mean().sqrt().item()
     absolute_max = sample.abs().max().item()
     return rms, absolute_max
+
+
+def next_token_training_objective(
+    logits: torch.Tensor,
+    targets: torch.Tensor,
+    z_loss_coefficient: float,
+) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+    """Return the total objective, cross-entropy, and unweighted z-loss."""
+
+    cross_entropy = F.cross_entropy(
+        logits.reshape(-1, logits.size(-1)),
+        targets.reshape(-1),
+    )
+    if z_loss_coefficient == 0.0:
+        z_loss = cross_entropy.new_zeros(())
+        return cross_entropy, cross_entropy, z_loss
+
+    log_normalizer = torch.logsumexp(logits.float(), dim=-1)
+    z_loss = log_normalizer.square().mean()
+    objective = cross_entropy + z_loss_coefficient * z_loss
+    return objective, cross_entropy, z_loss
 
 
 @torch.no_grad()
@@ -643,6 +668,7 @@ def main() -> None:
         rope_base=ROPE_BASE,
         initialization=INITIALIZATION,
         initialization_std=INITIALIZATION_STD,
+        qk_norm=QK_NORM,
     ).to(device)
 
     optimizer_parameter_groups = build_adamw_parameter_groups(model)
@@ -683,6 +709,7 @@ def main() -> None:
         "ROPE_BASE": ROPE_BASE,
         "INITIALIZATION": INITIALIZATION,
         "INITIALIZATION_STD": INITIALIZATION_STD,
+        "QK_NORM": QK_NORM,
         "LR": LR,
         "MIN_LR": MIN_LR,
         "LR_SCHEDULER": LR_SCHEDULER,
@@ -697,6 +724,7 @@ def main() -> None:
         "MAX_STEPS": MAX_STEPS,
         "DROPOUT": DROPOUT,
         "WEIGHT_DECAY": WEIGHT_DECAY,
+        "Z_LOSS_COEFFICIENT": Z_LOSS_COEFFICIENT,
         "MAX_GRAD_NORM": MAX_GRAD_NORM,
         "SEED": SEED,
         "DATASET_PREFIX": DATASET_PREFIX,
@@ -716,6 +744,7 @@ def main() -> None:
         "parameters": parameter_count,
         "initialization": INITIALIZATION,
         "initialization_std": INITIALIZATION_STD,
+        "qk_norm": QK_NORM,
         "sequence_length": SEQ_LEN,
         "micro_batch_size": BATCH_SIZE,
         "gradient_accumulation_steps": GRAD_ACCUM_STEPS,
@@ -734,6 +763,7 @@ def main() -> None:
         "adam_epsilon": ADAM_EPS,
         "warmup_steps": WARMUP_STEPS,
         "weight_decay": WEIGHT_DECAY,
+        "z_loss_coefficient": Z_LOSS_COEFFICIENT,
         "decayed_parameters": decayed_parameter_count,
         "no_decay_parameters": no_decay_parameter_count,
         "max_gradient_norm": MAX_GRAD_NORM,
@@ -787,6 +817,8 @@ def main() -> None:
                     break
                 optimizer.zero_grad(set_to_none=True)
                 accumulated_loss = 0.0
+                accumulated_objective = 0.0
+                accumulated_z_loss = 0.0
 
                 for _ in range(GRAD_ACCUM_STEPS):
                     input_ids, targets = next(train_iterator)
@@ -795,18 +827,21 @@ def main() -> None:
 
                     with torch.autocast(device_type="cuda", dtype=torch.bfloat16):
                         logits = train_model(input_ids)
-                        loss = F.cross_entropy(
-                            logits.reshape(-1, logits.size(-1)),
-                            targets.reshape(-1),
+                        objective, loss, z_loss = next_token_training_objective(
+                            logits,
+                            targets,
+                            Z_LOSS_COEFFICIENT,
                         )
 
-                    if not torch.isfinite(loss):
+                    if not torch.isfinite(objective):
                         raise FloatingPointError(
-                            f"non-finite training loss at step {global_step + 1}: "
-                            f"{loss.item()}"
+                            f"non-finite training objective at step "
+                            f"{global_step + 1}: {objective.item()}"
                         )
                     accumulated_loss += loss.detach().item()
-                    (loss / GRAD_ACCUM_STEPS).backward()
+                    accumulated_objective += objective.detach().item()
+                    accumulated_z_loss += z_loss.detach().item()
+                    (objective / GRAD_ACCUM_STEPS).backward()
 
                 next_step = global_step + 1
                 should_log_diagnostics = (
@@ -840,6 +875,8 @@ def main() -> None:
                 throughput_window_steps += 1
 
                 train_loss = accumulated_loss / GRAD_ACCUM_STEPS
+                train_objective = accumulated_objective / GRAD_ACCUM_STEPS
+                train_z_loss = accumulated_z_loss / GRAD_ACCUM_STEPS
                 final_train_loss = train_loss
                 gradient_norm = grad_norm.item()
                 if MAX_GRAD_NORM > 0.0:
@@ -854,6 +891,13 @@ def main() -> None:
                 clipped_steps += int(gradient_clipped)
 
                 writer.add_scalar("train/loss", train_loss, global_step)
+                writer.add_scalar("train/objective", train_objective, global_step)
+                writer.add_scalar("train/z_loss", train_z_loss, global_step)
+                writer.add_scalar(
+                    "train/z_loss_contribution",
+                    Z_LOSS_COEFFICIENT * train_z_loss,
+                    global_step,
+                )
                 writer.add_scalar(
                     "train/loss_vs_uniform",
                     train_loss - uniform_loss,
@@ -945,7 +989,13 @@ def main() -> None:
                 print(
                     f"step={global_step}/{total_steps} epoch={epoch + 1}/{EPOCHS} "
                     f"loss={train_loss:.6f} grad_norm={gradient_norm:.6f} "
-                    f"lr={learning_rate:.8g}",
+                    f"lr={learning_rate:.8g}"
+                    + (
+                        f" z_loss={train_z_loss:.6f} "
+                        f"objective={train_objective:.6f}"
+                        if Z_LOSS_COEFFICIENT > 0.0
+                        else ""
+                    ),
                     flush=True,
                 )
 

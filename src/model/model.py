@@ -80,6 +80,7 @@ class CausalSelfAttention(nn.Module):
         dropout: float = 0.0,
         seq_len: int = 2048,
         rope_base: float = 10000.0,
+        qk_norm: bool = False,
     ):
         super().__init__()
         if num_heads <= 0:
@@ -91,6 +92,8 @@ class CausalSelfAttention(nn.Module):
 
         head_dim = embed_dimension // num_heads
         self.rope = RoPE(seq_len, head_dim, base=rope_base)
+        self.q_norm = nn.RMSNorm(head_dim) if qk_norm else nn.Identity()
+        self.k_norm = nn.RMSNorm(head_dim) if qk_norm else nn.Identity()
         # key, query, value projections for all heads, but in a batch
         self.c_attn = nn.Linear(embed_dimension, 3 * embed_dimension, bias=bias)
         # output projection
@@ -112,6 +115,8 @@ class CausalSelfAttention(nn.Module):
         key = key.view(batch_size, -1, self.num_heads, head_dim).transpose(1, 2)
         value = value.view(batch_size, -1, self.num_heads, head_dim).transpose(1, 2)
 
+        query = self.q_norm(query)
+        key = self.k_norm(key)
         query = self.rope(query)
         key = self.rope(key)
 
@@ -156,6 +161,7 @@ class TransformerBlock(nn.Module):
         dropout: float,
         seq_len: int = 2048,
         rope_base: float = 10000.0,
+        qk_norm: bool = False,
     ):
         super().__init__()
         self.embed_dim = embed_dim
@@ -167,6 +173,7 @@ class TransformerBlock(nn.Module):
             dropout=dropout,
             seq_len=seq_len,
             rope_base=rope_base,
+            qk_norm=qk_norm,
         )
         self.attn_dropout = nn.Dropout(dropout)
 
@@ -201,6 +208,7 @@ class DecoderTransformer(nn.Module):
         rope_base: float = 10000.0,
         initialization: str = "pytorch_default",
         initialization_std: float = BASE_INITIALIZATION_STD,
+        qk_norm: bool = False,
     ):
         super().__init__()
         initialization = initialization.strip().lower()
@@ -224,6 +232,7 @@ class DecoderTransformer(nn.Module):
                 dropout,
                 seq_len=seq_len,
                 rope_base=rope_base,
+                qk_norm=qk_norm,
             )
             for _ in range(n_blocks)
         )
