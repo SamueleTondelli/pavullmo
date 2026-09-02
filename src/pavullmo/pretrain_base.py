@@ -61,6 +61,7 @@ WSD_DECAY_FRACTION = float(os.environ.get("WSD_DECAY_FRACTION", 0.2))
 ADAM_BETA1 = float(os.environ.get("ADAM_BETA1", 0.9))
 ADAM_BETA2 = float(os.environ.get("ADAM_BETA2", 0.95))
 ADAM_EPS = float(os.environ.get("ADAM_EPS", 1e-8))
+NORM_LR_MULTIPLIER = float(os.environ.get("NORM_LR_MULTIPLIER", 1.0))
 WARMUP_STEPS = int(os.environ.get("WARMUP_STEPS", 10))
 BATCH_SIZE = int(os.environ.get("BATCH_SIZE", 32))
 GRAD_ACCUM_STEPS = int(os.environ.get("GRAD_ACCUM_STEPS", 1))
@@ -256,6 +257,8 @@ def validate_configuration(train_dataset: TokenBlockDataset) -> None:
         raise ValueError("ADAM_BETA1 and ADAM_BETA2 must be in [0, 1)")
     if ADAM_EPS <= 0.0:
         raise ValueError("ADAM_EPS must be positive")
+    if not math.isfinite(NORM_LR_MULTIPLIER) or NORM_LR_MULTIPLIER < 0.0:
+        raise ValueError("NORM_LR_MULTIPLIER must be finite and non-negative")
     if len(train_dataset) < BATCH_SIZE * GRAD_ACCUM_STEPS:
         raise ValueError("training dataset is too small for one optimizer step")
 
@@ -335,17 +338,24 @@ def wsd_phase_steps(total_steps: int) -> tuple[int, int]:
     return post_warmup_steps - decay_steps, decay_steps
 
 
+def is_norm_parameter_name(parameter_name: str) -> bool:
+    return "_norm." in parameter_name or parameter_name == "norm.weight"
+
+
 def build_adamw_parameter_groups(
     model: torch.nn.Module,
 ) -> list[dict[str, Any]]:
-    """Decay hidden matrix weights, excluding embeddings, norms, and biases."""
+    """Build decay, no-decay, and norm-specific AdamW parameter groups."""
 
     decay_parameters: list[torch.nn.Parameter] = []
     no_decay_parameters: list[torch.nn.Parameter] = []
+    norm_parameters: list[torch.nn.Parameter] = []
     for name, parameter in model.named_parameters():
         if not parameter.requires_grad:
             continue
-        if parameter.ndim >= 2 and name != "embeddings.weight":
+        if is_norm_parameter_name(name):
+            norm_parameters.append(parameter)
+        elif parameter.ndim >= 2 and name != "embeddings.weight":
             decay_parameters.append(parameter)
         else:
             no_decay_parameters.append(parameter)
@@ -353,6 +363,11 @@ def build_adamw_parameter_groups(
     return [
         {"params": decay_parameters, "weight_decay": WEIGHT_DECAY},
         {"params": no_decay_parameters, "weight_decay": 0.0},
+        {
+            "params": norm_parameters,
+            "weight_decay": 0.0,
+            "lr": LR * NORM_LR_MULTIPLIER,
+        },
     ]
 
 
@@ -387,7 +402,7 @@ def gradient_group_name(parameter_name: str) -> str:
         return "ffn_input_gate"
     if ".ffn.w2." in parameter_name:
         return "ffn_output"
-    if "_norm." in parameter_name or parameter_name == "norm.weight":
+    if is_norm_parameter_name(parameter_name):
         return "norms"
     return "other"
 
@@ -699,6 +714,9 @@ def main() -> None:
     no_decay_parameter_count = sum(
         parameter.numel() for parameter in optimizer_parameter_groups[1]["params"]
     )
+    norm_parameter_count = sum(
+        parameter.numel() for parameter in optimizer_parameter_groups[2]["params"]
+    )
     hyperparameters: dict[str, object] = {
         "VOCAB_SIZE": VOCAB_SIZE,
         "N_BLOCKS": N_BLOCKS,
@@ -717,6 +735,7 @@ def main() -> None:
         "ADAM_BETA1": ADAM_BETA1,
         "ADAM_BETA2": ADAM_BETA2,
         "ADAM_EPS": ADAM_EPS,
+        "NORM_LR_MULTIPLIER": NORM_LR_MULTIPLIER,
         "WARMUP_STEPS": WARMUP_STEPS,
         "BATCH_SIZE": BATCH_SIZE,
         "GRAD_ACCUM_STEPS": GRAD_ACCUM_STEPS,
@@ -761,11 +780,14 @@ def main() -> None:
         "adam_beta1": ADAM_BETA1,
         "adam_beta2": ADAM_BETA2,
         "adam_epsilon": ADAM_EPS,
+        "norm_learning_rate_multiplier": NORM_LR_MULTIPLIER,
+        "norm_learning_rate": LR * NORM_LR_MULTIPLIER,
         "warmup_steps": WARMUP_STEPS,
         "weight_decay": WEIGHT_DECAY,
         "z_loss_coefficient": Z_LOSS_COEFFICIENT,
         "decayed_parameters": decayed_parameter_count,
         "no_decay_parameters": no_decay_parameter_count,
+        "norm_parameters": norm_parameter_count,
         "max_gradient_norm": MAX_GRAD_NORM,
         "validation_interval": VALIDATION_INTERVAL,
         "validation_steps": VALIDATION_STEPS,
@@ -865,6 +887,7 @@ def main() -> None:
                     error_if_nonfinite=True,
                 )
                 learning_rate = optimizer.param_groups[0]["lr"]
+                norm_learning_rate = optimizer.param_groups[2]["lr"]
                 optimizer.step()
                 if should_log_diagnostics:
                     update_norm, update_rms = adamw_update_stats(optimizer)
@@ -925,6 +948,9 @@ def main() -> None:
                     "train/clip_fraction", clipped_steps / global_step, global_step
                 )
                 writer.add_scalar("train/learning_rate", learning_rate, global_step)
+                writer.add_scalar(
+                    "train/norm_learning_rate", norm_learning_rate, global_step
+                )
                 writer.add_scalar("train/tokens_seen", tokens_seen, global_step)
 
                 if should_log_diagnostics:
