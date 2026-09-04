@@ -22,6 +22,8 @@ if "MPLCONFIGDIR" not in os.environ:
         )
 
 import matplotlib.pyplot as plt
+from matplotlib.colors import LogNorm
+from matplotlib.lines import Line2D
 from matplotlib.ticker import FuncFormatter
 import numpy as np
 from scipy.optimize import OptimizeResult, minimize
@@ -447,7 +449,7 @@ def human_count(value: float, _position: float | None = None) -> str:
     return f"{value:g}"
 
 
-def human_flops(value: float) -> str:
+def human_flops(value: float, _position: float | None = None) -> str:
     for scale, suffix in (
         (1e30, "Q"),
         (1e27, "R"),
@@ -642,32 +644,12 @@ def print_unobserved_grid(
 def plot_scaling_curves(
     data: ScalingData,
     fits: list[LawFit],
+    optimal_allocations: list[dict[str, object]],
     destination: Path | None,
     extrapolation_factor: float,
     validation_scale: float,
     validation_metric: str,
 ) -> None:
-    minimum_parameters = float(np.min(data.parameters))
-    minimum_tokens = float(np.min(data.train_tokens))
-    data_band = data.parameters == minimum_parameters
-    model_band = data.train_tokens == minimum_tokens
-    if np.count_nonzero(data_band) < 2 or np.count_nonzero(model_band) < 2:
-        raise ValueError(
-            "plotting requires at least two D-band points at minimum N and two "
-            "N-band points at minimum D"
-        )
-
-    token_grid = np.geomspace(
-        float(np.min(data.train_tokens)),
-        float(np.max(data.train_tokens)) * extrapolation_factor,
-        500,
-    )
-    parameter_grid = np.geomspace(
-        float(np.min(data.parameters)),
-        float(np.max(data.parameters)) * extrapolation_factor,
-        500,
-    )
-
     surface_parameters = np.geomspace(
         float(np.min(data.parameters)),
         float(np.max(data.parameters)) * extrapolation_factor,
@@ -696,97 +678,124 @@ def plot_scaling_curves(
 
     unobserved_pairs = unobserved_grid_points(data)
 
-    figure, axes = plt.subplots(2, 2, figsize=(14, 10), constrained_layout=True)
-    curve_axes = axes[0]
-    surface_axes = axes[1]
-    colors = {"Skaling": "#0068b5", "Chinchilla": "#d1495b"}
-    linestyles = {"Skaling": "-", "Chinchilla": "--"}
-
-    curve_axes[0].scatter(
-        data.train_tokens[data_band],
-        data.validation_loss[data_band] * validation_scale,
-        color="black",
-        marker="o",
-        s=38,
-        label="Observed",
-        zorder=3,
+    figure = plt.figure(figsize=(14, 11), constrained_layout=True)
+    grid = figure.add_gridspec(2, 2, height_ratios=(1.0, 1.15))
+    compute_axes = np.asarray(
+        [figure.add_subplot(grid[0, 0]), figure.add_subplot(grid[0, 1])]
     )
-    curve_axes[1].scatter(
-        data.parameters[model_band],
-        data.validation_loss[model_band] * validation_scale,
-        color="black",
-        marker="o",
-        s=38,
-        label="Observed",
-        zorder=3,
+    surface_axes = np.asarray(
+        [figure.add_subplot(grid[1, 0]), figure.add_subplot(grid[1, 1])]
     )
 
-    for fit in fits:
-        fixed_k = 1.0 if fit.name == "Chinchilla" else None
-        data_curve = predict(
-            np.asarray(fit.result.x),
-            np.full_like(token_grid, minimum_parameters / data.parameter_reference),
-            token_grid / data.token_reference,
-            fixed_k,
-        ) * validation_scale
-        model_curve = predict(
-            np.asarray(fit.result.x),
-            parameter_grid / data.parameter_reference,
-            np.full_like(parameter_grid, minimum_tokens / data.token_reference),
-            fixed_k,
-        ) * validation_scale
-        label = f"{fit.name} (MAPE {fit.mape:.2f}%)"
-        curve_axes[0].plot(
-            token_grid,
-            data_curve,
-            color=colors[fit.name],
-            linestyle=linestyles[fit.name],
-            linewidth=2,
-            label=label,
-        )
-        curve_axes[1].plot(
-            parameter_grid,
-            model_curve,
-            color=colors[fit.name],
-            linestyle=linestyles[fit.name],
-            linewidth=2,
-            label=label,
-        )
-
-    curve_axes[0].set_title(
-        f"Data scaling at N={human_count(minimum_parameters)}"
+    compute_budgets = np.asarray(
+        [float(row["flops"]) for row in optimal_allocations]
     )
-    curve_axes[0].set_xlabel("Training tokens D")
-    curve_axes[0].set_ylabel(validation_metric)
-    curve_axes[1].set_title(
-        f"Model scaling at D={human_count(minimum_tokens)} tokens"
+    budget_norm = LogNorm(
+        vmin=float(np.min(compute_budgets)),
+        vmax=float(np.max(compute_budgets)),
     )
-    curve_axes[1].set_xlabel("Non-embedding parameters N")
-    curve_axes[1].set_ylabel(validation_metric)
+    budget_cmap = plt.get_cmap("plasma")
 
-    for axis in curve_axes:
-        axis.set_xscale("log")
-        axis.xaxis.set_major_formatter(FuncFormatter(human_count))
-        axis.grid(True, which="both", alpha=0.25)
+    optimal_parameters = [
+        float(allocation["parameters"])
+        for row in optimal_allocations
+        for allocation in row["fits"].values()
+    ]
+    parameter_minimum = min(
+        float(np.min(data.parameters)), min(optimal_parameters)
+    )
+    parameter_maximum = max(
+        float(np.max(data.parameters)) * extrapolation_factor,
+        max(optimal_parameters),
+    )
+    iso_parameter_grid = np.geomspace(
+        parameter_minimum / 1.25,
+        parameter_maximum * 1.25,
+        600,
+    )
 
-    if extrapolation_factor > 1.0:
-        curve_axes[0].axvspan(
-            float(np.max(data.train_tokens)),
-            float(np.max(data.train_tokens)) * extrapolation_factor,
-            color="black",
-            alpha=0.06,
-            label="Extrapolation",
+    for compute_axis, fit in zip(compute_axes, fits, strict=True):
+        for row in optimal_allocations:
+            compute_budget = float(row["flops"])
+            color = budget_cmap(budget_norm(compute_budget))
+            fixed_k = 1.0 if fit.name == "Chinchilla" else None
+            iso_tokens = compute_budget / (6.0 * iso_parameter_grid)
+            iso_loss = predict(
+                np.asarray(fit.result.x),
+                iso_parameter_grid / data.parameter_reference,
+                iso_tokens / data.token_reference,
+                fixed_k,
+            ) * validation_scale
+            compute_axis.plot(
+                iso_parameter_grid,
+                iso_loss,
+                color=color,
+                linewidth=1.2,
+                alpha=0.65,
+                zorder=1,
+            )
+
+            allocation = row["fits"][fit.name.lower()]
+            compute_axis.scatter(
+                float(allocation["parameters"]),
+                float(allocation["predicted_metric"]),
+                color=[color],
+                edgecolors="black",
+                linewidths=0.45,
+                marker="o",
+                s=22,
+                zorder=3,
+            )
+
+    plotted_metrics = [
+        *(
+            float(allocation["predicted_metric"])
+            for row in optimal_allocations
+            for allocation in row["fits"].values()
+        ),
+    ]
+    metric_minimum = min(plotted_metrics)
+    metric_maximum = max(plotted_metrics)
+    metric_padding = max(
+        0.05 * metric_maximum,
+        0.08 * (metric_maximum - metric_minimum),
+    )
+    for compute_axis, fit in zip(compute_axes, fits, strict=True):
+        compute_axis.set_ylim(
+            max(0.0, metric_minimum - metric_padding),
+            metric_maximum + metric_padding,
         )
-        curve_axes[1].axvspan(
-            float(np.max(data.parameters)),
-            float(np.max(data.parameters)) * extrapolation_factor,
-            color="black",
-            alpha=0.06,
-            label="Extrapolation",
+        compute_axis.set_xscale("log")
+        compute_axis.xaxis.set_major_formatter(FuncFormatter(human_count))
+        compute_axis.set_title(
+            f"{fit.name} iso-FLOP curves (MAPE {fit.mape:.2f}%)"
+        )
+        compute_axis.set_xlabel("Non-embedding parameters N")
+        compute_axis.set_ylabel(validation_metric)
+        compute_axis.grid(True, which="both", alpha=0.25)
+        compute_axis.legend(
+            handles=[
+                Line2D(
+                    [0],
+                    [0],
+                    color="black",
+                    marker="o",
+                    linestyle="none",
+                    markersize=5,
+                    label="Compute optimum",
+                )
+            ],
+            loc="upper right",
         )
 
-    for axis in curve_axes:
-        axis.legend()
+    compute_scale = plt.cm.ScalarMappable(norm=budget_norm, cmap=budget_cmap)
+    compute_colorbar = figure.colorbar(
+        compute_scale,
+        ax=list(compute_axes),
+        label="Compute budget (FLOPs)",
+        pad=0.02,
+    )
+    compute_colorbar.ax.yaxis.set_major_formatter(FuncFormatter(human_flops))
 
     surface_minimum = min(
         float(np.min(data.validation_loss)) * validation_scale,
@@ -1022,6 +1031,7 @@ def main() -> None:
     plot_scaling_curves(
         data,
         fits,
+        optimal_allocations,
         args.output,
         args.extrapolation_factor,
         validation_scale,
