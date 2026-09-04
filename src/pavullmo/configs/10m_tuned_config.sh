@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+_PAVULLMO_CONFIG_DIR="$({ cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd; })"
+source "${_PAVULLMO_CONFIG_DIR}/10m_config.sh"
+unset _PAVULLMO_CONFIG_DIR
+
+export VOCAB_SIZE=16384
+export DATASET_PREFIX=16k
+export ROPE_BASE=10000.0
+export INITIALIZATION=gpt_scaled
+export INITIALIZATION_STD=0.02
+export QK_NORM=true
+
+export LR=0.00240
+export MIN_LR=0.0
+export LR_SCHEDULER=wsd
+export WSD_DECAY_FRACTION=0.20
+export WARMUP_STEPS=219
+
+export ADAM_BETA1=0.9
+export ADAM_BETA2=0.9025
+export ADAM_EPS=1e-8
+export BATCH_SIZE=16
+export GRAD_ACCUM_STEPS=1
+export WEIGHT_DECAY=0.05
+export MAX_GRAD_NORM=1.0
+
+export DROPOUT=0.0
+export Z_LOSS_COEFFICIENT=0.0
+export VALIDATION_INTERVAL=149
+export VALIDATION_STEPS=7
+export DIAGNOSTICS_INTERVAL=30
