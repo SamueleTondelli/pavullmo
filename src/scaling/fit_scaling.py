@@ -127,6 +127,21 @@ def parse_args() -> argparse.Namespace:
         ),
     )
     parser.add_argument(
+        "--compute-budget",
+        "--compute-budgets",
+        dest="compute_budgets",
+        type=float,
+        nargs="+",
+        action="extend",
+        default=[],
+        metavar="FLOPS",
+        help=(
+            "Additional compute budgets in FLOPs. May be passed more than "
+            "once; automatic budgets are derived from the N-D grid and the "
+            "extrapolation factor."
+        ),
+    )
+    parser.add_argument(
         "--plot-bpb",
         action="store_true",
         help=(
@@ -432,6 +447,21 @@ def human_count(value: float, _position: float | None = None) -> str:
     return f"{value:g}"
 
 
+def human_flops(value: float) -> str:
+    for scale, suffix in (
+        (1e30, "Q"),
+        (1e27, "R"),
+        (1e24, "Y"),
+        (1e21, "Z"),
+        (1e18, "E"),
+        (1e15, "P"),
+        (1e12, "T"),
+    ):
+        if value >= scale:
+            return f"{value / scale:g}{suffix}"
+    return human_count(value)
+
+
 def unobserved_grid_points(data: ScalingData) -> np.ndarray:
     unique_parameters = np.unique(data.parameters)
     unique_tokens = np.unique(data.train_tokens)
@@ -450,6 +480,112 @@ def unobserved_grid_points(data: ScalingData) -> np.ndarray:
     if not missing:
         return np.empty((0, 2), dtype=np.float64)
     return np.asarray(missing, dtype=np.float64)
+
+
+def derive_compute_budgets(
+    data: ScalingData, extrapolation_factor: float
+) -> list[float]:
+    """Return grid compute budgets plus the plot's extrapolated upper corner."""
+    unique_parameters = np.unique(data.parameters)
+    unique_tokens = np.unique(data.train_tokens)
+    grid_budgets = 6.0 * np.multiply.outer(unique_parameters, unique_tokens).ravel()
+    extrapolated_corner_budget = (
+        6.0
+        * float(np.max(unique_parameters))
+        * extrapolation_factor
+        * float(np.max(unique_tokens))
+        * extrapolation_factor
+    )
+    return sorted(
+        {
+            *(float(budget) for budget in grid_budgets),
+            extrapolated_corner_budget,
+        }
+    )
+
+
+def compute_optimal_allocation(
+    fit: LawFit, compute_budget: float
+) -> tuple[float, float]:
+    """Minimize a fitted law subject to ``compute_budget = 6 * N * D``."""
+    coefficients = fit.raw_coefficients
+    a = coefficients["A"]
+    b = coefficients["B"]
+    alpha = coefficients["alpha"]
+    beta = coefficients["beta"]
+    nd_product = compute_budget / 6.0
+
+    log_parameters = (
+        math.log(alpha * a)
+        - math.log(beta * b)
+        + beta * math.log(nd_product)
+    ) / (alpha + beta)
+    parameters = math.exp(log_parameters)
+    train_tokens = math.exp(math.log(nd_product) - log_parameters)
+    return parameters, train_tokens
+
+
+def compute_optimal_allocations(
+    data: ScalingData,
+    fits: list[LawFit],
+    compute_budgets: list[float],
+    validation_scale: float,
+) -> list[dict[str, object]]:
+    allocations: list[dict[str, object]] = []
+    for compute_budget in compute_budgets:
+        fit_allocations: dict[str, object] = {}
+        for fit in fits:
+            parameters, train_tokens = compute_optimal_allocation(
+                fit, compute_budget
+            )
+            fixed_k = 1.0 if fit.name == "Chinchilla" else None
+            predicted_metric = float(
+                predict(
+                    np.asarray(fit.result.x),
+                    np.asarray([parameters / data.parameter_reference]),
+                    np.asarray([train_tokens / data.token_reference]),
+                    fixed_k,
+                )[0]
+                * validation_scale
+            )
+            fit_allocations[fit.name.lower()] = {
+                "parameters": parameters,
+                "train_tokens": train_tokens,
+                "predicted_metric": predicted_metric,
+            }
+        allocations.append(
+            {
+                "flops": compute_budget,
+                "fits": fit_allocations,
+            }
+        )
+    return allocations
+
+
+def print_optimal_allocations(
+    allocations: list[dict[str, object]], validation_metric: str
+) -> None:
+    print("\nCompute-optimal allocations (C = 6ND):")
+    print(
+        f"{'FLOPs':>12} "
+        f"{'Skaling N':>12} {'Skaling D':>12} {validation_metric:>16} "
+        f"{'Chinchilla N':>13} {'Chinchilla D':>13} {validation_metric:>16}"
+    )
+    for row in allocations:
+        fits = row["fits"]
+        assert isinstance(fits, dict)
+        skaling = fits["skaling"]
+        chinchilla = fits["chinchilla"]
+        assert isinstance(skaling, dict) and isinstance(chinchilla, dict)
+        print(
+            f"{human_flops(float(row['flops'])):>12} "
+            f"{human_count(float(skaling['parameters'])):>12} "
+            f"{human_count(float(skaling['train_tokens'])):>12} "
+            f"{float(skaling['predicted_metric']):>16.8f} "
+            f"{human_count(float(chinchilla['parameters'])):>13} "
+            f"{human_count(float(chinchilla['train_tokens'])):>13} "
+            f"{float(chinchilla['predicted_metric']):>16.8f}"
+        )
 
 
 def predict_unobserved_grid(
@@ -796,6 +932,13 @@ def main() -> None:
         or args.extrapolation_factor < 1.0
     ):
         raise ValueError("--extrapolation-factor must be finite and at least 1")
+    if any(
+        not math.isfinite(budget) or budget <= 0.0
+        for budget in args.compute_budgets
+    ):
+        raise ValueError(
+            "--compute-budget values must be finite and greater than zero"
+        )
 
     data = read_scaling_data(args.csv, args.tokenizer)
     validation_scale = 1.0
@@ -839,8 +982,34 @@ def main() -> None:
         data, fits, validation_scale
     )
     summary["unobserved_grid_predictions"] = unobserved_predictions
+    automatic_compute_budgets = derive_compute_budgets(
+        data, args.extrapolation_factor
+    )
+    additional_compute_budgets = sorted(set(args.compute_budgets))
+    compute_budgets = sorted(
+        set(automatic_compute_budgets) | set(additional_compute_budgets)
+    )
+    optimal_allocations = compute_optimal_allocations(
+        data,
+        fits,
+        compute_budgets,
+        validation_scale,
+    )
+    summary["compute_optimal_allocations"] = {
+        "formula": "C = 6ND",
+        "automatic_budget_derivation": (
+            "Unique 6ND values from the full grid formed from observed N and "
+            "D values, plus 6 * (max(N) * extrapolation_factor) * "
+            "(max(D) * extrapolation_factor)."
+        ),
+        "metric": "validation_bpb" if args.plot_bpb else "validation_loss",
+        "automatic_budgets": automatic_compute_budgets,
+        "additional_budgets": additional_compute_budgets,
+        "allocations": optimal_allocations,
+    }
     print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
     print_unobserved_grid(unobserved_predictions, validation_metric)
+    print_optimal_allocations(optimal_allocations, validation_metric)
 
     if args.results_json is not None:
         args.results_json.parent.mkdir(parents=True, exist_ok=True)
