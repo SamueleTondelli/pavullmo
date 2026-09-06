@@ -81,6 +81,7 @@ class CausalSelfAttention(nn.Module):
         seq_len: int = 2048,
         rope_base: float = 10000.0,
         qk_norm: bool = False,
+        split_qkv_projections: bool = False,
     ):
         super().__init__()
         if num_heads <= 0:
@@ -94,8 +95,14 @@ class CausalSelfAttention(nn.Module):
         self.rope = RoPE(seq_len, head_dim, base=rope_base)
         self.q_norm = nn.RMSNorm(head_dim) if qk_norm else nn.Identity()
         self.k_norm = nn.RMSNorm(head_dim) if qk_norm else nn.Identity()
-        # key, query, value projections for all heads, but in a batch
-        self.c_attn = nn.Linear(embed_dimension, 3 * embed_dimension, bias=bias)
+        self.split_qkv_projections = split_qkv_projections
+        if split_qkv_projections:
+            self.q_proj = nn.Linear(embed_dimension, embed_dimension, bias=bias)
+            self.k_proj = nn.Linear(embed_dimension, embed_dimension, bias=bias)
+            self.v_proj = nn.Linear(embed_dimension, embed_dimension, bias=bias)
+        else:
+            # Preserve the original parameter layout and checkpoint keys.
+            self.c_attn = nn.Linear(embed_dimension, 3 * embed_dimension, bias=bias)
         # output projection
         self.c_proj = nn.Linear(embed_dimension, embed_dimension, bias=bias)
         # regularization
@@ -104,8 +111,20 @@ class CausalSelfAttention(nn.Module):
         self.embed_dimension = embed_dimension
 
     def forward(self, x):
-        # calculate query, key, values for all heads in batch and move head forward to be the batch dim
-        query_projected = self.c_attn(x)
+        if self.split_qkv_projections:
+            qkv_weight = torch.cat(
+                [self.q_proj.weight, self.k_proj.weight, self.v_proj.weight], dim=0
+            )
+            qkv_bias = (
+                None
+                if self.q_proj.bias is None
+                else torch.cat(
+                    [self.q_proj.bias, self.k_proj.bias, self.v_proj.bias], dim=0
+                )
+            )
+            query_projected = F.linear(x, qkv_weight, qkv_bias)
+        else:
+            query_projected = self.c_attn(x)
 
         batch_size = query_projected.size(0)
         head_dim = self.embed_dimension // self.num_heads
@@ -162,6 +181,7 @@ class TransformerBlock(nn.Module):
         seq_len: int = 2048,
         rope_base: float = 10000.0,
         qk_norm: bool = False,
+        split_qkv_projections: bool = False,
     ):
         super().__init__()
         self.embed_dim = embed_dim
@@ -174,6 +194,7 @@ class TransformerBlock(nn.Module):
             seq_len=seq_len,
             rope_base=rope_base,
             qk_norm=qk_norm,
+            split_qkv_projections=split_qkv_projections,
         )
         self.attn_dropout = nn.Dropout(dropout)
 
@@ -209,6 +230,7 @@ class DecoderTransformer(nn.Module):
         initialization: str = "pytorch_default",
         initialization_std: float = BASE_INITIALIZATION_STD,
         qk_norm: bool = False,
+        split_qkv_projections: bool = False,
     ):
         super().__init__()
         initialization = initialization.strip().lower()
@@ -233,6 +255,7 @@ class DecoderTransformer(nn.Module):
                 seq_len=seq_len,
                 rope_base=rope_base,
                 qk_norm=qk_norm,
+                split_qkv_projections=split_qkv_projections,
             )
             for _ in range(n_blocks)
         )

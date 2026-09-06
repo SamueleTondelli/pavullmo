@@ -52,6 +52,7 @@ ROPE_BASE = float(os.environ.get("ROPE_BASE", 10000.0))
 INITIALIZATION = os.environ.get("INITIALIZATION", "pytorch_default").strip().lower()
 INITIALIZATION_STD = float(os.environ.get("INITIALIZATION_STD", 0.02))
 QK_NORM = env_bool("QK_NORM", False)
+SPLIT_QKV_PROJECTIONS = env_bool("SPLIT_QKV_PROJECTIONS", False)
 
 # Training hyperparameters.
 LR = float(os.environ.get("LR", 1e-3))
@@ -522,6 +523,12 @@ def gradient_group_name(parameter_name: str) -> str:
         return "embeddings"
     if ".attn.c_attn." in parameter_name:
         return "attention_qkv"
+    if ".attn.q_proj." in parameter_name:
+        return "attention_query"
+    if ".attn.k_proj." in parameter_name:
+        return "attention_key"
+    if ".attn.v_proj." in parameter_name:
+        return "attention_value"
     if ".attn.c_proj." in parameter_name:
         return "attention_output"
     if ".ffn.w1." in parameter_name or ".ffn.w3." in parameter_name:
@@ -540,6 +547,8 @@ def gradient_norms_by_group(model: torch.nn.Module) -> dict[str, float]:
             continue
         group_name = gradient_group_name(name)
         grouped_gradients.setdefault(group_name, []).append(parameter.grad)
+        if group_name in {"attention_query", "attention_key", "attention_value"}:
+            grouped_gradients.setdefault("attention_qkv", []).append(parameter.grad)
 
     return {
         group_name: tensor_collection_stats(gradients)[0]
@@ -963,6 +972,7 @@ def main() -> None:
         initialization=INITIALIZATION,
         initialization_std=INITIALIZATION_STD,
         qk_norm=QK_NORM,
+        split_qkv_projections=SPLIT_QKV_PROJECTIONS,
     ).to(device)
 
     optimizer_adam_parameter_groups = build_adamw_parameter_groups(model)
@@ -1069,6 +1079,7 @@ def main() -> None:
         "INITIALIZATION": INITIALIZATION,
         "INITIALIZATION_STD": INITIALIZATION_STD,
         "QK_NORM": QK_NORM,
+        "SPLIT_QKV_PROJECTIONS": SPLIT_QKV_PROJECTIONS,
         "LR": LR,
         "MIN_LR": MIN_LR,
         "LR_SCHEDULER": LR_SCHEDULER,
@@ -1117,6 +1128,7 @@ def main() -> None:
         "initialization": INITIALIZATION,
         "initialization_std": INITIALIZATION_STD,
         "qk_norm": QK_NORM,
+        "split_qkv_projections": SPLIT_QKV_PROJECTIONS,
         "sequence_length": SEQ_LEN,
         "micro_batch_size": BATCH_SIZE,
         "gradient_accumulation_steps": GRAD_ACCUM_STEPS,

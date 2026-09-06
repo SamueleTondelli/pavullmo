@@ -229,6 +229,16 @@ def load_model(
     if not isinstance(hyperparameters, dict):
         raise ValueError("checkpoint does not contain a hyperparameters mapping")
 
+    state_dict = checkpoint.get("model_state_dict")
+    if not isinstance(state_dict, dict):
+        raise ValueError("checkpoint does not contain a model_state_dict")
+    split_qkv_projections = bool(
+        hyperparameters.get(
+            "SPLIT_QKV_PROJECTIONS",
+            any(".attn.q_proj." in name for name in state_dict),
+        )
+    )
+
     model = DecoderTransformer(
         vocab_size=int(hyperparameters["VOCAB_SIZE"]),
         n_blocks=int(hyperparameters["N_BLOCKS"]),
@@ -239,11 +249,9 @@ def load_model(
         seq_len=int(hyperparameters["SEQ_LEN"]),
         rope_base=float(hyperparameters["ROPE_BASE"]),
         qk_norm=bool(hyperparameters["QK_NORM"]),
+        split_qkv_projections=split_qkv_projections,
     )
 
-    state_dict = checkpoint.get("model_state_dict")
-    if not isinstance(state_dict, dict):
-        raise ValueError("checkpoint does not contain a model_state_dict")
     model.load_state_dict(state_dict)
     model.to(device)
     model.eval()

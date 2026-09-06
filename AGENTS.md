@@ -33,6 +33,10 @@ pre-tokenized datasets, and a local single-GPU pretraining loop are implemented.
 - Rotary positional embeddings (RoPE) are applied to queries and keys. The
   configured context length is a hard limit, and each attention head must have
   an even dimension.
+- Set `SPLIT_QKV_PROJECTIONS=true` to store query, key, and value projections as
+  separate parameters while retaining one concatenated attention projection in
+  the forward pass. It defaults to false for compatibility with existing fused
+  QKV checkpoints.
 - Model inputs are integer token IDs with shape `[batch, sequence]`; outputs are
   vocabulary logits with shape `[batch, sequence, vocab_size]`.
 
@@ -53,6 +57,9 @@ pre-tokenized datasets, and a local single-GPU pretraining loop are implemented.
   every optimizer step. Validation loss is computed periodically over a fixed
   number of validation batches. All metrics and the run configuration are
   written to TensorBoard under `runs/<experiment_name>` by default.
+- Diagnostic gradient logs retain `gradient_groups/attention_qkv` for both
+  layouts and additionally report query, key, and value norms when split QKV is
+  enabled.
 - After successful training, the final model checkpoint is written under
   `MODEL_OUTPUT_DIR`. It contains the model state, final losses, global step,
   dataset variant, hyperparameter mapping, and exact hyperparameter string.
