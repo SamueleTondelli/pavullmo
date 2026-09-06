@@ -1,0 +1,2991 @@
+{
+  "Original AdamW": {
+    "run": "10m_tuned_tok16k_907m",
+    "csv": {
+      "experiment_name": "10m_tuned_tok16k_907m",
+      "dataset_variant": "907m",
+      "train_loss": "3.753686428",
+      "validation_loss": "3.837989432",
+      "train_script": "pretrain_base.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_tuned_tok16k_907m.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.9025;ADAM_EPS=1e-08;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=907m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default"
+    },
+    "configuration": {
+      "experiment_name": "10m_tuned_tok16k_907m",
+      "dataset_prefix": "16k",
+      "dataset_variant": "907m",
+      "train_tokens": 213050814,
+      "validation_tokens": 8361799,
+      "parameters": 10635520,
+      "initialization": "gpt_scaled",
+      "initialization_std": 0.02,
+      "qk_norm": true,
+      "sequence_length": 1024,
+      "micro_batch_size": 16,
+      "gradient_accumulation_steps": 1,
+      "effective_batch_size": 16,
+      "epochs": 1,
+      "max_steps": 0,
+      "total_steps": 13003,
+      "learning_rate": 0.0024,
+      "minimum_learning_rate": 0.0,
+      "lr_scheduler": "wsd",
+      "wsd_decay_fraction": 0.2,
+      "wsd_stable_steps": 10227,
+      "wsd_decay_steps": 2557,
+      "adam_beta1": 0.9,
+      "adam_beta2": 0.9025,
+      "adam_epsilon": 1e-08,
+      "warmup_steps": 219,
+      "weight_decay": 0.05,
+      "z_loss_coefficient": 0.0,
+      "decayed_parameters": 6422528,
+      "no_decay_parameters": 4212992,
+      "max_gradient_norm": 1.0,
+      "validation_interval": 149,
+      "validation_steps": 7,
+      "diagnostics_interval": 30,
+      "tensorboard_flush_seconds": 5,
+      "runs_csv": "/home/samuele/Desktop/pavullmo/src/pavullmo/pretrain_runs.csv",
+      "model_output_dir": "/home/samuele/Desktop/pavullmo/models",
+      "train_script": "pretrain_base.py",
+      "compile_model": true,
+      "compile_mode": "default",
+      "seed": 42
+    },
+    "checkpoint_groups": {
+      "embeddings": {
+        "count": 4194304,
+        "norm": 444.8498481946553,
+        "rms": 0.21721183993879653
+      },
+      "norms": {
+        "count": 5376,
+        "norm": 73.00061420916978,
+        "rms": 0.9956275011660398
+      },
+      "attention_qkv": {
+        "count": 1572864,
+        "norm": 168.8072325730342,
+        "rms": 0.13460012522632217
+      },
+      "attention_output": {
+        "count": 524288,
+        "norm": 93.31351402588888,
+        "rms": 0.12887230184385162
+      },
+      "ffn_input_gate": {
+        "count": 2894848,
+        "norm": 238.93418453488914,
+        "rms": 0.14043178190627237
+      },
+      "ffn_output": {
+        "count": 1443840,
+        "norm": 167.46719261243544,
+        "rms": 0.13937029050948144
+      }
+    },
+    "checkpoint_qkv": {
+      "Q": {
+        "count": 524288,
+        "norm": 104.62327456659688,
+        "rms": 0.1444918494452787
+      },
+      "K": {
+        "count": 524288,
+        "norm": 94.93017573111965,
+        "rms": 0.13110502148184633
+      },
+      "V": {
+        "count": 524288,
+        "norm": 92.40191515108162,
+        "rms": 0.12761332187100352
+      }
+    },
+    "checkpoint_spectra": {
+      "attention_qkv": [
+        {
+          "name": "layers.0.attn.c_attn.weight",
+          "spectral_norm": 13.848139762878418,
+          "stable_rank": 10.60279369354248
+        },
+        {
+          "name": "layers.1.attn.c_attn.weight",
+          "spectral_norm": 16.91390609741211,
+          "stable_rank": 12.440240859985352
+        },
+        {
+          "name": "layers.2.attn.c_attn.weight",
+          "spectral_norm": 18.35793685913086,
+          "stable_rank": 10.6286039352417
+        },
+        {
+          "name": "layers.3.attn.c_attn.weight",
+          "spectral_norm": 17.77157211303711,
+          "stable_rank": 11.722168922424316
+        },
+        {
+          "name": "layers.4.attn.c_attn.weight",
+          "spectral_norm": 17.816747665405273,
+          "stable_rank": 11.196966171264648
+        },
+        {
+          "name": "layers.5.attn.c_attn.weight",
+          "spectral_norm": 15.346433639526367,
+          "stable_rank": 15.591428756713867
+        },
+        {
+          "name": "layers.6.attn.c_attn.weight",
+          "spectral_norm": 15.978938102722168,
+          "stable_rank": 16.38690185546875
+        },
+        {
+          "name": "layers.7.attn.c_attn.weight",
+          "spectral_norm": 18.191551208496094,
+          "stable_rank": 12.719100952148438
+        }
+      ],
+      "attention_output": [
+        {
+          "name": "layers.0.attn.c_proj.weight",
+          "spectral_norm": 5.9155097007751465,
+          "stable_rank": 4.263157367706299
+        },
+        {
+          "name": "layers.1.attn.c_proj.weight",
+          "spectral_norm": 6.6695661544799805,
+          "stable_rank": 21.00364112854004
+        },
+        {
+          "name": "layers.2.attn.c_proj.weight",
+          "spectral_norm": 5.511470794677734,
+          "stable_rank": 31.409772872924805
+        },
+        {
+          "name": "layers.3.attn.c_proj.weight",
+          "spectral_norm": 4.999554634094238,
+          "stable_rank": 39.59353256225586
+        },
+        {
+          "name": "layers.4.attn.c_proj.weight",
+          "spectral_norm": 5.318593502044678,
+          "stable_rank": 36.57233810424805
+        },
+        {
+          "name": "layers.5.attn.c_proj.weight",
+          "spectral_norm": 5.373404026031494,
+          "stable_rank": 44.89729690551758
+        },
+        {
+          "name": "layers.6.attn.c_proj.weight",
+          "spectral_norm": 6.036150932312012,
+          "stable_rank": 50.463443756103516
+        },
+        {
+          "name": "layers.7.attn.c_proj.weight",
+          "spectral_norm": 7.750919818878174,
+          "stable_rank": 25.14497184753418
+        }
+      ],
+      "ffn_input_gate": [
+        {
+          "name": "layers.0.ffn.w1.weight",
+          "spectral_norm": 12.798452377319336,
+          "stable_rank": 19.642303466796875
+        },
+        {
+          "name": "layers.0.ffn.w3.weight",
+          "spectral_norm": 5.98940372467041,
+          "stable_rank": 88.98002624511719
+        },
+        {
+          "name": "layers.1.ffn.w1.weight",
+          "spectral_norm": 13.842644691467285,
+          "stable_rank": 18.892677307128906
+        },
+        {
+          "name": "layers.1.ffn.w3.weight",
+          "spectral_norm": 8.035589218139648,
+          "stable_rank": 49.36479949951172
+        },
+        {
+          "name": "layers.2.ffn.w1.weight",
+          "spectral_norm": 13.8473539352417,
+          "stable_rank": 19.21159553527832
+        },
+        {
+          "name": "layers.2.ffn.w3.weight",
+          "spectral_norm": 8.592473030090332,
+          "stable_rank": 45.87953567504883
+        },
+        {
+          "name": "layers.3.ffn.w1.weight",
+          "spectral_norm": 14.724663734436035,
+          "stable_rank": 17.035419464111328
+        },
+        {
+          "name": "layers.3.ffn.w3.weight",
+          "spectral_norm": 8.578133583068848,
+          "stable_rank": 47.712337493896484
+        },
+        {
+          "name": "layers.4.ffn.w1.weight",
+          "spectral_norm": 14.10835075378418,
+          "stable_rank": 17.908674240112305
+        },
+        {
+          "name": "layers.4.ffn.w3.weight",
+          "spectral_norm": 7.982228755950928,
+          "stable_rank": 57.17827606201172
+        },
+        {
+          "name": "layers.5.ffn.w1.weight",
+          "spectral_norm": 13.075812339782715,
+          "stable_rank": 20.11940574645996
+        },
+        {
+          "name": "layers.5.ffn.w3.weight",
+          "spectral_norm": 7.927911758422852,
+          "stable_rank": 61.0288200378418
+        },
+        {
+          "name": "layers.6.ffn.w1.weight",
+          "spectral_norm": 10.508038520812988,
+          "stable_rank": 29.837337493896484
+        },
+        {
+          "name": "layers.6.ffn.w3.weight",
+          "spectral_norm": 8.884639739990234,
+          "stable_rank": 50.224266052246094
+        },
+        {
+          "name": "layers.7.ffn.w1.weight",
+          "spectral_norm": 10.088695526123047,
+          "stable_rank": 31.22028350830078
+        },
+        {
+          "name": "layers.7.ffn.w3.weight",
+          "spectral_norm": 10.25729751586914,
+          "stable_rank": 37.973411560058594
+        }
+      ],
+      "ffn_output": [
+        {
+          "name": "layers.0.ffn.w2.weight",
+          "spectral_norm": 8.688324928283691,
+          "stable_rank": 42.90358352661133
+        },
+        {
+          "name": "layers.1.ffn.w2.weight",
+          "spectral_norm": 12.310528755187988,
+          "stable_rank": 21.58064079284668
+        },
+        {
+          "name": "layers.2.ffn.w2.weight",
+          "spectral_norm": 9.319973945617676,
+          "stable_rank": 39.055091857910156
+        },
+        {
+          "name": "layers.3.ffn.w2.weight",
+          "spectral_norm": 11.155797004699707,
+          "stable_rank": 28.165651321411133
+        },
+        {
+          "name": "layers.4.ffn.w2.weight",
+          "spectral_norm": 11.789737701416016,
+          "stable_rank": 25.703542709350586
+        },
+        {
+          "name": "layers.5.ffn.w2.weight",
+          "spectral_norm": 10.085375785827637,
+          "stable_rank": 36.549869537353516
+        },
+        {
+          "name": "layers.6.ffn.w2.weight",
+          "spectral_norm": 8.929400444030762,
+          "stable_rank": 46.657779693603516
+        },
+        {
+          "name": "layers.7.ffn.w2.weight",
+          "spectral_norm": 10.58107852935791,
+          "stable_rank": 30.94362449645996
+        }
+      ]
+    },
+    "window_means": {
+      "300:1500": {
+        "diagnostics/parameter_norm": 259.9420415366568,
+        "diagnostics/parameter_rms": 0.07970712860909904,
+        "diagnostics/embedding_norm": 207.945415217702,
+        "diagnostics/embedding_rms": 0.10153584727426855,
+        "train/loss": 4.997258616327545,
+        "train/objective": 4.997258616327545,
+        "train/z_loss": 0.0,
+        "train/z_loss_contribution": 0.0,
+        "train/loss_vs_uniform": -4.7068019381768496,
+        "train/perplexity": 157.565414441416,
+        "train/gradient_norm": 0.3376602083816814,
+        "train/gradient_rms": 0.00010353817831327267,
+        "train/clip_coefficient": 0.9991528130292296,
+        "train/gradient_clipped": 0.002497918401332223,
+        "train/clip_fraction": 0.059858021984725174,
+        "train/learning_rate": 0.002400000113993883,
+        "train/tokens_seen": 14745600.0,
+        "diagnostics/gradient_to_parameter_norm": 0.0013429779707022557,
+        "diagnostics/update_norm": 1.6583974855702097,
+        "diagnostics/update_rms": 0.0005085214343569355,
+        "diagnostics/update_to_parameter_norm": 0.006535194780132393,
+        "diagnostics/logit_rms_sample": 5.586977051525581,
+        "diagnostics/logit_absolute_max_sample": 17.073170731707318,
+        "gradient_groups/embeddings": 0.24589921752127206,
+        "gradient_groups/norms": 0.024008965415016906,
+        "gradient_groups/attention_qkv": 0.10762130214673717,
+        "gradient_groups/attention_output": 0.11221414313810628,
+        "gradient_groups/ffn_input_gate": 0.11290370854662686,
+        "gradient_groups/ffn_output": 0.12253059701221745,
+        "system/cuda_memory_allocated_gib": 0.6795563697814941,
+        "system/cuda_memory_reserved_gib": 5.630859375,
+        "system/cuda_peak_memory_allocated_gib": 4.510360240936279,
+        "performance/tokens_per_second": 205638.74521683675,
+        "performance/optimizer_step_seconds": 0.07975291749652551,
+        "validation/loss": 4.968372464179993,
+        "validation/loss_vs_uniform": -4.735688090324402,
+        "validation/perplexity": 150.18476390838623
+      },
+      "3000:6000": {
+        "diagnostics/parameter_norm": 439.5446079367458,
+        "diagnostics/parameter_rms": 0.13477942288512051,
+        "diagnostics/embedding_norm": 317.655131727162,
+        "diagnostics/embedding_rms": 0.1551050447886533,
+        "train/loss": 4.188762676155754,
+        "train/objective": 4.188762676155754,
+        "train/z_loss": 0.0,
+        "train/z_loss_contribution": 0.0,
+        "train/loss_vs_uniform": -5.5152978755680175,
+        "train/perplexity": 66.34825816117934,
+        "train/gradient_norm": 0.2824385155145028,
+        "train/gradient_rms": 8.660531704144453e-05,
+        "train/clip_coefficient": 0.9998052425680062,
+        "train/gradient_clipped": 0.0006664445184938354,
+        "train/clip_fraction": 0.010859415587751577,
+        "train/learning_rate": 0.002400000113993883,
+        "train/tokens_seen": 73728000.0,
+        "diagnostics/gradient_to_parameter_norm": 0.0006430445107548396,
+        "diagnostics/update_norm": 1.6746348213441302,
+        "diagnostics/update_rms": 0.0005135003639855376,
+        "diagnostics/update_to_parameter_norm": 0.0038223143155216286,
+        "diagnostics/logit_rms_sample": 6.232656993488274,
+        "diagnostics/logit_absolute_max_sample": 17.053217821782177,
+        "gradient_groups/embeddings": 0.2037775401431735,
+        "gradient_groups/norms": 0.0745446443336435,
+        "gradient_groups/attention_qkv": 0.08334233980662752,
+        "gradient_groups/attention_output": 0.08226342646792384,
+        "gradient_groups/ffn_input_gate": 0.09579017249369386,
+        "gradient_groups/ffn_output": 0.092603666505011,
+        "system/cuda_memory_allocated_gib": 0.6795563697814941,
+        "system/cuda_memory_reserved_gib": 5.630859375,
+        "system/cuda_peak_memory_allocated_gib": 4.510360240936279,
+        "performance/tokens_per_second": 205473.13671875,
+        "performance/optimizer_step_seconds": 0.07985809501260518,
+        "validation/loss": 4.232894015312195,
+        "validation/loss_vs_uniform": -5.4711665391921995,
+        "validation/perplexity": 68.99032974243164
+      },
+      "8000:10440": {
+        "diagnostics/parameter_norm": 548.8126920374428,
+        "diagnostics/parameter_rms": 0.1682847591071594,
+        "diagnostics/embedding_norm": 412.41723967761527,
+        "diagnostics/embedding_rms": 0.20137560531133558,
+        "train/loss": 4.040560188375502,
+        "train/objective": 4.040560188375502,
+        "train/z_loss": 0.0,
+        "train/z_loss_contribution": 0.0,
+        "train/loss_vs_uniform": -5.663500343957234,
+        "train/perplexity": 57.165723881141325,
+        "train/gradient_norm": 0.2779130046116627,
+        "train/gradient_rms": 8.521764056602285e-05,
+        "train/clip_coefficient": 0.9998228121174989,
+        "train/gradient_clipped": 0.0012290045063498567,
+        "train/clip_fraction": 0.005478708379867989,
+        "train/learning_rate": 0.002400000113993883,
+        "train/tokens_seen": 151060480.0,
+        "diagnostics/gradient_to_parameter_norm": 0.0005014278125954883,
+        "diagnostics/update_norm": 1.6745330560498122,
+        "diagnostics/update_rms": 0.0005134691508407364,
+        "diagnostics/update_to_parameter_norm": 0.0030530608321608205,
+        "diagnostics/logit_rms_sample": 6.009713347365216,
+        "diagnostics/logit_absolute_max_sample": 18.911585365853657,
+        "gradient_groups/embeddings": 0.19996063792850913,
+        "gradient_groups/norms": 0.07773849640677614,
+        "gradient_groups/attention_qkv": 0.08260134007872605,
+        "gradient_groups/attention_output": 0.0757041910163513,
+        "gradient_groups/ffn_input_gate": 0.09229227446201371,
+        "gradient_groups/ffn_output": 0.08981645815983051,
+        "system/cuda_memory_allocated_gib": 0.6795563697814941,
+        "system/cuda_memory_reserved_gib": 5.630859375,
+        "system/cuda_peak_memory_allocated_gib": 4.510360240936279,
+        "performance/tokens_per_second": 206145.30947066325,
+        "performance/optimizer_step_seconds": 0.07954376654661431,
+        "validation/loss": 4.086786887224982,
+        "validation/loss_vs_uniform": -5.617273667279412,
+        "validation/perplexity": 59.553178899428424
+      },
+      "12000:13003": {
+        "diagnostics/parameter_norm": 571.9226911272322,
+        "diagnostics/parameter_rms": 0.17537107637950353,
+        "diagnostics/embedding_norm": 445.0315359933036,
+        "diagnostics/embedding_rms": 0.21730055468423026,
+        "train/loss": 3.826587862939949,
+        "train/objective": 3.826587862939949,
+        "train/z_loss": 0.0,
+        "train/z_loss_contribution": 0.0,
+        "train/loss_vs_uniform": -5.877472627685364,
+        "train/perplexity": 46.17023499553422,
+        "train/gradient_norm": 0.28279330854515633,
+        "train/gradient_rms": 8.671410887110682e-05,
+        "train/clip_coefficient": 1.0,
+        "train/gradient_clipped": 0.0,
+        "train/clip_fraction": 0.004161738671837337,
+        "train/learning_rate": 0.00047089201917098386,
+        "train/tokens_seen": 204824576.0,
+        "diagnostics/gradient_to_parameter_norm": 0.0004914433495806797,
+        "diagnostics/update_norm": 0.3293173614889383,
+        "diagnostics/update_rms": 0.00010097997714443149,
+        "diagnostics/update_to_parameter_norm": 0.0005751844220607641,
+        "diagnostics/logit_rms_sample": 6.467310156141009,
+        "diagnostics/logit_absolute_max_sample": 20.882142857142856,
+        "gradient_groups/embeddings": 0.21098943097250802,
+        "gradient_groups/norms": 0.06024152721677508,
+        "gradient_groups/attention_qkv": 0.08311861072267805,
+        "gradient_groups/attention_output": 0.06999705966029848,
+        "gradient_groups/ffn_input_gate": 0.09603385478258133,
+        "gradient_groups/ffn_output": 0.09788843137877327,
+        "system/cuda_memory_allocated_gib": 0.6795563697814941,
+        "system/cuda_memory_reserved_gib": 5.630859375,
+        "system/cuda_peak_memory_allocated_gib": 4.510360240936279,
+        "performance/tokens_per_second": 206773.09635416666,
+        "performance/optimizer_step_seconds": 0.07927895053511574,
+        "validation/loss": 3.86789470911026,
+        "validation/loss_vs_uniform": -5.836165904998779,
+        "validation/perplexity": 47.858816146850586
+      }
+    },
+    "late_gradient_energy_share": {
+      "gradient_groups/embeddings": 0.5307528256425338,
+      "gradient_groups/norms": 0.08275282942268943,
+      "gradient_groups/attention_qkv": 0.09035888051594793,
+      "gradient_groups/attention_output": 0.07654798528190027,
+      "gradient_groups/ffn_input_gate": 0.11275679560246711,
+      "gradient_groups/ffn_output": 0.10683068353446146
+    },
+    "validation": [
+      [
+        149.0,
+        6.500693321228027
+      ],
+      [
+        298.0,
+        5.850191116333008
+      ],
+      [
+        447.0,
+        5.487591743469238
+      ],
+      [
+        596.0,
+        5.2864556312561035
+      ],
+      [
+        745.0,
+        5.130431175231934
+      ],
+      [
+        894.0,
+        4.9655961990356445
+      ],
+      [
+        1043.0,
+        4.830872058868408
+      ],
+      [
+        1192.0,
+        4.743951797485352
+      ],
+      [
+        1341.0,
+        4.679159164428711
+      ],
+      [
+        1490.0,
+        4.622921943664551
+      ],
+      [
+        1639.0,
+        4.569574356079102
+      ],
+      [
+        1788.0,
+        4.522972583770752
+      ],
+      [
+        1937.0,
+        4.487027645111084
+      ],
+      [
+        2086.0,
+        4.46514892578125
+      ],
+      [
+        2235.0,
+        4.4401373863220215
+      ],
+      [
+        2384.0,
+        4.411481857299805
+      ],
+      [
+        2533.0,
+        4.38899564743042
+      ],
+      [
+        2682.0,
+        4.373317241668701
+      ],
+      [
+        2831.0,
+        4.358931064605713
+      ],
+      [
+        2980.0,
+        4.339862823486328
+      ],
+      [
+        3129.0,
+        4.321740627288818
+      ],
+      [
+        3278.0,
+        4.305617332458496
+      ],
+      [
+        3427.0,
+        4.302481174468994
+      ],
+      [
+        3576.0,
+        4.2759504318237305
+      ],
+      [
+        3725.0,
+        4.280816078186035
+      ],
+      [
+        3874.0,
+        4.26484489440918
+      ],
+      [
+        4023.0,
+        4.26029109954834
+      ],
+      [
+        4172.0,
+        4.2435102462768555
+      ],
+      [
+        4321.0,
+        4.237820148468018
+      ],
+      [
+        4470.0,
+        4.231014251708984
+      ],
+      [
+        4619.0,
+        4.22252082824707
+      ],
+      [
+        4768.0,
+        4.208349704742432
+      ],
+      [
+        4917.0,
+        4.207433223724365
+      ],
+      [
+        5066.0,
+        4.208927631378174
+      ],
+      [
+        5215.0,
+        4.196157932281494
+      ],
+      [
+        5364.0,
+        4.187621116638184
+      ],
+      [
+        5513.0,
+        4.186043739318848
+      ],
+      [
+        5662.0,
+        4.175870895385742
+      ],
+      [
+        5811.0,
+        4.171004772186279
+      ],
+      [
+        5960.0,
+        4.169864177703857
+      ],
+      [
+        6109.0,
+        4.160686492919922
+      ],
+      [
+        6258.0,
+        4.155690670013428
+      ],
+      [
+        6407.0,
+        4.1409149169921875
+      ],
+      [
+        6556.0,
+        4.143176078796387
+      ],
+      [
+        6705.0,
+        4.135521411895752
+      ],
+      [
+        6854.0,
+        4.128989219665527
+      ],
+      [
+        7003.0,
+        4.12605619430542
+      ],
+      [
+        7152.0,
+        4.123833656311035
+      ],
+      [
+        7301.0,
+        4.129632472991943
+      ],
+      [
+        7450.0,
+        4.121265411376953
+      ],
+      [
+        7599.0,
+        4.120510578155518
+      ],
+      [
+        7748.0,
+        4.110190391540527
+      ],
+      [
+        7897.0,
+        4.107865333557129
+      ],
+      [
+        8046.0,
+        4.105515003204346
+      ],
+      [
+        8195.0,
+        4.10543966293335
+      ],
+      [
+        8344.0,
+        4.10324239730835
+      ],
+      [
+        8493.0,
+        4.102756977081299
+      ],
+      [
+        8642.0,
+        4.097194194793701
+      ],
+      [
+        8791.0,
+        4.095388889312744
+      ],
+      [
+        8940.0,
+        4.091670036315918
+      ],
+      [
+        9089.0,
+        4.087348937988281
+      ],
+      [
+        9238.0,
+        4.083164215087891
+      ],
+      [
+        9387.0,
+        4.081492900848389
+      ],
+      [
+        9536.0,
+        4.082006931304932
+      ],
+      [
+        9685.0,
+        4.0839996337890625
+      ],
+      [
+        9834.0,
+        4.078233242034912
+      ],
+      [
+        9983.0,
+        4.074766635894775
+      ],
+      [
+        10132.0,
+        4.067338943481445
+      ],
+      [
+        10281.0,
+        4.069088935852051
+      ],
+      [
+        10430.0,
+        4.066729545593262
+      ],
+      [
+        10579.0,
+        4.056906223297119
+      ],
+      [
+        10728.0,
+        4.046536922454834
+      ],
+      [
+        10877.0,
+        4.029710292816162
+      ],
+      [
+        11026.0,
+        4.019598960876465
+      ],
+      [
+        11175.0,
+        3.9987854957580566
+      ],
+      [
+        11324.0,
+        3.9861204624176025
+      ],
+      [
+        11473.0,
+        3.9673666954040527
+      ],
+      [
+        11622.0,
+        3.9561729431152344
+      ],
+      [
+        11771.0,
+        3.942971706390381
+      ],
+      [
+        11920.0,
+        3.9287073612213135
+      ],
+      [
+        12069.0,
+        3.915295124053955
+      ],
+      [
+        12218.0,
+        3.8991730213165283
+      ],
+      [
+        12367.0,
+        3.881129026412964
+      ],
+      [
+        12516.0,
+        3.86792254447937
+      ],
+      [
+        12665.0,
+        3.856682777404785
+      ],
+      [
+        12814.0,
+        3.846587896347046
+      ],
+      [
+        12963.0,
+        3.8383779525756836
+      ],
+      [
+        13003.0,
+        3.837989330291748
+      ]
+    ],
+    "train_wall_seconds_first_to_last_scalar": 1048.43088555336
+  },
+  "Retuned AdamW": {
+    "run": "10m_tok16k_907m_b20.99_wd0.05",
+    "csv": {
+      "experiment_name": "10m_tok16k_907m_b20.99_wd0.05",
+      "dataset_variant": "907m",
+      "train_loss": "3.70167923",
+      "validation_loss": "3.776048081",
+      "train_script": "pretrain_base.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_tok16k_907m_b20.99_wd0.05.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=907m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default"
+    },
+    "configuration": {
+      "experiment_name": "10m_tok16k_907m_b20.99_wd0.05",
+      "dataset_prefix": "16k",
+      "dataset_variant": "907m",
+      "train_tokens": 213050814,
+      "validation_tokens": 8361799,
+      "parameters": 10635520,
+      "initialization": "gpt_scaled",
+      "initialization_std": 0.02,
+      "qk_norm": true,
+      "sequence_length": 1024,
+      "micro_batch_size": 16,
+      "gradient_accumulation_steps": 1,
+      "effective_batch_size": 16,
+      "epochs": 1,
+      "max_steps": 0,
+      "total_steps": 13003,
+      "learning_rate": 0.0024,
+      "minimum_learning_rate": 0.0,
+      "lr_scheduler": "wsd",
+      "wsd_decay_fraction": 0.2,
+      "wsd_stable_steps": 10227,
+      "wsd_decay_steps": 2557,
+      "adam_beta1": 0.9,
+      "adam_beta2": 0.99,
+      "adam_epsilon": 1e-08,
+      "norm_learning_rate_multiplier": 1.0,
+      "norm_learning_rate": 0.0024,
+      "warmup_steps": 219,
+      "weight_decay": 0.05,
+      "z_loss_coefficient": 0.0,
+      "decayed_parameters": 6422528,
+      "no_decay_parameters": 4207616,
+      "norm_parameters": 5376,
+      "max_gradient_norm": 1.0,
+      "validation_interval": 149,
+      "validation_steps": 7,
+      "diagnostics_interval": 30,
+      "tensorboard_flush_seconds": 5,
+      "runs_csv": "/home/samuele/Desktop/pavullmo/src/pavullmo/pretrain_runs.csv",
+      "model_output_dir": "/home/samuele/Desktop/pavullmo/models",
+      "train_script": "pretrain_base.py",
+      "compile_model": true,
+      "compile_mode": "default",
+      "seed": 42
+    },
+    "checkpoint_groups": {
+      "embeddings": {
+        "count": 4194304,
+        "norm": 482.7024411020008,
+        "rms": 0.23569455131933634
+      },
+      "norms": {
+        "count": 5376,
+        "norm": 71.92923570072556,
+        "rms": 0.9810153788062347
+      },
+      "attention_qkv": {
+        "count": 1572864,
+        "norm": 168.27859338704786,
+        "rms": 0.1341786095154801
+      },
+      "attention_output": {
+        "count": 524288,
+        "norm": 93.49733718533554,
+        "rms": 0.12912617411452326
+      },
+      "ffn_input_gate": {
+        "count": 2894848,
+        "norm": 237.0692773680692,
+        "rms": 0.13933569665151443
+      },
+      "ffn_output": {
+        "count": 1443840,
+        "norm": 167.4637273798719,
+        "rms": 0.13936740665825342
+      }
+    },
+    "checkpoint_qkv": {
+      "Q": {
+        "count": 524288,
+        "norm": 103.94019127891288,
+        "rms": 0.1435484650217698
+      },
+      "K": {
+        "count": 524288,
+        "norm": 95.94855311394751,
+        "rms": 0.13251146982794904
+      },
+      "V": {
+        "count": 524288,
+        "norm": 91.14821328235888,
+        "rms": 0.12588187442381582
+      }
+    },
+    "checkpoint_spectra": {
+      "attention_qkv": [
+        {
+          "name": "layers.0.attn.c_attn.weight",
+          "spectral_norm": 15.578470230102539,
+          "stable_rank": 9.444388389587402
+        },
+        {
+          "name": "layers.1.attn.c_attn.weight",
+          "spectral_norm": 16.830238342285156,
+          "stable_rank": 12.042984962463379
+        },
+        {
+          "name": "layers.2.attn.c_attn.weight",
+          "spectral_norm": 18.540037155151367,
+          "stable_rank": 10.497929573059082
+        },
+        {
+          "name": "layers.3.attn.c_attn.weight",
+          "spectral_norm": 18.03102684020996,
+          "stable_rank": 11.021096229553223
+        },
+        {
+          "name": "layers.4.attn.c_attn.weight",
+          "spectral_norm": 18.02297019958496,
+          "stable_rank": 11.260146141052246
+        },
+        {
+          "name": "layers.5.attn.c_attn.weight",
+          "spectral_norm": 16.05950355529785,
+          "stable_rank": 13.436139106750488
+        },
+        {
+          "name": "layers.6.attn.c_attn.weight",
+          "spectral_norm": 16.405038833618164,
+          "stable_rank": 15.571662902832031
+        },
+        {
+          "name": "layers.7.attn.c_attn.weight",
+          "spectral_norm": 18.28180694580078,
+          "stable_rank": 12.294501304626465
+        }
+      ],
+      "attention_output": [
+        {
+          "name": "layers.0.attn.c_proj.weight",
+          "spectral_norm": 4.145895957946777,
+          "stable_rank": 12.765923500061035
+        },
+        {
+          "name": "layers.1.attn.c_proj.weight",
+          "spectral_norm": 6.39642858505249,
+          "stable_rank": 21.0312442779541
+        },
+        {
+          "name": "layers.2.attn.c_proj.weight",
+          "spectral_norm": 6.1507697105407715,
+          "stable_rank": 26.082979202270508
+        },
+        {
+          "name": "layers.3.attn.c_proj.weight",
+          "spectral_norm": 5.067169666290283,
+          "stable_rank": 36.907920837402344
+        },
+        {
+          "name": "layers.4.attn.c_proj.weight",
+          "spectral_norm": 4.907573699951172,
+          "stable_rank": 45.80406951904297
+        },
+        {
+          "name": "layers.5.attn.c_proj.weight",
+          "spectral_norm": 5.650360107421875,
+          "stable_rank": 36.66847229003906
+        },
+        {
+          "name": "layers.6.attn.c_proj.weight",
+          "spectral_norm": 7.213557243347168,
+          "stable_rank": 37.358219146728516
+        },
+        {
+          "name": "layers.7.attn.c_proj.weight",
+          "spectral_norm": 10.901156425476074,
+          "stable_rank": 12.703429222106934
+        }
+      ],
+      "ffn_input_gate": [
+        {
+          "name": "layers.0.ffn.w1.weight",
+          "spectral_norm": 16.553409576416016,
+          "stable_rank": 11.322423934936523
+        },
+        {
+          "name": "layers.0.ffn.w3.weight",
+          "spectral_norm": 6.3451666831970215,
+          "stable_rank": 72.627685546875
+        },
+        {
+          "name": "layers.1.ffn.w1.weight",
+          "spectral_norm": 14.016325950622559,
+          "stable_rank": 17.935766220092773
+        },
+        {
+          "name": "layers.1.ffn.w3.weight",
+          "spectral_norm": 8.753286361694336,
+          "stable_rank": 39.61104202270508
+        },
+        {
+          "name": "layers.2.ffn.w1.weight",
+          "spectral_norm": 15.39808177947998,
+          "stable_rank": 15.359517097473145
+        },
+        {
+          "name": "layers.2.ffn.w3.weight",
+          "spectral_norm": 8.55126667022705,
+          "stable_rank": 45.93740463256836
+        },
+        {
+          "name": "layers.3.ffn.w1.weight",
+          "spectral_norm": 15.675567626953125,
+          "stable_rank": 14.74063491821289
+        },
+        {
+          "name": "layers.3.ffn.w3.weight",
+          "spectral_norm": 7.960725784301758,
+          "stable_rank": 53.84974670410156
+        },
+        {
+          "name": "layers.4.ffn.w1.weight",
+          "spectral_norm": 15.032624244689941,
+          "stable_rank": 15.562959671020508
+        },
+        {
+          "name": "layers.4.ffn.w3.weight",
+          "spectral_norm": 8.80744743347168,
+          "stable_rank": 45.90448760986328
+        },
+        {
+          "name": "layers.5.ffn.w1.weight",
+          "spectral_norm": 14.618180274963379,
+          "stable_rank": 15.83775806427002
+        },
+        {
+          "name": "layers.5.ffn.w3.weight",
+          "spectral_norm": 7.926057815551758,
+          "stable_rank": 59.45014572143555
+        },
+        {
+          "name": "layers.6.ffn.w1.weight",
+          "spectral_norm": 12.411455154418945,
+          "stable_rank": 21.34284210205078
+        },
+        {
+          "name": "layers.6.ffn.w3.weight",
+          "spectral_norm": 8.749542236328125,
+          "stable_rank": 50.97031021118164
+        },
+        {
+          "name": "layers.7.ffn.w1.weight",
+          "spectral_norm": 12.831094741821289,
+          "stable_rank": 19.687908172607422
+        },
+        {
+          "name": "layers.7.ffn.w3.weight",
+          "spectral_norm": 10.14289665222168,
+          "stable_rank": 40.279483795166016
+        }
+      ],
+      "ffn_output": [
+        {
+          "name": "layers.0.ffn.w2.weight",
+          "spectral_norm": 9.382354736328125,
+          "stable_rank": 35.65048599243164
+        },
+        {
+          "name": "layers.1.ffn.w2.weight",
+          "spectral_norm": 14.614873886108398,
+          "stable_rank": 14.82377815246582
+        },
+        {
+          "name": "layers.2.ffn.w2.weight",
+          "spectral_norm": 11.066957473754883,
+          "stable_rank": 27.606828689575195
+        },
+        {
+          "name": "layers.3.ffn.w2.weight",
+          "spectral_norm": 12.566121101379395,
+          "stable_rank": 21.740406036376953
+        },
+        {
+          "name": "layers.4.ffn.w2.weight",
+          "spectral_norm": 10.589871406555176,
+          "stable_rank": 31.169536590576172
+        },
+        {
+          "name": "layers.5.ffn.w2.weight",
+          "spectral_norm": 10.526458740234375,
+          "stable_rank": 32.93351745605469
+        },
+        {
+          "name": "layers.6.ffn.w2.weight",
+          "spectral_norm": 10.804533004760742,
+          "stable_rank": 32.091514587402344
+        },
+        {
+          "name": "layers.7.ffn.w2.weight",
+          "spectral_norm": 16.34319496154785,
+          "stable_rank": 14.53321361541748
+        }
+      ]
+    },
+    "window_means": {
+      "300:1500": {
+        "diagnostics/parameter_norm": 211.7179665914396,
+        "diagnostics/parameter_rms": 0.0649199754726596,
+        "diagnostics/embedding_norm": 146.42073691763528,
+        "diagnostics/embedding_rms": 0.0714945004480641,
+        "train/loss": 4.975310083432162,
+        "train/objective": 4.975310083432162,
+        "train/z_loss": 0.0,
+        "train/z_loss_contribution": 0.0,
+        "train/loss_vs_uniform": -4.728750471072233,
+        "train/perplexity": 154.40716603554654,
+        "train/gradient_norm": 0.2956615476733342,
+        "train/gradient_rms": 9.065995128169271e-05,
+        "train/clip_coefficient": 0.9997483864116431,
+        "train/gradient_clipped": 0.002497918401332223,
+        "train/clip_fraction": 0.056570993283520034,
+        "train/learning_rate": 0.002400000113993883,
+        "train/norm_learning_rate": 0.002400000113993883,
+        "train/tokens_seen": 14745600.0,
+        "diagnostics/gradient_to_parameter_norm": 0.0014867587824261225,
+        "diagnostics/update_norm": 1.5862919237555526,
+        "diagnostics/update_rms": 0.0004864114034273548,
+        "diagnostics/update_to_parameter_norm": 0.007776669294732373,
+        "diagnostics/logit_rms_sample": 4.151946660948963,
+        "diagnostics/logit_absolute_max_sample": 12.740853658536585,
+        "gradient_groups/embeddings": 0.21139450007822455,
+        "gradient_groups/norms": 0.01932489638012357,
+        "gradient_groups/attention_qkv": 0.09399208190237604,
+        "gradient_groups/attention_output": 0.07046536083628492,
+        "gradient_groups/ffn_input_gate": 0.1080457915256663,
+        "gradient_groups/ffn_output": 0.1221950864646493,
+        "system/cuda_memory_allocated_gib": 0.6795563697814941,
+        "system/cuda_memory_reserved_gib": 5.630859375,
+        "system/cuda_peak_memory_allocated_gib": 4.510360240936279,
+        "performance/tokens_per_second": 197617.1173469388,
+        "performance/optimizer_step_seconds": 0.08309831394224751,
+        "validation/loss": 4.9391549825668335,
+        "validation/loss_vs_uniform": -4.764905571937561,
+        "validation/perplexity": 146.3775339126587
+      },
+      "3000:6000": {
+        "diagnostics/parameter_norm": 435.5802077491685,
+        "diagnostics/parameter_rms": 0.13356380275275448,
+        "diagnostics/embedding_norm": 314.7000457461518,
+        "diagnostics/embedding_rms": 0.15366213171198817,
+        "train/loss": 4.099687032404044,
+        "train/objective": 4.099687032404044,
+        "train/z_loss": 0.0,
+        "train/z_loss_contribution": 0.0,
+        "train/loss_vs_uniform": -5.604373509071144,
+        "train/perplexity": 60.71619007246608,
+        "train/gradient_norm": 0.19164200159896416,
+        "train/gradient_rms": 5.876399780061051e-05,
+        "train/clip_coefficient": 0.9998535055670886,
+        "train/gradient_clipped": 0.0003332222592469177,
+        "train/clip_fraction": 0.010132959633581502,
+        "train/learning_rate": 0.002400000113993883,
+        "train/norm_learning_rate": 0.002400000113993883,
+        "train/tokens_seen": 73728000.0,
+        "diagnostics/gradient_to_parameter_norm": 0.0004433277371399437,
+        "diagnostics/update_norm": 1.6685163821324263,
+        "diagnostics/update_rms": 0.0005116242382878272,
+        "diagnostics/update_to_parameter_norm": 0.0038532588381947268,
+        "diagnostics/logit_rms_sample": 4.630203407589752,
+        "diagnostics/logit_absolute_max_sample": 16.62438118811881,
+        "gradient_groups/embeddings": 0.11314810864110984,
+        "gradient_groups/norms": 0.043750869755697724,
+        "gradient_groups/attention_qkv": 0.07580919740813793,
+        "gradient_groups/attention_output": 0.04443146978126894,
+        "gradient_groups/ffn_input_gate": 0.08279715175970946,
+        "gradient_groups/ffn_output": 0.08480833979821441,
+        "system/cuda_memory_allocated_gib": 0.6795563697814941,
+        "system/cuda_memory_reserved_gib": 5.630859375,
+        "system/cuda_peak_memory_allocated_gib": 4.510360240936279,
+        "performance/tokens_per_second": 195124.162890625,
+        "performance/optimizer_step_seconds": 0.08412388805299997,
+        "validation/loss": 4.139807415008545,
+        "validation/loss_vs_uniform": -5.564253139495849,
+        "validation/perplexity": 62.87301387786865
+      },
+      "8000:10440": {
+        "diagnostics/parameter_norm": 570.102812976372,
+        "diagnostics/parameter_rms": 0.17481303887396324,
+        "diagnostics/embedding_norm": 442.00239525771724,
+        "diagnostics/embedding_rms": 0.21582148205943225,
+        "train/loss": 3.9368577951879007,
+        "train/objective": 3.9368577951879007,
+        "train/z_loss": 0.0,
+        "train/z_loss_contribution": 0.0,
+        "train/loss_vs_uniform": -5.76720270881981,
+        "train/perplexity": 51.53686415216367,
+        "train/gradient_norm": 0.1761132376646224,
+        "train/gradient_rms": 5.4002347246108294e-05,
+        "train/clip_coefficient": 1.0,
+        "train/gradient_clipped": 0.0,
+        "train/clip_fraction": 0.0048004060255692465,
+        "train/learning_rate": 0.002400000113993883,
+        "train/norm_learning_rate": 0.002400000113993883,
+        "train/tokens_seen": 151060480.0,
+        "diagnostics/gradient_to_parameter_norm": 0.0003047546484683663,
+        "diagnostics/update_norm": 1.6776862871356126,
+        "diagnostics/update_rms": 0.0005144360439749662,
+        "diagnostics/update_to_parameter_norm": 0.0029449885251091384,
+        "diagnostics/logit_rms_sample": 4.848230803885111,
+        "diagnostics/logit_absolute_max_sample": 17.84451219512195,
+        "gradient_groups/embeddings": 0.08679120578780407,
+        "gradient_groups/norms": 0.054062078638774595,
+        "gradient_groups/attention_qkv": 0.07606501722844636,
+        "gradient_groups/attention_output": 0.04497554298581147,
+        "gradient_groups/ffn_input_gate": 0.0767986597266139,
+        "gradient_groups/ffn_output": 0.07614027354411962,
+        "system/cuda_memory_allocated_gib": 0.6795563697814941,
+        "system/cuda_memory_reserved_gib": 5.630859375,
+        "system/cuda_peak_memory_allocated_gib": 4.510360240936279,
+        "performance/tokens_per_second": 197905.2890625,
+        "performance/optimizer_step_seconds": 0.08298460857904687,
+        "validation/loss": 3.9830086932462803,
+        "validation/loss_vs_uniform": -5.721051777110381,
+        "validation/perplexity": 53.68341647877413
+      },
+      "12000:13003": {
+        "diagnostics/parameter_norm": 600.7279889787947,
+        "diagnostics/parameter_rms": 0.18420376479625702,
+        "diagnostics/embedding_norm": 482.7366080147879,
+        "diagnostics/embedding_rms": 0.23571123438222066,
+        "train/loss": 3.758795616873707,
+        "train/objective": 3.758795616873707,
+        "train/z_loss": 0.0,
+        "train/z_loss_contribution": 0.0,
+        "train/loss_vs_uniform": -5.945264873751606,
+        "train/perplexity": 43.14376408550369,
+        "train/gradient_norm": 0.17433424682849907,
+        "train/gradient_rms": 5.345684768829404e-05,
+        "train/clip_coefficient": 1.0,
+        "train/gradient_clipped": 0.0,
+        "train/clip_fraction": 0.003521471181364945,
+        "train/learning_rate": 0.00047089201917098386,
+        "train/norm_learning_rate": 0.00047089201917098386,
+        "train/tokens_seen": 204824576.0,
+        "diagnostics/gradient_to_parameter_norm": 0.0002880281469385539,
+        "diagnostics/update_norm": 0.3300933126094086,
+        "diagnostics/update_rms": 0.0001012179101183262,
+        "diagnostics/update_to_parameter_norm": 0.0005489774751757587,
+        "diagnostics/logit_rms_sample": 5.11750157220023,
+        "diagnostics/logit_absolute_max_sample": 19.510714285714286,
+        "gradient_groups/embeddings": 0.08071379682847432,
+        "gradient_groups/norms": 0.05133152689252581,
+        "gradient_groups/attention_qkv": 0.07535856685468129,
+        "gradient_groups/attention_output": 0.04464310088327953,
+        "gradient_groups/ffn_input_gate": 0.08165592615093503,
+        "gradient_groups/ffn_output": 0.07933876663446426,
+        "system/cuda_memory_allocated_gib": 0.6795563697814941,
+        "system/cuda_memory_reserved_gib": 5.630859375,
+        "system/cuda_peak_memory_allocated_gib": 4.510360240936279,
+        "performance/tokens_per_second": 201027.91927083334,
+        "performance/optimizer_step_seconds": 0.08161572029902822,
+        "validation/loss": 3.798681825399399,
+        "validation/loss_vs_uniform": -5.905378699302673,
+        "validation/perplexity": 44.65165996551514
+      }
+    },
+    "late_gradient_energy_share": {
+      "gradient_groups/embeddings": 0.2516156257015676,
+      "gradient_groups/norms": 0.10000512396783044,
+      "gradient_groups/attention_qkv": 0.19208612398683683,
+      "gradient_groups/attention_output": 0.06717495754798998,
+      "gradient_groups/ffn_input_gate": 0.1962851148229163,
+      "gradient_groups/ffn_output": 0.19283305397285877
+    },
+    "validation": [
+      [
+        149.0,
+        6.499083042144775
+      ],
+      [
+        298.0,
+        5.824746608734131
+      ],
+      [
+        447.0,
+        5.462409973144531
+      ],
+      [
+        596.0,
+        5.273869037628174
+      ],
+      [
+        745.0,
+        5.106935024261475
+      ],
+      [
+        894.0,
+        4.966132640838623
+      ],
+      [
+        1043.0,
+        4.824349880218506
+      ],
+      [
+        1192.0,
+        4.706444263458252
+      ],
+      [
+        1341.0,
+        4.614720821380615
+      ],
+      [
+        1490.0,
+        4.558378219604492
+      ],
+      [
+        1639.0,
+        4.496811389923096
+      ],
+      [
+        1788.0,
+        4.453432083129883
+      ],
+      [
+        1937.0,
+        4.416546821594238
+      ],
+      [
+        2086.0,
+        4.391720771789551
+      ],
+      [
+        2235.0,
+        4.363476276397705
+      ],
+      [
+        2384.0,
+        4.328624725341797
+      ],
+      [
+        2533.0,
+        4.309720516204834
+      ],
+      [
+        2682.0,
+        4.294488906860352
+      ],
+      [
+        2831.0,
+        4.273536205291748
+      ],
+      [
+        2980.0,
+        4.256656646728516
+      ],
+      [
+        3129.0,
+        4.230681419372559
+      ],
+      [
+        3278.0,
+        4.223578929901123
+      ],
+      [
+        3427.0,
+        4.218558311462402
+      ],
+      [
+        3576.0,
+        4.1916823387146
+      ],
+      [
+        3725.0,
+        4.192056655883789
+      ],
+      [
+        3874.0,
+        4.174234867095947
+      ],
+      [
+        4023.0,
+        4.167910575866699
+      ],
+      [
+        4172.0,
+        4.15199613571167
+      ],
+      [
+        4321.0,
+        4.146202087402344
+      ],
+      [
+        4470.0,
+        4.139955997467041
+      ],
+      [
+        4619.0,
+        4.132630825042725
+      ],
+      [
+        4768.0,
+        4.1154375076293945
+      ],
+      [
+        4917.0,
+        4.108032703399658
+      ],
+      [
+        5066.0,
+        4.110132217407227
+      ],
+      [
+        5215.0,
+        4.098895072937012
+      ],
+      [
+        5364.0,
+        4.087594032287598
+      ],
+      [
+        5513.0,
+        4.084741115570068
+      ],
+      [
+        5662.0,
+        4.0805792808532715
+      ],
+      [
+        5811.0,
+        4.069387435913086
+      ],
+      [
+        5960.0,
+        4.0718607902526855
+      ],
+      [
+        6109.0,
+        4.060602188110352
+      ],
+      [
+        6258.0,
+        4.056271553039551
+      ],
+      [
+        6407.0,
+        4.042344093322754
+      ],
+      [
+        6556.0,
+        4.044948101043701
+      ],
+      [
+        6705.0,
+        4.039276123046875
+      ],
+      [
+        6854.0,
+        4.0300822257995605
+      ],
+      [
+        7003.0,
+        4.02578067779541
+      ],
+      [
+        7152.0,
+        4.026378154754639
+      ],
+      [
+        7301.0,
+        4.030279636383057
+      ],
+      [
+        7450.0,
+        4.022671222686768
+      ],
+      [
+        7599.0,
+        4.019169807434082
+      ],
+      [
+        7748.0,
+        4.011626720428467
+      ],
+      [
+        7897.0,
+        4.0086445808410645
+      ],
+      [
+        8046.0,
+        4.007834434509277
+      ],
+      [
+        8195.0,
+        4.005751132965088
+      ],
+      [
+        8344.0,
+        3.999267578125
+      ],
+      [
+        8493.0,
+        3.9965689182281494
+      ],
+      [
+        8642.0,
+        3.992396831512451
+      ],
+      [
+        8791.0,
+        3.992825746536255
+      ],
+      [
+        8940.0,
+        3.9888808727264404
+      ],
+      [
+        9089.0,
+        3.981464385986328
+      ],
+      [
+        9238.0,
+        3.9779739379882812
+      ],
+      [
+        9387.0,
+        3.9751622676849365
+      ],
+      [
+        9536.0,
+        3.9773099422454834
+      ],
+      [
+        9685.0,
+        3.9744668006896973
+      ],
+      [
+        9834.0,
+        3.9729413986206055
+      ],
+      [
+        9983.0,
+        3.970912218093872
+      ],
+      [
+        10132.0,
+        3.962106466293335
+      ],
+      [
+        10281.0,
+        3.974280834197998
+      ],
+      [
+        10430.0,
+        3.9610040187835693
+      ],
+      [
+        10579.0,
+        3.951671600341797
+      ],
+      [
+        10728.0,
+        3.9435105323791504
+      ],
+      [
+        10877.0,
+        3.933922052383423
+      ],
+      [
+        11026.0,
+        3.9211325645446777
+      ],
+      [
+        11175.0,
+        3.9045627117156982
+      ],
+      [
+        11324.0,
+        3.8948771953582764
+      ],
+      [
+        11473.0,
+        3.880410671234131
+      ],
+      [
+        11622.0,
+        3.8694381713867188
+      ],
+      [
+        11771.0,
+        3.8595006465911865
+      ],
+      [
+        11920.0,
+        3.845707416534424
+      ],
+      [
+        12069.0,
+        3.834146022796631
+      ],
+      [
+        12218.0,
+        3.8229732513427734
+      ],
+      [
+        12367.0,
+        3.8096680641174316
+      ],
+      [
+        12516.0,
+        3.7987496852874756
+      ],
+      [
+        12665.0,
+        3.7897188663482666
+      ],
+      [
+        12814.0,
+        3.7817399501800537
+      ],
+      [
+        12963.0,
+        3.7764105796813965
+      ],
+      [
+        13003.0,
+        3.776048183441162
+      ]
+    ],
+    "train_wall_seconds_first_to_last_scalar": 1092.6407628059387
+  },
+  "Muon": {
+    "run": "10m_16k_907m_muon_lr0.5_mwd0.0",
+    "csv": {
+      "experiment_name": "10m_16k_907m_muon_lr0.5_mwd0.0",
+      "dataset_variant": "907m",
+      "train_loss": "3.64884758",
+      "validation_loss": "3.731574944",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_907m_muon_lr0.5_mwd0.0.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=907m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=0.5;MUON_WEIGHT_DECAY=0.0;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    "configuration": {
+      "experiment_name": "10m_16k_907m_muon_lr0.5_mwd0.0",
+      "dataset_prefix": "16k",
+      "dataset_variant": "907m",
+      "train_tokens": 213050814,
+      "validation_tokens": 8361799,
+      "parameters": 10635520,
+      "trainable_parameters": 10635520,
+      "optimized_parameters": 10635520,
+      "initialization": "gpt_scaled",
+      "initialization_std": 0.02,
+      "qk_norm": true,
+      "sequence_length": 1024,
+      "micro_batch_size": 16,
+      "gradient_accumulation_steps": 1,
+      "effective_batch_size": 16,
+      "epochs": 1,
+      "max_steps": 0,
+      "total_steps": 13003,
+      "learning_rate": 0.0024,
+      "minimum_learning_rate": 0.0,
+      "lr_scheduler": "wsd",
+      "wsd_decay_fraction": 0.2,
+      "wsd_stable_steps": 10227,
+      "wsd_decay_steps": 2557,
+      "adam_beta1": 0.9,
+      "adam_beta2": 0.99,
+      "adam_epsilon": 1e-08,
+      "norm_learning_rate_multiplier": 1.0,
+      "norm_learning_rate": 0.0024,
+      "warmup_steps": 219,
+      "weight_decay": 0.05,
+      "z_loss_coefficient": 0.0,
+      "adamw_parameters": 4212992,
+      "adamw_decayed_parameters": 0,
+      "adamw_no_decay_parameters": 4207616,
+      "adamw_norm_parameters": 5376,
+      "muon_parameters": 6422528,
+      "muon_parameter_fraction": 0.6038753159224937,
+      "max_gradient_norm": 1.0,
+      "validation_interval": 149,
+      "validation_steps": 7,
+      "diagnostics_interval": 30,
+      "tensorboard_flush_seconds": 5,
+      "runs_csv": "/home/samuele/Desktop/pavullmo/src/pavullmo/pretrain_runs.csv",
+      "model_output_dir": "/home/samuele/Desktop/pavullmo/models",
+      "train_script": "pretrain_base_muon.py",
+      "compile_model": true,
+      "compile_mode": "default",
+      "seed": 42,
+      "muon_lr_multiplier": 0.5,
+      "muon_peak_learning_rate": 0.0012,
+      "muon_minimum_learning_rate": 0.0,
+      "muon_adjusted_peak_learning_rate_min": 0.0038399999999999997,
+      "muon_adjusted_peak_learning_rate_max": 0.006651075101064489,
+      "muon_weight_decay": 0.0,
+      "muon_momentum": 0.95,
+      "muon_nesterov": true,
+      "muon_adjust_lr_fn": "match_rms_adamw",
+      "muon_epsilon": 1e-07,
+      "muon_ns_iters": 5,
+      "muon_ns_coefficients": [
+        3.4445,
+        -4.775,
+        2.0315
+      ]
+    },
+    "checkpoint_groups": {
+      "embeddings": {
+        "count": 4194304,
+        "norm": 523.0608024187494,
+        "rms": 0.25540078243103
+      },
+      "norms": {
+        "count": 5376,
+        "norm": 68.37050516108204,
+        "rms": 0.9324792119137719
+      },
+      "attention_qkv": {
+        "count": 1572864,
+        "norm": 150.08711483045653,
+        "rms": 0.11967345322302224
+      },
+      "attention_output": {
+        "count": 524288,
+        "norm": 73.72756426490507,
+        "rms": 0.10182277471109638
+      },
+      "ffn_input_gate": {
+        "count": 2894848,
+        "norm": 217.87121940414275,
+        "rms": 0.1280521815100449
+      },
+      "ffn_output": {
+        "count": 1443840,
+        "norm": 151.93190204646052,
+        "rms": 0.12644144202546884
+      }
+    },
+    "checkpoint_qkv": {
+      "Q": {
+        "count": 524288,
+        "norm": 77.00798741861065,
+        "rms": 0.10635326193208579
+      },
+      "K": {
+        "count": 524288,
+        "norm": 76.65179605795797,
+        "rms": 0.10586133746623115
+      },
+      "V": {
+        "count": 524288,
+        "norm": 103.53943245428268,
+        "rms": 0.14299498986060502
+      }
+    },
+    "checkpoint_spectra": {
+      "attention_qkv": [
+        {
+          "name": "layers.0.attn.c_attn.weight",
+          "spectral_norm": 9.019968032836914,
+          "stable_rank": 21.008066177368164
+        },
+        {
+          "name": "layers.1.attn.c_attn.weight",
+          "spectral_norm": 6.496365547180176,
+          "stable_rank": 67.87726593017578
+        },
+        {
+          "name": "layers.2.attn.c_attn.weight",
+          "spectral_norm": 7.158799648284912,
+          "stable_rank": 51.6330680847168
+        },
+        {
+          "name": "layers.3.attn.c_attn.weight",
+          "spectral_norm": 6.55740213394165,
+          "stable_rank": 62.1257438659668
+        },
+        {
+          "name": "layers.4.attn.c_attn.weight",
+          "spectral_norm": 7.458738803863525,
+          "stable_rank": 48.368289947509766
+        },
+        {
+          "name": "layers.5.attn.c_attn.weight",
+          "spectral_norm": 6.527997970581055,
+          "stable_rank": 77.14877319335938
+        },
+        {
+          "name": "layers.6.attn.c_attn.weight",
+          "spectral_norm": 7.852468013763428,
+          "stable_rank": 50.14596939086914
+        },
+        {
+          "name": "layers.7.attn.c_attn.weight",
+          "spectral_norm": 8.21205997467041,
+          "stable_rank": 52.85200119018555
+        }
+      ],
+      "attention_output": [
+        {
+          "name": "layers.0.attn.c_proj.weight",
+          "spectral_norm": 3.054868698120117,
+          "stable_rank": 26.861988067626953
+        },
+        {
+          "name": "layers.1.attn.c_proj.weight",
+          "spectral_norm": 2.9793617725372314,
+          "stable_rank": 59.36370086669922
+        },
+        {
+          "name": "layers.2.attn.c_proj.weight",
+          "spectral_norm": 3.079249620437622,
+          "stable_rank": 51.982810974121094
+        },
+        {
+          "name": "layers.3.attn.c_proj.weight",
+          "spectral_norm": 3.1175220012664795,
+          "stable_rank": 55.23283386230469
+        },
+        {
+          "name": "layers.4.attn.c_proj.weight",
+          "spectral_norm": 3.3284389972686768,
+          "stable_rank": 56.28668212890625
+        },
+        {
+          "name": "layers.5.attn.c_proj.weight",
+          "spectral_norm": 3.9157910346984863,
+          "stable_rank": 71.70841979980469
+        },
+        {
+          "name": "layers.6.attn.c_proj.weight",
+          "spectral_norm": 5.015643119812012,
+          "stable_rank": 34.853553771972656
+        },
+        {
+          "name": "layers.7.attn.c_proj.weight",
+          "spectral_norm": 4.170825004577637,
+          "stable_rank": 59.12485885620117
+        }
+      ],
+      "ffn_input_gate": [
+        {
+          "name": "layers.0.ffn.w1.weight",
+          "spectral_norm": 7.989250659942627,
+          "stable_rank": 34.86288070678711
+        },
+        {
+          "name": "layers.0.ffn.w3.weight",
+          "spectral_norm": 5.243546009063721,
+          "stable_rank": 89.57394409179688
+        },
+        {
+          "name": "layers.1.ffn.w1.weight",
+          "spectral_norm": 6.25087833404541,
+          "stable_rank": 76.4622573852539
+        },
+        {
+          "name": "layers.1.ffn.w3.weight",
+          "spectral_norm": 6.132808208465576,
+          "stable_rank": 82.62393951416016
+        },
+        {
+          "name": "layers.2.ffn.w1.weight",
+          "spectral_norm": 6.800263404846191,
+          "stable_rank": 63.54587173461914
+        },
+        {
+          "name": "layers.2.ffn.w3.weight",
+          "spectral_norm": 6.618731498718262,
+          "stable_rank": 73.46817779541016
+        },
+        {
+          "name": "layers.3.ffn.w1.weight",
+          "spectral_norm": 6.288840293884277,
+          "stable_rank": 72.10737609863281
+        },
+        {
+          "name": "layers.3.ffn.w3.weight",
+          "spectral_norm": 6.330523490905762,
+          "stable_rank": 80.42664337158203
+        },
+        {
+          "name": "layers.4.ffn.w1.weight",
+          "spectral_norm": 6.100090026855469,
+          "stable_rank": 76.97370910644531
+        },
+        {
+          "name": "layers.4.ffn.w3.weight",
+          "spectral_norm": 6.285033702850342,
+          "stable_rank": 82.25917053222656
+        },
+        {
+          "name": "layers.5.ffn.w1.weight",
+          "spectral_norm": 6.0149688720703125,
+          "stable_rank": 75.64173126220703
+        },
+        {
+          "name": "layers.5.ffn.w3.weight",
+          "spectral_norm": 6.134779930114746,
+          "stable_rank": 88.79938507080078
+        },
+        {
+          "name": "layers.6.ffn.w1.weight",
+          "spectral_norm": 6.145081520080566,
+          "stable_rank": 71.1084213256836
+        },
+        {
+          "name": "layers.6.ffn.w3.weight",
+          "spectral_norm": 6.526812553405762,
+          "stable_rank": 78.49723052978516
+        },
+        {
+          "name": "layers.7.ffn.w1.weight",
+          "spectral_norm": 6.599153995513916,
+          "stable_rank": 62.97644805908203
+        },
+        {
+          "name": "layers.7.ffn.w3.weight",
+          "spectral_norm": 6.887030124664307,
+          "stable_rank": 69.86184692382812
+        }
+      ],
+      "ffn_output": [
+        {
+          "name": "layers.0.ffn.w2.weight",
+          "spectral_norm": 5.222578048706055,
+          "stable_rank": 87.45451354980469
+        },
+        {
+          "name": "layers.1.ffn.w2.weight",
+          "spectral_norm": 5.841132640838623,
+          "stable_rank": 78.04927062988281
+        },
+        {
+          "name": "layers.2.ffn.w2.weight",
+          "spectral_norm": 6.754680156707764,
+          "stable_rank": 59.31074142456055
+        },
+        {
+          "name": "layers.3.ffn.w2.weight",
+          "spectral_norm": 6.927878379821777,
+          "stable_rank": 57.27853775024414
+        },
+        {
+          "name": "layers.4.ffn.w2.weight",
+          "spectral_norm": 7.705451965332031,
+          "stable_rank": 49.3792610168457
+        },
+        {
+          "name": "layers.5.ffn.w2.weight",
+          "spectral_norm": 7.4161458015441895,
+          "stable_rank": 54.47191619873047
+        },
+        {
+          "name": "layers.6.ffn.w2.weight",
+          "spectral_norm": 7.0481462478637695,
+          "stable_rank": 64.23758697509766
+        },
+        {
+          "name": "layers.7.ffn.w2.weight",
+          "spectral_norm": 11.916534423828125,
+          "stable_rank": 23.95299530029297
+        }
+      ]
+    },
+    "window_means": {
+      "300:1500": {
+        "diagnostics/parameter_norm": 190.70985226514864,
+        "diagnostics/parameter_rms": 0.05847816868889623,
+        "diagnostics/embedding_norm": 154.309479318014,
+        "diagnostics/embedding_rms": 0.07534642544824903,
+        "optimizer/muon/parameter_norm": 84.15979189989044,
+        "optimizer/muon/parameter_rms": 0.03320868286054309,
+        "train/loss": 4.705343327851816,
+        "train/objective": 4.705343327851816,
+        "train/z_loss": 0.0,
+        "train/z_loss_contribution": 0.0,
+        "train/loss_vs_uniform": -4.998717226652579,
+        "train/perplexity": 117.24101117250822,
+        "train/gradient_norm": 0.7014620073828273,
+        "train/gradient_rms": 0.00021509226343922509,
+        "train/clip_coefficient": 0.9982191038121788,
+        "train/gradient_clipped": 0.012489592006661115,
+        "train/clip_fraction": 0.2112360560675644,
+        "train/learning_rate": 0.002400000113993883,
+        "train/norm_learning_rate": 0.002400000113993883,
+        "train/muon_learning_rate": 0.0012000000569969416,
+        "train/muon_adjusted_learning_rate_min": 0.0038399999029934406,
+        "train/muon_adjusted_learning_rate_max": 0.006651075091212988,
+        "train/muon_weight_decay_step": 0.0,
+        "train/tokens_seen": 14745600.0,
+        "diagnostics/gradient_to_parameter_norm": 0.003902838366651317,
+        "diagnostics/update_norm": 1.1171787279408152,
+        "diagnostics/update_rms": 0.00034256524224652023,
+        "diagnostics/update_to_parameter_norm": 0.0060110077511791775,
+        "optimizer/adamw/parameter_norm": 170.9864501953125,
+        "optimizer/adamw/post_parameter_norm": 171.05911701481517,
+        "optimizer/adamw/parameter_rms": 0.0833041002837623,
+        "optimizer/adamw/post_parameter_rms": 0.0833395045341515,
+        "optimizer/adamw/update_norm": 0.9686413232873126,
+        "optimizer/adamw/update_rms": 0.0004719192284250223,
+        "optimizer/adamw/update_to_parameter_norm": 0.005792253616652111,
+        "optimizer/adamw/update_weight_cosine": 0.07230816731547438,
+        "optimizer/adamw/radial_update_fraction": 0.07230816731547438,
+        "optimizer/adamw/angular_step": 0.0057727544477618326,
+        "optimizer/adamw/matrix_angular_step_mean": 0.0064683901373206116,
+        "optimizer/adamw/matrix_angular_step_max": 0.0064683901373206116,
+        "optimizer/muon/post_parameter_norm": 84.20706381448885,
+        "optimizer/muon/post_parameter_rms": 0.03322733602509266,
+        "optimizer/muon/update_norm": 0.5563156459389663,
+        "optimizer/muon/update_rms": 0.00021951705701478826,
+        "optimizer/muon/update_to_parameter_norm": 0.006892492369998519,
+        "optimizer/muon/update_weight_cosine": 0.08160052848298376,
+        "optimizer/muon/radial_update_fraction": 0.08160052848298376,
+        "optimizer/muon/angular_step": 0.006862616677564092,
+        "optimizer/muon/matrix_angular_step_mean": 0.007611874354685225,
+        "optimizer/muon/matrix_angular_step_max": 0.015101601006236018,
+        "optimizer/muon/momentum_buffer_norm": 0.073913330893691,
+        "optimizer/muon/momentum_buffer_rms": 2.916552334570996e-05,
+        "optimizer/muon_groups/attention_qkv/parameter_norm": 40.02919485510849,
+        "optimizer/muon_groups/attention_qkv/post_parameter_norm": 40.049808734800756,
+        "optimizer/muon_groups/attention_qkv/parameter_rms": 0.03191767601160014,
+        "optimizer/muon_groups/attention_qkv/post_parameter_rms": 0.03193411299186509,
+        "optimizer/muon_groups/attention_qkv/update_norm": 0.2726003811126802,
+        "optimizer/muon_groups/attention_qkv/update_rms": 0.0002173606232490118,
+        "optimizer/muon_groups/attention_qkv/update_to_parameter_norm": 0.007051520469802909,
+        "optimizer/muon_groups/attention_qkv/update_weight_cosine": 0.07217882092042667,
+        "optimizer/muon_groups/attention_qkv/radial_update_fraction": 0.07217882092042667,
+        "optimizer/muon_groups/attention_qkv/angular_step": 0.007028547819794678,
+        "optimizer/muon_groups/attention_qkv/matrix_angular_step_mean": 0.007069749700859553,
+        "optimizer/muon_groups/attention_qkv/matrix_angular_step_max": 0.0077250005859063895,
+        "optimizer/muon_groups/attention_output/parameter_norm": 16.86650197098895,
+        "optimizer/muon_groups/attention_output/post_parameter_norm": 16.879770790658345,
+        "optimizer/muon_groups/attention_output/parameter_rms": 0.02329378486497373,
+        "optimizer/muon_groups/attention_output/post_parameter_rms": 0.023312109999540375,
+        "optimizer/muon_groups/attention_output/update_norm": 0.15530174171052327,
+        "optimizer/muon_groups/attention_output/update_rms": 0.00021448225512669036,
+        "optimizer/muon_groups/attention_output/update_to_parameter_norm": 0.010091635421281907,
+        "optimizer/muon_groups/attention_output/update_weight_cosine": 0.08041788574035574,
+        "optimizer/muon_groups/attention_output/radial_update_fraction": 0.08041788574035574,
+        "optimizer/muon_groups/attention_output/angular_step": 0.010041644626365202,
+        "optimizer/muon_groups/attention_output/matrix_angular_step_mean": 0.010709837113120934,
+        "optimizer/muon_groups/attention_output/matrix_angular_step_max": 0.015101601006236018,
+        "optimizer/muon_groups/ffn_input_gate/parameter_norm": 61.98401037076624,
+        "optimizer/muon_groups/ffn_input_gate/post_parameter_norm": 62.01532326675043,
+        "optimizer/muon_groups/ffn_input_gate/parameter_rms": 0.036501723364358994,
+        "optimizer/muon_groups/ffn_input_gate/post_parameter_rms": 0.03652016323332379,
+        "optimizer/muon_groups/ffn_input_gate/update_norm": 0.37400042501891534,
+        "optimizer/muon_groups/ffn_input_gate/update_rms": 0.00022024486537613883,
+        "optimizer/muon_groups/ffn_input_gate/update_to_parameter_norm": 0.006238984932168954,
+        "optimizer/muon_groups/ffn_input_gate/update_weight_cosine": 0.08064480852789996,
+        "optimizer/muon_groups/ffn_input_gate/radial_update_fraction": 0.08064480852789996,
+        "optimizer/muon_groups/ffn_input_gate/angular_step": 0.006213219688705555,
+        "optimizer/muon_groups/ffn_input_gate/matrix_angular_step_mean": 0.006221664887739391,
+        "optimizer/muon_groups/ffn_input_gate/matrix_angular_step_max": 0.006645693125702986,
+        "optimizer/muon_groups/ffn_output/parameter_norm": 36.661213060704675,
+        "optimizer/muon_groups/ffn_output/post_parameter_norm": 36.688890875839604,
+        "optimizer/muon_groups/ffn_output/parameter_rms": 0.030532018962974954,
+        "optimizer/muon_groups/ffn_output/post_parameter_rms": 0.030555069423848537,
+        "optimizer/muon_groups/ffn_output/update_norm": 0.2667863245417432,
+        "optimizer/muon_groups/ffn_output/update_rms": 0.0002221837295531636,
+        "optimizer/muon_groups/ffn_output/update_to_parameter_norm": 0.007875333188056218,
+        "optimizer/muon_groups/ffn_output/update_weight_cosine": 0.0999469246442725,
+        "optimizer/muon_groups/ffn_output/radial_update_fraction": 0.0999469246442725,
+        "optimizer/muon_groups/ffn_output/angular_step": 0.007814336057025485,
+        "optimizer/muon_groups/ffn_output/matrix_angular_step_mean": 0.00783645534297315,
+        "optimizer/muon_groups/ffn_output/matrix_angular_step_max": 0.008249964621826643,
+        "diagnostics/logit_rms_sample": 3.9189532791695942,
+        "diagnostics/logit_absolute_max_sample": 13.574695121951219,
+        "gradient_groups/embeddings": 0.20532538287523316,
+        "gradient_groups/norms": 0.027597265954061253,
+        "gradient_groups/attention_qkv": 0.39250806773581154,
+        "gradient_groups/attention_output": 0.3418423039157216,
+        "gradient_groups/ffn_input_gate": 0.283628968567383,
+        "gradient_groups/ffn_output": 0.3330688403873909,
+        "system/cuda_memory_allocated_gib": 0.655611515045166,
+        "system/cuda_memory_reserved_gib": 5.59765625,
+        "system/cuda_peak_memory_allocated_gib": 4.486415386199951,
+        "performance/tokens_per_second": 160315.71843112246,
+        "performance/optimizer_step_seconds": 0.10331281776330908,
+        "validation/loss": 4.676625847816467,
+        "validation/loss_vs_uniform": -5.027434706687927,
+        "validation/perplexity": 111.75036144256592
+      },
+      "3000:6000": {
+        "diagnostics/parameter_norm": 386.44901388942606,
+        "diagnostics/parameter_rms": 0.11849849553096413,
+        "diagnostics/embedding_norm": 327.7723557878249,
+        "diagnostics/embedding_rms": 0.16004509559952387,
+        "optimizer/muon/parameter_norm": 192.4333162213316,
+        "optimizer/muon/parameter_rms": 0.07593242326142764,
+        "train/loss": 4.008802168610016,
+        "train/objective": 4.008802168610016,
+        "train/z_loss": 0.0,
+        "train/z_loss_contribution": 0.0,
+        "train/loss_vs_uniform": -5.695258352685793,
+        "train/perplexity": 55.453855502450516,
+        "train/gradient_norm": 0.38261720110121983,
+        "train/gradient_rms": 0.00011732353133177608,
+        "train/clip_coefficient": 0.9998592906338261,
+        "train/gradient_clipped": 0.0003332222592469177,
+        "train/clip_fraction": 0.03831025986426058,
+        "train/learning_rate": 0.002400000113993883,
+        "train/norm_learning_rate": 0.002400000113993883,
+        "train/muon_learning_rate": 0.0012000000569969416,
+        "train/muon_adjusted_learning_rate_min": 0.0038399999029934406,
+        "train/muon_adjusted_learning_rate_max": 0.006651075091212988,
+        "train/muon_weight_decay_step": 0.0,
+        "train/tokens_seen": 73728000.0,
+        "diagnostics/gradient_to_parameter_norm": 0.0010134887444731401,
+        "diagnostics/update_norm": 1.1470171319376123,
+        "diagnostics/update_rms": 0.0003517147134597607,
+        "diagnostics/update_to_parameter_norm": 0.00299298755898334,
+        "optimizer/adamw/parameter_norm": 335.0673432302947,
+        "optimizer/adamw/post_parameter_norm": 335.10327329730046,
+        "optimizer/adamw/parameter_rms": 0.163243833154735,
+        "optimizer/adamw/post_parameter_rms": 0.16326133788812278,
+        "optimizer/adamw/update_norm": 1.000783634067762,
+        "optimizer/adamw/update_rms": 0.00048757887083465364,
+        "optimizer/adamw/update_to_parameter_norm": 0.00300921298941542,
+        "optimizer/adamw/update_weight_cosine": 0.035541587448701964,
+        "optimizer/adamw/radial_update_fraction": 0.03997037775807617,
+        "optimizer/adamw/angular_step": 0.0030060341872164224,
+        "optimizer/adamw/matrix_angular_step_mean": 0.003068125578528731,
+        "optimizer/adamw/matrix_angular_step_max": 0.003068125578528731,
+        "optimizer/muon/post_parameter_norm": 192.4560569536568,
+        "optimizer/muon/post_parameter_rms": 0.07594139641611883,
+        "optimizer/muon/update_norm": 0.559872571784671,
+        "optimizer/muon/update_rms": 0.0002209205868524859,
+        "optimizer/muon/update_to_parameter_norm": 0.002941136356756681,
+        "optimizer/muon/update_weight_cosine": 0.039149921055477446,
+        "optimizer/muon/radial_update_fraction": 0.039149921055477446,
+        "optimizer/muon/angular_step": 0.0029384593991101673,
+        "optimizer/muon/matrix_angular_step_mean": 0.003122583554946993,
+        "optimizer/muon/matrix_angular_step_max": 0.006421321873912717,
+        "optimizer/muon/momentum_buffer_norm": 0.04459995204711904,
+        "optimizer/muon/momentum_buffer_rms": 1.7598732474742982e-05,
+        "optimizer/muon_groups/attention_qkv/parameter_norm": 91.37907515421952,
+        "optimizer/muon_groups/attention_qkv/post_parameter_norm": 91.39009109345993,
+        "optimizer/muon_groups/attention_qkv/parameter_rms": 0.07286201417446136,
+        "optimizer/muon_groups/attention_qkv/post_parameter_rms": 0.07287079778195608,
+        "optimizer/muon_groups/attention_qkv/update_norm": 0.2740344992368528,
+        "optimizer/muon_groups/attention_qkv/update_rms": 0.0002185041311088636,
+        "optimizer/muon_groups/attention_qkv/update_to_parameter_norm": 0.003033820892416752,
+        "optimizer/muon_groups/attention_qkv/update_weight_cosine": 0.03867823418488007,
+        "optimizer/muon_groups/attention_qkv/radial_update_fraction": 0.03867823418488007,
+        "optimizer/muon_groups/attention_qkv/angular_step": 0.003031105736713156,
+        "optimizer/muon_groups/attention_qkv/matrix_angular_step_mean": 0.003086242914697764,
+        "optimizer/muon_groups/attention_qkv/matrix_angular_step_max": 0.003961475635187166,
+        "optimizer/muon_groups/attention_output/parameter_norm": 44.6543820069568,
+        "optimizer/muon_groups/attention_output/post_parameter_norm": 44.66003897638604,
+        "optimizer/muon_groups/attention_output/parameter_rms": 0.06167073496202431,
+        "optimizer/muon_groups/attention_output/post_parameter_rms": 0.06167854741215706,
+        "optimizer/muon_groups/attention_output/update_norm": 0.15448152753386166,
+        "optimizer/muon_groups/attention_output/update_rms": 0.00021334948397983824,
+        "optimizer/muon_groups/attention_output/update_to_parameter_norm": 0.0035032430032065306,
+        "optimizer/muon_groups/attention_output/update_weight_cosine": 0.034866528179828486,
+        "optimizer/muon_groups/attention_output/radial_update_fraction": 0.034866528179828486,
+        "optimizer/muon_groups/attention_output/angular_step": 0.0035005593372711744,
+        "optimizer/muon_groups/attention_output/matrix_angular_step_mean": 0.003903033691320089,
+        "optimizer/muon_groups/attention_output/matrix_angular_step_max": 0.006421321873912717,
+        "optimizer/muon_groups/ffn_input_gate/parameter_norm": 135.03866546933014,
+        "optimizer/muon_groups/ffn_input_gate/post_parameter_norm": 135.054106230783,
+        "optimizer/muon_groups/ffn_input_gate/parameter_rms": 0.07952283086753127,
+        "optimizer/muon_groups/ffn_input_gate/post_parameter_rms": 0.07953192367412076,
+        "optimizer/muon_groups/ffn_input_gate/update_norm": 0.376904162144897,
+        "optimizer/muon_groups/ffn_input_gate/update_rms": 0.00022195484391229208,
+        "optimizer/muon_groups/ffn_input_gate/update_to_parameter_norm": 0.0028191292750658374,
+        "optimizer/muon_groups/ffn_input_gate/update_weight_cosine": 0.03956365819540945,
+        "optimizer/muon_groups/ffn_input_gate/radial_update_fraction": 0.03956365819540945,
+        "optimizer/muon_groups/ffn_input_gate/angular_step": 0.0028165282686194865,
+        "optimizer/muon_groups/ffn_input_gate/matrix_angular_step_mean": 0.0028260388102677495,
+        "optimizer/muon_groups/ffn_input_gate/matrix_angular_step_max": 0.003241767150137832,
+        "optimizer/muon_groups/ffn_output/parameter_norm": 91.92660937923016,
+        "optimizer/muon_groups/ffn_output/post_parameter_norm": 91.9378343336653,
+        "optimizer/muon_groups/ffn_output/parameter_rms": 0.0765578863718132,
+        "optimizer/muon_groups/ffn_output/post_parameter_rms": 0.0765672349324911,
+        "optimizer/muon_groups/ffn_output/update_norm": 0.26914727628821195,
+        "optimizer/muon_groups/ffn_output/update_rms": 0.00022414996862725014,
+        "optimizer/muon_groups/ffn_output/update_to_parameter_norm": 0.002961822923752341,
+        "optimizer/muon_groups/ffn_output/update_weight_cosine": 0.040230061822008376,
+        "optimizer/muon_groups/ffn_output/radial_update_fraction": 0.040230061822008376,
+        "optimizer/muon_groups/ffn_output/angular_step": 0.002958978450220853,
+        "optimizer/muon_groups/ffn_output/matrix_angular_step_mean": 0.0029715635343500885,
+        "optimizer/muon_groups/ffn_output/matrix_angular_step_max": 0.003169353806994634,
+        "diagnostics/logit_rms_sample": 4.296273755555106,
+        "diagnostics/logit_absolute_max_sample": 17.748143564356436,
+        "gradient_groups/embeddings": 0.10608512340205731,
+        "gradient_groups/norms": 0.04715792039907215,
+        "gradient_groups/attention_qkv": 0.2090287946238376,
+        "gradient_groups/attention_output": 0.18530299123561028,
+        "gradient_groups/ffn_input_gate": 0.1833664501952653,
+        "gradient_groups/ffn_output": 0.1533168064485682,
+        "system/cuda_memory_allocated_gib": 0.655611515045166,
+        "system/cuda_memory_reserved_gib": 5.59765625,
+        "system/cuda_peak_memory_allocated_gib": 4.486415386199951,
+        "performance/tokens_per_second": 162663.0796875,
+        "performance/optimizer_step_seconds": 0.10215562464048465,
+        "validation/loss": 4.058348202705384,
+        "validation/loss_vs_uniform": -5.6457123279571535,
+        "validation/perplexity": 57.950275611877444
+      },
+      "8000:10440": {
+        "diagnostics/parameter_norm": 547.8080890934642,
+        "diagnostics/parameter_rms": 0.16797671212655743,
+        "diagnostics/embedding_norm": 464.95738108565166,
+        "diagnostics/embedding_rms": 0.22702997123322835,
+        "optimizer/muon/parameter_norm": 281.16070258908155,
+        "optimizer/muon/parameter_rms": 0.11094343816725219,
+        "train/loss": 3.844966259221472,
+        "train/objective": 3.844966259221472,
+        "train/z_loss": 0.0,
+        "train/z_loss_contribution": 0.0,
+        "train/loss_vs_uniform": -5.859094234921316,
+        "train/perplexity": 47.0286026766729,
+        "train/gradient_norm": 0.29554760732010027,
+        "train/gradient_rms": 9.062501335767335e-05,
+        "train/clip_coefficient": 1.0,
+        "train/gradient_clipped": 0.0,
+        "train/clip_fraction": 0.01811062270872347,
+        "train/learning_rate": 0.002400000113993883,
+        "train/norm_learning_rate": 0.002400000113993883,
+        "train/muon_learning_rate": 0.0012000000569969416,
+        "train/muon_adjusted_learning_rate_min": 0.0038399999029934406,
+        "train/muon_adjusted_learning_rate_max": 0.006651075091212988,
+        "train/muon_weight_decay_step": 0.0,
+        "train/tokens_seen": 151060480.0,
+        "diagnostics/gradient_to_parameter_norm": 0.000541501183406359,
+        "diagnostics/update_norm": 1.1588476387465871,
+        "diagnostics/update_rms": 0.00035534235620416884,
+        "diagnostics/update_to_parameter_norm": 0.0021189633677372844,
+        "optimizer/adamw/parameter_norm": 470.1170594750381,
+        "optimizer/adamw/post_parameter_norm": 470.14145418492757,
+        "optimizer/adamw/parameter_rms": 0.2290396626766135,
+        "optimizer/adamw/post_parameter_rms": 0.229051547261273,
+        "optimizer/adamw/update_norm": 1.0136425502416564,
+        "optimizer/adamw/update_rms": 0.000493843696171009,
+        "optimizer/adamw/update_to_parameter_norm": 0.0021596248290024515,
+        "optimizer/adamw/update_weight_cosine": 0.0247785142486597,
+        "optimizer/adamw/radial_update_fraction": 0.03130042459247861,
+        "optimizer/adamw/angular_step": 0.0021582300257982643,
+        "optimizer/adamw/matrix_angular_step_mean": 0.002177222830629567,
+        "optimizer/adamw/matrix_angular_step_max": 0.002177222830629567,
+        "optimizer/muon/post_parameter_norm": 281.17670533715227,
+        "optimizer/muon/post_parameter_rms": 0.11094975208000439,
+        "optimizer/muon/update_norm": 0.5601777746910002,
+        "optimizer/muon/update_rms": 0.00022104101662989706,
+        "optimizer/muon/update_to_parameter_norm": 0.001995620197082711,
+        "optimizer/muon/update_weight_cosine": 0.02756995183029553,
+        "optimizer/muon/radial_update_fraction": 0.02756995183029553,
+        "optimizer/muon/angular_step": 0.001994743626621529,
+        "optimizer/muon/matrix_angular_step_mean": 0.002093906891986546,
+        "optimizer/muon/matrix_angular_step_max": 0.003708798188443591,
+        "optimizer/muon/momentum_buffer_norm": 0.03521944768726826,
+        "optimizer/muon/momentum_buffer_rms": 1.389727139012837e-05,
+        "optimizer/muon_groups/attention_qkv/parameter_norm": 134.4641570114508,
+        "optimizer/muon_groups/attention_qkv/post_parameter_norm": 134.47189582266458,
+        "optimizer/muon_groups/attention_qkv/parameter_rms": 0.10721633210778236,
+        "optimizer/muon_groups/attention_qkv/post_parameter_rms": 0.10722250282400991,
+        "optimizer/muon_groups/attention_qkv/update_norm": 0.2719148920803535,
+        "optimizer/muon_groups/attention_qkv/update_rms": 0.00021681404124559243,
+        "optimizer/muon_groups/attention_qkv/update_to_parameter_norm": 0.0020256243637626673,
+        "optimizer/muon_groups/attention_qkv/update_weight_cosine": 0.027447694549109877,
+        "optimizer/muon_groups/attention_qkv/radial_update_fraction": 0.027447694549109877,
+        "optimizer/muon_groups/attention_qkv/angular_step": 0.0020247390025249887,
+        "optimizer/muon_groups/attention_qkv/matrix_angular_step_mean": 0.002055921323495213,
+        "optimizer/muon_groups/attention_qkv/matrix_angular_step_max": 0.0025953239102552575,
+        "optimizer/muon_groups/attention_output/parameter_norm": 66.12679797847096,
+        "optimizer/muon_groups/attention_output/post_parameter_norm": 66.13057462180534,
+        "optimizer/muon_groups/attention_output/parameter_rms": 0.0913256002453769,
+        "optimizer/muon_groups/attention_output/post_parameter_rms": 0.09133081610609846,
+        "optimizer/muon_groups/attention_output/update_norm": 0.15461716473829457,
+        "optimizer/muon_groups/attention_output/update_rms": 0.00021353680832118433,
+        "optimizer/muon_groups/attention_output/update_to_parameter_norm": 0.002342038401743261,
+        "optimizer/muon_groups/attention_output/update_weight_cosine": 0.023254883112158717,
+        "optimizer/muon_groups/attention_output/radial_update_fraction": 0.023254883112158717,
+        "optimizer/muon_groups/attention_output/angular_step": 0.0023412615537825154,
+        "optimizer/muon_groups/attention_output/matrix_angular_step_mean": 0.0025208747304021947,
+        "optimizer/muon_groups/attention_output/matrix_angular_step_max": 0.003708798188443591,
+        "optimizer/muon_groups/ffn_input_gate/parameter_norm": 195.40399449046066,
+        "optimizer/muon_groups/ffn_input_gate/post_parameter_norm": 195.41492517983042,
+        "optimizer/muon_groups/ffn_input_gate/parameter_rms": 0.11507132976520353,
+        "optimizer/muon_groups/ffn_input_gate/post_parameter_rms": 0.1150777671577,
+        "optimizer/muon_groups/ffn_input_gate/update_norm": 0.3785118587860247,
+        "optimizer/muon_groups/ffn_input_gate/update_rms": 0.0002229016009084994,
+        "optimizer/muon_groups/ffn_input_gate/update_to_parameter_norm": 0.0019400947863554082,
+        "optimizer/muon_groups/ffn_input_gate/update_weight_cosine": 0.027912648144836832,
+        "optimizer/muon_groups/ffn_input_gate/radial_update_fraction": 0.027912648144836832,
+        "optimizer/muon_groups/ffn_input_gate/angular_step": 0.001939225041807243,
+        "optimizer/muon_groups/ffn_input_gate/matrix_angular_step_mean": 0.0019477979938794926,
+        "optimizer/muon_groups/ffn_input_gate/matrix_angular_step_max": 0.002253753661246198,
+        "optimizer/muon_groups/ffn_output/parameter_norm": 135.70266974844583,
+        "optimizer/muon_groups/ffn_output/post_parameter_norm": 135.71057594113233,
+        "optimizer/muon_groups/ffn_output/parameter_rms": 0.11301525963879214,
+        "optimizer/muon_groups/ffn_output/post_parameter_rms": 0.11302184349879986,
+        "optimizer/muon_groups/ffn_output/update_norm": 0.2695988314907725,
+        "optimizer/muon_groups/ffn_output/update_rms": 0.00022452602943081817,
+        "optimizer/muon_groups/ffn_output/update_to_parameter_norm": 0.0019900856295418812,
+        "optimizer/muon_groups/ffn_output/update_weight_cosine": 0.02832966111600399,
+        "optimizer/muon_groups/ffn_output/radial_update_fraction": 0.02832966111600399,
+        "optimizer/muon_groups/ffn_output/angular_step": 0.0019891656091913764,
+        "optimizer/muon_groups/ffn_output/matrix_angular_step_mean": 0.0019971424750642986,
+        "optimizer/muon_groups/ffn_output/matrix_angular_step_max": 0.002147844700120026,
+        "diagnostics/logit_rms_sample": 4.537411910731618,
+        "diagnostics/logit_absolute_max_sample": 18.735518292682926,
+        "gradient_groups/embeddings": 0.08134021092115379,
+        "gradient_groups/norms": 0.0671149283738398,
+        "gradient_groups/attention_qkv": 0.15621540277469448,
+        "gradient_groups/attention_output": 0.1353542022407055,
+        "gradient_groups/ffn_input_gate": 0.14072553050227282,
+        "gradient_groups/ffn_output": 0.11739503674027396,
+        "system/cuda_memory_allocated_gib": 0.655611515045166,
+        "system/cuda_memory_reserved_gib": 5.59765625,
+        "system/cuda_peak_memory_allocated_gib": 4.486415386199951,
+        "performance/tokens_per_second": 161799.318877551,
+        "performance/optimizer_step_seconds": 0.10238876665125088,
+        "validation/loss": 3.895268804886762,
+        "validation/loss_vs_uniform": -5.808791721568388,
+        "validation/perplexity": 49.174358143525964
+      },
+      "12000:13003": {
+        "diagnostics/parameter_norm": 613.3959681919642,
+        "diagnostics/parameter_rms": 0.18808820247650146,
+        "diagnostics/embedding_norm": 522.7226422991072,
+        "diagnostics/embedding_rms": 0.2552356651851109,
+        "optimizer/muon/parameter_norm": 313.2252764020647,
+        "optimizer/muon/parameter_rms": 0.12359582419906344,
+        "train/loss": 3.701644281942056,
+        "train/objective": 3.701644281942056,
+        "train/z_loss": 0.0,
+        "train/z_loss_contribution": 0.0,
+        "train/loss_vs_uniform": -6.002416198472103,
+        "train/perplexity": 40.75461933812297,
+        "train/gradient_norm": 0.27361669947960937,
+        "train/gradient_rms": 8.390024625140834e-05,
+        "train/clip_coefficient": 1.0,
+        "train/gradient_clipped": 0.0,
+        "train/clip_fraction": 0.013285550369558285,
+        "train/learning_rate": 0.00047089201917098386,
+        "train/norm_learning_rate": 0.00047089201917098386,
+        "train/muon_learning_rate": 0.00023544600958549193,
+        "train/muon_adjusted_learning_rate_min": 0.0007534272300997953,
+        "train/muon_adjusted_learning_rate_max": 0.0013049742424350171,
+        "train/muon_weight_decay_step": 0.0,
+        "train/tokens_seen": 204824576.0,
+        "diagnostics/gradient_to_parameter_norm": 0.0004442390478548727,
+        "diagnostics/update_norm": 0.22398394076153635,
+        "diagnostics/update_rms": 6.868114344992397e-05,
+        "diagnostics/update_to_parameter_norm": 0.00036531967060519883,
+        "optimizer/adamw/parameter_norm": 527.3920968191965,
+        "optimizer/adamw/post_parameter_norm": 527.3935546875,
+        "optimizer/adamw/parameter_rms": 0.25694389172962734,
+        "optimizer/adamw/post_parameter_rms": 0.25694460272789,
+        "optimizer/adamw/update_norm": 0.196062253774809,
+        "optimizer/adamw/update_rms": 9.552095849098155e-05,
+        "optimizer/adamw/update_to_parameter_norm": 0.00037191625384106635,
+        "optimizer/adamw/update_weight_cosine": 0.005983503854700497,
+        "optimizer/adamw/radial_update_fraction": 0.017168514018080065,
+        "optimizer/adamw/angular_step": 0.00037180151599126735,
+        "optimizer/adamw/matrix_angular_step_mean": 0.00037411387703676675,
+        "optimizer/adamw/matrix_angular_step_max": 0.00037411387703676675,
+        "optimizer/muon/post_parameter_norm": 313.22619977678573,
+        "optimizer/muon/post_parameter_rms": 0.12359618778739656,
+        "optimizer/muon/update_norm": 0.10808039753963905,
+        "optimizer/muon/update_rms": 4.264753433095133e-05,
+        "optimizer/muon/update_to_parameter_norm": 0.00034523792271232064,
+        "optimizer/muon/update_weight_cosine": 0.006810984195076994,
+        "optimizer/muon/radial_update_fraction": 0.006810984195076994,
+        "optimizer/muon/angular_step": 0.00034522390529413574,
+        "optimizer/muon/matrix_angular_step_mean": 0.0003619461086730423,
+        "optimizer/muon/matrix_angular_step_max": 0.0006275489621267687,
+        "optimizer/muon/momentum_buffer_norm": 0.03727719294173377,
+        "optimizer/muon/momentum_buffer_rms": 1.470923889428377e-05,
+        "optimizer/muon_groups/attention_qkv/parameter_norm": 149.94978419712612,
+        "optimizer/muon_groups/attention_qkv/post_parameter_norm": 149.9502179827009,
+        "optimizer/muon_groups/attention_qkv/parameter_rms": 0.11956395081111364,
+        "optimizer/muon_groups/attention_qkv/post_parameter_rms": 0.11956429651805332,
+        "optimizer/muon_groups/attention_qkv/update_norm": 0.052298332754123426,
+        "optimizer/muon_groups/attention_qkv/update_rms": 4.1700595644605136e-05,
+        "optimizer/muon_groups/attention_qkv/update_to_parameter_norm": 0.00034896525383893665,
+        "optimizer/muon_groups/attention_qkv/update_weight_cosine": 0.006501577096059918,
+        "optimizer/muon_groups/attention_qkv/radial_update_fraction": 0.006501577096059918,
+        "optimizer/muon_groups/attention_qkv/angular_step": 0.00034895147980153397,
+        "optimizer/muon_groups/attention_qkv/matrix_angular_step_mean": 0.00035439843408572154,
+        "optimizer/muon_groups/attention_qkv/matrix_angular_step_max": 0.00044834764194092715,
+        "optimizer/muon_groups/attention_output/parameter_norm": 73.65836988176618,
+        "optimizer/muon_groups/attention_output/post_parameter_norm": 73.65856214250837,
+        "optimizer/muon_groups/attention_output/parameter_rms": 0.10172721190111977,
+        "optimizer/muon_groups/attention_output/post_parameter_rms": 0.10172747756753649,
+        "optimizer/muon_groups/attention_output/update_norm": 0.029859704898470747,
+        "optimizer/muon_groups/attention_output/update_rms": 4.123828065465724e-05,
+        "optimizer/muon_groups/attention_output/update_to_parameter_norm": 0.0004056031046794877,
+        "optimizer/muon_groups/attention_output/update_weight_cosine": 0.005120090788113885,
+        "optimizer/muon_groups/attention_output/radial_update_fraction": 0.005130432519113778,
+        "optimizer/muon_groups/attention_output/angular_step": 0.00040559248858958847,
+        "optimizer/muon_groups/attention_output/matrix_angular_step_mean": 0.00043396312324018384,
+        "optimizer/muon_groups/attention_output/matrix_angular_step_max": 0.0006275489621267687,
+        "optimizer/muon_groups/ffn_input_gate/parameter_norm": 217.29351545061385,
+        "optimizer/muon_groups/ffn_input_gate/post_parameter_norm": 217.29415413992746,
+        "optimizer/muon_groups/ffn_input_gate/parameter_rms": 0.12796183569090708,
+        "optimizer/muon_groups/ffn_input_gate/post_parameter_rms": 0.12796221205166408,
+        "optimizer/muon_groups/ffn_input_gate/update_norm": 0.07314205370909933,
+        "optimizer/muon_groups/ffn_input_gate/update_rms": 4.307257624012501e-05,
+        "optimizer/muon_groups/ffn_input_gate/update_to_parameter_norm": 0.0003367734580803829,
+        "optimizer/muon_groups/ffn_input_gate/update_weight_cosine": 0.007047639208446656,
+        "optimizer/muon_groups/ffn_input_gate/radial_update_fraction": 0.007047639208446656,
+        "optimizer/muon_groups/ffn_input_gate/angular_step": 0.000336759025334946,
+        "optimizer/muon_groups/ffn_input_gate/matrix_angular_step_mean": 0.00033838164360661593,
+        "optimizer/muon_groups/ffn_input_gate/matrix_angular_step_max": 0.0003914911850578002,
+        "optimizer/muon_groups/ffn_output/parameter_norm": 151.60181230817523,
+        "optimizer/muon_groups/ffn_output/post_parameter_norm": 151.60227617536273,
+        "optimizer/muon_groups/ffn_output/parameter_rms": 0.12625630838530405,
+        "optimizer/muon_groups/ffn_output/post_parameter_rms": 0.12625669368675776,
+        "optimizer/muon_groups/ffn_output/update_norm": 0.052008554698633296,
+        "optimizer/muon_groups/ffn_output/update_rms": 4.3313519865608085e-05,
+        "optimizer/muon_groups/ffn_output/update_to_parameter_norm": 0.0003432474498237882,
+        "optimizer/muon_groups/ffn_output/update_weight_cosine": 0.007142609158264739,
+        "optimizer/muon_groups/ffn_output/radial_update_fraction": 0.007142609158264739,
+        "optimizer/muon_groups/ffn_output/angular_step": 0.00034323210061951875,
+        "optimizer/muon_groups/ffn_output/matrix_angular_step_mean": 0.0003446056998135256,
+        "optimizer/muon_groups/ffn_output/matrix_angular_step_max": 0.0003710980077032998,
+        "diagnostics/logit_rms_sample": 4.821627971104213,
+        "diagnostics/logit_absolute_max_sample": 20.210714285714285,
+        "gradient_groups/embeddings": 0.07733968900782721,
+        "gradient_groups/norms": 0.07190103818263327,
+        "gradient_groups/attention_qkv": 0.13929178885051183,
+        "gradient_groups/attention_output": 0.1175453326531819,
+        "gradient_groups/ffn_input_gate": 0.13270690611430577,
+        "gradient_groups/ffn_output": 0.1100104666181973,
+        "system/cuda_memory_allocated_gib": 0.655611515045166,
+        "system/cuda_memory_reserved_gib": 5.59765625,
+        "system/cuda_peak_memory_allocated_gib": 4.486415386199951,
+        "performance/tokens_per_second": 164678.18229166666,
+        "performance/optimizer_step_seconds": 0.09966849429266793,
+        "validation/loss": 3.7471172511577606,
+        "validation/loss_vs_uniform": -5.956943333148956,
+        "validation/perplexity": 42.40298128128052
+      }
+    },
+    "late_gradient_energy_share": {
+      "gradient_groups/embeddings": 0.07612839426303032,
+      "gradient_groups/norms": 0.052325781127767514,
+      "gradient_groups/attention_qkv": 0.2781200778241457,
+      "gradient_groups/attention_output": 0.20913022666615935,
+      "gradient_groups/ffn_input_gate": 0.22658552727459605,
+      "gradient_groups/ffn_output": 0.1577099928443011
+    },
+    "validation": [
+      [
+        149.0,
+        6.293508529663086
+      ],
+      [
+        298.0,
+        5.545013427734375
+      ],
+      [
+        447.0,
+        5.205204486846924
+      ],
+      [
+        596.0,
+        4.999695777893066
+      ],
+      [
+        745.0,
+        4.754042148590088
+      ],
+      [
+        894.0,
+        4.616052150726318
+      ],
+      [
+        1043.0,
+        4.536360740661621
+      ],
+      [
+        1192.0,
+        4.475688457489014
+      ],
+      [
+        1341.0,
+        4.433410167694092
+      ],
+      [
+        1490.0,
+        4.392552852630615
+      ],
+      [
+        1639.0,
+        4.3516340255737305
+      ],
+      [
+        1788.0,
+        4.32455587387085
+      ],
+      [
+        1937.0,
+        4.290754318237305
+      ],
+      [
+        2086.0,
+        4.274117946624756
+      ],
+      [
+        2235.0,
+        4.2527055740356445
+      ],
+      [
+        2384.0,
+        4.22694730758667
+      ],
+      [
+        2533.0,
+        4.207714080810547
+      ],
+      [
+        2682.0,
+        4.188043117523193
+      ],
+      [
+        2831.0,
+        4.178555011749268
+      ],
+      [
+        2980.0,
+        4.164146423339844
+      ],
+      [
+        3129.0,
+        4.147958755493164
+      ],
+      [
+        3278.0,
+        4.135784149169922
+      ],
+      [
+        3427.0,
+        4.13283634185791
+      ],
+      [
+        3576.0,
+        4.109423637390137
+      ],
+      [
+        3725.0,
+        4.1046342849731445
+      ],
+      [
+        3874.0,
+        4.0939555168151855
+      ],
+      [
+        4023.0,
+        4.086533546447754
+      ],
+      [
+        4172.0,
+        4.073741436004639
+      ],
+      [
+        4321.0,
+        4.066061019897461
+      ],
+      [
+        4470.0,
+        4.062472820281982
+      ],
+      [
+        4619.0,
+        4.050723075866699
+      ],
+      [
+        4768.0,
+        4.0389275550842285
+      ],
+      [
+        4917.0,
+        4.0311713218688965
+      ],
+      [
+        5066.0,
+        4.025055885314941
+      ],
+      [
+        5215.0,
+        4.019313812255859
+      ],
+      [
+        5364.0,
+        4.009082794189453
+      ],
+      [
+        5513.0,
+        4.005285263061523
+      ],
+      [
+        5662.0,
+        3.9979794025421143
+      ],
+      [
+        5811.0,
+        3.990438222885132
+      ],
+      [
+        5960.0,
+        3.9855852127075195
+      ],
+      [
+        6109.0,
+        3.9785776138305664
+      ],
+      [
+        6258.0,
+        3.9706454277038574
+      ],
+      [
+        6407.0,
+        3.963202953338623
+      ],
+      [
+        6556.0,
+        3.96329665184021
+      ],
+      [
+        6705.0,
+        3.9549272060394287
+      ],
+      [
+        6854.0,
+        3.9491519927978516
+      ],
+      [
+        7003.0,
+        3.9436838626861572
+      ],
+      [
+        7152.0,
+        3.9408421516418457
+      ],
+      [
+        7301.0,
+        3.9375336170196533
+      ],
+      [
+        7450.0,
+        3.9362430572509766
+      ],
+      [
+        7599.0,
+        3.931340456008911
+      ],
+      [
+        7748.0,
+        3.925950050354004
+      ],
+      [
+        7897.0,
+        3.922240734100342
+      ],
+      [
+        8046.0,
+        3.920483350753784
+      ],
+      [
+        8195.0,
+        3.9176318645477295
+      ],
+      [
+        8344.0,
+        3.9154014587402344
+      ],
+      [
+        8493.0,
+        3.908411979675293
+      ],
+      [
+        8642.0,
+        3.903520107269287
+      ],
+      [
+        8791.0,
+        3.9025497436523438
+      ],
+      [
+        8940.0,
+        3.9057724475860596
+      ],
+      [
+        9089.0,
+        3.894235610961914
+      ],
+      [
+        9238.0,
+        3.8895370960235596
+      ],
+      [
+        9387.0,
+        3.886512279510498
+      ],
+      [
+        9536.0,
+        3.8883817195892334
+      ],
+      [
+        9685.0,
+        3.8890132904052734
+      ],
+      [
+        9834.0,
+        3.8862996101379395
+      ],
+      [
+        9983.0,
+        3.8846192359924316
+      ],
+      [
+        10132.0,
+        3.8798985481262207
+      ],
+      [
+        10281.0,
+        3.8756027221679688
+      ],
+      [
+        10430.0,
+        3.8716986179351807
+      ],
+      [
+        10579.0,
+        3.8656985759735107
+      ],
+      [
+        10728.0,
+        3.8573341369628906
+      ],
+      [
+        10877.0,
+        3.852410316467285
+      ],
+      [
+        11026.0,
+        3.840743064880371
+      ],
+      [
+        11175.0,
+        3.8294737339019775
+      ],
+      [
+        11324.0,
+        3.8157143592834473
+      ],
+      [
+        11473.0,
+        3.806748867034912
+      ],
+      [
+        11622.0,
+        3.7982804775238037
+      ],
+      [
+        11771.0,
+        3.789008617401123
+      ],
+      [
+        11920.0,
+        3.7797319889068604
+      ],
+      [
+        12069.0,
+        3.7720985412597656
+      ],
+      [
+        12218.0,
+        3.7639880180358887
+      ],
+      [
+        12367.0,
+        3.754647970199585
+      ],
+      [
+        12516.0,
+        3.7468252182006836
+      ],
+      [
+        12665.0,
+        3.7405316829681396
+      ],
+      [
+        12814.0,
+        3.7353196144104004
+      ],
+      [
+        12963.0,
+        3.731951951980591
+      ],
+      [
+        13003.0,
+        3.7315750122070312
+      ]
+    ],
+    "train_wall_seconds_first_to_last_scalar": 1317.132788658142
+  },
+  "sweep_rows": [
+    {
+      "experiment_name": "10m_16k_421m_muon_lr1.0",
+      "dataset_variant": "421m",
+      "train_loss": "3.521953106",
+      "validation_loss": "3.890150479",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_421m_muon_lr1.0.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=421m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=1.0;MUON_WEIGHT_DECAY=0.05;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_421m_muon_lr0.5",
+      "dataset_variant": "421m",
+      "train_loss": "3.537191391",
+      "validation_loss": "3.88336386",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_421m_muon_lr0.5.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=421m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=0.5;MUON_WEIGHT_DECAY=0.05;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_421m_muon_lr1.5",
+      "dataset_variant": "421m",
+      "train_loss": "3.539218187",
+      "validation_loss": "3.892262902",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_421m_muon_lr1.5.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=421m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=1.5;MUON_WEIGHT_DECAY=0.05;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_421m_muon_lr2.0",
+      "dataset_variant": "421m",
+      "train_loss": "3.530548096",
+      "validation_loss": "3.887298346",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_421m_muon_lr2.0.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=421m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=2.0;MUON_WEIGHT_DECAY=0.05;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_421m_muon_lr0.25",
+      "dataset_variant": "421m",
+      "train_loss": "3.532200813",
+      "validation_loss": "3.892776217",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_421m_muon_lr0.25.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=421m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=0.25;MUON_WEIGHT_DECAY=0.05;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_421m_muon_lr0.75",
+      "dataset_variant": "421m",
+      "train_loss": "3.54003191",
+      "validation_loss": "3.897318874",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_421m_muon_lr0.75.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=421m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=0.75;MUON_WEIGHT_DECAY=0.05;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_421m_muon_lr0.5_mwd0.0",
+      "dataset_variant": "421m",
+      "train_loss": "3.536698341",
+      "validation_loss": "3.882019145",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_421m_muon_lr0.5_mwd0.0.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=421m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=0.5;MUON_WEIGHT_DECAY=0.0;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_421m_muon_lr1.0_mwd0.0",
+      "dataset_variant": "421m",
+      "train_loss": "3.528224468",
+      "validation_loss": "3.887810741",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_421m_muon_lr1.0_mwd0.0.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=421m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=1.0;MUON_WEIGHT_DECAY=0.0;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_421m_muon_lr2.0_mwd0.0",
+      "dataset_variant": "421m",
+      "train_loss": "3.536013126",
+      "validation_loss": "3.898275069",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_421m_muon_lr2.0_mwd0.0.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=421m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=2.0;MUON_WEIGHT_DECAY=0.0;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_421m_muon_lr0.5_mwd0.10",
+      "dataset_variant": "421m",
+      "train_loss": "3.52957201",
+      "validation_loss": "3.882175003",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_421m_muon_lr0.5_mwd0.10.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=421m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=0.5;MUON_WEIGHT_DECAY=0.1;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_421m_muon_lr1.0_mwd0.10",
+      "dataset_variant": "421m",
+      "train_loss": "3.535064697",
+      "validation_loss": "3.895603657",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_421m_muon_lr1.0_mwd0.10.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=421m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=1.0;MUON_WEIGHT_DECAY=0.1;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_421m_muon_lr2.0_mwd0.10",
+      "dataset_variant": "421m",
+      "train_loss": "3.568579674",
+      "validation_loss": "3.906948737",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_421m_muon_lr2.0_mwd0.10.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=421m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=2.0;MUON_WEIGHT_DECAY=0.1;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_907m_muon_lr0.5_mwd0.0",
+      "dataset_variant": "907m",
+      "train_loss": "3.64884758",
+      "validation_loss": "3.731574944",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_907m_muon_lr0.5_mwd0.0.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=907m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=0.5;MUON_WEIGHT_DECAY=0.0;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_907m_muon_lr0.5_mwd0.05",
+      "dataset_variant": "907m",
+      "train_loss": "3.656205893",
+      "validation_loss": "3.732548577",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_907m_muon_lr0.5_mwd0.05.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=907m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=0.5;MUON_WEIGHT_DECAY=0.05;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    },
+    {
+      "experiment_name": "10m_16k_907m_muon_lr0.5_mwd0.10",
+      "dataset_variant": "907m",
+      "train_loss": "3.659743786",
+      "validation_loss": "3.738267047",
+      "train_script": "pretrain_base_muon.py",
+      "model_path": "/home/samuele/Desktop/pavullmo/models/10m_16k_907m_muon_lr0.5_mwd0.10.pt",
+      "config": "VOCAB_SIZE=16384;N_BLOCKS=8;EMBED_DIM=256;ATTN_HEADS=4;FFN_DIM=704;SEQ_LEN=1024;ROPE_BASE=10000.0;INITIALIZATION=gpt_scaled;INITIALIZATION_STD=0.02;QK_NORM=True;LR=0.0024;MIN_LR=0.0;LR_SCHEDULER=wsd;WSD_DECAY_FRACTION=0.2;ADAM_BETA1=0.9;ADAM_BETA2=0.99;ADAM_EPS=1e-08;NORM_LR_MULTIPLIER=1.0;WARMUP_STEPS=219;BATCH_SIZE=16;GRAD_ACCUM_STEPS=1;EPOCHS=1;MAX_STEPS=0;DROPOUT=0.0;WEIGHT_DECAY=0.05;Z_LOSS_COEFFICIENT=0.0;MAX_GRAD_NORM=1.0;SEED=42;DATASET_PREFIX=16k;DATASET_VARIANT=907m;VALIDATION_INTERVAL=149;VALIDATION_STEPS=7;DIAGNOSTICS_INTERVAL=30;COMPILE_MODEL=True;COMPILE_MODE=default;MUON_LR_MULTIPLIER=0.5;MUON_WEIGHT_DECAY=0.1;MUON_MOMENTUM=0.95;MUON_NESTEROV=True;MUON_ADJUST_LR_FN=match_rms_adamw;MUON_EPS=1e-07;MUON_NS_ITERS=5;MUON_NS_COEFFICIENT_A=3.4445;MUON_NS_COEFFICIENT_B=-4.775;MUON_NS_COEFFICIENT_C=2.0315"
+    }
+  ]
+}
