@@ -74,9 +74,9 @@ WEIGHT_DECAY = float(os.environ.get("WEIGHT_DECAY", 1e-5))
 MUON_WEIGHT_DECAY = float(os.environ.get("MUON_WEIGHT_DECAY", 0.05))
 MUON_MOMENTUM = float(os.environ.get("MUON_MOMENTUM", 0.95))
 MUON_NESTEROV = env_bool("MUON_NESTEROV", True)
-MUON_ADJUST_LR_FN = os.environ.get(
-    "MUON_ADJUST_LR_FN", "match_rms_adamw"
-).strip().lower()
+MUON_ADJUST_LR_FN = (
+    os.environ.get("MUON_ADJUST_LR_FN", "match_rms_adamw").strip().lower()
+)
 MUON_EPS = float(os.environ.get("MUON_EPS", 1e-7))
 MUON_NS_ITERS = int(os.environ.get("MUON_NS_ITERS", 5))
 MUON_NS_COEFFICIENT_A = float(os.environ.get("MUON_NS_COEFFICIENT_A", 3.4445))
@@ -89,9 +89,7 @@ SEED = int(os.environ.get("SEED", 42))
 # Data, evaluation, and runtime settings.
 DATASET_VARIANT = os.environ.get("DATASET_VARIANT", "10m").lower()
 DATASET_PREFIX = os.environ.get("DATASET_PREFIX", "").strip()
-if DATASET_PREFIX and not re.fullmatch(
-    r"[A-Za-z0-9][A-Za-z0-9._-]*", DATASET_PREFIX
-):
+if DATASET_PREFIX and not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*", DATASET_PREFIX):
     raise ValueError(
         "DATASET_PREFIX must start with an ASCII letter or digit and contain "
         "only letters, digits, '.', '_', and '-'"
@@ -438,9 +436,7 @@ def parameter_ids(
     parameter_groups: list[dict[str, Any]],
 ) -> list[int]:
     return [
-        id(parameter)
-        for group in parameter_groups
-        for parameter in group["params"]
+        id(parameter) for group in parameter_groups for parameter in group["params"]
     ]
 
 
@@ -483,6 +479,7 @@ def validate_optimizer_parameter_partition(
         or missing_ids
         or unexpected_ids
     ):
+
         def names(parameter_ids_to_report: set[int]) -> list[str]:
             return sorted(
                 names_by_id.get(parameter_id, repr(parameter_id))
@@ -1171,12 +1168,8 @@ def main() -> None:
         "muon_lr_multiplier": MUON_LR_MULTIPLIER,
         "muon_peak_learning_rate": LR * MUON_LR_MULTIPLIER,
         "muon_minimum_learning_rate": MIN_LR * MUON_LR_MULTIPLIER,
-        "muon_adjusted_peak_learning_rate_min": (
-            muon_adjusted_peak_learning_rate_min
-        ),
-        "muon_adjusted_peak_learning_rate_max": (
-            muon_adjusted_peak_learning_rate_max
-        ),
+        "muon_adjusted_peak_learning_rate_min": (muon_adjusted_peak_learning_rate_min),
+        "muon_adjusted_peak_learning_rate_max": (muon_adjusted_peak_learning_rate_max),
         "muon_weight_decay": MUON_WEIGHT_DECAY,
         "muon_momentum": MUON_MOMENTUM,
         "muon_nesterov": MUON_NESTEROV,
