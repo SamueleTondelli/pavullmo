@@ -15,7 +15,7 @@ export SPLIT_QKV_PROJECTIONS=true
 export LR=0.00220
 export MIN_LR=0.0
 export LR_SCHEDULER=wsd
-export WSD_DECAY_FRACTION=0.20
+export WSD_DECAY_FRACTION=0.40
 export WARMUP_STEPS=219
 
 export ADAM_BETA1=0.9
