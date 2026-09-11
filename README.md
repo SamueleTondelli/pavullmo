@@ -22,3 +22,9 @@ To start a pre-train run on modal
 ```
 
 All hyperparameters can be configured as enviroment variables. BATCH_SIZE=32 seems to be the maximum batch size before the memory explodes.
+
+## Supervised fine-tuning
+
+A minimal assistant-only SFT prototype, including a ten-example Italian JSONL
+dataset, deterministic train/validation/test builder, and checkpoint-compatible
+trainer, is documented in [`src/post-training/README.md`](src/post-training/README.md).

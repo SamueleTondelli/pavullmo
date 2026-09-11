@@ -13,8 +13,13 @@ wheels/
 # Generated pre-tokenized datasets
 /dataset/ds/
 
+# Generated supervised fine-tuning datasets
+/src/post-training/dataset/
+
 # Local TensorBoard runs
 /runs/
 
 scripts
 models
+/post-training-models/
+/post-training-runs/
