@@ -20,7 +20,13 @@ from typing import Sequence
 DEFAULT_VOLUME_NAME = "pavullmo-datasets"
 DEFAULT_DATASET_DIR = Path(__file__).resolve().parent / "ds"
 REMOTE_DATASET_DIR = "/"
-EXPECTED_ARTIFACTS = ("train_10m", "train_100m", "train_1b", "validation")
+EXPECTED_ARTIFACTS = (
+    "train_web",
+    "train_balanced",
+    "train_knowledge",
+    "validation",
+    "test",
+)
 
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:

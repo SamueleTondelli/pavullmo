@@ -10,8 +10,11 @@ wheels/
 .venv
 .uv-cache/
 
-# Generated pre-tokenized datasets
-/dataset/ds/
+# Generated document and pre-tokenized datasets
+/dataset/documents/
+/dataset/ds*/
+/dataset/*.parquet
+/dataset/exploration/
 
 # Local TensorBoard runs
 /runs/

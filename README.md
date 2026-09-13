@@ -1,13 +1,31 @@
 # PavuLLMo
 
 ## Setup
-After setting up the uv project/venv and the modal cli, create the local tokenized dataset with
+The production dataset command builds three controlled 1B-token Italian source
+mixtures, a shared parameterized 10M-token validation artifact, and a separate
+10M-token final test artifact:
 
 ```bash
-  python dataset/build_dataset.py
+uv run python dataset/build_dataset.py --overwrite
 ```
 
-3 diffferent dataset sizes will be created: 10M, 100M and 1B tokens.
+Use smaller counts for the local 10M-token rehearsal:
+
+```bash
+uv run python dataset/build_dataset.py \
+  --train-tokens 10000000 \
+  --validation-tokens 1000000 \
+  --test-tokens 1000000 \
+  --output-dir dataset/ds_local_10m \
+  --overwrite
+```
+
+See [`notes/dataset.md`](notes/dataset.md) for the source and mixture rationale,
+cleaning rules, local exploration tutorial, configurable validation/test sizes,
+the tokenizer-independent document download, limitations, and training
+commands. The earlier single-source and Parquet
+sampling modes remain available through their explicit `--source` and
+`--sample-only` flags.
 
 Then create the modal volume with
 
