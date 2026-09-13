@@ -235,6 +235,53 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def write_training_history(
+    run_dir: Path,
+    train_history: list[tuple[int, float, float]],
+    validation_history: list[tuple[int, float]],
+) -> None:
+    """Persist machine-readable metrics and a static loss curve."""
+    run_dir.mkdir(parents=True, exist_ok=True)
+    with (run_dir / "metrics.csv").open("w", encoding="utf-8", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow(["series", "optimizer_step", "epoch", "loss"])
+        for step, epoch, loss in train_history:
+            writer.writerow(["train", step, format(epoch, ".10g"), format(loss, ".10g")])
+        epoch_by_step = {step: epoch for step, epoch, _ in train_history}
+        for step, loss in validation_history:
+            writer.writerow(
+                ["validation", step, format(epoch_by_step.get(step, 0.0), ".10g"), format(loss, ".10g")]
+            )
+
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    figure, axis = plt.subplots(figsize=(9, 5))
+    if train_history:
+        axis.plot(
+            [item[0] for item in train_history],
+            [item[2] for item in train_history],
+            label="Training loss",
+            linewidth=1.2,
+            alpha=0.8,
+        )
+    axis.plot(
+        [item[0] for item in validation_history],
+        [item[1] for item in validation_history],
+        label="Validation loss",
+        marker="o",
+        linewidth=2,
+    )
+    axis.set(title="SFT loss", xlabel="Optimizer step", ylabel="Assistant-token cross-entropy")
+    axis.grid(alpha=0.25)
+    axis.legend()
+    figure.tight_layout()
+    figure.savefig(run_dir / "loss_curves.png", dpi=160)
+    plt.close(figure)
+
+
 def main() -> None:
     if not BASE_CHECKPOINT_VALUE:
         raise ValueError("set BASE_CHECKPOINT to the pretrained .pt or .pt.zip file")
@@ -297,10 +344,14 @@ def main() -> None:
         weight_decay=WEIGHT_DECAY, fused=device.type == "cuda"
     )
     scheduler = scheduler_for(optimizer, total_steps)
-    writer = SummaryWriter(LOG_DIR / EXPERIMENT_NAME, flush_secs=TENSORBOARD_FLUSH_SECS)
+    run_dir = LOG_DIR / EXPERIMENT_NAME
+    writer = SummaryWriter(run_dir, flush_secs=TENSORBOARD_FLUSH_SECS)
     global_step = 0
     final_train_loss = float("nan")
     final_validation_loss = initial_validation_loss
+    train_history: list[tuple[int, float, float]] = []
+    validation_history = [(0, initial_validation_loss)]
+    writer.add_scalar("validation/loss", initial_validation_loss, 0)
     model.train()
     optimizer.zero_grad(set_to_none=True)
     try:
@@ -334,9 +385,12 @@ def main() -> None:
                 optimizer.zero_grad(set_to_none=True)
                 accumulated_batches = 0
                 global_step += 1
+                epoch_progress = epoch + (batch_index + 1) / len(train_loader)
+                train_history.append((global_step, epoch_progress, final_train_loss))
                 writer.add_scalar("train/loss", final_train_loss, global_step)
                 writer.add_scalar("train/gradient_norm", grad_norm.item(), global_step)
                 writer.add_scalar("train/learning_rate", current_lr, global_step)
+                writer.add_scalar("progress/epoch", epoch_progress, global_step)
                 print(
                     f"step={global_step}/{total_steps} epoch={epoch + 1}/{EPOCHS} "
                     f"loss={final_train_loss:.6f} grad_norm={grad_norm.item():.6f} lr={current_lr:.8g}",
@@ -347,12 +401,15 @@ def main() -> None:
                         model_for_forward, model, validation_loader, device
                     )
                     writer.add_scalar("validation/loss", final_validation_loss, global_step)
+                    validation_history.append((global_step, final_validation_loss))
+                    write_training_history(run_dir, train_history, validation_history)
                     print(f"step={global_step}/{total_steps} validation_loss={final_validation_loss:.6f}")
                 if global_step >= total_steps:
                     break
             if global_step >= total_steps:
                 break
     finally:
+        write_training_history(run_dir, train_history, validation_history)
         writer.flush()
         writer.close()
 

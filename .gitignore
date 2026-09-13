@@ -15,6 +15,7 @@ wheels/
 
 # Generated supervised fine-tuning datasets
 /src/post-training/dataset/
+/src/post-training/data/italian_open_sft_chat/
 
 # Local TensorBoard runs
 /runs/

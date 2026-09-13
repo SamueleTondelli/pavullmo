@@ -132,6 +132,7 @@ def train(sft_environment: dict[str, str]) -> None:
             "MODEL_OUTPUT_DIR": f"{OUTPUT_MOUNT_PATH}/models",
             "RUNS_CSV": f"{OUTPUT_MOUNT_PATH}/post_training_runs.csv",
             "DEVICE": "cuda",
+            "MPLCONFIGDIR": "/tmp/matplotlib",
         }
     )
 

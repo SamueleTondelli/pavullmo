@@ -11,20 +11,32 @@ from typing import Any
 import sentencepiece as spm
 import torch
 
+from sft_data import encode_example, validate_messages
+
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_DIR = SCRIPT_DIR.parent.parent
 DEFAULT_SOURCE = SCRIPT_DIR / "data" / "sft_examples.jsonl"
 DEFAULT_TOKENIZER = PROJECT_DIR / "src" / "tokenizer" / "16k" / "tokenizer.model"
 DEFAULT_OUTPUT_DIR = SCRIPT_DIR / "dataset"
-ROLES = ("system", "user", "assistant")
+SPLITS = ("train", "validation", "test")
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Tokenize JSONL conversations and build train/validation/test SFT splits."
     )
-    parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
+    inputs = parser.add_mutually_exclusive_group()
+    inputs.add_argument(
+        "--source",
+        type=Path,
+        help="one JSONL file to split deterministically (defaults to the trial data)",
+    )
+    inputs.add_argument(
+        "--split-source-dir",
+        type=Path,
+        help="directory containing train.jsonl, validation.jsonl, and test.jsonl",
+    )
     parser.add_argument("--tokenizer", type=Path, default=DEFAULT_TOKENIZER)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--train-count", type=int, default=8)
@@ -69,70 +81,6 @@ def read_examples(path: Path) -> list[dict[str, Any]]:
     return examples
 
 
-def validate_messages(example_id: str, messages: list[object]) -> None:
-    previous_role: str | None = None
-    assistant_count = 0
-    for index, message in enumerate(messages):
-        if not isinstance(message, dict):
-            raise ValueError(f"{example_id!r} message {index} must be an object")
-        role = message.get("role")
-        content = message.get("content")
-        if role not in ROLES:
-            raise ValueError(f"{example_id!r} message {index} has invalid role {role!r}")
-        if not isinstance(content, str) or not content.strip():
-            raise ValueError(f"{example_id!r} message {index} has empty content")
-        if role == "system" and index != 0:
-            raise ValueError(f"{example_id!r} system message must be first")
-        if role == "user" and previous_role not in {None, "system", "assistant"}:
-            raise ValueError(f"{example_id!r} has consecutive user messages")
-        if role == "assistant" and previous_role != "user":
-            raise ValueError(f"{example_id!r} assistant message must follow a user message")
-        assistant_count += role == "assistant"
-        previous_role = role
-    if previous_role != "assistant" or assistant_count == 0:
-        raise ValueError(f"{example_id!r} must end with an assistant response")
-
-
-def encode_example(
-    example: dict[str, Any],
-    tokenizer: spm.SentencePieceProcessor,
-    context_length: int,
-) -> dict[str, Any]:
-    token_ids = [tokenizer.bos_id()]
-    loss_mask = [False]
-    text_parts: list[str] = []
-
-    for message in example["messages"]:
-        role = message["role"]
-        content = message["content"].strip()
-        role_id = tokenizer.piece_to_id(f"<{role}>")
-        if role_id == tokenizer.unk_id():
-            raise ValueError(f"tokenizer does not define <{role}>")
-        content_ids = tokenizer.encode(f"\n{content}\n", out_type=int)
-        learns_response = role == "assistant"
-        token_ids.extend([role_id, *content_ids])
-        loss_mask.extend([learns_response] * (1 + len(content_ids)))
-        text_parts.append(f"<{role}>\n{content}")
-
-    token_ids.append(tokenizer.eos_id())
-    loss_mask.append(True)
-    if len(token_ids) > context_length:
-        raise ValueError(
-            f"{example['id']!r} uses {len(token_ids)} tokens, exceeding "
-            f"context length {context_length}"
-        )
-    if sum(loss_mask) < 2:
-        raise ValueError(f"{example['id']!r} has no assistant targets")
-
-    return {
-        "id": example["id"],
-        "category": example.get("category", "unspecified"),
-        "text": "\n".join(text_parts),
-        "token_ids": torch.tensor(token_ids, dtype=torch.int32),
-        "loss_mask": torch.tensor(loss_mask, dtype=torch.bool),
-    }
-
-
 def split_examples(
     examples: list[dict[str, Any]], train_count: int, validation_count: int, seed: int
 ) -> dict[str, list[dict[str, Any]]]:
@@ -153,15 +101,36 @@ def split_examples(
     }
 
 
+def read_publisher_splits(directory: Path) -> dict[str, list[dict[str, Any]]]:
+    splits = {name: read_examples(directory / f"{name}.jsonl") for name in SPLITS}
+    seen: dict[str, str] = {}
+    for split_name, examples in splits.items():
+        for example in examples:
+            example_id = example["id"]
+            if example_id in seen:
+                raise ValueError(
+                    f"duplicate id {example_id!r} across {seen[example_id]} and {split_name}"
+                )
+            seen[example_id] = split_name
+    return splits
+
+
 def main() -> None:
     args = parse_args()
-    source = args.source.expanduser().resolve()
+    source = (args.source or DEFAULT_SOURCE).expanduser().resolve()
+    split_source_dir = (
+        args.split_source_dir.expanduser().resolve()
+        if args.split_source_dir is not None
+        else None
+    )
     tokenizer_path = args.tokenizer.expanduser().resolve()
     output_dir = args.output_dir.expanduser().resolve()
     if args.context_length <= 1:
         raise ValueError("--context-length must be greater than one")
-    if not source.is_file():
+    if split_source_dir is None and not source.is_file():
         raise FileNotFoundError(source)
+    if split_source_dir is not None and not split_source_dir.is_dir():
+        raise FileNotFoundError(split_source_dir)
     if not tokenizer_path.is_file():
         raise FileNotFoundError(tokenizer_path)
 
@@ -169,10 +138,30 @@ def main() -> None:
     if min(tokenizer.bos_id(), tokenizer.eos_id(), tokenizer.pad_id()) < 0:
         raise ValueError("tokenizer must define BOS, EOS, and PAD tokens")
 
-    raw_examples = read_examples(source)
-    splits = split_examples(
-        raw_examples, args.train_count, args.validation_count, args.seed
-    )
+    if split_source_dir is not None:
+        splits = read_publisher_splits(split_source_dir)
+        split_strategy = "publisher_provided"
+        source_files = {
+            name: {
+                "path": str(split_source_dir / f"{name}.jsonl"),
+                "sha256": sha256_file(split_source_dir / f"{name}.jsonl"),
+            }
+            for name in SPLITS
+        }
+        preparation_metadata_path = split_source_dir / "preparation_metadata.json"
+        source_preparation = (
+            json.loads(preparation_metadata_path.read_text(encoding="utf-8"))
+            if preparation_metadata_path.is_file()
+            else None
+        )
+    else:
+        raw_examples = read_examples(source)
+        splits = split_examples(
+            raw_examples, args.train_count, args.validation_count, args.seed
+        )
+        split_strategy = "deterministic_hash"
+        source_files = {"all": {"path": str(source), "sha256": sha256_file(source)}}
+        source_preparation = None
     output_dir.mkdir(parents=True, exist_ok=True)
     split_summaries: dict[str, Any] = {}
     for split_name, split_examples_list in splits.items():
@@ -191,14 +180,17 @@ def main() -> None:
             "examples": len(encoded),
             "tokens": sum(item["token_ids"].numel() for item in encoded),
             "assistant_targets": sum(item["loss_mask"].sum().item() for item in encoded),
+            "minimum_tokens": min(item["token_ids"].numel() for item in encoded),
+            "maximum_tokens": max(item["token_ids"].numel() for item in encoded),
             "ids": [item["id"] for item in encoded],
             "file": artifact_path.name,
         }
 
     metadata = {
         "format_version": 1,
-        "source": str(source),
-        "source_sha256": sha256_file(source),
+        "source_files": source_files,
+        "source_preparation": source_preparation,
+        "split_strategy": split_strategy,
         "tokenizer": str(tokenizer_path),
         "tokenizer_sha256": sha256_file(tokenizer_path),
         "vocab_size": tokenizer.vocab_size(),
@@ -218,7 +210,14 @@ def main() -> None:
     (output_dir / "metadata.json").write_text(
         json.dumps(metadata, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
-    print(json.dumps(metadata, indent=2, ensure_ascii=False))
+    printable_metadata = {
+        **metadata,
+        "splits": {
+            name: {key: value for key, value in summary.items() if key != "ids"}
+            for name, summary in split_summaries.items()
+        },
+    }
+    print(json.dumps(printable_metadata, indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":

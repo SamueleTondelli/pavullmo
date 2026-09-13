@@ -102,13 +102,27 @@ def load_model(
     )
 
 
-def sample_next_token(logits: torch.Tensor, blocked_ids: set[int]) -> int:
-    logits = logits.float() / TEMPERATURE
+def sample_next_token(
+    logits: torch.Tensor,
+    blocked_ids: set[int],
+    *,
+    temperature: float = TEMPERATURE,
+    top_k: int = TOP_K,
+) -> int:
+    if temperature < 0:
+        raise ValueError("temperature cannot be negative")
+    if top_k <= 0:
+        raise ValueError("top_k must be positive")
+    logits = logits.float()
     for token_id in blocked_ids:
         logits[token_id] = -torch.inf
 
-    top_k = min(TOP_K, logits.numel())
-    cutoff = torch.topk(logits, top_k).values[-1]
+    if temperature == 0:
+        return int(torch.argmax(logits).item())
+
+    logits = logits / temperature
+    effective_top_k = min(top_k, logits.numel())
+    cutoff = torch.topk(logits, effective_top_k).values[-1]
     logits[logits < cutoff] = -torch.inf
     probabilities = torch.softmax(logits, dim=-1)
     return int(torch.multinomial(probabilities, num_samples=1).item())
@@ -121,9 +135,42 @@ def generate(
     prompt: str,
     device: torch.device,
     sequence_length: int,
+    *,
+    max_new_tokens: int = MAX_NEW_TOKENS,
+    temperature: float = TEMPERATURE,
+    top_k: int = TOP_K,
 ) -> str:
     prompt_ids = tokenizer.encode(prompt, out_type=int)
-    token_ids = [tokenizer.bos_id(), *prompt_ids]
+    return generate_from_token_ids(
+        model,
+        tokenizer,
+        [tokenizer.bos_id(), *prompt_ids],
+        device,
+        sequence_length,
+        max_new_tokens=max_new_tokens,
+        temperature=temperature,
+        top_k=top_k,
+    )
+
+
+@torch.inference_mode()
+def generate_from_token_ids(
+    model: DecoderTransformer,
+    tokenizer: spm.SentencePieceProcessor,
+    prompt_ids: list[int],
+    device: torch.device,
+    sequence_length: int,
+    *,
+    max_new_tokens: int = MAX_NEW_TOKENS,
+    temperature: float = TEMPERATURE,
+    top_k: int = TOP_K,
+    stop_ids: set[int] | None = None,
+) -> str:
+    if not prompt_ids:
+        raise ValueError("prompt_ids cannot be empty")
+    if max_new_tokens <= 0:
+        raise ValueError("max_new_tokens must be positive")
+    token_ids = list(prompt_ids)
     if len(token_ids) >= sequence_length:
         raise ValueError(
             f"prompt uses {len(token_ids)} tokens, but the model context length is "
@@ -135,6 +182,7 @@ def generate(
         for token_id in (tokenizer.unk_id(), tokenizer.bos_id(), tokenizer.pad_id())
         if token_id >= 0
     }
+    stopping_ids = {tokenizer.eos_id(), *(stop_ids or set())}
     generated_ids: list[int] = []
     available_tokens = sequence_length - len(token_ids)
 
@@ -144,14 +192,19 @@ def generate(
         else nullcontext()
     )
     with autocast_context:
-        for _ in range(min(MAX_NEW_TOKENS, available_tokens)):
+        for _ in range(min(max_new_tokens, available_tokens)):
             input_ids = torch.tensor(token_ids, dtype=torch.long, device=device)[
                 None, :
             ]
             logits = model(input_ids)[0, -1]
-            next_token = sample_next_token(logits, blocked_ids)
+            next_token = sample_next_token(
+                logits,
+                blocked_ids,
+                temperature=temperature,
+                top_k=top_k,
+            )
 
-            if next_token == tokenizer.eos_id():
+            if next_token in stopping_ids:
                 break
             token_ids.append(next_token)
             generated_ids.append(next_token)
