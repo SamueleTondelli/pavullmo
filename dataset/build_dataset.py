@@ -1,44 +1,53 @@
-"""Build local, pre-tokenized clean_mc4_it datasets.
+"""Sample source documents and build local, pre-tokenized datasets.
 
-The training artifacts are deterministic prefixes of the ``tiny`` training
-split with source-text budgets of 10M, 100M, and 1B UTF-8 bytes. The document
-that reaches or exceeds a budget is included in full, so artifacts always end
-at a document boundary and may exceed their byte budget by one document. Every
-source document is encoded as ``[BOS, *content_tokens, EOS]`` before it is
-appended to the token stream.
+FineWeb2 Italian is the default source. Only documents with a GlotLID language
+score of at least 0.98 are used. The legacy ``clean_mc4_it`` source remains
+available through ``--source clean_mc4_it``.
 
-The complete ``tiny`` validation split is encoded with the same document
-boundary policy. Tokens are stored in sharded, little-endian uint16 files so
-they can later be memory-mapped and packed at any context length.
+``--sample-only`` writes an inspectable Parquet sample before tokenization. In
+artifact-building mode, the training artifacts contain exactly 10M, 100M, and
+1B tokens. Every document is encoded as ``[BOS, *content_tokens, EOS]``. A
+size boundary can therefore cut through the final document; this is recorded
+in the artifact metadata. Tokens are stored in sharded little-endian uint16
+files so they can later be memory-mapped at any context length.
 """
 
 from __future__ import annotations
 
 import argparse
 from array import array
+from dataclasses import dataclass
+import gc
 import hashlib
 import json
+import os
 from pathlib import Path
-import re
+import random
 import shutil
 import sys
-from typing import Iterable, Sequence
+from typing import Iterable, Iterator, Mapping, Sequence
 
 from datasets import load_dataset
+import pyarrow as pa
+import pyarrow.parquet as pq
 import sentencepiece as spm
 from tqdm import tqdm
 
 
 DATASET_NAME = "gsarti/clean_mc4_it"
 DATASET_VARIANT = "tiny"
-TRAIN_BYTE_BUDGETS = {
-    "42m": 42_100_000,  # 10M
-    "90m": 90_000_000,
-    "195m": 195_000_000,
-    "421m": 421_000_000,  # 100M
-    "907m": 907_000_000,
-    "1b9": 1_954_000_000,
-    "4b": 4_210_000_000,  # 1B
+FINEWEB2_DATASET_NAME = "HuggingFaceFW/fineweb-2"
+FINEWEB2_DATASET_VARIANT = "ita_Latn"
+DEFAULT_SOURCE = "fineweb2"
+DEFAULT_LANGUAGE_SCORE = 0.98
+DEFAULT_SAMPLE_DOCUMENTS = 10_000
+DEFAULT_SHUFFLE_SEED = 42
+DEFAULT_SHUFFLE_BUFFER = 10_000
+DEFAULT_SAMPLE_SOURCE_SHARDS = 85
+TRAIN_TARGETS = {
+    "10m": 10_000_000,
+    "100m": 100_000_000,
+    "1b": 1_000_000_000,
 }
 DEFAULT_SHARD_TOKENS = 50_000_000  # 100 MB per full uint16 shard.
 UINT16_MAX = 65_535
@@ -46,15 +55,54 @@ UINT16_MAX = 65_535
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_TOKENIZER = PROJECT_ROOT / "src" / "tokenizer" / "tokenizer.model"
 DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent / "ds"
-DATASET_PREFIX_PATTERN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
+DEFAULT_SAMPLE_OUTPUT = Path(__file__).resolve().parent / "fineweb2_sample.parquet"
+
+
+@dataclass(frozen=True)
+class SourceConfig:
+    """Hugging Face source details and its split naming."""
+
+    name: str
+    variant: str
+    train_split: str
+    validation_split: str
+    language: str | None = None
+    language_score_field: str | None = None
+
+
+SOURCES = {
+    "fineweb2": SourceConfig(
+        name=FINEWEB2_DATASET_NAME,
+        variant=FINEWEB2_DATASET_VARIANT,
+        train_split="train",
+        validation_split="test",
+        language="ita",
+        language_score_field="language_score",
+    ),
+    "clean_mc4_it": SourceConfig(
+        name=DATASET_NAME,
+        variant=DATASET_VARIANT,
+        train_split="train",
+        validation_split="validation",
+    ),
+}
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Pre-tokenize 10M, 100M, and 1B-byte training prefixes and the "
-            "complete tiny validation split of clean_mc4_it."
+            "Sample source documents as Parquet or pre-tokenize 10M, 100M, "
+            "and 1B-token training datasets plus validation."
         )
+    )
+    parser.add_argument(
+        "--source",
+        choices=sorted(SOURCES),
+        default=DEFAULT_SOURCE,
+        help=(
+            f"source dataset (default: {DEFAULT_SOURCE}); clean_mc4_it keeps "
+            "the previous source available"
+        ),
     )
     parser.add_argument(
         "--tokenizer",
@@ -69,18 +117,13 @@ def parse_args() -> argparse.Namespace:
         help=f"artifact directory (default: {DEFAULT_OUTPUT_DIR})",
     )
     parser.add_argument(
-        "--dataset-prefix",
-        default="",
-        help=(
-            "prefix used to distinguish tokenizer-specific artifacts; for "
-            "example, '4k' creates train_4k_10m and validation_4k"
-        ),
-    )
-    parser.add_argument(
         "--shard-tokens",
         type=int,
         default=DEFAULT_SHARD_TOKENS,
-        help=(f"maximum tokens per binary shard (default: {DEFAULT_SHARD_TOKENS:,})"),
+        help=(
+            "maximum tokens per binary shard "
+            f"(default: {DEFAULT_SHARD_TOKENS:,})"
+        ),
     )
     parser.add_argument(
         "--dataset-revision",
@@ -88,27 +131,64 @@ def parse_args() -> argparse.Namespace:
         help="Hugging Face dataset revision (default: main)",
     )
     parser.add_argument(
+        "--min-language-score",
+        type=float,
+        default=DEFAULT_LANGUAGE_SCORE,
+        help=(
+            "minimum source language confidence for sources that provide it "
+            f"(default: {DEFAULT_LANGUAGE_SCORE})"
+        ),
+    )
+    parser.add_argument(
+        "--shuffle-seed",
+        type=int,
+        default=DEFAULT_SHUFFLE_SEED,
+        help=f"seed used for streaming shuffle (default: {DEFAULT_SHUFFLE_SEED})",
+    )
+    parser.add_argument(
+        "--shuffle-buffer",
+        type=int,
+        default=DEFAULT_SHUFFLE_BUFFER,
+        help=(
+            "documents held by the approximate streaming shuffle "
+            f"(default: {DEFAULT_SHUFFLE_BUFFER:,})"
+        ),
+    )
+    parser.add_argument(
+        "--sample-only",
+        action="store_true",
+        help="write an inspectable Parquet sample instead of token artifacts",
+    )
+    parser.add_argument(
+        "--sample-documents",
+        type=int,
+        default=DEFAULT_SAMPLE_DOCUMENTS,
+        help=(
+            "accepted documents in the Parquet sample "
+            f"(default: {DEFAULT_SAMPLE_DOCUMENTS:,})"
+        ),
+    )
+    parser.add_argument(
+        "--sample-output",
+        type=Path,
+        default=DEFAULT_SAMPLE_OUTPUT,
+        help=f"Parquet sample path (default: {DEFAULT_SAMPLE_OUTPUT})",
+    )
+    parser.add_argument(
+        "--sample-source-shards",
+        type=int,
+        default=DEFAULT_SAMPLE_SOURCE_SHARDS,
+        help=(
+            "source files represented in a Parquet sample "
+            f"(default: {DEFAULT_SAMPLE_SOURCE_SHARDS})"
+        ),
+    )
+    parser.add_argument(
         "--overwrite",
         action="store_true",
         help="replace existing artifacts inside --output-dir",
     )
     return parser.parse_args()
-
-
-def validate_dataset_prefix(prefix: str) -> None:
-    if prefix and not DATASET_PREFIX_PATTERN.fullmatch(prefix):
-        raise ValueError(
-            "--dataset-prefix must start with an ASCII letter or digit and "
-            "contain only letters, digits, '.', '_', and '-'"
-        )
-
-
-def training_artifact_name(prefix: str, size: str) -> str:
-    return f"train_{prefix}_{size}" if prefix else f"train_{size}"
-
-
-def validation_artifact_name(prefix: str) -> str:
-    return f"validation_{prefix}" if prefix else "validation"
 
 
 def sha256_file(path: Path) -> str:
@@ -225,9 +305,7 @@ class ArtifactBuilder:
 
     def _validate_child(self, path: Path) -> None:
         if path.parent != self.output_root:
-            raise ValueError(
-                f"refusing to manage path outside output directory: {path}"
-            )
+            raise ValueError(f"refusing to manage path outside output directory: {path}")
 
     def finish(self, metadata: dict[str, object]) -> None:
         self.writer.close()
@@ -250,9 +328,7 @@ class ArtifactBuilder:
         )
         if self.final_dir.exists():
             if not self.overwrite:
-                raise FileExistsError(
-                    f"artifact appeared while building: {self.final_dir}"
-                )
+                raise FileExistsError(f"artifact appeared while building: {self.final_dir}")
             shutil.rmtree(self.final_dir)
         self.temporary_dir.rename(self.final_dir)
 
@@ -270,12 +346,19 @@ def validate_tokenizer(tokenizer: spm.SentencePieceProcessor) -> None:
         )
 
 
-def encode_document(tokenizer: spm.SentencePieceProcessor, text: str) -> list[int]:
+def encode_document(
+    tokenizer: spm.SentencePieceProcessor, text: str
+) -> list[int]:
     content = tokenizer.encode(text.strip(), out_type=int)
     return [tokenizer.bos_id(), *content, tokenizer.eos_id()]
 
 
 def dataset_stream(split: str, revision: str) -> Iterable[dict[str, object]]:
+    """Return the legacy clean_mc4_it stream.
+
+    This function intentionally retains its original signature and behaviour.
+    New code should use :func:`source_stream`.
+    """
     return load_dataset(
         DATASET_NAME,
         DATASET_VARIANT,
@@ -286,19 +369,205 @@ def dataset_stream(split: str, revision: str) -> Iterable[dict[str, object]]:
     )
 
 
+def source_stream(
+    source: SourceConfig,
+    split: str,
+    revision: str,
+    *,
+    shuffle_seed: int | None = None,
+    shuffle_buffer: int = DEFAULT_SHUFFLE_BUFFER,
+) -> Iterable[dict[str, object]]:
+    """Stream a configured source, optionally with an approximate shuffle."""
+
+    dataset = load_dataset(
+        source.name,
+        source.variant,
+        split=split,
+        streaming=True,
+        revision=revision,
+        trust_remote_code=True,
+    )
+    if shuffle_seed is not None:
+        dataset = dataset.shuffle(seed=shuffle_seed, buffer_size=shuffle_buffer)
+    return dataset
+
+
+def iter_accepted_documents(
+    documents: Iterable[Mapping[str, object]],
+    source: SourceConfig,
+    min_language_score: float | None,
+    counters: dict[str, int] | None = None,
+) -> Iterator[dict[str, object]]:
+    """Yield nonempty, target-language documents passing source confidence."""
+
+    stats = counters if counters is not None else {}
+    for original in documents:
+        stats["documents_seen"] = stats.get("documents_seen", 0) + 1
+        text = original.get("text")
+        if not isinstance(text, str) or not text.strip():
+            stats["rejected_empty"] = stats.get("rejected_empty", 0) + 1
+            continue
+
+        if source.language is not None and original.get("language") != source.language:
+            stats["rejected_language"] = stats.get("rejected_language", 0) + 1
+            continue
+
+        if source.language_score_field is not None and min_language_score is not None:
+            score = original.get(source.language_score_field)
+            if not isinstance(score, (int, float)) or score < min_language_score:
+                stats["rejected_language_score"] = (
+                    stats.get("rejected_language_score", 0) + 1
+                )
+                continue
+
+        stats["documents_accepted"] = stats.get("documents_accepted", 0) + 1
+        yield dict(original)
+
+
+def close_iterator(iterator: object) -> None:
+    """Close a streaming iterator when its implementation supports cleanup."""
+
+    close = getattr(iterator, "close", None)
+    if callable(close):
+        close()
+
+
+def export_parquet_sample(
+    source: SourceConfig,
+    revision: str,
+    output_path: Path,
+    document_count: int,
+    min_language_score: float | None,
+    shuffle_seed: int,
+    shuffle_buffer: int,
+    overwrite: bool,
+    sample_source_shards: int = DEFAULT_SAMPLE_SOURCE_SHARDS,
+) -> None:
+    """Write a deterministic streaming sample while preserving source fields."""
+
+    if output_path.exists() and not overwrite:
+        raise FileExistsError(
+            f"{output_path} already exists; pass --overwrite to replace it"
+        )
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    temporary_path = output_path.with_name(f".{output_path.name}.tmp")
+    if temporary_path.exists():
+        if not overwrite:
+            raise FileExistsError(
+                f"{temporary_path} already exists; pass --overwrite to replace it"
+            )
+        temporary_path.unlink()
+
+    counters: dict[str, int] = {}
+    documents = source_stream(source, source.train_split, revision)
+    available_shards = getattr(documents, "num_shards", 1)
+    represented_shards = min(
+        available_shards, sample_source_shards, document_count
+    )
+    shard_indices = list(range(available_shards))
+    random.Random(shuffle_seed).shuffle(shard_indices)
+    shard_indices = shard_indices[:represented_shards]
+    base_quota, extra = divmod(document_count, represented_shards)
+
+    rows: list[dict[str, object]] = []
+    progress = tqdm(total=document_count, desc="Sampling documents", unit="docs")
+    try:
+        for position, shard_index in enumerate(shard_indices):
+            quota = base_quota + (position < extra)
+            shard = documents.shard(available_shards, shard_index).shuffle(
+                seed=shuffle_seed + shard_index,
+                buffer_size=shuffle_buffer,
+            )
+            shard_iterator = iter(shard)
+            accepted_documents = iter_accepted_documents(
+                shard_iterator, source, min_language_score, counters
+            )
+            accepted_from_shard = 0
+            try:
+                for document in accepted_documents:
+                    rows.append(
+                        {
+                            **document,
+                            "source_dataset": source.name,
+                            "source_variant": source.variant,
+                            "source_revision": revision,
+                            "sample_source_shard": shard_index,
+                        }
+                    )
+                    accepted_from_shard += 1
+                    progress.update()
+                    if accepted_from_shard == quota:
+                        break
+            finally:
+                close_iterator(accepted_documents)
+                close_iterator(shard_iterator)
+    finally:
+        progress.close()
+        del documents
+        # Hugging Face streaming reads Parquet in background C++ threads. Make
+        # their Python wrappers collectible before interpreter finalization.
+        gc.collect()
+
+    if len(rows) != document_count:
+        raise RuntimeError(
+            f"source ended after {len(rows):,} accepted documents; "
+            f"expected {document_count:,}"
+        )
+
+    table = pa.Table.from_pylist(rows)
+    metadata = {
+        **(table.schema.metadata or {}),
+        b"pavullmo_sample": json.dumps(
+            {
+                "format_version": 1,
+                "dataset": source.name,
+                "variant": source.variant,
+                "split": source.train_split,
+                "revision": revision,
+                "sample_documents": document_count,
+                "min_language_score": min_language_score,
+                "shuffle_seed": shuffle_seed,
+                "shuffle_buffer": shuffle_buffer,
+                "sampling": "equal_quota_across_source_shards_then_buffer_shuffle",
+                "available_source_shards": available_shards,
+                "represented_source_shards": represented_shards,
+                "source_shard_indices": shard_indices,
+                "counters": counters,
+            },
+            sort_keys=True,
+        ).encode("utf-8"),
+    }
+    table = table.replace_schema_metadata(metadata)
+    pq.write_table(table, temporary_path, compression="zstd")
+    if output_path.exists():
+        output_path.unlink()
+    temporary_path.rename(output_path)
+    print(
+        f"Built {output_path}: {document_count:,} documents "
+        f"({counters.get('rejected_language_score', 0):,} below language threshold)"
+    )
+
+
 def common_metadata(
     tokenizer: spm.SentencePieceProcessor,
     tokenizer_path: Path,
     tokenizer_sha256: str,
     split: str,
     revision: str,
+    source: SourceConfig | None = None,
+    min_language_score: float | None = None,
 ) -> dict[str, object]:
+    source = source or SOURCES["clean_mc4_it"]
     return {
         "dataset": {
-            "name": DATASET_NAME,
-            "variant": DATASET_VARIANT,
+            "name": source.name,
+            "variant": source.variant,
             "split": split,
             "revision": revision,
+            "language": source.language,
+            "min_language_score": (
+                min_language_score if source.language_score_field else None
+            ),
         },
         "tokenizer": {
             "file": str(tokenizer_path.resolve()),
@@ -323,75 +592,74 @@ def build_training_artifacts(
     shard_tokens: int,
     revision: str,
     overwrite: bool,
-    dataset_prefix: str = "",
-) -> dict[str, int]:
+    source: SourceConfig | None = None,
+    min_language_score: float | None = None,
+    shuffle_seed: int | None = None,
+    shuffle_buffer: int = DEFAULT_SHUFFLE_BUFFER,
+) -> None:
+    source = source or SOURCES["clean_mc4_it"]
     builders = {
-        name: ArtifactBuilder(
-            output_dir,
-            training_artifact_name(dataset_prefix, name),
-            shard_tokens,
-            overwrite,
-        )
-        for name in TRAIN_BYTE_BUDGETS
+        name: ArtifactBuilder(output_dir, f"train_{name}", shard_tokens, overwrite)
+        for name in TRAIN_TARGETS
     }
-    source_bytes_at_completion = {name: 0 for name in TRAIN_BYTE_BUDGETS}
-    documents_seen_at_completion = {name: 0 for name in TRAIN_BYTE_BUDGETS}
-    nonempty_seen_at_completion = {name: 0 for name in TRAIN_BYTE_BUDGETS}
-    documents_seen = 0
+    completed_at_boundary = {name: False for name in TRAIN_TARGETS}
+    documents_seen_at_completion = {name: 0 for name in TRAIN_TARGETS}
+    nonempty_seen_at_completion = {name: 0 for name in TRAIN_TARGETS}
+    source_counters_at_completion: dict[str, dict[str, int]] = {}
     nonempty_documents_seen = 0
-    source_bytes_seen = 0
-    largest_name = max(TRAIN_BYTE_BUDGETS, key=TRAIN_BYTE_BUDGETS.get)
-    largest_budget = TRAIN_BYTE_BUDGETS[largest_name]
 
     progress = tqdm(
-        total=largest_budget,
-        desc="Reading tiny train",
-        unit="B",
+        total=max(TRAIN_TARGETS.values()),
+        desc=f"Tokenizing {source.variant} train",
+        unit="tok",
         unit_scale=True,
-        unit_divisor=1024,
     )
-    for document in dataset_stream("train", revision):
-        documents_seen += 1
+    source_counters: dict[str, int] = {}
+    documents = source_stream(
+        source,
+        source.train_split,
+        revision,
+        shuffle_seed=shuffle_seed,
+        shuffle_buffer=shuffle_buffer,
+    )
+    for document in iter_accepted_documents(
+        documents, source, min_language_score, source_counters
+    ):
         text = document.get("text")
-        if not isinstance(text, str) or not text.strip():
-            continue
+        assert isinstance(text, str) and text.strip()
 
-        text = text.strip()
         nonempty_documents_seen += 1
-        document_bytes = len(text.encode("utf-8"))
         tokens = encode_document(tokenizer, text)
-        previous_source_bytes = source_bytes_seen
-        source_bytes_seen += document_bytes
+        previous_largest_count = builders["1b"].writer.total_tokens
 
-        for name, byte_budget in TRAIN_BYTE_BUDGETS.items():
-            if source_bytes_at_completion[name] != 0:
+        for name, target in TRAIN_TARGETS.items():
+            builder = builders[name]
+            remaining = target - builder.writer.total_tokens
+            if remaining <= 0:
                 continue
 
-            builders[name].writer.write(tokens)
-            if source_bytes_seen >= byte_budget:
-                source_bytes_at_completion[name] = source_bytes_seen
-                documents_seen_at_completion[name] = documents_seen
+            take = min(remaining, len(tokens))
+            builder.writer.write(tokens[:take])
+            if builder.writer.total_tokens == target:
+                completed_at_boundary[name] = take == len(tokens)
+                documents_seen_at_completion[name] = source_counters["documents_seen"]
                 nonempty_seen_at_completion[name] = nonempty_documents_seen
+                source_counters_at_completion[name] = dict(source_counters)
 
-        progress.update(
-            min(source_bytes_seen, largest_budget)
-            - min(previous_source_bytes, largest_budget)
-        )
-        if source_bytes_at_completion[largest_name]:
+        progress.update(builders["1b"].writer.total_tokens - previous_largest_count)
+        if builders["1b"].writer.total_tokens == TRAIN_TARGETS["1b"]:
             break
     progress.close()
 
-    if source_bytes_seen < largest_budget:
+    largest_count = builders["1b"].writer.total_tokens
+    if largest_count != TRAIN_TARGETS["1b"]:
         raise RuntimeError(
             "training stream ended after "
-            f"{source_bytes_seen:,} source bytes, before the "
-            f"{largest_budget:,}-byte budget"
+            f"{largest_count:,} tokens, before the 1,000,000,000-token target"
         )
 
-    token_counts: dict[str, int] = {}
-    for name, byte_budget in TRAIN_BYTE_BUDGETS.items():
+    for name, target in TRAIN_TARGETS.items():
         builder = builders[name]
-        source_byte_count = source_bytes_at_completion[name]
         builder.finish(
             {
                 **common_metadata(
@@ -400,29 +668,22 @@ def build_training_artifacts(
                     tokenizer_sha256,
                     "train",
                     revision,
+                    source,
+                    min_language_score,
                 ),
-                "dataset_prefix": dataset_prefix,
-                "source_text_byte_budget": byte_budget,
-                "source_text_byte_count": source_byte_count,
-                "source_text_byte_overshoot": source_byte_count - byte_budget,
+                "target_token_count": target,
                 "source_documents_seen": documents_seen_at_completion[name],
                 "nonempty_source_documents_seen": nonempty_seen_at_completion[name],
-                "ends_at_document_boundary": True,
-                "is_prefix_of": (
-                    training_artifact_name(dataset_prefix, largest_name)
-                    if name != largest_name
-                    else None
-                ),
+                "ends_at_document_boundary": completed_at_boundary[name],
+                "is_prefix_of": "train_1b" if name != "1b" else None,
+                "stream_shuffle": {
+                    "seed": shuffle_seed,
+                    "buffer_size": shuffle_buffer if shuffle_seed is not None else None,
+                },
+                "source_filter_counters": source_counters_at_completion[name],
             }
         )
-        print(
-            f"Built {builder.final_dir}: {builder.writer.total_tokens:,} tokens "
-            f"from {source_byte_count:,} source bytes "
-            f"(budget: {byte_budget:,})"
-        )
-        token_counts[builder.final_dir.name] = builder.writer.total_tokens
-
-    return token_counts
+        print(f"Built {builder.final_dir}: {target:,} tokens")
 
 
 def build_validation_artifact(
@@ -433,37 +694,28 @@ def build_validation_artifact(
     shard_tokens: int,
     revision: str,
     overwrite: bool,
-    dataset_prefix: str = "",
-) -> int:
-    builder = ArtifactBuilder(
-        output_dir,
-        validation_artifact_name(dataset_prefix),
-        shard_tokens,
-        overwrite,
-    )
-    documents_seen = 0
+    source: SourceConfig | None = None,
+    min_language_score: float | None = None,
+) -> None:
+    source = source or SOURCES["clean_mc4_it"]
+    builder = ArtifactBuilder(output_dir, "validation", shard_tokens, overwrite)
     documents_written = 0
-    source_bytes_written = 0
+    source_counters: dict[str, int] = {}
 
-    progress = tqdm(
-        desc="Tokenizing tiny validation",
-        unit="B",
-        unit_scale=True,
-        unit_divisor=1024,
-    )
-    for document in dataset_stream("validation", revision):
-        documents_seen += 1
+    for document in tqdm(
+        iter_accepted_documents(
+            source_stream(source, source.validation_split, revision),
+            source,
+            min_language_score,
+            source_counters,
+        ),
+        desc="Tokenizing validation",
+        unit="docs",
+    ):
         text = document.get("text")
-        if not isinstance(text, str) or not text.strip():
-            continue
-
-        text = text.strip()
-        document_bytes = len(text.encode("utf-8"))
+        assert isinstance(text, str) and text.strip()
         builder.writer.write(encode_document(tokenizer, text))
         documents_written += 1
-        source_bytes_written += document_bytes
-        progress.update(document_bytes)
-    progress.close()
 
     builder.finish(
         {
@@ -471,28 +723,67 @@ def build_validation_artifact(
                 tokenizer,
                 tokenizer_path,
                 tokenizer_sha256,
-                "validation",
+                source.validation_split,
                 revision,
+                source,
+                min_language_score,
             ),
-            "dataset_prefix": dataset_prefix,
-            "source_text_byte_count": source_bytes_written,
-            "source_documents_seen": documents_seen,
+            "source_documents_seen": source_counters.get("documents_seen", 0),
             "documents_written": documents_written,
             "ends_at_document_boundary": True,
+            "source_filter_counters": source_counters,
         }
     )
     print(
         f"Built {builder.final_dir}: {builder.writer.total_tokens:,} tokens "
         f"from {documents_written:,} documents"
     )
-    return builder.writer.total_tokens
 
 
 def main() -> None:
+    # The production multi-source pipeline is now the default interface. Keep
+    # the former sampling and single-source modes available for exploration and
+    # backwards compatibility when their explicit flags are supplied.
+    legacy_mode = "--sample-only" in sys.argv or "--source" in sys.argv
+    if not legacy_mode:
+        try:
+            from production_pipeline import main as production_main
+        except ModuleNotFoundError:
+            from dataset.production_pipeline import main as production_main
+
+        production_main()
+        return
+
     args = parse_args()
-    validate_dataset_prefix(args.dataset_prefix)
     if args.shard_tokens <= 0:
         raise ValueError("--shard-tokens must be greater than zero")
+    if args.sample_documents <= 0:
+        raise ValueError("--sample-documents must be greater than zero")
+    if args.shuffle_buffer <= 0:
+        raise ValueError("--shuffle-buffer must be greater than zero")
+    if args.sample_source_shards <= 0:
+        raise ValueError("--sample-source-shards must be greater than zero")
+    if not 0.0 <= args.min_language_score <= 1.0:
+        raise ValueError("--min-language-score must be between zero and one")
+
+    source = SOURCES[args.source]
+    source_min_language_score = (
+        args.min_language_score if source.language_score_field is not None else None
+    )
+    if args.sample_only:
+        export_parquet_sample(
+            source=source,
+            revision=args.dataset_revision,
+            output_path=args.sample_output,
+            document_count=args.sample_documents,
+            min_language_score=source_min_language_score,
+            shuffle_seed=args.shuffle_seed,
+            shuffle_buffer=args.shuffle_buffer,
+            overwrite=args.overwrite,
+            sample_source_shards=args.sample_source_shards,
+        )
+        return
+
     if not args.tokenizer.is_file():
         raise FileNotFoundError(f"tokenizer model not found: {args.tokenizer}")
 
@@ -501,7 +792,7 @@ def main() -> None:
     validate_tokenizer(tokenizer)
     tokenizer_sha256 = sha256_file(args.tokenizer)
 
-    token_counts = build_training_artifacts(
+    build_training_artifacts(
         tokenizer=tokenizer,
         tokenizer_path=args.tokenizer,
         tokenizer_sha256=tokenizer_sha256,
@@ -509,10 +800,12 @@ def main() -> None:
         shard_tokens=args.shard_tokens,
         revision=args.dataset_revision,
         overwrite=args.overwrite,
-        dataset_prefix=args.dataset_prefix,
+        source=source,
+        min_language_score=source_min_language_score,
+        shuffle_seed=args.shuffle_seed,
+        shuffle_buffer=args.shuffle_buffer,
     )
-    validation_name = validation_artifact_name(args.dataset_prefix)
-    token_counts[validation_name] = build_validation_artifact(
+    build_validation_artifact(
         tokenizer=tokenizer,
         tokenizer_path=args.tokenizer,
         tokenizer_sha256=tokenizer_sha256,
@@ -520,13 +813,18 @@ def main() -> None:
         shard_tokens=args.shard_tokens,
         revision=args.dataset_revision,
         overwrite=args.overwrite,
-        dataset_prefix=args.dataset_prefix,
+        source=source,
+        min_language_score=source_min_language_score,
     )
-
-    print("\nToken counts by split:")
-    for split, token_count in token_counts.items():
-        print(f"  {split}: {token_count:,} tokens")
 
 
 if __name__ == "__main__":
     main()
+    # datasets 3.x can leave an Arrow callback racing with CPython 3.12
+    # finalization after a remote Parquet stream is stopped early. All output
+    # files are closed and atomically renamed before reaching this point, so a
+    # direct successful process exit avoids that upstream shutdown-only abort.
+    # Exceptions from main() still propagate normally and return a failure.
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(0)

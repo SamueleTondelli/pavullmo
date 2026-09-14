@@ -4,9 +4,9 @@ Run this script locally after ``dataset/build_dataset.py`` has finished:
 
     uv run --extra cloud python dataset/create_modal_volume.py
 
-The Volume root contains every tokenizer-specific artifact so it can later be
-mounted directly at the training script's ``DATASET_DIR``. Existing remote
-files are not overwritten unless ``--force`` is passed explicitly.
+The Volume root mirrors ``dataset/ds`` so it can later be mounted directly at
+the training script's ``DATASET_DIR``. Existing remote files are not
+overwritten unless ``--force`` is passed explicitly.
 """
 
 from __future__ import annotations
@@ -20,15 +20,12 @@ from typing import Sequence
 DEFAULT_VOLUME_NAME = "pavullmo-datasets"
 DEFAULT_DATASET_DIR = Path(__file__).resolve().parent / "ds"
 REMOTE_DATASET_DIR = "/"
-TOKENIZER_PREFIXES = ("4k", "8k", "16k")
-DATASET_VARIANTS = ("195m",)
-EXPECTED_ARTIFACTS = tuple(
-    [
-        f"train_{prefix}_{variant}"
-        for prefix in TOKENIZER_PREFIXES
-        for variant in DATASET_VARIANTS
-    ]
-    + [f"validation_{prefix}" for prefix in TOKENIZER_PREFIXES]
+EXPECTED_ARTIFACTS = (
+    "train_web",
+    "train_balanced",
+    "train_knowledge",
+    "validation",
+    "test",
 )
 
 
@@ -180,11 +177,7 @@ def upload_dataset(
         create_if_missing=True,
     )
     with volume.batch_upload(force=force) as upload:
-        for artifact_name in EXPECTED_ARTIFACTS:
-            upload.put_directory(
-                dataset_dir / artifact_name,
-                f"{REMOTE_DATASET_DIR}{artifact_name}",
-            )
+        upload.put_directory(dataset_dir, REMOTE_DATASET_DIR)
 
 
 def main(argv: Sequence[str] | None = None) -> None:
@@ -198,7 +191,10 @@ def main(argv: Sequence[str] | None = None) -> None:
         f"Validated {total_files} files in {dataset_dir}: "
         f"{total_tokens:,} tokens, {total_bytes / (1024**3):.2f} GiB"
     )
-    print(f"Uploading to Modal Volume {args.volume_name!r} at {REMOTE_DATASET_DIR}...")
+    print(
+        f"Uploading to Modal Volume {args.volume_name!r} at "
+        f"{REMOTE_DATASET_DIR}..."
+    )
     upload_dataset(
         dataset_dir=dataset_dir,
         volume_name=args.volume_name,

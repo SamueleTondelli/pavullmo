@@ -8,8 +8,9 @@ authors = [
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "datasets<4.0.0",
-    "matplotlib>=3.10.6",
-    "scipy>=1.18.1",
+    "duckdb>=1.5.5",
+    "huggingface-hub>=0.35,<2",
+    "matplotlib>=3.11.1",
     "sentencepiece>=0.2.2",
     "tensorboard==2.21.0",
     "torch==2.9.1",
@@ -24,7 +25,6 @@ cloud = [
 [project.scripts]
 pavullmo = "pavullmo:main"
 pavullmo-check = "pavullmo.check_environment:main"
-pavullmo-fit-scaling = "scaling.fit_scaling:main"
 
 [tool.uv.sources]
 torch = [

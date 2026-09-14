@@ -12,6 +12,8 @@ wheels/
 
 # Generated pre-tokenized datasets
 /dataset/ds/
+/dataset/documents/
+/dataset/.documents.tmp/
 
 # Local TensorBoard runs
 /runs/

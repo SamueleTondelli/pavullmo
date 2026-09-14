@@ -1,0 +1,37 @@
+{
+  "max_sentence_length": 65536,
+  "requested_byte_budget": 1073741824,
+  "source": "/home/samuele/Desktop/pavullmo/dataset/documents",
+  "statistics": {
+    "mixture": "balanced",
+    "sources": {
+      "books": {
+        "actual_bytes": 214752580,
+        "chunks": 14578,
+        "target_bytes": 214748364
+      },
+      "edu_pdf": {
+        "actual_bytes": 214751325,
+        "chunks": 22287,
+        "target_bytes": 214748364
+      },
+      "web": {
+        "actual_bytes": 429502424,
+        "chunks": 134993,
+        "target_bytes": 429496729
+      },
+      "wiki": {
+        "actual_bytes": 214749659,
+        "chunks": 28859,
+        "target_bytes": 214748367
+      }
+    },
+    "weights": {
+      "books": 0.2,
+      "edu_pdf": 0.2,
+      "web": 0.4,
+      "wiki": 0.2
+    }
+  },
+  "vocab_size": 16384
+}
