@@ -182,6 +182,22 @@ class TokenBlockDataset(Dataset[tuple[torch.Tensor, torch.Tensor]]):
         # block and the first input of the next, so no next-token transition is lost.
         self.block_count = (total_tokens - 1) // sequence_length
 
+        sample = self.metadata.get("fixed_evaluation_sample")
+        self.evaluation_starts: list[int] | None = None
+        if sample is not None:
+            if sample["sequence_length"] != sequence_length:
+                raise ValueError("SEQ_LEN must match the fixed validation sample sequence_length")
+            starts = [block["start_token"] for block in sample["blocks"]]
+            if not starts or len(starts) != sample["block_count"]:
+                raise ValueError("invalid fixed validation sample block count")
+            if len(set(starts)) != len(starts) or any(
+                not isinstance(start, int) or start < 0
+                or start + sequence_length >= total_tokens for start in starts
+            ):
+                raise ValueError("invalid or duplicate fixed validation sample offsets")
+            self.evaluation_starts = starts
+            self.block_count = len(starts)
+
     def __len__(self) -> int:
         return self.block_count
 
@@ -203,7 +219,8 @@ class TokenBlockDataset(Dataset[tuple[torch.Tensor, torch.Tensor]]):
         if index < 0 or index >= self.block_count:
             raise IndexError(index)
 
-        start = index * self.sequence_length
+        start = (self.evaluation_starts[index] if self.evaluation_starts is not None
+                 else index * self.sequence_length)
         remaining = self.sequence_length + 1
         shard_index = bisect.bisect_right(self.shard_ends, start)
         pieces: list[torch.Tensor] = []
@@ -309,11 +326,21 @@ def build_loader(
     shuffle: bool,
     generator: torch.Generator | None = None,
 ) -> DataLoader[tuple[torch.Tensor, torch.Tensor]]:
+    fixed_sample = dataset.evaluation_starts is not None
+    if fixed_sample:
+        if shuffle:
+            raise ValueError("the fixed validation sample must not be used as shuffled training data")
+        required_batches = (len(dataset) + BATCH_SIZE - 1) // BATCH_SIZE
+        if VALIDATION_STEPS < required_batches:
+            raise ValueError(
+                f"VALIDATION_STEPS must be at least {required_batches} to evaluate "
+                "the complete fixed stratified sample"
+            )
     kwargs: dict[str, Any] = {
         "dataset": dataset,
         "batch_size": BATCH_SIZE,
         "shuffle": shuffle,
-        "drop_last": True,
+        "drop_last": not fixed_sample,
         "num_workers": NUM_WORKERS,
         "pin_memory": PIN_MEMORY,
         "persistent_workers": NUM_WORKERS > 0,

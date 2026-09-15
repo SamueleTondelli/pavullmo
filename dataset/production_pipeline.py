@@ -60,6 +60,8 @@ DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent / "ds"
 DEFAULT_TRAIN_TOKENS = 1_000_000_000
 DEFAULT_VALIDATION_TOKENS = 10_000_000
 DEFAULT_TEST_TOKENS = 10_000_000
+DEFAULT_VALIDATION_SAMPLE_BLOCKS = 110
+DEFAULT_EVALUATION_SEQUENCE_LENGTH = 1_024
 DEFAULT_SHUFFLE_SEED = 42
 DEFAULT_SHUFFLE_BUFFER = 10_000
 DEFAULT_HOLDOUT_PERMILLE = 20
@@ -191,6 +193,14 @@ def parse_args() -> argparse.Namespace:
         "--validation-tokens", type=int, default=DEFAULT_VALIDATION_TOKENS
     )
     parser.add_argument("--test-tokens", type=int, default=DEFAULT_TEST_TOKENS)
+    parser.add_argument(
+        "--validation-sample-blocks", type=int, default=DEFAULT_VALIDATION_SAMPLE_BLOCKS,
+        help="fixed validation sample size in sequences; must allow exact source weights (default: 110)",
+    )
+    parser.add_argument(
+        "--evaluation-sequence-length", type=int, default=DEFAULT_EVALUATION_SEQUENCE_LENGTH,
+        help="sequence length of the saved validation sample; must match training SEQ_LEN",
+    )
     parser.add_argument("--shard-tokens", type=int, default=DEFAULT_SHARD_TOKENS)
     parser.add_argument("--shuffle-seed", type=int, default=DEFAULT_SHUFFLE_SEED)
     parser.add_argument("--shuffle-buffer", type=int, default=DEFAULT_SHUFFLE_BUFFER)
@@ -761,6 +771,44 @@ def tokenizer_metadata(
     }
 
 
+def fixed_validation_sample(
+    tokens_by_source: Mapping[str, int], weights: Mapping[str, float],
+    *, block_count: int, sequence_length: int, seed: int,
+) -> dict[str, object]:
+    """Select intact next-token spans, without replacement, within each source.
+
+    Source offsets refer to the unchanged full token pool. Each span has L+1
+    tokens, yielding L targets. Exclude source boundaries even for the last target.
+    """
+    if block_count <= 0 or sequence_length <= 0:
+        raise ValueError("validation sample size and sequence length must be positive")
+    if not math.isclose(sum(weights.values()), 1.0):
+        raise ValueError("validation source weights must sum to one")
+    rng = random.Random(seed)
+    blocks = []
+    counts = {}
+    offset = 0
+    for source, weight in weights.items():
+        quota = block_count * weight
+        if not math.isclose(quota, round(quota)):
+            raise ValueError("validation sample blocks must allow exact source weights (use a multiple of 5)")
+        count = round(quota)
+        available = (tokens_by_source[source] - 1) // sequence_length
+        if available < count:
+            raise ValueError(f"validation source {source!r} has {available} complete blocks, needs {count}")
+        for index in rng.sample(range(available), count):
+            blocks.append({"source": source, "start_token": offset + index * sequence_length})
+        counts[source] = count
+        offset += tokens_by_source[source]
+    rng.shuffle(blocks)
+    return {
+        "method": "fixed_stratified_blocks_without_replacement",
+        "seed": seed, "sequence_length": sequence_length,
+        "block_count": block_count, "target_tokens": block_count * sequence_length,
+        "blocks_by_source": counts, "weights": dict(weights), "blocks": blocks,
+    }
+
+
 def build_artifact(
     *,
     name: str,
@@ -780,6 +828,8 @@ def build_artifact(
     documents_dir: Path | None,
     mixture_name: str | None = None,
     size_label: str | None = None,
+    validation_sample_blocks: int = DEFAULT_VALIDATION_SAMPLE_BLOCKS,
+    evaluation_sequence_length: int = DEFAULT_EVALUATION_SEQUENCE_LENGTH,
 ) -> set[str]:
     target_by_source = token_allocations(total_tokens, weights)
     written_by_source = Counter[str]()
@@ -844,8 +894,15 @@ def build_artifact(
         # Arrow callbacks in background C++ threads; collecting their wrappers
         # between artifacts can trigger a CPython 3.12 thread-state abort.
 
+    evaluation_metadata = {}
+    if partition == "validation":
+        evaluation_metadata["fixed_evaluation_sample"] = fixed_validation_sample(
+            written_by_source, weights, block_count=validation_sample_blocks,
+            sequence_length=evaluation_sequence_length, seed=seed,
+        )
     builder.finish(
         {
+            **evaluation_metadata,
             "dataset": {
                 "name": "pavullmo_production_mixture",
                 "split": partition,
@@ -924,6 +981,8 @@ def validate_args(args: argparse.Namespace) -> None:
         "test_tokens",
         "shard_tokens",
         "shuffle_buffer",
+        "validation_sample_blocks",
+        "evaluation_sequence_length",
     ):
         if getattr(args, name) <= 0:
             raise ValueError(f"--{name.replace('_', '-')} must be positive")
@@ -945,6 +1004,13 @@ def validate_args(args: argparse.Namespace) -> None:
         manifest = args.documents_dir / "manifest.json"
         if not manifest.is_file():
             raise FileNotFoundError(f"materialized corpus manifest not found: {manifest}")
+    if not args.documents_only:
+        # Validate quotas before opening any source stream or output artifact.
+        fixed_validation_sample(
+            token_allocations(args.validation_tokens, TEST_MIX), TEST_MIX,
+            block_count=args.validation_sample_blocks,
+            sequence_length=args.evaluation_sequence_length, seed=args.shuffle_seed,
+        )
 
 
 def main() -> None:
@@ -994,6 +1060,8 @@ def main() -> None:
         seed=args.shuffle_seed,
         buffer_size=args.shuffle_buffer,
         documents_dir=args.documents_dir,
+        validation_sample_blocks=args.validation_sample_blocks,
+        evaluation_sequence_length=args.evaluation_sequence_length,
     )
     test_hashes = build_artifact(
         name="test",

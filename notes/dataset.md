@@ -14,6 +14,35 @@ By default it creates three 1B-token training artifacts, one shared 10M-token
 validation artifact, and one untouched 10M-token test artifact under
 `dataset/ds/`.
 
+## Fixed stratified validation
+
+New production builds retain the full validation token pool and save a fixed
+sample in `metadata.json` under `fixed_evaluation_sample`. The default is
+110 sequences of 1,024 targets: 44 web sequences and 22 each from Wikipedia,
+books, and educational PDFs (112,640 evaluated tokens; exactly 40/20/20/20).
+Blocks are sampled without replacement across each source's full token range
+using `--shuffle-seed`. Each input/target span stays inside one source; token
+order inside a span is preserved. Sample offsets and source labels are saved.
+
+Configure this with `--validation-sample-blocks` (a positive multiple of five)
+and `--evaluation-sequence-length` (must match training `SEQ_LEN`). These
+options work through both `dataset/build_dataset.py`'s production entry point
+and `dataset/production_pipeline.py`. The full test pool remains unchanged.
+
+Both AdamW and Muon training readers use the saved sample in the saved order
+on every evaluation. At batch size 16, the default takes seven batches, with
+14 sequences in the final batch. Loss remains weighted by the number of target
+tokens. `VALIDATION_STEPS` must cover the entire sample (at least seven here);
+a smaller limit raises an error rather than silently changing its mixture.
+A larger limit does not expand the saved sample. The partial batch may require
+an additional compiled evaluation shape.
+
+Existing artifacts without this metadata retain the legacy prefix evaluation
+behavior. Rebuild validation to activate stratified evaluation; existing logs
+and checkpoints are not retroactively changed. Keep the sample metadata with
+the artifact so all compared models use identical text. Per-source loss logging
+is not added by this change.
+
 ## Sources and mixtures
 
 Four source families are streamed from Hugging Face:
