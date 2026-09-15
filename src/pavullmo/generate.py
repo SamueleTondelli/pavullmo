@@ -20,7 +20,7 @@ from model import DecoderTransformer
 # reduces the number of tokens that can be generated.
 MAX_NEW_TOKENS = 1024
 TEMPERATURE = 0.8
-TOP_K = 50
+TOP_K = 1
 
 ARCHITECTURE_KEYS = (
     "VOCAB_SIZE",

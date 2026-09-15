@@ -12,11 +12,13 @@ wheels/
 
 # Generated pre-tokenized datasets
 /dataset/ds/
+/dataset/ds-oldtok/
 /dataset/documents/
 /dataset/.documents.tmp/
 
 # Local TensorBoard runs
 /runs/
+old_runs
 
 scripts
 models
