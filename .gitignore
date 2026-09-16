@@ -10,11 +10,13 @@ wheels/
 .venv
 .uv-cache/
 
-# Generated pre-tokenized datasets
+# Old notation. Now use tmp/ for any non-stashable file (e.g. datasets, models...)
+
+## Generated pre-tokenized datasets
 /dataset/ds/
 
-# Local TensorBoard runs
+## Local TensorBoard runs
 /runs/
-
 scripts
 models
+
