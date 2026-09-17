@@ -38,7 +38,7 @@ class RepositoryInterfaceTests(unittest.TestCase):
                 with self.subTest(wrapper=relative, local=local), patch.dict('sys.modules', modal=modal), patch.object(modal, 'is_local', return_value=local):
                     namespace = {'__file__': str(path if local else Path('/root') / path.name)}
                     exec(code, namespace)
-                    expected = ROOT / 'tmp/results' / filename if local else Path('/outputs') / filename
+                    expected = ROOT / 'artifacts/results' / filename if local else Path('/outputs') / filename
                     self.assertEqual(namespace[setting], expected)
 
     def test_scaling_evaluation_resolves_validation_prefix(self):
@@ -52,7 +52,7 @@ class RepositoryInterfaceTests(unittest.TestCase):
             settings = {'SEQ_LEN': 16, 'DATASET_VARIANT': 'smoke'}
             if prefix is not None:
                 settings['DATASET_PREFIX'] = prefix
-            with self.subTest(prefix=prefix), tempfile.TemporaryDirectory(dir=ROOT / 'tmp') as folder:
+            with self.subTest(prefix=prefix), tempfile.TemporaryDirectory(dir=ROOT / 'artifacts') as folder:
                 root = Path(folder)
                 train = root / (f'train_{prefix}_smoke' if prefix else 'train_smoke')
                 train.mkdir()

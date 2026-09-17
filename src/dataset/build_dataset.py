@@ -27,7 +27,7 @@ import shutil
 import sys
 from typing import Iterable, Iterator, Mapping, Sequence
 
-os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[1] / "tmp" / "cache" / "huggingface"))
+os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[2] / "artifacts" / "cache" / "huggingface"))
 
 from datasets import load_dataset
 import pyarrow as pa
@@ -54,10 +54,10 @@ TRAIN_TARGETS = {
 DEFAULT_SHARD_TOKENS = 50_000_000  # 100 MB per full uint16 shard.
 UINT16_MAX = 65_535
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_TOKENIZER = PROJECT_ROOT / "tmp" / "tokenizers" / "tokenizer.model"
-DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parents[1] / "tmp" / "datasets"
-DEFAULT_SAMPLE_OUTPUT = Path(__file__).resolve().parents[1] / "tmp" / "fineweb2_sample.parquet"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_TOKENIZER = PROJECT_ROOT / "artifacts" / "tokenizers" / "tokenizer.model"
+DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parents[2] / "artifacts" / "datasets"
+DEFAULT_SAMPLE_OUTPUT = Path(__file__).resolve().parents[2] / "artifacts" / "fineweb2_sample.parquet"
 
 
 @dataclass(frozen=True)
@@ -751,7 +751,7 @@ def main() -> None:
         try:
             from production_pipeline import main as production_main
         except ModuleNotFoundError:
-            from dataset.production_pipeline import main as production_main
+            from src.dataset.production_pipeline import main as production_main
 
         production_main()
         return

@@ -11,10 +11,10 @@ wheels/
 .uv-cache/
 
 # Generated pre-tokenized datasets
-/dataset/ds/
-/dataset/ds-oldtok/
-/dataset/documents/
-/dataset/.documents.tmp/
+/src/dataset/ds/
+/src/dataset/ds-oldtok/
+/src/dataset/documents/
+/src/dataset/.documents.tmp/
 
 # Local TensorBoard runs
 /runs/
@@ -24,4 +24,4 @@ scripts
 models
 
 # Local generated artifacts (datasets, tokenizers, checkpoints, logs, caches)
-/tmp/
+/artifacts/
