@@ -1,6 +1,9 @@
 import argparse
 from pathlib import Path
 
+import os
+os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[2] / "tmp" / "cache" / "huggingface"))
+
 from datasets import load_dataset
 import sentencepiece as spm
 from tqdm import tqdm
@@ -10,10 +13,10 @@ DATASET = "gsarti/clean_mc4_it"
 VARIANT = "tiny"
 N_THREADS = 8
 
-ds = iter(load_dataset(DATASET, VARIANT, split="train", streaming=True))
 
 
 def text_iterator(byte_budget):
+    ds = iter(load_dataset(DATASET, VARIANT, split="train", streaming=True))
     used_bytes = 0
     with tqdm(
         total=byte_budget,

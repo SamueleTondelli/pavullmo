@@ -20,3 +20,6 @@ wheels/
 scripts
 models
 
+
+# Local generated artifacts (datasets, tokenizers, checkpoints, logs, caches)
+/tmp/
