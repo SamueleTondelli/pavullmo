@@ -23,7 +23,7 @@ import sys
 from typing import Iterable, Sequence
 
 import os
-os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[1] / "tmp" / "cache" / "huggingface"))
+os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[2] / "artifacts" / "cache" / "huggingface"))
 
 from datasets import load_dataset
 import sentencepiece as spm
@@ -40,9 +40,9 @@ TRAIN_TARGETS = {
 DEFAULT_SHARD_TOKENS = 50_000_000  # 100 MB per full uint16 shard.
 UINT16_MAX = 65_535
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_TOKENIZER = PROJECT_ROOT / "tmp" / "tokenizers" / "tokenizer.model"
-DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parents[1] / "tmp" / "datasets"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_TOKENIZER = PROJECT_ROOT / "artifacts" / "tokenizers" / "tokenizer.model"
+DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parents[2] / "artifacts" / "datasets"
 
 
 def parse_args() -> argparse.Namespace:

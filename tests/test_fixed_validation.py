@@ -6,8 +6,8 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from dataset.production_pipeline import TEST_MIX, build_artifact, fixed_validation_sample
-from dataset.build_dataset import ArtifactBuilder
+from src.dataset.production_pipeline import TEST_MIX, build_artifact, fixed_validation_sample
+from src.dataset.build_dataset import ArtifactBuilder
 
 
 class FixedValidationTests(unittest.TestCase):
@@ -33,9 +33,9 @@ class FixedValidationTests(unittest.TestCase):
             for i in range(100):
                 yield f'{source.key}-{i}', f'{source.key} text {i}'
         with tempfile.TemporaryDirectory() as tmp, \
-             patch('dataset.production_pipeline.iter_partition_chunks', side_effect=chunks), \
-             patch('dataset.production_pipeline.encode_document', return_value=list(range(11))), \
-             patch('dataset.production_pipeline.tokenizer_metadata', return_value={'vocab_size': 32}):
+             patch('src.dataset.production_pipeline.iter_partition_chunks', side_effect=chunks), \
+             patch('src.dataset.production_pipeline.encode_document', return_value=list(range(11))), \
+             patch('src.dataset.production_pipeline.tokenizer_metadata', return_value={'vocab_size': 32}):
             build_artifact(name='validation', weights=TEST_MIX, total_tokens=1000,
                            partition='validation', heldout_text_hashes=set(), tokenizer=None,
                            tokenizer_path=Path(tmp)/'tokenizer.model', tokenizer_digest='test',

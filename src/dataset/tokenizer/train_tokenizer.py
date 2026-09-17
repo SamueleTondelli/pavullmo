@@ -2,7 +2,7 @@ import argparse
 from pathlib import Path
 
 import os
-os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[2] / "tmp" / "cache" / "huggingface"))
+os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[3] / "artifacts" / "cache" / "huggingface"))
 
 from datasets import load_dataset
 import sentencepiece as spm

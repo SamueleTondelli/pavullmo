@@ -13,7 +13,7 @@ wheels/
 # Old notation. Now use tmp/ for any non-stashable file (e.g. datasets, models...)
 
 ## Generated pre-tokenized datasets
-/dataset/ds/
+/src/dataset/ds/
 
 ## Local TensorBoard runs
 /runs/
@@ -22,4 +22,4 @@ models
 
 
 # Local generated artifacts (datasets, tokenizers, checkpoints, logs, caches)
-/tmp/
+/artifacts/
