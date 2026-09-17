@@ -26,6 +26,8 @@ import shutil
 import sys
 from typing import Iterable, Iterator, Mapping
 
+os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[1] / "tmp" / "cache" / "huggingface"))
+
 from datasets import load_dataset
 from huggingface_hub import HfApi, HfFileSystem
 import pyarrow as pa
@@ -56,7 +58,7 @@ except ModuleNotFoundError:
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent / "ds"
+DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parents[1] / "tmp" / "datasets"
 DEFAULT_TRAIN_TOKENS = 1_000_000_000
 DEFAULT_VALIDATION_TOKENS = 10_000_000
 DEFAULT_TEST_TOKENS = 10_000_000
@@ -65,7 +67,7 @@ DEFAULT_EVALUATION_SEQUENCE_LENGTH = 1_024
 DEFAULT_SHUFFLE_SEED = 42
 DEFAULT_SHUFFLE_BUFFER = 10_000
 DEFAULT_HOLDOUT_PERMILLE = 20
-DEFAULT_DOCUMENTS_DIR = Path(__file__).resolve().parent / "documents"
+DEFAULT_DOCUMENTS_DIR = Path(__file__).resolve().parents[1] / "tmp" / "documents"
 DEFAULT_DOCUMENT_BYTES_PER_TOKEN = 5.0
 DEFAULT_DOCUMENT_SHARD_BYTES = 256 * 1024 * 1024
 SIZE_LABEL_RE = re.compile(r"^[a-z0-9][a-z0-9_-]*$")

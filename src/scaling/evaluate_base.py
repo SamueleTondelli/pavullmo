@@ -40,7 +40,7 @@ SEED = int(os.environ.get("SEED", 42))
 
 # Data, evaluation, and runtime settings.
 DATASET_DIR = Path(
-    os.environ.get("DATASET_DIR", str(PROJECT_DIR / "dataset" / "ds"))
+    os.environ.get("DATASET_DIR", str(PROJECT_DIR / "tmp" / "datasets"))
 ).expanduser()
 NUM_WORKERS = int(os.environ.get("NUM_WORKERS", 4))
 PIN_MEMORY = env_bool("PIN_MEMORY", True)
