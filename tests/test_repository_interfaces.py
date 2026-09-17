@@ -42,6 +42,7 @@ class RepositoryInterfaceTests(unittest.TestCase):
                     self.assertEqual(namespace[setting], expected)
 
     def test_scaling_evaluation_resolves_validation_prefix(self):
+        (ROOT / 'artifacts').mkdir(parents=True, exist_ok=True)
         module = importlib.import_module('src.scaling.evaluate_base')
         weight = module.torch.nn.Parameter(module.torch.ones(2, 2))
         model = SimpleNamespace(
