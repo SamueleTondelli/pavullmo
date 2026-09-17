@@ -280,7 +280,10 @@ def main() -> None:
 
     model, hyperparameters = load_model(args.model, device)
 
-    validation_dir = DATASET_DIR / f"validation_{hyperparameters['DATASET_PREFIX']}"
+    dataset_prefix = str(hyperparameters.get("DATASET_PREFIX", ""))
+    validation_dir = DATASET_DIR / (
+        f"validation_{dataset_prefix}" if dataset_prefix else "validation"
+    )
     validation_dataset = TokenBlockDataset(
         validation_dir, int(hyperparameters["SEQ_LEN"])
     )
@@ -295,9 +298,11 @@ def main() -> None:
 
     print(f"Final validation loss: {val_loss}")
 
-    train_dir = (
-        DATASET_DIR
-        / f"train_{hyperparameters['DATASET_PREFIX']}_{hyperparameters['DATASET_VARIANT']}"
+    dataset_variant = hyperparameters["DATASET_VARIANT"]
+    train_dir = DATASET_DIR / (
+        f"train_{dataset_prefix}_{dataset_variant}"
+        if dataset_prefix
+        else f"train_{dataset_variant}"
     )
     metadata_path = train_dir / "metadata.json"
     train_size = 0
@@ -322,7 +327,7 @@ def main() -> None:
             writer.writeheader()
         writer.writerow(
             {
-                "tokenizer": hyperparameters["DATASET_PREFIX"],
+                "tokenizer": dataset_prefix,
                 "parameters": scaling_parameters,
                 "train_tokens": train_size,
                 "validation_loss": val_loss,

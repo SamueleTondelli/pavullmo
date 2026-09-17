@@ -56,7 +56,7 @@ pre-tokenized datasets, and a local single-GPU pretraining loop are implemented.
 - Train loss, pre-clipping gradient norm, and learning rate are logged after
   every optimizer step. Validation loss is computed periodically over a fixed
   number of validation batches. All metrics and the run configuration are
-  written to TensorBoard under `tmp/tmp/runs/<experiment_name>` by default.
+  written to TensorBoard under `tmp/runs/<experiment_name>` by default.
 - Diagnostic gradient logs retain `gradient_groups/attention_qkv` for both
   layouts and additionally report query, key, and value norms when split QKV is
   enabled.

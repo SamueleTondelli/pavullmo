@@ -31,7 +31,11 @@ DATASET_MOUNT_PATH = "/datasets"
 OUTPUT_MOUNT_PATH = "/outputs"
 REMOTE_MODELS_DIR = PurePosixPath(OUTPUT_MOUNT_PATH) / "models"
 REMOTE_EVALUATIONS_CSV = Path(OUTPUT_MOUNT_PATH) / "scaling_loss.csv"
-LOCAL_EVALUATIONS_CSV = Path(__file__).resolve().parents[2] / "tmp" / "results" / "scaling_loss.csv"
+LOCAL_EVALUATIONS_CSV = (
+    Path(__file__).resolve().parents[2] / "tmp" / "results" / "scaling_loss.csv"
+    if modal.is_local()
+    else REMOTE_EVALUATIONS_CSV
+)
 EVALUATION_RESULT_FIELDS = (
     "tokenizer",
     "parameters",
