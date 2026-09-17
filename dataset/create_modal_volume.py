@@ -4,6 +4,11 @@ Run this script locally after ``dataset/build_dataset.py`` has finished:
 
     uv run --extra cloud python dataset/create_modal_volume.py
 
+To upload only specific artifacts, pass their names separated by semicolons:
+
+    uv run --extra cloud python dataset/create_modal_volume.py \
+        --datasets 'train_balanced_1b;validation;test;'
+
 The Volume root mirrors ``tmp/datasets`` so it can later be mounted directly at
 the training script's ``DATASET_DIR``. Existing remote files are not
 overwritten unless ``--force`` is passed explicitly.
@@ -13,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 from typing import Sequence
 
@@ -27,6 +33,29 @@ EXPECTED_ARTIFACTS = (
     "validation",
     "test",
 )
+ARTIFACT_NAME_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]*")
+
+
+def parse_dataset_names(value: str) -> tuple[str, ...]:
+    """Parse a semicolon-delimited list of artifact directory names."""
+
+    names = tuple(name.strip() for name in value.split(";") if name.strip())
+    if not names:
+        raise argparse.ArgumentTypeError("must contain at least one dataset name")
+
+    invalid = [name for name in names if not ARTIFACT_NAME_PATTERN.fullmatch(name)]
+    if invalid:
+        raise argparse.ArgumentTypeError(
+            "dataset names may contain only letters, numbers, '.', '_', and '-': "
+            + ", ".join(repr(name) for name in invalid)
+        )
+
+    duplicates = sorted({name for name in names if names.count(name) > 1})
+    if duplicates:
+        raise argparse.ArgumentTypeError(
+            "duplicate dataset names: " + ", ".join(duplicates)
+        )
+    return names
 
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
@@ -46,6 +75,16 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
         type=Path,
         default=DEFAULT_DATASET_DIR,
         help=f"local artifact directory (default: {DEFAULT_DATASET_DIR})",
+    )
+    parser.add_argument(
+        "--datasets",
+        type=parse_dataset_names,
+        metavar="NAME;NAME;...",
+        help=(
+            "upload only these semicolon-delimited artifact directories, e.g. "
+            "'train_balanced_1b;validation;test;'; by default the entire "
+            "dataset directory is uploaded"
+        ),
     )
     parser.add_argument(
         "--environment",
@@ -134,8 +173,11 @@ def validate_artifact(artifact_dir: Path) -> tuple[int, int]:
     return token_count, total_bytes
 
 
-def validate_dataset_dir(dataset_dir: Path) -> tuple[int, int, int]:
-    """Ensure all expected artifacts are complete before starting an upload."""
+def validate_dataset_dir(
+    dataset_dir: Path,
+    artifact_names: Sequence[str] = EXPECTED_ARTIFACTS,
+) -> tuple[int, int, int]:
+    """Ensure the requested artifacts are complete before starting an upload."""
 
     if not dataset_dir.is_dir():
         raise FileNotFoundError(
@@ -146,7 +188,7 @@ def validate_dataset_dir(dataset_dir: Path) -> tuple[int, int, int]:
     total_tokens = 0
     total_bytes = 0
     total_files = 0
-    for artifact_name in EXPECTED_ARTIFACTS:
+    for artifact_name in artifact_names:
         artifact_dir = dataset_dir / artifact_name
         if not artifact_dir.is_dir():
             raise FileNotFoundError(f"dataset artifact not found: {artifact_dir}")
@@ -163,6 +205,7 @@ def upload_dataset(
     volume_name: str,
     environment: str | None,
     force: bool,
+    artifact_names: Sequence[str] | None = None,
 ) -> None:
     try:
         import modal
@@ -177,7 +220,14 @@ def upload_dataset(
         create_if_missing=True,
     )
     with volume.batch_upload(force=force) as upload:
-        upload.put_directory(dataset_dir, REMOTE_DATASET_DIR)
+        if artifact_names is None:
+            upload.put_directory(dataset_dir, REMOTE_DATASET_DIR)
+        else:
+            for artifact_name in artifact_names:
+                upload.put_directory(
+                    dataset_dir / artifact_name,
+                    f"/{artifact_name}",
+                )
 
 
 def main(argv: Sequence[str] | None = None) -> None:
@@ -186,7 +236,11 @@ def main(argv: Sequence[str] | None = None) -> None:
         raise ValueError("--volume-name cannot be empty")
 
     dataset_dir = args.dataset_dir.expanduser().resolve()
-    total_tokens, total_bytes, total_files = validate_dataset_dir(dataset_dir)
+    artifact_names = args.datasets or EXPECTED_ARTIFACTS
+    total_tokens, total_bytes, total_files = validate_dataset_dir(
+        dataset_dir,
+        artifact_names,
+    )
     print(
         f"Validated {total_files} files in {dataset_dir}: "
         f"{total_tokens:,} tokens, {total_bytes / (1024**3):.2f} GiB"
@@ -195,11 +249,14 @@ def main(argv: Sequence[str] | None = None) -> None:
         f"Uploading to Modal Volume {args.volume_name!r} at "
         f"{REMOTE_DATASET_DIR}..."
     )
+    if args.datasets is not None:
+        print(f"Selected datasets: {';'.join(args.datasets)}")
     upload_dataset(
         dataset_dir=dataset_dir,
         volume_name=args.volume_name,
         environment=args.environment,
         force=args.force,
+        artifact_names=args.datasets,
     )
     print(f"Modal Volume {args.volume_name!r} is ready")
 
