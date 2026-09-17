@@ -34,7 +34,11 @@ DATASET_MOUNT_PATH = "/datasets"
 OUTPUT_MOUNT_PATH = "/outputs"
 TENSORBOARD_PORT = 6006
 REMOTE_RUNS_CSV = Path(OUTPUT_MOUNT_PATH) / "pretrain_runs.csv"
-LOCAL_RUNS_CSV = Path(__file__).resolve().parents[2] / "tmp" / "results" / "pretrain_runs.csv"
+LOCAL_RUNS_CSV = (
+    Path(__file__).resolve().parents[2] / "artifacts" / "results" / "pretrain_runs.csv"
+    if modal.is_local()
+    else REMOTE_RUNS_CSV
+)
 RUN_RESULT_FIELDS = (
     "experiment_name",
     "dataset_variant",

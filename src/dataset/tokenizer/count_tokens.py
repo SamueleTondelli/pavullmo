@@ -4,7 +4,7 @@ from pathlib import Path
 
 import sentencepiece as spm
 import os
-os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[2] / "tmp" / "cache" / "huggingface"))
+os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[3] / "artifacts" / "cache" / "huggingface"))
 
 from datasets import load_dataset
 from tqdm import tqdm
@@ -37,7 +37,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--model",
         type=Path,
-        default=Path(__file__).resolve().parents[2] / "tmp" / "tokenizers" / "tokenizer.model",
+        default=Path(__file__).resolve().parents[3] / "artifacts" / "tokenizers" / "tokenizer.model",
         help="SentencePiece model to use",
     )
     return parser.parse_args()

@@ -3,7 +3,7 @@
 The validation datasets are read from the dataset Volume and checkpoints are
 read from the training output Volume. The evaluator appends its result to the
 remote ``scaling_loss.csv``; after a successful run, the same row is appended
-to a local CSV (``tmp/results/scaling_loss.csv`` by default).
+to a local CSV (``artifacts/results/scaling_loss.csv`` by default).
 
 Launch from the project root with a checkpoint already stored below
 ``/outputs/models`` on the output Volume:
@@ -31,7 +31,11 @@ DATASET_MOUNT_PATH = "/datasets"
 OUTPUT_MOUNT_PATH = "/outputs"
 REMOTE_MODELS_DIR = PurePosixPath(OUTPUT_MOUNT_PATH) / "models"
 REMOTE_EVALUATIONS_CSV = Path(OUTPUT_MOUNT_PATH) / "scaling_loss.csv"
-LOCAL_EVALUATIONS_CSV = Path(__file__).resolve().parents[2] / "tmp" / "results" / "scaling_loss.csv"
+LOCAL_EVALUATIONS_CSV = (
+    Path(__file__).resolve().parents[2] / "artifacts" / "results" / "scaling_loss.csv"
+    if modal.is_local()
+    else REMOTE_EVALUATIONS_CSV
+)
 EVALUATION_RESULT_FIELDS = (
     "tokenizer",
     "parameters",

@@ -95,18 +95,18 @@ if DATASET_PREFIX and not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*", DATASET_PR
         "only letters, digits, '.', '_', and '-'"
     )
 DATASET_DIR = Path(
-    os.environ.get("DATASET_DIR", str(PROJECT_DIR / "tmp" / "datasets"))
+    os.environ.get("DATASET_DIR", str(PROJECT_DIR / "artifacts" / "datasets"))
 ).expanduser()
 NUM_WORKERS = int(os.environ.get("NUM_WORKERS", 4))
 PIN_MEMORY = env_bool("PIN_MEMORY", True)
 VALIDATION_INTERVAL = int(os.environ.get("VALIDATION_INTERVAL", 20))
 VALIDATION_STEPS = int(os.environ.get("VALIDATION_STEPS", 20))
-LOG_DIR = Path(os.environ.get("LOG_DIR", str(PROJECT_DIR / "tmp" / "runs"))).expanduser()
+LOG_DIR = Path(os.environ.get("LOG_DIR", str(PROJECT_DIR / "artifacts" / "runs"))).expanduser()
 RUNS_CSV = Path(
-    os.environ.get("RUNS_CSV", str(PROJECT_DIR / "tmp" / "results" / "pretrain_runs.csv"))
+    os.environ.get("RUNS_CSV", str(PROJECT_DIR / "artifacts" / "results" / "pretrain_runs.csv"))
 ).expanduser()
 MODEL_OUTPUT_DIR = Path(
-    os.environ.get("MODEL_OUTPUT_DIR", str(PROJECT_DIR / "tmp" / "models"))
+    os.environ.get("MODEL_OUTPUT_DIR", str(PROJECT_DIR / "artifacts" / "models"))
 ).expanduser()
 TRAIN_SCRIPT = os.environ.get("TRAIN_SCRIPT", Path(__file__).name)
 TENSORBOARD_FLUSH_SECS = int(os.environ.get("TENSORBOARD_FLUSH_SECS", 5))
