@@ -9,16 +9,16 @@ pre-tokenized datasets, and a local single-GPU pretraining loop are implemented.
 - The corpus is `gsarti/clean_mc4_it`, loaded from Hugging Face Datasets in
   streaming mode. It provides `tiny`, `small`, `medium`, `large`, and `full`
   variants; current tokenizer work uses `tiny`.
-- `dataset/tokenizer/train_tokenizer.py` trains a configurable SentencePiece BPE
+- `src/dataset/tokenizer/train_tokenizer.py` trains a configurable SentencePiece BPE
   either from the legacy stream or from a selected mixture in the frozen,
   cleaned Parquet document layer, with full character coverage and byte
   fallback.
 - Token IDs are fixed as UNK=0, BOS=1, EOS=2, and PAD=3. The vocabulary also
   includes `<system>`, `<user>`, and `<assistant>`.
-- `dataset/tokenizer/count_tokens.py` samples the streamed corpus and extrapolates
+- `src/dataset/tokenizer/count_tokens.py` samples the streamed corpus and extrapolates
   token counts for each dataset variant from the dataset card's approximate
   word counts.
-- `dataset/build_dataset.py` is the production entry point for three 1B-token
+- `src/dataset/build_dataset.py` is the production entry point for three 1B-token
   source mixtures (`web`, `balanced`, and `knowledge`), a shared configurable
   validation artifact, and a separate configurable final-test artifact. Its
   explicit `--sample-only` and `--source` modes retain the earlier FineWeb2
@@ -28,7 +28,7 @@ pre-tokenized datasets, and a local single-GPU pretraining loop are implemented.
   Parquet pools for train, validation, and test. A later build can use
   `--documents-dir` and any compatible tokenizer to create exact token quotas
   without redownloading or recleaning the sources.
-- Generated artifacts live under `tmp/datasets/` and are intentionally ignored by
+- Generated artifacts live under `artifacts/datasets/` and are intentionally ignored by
   Git. Tokens are flat, little-endian `uint16` streams in shards of at most 50M
   tokens, with counts, hashes, tokenizer information, and source details in each
   artifact's `metadata.json`.
@@ -47,8 +47,8 @@ pre-tokenized datasets, and a local single-GPU pretraining loop are implemented.
 ## Pretraining
 
 - `src/pavullmo/pretrain_base.py` is the local single-GPU next-token pretraining
-  entry point. It reads `tmp/datasets/train_<variant>` and
-  `tmp/datasets/validation` directly; it does not tokenize text during training.
+  entry point. It reads `artifacts/datasets/train_<variant>` and
+  `artifacts/datasets/validation` directly; it does not tokenize text during training.
 - The memory-mapped dataset loader constructs `sequence_length + 1` token spans
   and returns shifted input/target tensors of shape `[sequence_length]`. Blocks
   use a stride of `sequence_length`, so adjacent blocks share their boundary
@@ -60,13 +60,13 @@ pre-tokenized datasets, and a local single-GPU pretraining loop are implemented.
 - Train loss, pre-clipping gradient norm, and learning rate are logged after
   every optimizer step. Validation loss is computed periodically over a fixed
   number of validation batches. All metrics and the run configuration are
-  written to TensorBoard under `tmp/runs/<experiment_name>` by default.
+  written to TensorBoard under `artifacts/runs/<experiment_name>` by default.
 - After successful training, the final model checkpoint is written under
   `MODEL_OUTPUT_DIR`. It contains the model state, final losses, global step,
   dataset variant, hyperparameter mapping, and exact hyperparameter string.
 - The final train/validation losses, script name, dataset variant, experiment
   name, model path, and complete hyperparameter string are appended to
-  `tmp/results/pretrain_runs.csv`. Override the registry path with `RUNS_CSV`.
+  `artifacts/results/pretrain_runs.csv`. Override the registry path with `RUNS_CSV`.
 - Every hyperparameter must be read from an environment variable; do not add a
   hard-coded model, optimizer, data, schedule, evaluation, logging, or
   compilation hyperparameter. Whenever a hyperparameter is added or changed,
@@ -78,17 +78,17 @@ pre-tokenized datasets, and a local single-GPU pretraining loop are implemented.
   `VALIDATION_STEPS`, `NUM_WORKERS`, `LOG_DIR`, `COMPILE_MODEL`, and
   `COMPILE_MODE`.
 - Start the dashboard with
-  `.venv/bin/tensorboard --logdir tmp/runs --port 6006`. TensorBoard events flush
+  `.venv/bin/tensorboard --logdir artifacts/runs --port 6006`. TensorBoard events flush
   every five seconds by default; configure this with
   `TENSORBOARD_FLUSH_SECS`.
 
 ## Modal data and pretraining
 
-- `dataset/create_modal_volume.py` validates the five generated dataset
+- `src/dataset/create_modal_volume.py` validates the five generated dataset
   artifacts and uploads them to the root of the `pavullmo-datasets` Modal
   Volume. Existing files are not overwritten unless `--force` is passed.
 - Run the uploader locally with
-  `uv run --extra cloud python dataset/create_modal_volume.py`. The training
+  `uv run --extra cloud python src/dataset/create_modal_volume.py`. The training
   Volume root contains `train_web`, `train_balanced`, `train_knowledge`,
   `validation`, and `test` directly, matching the layout expected by
   `DATASET_DIR`. Training consumes `validation`; `test` is reserved for final
@@ -148,10 +148,10 @@ GPU environment checks.
 
 ## Repository ownership
 
-- `dataset/` owns dataset and tokenizer building scripts.
+- `src/dataset/` owns dataset and tokenizer building scripts.
 - `src/` owns model, training, evaluation, and execution code.
-- `tmp/` owns local generated artifacts and is ignored; keep downloads, tokenizer
+- `artifacts/` owns local generated artifacts and is ignored; keep downloads, tokenizer
   artifacts, datasets, checkpoints, run registries, and logs here by default.
 - `notes/` retains project documentation and historical experiment evidence.
-- The dataset/training interface is token shards plus `metadata.json`; preserve
+- The src/dataset/training interface is token shards plus `metadata.json`; preserve
   that format and existing CLI/environment overrides when changing paths.

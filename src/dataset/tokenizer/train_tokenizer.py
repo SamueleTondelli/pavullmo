@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Iterator
 
 import os
-os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[2] / "tmp" / "cache" / "huggingface"))
+os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[3] / "artifacts" / "cache" / "huggingface"))
 
 from datasets import load_dataset
 import pyarrow.parquet as pq

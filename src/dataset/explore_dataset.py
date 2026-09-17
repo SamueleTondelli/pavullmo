@@ -21,7 +21,7 @@ from urllib.parse import urlsplit
 import duckdb
 
 os.environ.setdefault(
-    "MPLCONFIGDIR", str(Path(__file__).resolve().parents[1] / "tmp" / "cache" / "matplotlib")
+    "MPLCONFIGDIR", str(Path(__file__).resolve().parents[2] / "artifacts" / "cache" / "matplotlib")
 )
 import matplotlib
 
@@ -32,9 +32,9 @@ import pyarrow.parquet as pq
 from tqdm import tqdm
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_INPUT = Path(__file__).resolve().parents[1] / "tmp" / "fineweb2_sample.parquet"
-DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parents[1] / "tmp" / "exploration" / "fineweb2"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_INPUT = Path(__file__).resolve().parents[2] / "artifacts" / "fineweb2_sample.parquet"
+DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parents[2] / "artifacts" / "exploration" / "fineweb2"
 WORD_PATTERN = re.compile(r"\S+")
 
 # These are inspection flags, not filtering decisions. Their purpose is to

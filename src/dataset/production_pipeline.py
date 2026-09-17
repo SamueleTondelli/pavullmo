@@ -25,7 +25,7 @@ import shutil
 import sys
 from typing import Iterable, Iterator, Mapping
 
-os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[1] / "tmp" / "cache" / "huggingface"))
+os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parents[2] / "artifacts" / "cache" / "huggingface"))
 
 from datasets import load_dataset
 import pyarrow as pa
@@ -34,7 +34,7 @@ import sentencepiece as spm
 from tqdm import tqdm
 
 try:
-    # Running a script inside ``dataset/`` places this directory on sys.path.
+    # Running a script inside ``src/dataset/`` places this directory on sys.path.
     from build_dataset import (
         ArtifactBuilder,
         DEFAULT_SHARD_TOKENS,
@@ -45,7 +45,7 @@ try:
     )
 except ModuleNotFoundError:
     # Also support importing the module from the repository root and test code.
-    from dataset.build_dataset import (
+    from src.dataset.build_dataset import (
         ArtifactBuilder,
         DEFAULT_SHARD_TOKENS,
         DEFAULT_TOKENIZER,
@@ -55,15 +55,15 @@ except ModuleNotFoundError:
     )
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parents[1] / "tmp" / "datasets"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parents[2] / "artifacts" / "datasets"
 DEFAULT_TRAIN_TOKENS = 1_000_000_000
 DEFAULT_VALIDATION_TOKENS = 10_000_000
 DEFAULT_TEST_TOKENS = 10_000_000
 DEFAULT_SHUFFLE_SEED = 42
 DEFAULT_SHUFFLE_BUFFER = 10_000
 DEFAULT_HOLDOUT_PERMILLE = 20
-DEFAULT_DOCUMENTS_DIR = Path(__file__).resolve().parents[1] / "tmp" / "documents"
+DEFAULT_DOCUMENTS_DIR = Path(__file__).resolve().parents[2] / "artifacts" / "documents"
 DEFAULT_DOCUMENT_BYTES_PER_TOKEN = 5.0
 DEFAULT_DOCUMENT_SHARD_BYTES = 256 * 1024 * 1024
 

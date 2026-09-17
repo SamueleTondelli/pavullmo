@@ -1,10 +1,10 @@
 """Create a Modal Volume and upload the pre-tokenized datasets once.
 
-Run this script locally after ``dataset/build_dataset.py`` has finished:
+Run this script locally after ``src/dataset/build_dataset.py`` has finished:
 
-    uv run --extra cloud python dataset/create_modal_volume.py
+    uv run --extra cloud python src/dataset/create_modal_volume.py
 
-The Volume root mirrors ``tmp/datasets`` so it can later be mounted directly at
+The Volume root mirrors ``artifacts/datasets`` so it can later be mounted directly at
 the training script's ``DATASET_DIR``. Existing remote files are not
 overwritten unless ``--force`` is passed explicitly.
 """
@@ -18,7 +18,7 @@ from typing import Sequence
 
 
 DEFAULT_VOLUME_NAME = "pavullmo-datasets"
-DEFAULT_DATASET_DIR = Path(__file__).resolve().parents[1] / "tmp" / "datasets"
+DEFAULT_DATASET_DIR = Path(__file__).resolve().parents[2] / "artifacts" / "datasets"
 REMOTE_DATASET_DIR = "/"
 EXPECTED_ARTIFACTS = (
     "train_web",
@@ -140,7 +140,7 @@ def validate_dataset_dir(dataset_dir: Path) -> tuple[int, int, int]:
     if not dataset_dir.is_dir():
         raise FileNotFoundError(
             f"dataset directory not found: {dataset_dir}; run "
-            "dataset/build_dataset.py first"
+            "src/dataset/build_dataset.py first"
         )
 
     total_tokens = 0

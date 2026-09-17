@@ -1,4 +1,4 @@
-`dataset/` builds datasets, `src/` contains model, training, and execution code, `tmp/` stores local artifacts, and `notes/` holds project documentation.
+`src/` contains model, training, and execution code, `src/dataset/` builds datasets, `artifacts/` stores local artifacts, and `notes/` holds project documentation.
 
 # PavuLLMo
 
@@ -8,17 +8,17 @@ mixtures, a shared parameterized 10M-token validation artifact, and a separate
 10M-token final test artifact:
 
 ```bash
-uv run python dataset/build_dataset.py --overwrite
+uv run python src/dataset/build_dataset.py --overwrite
 ```
 
 Use smaller counts for the local 10M-token rehearsal:
 
 ```bash
-uv run python dataset/build_dataset.py \
+uv run python src/dataset/build_dataset.py \
   --train-tokens 10000000 \
   --validation-tokens 1000000 \
   --test-tokens 1000000 \
-  --output-dir dataset/ds_local_10m \
+  --output-dir src/dataset/ds_local_10m \
   --overwrite
 ```
 
@@ -32,7 +32,7 @@ sampling modes remain available through their explicit `--source` and
 Then create the modal volume with
 
 ```bash
-  python dataset/create_modal_volume.py
+  python src/dataset/create_modal_volume.py
 ```
 
 To start a pre-train run on modal
@@ -45,20 +45,18 @@ All hyperparameters can be configured as enviroment variables. BATCH_SIZE=32 see
 
 ## Artifact interface
 
-Dataset builders write token shards and `metadata.json` to `tmp/datasets/`;
+Dataset builders write token shards and `metadata.json` to `artifacts/datasets/`;
 training reads those files through `DATASET_DIR`, without importing builders.
-Keep tokenizer models and their metadata together in `tmp/tokenizers/` and pass
+Keep tokenizer models and their metadata together in `artifacts/tokenizers/` and pass
 `--tokenizer` explicitly when selecting a different tokenizer. Tokenizer-building
-scripts live in `dataset/tokenizer/`.
+scripts live in `src/dataset/tokenizer/`.
 
-Local defaults are `tmp/documents/` for cleaned documents (where supported),
-`tmp/models/` for checkpoints, `tmp/runs/` for TensorBoard, `tmp/results/` for
-run registries, and `tmp/cache/huggingface/` for downloads. Existing command-line
+Local defaults are `artifacts/documents/` for cleaned documents (where supported),
+`artifacts/models/` for checkpoints, `artifacts/runs/` for TensorBoard, `artifacts/results/` for
+run registries, and `artifacts/cache/huggingface/` for downloads. Existing command-line
 and environment overrides remain supported. Modal continues to use `/datasets`
 and `/outputs`; the local directory layout does not change remote volumes.
 
-`tmp/` is ignored by Git. Preserve it when changing branches: it holds local
-artifacts, not disposable copies. Existing generated files can be moved from
-`dataset/ds/`, `dataset/documents/`, `models/`, and `runs/` to the corresponding
-paths above. Dataset and checkpoint formats are unchanged. `notes/` may retain
+`artifacts/` is ignored by Git. Preserve it when changing branches: it holds local
+artifacts, not disposable copies. Dataset and checkpoint formats are unchanged. `notes/` may retain
 historical paths and published experiment results.
