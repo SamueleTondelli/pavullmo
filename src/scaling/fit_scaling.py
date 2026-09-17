@@ -40,7 +40,7 @@ HUBER_DELTA = 0.05
 COEFFICIENT_BOUNDS = (1e-6, 1e7)
 EXPONENT_BOUNDS = (0.01, 2.0)
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_DATASET_DIR = PROJECT_ROOT / "dataset" / "ds"
+DEFAULT_DATASET_DIR = PROJECT_ROOT / "tmp" / "datasets"
 
 
 @dataclass(frozen=True)

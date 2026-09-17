@@ -9,7 +9,7 @@ To upload only specific artifacts, pass their names separated by semicolons:
     uv run --extra cloud python dataset/create_modal_volume.py \
         --datasets 'train_balanced_1b;validation;test;'
 
-The Volume root mirrors ``dataset/ds`` so it can later be mounted directly at
+The Volume root mirrors ``tmp/datasets`` so it can later be mounted directly at
 the training script's ``DATASET_DIR``. Existing remote files are not
 overwritten unless ``--force`` is passed explicitly.
 """
@@ -24,7 +24,7 @@ from typing import Sequence
 
 
 DEFAULT_VOLUME_NAME = "pavullmo-datasets"
-DEFAULT_DATASET_DIR = Path(__file__).resolve().parent / "ds"
+DEFAULT_DATASET_DIR = Path(__file__).resolve().parents[1] / "tmp" / "datasets"
 REMOTE_DATASET_DIR = "/"
 EXPECTED_ARTIFACTS = (
     "train_web",
