@@ -24,10 +24,18 @@ pre-tokenized datasets, and a local single-GPU pretraining loop are implemented.
   explicit `--sample-only` and `--source` modes retain the earlier FineWeb2
   sampling and single-source workflows. Each document chunk is encoded as
   `[BOS, *content_tokens, EOS]`.
-- Its `--documents-only` mode materializes tokenizer-independent cleaned
-  Parquet pools for train, validation, and test. A later build can use
-  `--documents-dir` and any compatible tokenizer to create exact token quotas
-  without redownloading or recleaning the sources.
+- `src/dataset/clean_dataset.py` owns preparation: freeze raw source pools, apply
+  shared GlotLID/prose checks, globally exact-deduplicate documents and retained
+  chunks, then assign content-hash train/validation/test splits. Install its
+  optional dependencies with `uv sync --extra cloud --extra curation`.
+- `--documents-only` writes format-2 tokenizer-independent Parquet pools plus raw
+  input, decisions and provenance. `--documents-dir` reuses verified shards for
+  tokenizer training or tokenization; legacy format-1 pools must be rebuilt.
+- Acquisition is bounded by `--max-source-documents`. Unfilled budgets fail and
+  preserve diagnostics unless `--allow-underfilled-documents` is explicitly used
+  for studies; token quotas remain enforced.
+- `clean_dataset.py split-experiment` creates separate seeded temporary splits
+  from parent training data only, preserving permanent evaluation holdouts.
 - Generated artifacts live under `artifacts/datasets/` and are intentionally ignored by
   Git. Tokens are flat, little-endian `uint16` streams in shards of at most 50M
   tokens, with counts, hashes, tokenizer information, and source details in each
