@@ -749,9 +749,9 @@ def main() -> None:
     legacy_mode = "--sample-only" in sys.argv or "--source" in sys.argv
     if not legacy_mode:
         try:
-            from production_pipeline import main as production_main
+            from clean_dataset import main as production_main
         except ModuleNotFoundError:
-            from src.dataset.production_pipeline import main as production_main
+            from src.dataset.clean_dataset import main as production_main
 
         production_main()
         return

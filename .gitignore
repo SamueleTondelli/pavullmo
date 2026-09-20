@@ -10,18 +10,20 @@ wheels/
 .venv
 .uv-cache/
 
-# Generated pre-tokenized datasets
-/src/dataset/ds/
-/src/dataset/ds-oldtok/
+# Generated document and pre-tokenized datasets
 /src/dataset/documents/
-/src/dataset/.documents.tmp/
+/src/dataset/ds*/
+/src/dataset/*.parquet
+/src/dataset/exploration/
 
 # Local TensorBoard runs
 /runs/
-old_runs
 
 scripts
 models
 
 # Local generated artifacts (datasets, tokenizers, checkpoints, logs, caches)
 /artifacts/
+
+/src/dataset/.documents.tmp/
+old_runs

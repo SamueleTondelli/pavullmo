@@ -9,17 +9,33 @@ pre-tokenized datasets, and a local single-GPU pretraining loop are implemented.
 - The corpus is `gsarti/clean_mc4_it`, loaded from Hugging Face Datasets in
   streaming mode. It provides `tiny`, `small`, `medium`, `large`, and `full`
   variants; current tokenizer work uses `tiny`.
-- `src/dataset/tokenizer/train_tokenizer.py` trains a 16,000-token SentencePiece BPE on
-  up to 1,000,000 documents, with full character coverage and byte fallback.
+- `src/dataset/tokenizer/train_tokenizer.py` trains a configurable SentencePiece BPE
+  either from the legacy stream or from a selected mixture in the frozen,
+  cleaned Parquet document layer, with full character coverage and byte
+  fallback.
 - Token IDs are fixed as UNK=0, BOS=1, EOS=2, and PAD=3. The vocabulary also
   includes `<system>`, `<user>`, and `<assistant>`.
 - `src/dataset/tokenizer/count_tokens.py` samples the streamed corpus and extrapolates
   token counts for each dataset variant from the dataset card's approximate
   word counts.
-- `src/dataset/build_dataset.py` streams the `tiny` configuration once and creates
-  deterministic 10M-, 100M-, and 1B-token training prefixes plus the complete
-  validation split. Each nonempty document is encoded as
+- `src/dataset/build_dataset.py` is the production entry point for three 1B-token
+  source mixtures (`web`, `balanced`, and `knowledge`), a shared configurable
+  validation artifact, and a separate configurable final-test artifact. Its
+  explicit `--sample-only` and `--source` modes retain the earlier FineWeb2
+  sampling and single-source workflows. Each document chunk is encoded as
   `[BOS, *content_tokens, EOS]`.
+- `src/dataset/clean_dataset.py` owns preparation: freeze raw source pools, apply
+  shared GlotLID/prose checks, globally exact-deduplicate documents and retained
+  chunks, then assign content-hash train/validation/test splits. Install its
+  optional dependencies with `uv sync --extra cloud --extra curation`.
+- `--documents-only` writes format-2 tokenizer-independent Parquet pools plus raw
+  input, decisions and provenance. `--documents-dir` reuses verified shards for
+  tokenizer training or tokenization; legacy format-1 pools must be rebuilt.
+- Acquisition is bounded by `--max-source-documents`. Unfilled budgets fail and
+  preserve diagnostics unless `--allow-underfilled-documents` is explicitly used
+  for studies; token quotas remain enforced.
+- `clean_dataset.py split-experiment` creates separate seeded temporary splits
+  from parent training data only, preserving permanent evaluation holdouts.
 - Generated artifacts live under `artifacts/datasets/` and are intentionally ignored by
   Git. Tokens are flat, little-endian `uint16` streams in shards of at most 50M
   tokens, with counts, hashes, tokenizer information, and source details in each
@@ -83,13 +99,15 @@ pre-tokenized datasets, and a local single-GPU pretraining loop are implemented.
 
 ## Modal data and pretraining
 
-- `src/dataset/create_modal_volume.py` validates the four generated dataset
+- `src/dataset/create_modal_volume.py` validates the five generated dataset
   artifacts and uploads them to the root of the `pavullmo-datasets` Modal
   Volume. Existing files are not overwritten unless `--force` is passed.
 - Run the uploader locally with
   `uv run --extra cloud python src/dataset/create_modal_volume.py`. The training
-  Volume root contains `train_10m`, `train_100m`, `train_1b`, and `validation`
-  directly, matching the layout expected by `DATASET_DIR`.
+  Volume root contains `train_web`, `train_balanced`, `train_knowledge`,
+  `validation`, and `test` directly, matching the layout expected by
+  `DATASET_DIR`. Training consumes `validation`; `test` is reserved for final
+  evaluation.
 - `src/pavullmo/modal_pretrain_base.py` wraps `pretrain_base.py` in a Modal App.
   Its image is built from the frozen `uv.lock`, defaults to one L4, mounts the
   dataset Volume read-only at `/datasets`, and creates or reuses the

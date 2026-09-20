@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 from typing import Iterator
@@ -101,6 +102,10 @@ def materialized_text_iterator(
     if not manifest_path.is_file():
         raise FileNotFoundError(f"materialized corpus manifest not found: {manifest_path}")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if manifest.get('format_version') != 2 or not manifest.get('deduplication'):
+        raise ValueError('Rebuild frozen documents with global deduplication before tokenizer training')
+    stats['document_manifest_sha256'] = hashlib.sha256(manifest_path.read_bytes()).hexdigest()
+    stats['temporary_splits'] = manifest.get('temporary', False)
     mixtures = manifest.get("mixtures", {})
     if mixture not in mixtures:
         raise ValueError(
@@ -115,6 +120,17 @@ def materialized_text_iterator(
     stats["sources"] = source_stats
 
     for source, target in targets.items():
+        directory = documents_dir / 'train' / source
+        records = manifest['partitions']['train'][source]['files']
+        if {p.name for p in directory.glob('part-*.parquet')} != {r['file'] for r in records}:
+            raise ValueError(f'Shard inventory mismatch: {directory}')
+        for record in records:
+            digest = hashlib.sha256()
+            with (directory / record['file']).open('rb') as file:
+                for block in iter(lambda: file.read(1024*1024), b''):
+                    digest.update(block)
+            if digest.hexdigest() != record['sha256']:
+                raise ValueError(f'Shard checksum mismatch: {directory / record["file"]}')
         used = 0
         documents = 0
         for text in materialized_source_texts(documents_dir / "train" / source):
