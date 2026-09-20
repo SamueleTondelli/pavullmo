@@ -1,6 +1,6 @@
 """Build three comparable Italian pretraining mixtures and shared evaluation sets.
 
-This is an intentionally conservative production baseline. It streams four provenance-clean
+This is an intentionally conservative production baseline. It streams three provenance-clean
 source families, applies the same transparent text checks to each, reserves
 whole source documents for a deterministic shared test set, and writes token
 artifacts compatible with ``src/pavullmo/pretrain_base.py``.
@@ -189,7 +189,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--mix",
-        choices=["all", *MIXES],
+        choices=["all", "selected", *MIXES],
         default="all",
         help=(
             "build all training mixtures or only one "
@@ -551,13 +551,23 @@ class GlobalDeduplicator:
     other chunks out of different splits. First accepted source/document wins.
     This does not claim near-duplicate or arbitrary substring detection.
     """
-    def __init__(self, path):
+    def __init__(self, path, *, resume=False):
         import sqlite3
+        if resume and not Path(path).is_file():
+            raise FileNotFoundError(path)
         self.db = sqlite3.connect(path)
+        if resume:
+            for table, columns in [('documents', ['hash', 'source', 'id', 'chunks']),
+                                   ('chunks', ['hash', 'document_hash'])]:
+                if [r[1] for r in self.db.execute(f'PRAGMA table_info({table})')] != columns:
+                    self.db.close()
+                    raise ValueError(f'Invalid deduplication index: {table}')
+            return
         self.db.execute('CREATE TABLE documents (hash TEXT PRIMARY KEY, source TEXT, id TEXT, chunks TEXT, UNIQUE(source,id))')
         self.db.execute('CREATE TABLE chunks (hash TEXT PRIMARY KEY, document_hash TEXT)')
 
-    def add(self, source, document_id, text, chunks):
+    def add(self, source, document_id, text, chunks, *, commit=True):
+        from contextlib import nullcontext
         document_hash = normalized_text_hash(text)
         if self.db.execute('SELECT 1 FROM documents WHERE hash=?', (document_hash,)).fetchone():
             return False, 'duplicate_document', document_hash
@@ -567,7 +577,7 @@ class GlobalDeduplicator:
         for chunk_hash in unique:
             if self.db.execute('SELECT 1 FROM chunks WHERE hash=?', (chunk_hash,)).fetchone():
                 return False, 'shared_exact_chunk', document_hash
-        with self.db:
+        with self.db if commit else nullcontext():
             self.db.execute('INSERT INTO documents VALUES (?,?,?,?)',
                             (document_hash, source, document_id, json.dumps(list(unique.values()))))
             self.db.executemany('INSERT INTO chunks VALUES (?,?)', [(h,document_hash) for h in unique])
@@ -768,6 +778,173 @@ def materialize_documents(
         raise RuntimeError(f'Candidate budget underfilled {short}; raw data and diagnostics saved in {temporary}. Increase budget or explicitly allow underfilled study pools.')
     safe_replace_directory(output_dir,temporary,overwrite)
     print(f'Prepared documents: {output_dir}',flush=True)
+
+
+def supplement_documents(documents_dir, raw_documents_dir, output_dir, source_key,
+                         workers=1, model_dir=None, allow_underfilled=False,
+                         retain_all_candidates=False, skip_raw_documents=0):
+    """Append new passing documents to unfilled budgets, preserving existing shards.
+
+    Original files are hard-linked as immutable evidence; the deduplication index
+    is copied. An interrupted attempt never mutates the parent corpus. Supplements
+    have separate raw inputs, decisions and provenance in the output manifest.
+    """
+    from concurrent.futures import ProcessPoolExecutor
+    import multiprocessing
+    try:
+        from language_quality import LANGUAGE_POLICY, prepare_lid
+        from prose_quality import POLICY
+    except ModuleNotFoundError:
+        from src.dataset.language_quality import LANGUAGE_POLICY, prepare_lid
+        from src.dataset.prose_quality import POLICY
+
+    parent, raw, output = map(lambda p: Path(p).resolve(),
+                              (documents_dir, raw_documents_dir, output_dir))
+    if workers < 1 or source_key not in SOURCES:
+        raise ValueError('Invalid worker count or source')
+    if output == parent or parent in output.parents or output in parent.parents:
+        raise ValueError('Supplement output must be separate from its parent')
+    temporary = output.with_name(f'.{output.name}.supplement.tmp')
+    if output.exists() or temporary.exists():
+        raise FileExistsError(f'Output or incomplete attempt exists: {output}')
+    manifest = json.loads((parent/'manifest.json').read_text())
+    cleaning_code_sha256 = sha256_file(Path(__file__))
+    cleaning = manifest['cleaning']
+    expected = dict(language=LANGUAGE_POLICY, prose=POLICY, min_characters=MIN_CHARACTERS,
+                    min_alphabetic_ratio=MIN_ALPHABETIC_RATIO,
+                    max_repeated_line_ratio=MAX_REPEATED_LINE_RATIO,
+                    max_chunk_characters=MAX_CHUNK_CHARACTERS,
+                    max_chunks_per_document=MAX_CHUNKS_PER_DOCUMENT,
+                    language_min_chars=80, language_max_chars=1000, language_confidence=.8,
+                    web_metadata_confidence=.98, pdf_metadata_confidence=.90, all_sources=True)
+    if manifest.get('format_version') != 2 or any(cleaning.get(k) != v for k,v in expected.items()):
+        raise ValueError('Parent cleaning policy differs from current implementation')
+    for name in ('language_quality.py', 'prose_quality.py'):
+        if manifest['code_sha256'][name] != sha256_file(Path(__file__).with_name(name)):
+            raise ValueError(f'Parent quality implementation differs: {name}')
+    if any((parent/f'dedup.sqlite{suffix}').exists() for suffix in ('-wal', '-journal')):
+        raise ValueError('Parent index must be closed before supplementation')
+    provenance = json.loads((raw/source_key/'sample.json').read_text())
+    if not 0 <= skip_raw_documents <= provenance.get('rows', 0):
+        raise ValueError('Invalid raw document offset')
+    raw_hash = sha256_file(raw/source_key/'sample.parquet')
+    if provenance.get('hashes', {}).get('sample.parquet') != raw_hash:
+        raise ValueError('Supplement requires a verified raw sample manifest')
+    if not retain_all_candidates and not any(v[source_key]['text_bytes'] < v[source_key]['target_text_bytes']
+               for v in manifest['partitions'].values()):
+        raise ValueError('Source budgets are already filled')
+    model_dir = Path(model_dir or PROJECT_ROOT/'artifacts/models/glotlid')
+    model_lock = prepare_lid(model_dir)
+    if model_lock['sha256'] != cleaning['model']['sha256']:
+        raise ValueError('Language model differs from parent')
+    # Check inherited shards before linking them into another corpus.
+    for part, sources in manifest['partitions'].items():
+        for key, record in sources.items():
+            for file in record['files']:
+                if sha256_file(parent/part/key/file['file']) != file['sha256']:
+                    raise ValueError('Parent shard checksum mismatch')
+    if sha256_file(parent/'decisions.jsonl') != manifest['decisions_sha256']:
+        raise ValueError('Parent decisions checksum mismatch')
+    def clone_file(src, dst):
+        if Path(src).name in ('dedup.sqlite', 'manifest.json'):
+            return shutil.copy2(src, dst)
+        os.link(src, dst)
+        return dst
+    shutil.copytree(parent, temporary, copy_function=clone_file)
+    supplements = manifest.setdefault('supplements', [])
+    relative = Path('supplements')/f'{len(supplements):03d}'
+    evidence = temporary/relative
+    (evidence/source_key).mkdir(parents=True)
+    for name in ('sample.parquet', 'sample.json'):
+        shutil.copy2(raw/source_key/name, evidence/source_key/name)
+    dedup = GlobalDeduplicator(temporary/'dedup.sqlite', resume=True)
+    writers = {part: MaterializedParquetWriter(evidence/'new_shards'/part,
+                                               DEFAULT_DOCUMENT_SHARD_BYTES)
+               for part in manifest['partitions']}
+    counters = Counter()
+    executor = None
+    predictor = None
+    try:
+        if workers > 1:
+            executor = ProcessPoolExecutor(max_workers=workers,
+                mp_context=multiprocessing.get_context('spawn'),
+                initializer=initialize_quality_worker, initargs=(str(model_dir),))
+        else:
+            predictor, _ = quality_predictor(model_dir)
+        def rows():
+            import itertools
+            for row in itertools.islice(verified_raw_rows(evidence, source_key), skip_raw_documents, None):
+                if provenance.get('dataset') == 'HuggingFaceFW/finewiki':
+                    if source_key != 'wiki' or row.get('page_id') is None:
+                        raise ValueError('FineWiki requires canonical Wikipedia page IDs')
+                    row['id'] = str(row['page_id'])
+                yield row
+        partitioning = manifest['partitioning']
+        if partitioning['validation_buckets_per_1000'] != partitioning['test_buckets_per_1000']:
+            raise ValueError('Unsupported asymmetric parent partitioning')
+        with (evidence/'decisions.jsonl').open('w') as decisions:
+            for row, chunks, signals in cleaned_rows(rows(), SOURCES[source_key], predictor,
+                                                    cleaning['language_threshold'], executor):
+                doc_id = stable_document_id(SOURCES[source_key], row)
+                doc_hash = normalized_text_hash(row['text'])
+                kept = False
+                if chunks:
+                    kept, reason, doc_hash = dedup.add(source_key, doc_id, row['text'], chunks)
+                    if reason: signals['reasons'].append(reason)
+                counters['seen'] += 1
+                counters['accepted' if kept else 'rejected'] += 1
+                counters.update(signals['reasons'])
+                decisions.write(json.dumps(dict(source=source_key, document_id=doc_id,
+                    text_sha256=hashlib.sha256(row['text'].encode()).hexdigest(),
+                    normalized_document_hash=doc_hash, accepted=kept, **signals))+'\n')
+                if kept:
+                    part = assign_partition(doc_hash, partitioning['seed'],
+                                            partitioning['test_buckets_per_1000'])
+                    record = manifest['partitions'][part][source_key]
+                    writer = writers[part]
+                    if record['text_bytes'] + writer.total_text_bytes < record['target_text_bytes']:
+                        # Write exactly the unique chunks recorded in the global index.
+                        unique_chunks = json.loads(dedup.db.execute(
+                            'SELECT chunks FROM documents WHERE hash=?', (doc_hash,)).fetchone()[0])
+                        for index, text in enumerate(unique_chunks):
+                            writer.write(dict(document_id=doc_id, chunk_index=index, source=source_key,
+                                              text_sha256=normalized_text_hash(text), text=text), len(text.encode()))
+                if counters['seen'] % 1000 == 0:
+                    print(f"Supplement {source_key}: {counters['seen']} checked, "
+                          f"{counters['accepted']} unique, {writers['train'].total_text_bytes:,} train bytes added", flush=True)
+                if not retain_all_candidates and all(manifest['partitions'][part][source_key]['text_bytes'] + writer.total_text_bytes
+                       >= manifest['partitions'][part][source_key]['target_text_bytes']
+                       for part, writer in writers.items()):
+                    break
+    finally:
+        if executor is not None: executor.shutdown(wait=True, cancel_futures=True)
+        for writer in writers.values(): writer.close()
+        dedup.close()
+    for part, writer in writers.items():
+        record = manifest['partitions'][part][source_key]
+        next_index = max((int(Path(f['file']).stem.split('-')[-1]) for f in record['files']), default=-1)+1
+        for index, file in enumerate(writer.files, next_index):
+            name = f'part-{index:05d}.parquet'
+            destination = temporary/part/source_key/name
+            if destination.exists(): raise FileExistsError(destination)
+            (writer.directory/file['file']).rename(destination)
+            record['files'].append(dict(file, file=name))
+        record['text_bytes'] += writer.total_text_bytes
+        record['chunks'] += writer.total_chunks
+    shutil.rmtree(evidence/'new_shards')
+    supplements.append(dict(directory=str(relative), source=source_key, provenance=provenance,
+        raw_start=skip_raw_documents, retain_all_candidates=retain_all_candidates,
+        counters=dict(counters), decisions_sha256=sha256_file(evidence/'decisions.jsonl'),
+        parent_manifest_sha256=sha256_file(parent/'manifest.json'),
+        cleaning_code_sha256=cleaning_code_sha256,
+        ordering='Existing accepted documents first, then supplement input order; existing shards unchanged'))
+    manifest['underfilled'] = [f'{part}/{key}' for part, sources in manifest['partitions'].items()
+        for key, record in sources.items() if record['text_bytes'] < record['target_text_bytes']]
+    (temporary/'manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')
+    if manifest['underfilled'] and not allow_underfilled:
+        raise RuntimeError(f"Still underfilled {manifest['underfilled']}; saved at {temporary}")
+    temporary.rename(output)
+    print(f'Supplemented documents: {output}; underfilled={manifest["underfilled"]}', flush=True)
 
 
 def create_temporary_splits(documents_dir, output_dir, seed=42, max_documents=100,
@@ -1033,6 +1210,50 @@ def validate_args(args: argparse.Namespace) -> None:
 
 
 def main() -> None:
+    if len(sys.argv) > 1 and sys.argv[1] == 'extra':
+        try:
+            from extra_dataset import main as extra_main
+        except ModuleNotFoundError:
+            from src.dataset.extra_dataset import main as extra_main
+        extra_main(sys.argv[2:])
+        return
+    if len(sys.argv) > 1 and sys.argv[1] in {'pool-export', 'pool-select'}:
+        try:
+            from document_pool import export_document_pool, select_document_pool
+        except ModuleNotFoundError:
+            from src.dataset.document_pool import export_document_pool, select_document_pool
+        parser = argparse.ArgumentParser(description='Export all accepted training documents or select a mixture')
+        parser.add_argument('--documents-dir', type=Path, required=True)
+        parser.add_argument('--output-dir', type=Path, required=True)
+        if sys.argv[1] == 'pool-select':
+            parser.add_argument('--train-tokens', type=int, required=True)
+            parser.add_argument('--weights', type=json.loads, default=MIXES['balanced'])
+            parser.add_argument('--bytes-per-token', type=float, default=5.0)
+        args = parser.parse_args(sys.argv[2:])
+        if sys.argv[1] == 'pool-export':
+            export_document_pool(args.documents_dir, args.output_dir)
+        else:
+            select_document_pool(args.documents_dir, args.output_dir, args.train_tokens,
+                                 args.weights, args.bytes_per_token)
+        return
+    if len(sys.argv) > 1 and sys.argv[1] == 'supplement-documents':
+        parser = argparse.ArgumentParser(description='Fill document budgets while preserving existing shards')
+        parser.add_argument('--documents-dir', type=Path, required=True)
+        parser.add_argument('--raw-documents-dir', type=Path, required=True)
+        parser.add_argument('--output-dir', type=Path, required=True)
+        parser.add_argument('--source', choices=list(SOURCES), required=True)
+        parser.add_argument('--workers', type=int, default=1)
+        parser.add_argument('--model-dir', type=Path)
+        parser.add_argument('--allow-underfilled-documents', action='store_true')
+        parser.add_argument('--retain-all-candidates', action='store_true',
+                            help='Keep checking and indexing candidates after selection quotas are filled')
+        parser.add_argument('--skip-raw-documents', type=int, default=0,
+                            help='Recorded input offset when continuing the same frozen sample')
+        args = parser.parse_args(sys.argv[2:])
+        supplement_documents(args.documents_dir, args.raw_documents_dir, args.output_dir,
+                             args.source, args.workers, args.model_dir, args.allow_underfilled_documents,
+                             args.retain_all_candidates, args.skip_raw_documents)
+        return
     if len(sys.argv) > 1 and sys.argv[1] == 'split-experiment':
         parser = argparse.ArgumentParser(description='Create isolated temporary splits from parent TRAIN only')
         parser.add_argument('--documents-dir', type=Path, required=True)
@@ -1059,7 +1280,15 @@ def main() -> None:
         return
     args = parse_args()
     validate_args(args)
-    selected = MIXES if args.mix == "all" else {args.mix: MIXES[args.mix]}
+    if args.mix == 'selected':
+        if args.documents_dir is None or args.documents_only:
+            raise ValueError('--mix selected requires an existing pool-select output')
+        manifest = json.loads((args.documents_dir/'manifest.json').read_text())
+        if not manifest.get('selection') or 'selected' not in manifest.get('mixtures', {}):
+            raise ValueError('The input is not a pool-select output')
+        selected = {'selected': manifest['mixtures']['selected']}
+    else:
+        selected = MIXES if args.mix == "all" else {args.mix: MIXES[args.mix]}
     if args.documents_only or args.documents_dir is None:
         targets = document_byte_targets(
             args.train_tokens,
