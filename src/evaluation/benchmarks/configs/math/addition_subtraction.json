@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "id": "addition_subtraction",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "operations": [
+      {"symbol": "+", "sign": 1},
+      {"symbol": "-", "sign": -1}
+    ]
+  },
+
+  "variables": {
+    "operation": {
+      "type": "choice",
+      "source": "operations"
+    },
+    "result": {
+      "type": "integer",
+      "min": 0,
+      "max": 97
+    },
+    "operand_b": {
+      "type": "integer",
+      "min": 0,
+      "max": 100
+    }
+  },
+
+  "derived": {
+    "operand_a": {
+      "op": "subtract",
+      "args": [
+        "$result",
+        {
+          "op": "multiply",
+          "args": ["$operation.sign", "$operand_b"]
+        }
+      ]
+    }
+  },
+
+  "constraints": [
+    {
+      "op": "greater_or_equal",
+      "args": ["$operand_a", 0]
+    },
+    {
+      "op": "less_or_equal",
+      "args": ["$operand_a", 100]
+    }
+  ],
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "result",
+        "operation": "offset",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$result"]
+  },
+
+  "templates": [
+    {
+      "context": "{operand_a} {operation.symbol} {operand_b} =",
+      "target": " {result}"
+    }
+  ]
+}

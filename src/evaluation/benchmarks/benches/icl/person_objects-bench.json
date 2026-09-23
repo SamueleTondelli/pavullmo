@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "icl_person_object_bindings",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una tazza, Chiara possiede un ombrello, Davide possiede un guanto, Giorgio possiede una moneta. Secondo le informazioni fornite, Anna possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una tazza, Chiara possiede un ombrello, Davide possiede un guanto, Giorgio possiede una moneta. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una tazza, Chiara possiede un ombrello, Davide possiede un guanto, Giorgio possiede una moneta. Secondo le informazioni fornite, Davide possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una tazza, Chiara possiede un ombrello, Davide possiede un guanto, Giorgio possiede una moneta. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " una moneta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Luca possiede un cappello, Anna possiede una conchiglia, Sara possiede una chiave, Elena possiede una candela. Secondo le informazioni fornite, Luca possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede un cappello, Anna possiede una conchiglia, Sara possiede una chiave, Elena possiede una candela. Secondo le informazioni fornite, Anna possiede",
+          "target": " una conchiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede un cappello, Anna possiede una conchiglia, Sara possiede una chiave, Elena possiede una candela. Secondo le informazioni fornite, Sara possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede un cappello, Anna possiede una conchiglia, Sara possiede una chiave, Elena possiede una candela. Secondo le informazioni fornite, Elena possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Davide possiede un quaderno, Marta possiede un anello, Chiara possiede una penna, Anna possiede una mappa. Secondo le informazioni fornite, Davide possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede un quaderno, Marta possiede un anello, Chiara possiede una penna, Anna possiede una mappa. Secondo le informazioni fornite, Marta possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede un quaderno, Marta possiede un anello, Chiara possiede una penna, Anna possiede una mappa. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede un quaderno, Marta possiede un anello, Chiara possiede una penna, Anna possiede una mappa. Secondo le informazioni fornite, Anna possiede",
+          "target": " una mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una bottiglia, Laura possiede un ombrello, Paolo possiede un biglietto, Sara possiede un guanto. Secondo le informazioni fornite, Elena possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una bottiglia, Laura possiede un ombrello, Paolo possiede un biglietto, Sara possiede un guanto. Secondo le informazioni fornite, Laura possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una bottiglia, Laura possiede un ombrello, Paolo possiede un biglietto, Sara possiede un guanto. Secondo le informazioni fornite, Paolo possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una bottiglia, Laura possiede un ombrello, Paolo possiede un biglietto, Sara possiede un guanto. Secondo le informazioni fornite, Sara possiede",
+          "target": " un guanto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una bottiglia, Marta possiede una moneta, Giorgio possiede un guanto, Paolo possiede un orologio. Secondo le informazioni fornite, Luca possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una bottiglia, Marta possiede una moneta, Giorgio possiede un guanto, Paolo possiede un orologio. Secondo le informazioni fornite, Marta possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una bottiglia, Marta possiede una moneta, Giorgio possiede un guanto, Paolo possiede un orologio. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una bottiglia, Marta possiede una moneta, Giorgio possiede un guanto, Paolo possiede un orologio. Secondo le informazioni fornite, Paolo possiede",
+          "target": " un orologio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un cappello, Elena possiede un orologio, Sara possiede una moneta, Luca possiede un fiore. Secondo le informazioni fornite, Alice possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un cappello, Elena possiede un orologio, Sara possiede una moneta, Luca possiede un fiore. Secondo le informazioni fornite, Elena possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un cappello, Elena possiede un orologio, Sara possiede una moneta, Luca possiede un fiore. Secondo le informazioni fornite, Sara possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un cappello, Elena possiede un orologio, Sara possiede una moneta, Luca possiede un fiore. Secondo le informazioni fornite, Luca possiede",
+          "target": " un fiore."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Irene possiede un quaderno, Chiara possiede un biglietto, Marta possiede una scatola, Simone possiede una candela. Secondo le informazioni fornite, Irene possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede un quaderno, Chiara possiede un biglietto, Marta possiede una scatola, Simone possiede una candela. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede un quaderno, Chiara possiede un biglietto, Marta possiede una scatola, Simone possiede una candela. Secondo le informazioni fornite, Marta possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede un quaderno, Chiara possiede un biglietto, Marta possiede una scatola, Simone possiede una candela. Secondo le informazioni fornite, Simone possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un quaderno, Marco possiede una fotografia, Giorgio possiede una bottiglia, Davide possiede una mappa. Secondo le informazioni fornite, Sara possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un quaderno, Marco possiede una fotografia, Giorgio possiede una bottiglia, Davide possiede una mappa. Secondo le informazioni fornite, Marco possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un quaderno, Marco possiede una fotografia, Giorgio possiede una bottiglia, Davide possiede una mappa. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un quaderno, Marco possiede una fotografia, Giorgio possiede una bottiglia, Davide possiede una mappa. Secondo le informazioni fornite, Davide possiede",
+          "target": " una mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Laura possiede una penna, Luca possiede una bottiglia, Davide possiede una mappa, Alice possiede una moneta. Secondo le informazioni fornite, Laura possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Laura possiede una penna, Luca possiede una bottiglia, Davide possiede una mappa, Alice possiede una moneta. Secondo le informazioni fornite, Luca possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Laura possiede una penna, Luca possiede una bottiglia, Davide possiede una mappa, Alice possiede una moneta. Secondo le informazioni fornite, Davide possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Laura possiede una penna, Luca possiede una bottiglia, Davide possiede una mappa, Alice possiede una moneta. Secondo le informazioni fornite, Alice possiede",
+          "target": " una moneta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Alice possiede una bottiglia, Laura possiede una fotografia, Elena possiede una tazza, Andrea possiede una mappa. Secondo le informazioni fornite, Alice possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede una bottiglia, Laura possiede una fotografia, Elena possiede una tazza, Andrea possiede una mappa. Secondo le informazioni fornite, Laura possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede una bottiglia, Laura possiede una fotografia, Elena possiede una tazza, Andrea possiede una mappa. Secondo le informazioni fornite, Elena possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede una bottiglia, Laura possiede una fotografia, Elena possiede una tazza, Andrea possiede una mappa. Secondo le informazioni fornite, Andrea possiede",
+          "target": " una mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Davide possiede una scatola, Giorgio possiede un anello, Alice possiede una bottiglia, Chiara possiede un biglietto. Secondo le informazioni fornite, Davide possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede una scatola, Giorgio possiede un anello, Alice possiede una bottiglia, Chiara possiede un biglietto. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede una scatola, Giorgio possiede un anello, Alice possiede una bottiglia, Chiara possiede un biglietto. Secondo le informazioni fornite, Alice possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede una scatola, Giorgio possiede un anello, Alice possiede una bottiglia, Chiara possiede un biglietto. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un libro, Sofia possiede un ombrello, Andrea possiede una tazza, Sara possiede un quaderno. Secondo le informazioni fornite, Giulia possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un libro, Sofia possiede un ombrello, Andrea possiede una tazza, Sara possiede un quaderno. Secondo le informazioni fornite, Sofia possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un libro, Sofia possiede un ombrello, Andrea possiede una tazza, Sara possiede un quaderno. Secondo le informazioni fornite, Andrea possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un libro, Sofia possiede un ombrello, Andrea possiede una tazza, Sara possiede un quaderno. Secondo le informazioni fornite, Sara possiede",
+          "target": " un quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un fiore, Sara possiede una fotografia, Irene possiede una conchiglia, Giorgio possiede una mappa. Secondo le informazioni fornite, Stefano possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un fiore, Sara possiede una fotografia, Irene possiede una conchiglia, Giorgio possiede una mappa. Secondo le informazioni fornite, Sara possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un fiore, Sara possiede una fotografia, Irene possiede una conchiglia, Giorgio possiede una mappa. Secondo le informazioni fornite, Irene possiede",
+          "target": " una conchiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un fiore, Sara possiede una fotografia, Irene possiede una conchiglia, Giorgio possiede una mappa. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " una mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Paolo possiede un ombrello, Giorgio possiede un orologio, Chiara possiede un anello, Laura possiede un quaderno. Secondo le informazioni fornite, Paolo possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Paolo possiede un ombrello, Giorgio possiede un orologio, Chiara possiede un anello, Laura possiede un quaderno. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Paolo possiede un ombrello, Giorgio possiede un orologio, Chiara possiede un anello, Laura possiede un quaderno. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Paolo possiede un ombrello, Giorgio possiede un orologio, Chiara possiede un anello, Laura possiede un quaderno. Secondo le informazioni fornite, Laura possiede",
+          "target": " un quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una conchiglia, Chiara possiede un ombrello, Sofia possiede un orologio, Marco possiede un fiore. Secondo le informazioni fornite, Anna possiede",
+          "target": " una conchiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una conchiglia, Chiara possiede un ombrello, Sofia possiede un orologio, Marco possiede un fiore. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una conchiglia, Chiara possiede un ombrello, Sofia possiede un orologio, Marco possiede un fiore. Secondo le informazioni fornite, Sofia possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una conchiglia, Chiara possiede un ombrello, Sofia possiede un orologio, Marco possiede un fiore. Secondo le informazioni fornite, Marco possiede",
+          "target": " un fiore."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede una chiave, Simone possiede una penna, Marco possiede un cucchiaio, Sofia possiede un fiore. Secondo le informazioni fornite, Giulia possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede una chiave, Simone possiede una penna, Marco possiede un cucchiaio, Sofia possiede un fiore. Secondo le informazioni fornite, Simone possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede una chiave, Simone possiede una penna, Marco possiede un cucchiaio, Sofia possiede un fiore. Secondo le informazioni fornite, Marco possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede una chiave, Simone possiede una penna, Marco possiede un cucchiaio, Sofia possiede un fiore. Secondo le informazioni fornite, Sofia possiede",
+          "target": " un fiore."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Simone possiede un cappello, Matteo possiede una scatola, Davide possiede una moneta, Luca possiede un guanto. Secondo le informazioni fornite, Simone possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Simone possiede un cappello, Matteo possiede una scatola, Davide possiede una moneta, Luca possiede un guanto. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Simone possiede un cappello, Matteo possiede una scatola, Davide possiede una moneta, Luca possiede un guanto. Secondo le informazioni fornite, Davide possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Simone possiede un cappello, Matteo possiede una scatola, Davide possiede una moneta, Luca possiede un guanto. Secondo le informazioni fornite, Luca possiede",
+          "target": " un guanto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un cucchiaio, Giorgio possiede un guanto, Giulia possiede un quaderno, Alice possiede una mappa. Secondo le informazioni fornite, Sara possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un cucchiaio, Giorgio possiede un guanto, Giulia possiede un quaderno, Alice possiede una mappa. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un cucchiaio, Giorgio possiede un guanto, Giulia possiede un quaderno, Alice possiede una mappa. Secondo le informazioni fornite, Giulia possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un cucchiaio, Giorgio possiede un guanto, Giulia possiede un quaderno, Alice possiede una mappa. Secondo le informazioni fornite, Alice possiede",
+          "target": " una mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una bottiglia, Giorgio possiede un biglietto, Stefano possiede una fotografia, Matteo possiede una conchiglia. Secondo le informazioni fornite, Elena possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una bottiglia, Giorgio possiede un biglietto, Stefano possiede una fotografia, Matteo possiede una conchiglia. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una bottiglia, Giorgio possiede un biglietto, Stefano possiede una fotografia, Matteo possiede una conchiglia. Secondo le informazioni fornite, Stefano possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una bottiglia, Giorgio possiede un biglietto, Stefano possiede una fotografia, Matteo possiede una conchiglia. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una conchiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Paolo possiede una penna, Davide possiede una chiave, Alice possiede un guanto, Sara possiede un cappello. Secondo le informazioni fornite, Paolo possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Paolo possiede una penna, Davide possiede una chiave, Alice possiede un guanto, Sara possiede un cappello. Secondo le informazioni fornite, Davide possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Paolo possiede una penna, Davide possiede una chiave, Alice possiede un guanto, Sara possiede un cappello. Secondo le informazioni fornite, Alice possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Paolo possiede una penna, Davide possiede una chiave, Alice possiede un guanto, Sara possiede un cappello. Secondo le informazioni fornite, Sara possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una moneta, Sara possiede un libro, Luca possiede una penna, Davide possiede un fiore. Secondo le informazioni fornite, Anna possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una moneta, Sara possiede un libro, Luca possiede una penna, Davide possiede un fiore. Secondo le informazioni fornite, Sara possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una moneta, Sara possiede un libro, Luca possiede una penna, Davide possiede un fiore. Secondo le informazioni fornite, Luca possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una moneta, Sara possiede un libro, Luca possiede una penna, Davide possiede un fiore. Secondo le informazioni fornite, Davide possiede",
+          "target": " un fiore."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una scatola, Andrea possiede un fiore, Elena possiede un cucchiaio, Giulia possiede un cappello. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una scatola, Andrea possiede un fiore, Elena possiede un cucchiaio, Giulia possiede un cappello. Secondo le informazioni fornite, Andrea possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una scatola, Andrea possiede un fiore, Elena possiede un cucchiaio, Giulia possiede un cappello. Secondo le informazioni fornite, Elena possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una scatola, Andrea possiede un fiore, Elena possiede un cucchiaio, Giulia possiede un cappello. Secondo le informazioni fornite, Giulia possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede un anello, Elena possiede un biglietto, Paolo possiede un fiore, Giorgio possiede un guanto. Secondo le informazioni fornite, Fabio possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede un anello, Elena possiede un biglietto, Paolo possiede un fiore, Giorgio possiede un guanto. Secondo le informazioni fornite, Elena possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede un anello, Elena possiede un biglietto, Paolo possiede un fiore, Giorgio possiede un guanto. Secondo le informazioni fornite, Paolo possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede un anello, Elena possiede un biglietto, Paolo possiede un fiore, Giorgio possiede un guanto. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un guanto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una penna, Paolo possiede un ombrello, Stefano possiede un cappello, Irene possiede una candela. Secondo le informazioni fornite, Luca possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una penna, Paolo possiede un ombrello, Stefano possiede un cappello, Irene possiede una candela. Secondo le informazioni fornite, Paolo possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una penna, Paolo possiede un ombrello, Stefano possiede un cappello, Irene possiede una candela. Secondo le informazioni fornite, Stefano possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una penna, Paolo possiede un ombrello, Stefano possiede un cappello, Irene possiede una candela. Secondo le informazioni fornite, Irene possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede un quaderno, Marta possiede una mappa, Giulia possiede una fotografia, Fabio possiede un cappello. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede un quaderno, Marta possiede una mappa, Giulia possiede una fotografia, Fabio possiede un cappello. Secondo le informazioni fornite, Marta possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede un quaderno, Marta possiede una mappa, Giulia possiede una fotografia, Fabio possiede un cappello. Secondo le informazioni fornite, Giulia possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede un quaderno, Marta possiede una mappa, Giulia possiede una fotografia, Fabio possiede un cappello. Secondo le informazioni fornite, Fabio possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un guanto, Giorgio possiede una chiave, Paolo possiede una moneta, Luca possiede un cappello. Secondo le informazioni fornite, Marta possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un guanto, Giorgio possiede una chiave, Paolo possiede una moneta, Luca possiede un cappello. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un guanto, Giorgio possiede una chiave, Paolo possiede una moneta, Luca possiede un cappello. Secondo le informazioni fornite, Paolo possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un guanto, Giorgio possiede una chiave, Paolo possiede una moneta, Luca possiede un cappello. Secondo le informazioni fornite, Luca possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede una bottiglia, Andrea possiede un libro, Alice possiede un quaderno, Elena possiede un fiore. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede una bottiglia, Andrea possiede un libro, Alice possiede un quaderno, Elena possiede un fiore. Secondo le informazioni fornite, Andrea possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede una bottiglia, Andrea possiede un libro, Alice possiede un quaderno, Elena possiede un fiore. Secondo le informazioni fornite, Alice possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede una bottiglia, Andrea possiede un libro, Alice possiede un quaderno, Elena possiede un fiore. Secondo le informazioni fornite, Elena possiede",
+          "target": " un fiore."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Irene possiede un anello, Chiara possiede un guanto, Marta possiede un cucchiaio, Matteo possiede una tazza. Secondo le informazioni fornite, Irene possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede un anello, Chiara possiede un guanto, Marta possiede un cucchiaio, Matteo possiede una tazza. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede un anello, Chiara possiede un guanto, Marta possiede un cucchiaio, Matteo possiede una tazza. Secondo le informazioni fornite, Marta possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede un anello, Chiara possiede un guanto, Marta possiede un cucchiaio, Matteo possiede una tazza. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una tazza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede una penna, Elena possiede un libro, Luca possiede una scatola, Giorgio possiede un cucchiaio. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede una penna, Elena possiede un libro, Luca possiede una scatola, Giorgio possiede un cucchiaio. Secondo le informazioni fornite, Elena possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede una penna, Elena possiede un libro, Luca possiede una scatola, Giorgio possiede un cucchiaio. Secondo le informazioni fornite, Luca possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede una penna, Elena possiede un libro, Luca possiede una scatola, Giorgio possiede un cucchiaio. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una moneta, Sofia possiede un fiore, Sara possiede un cappello, Marco possiede una bottiglia. Secondo le informazioni fornite, Luca possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una moneta, Sofia possiede un fiore, Sara possiede un cappello, Marco possiede una bottiglia. Secondo le informazioni fornite, Sofia possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una moneta, Sofia possiede un fiore, Sara possiede un cappello, Marco possiede una bottiglia. Secondo le informazioni fornite, Sara possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una moneta, Sofia possiede un fiore, Sara possiede un cappello, Marco possiede una bottiglia. Secondo le informazioni fornite, Marco possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un anello, Davide possiede una scatola, Luca possiede una conchiglia, Sara possiede una penna. Secondo le informazioni fornite, Alice possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un anello, Davide possiede una scatola, Luca possiede una conchiglia, Sara possiede una penna. Secondo le informazioni fornite, Davide possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un anello, Davide possiede una scatola, Luca possiede una conchiglia, Sara possiede una penna. Secondo le informazioni fornite, Luca possiede",
+          "target": " una conchiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un anello, Davide possiede una scatola, Luca possiede una conchiglia, Sara possiede una penna. Secondo le informazioni fornite, Sara possiede",
+          "target": " una penna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una bottiglia, Laura possiede una tazza, Davide possiede un orologio, Chiara possiede una fotografia. Secondo le informazioni fornite, Elena possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una bottiglia, Laura possiede una tazza, Davide possiede un orologio, Chiara possiede una fotografia. Secondo le informazioni fornite, Laura possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una bottiglia, Laura possiede una tazza, Davide possiede un orologio, Chiara possiede una fotografia. Secondo le informazioni fornite, Davide possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una bottiglia, Laura possiede una tazza, Davide possiede un orologio, Chiara possiede una fotografia. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una fotografia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Sara possiede una moneta, Anna possiede un guanto, Marta possiede una candela, Paolo possiede una conchiglia. Secondo le informazioni fornite, Sara possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede una moneta, Anna possiede un guanto, Marta possiede una candela, Paolo possiede una conchiglia. Secondo le informazioni fornite, Anna possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede una moneta, Anna possiede un guanto, Marta possiede una candela, Paolo possiede una conchiglia. Secondo le informazioni fornite, Marta possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede una moneta, Anna possiede un guanto, Marta possiede una candela, Paolo possiede una conchiglia. Secondo le informazioni fornite, Paolo possiede",
+          "target": " una conchiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un biglietto, Simone possiede un orologio, Sara possiede un quaderno, Davide possiede una fotografia. Secondo le informazioni fornite, Giulia possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un biglietto, Simone possiede un orologio, Sara possiede un quaderno, Davide possiede una fotografia. Secondo le informazioni fornite, Simone possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un biglietto, Simone possiede un orologio, Sara possiede un quaderno, Davide possiede una fotografia. Secondo le informazioni fornite, Sara possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un biglietto, Simone possiede un orologio, Sara possiede un quaderno, Davide possiede una fotografia. Secondo le informazioni fornite, Davide possiede",
+          "target": " una fotografia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un ombrello, Sofia possiede una tazza, Anna possiede una mappa, Matteo possiede un fiore. Secondo le informazioni fornite, Stefano possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un ombrello, Sofia possiede una tazza, Anna possiede una mappa, Matteo possiede un fiore. Secondo le informazioni fornite, Sofia possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un ombrello, Sofia possiede una tazza, Anna possiede una mappa, Matteo possiede un fiore. Secondo le informazioni fornite, Anna possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un ombrello, Sofia possiede una tazza, Anna possiede una mappa, Matteo possiede un fiore. Secondo le informazioni fornite, Matteo possiede",
+          "target": " un fiore."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede un fiore, Giulia possiede una candela, Chiara possiede una penna, Matteo possiede una scatola. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede un fiore, Giulia possiede una candela, Chiara possiede una penna, Matteo possiede una scatola. Secondo le informazioni fornite, Giulia possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede un fiore, Giulia possiede una candela, Chiara possiede una penna, Matteo possiede una scatola. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede un fiore, Giulia possiede una candela, Chiara possiede una penna, Matteo possiede una scatola. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una scatola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Sofia possiede una moneta, Andrea possiede un anello, Chiara possiede una mappa, Luca possiede un libro. Secondo le informazioni fornite, Sofia possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sofia possiede una moneta, Andrea possiede un anello, Chiara possiede una mappa, Luca possiede un libro. Secondo le informazioni fornite, Andrea possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sofia possiede una moneta, Andrea possiede un anello, Chiara possiede una mappa, Luca possiede un libro. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sofia possiede una moneta, Andrea possiede un anello, Chiara possiede una mappa, Luca possiede un libro. Secondo le informazioni fornite, Luca possiede",
+          "target": " un libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Laura possiede una fotografia, Giulia possiede un guanto, Chiara possiede un anello, Marco possiede una chiave. Secondo le informazioni fornite, Laura possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Laura possiede una fotografia, Giulia possiede un guanto, Chiara possiede un anello, Marco possiede una chiave. Secondo le informazioni fornite, Giulia possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Laura possiede una fotografia, Giulia possiede un guanto, Chiara possiede un anello, Marco possiede una chiave. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Laura possiede una fotografia, Giulia possiede un guanto, Chiara possiede un anello, Marco possiede una chiave. Secondo le informazioni fornite, Marco possiede",
+          "target": " una chiave."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un biglietto, Giulia possiede una scatola, Giorgio possiede un guanto, Luca possiede una tazza. Secondo le informazioni fornite, Sara possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un biglietto, Giulia possiede una scatola, Giorgio possiede un guanto, Luca possiede una tazza. Secondo le informazioni fornite, Giulia possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un biglietto, Giulia possiede una scatola, Giorgio possiede un guanto, Luca possiede una tazza. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un biglietto, Giulia possiede una scatola, Giorgio possiede un guanto, Luca possiede una tazza. Secondo le informazioni fornite, Luca possiede",
+          "target": " una tazza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un libro, Luca possiede un biglietto, Matteo possiede una candela, Simone possiede un cappello. Secondo le informazioni fornite, Giulia possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un libro, Luca possiede un biglietto, Matteo possiede una candela, Simone possiede un cappello. Secondo le informazioni fornite, Luca possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un libro, Luca possiede un biglietto, Matteo possiede una candela, Simone possiede un cappello. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un libro, Luca possiede un biglietto, Matteo possiede una candela, Simone possiede un cappello. Secondo le informazioni fornite, Simone possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Simone possiede un cappello, Giorgio possiede un quaderno, Fabio possiede una scatola, Giulia possiede un anello. Secondo le informazioni fornite, Simone possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Simone possiede un cappello, Giorgio possiede un quaderno, Fabio possiede una scatola, Giulia possiede un anello. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Simone possiede un cappello, Giorgio possiede un quaderno, Fabio possiede una scatola, Giulia possiede un anello. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Simone possiede un cappello, Giorgio possiede un quaderno, Fabio possiede una scatola, Giulia possiede un anello. Secondo le informazioni fornite, Giulia possiede",
+          "target": " un anello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Marco possiede una mappa, Laura possiede un quaderno, Fabio possiede un ombrello, Davide possiede una bottiglia. Secondo le informazioni fornite, Marco possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marco possiede una mappa, Laura possiede un quaderno, Fabio possiede un ombrello, Davide possiede una bottiglia. Secondo le informazioni fornite, Laura possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marco possiede una mappa, Laura possiede un quaderno, Fabio possiede un ombrello, Davide possiede una bottiglia. Secondo le informazioni fornite, Fabio possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marco possiede una mappa, Laura possiede un quaderno, Fabio possiede un ombrello, Davide possiede una bottiglia. Secondo le informazioni fornite, Davide possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede un biglietto, Davide possiede un orologio, Elena possiede un cappello, Marta possiede un guanto. Secondo le informazioni fornite, Andrea possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede un biglietto, Davide possiede un orologio, Elena possiede un cappello, Marta possiede un guanto. Secondo le informazioni fornite, Davide possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede un biglietto, Davide possiede un orologio, Elena possiede un cappello, Marta possiede un guanto. Secondo le informazioni fornite, Elena possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede un biglietto, Davide possiede un orologio, Elena possiede un cappello, Marta possiede un guanto. Secondo le informazioni fornite, Marta possiede",
+          "target": " un guanto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una moneta, Irene possiede una mappa, Laura possiede un biglietto, Chiara possiede una conchiglia. Secondo le informazioni fornite, Elena possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una moneta, Irene possiede una mappa, Laura possiede un biglietto, Chiara possiede una conchiglia. Secondo le informazioni fornite, Irene possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una moneta, Irene possiede una mappa, Laura possiede un biglietto, Chiara possiede una conchiglia. Secondo le informazioni fornite, Laura possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una moneta, Irene possiede una mappa, Laura possiede un biglietto, Chiara possiede una conchiglia. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una conchiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede una mappa, Laura possiede un quaderno, Anna possiede un fiore, Paolo possiede un libro. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede una mappa, Laura possiede un quaderno, Anna possiede un fiore, Paolo possiede un libro. Secondo le informazioni fornite, Laura possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede una mappa, Laura possiede un quaderno, Anna possiede un fiore, Paolo possiede un libro. Secondo le informazioni fornite, Anna possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede una mappa, Laura possiede un quaderno, Anna possiede un fiore, Paolo possiede un libro. Secondo le informazioni fornite, Paolo possiede",
+          "target": " un libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un anello, Fabio possiede una conchiglia, Simone possiede un ombrello, Laura possiede una bottiglia. Secondo le informazioni fornite, Stefano possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un anello, Fabio possiede una conchiglia, Simone possiede un ombrello, Laura possiede una bottiglia. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una conchiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un anello, Fabio possiede una conchiglia, Simone possiede un ombrello, Laura possiede una bottiglia. Secondo le informazioni fornite, Simone possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un anello, Fabio possiede una conchiglia, Simone possiede un ombrello, Laura possiede una bottiglia. Secondo le informazioni fornite, Laura possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una conchiglia, Luca possiede un guanto, Fabio possiede una candela, Anna possiede un biglietto. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una conchiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una conchiglia, Luca possiede un guanto, Fabio possiede una candela, Anna possiede un biglietto. Secondo le informazioni fornite, Luca possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una conchiglia, Luca possiede un guanto, Fabio possiede una candela, Anna possiede un biglietto. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una conchiglia, Luca possiede un guanto, Fabio possiede una candela, Anna possiede un biglietto. Secondo le informazioni fornite, Anna possiede",
+          "target": " un biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un orologio, Laura possiede una conchiglia, Alice possiede un fiore, Paolo possiede un anello. Secondo le informazioni fornite, Sara possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un orologio, Laura possiede una conchiglia, Alice possiede un fiore, Paolo possiede un anello. Secondo le informazioni fornite, Laura possiede",
+          "target": " una conchiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un orologio, Laura possiede una conchiglia, Alice possiede un fiore, Paolo possiede un anello. Secondo le informazioni fornite, Alice possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un orologio, Laura possiede una conchiglia, Alice possiede un fiore, Paolo possiede un anello. Secondo le informazioni fornite, Paolo possiede",
+          "target": " un anello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Irene possiede una candela, Matteo possiede un anello, Giorgio possiede una bottiglia, Giulia possiede un quaderno. Secondo le informazioni fornite, Irene possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede una candela, Matteo possiede un anello, Giorgio possiede una bottiglia, Giulia possiede un quaderno. Secondo le informazioni fornite, Matteo possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede una candela, Matteo possiede un anello, Giorgio possiede una bottiglia, Giulia possiede un quaderno. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede una candela, Matteo possiede un anello, Giorgio possiede una bottiglia, Giulia possiede un quaderno. Secondo le informazioni fornite, Giulia possiede",
+          "target": " un quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Irene possiede un orologio, Giorgio possiede una candela, Anna possiede un anello, Matteo possiede una penna. Secondo le informazioni fornite, Irene possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede un orologio, Giorgio possiede una candela, Anna possiede un anello, Matteo possiede una penna. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede un orologio, Giorgio possiede una candela, Anna possiede un anello, Matteo possiede una penna. Secondo le informazioni fornite, Anna possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede un orologio, Giorgio possiede una candela, Anna possiede un anello, Matteo possiede una penna. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una penna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un cucchiaio, Stefano possiede un quaderno, Elena possiede una moneta, Sofia possiede un orologio. Secondo le informazioni fornite, Marta possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un cucchiaio, Stefano possiede un quaderno, Elena possiede una moneta, Sofia possiede un orologio. Secondo le informazioni fornite, Stefano possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un cucchiaio, Stefano possiede un quaderno, Elena possiede una moneta, Sofia possiede un orologio. Secondo le informazioni fornite, Elena possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un cucchiaio, Stefano possiede un quaderno, Elena possiede una moneta, Sofia possiede un orologio. Secondo le informazioni fornite, Sofia possiede",
+          "target": " un orologio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Sara possiede una candela, Davide possiede una tazza, Matteo possiede una chiave, Alice possiede un libro. Secondo le informazioni fornite, Sara possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede una candela, Davide possiede una tazza, Matteo possiede una chiave, Alice possiede un libro. Secondo le informazioni fornite, Davide possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede una candela, Davide possiede una tazza, Matteo possiede una chiave, Alice possiede un libro. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede una candela, Davide possiede una tazza, Matteo possiede una chiave, Alice possiede un libro. Secondo le informazioni fornite, Alice possiede",
+          "target": " un libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede una scatola, Sara possiede una candela, Marta possiede una bottiglia, Fabio possiede un cucchiaio. Secondo le informazioni fornite, Andrea possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede una scatola, Sara possiede una candela, Marta possiede una bottiglia, Fabio possiede un cucchiaio. Secondo le informazioni fornite, Sara possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede una scatola, Sara possiede una candela, Marta possiede una bottiglia, Fabio possiede un cucchiaio. Secondo le informazioni fornite, Marta possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede una scatola, Sara possiede una candela, Marta possiede una bottiglia, Fabio possiede un cucchiaio. Secondo le informazioni fornite, Fabio possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Davide possiede un anello, Giulia possiede un cappello, Anna possiede un quaderno, Paolo possiede una conchiglia. Secondo le informazioni fornite, Davide possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede un anello, Giulia possiede un cappello, Anna possiede un quaderno, Paolo possiede una conchiglia. Secondo le informazioni fornite, Giulia possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede un anello, Giulia possiede un cappello, Anna possiede un quaderno, Paolo possiede una conchiglia. Secondo le informazioni fornite, Anna possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede un anello, Giulia possiede un cappello, Anna possiede un quaderno, Paolo possiede una conchiglia. Secondo le informazioni fornite, Paolo possiede",
+          "target": " una conchiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una fotografia, Giorgio possiede una tazza, Davide possiede un fiore, Paolo possiede una conchiglia. Secondo le informazioni fornite, Luca possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una fotografia, Giorgio possiede una tazza, Davide possiede un fiore, Paolo possiede una conchiglia. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una fotografia, Giorgio possiede una tazza, Davide possiede un fiore, Paolo possiede una conchiglia. Secondo le informazioni fornite, Davide possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede una fotografia, Giorgio possiede una tazza, Davide possiede un fiore, Paolo possiede una conchiglia. Secondo le informazioni fornite, Paolo possiede",
+          "target": " una conchiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un quaderno, Sofia possiede un cucchiaio, Fabio possiede una fotografia, Stefano possiede una mappa. Secondo le informazioni fornite, Marta possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un quaderno, Sofia possiede un cucchiaio, Fabio possiede una fotografia, Stefano possiede una mappa. Secondo le informazioni fornite, Sofia possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un quaderno, Sofia possiede un cucchiaio, Fabio possiede una fotografia, Stefano possiede una mappa. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un quaderno, Sofia possiede un cucchiaio, Fabio possiede una fotografia, Stefano possiede una mappa. Secondo le informazioni fornite, Stefano possiede",
+          "target": " una mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una mappa, Sofia possiede una fotografia, Andrea possiede una moneta, Davide possiede un orologio. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una mappa, Sofia possiede una fotografia, Andrea possiede una moneta, Davide possiede un orologio. Secondo le informazioni fornite, Sofia possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una mappa, Sofia possiede una fotografia, Andrea possiede una moneta, Davide possiede un orologio. Secondo le informazioni fornite, Andrea possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una mappa, Sofia possiede una fotografia, Andrea possiede una moneta, Davide possiede un orologio. Secondo le informazioni fornite, Davide possiede",
+          "target": " un orologio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una tazza, Laura possiede un fiore, Alice possiede un cappello, Sara possiede una bottiglia. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una tazza, Laura possiede un fiore, Alice possiede un cappello, Sara possiede una bottiglia. Secondo le informazioni fornite, Laura possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una tazza, Laura possiede un fiore, Alice possiede un cappello, Sara possiede una bottiglia. Secondo le informazioni fornite, Alice possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una tazza, Laura possiede un fiore, Alice possiede un cappello, Sara possiede una bottiglia. Secondo le informazioni fornite, Sara possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una penna, Sara possiede un guanto, Fabio possiede una fotografia, Giorgio possiede un anello. Secondo le informazioni fornite, Elena possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una penna, Sara possiede un guanto, Fabio possiede una fotografia, Giorgio possiede un anello. Secondo le informazioni fornite, Sara possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una penna, Sara possiede un guanto, Fabio possiede una fotografia, Giorgio possiede un anello. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una penna, Sara possiede un guanto, Fabio possiede una fotografia, Giorgio possiede un anello. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un anello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una scatola, Fabio possiede una bottiglia, Irene possiede un cucchiaio, Anna possiede una chiave. Secondo le informazioni fornite, Elena possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una scatola, Fabio possiede una bottiglia, Irene possiede un cucchiaio, Anna possiede una chiave. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una scatola, Fabio possiede una bottiglia, Irene possiede un cucchiaio, Anna possiede una chiave. Secondo le informazioni fornite, Irene possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una scatola, Fabio possiede una bottiglia, Irene possiede un cucchiaio, Anna possiede una chiave. Secondo le informazioni fornite, Anna possiede",
+          "target": " una chiave."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede un cucchiaio, Irene possiede un cappello, Fabio possiede una mappa, Davide possiede un anello. Secondo le informazioni fornite, Matteo possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede un cucchiaio, Irene possiede un cappello, Fabio possiede una mappa, Davide possiede un anello. Secondo le informazioni fornite, Irene possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede un cucchiaio, Irene possiede un cappello, Fabio possiede una mappa, Davide possiede un anello. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede un cucchiaio, Irene possiede un cappello, Fabio possiede una mappa, Davide possiede un anello. Secondo le informazioni fornite, Davide possiede",
+          "target": " un anello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Anna possiede un quaderno, Irene possiede una fotografia, Laura possiede una tazza, Alice possiede una chiave. Secondo le informazioni fornite, Anna possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede un quaderno, Irene possiede una fotografia, Laura possiede una tazza, Alice possiede una chiave. Secondo le informazioni fornite, Irene possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede un quaderno, Irene possiede una fotografia, Laura possiede una tazza, Alice possiede una chiave. Secondo le informazioni fornite, Laura possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede un quaderno, Irene possiede una fotografia, Laura possiede una tazza, Alice possiede una chiave. Secondo le informazioni fornite, Alice possiede",
+          "target": " una chiave."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un anello, Stefano possiede una tazza, Anna possiede una fotografia, Sara possiede un quaderno. Secondo le informazioni fornite, Alice possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un anello, Stefano possiede una tazza, Anna possiede una fotografia, Sara possiede un quaderno. Secondo le informazioni fornite, Stefano possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un anello, Stefano possiede una tazza, Anna possiede una fotografia, Sara possiede un quaderno. Secondo le informazioni fornite, Anna possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un anello, Stefano possiede una tazza, Anna possiede una fotografia, Sara possiede un quaderno. Secondo le informazioni fornite, Sara possiede",
+          "target": " un quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una fotografia, Irene possiede una penna, Laura possiede una scatola, Elena possiede una bottiglia. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una fotografia, Irene possiede una penna, Laura possiede una scatola, Elena possiede una bottiglia. Secondo le informazioni fornite, Irene possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una fotografia, Irene possiede una penna, Laura possiede una scatola, Elena possiede una bottiglia. Secondo le informazioni fornite, Laura possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una fotografia, Irene possiede una penna, Laura possiede una scatola, Elena possiede una bottiglia. Secondo le informazioni fornite, Elena possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede una chiave, Chiara possiede un guanto, Sara possiede un libro, Andrea possiede un biglietto. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede una chiave, Chiara possiede un guanto, Sara possiede un libro, Andrea possiede un biglietto. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede una chiave, Chiara possiede un guanto, Sara possiede un libro, Andrea possiede un biglietto. Secondo le informazioni fornite, Sara possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede una chiave, Chiara possiede un guanto, Sara possiede un libro, Andrea possiede un biglietto. Secondo le informazioni fornite, Andrea possiede",
+          "target": " un biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Sara possiede una candela, Luca possiede una chiave, Anna possiede una tazza, Davide possiede un cappello. Secondo le informazioni fornite, Sara possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede una candela, Luca possiede una chiave, Anna possiede una tazza, Davide possiede un cappello. Secondo le informazioni fornite, Luca possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede una candela, Luca possiede una chiave, Anna possiede una tazza, Davide possiede un cappello. Secondo le informazioni fornite, Anna possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede una candela, Luca possiede una chiave, Anna possiede una tazza, Davide possiede un cappello. Secondo le informazioni fornite, Davide possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede una mappa, Paolo possiede un biglietto, Elena possiede un quaderno, Marta possiede un ombrello. Secondo le informazioni fornite, Andrea possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede una mappa, Paolo possiede un biglietto, Elena possiede un quaderno, Marta possiede un ombrello. Secondo le informazioni fornite, Paolo possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede una mappa, Paolo possiede un biglietto, Elena possiede un quaderno, Marta possiede un ombrello. Secondo le informazioni fornite, Elena possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede una mappa, Paolo possiede un biglietto, Elena possiede un quaderno, Marta possiede un ombrello. Secondo le informazioni fornite, Marta possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede una scatola, Paolo possiede una bottiglia, Anna possiede un fiore, Stefano possiede una candela. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede una scatola, Paolo possiede una bottiglia, Anna possiede un fiore, Stefano possiede una candela. Secondo le informazioni fornite, Paolo possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede una scatola, Paolo possiede una bottiglia, Anna possiede un fiore, Stefano possiede una candela. Secondo le informazioni fornite, Anna possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede una scatola, Paolo possiede una bottiglia, Anna possiede un fiore, Stefano possiede una candela. Secondo le informazioni fornite, Stefano possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un fiore, Davide possiede un ombrello, Paolo possiede un libro, Matteo possiede un biglietto. Secondo le informazioni fornite, Alice possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un fiore, Davide possiede un ombrello, Paolo possiede un libro, Matteo possiede un biglietto. Secondo le informazioni fornite, Davide possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un fiore, Davide possiede un ombrello, Paolo possiede un libro, Matteo possiede un biglietto. Secondo le informazioni fornite, Paolo possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un fiore, Davide possiede un ombrello, Paolo possiede un libro, Matteo possiede un biglietto. Secondo le informazioni fornite, Matteo possiede",
+          "target": " un biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Simone possiede una chiave, Sara possiede un anello, Sofia possiede un cucchiaio, Laura possiede un ombrello. Secondo le informazioni fornite, Simone possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Simone possiede una chiave, Sara possiede un anello, Sofia possiede un cucchiaio, Laura possiede un ombrello. Secondo le informazioni fornite, Sara possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Simone possiede una chiave, Sara possiede un anello, Sofia possiede un cucchiaio, Laura possiede un ombrello. Secondo le informazioni fornite, Sofia possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Simone possiede una chiave, Sara possiede un anello, Sofia possiede un cucchiaio, Laura possiede un ombrello. Secondo le informazioni fornite, Laura possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Simone possiede un quaderno, Marta possiede una conchiglia, Giulia possiede una mappa, Fabio possiede un cucchiaio. Secondo le informazioni fornite, Simone possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Simone possiede un quaderno, Marta possiede una conchiglia, Giulia possiede una mappa, Fabio possiede un cucchiaio. Secondo le informazioni fornite, Marta possiede",
+          "target": " una conchiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Simone possiede un quaderno, Marta possiede una conchiglia, Giulia possiede una mappa, Fabio possiede un cucchiaio. Secondo le informazioni fornite, Giulia possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Simone possiede un quaderno, Marta possiede una conchiglia, Giulia possiede una mappa, Fabio possiede un cucchiaio. Secondo le informazioni fornite, Fabio possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede un cappello, Alice possiede una moneta, Chiara possiede una mappa, Laura possiede una fotografia. Secondo le informazioni fornite, Fabio possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede un cappello, Alice possiede una moneta, Chiara possiede una mappa, Laura possiede una fotografia. Secondo le informazioni fornite, Alice possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede un cappello, Alice possiede una moneta, Chiara possiede una mappa, Laura possiede una fotografia. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede un cappello, Alice possiede una moneta, Chiara possiede una mappa, Laura possiede una fotografia. Secondo le informazioni fornite, Laura possiede",
+          "target": " una fotografia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Marta possiede una chiave, Alice possiede un cucchiaio, Irene possiede una penna, Laura possiede un quaderno. Secondo le informazioni fornite, Marta possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede una chiave, Alice possiede un cucchiaio, Irene possiede una penna, Laura possiede un quaderno. Secondo le informazioni fornite, Alice possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede una chiave, Alice possiede un cucchiaio, Irene possiede una penna, Laura possiede un quaderno. Secondo le informazioni fornite, Irene possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede una chiave, Alice possiede un cucchiaio, Irene possiede una penna, Laura possiede un quaderno. Secondo le informazioni fornite, Laura possiede",
+          "target": " un quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una mappa, Simone possiede un fiore, Chiara possiede un guanto, Laura possiede una chiave. Secondo le informazioni fornite, Elena possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una mappa, Simone possiede un fiore, Chiara possiede un guanto, Laura possiede una chiave. Secondo le informazioni fornite, Simone possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una mappa, Simone possiede un fiore, Chiara possiede un guanto, Laura possiede una chiave. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede una mappa, Simone possiede un fiore, Chiara possiede un guanto, Laura possiede una chiave. Secondo le informazioni fornite, Laura possiede",
+          "target": " una chiave."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un guanto, Davide possiede un cappello, Fabio possiede un cucchiaio, Andrea possiede un fiore. Secondo le informazioni fornite, Sara possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un guanto, Davide possiede un cappello, Fabio possiede un cucchiaio, Andrea possiede un fiore. Secondo le informazioni fornite, Davide possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un guanto, Davide possiede un cappello, Fabio possiede un cucchiaio, Andrea possiede un fiore. Secondo le informazioni fornite, Fabio possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un guanto, Davide possiede un cappello, Fabio possiede un cucchiaio, Andrea possiede un fiore. Secondo le informazioni fornite, Andrea possiede",
+          "target": " un fiore."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una bottiglia, Sara possiede un cappello, Matteo possiede un orologio, Davide possiede un biglietto. Secondo le informazioni fornite, Anna possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una bottiglia, Sara possiede un cappello, Matteo possiede un orologio, Davide possiede un biglietto. Secondo le informazioni fornite, Sara possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una bottiglia, Sara possiede un cappello, Matteo possiede un orologio, Davide possiede un biglietto. Secondo le informazioni fornite, Matteo possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Anna possiede una bottiglia, Sara possiede un cappello, Matteo possiede un orologio, Davide possiede un biglietto. Secondo le informazioni fornite, Davide possiede",
+          "target": " un biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede un guanto, Sofia possiede una penna, Simone possiede un biglietto, Fabio possiede una fotografia. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede un guanto, Sofia possiede una penna, Simone possiede un biglietto, Fabio possiede una fotografia. Secondo le informazioni fornite, Sofia possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede un guanto, Sofia possiede una penna, Simone possiede un biglietto, Fabio possiede una fotografia. Secondo le informazioni fornite, Simone possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede un guanto, Sofia possiede una penna, Simone possiede un biglietto, Fabio possiede una fotografia. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una fotografia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede una candela, Chiara possiede una penna, Davide possiede un ombrello, Paolo possiede un quaderno. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede una candela, Chiara possiede una penna, Davide possiede un ombrello, Paolo possiede un quaderno. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede una candela, Chiara possiede una penna, Davide possiede un ombrello, Paolo possiede un quaderno. Secondo le informazioni fornite, Davide possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Matteo possiede una candela, Chiara possiede una penna, Davide possiede un ombrello, Paolo possiede un quaderno. Secondo le informazioni fornite, Paolo possiede",
+          "target": " un quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Elena possiede un fiore, Andrea possiede un orologio, Chiara possiede un ombrello, Sofia possiede una candela. Secondo le informazioni fornite, Elena possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede un fiore, Andrea possiede un orologio, Chiara possiede un ombrello, Sofia possiede una candela. Secondo le informazioni fornite, Andrea possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede un fiore, Andrea possiede un orologio, Chiara possiede un ombrello, Sofia possiede una candela. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Elena possiede un fiore, Andrea possiede un orologio, Chiara possiede un ombrello, Sofia possiede una candela. Secondo le informazioni fornite, Sofia possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Davide possiede una chiave, Simone possiede un guanto, Marco possiede una tazza, Matteo possiede una mappa. Secondo le informazioni fornite, Davide possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede una chiave, Simone possiede un guanto, Marco possiede una tazza, Matteo possiede una mappa. Secondo le informazioni fornite, Simone possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede una chiave, Simone possiede un guanto, Marco possiede una tazza, Matteo possiede una mappa. Secondo le informazioni fornite, Marco possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede una chiave, Simone possiede un guanto, Marco possiede una tazza, Matteo possiede una mappa. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Luca possiede un cucchiaio, Giorgio possiede un ombrello, Matteo possiede una chiave, Giulia possiede un orologio. Secondo le informazioni fornite, Luca possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede un cucchiaio, Giorgio possiede un ombrello, Matteo possiede una chiave, Giulia possiede un orologio. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede un cucchiaio, Giorgio possiede un ombrello, Matteo possiede una chiave, Giulia possiede un orologio. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede un cucchiaio, Giorgio possiede un ombrello, Matteo possiede una chiave, Giulia possiede un orologio. Secondo le informazioni fornite, Giulia possiede",
+          "target": " un orologio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede un libro, Marta possiede una mappa, Laura possiede un cucchiaio, Marco possiede un ombrello. Secondo le informazioni fornite, Andrea possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede un libro, Marta possiede una mappa, Laura possiede un cucchiaio, Marco possiede un ombrello. Secondo le informazioni fornite, Marta possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede un libro, Marta possiede una mappa, Laura possiede un cucchiaio, Marco possiede un ombrello. Secondo le informazioni fornite, Laura possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Andrea possiede un libro, Marta possiede una mappa, Laura possiede un cucchiaio, Marco possiede un ombrello. Secondo le informazioni fornite, Marco possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Irene possiede una tazza, Andrea possiede un fiore, Sara possiede un orologio, Luca possiede una moneta. Secondo le informazioni fornite, Irene possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede una tazza, Andrea possiede un fiore, Sara possiede un orologio, Luca possiede una moneta. Secondo le informazioni fornite, Andrea possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede una tazza, Andrea possiede un fiore, Sara possiede un orologio, Luca possiede una moneta. Secondo le informazioni fornite, Sara possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Irene possiede una tazza, Andrea possiede un fiore, Sara possiede un orologio, Luca possiede una moneta. Secondo le informazioni fornite, Luca possiede",
+          "target": " una moneta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Paolo possiede una conchiglia, Giorgio possiede una bottiglia, Fabio possiede una fotografia, Davide possiede un guanto. Secondo le informazioni fornite, Paolo possiede",
+          "target": " una conchiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Paolo possiede una conchiglia, Giorgio possiede una bottiglia, Fabio possiede una fotografia, Davide possiede un guanto. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Paolo possiede una conchiglia, Giorgio possiede una bottiglia, Fabio possiede una fotografia, Davide possiede un guanto. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Paolo possiede una conchiglia, Giorgio possiede una bottiglia, Fabio possiede una fotografia, Davide possiede un guanto. Secondo le informazioni fornite, Davide possiede",
+          "target": " un guanto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un fiore, Fabio possiede un ombrello, Matteo possiede una candela, Luca possiede un guanto. Secondo le informazioni fornite, Alice possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un fiore, Fabio possiede un ombrello, Matteo possiede una candela, Luca possiede un guanto. Secondo le informazioni fornite, Fabio possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un fiore, Fabio possiede un ombrello, Matteo possiede una candela, Luca possiede un guanto. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede un fiore, Fabio possiede un ombrello, Matteo possiede una candela, Luca possiede un guanto. Secondo le informazioni fornite, Luca possiede",
+          "target": " un guanto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un guanto, Marco possiede una moneta, Davide possiede un quaderno, Alice possiede una chiave. Secondo le informazioni fornite, Sara possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un guanto, Marco possiede una moneta, Davide possiede un quaderno, Alice possiede una chiave. Secondo le informazioni fornite, Marco possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un guanto, Marco possiede una moneta, Davide possiede un quaderno, Alice possiede una chiave. Secondo le informazioni fornite, Davide possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Sara possiede un guanto, Marco possiede una moneta, Davide possiede un quaderno, Alice possiede una chiave. Secondo le informazioni fornite, Alice possiede",
+          "target": " una chiave."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un cappello, Andrea possiede un orologio, Matteo possiede una scatola, Luca possiede una fotografia. Secondo le informazioni fornite, Marta possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un cappello, Andrea possiede un orologio, Matteo possiede una scatola, Luca possiede una fotografia. Secondo le informazioni fornite, Andrea possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un cappello, Andrea possiede un orologio, Matteo possiede una scatola, Luca possiede una fotografia. Secondo le informazioni fornite, Matteo possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede un cappello, Andrea possiede un orologio, Matteo possiede una scatola, Luca possiede una fotografia. Secondo le informazioni fornite, Luca possiede",
+          "target": " una fotografia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Davide possiede un ombrello, Chiara possiede un guanto, Elena possiede un cappello, Fabio possiede una tazza. Secondo le informazioni fornite, Davide possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede un ombrello, Chiara possiede un guanto, Elena possiede un cappello, Fabio possiede una tazza. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede un ombrello, Chiara possiede un guanto, Elena possiede un cappello, Fabio possiede una tazza. Secondo le informazioni fornite, Elena possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede un ombrello, Chiara possiede un guanto, Elena possiede un cappello, Fabio possiede una tazza. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una tazza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un orologio, Sara possiede una scatola, Luca possiede un fiore, Marco possiede una fotografia. Secondo le informazioni fornite, Giulia possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un orologio, Sara possiede una scatola, Luca possiede un fiore, Marco possiede una fotografia. Secondo le informazioni fornite, Sara possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un orologio, Sara possiede una scatola, Luca possiede un fiore, Marco possiede una fotografia. Secondo le informazioni fornite, Luca possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giulia possiede un orologio, Sara possiede una scatola, Luca possiede un fiore, Marco possiede una fotografia. Secondo le informazioni fornite, Marco possiede",
+          "target": " una fotografia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Marta possiede una conchiglia, Matteo possiede un guanto, Irene possiede un cucchiaio, Chiara possiede una fotografia. Secondo le informazioni fornite, Marta possiede",
+          "target": " una conchiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede una conchiglia, Matteo possiede un guanto, Irene possiede un cucchiaio, Chiara possiede una fotografia. Secondo le informazioni fornite, Matteo possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede una conchiglia, Matteo possiede un guanto, Irene possiede un cucchiaio, Chiara possiede una fotografia. Secondo le informazioni fornite, Irene possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede una conchiglia, Matteo possiede un guanto, Irene possiede un cucchiaio, Chiara possiede una fotografia. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una fotografia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un fiore, Luca possiede una mappa, Fabio possiede una chiave, Laura possiede una moneta. Secondo le informazioni fornite, Stefano possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un fiore, Luca possiede una mappa, Fabio possiede una chiave, Laura possiede una moneta. Secondo le informazioni fornite, Luca possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un fiore, Luca possiede una mappa, Fabio possiede una chiave, Laura possiede una moneta. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un fiore, Luca possiede una mappa, Fabio possiede una chiave, Laura possiede una moneta. Secondo le informazioni fornite, Laura possiede",
+          "target": " una moneta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Alice possiede una scatola, Stefano possiede un libro, Anna possiede un quaderno, Chiara possiede un cucchiaio. Secondo le informazioni fornite, Alice possiede",
+          "target": " una scatola."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede una scatola, Stefano possiede un libro, Anna possiede un quaderno, Chiara possiede un cucchiaio. Secondo le informazioni fornite, Stefano possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede una scatola, Stefano possiede un libro, Anna possiede un quaderno, Chiara possiede un cucchiaio. Secondo le informazioni fornite, Anna possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Memorizza queste informazioni: Alice possiede una scatola, Stefano possiede un libro, Anna possiede un quaderno, Chiara possiede un cucchiaio. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una moneta, Marco possiede un cucchiaio, Fabio possiede un biglietto, Andrea possiede un anello. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una moneta, Marco possiede un cucchiaio, Fabio possiede un biglietto, Andrea possiede un anello. Secondo le informazioni fornite, Marco possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una moneta, Marco possiede un cucchiaio, Fabio possiede un biglietto, Andrea possiede un anello. Secondo le informazioni fornite, Fabio possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Chiara possiede una moneta, Marco possiede un cucchiaio, Fabio possiede un biglietto, Andrea possiede un anello. Secondo le informazioni fornite, Andrea possiede",
+          "target": " un anello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Laura possiede un anello, Paolo possiede un cucchiaio, Marco possiede un orologio, Stefano possiede una bottiglia. Secondo le informazioni fornite, Laura possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Laura possiede un anello, Paolo possiede un cucchiaio, Marco possiede un orologio, Stefano possiede una bottiglia. Secondo le informazioni fornite, Paolo possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Laura possiede un anello, Paolo possiede un cucchiaio, Marco possiede un orologio, Stefano possiede una bottiglia. Secondo le informazioni fornite, Marco possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Laura possiede un anello, Paolo possiede un cucchiaio, Marco possiede un orologio, Stefano possiede una bottiglia. Secondo le informazioni fornite, Stefano possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Marta possiede una penna, Sara possiede un ombrello, Laura possiede una bottiglia, Chiara possiede una conchiglia. Secondo le informazioni fornite, Marta possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede una penna, Sara possiede un ombrello, Laura possiede una bottiglia, Chiara possiede una conchiglia. Secondo le informazioni fornite, Sara possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede una penna, Sara possiede un ombrello, Laura possiede una bottiglia, Chiara possiede una conchiglia. Secondo le informazioni fornite, Laura possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Marta possiede una penna, Sara possiede un ombrello, Laura possiede una bottiglia, Chiara possiede una conchiglia. Secondo le informazioni fornite, Chiara possiede",
+          "target": " una conchiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede una candela, Marta possiede una conchiglia, Fabio possiede un biglietto, Luca possiede un cucchiaio. Secondo le informazioni fornite, Giorgio possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede una candela, Marta possiede una conchiglia, Fabio possiede un biglietto, Luca possiede un cucchiaio. Secondo le informazioni fornite, Marta possiede",
+          "target": " una conchiglia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede una candela, Marta possiede una conchiglia, Fabio possiede un biglietto, Luca possiede un cucchiaio. Secondo le informazioni fornite, Fabio possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Giorgio possiede una candela, Marta possiede una conchiglia, Fabio possiede un biglietto, Luca possiede un cucchiaio. Secondo le informazioni fornite, Luca possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Luca possiede un orologio, Elena possiede una fotografia, Chiara possiede un cucchiaio, Giulia possiede un ombrello. Secondo le informazioni fornite, Luca possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede un orologio, Elena possiede una fotografia, Chiara possiede un cucchiaio, Giulia possiede un ombrello. Secondo le informazioni fornite, Elena possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede un orologio, Elena possiede una fotografia, Chiara possiede un cucchiaio, Giulia possiede un ombrello. Secondo le informazioni fornite, Chiara possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Luca possiede un orologio, Elena possiede una fotografia, Chiara possiede un cucchiaio, Giulia possiede un ombrello. Secondo le informazioni fornite, Giulia possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un guanto, Davide possiede una chiave, Marco possiede un fiore, Matteo possiede un anello. Secondo le informazioni fornite, Stefano possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un guanto, Davide possiede una chiave, Marco possiede un fiore, Matteo possiede un anello. Secondo le informazioni fornite, Davide possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un guanto, Davide possiede una chiave, Marco possiede un fiore, Matteo possiede un anello. Secondo le informazioni fornite, Marco possiede",
+          "target": " un fiore."
+        },
+        {
+          "context": "Memorizza queste informazioni: Stefano possiede un guanto, Davide possiede una chiave, Marco possiede un fiore, Matteo possiede un anello. Secondo le informazioni fornite, Matteo possiede",
+          "target": " un anello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Davide possiede una tazza, Paolo possiede un cucchiaio, Marta possiede un orologio, Alice possiede una conchiglia. Secondo le informazioni fornite, Davide possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede una tazza, Paolo possiede un cucchiaio, Marta possiede un orologio, Alice possiede una conchiglia. Secondo le informazioni fornite, Paolo possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede una tazza, Paolo possiede un cucchiaio, Marta possiede un orologio, Alice possiede una conchiglia. Secondo le informazioni fornite, Marta possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Memorizza queste informazioni: Davide possiede una tazza, Paolo possiede un cucchiaio, Marta possiede un orologio, Alice possiede una conchiglia. Secondo le informazioni fornite, Alice possiede",
+          "target": " una conchiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede una fotografia, Andrea possiede un guanto, Alice possiede una tazza, Davide possiede una bottiglia. Secondo le informazioni fornite, Fabio possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede una fotografia, Andrea possiede un guanto, Alice possiede una tazza, Davide possiede una bottiglia. Secondo le informazioni fornite, Andrea possiede",
+          "target": " un guanto."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede una fotografia, Andrea possiede un guanto, Alice possiede una tazza, Davide possiede una bottiglia. Secondo le informazioni fornite, Alice possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Memorizza queste informazioni: Fabio possiede una fotografia, Andrea possiede un guanto, Alice possiede una tazza, Davide possiede una bottiglia. Secondo le informazioni fornite, Davide possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

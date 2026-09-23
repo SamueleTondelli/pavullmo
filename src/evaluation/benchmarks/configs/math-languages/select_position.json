@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "id": "select_sequence_position",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "sequences": [
+      ["mela", "libro", "chiave", "tazza", "fiore", "moneta", "sasso", "penna"],
+      ["gatto", "sole", "porta", "pane", "treno", "luna", "scarpa", "foglia"],
+      ["cane", "stella", "borsa", "latte", "nave", "nuvola", "guanto", "ramo"],
+      ["pera", "quaderno", "anello", "piatto", "rosa", "biglietto", "pietra", "matita"],
+      ["leone", "mare", "finestra", "riso", "aereo", "pioggia", "cappello", "albero"],
+      ["arancia", "giornale", "forchetta", "bottiglia", "tulipano", "francobollo", "conchiglia", "righello"],
+      ["cavallo", "vento", "scala", "formaggio", "autobus", "neve", "camicia", "radice"],
+      ["limone", "lettera", "coltello", "vaso", "giglio", "medaglia", "mattone", "gomma"],
+      ["tigre", "fiume", "tenda", "pasta", "bicicletta", "grandine", "giacca", "seme"],
+      ["banana", "mappa", "cucchiaio", "caraffa", "margherita", "gettone", "legno", "forbice"]
+    ],
+    "positions": [
+      {"prompt": "il primo elemento", "index": 0},
+      {"prompt": "il secondo elemento", "index": 1},
+      {"prompt": "il terzo elemento", "index": 2},
+      {"prompt": "il quarto elemento", "index": 3},
+      {"prompt": "il quinto elemento", "index": 4},
+      {"prompt": "il sesto elemento", "index": 5},
+      {"prompt": "il settimo elemento", "index": 6},
+      {"prompt": "l'ultimo elemento", "index": 7}
+    ]
+  },
+
+  "variables": {
+    "sequence": {
+      "type": "choice",
+      "source": "sequences"
+    },
+    "position": {
+      "type": "choice",
+      "source": "positions"
+    }
+  },
+
+  "derived": {
+    "answer": {
+      "op": "item_at",
+      "args": ["$sequence", "$position.index"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "position",
+        "operation": "resample_distinct"
+      }
+    ],
+    "unique_on": ["$position.index", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Nella sequenza {sequence|comma_list}, {position.prompt} è",
+      "target": " {answer}."
+    }
+  ]
+}

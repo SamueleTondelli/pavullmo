@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "icl_object_location_bindings",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sotto la sedia, il cucchiaio si trova nello zaino, la fotografia si trova sul ripiano basso, il fiore si trova sul tavolo. Dove si trova la moneta?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sotto la sedia, il cucchiaio si trova nello zaino, la fotografia si trova sul ripiano basso, il fiore si trova sul tavolo. Dove si trova il cucchiaio?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sotto la sedia, il cucchiaio si trova nello zaino, la fotografia si trova sul ripiano basso, il fiore si trova sul tavolo. Dove si trova la fotografia?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sotto la sedia, il cucchiaio si trova nello zaino, la fotografia si trova sul ripiano basso, il fiore si trova sul tavolo. Dove si trova il fiore?",
+          "target": " sul tavolo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova dietro la porta, la moneta si trova dentro l'armadio, il libro si trova nella scatola rossa, il quaderno si trova accanto alla finestra. Dove si trova la chiave?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova dietro la porta, la moneta si trova dentro l'armadio, il libro si trova nella scatola rossa, il quaderno si trova accanto alla finestra. Dove si trova la moneta?",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova dietro la porta, la moneta si trova dentro l'armadio, il libro si trova nella scatola rossa, il quaderno si trova accanto alla finestra. Dove si trova il libro?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova dietro la porta, la moneta si trova dentro l'armadio, il libro si trova nella scatola rossa, il quaderno si trova accanto alla finestra. Dove si trova il quaderno?",
+          "target": " accanto alla finestra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova sopra la mensola, la tazza si trova sopra il frigorifero, il cucchiaio si trova nella valigia, la moneta si trova dentro il cestino. Dove si trova la fotografia?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova sopra la mensola, la tazza si trova sopra il frigorifero, il cucchiaio si trova nella valigia, la moneta si trova dentro il cestino. Dove si trova la tazza?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova sopra la mensola, la tazza si trova sopra il frigorifero, il cucchiaio si trova nella valigia, la moneta si trova dentro il cestino. Dove si trova il cucchiaio?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova sopra la mensola, la tazza si trova sopra il frigorifero, il cucchiaio si trova nella valigia, la moneta si trova dentro il cestino. Dove si trova la moneta?",
+          "target": " dentro il cestino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sotto il letto, il cappello si trova nello zaino, la penna si trova vicino al divano, il libro si trova sul ripiano basso. Dove si trova il quaderno?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sotto il letto, il cappello si trova nello zaino, la penna si trova vicino al divano, il libro si trova sul ripiano basso. Dove si trova il cappello?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sotto il letto, il cappello si trova nello zaino, la penna si trova vicino al divano, il libro si trova sul ripiano basso. Dove si trova la penna?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sotto il letto, il cappello si trova nello zaino, la penna si trova vicino al divano, il libro si trova sul ripiano basso. Dove si trova il libro?",
+          "target": " sul ripiano basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova sotto il letto, la tazza si trova sul tavolo, il fiore si trova sul ripiano basso, la penna si trova sulla scrivania. Dove si trova la chiave?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova sotto il letto, la tazza si trova sul tavolo, il fiore si trova sul ripiano basso, la penna si trova sulla scrivania. Dove si trova la tazza?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova sotto il letto, la tazza si trova sul tavolo, il fiore si trova sul ripiano basso, la penna si trova sulla scrivania. Dove si trova il fiore?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova sotto il letto, la tazza si trova sul tavolo, il fiore si trova sul ripiano basso, la penna si trova sulla scrivania. Dove si trova la penna?",
+          "target": " sulla scrivania."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova dietro la porta, il quaderno si trova sulla scrivania, il libro si trova sul tavolo, la chiave si trova dietro la tenda. Dove si trova la scatola?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova dietro la porta, il quaderno si trova sulla scrivania, il libro si trova sul tavolo, la chiave si trova dietro la tenda. Dove si trova il quaderno?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova dietro la porta, il quaderno si trova sulla scrivania, il libro si trova sul tavolo, la chiave si trova dietro la tenda. Dove si trova il libro?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova dietro la porta, il quaderno si trova sulla scrivania, il libro si trova sul tavolo, la chiave si trova dietro la tenda. Dove si trova la chiave?",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sopra la mensola, il cucchiaio si trova vicino al divano, la tazza si trova vicino al termosifone, la conchiglia si trova accanto alla finestra. Dove si trova l'anello?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sopra la mensola, il cucchiaio si trova vicino al divano, la tazza si trova vicino al termosifone, la conchiglia si trova accanto alla finestra. Dove si trova il cucchiaio?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sopra la mensola, il cucchiaio si trova vicino al divano, la tazza si trova vicino al termosifone, la conchiglia si trova accanto alla finestra. Dove si trova la tazza?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sopra la mensola, il cucchiaio si trova vicino al divano, la tazza si trova vicino al termosifone, la conchiglia si trova accanto alla finestra. Dove si trova la conchiglia?",
+          "target": " accanto alla finestra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sopra la mensola, la candela si trova nel mobile bianco, il fiore si trova sotto il letto, la fotografia si trova dentro il cestino. Dove si trova il libro?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sopra la mensola, la candela si trova nel mobile bianco, il fiore si trova sotto il letto, la fotografia si trova dentro il cestino. Dove si trova la candela?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sopra la mensola, la candela si trova nel mobile bianco, il fiore si trova sotto il letto, la fotografia si trova dentro il cestino. Dove si trova il fiore?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sopra la mensola, la candela si trova nel mobile bianco, il fiore si trova sotto il letto, la fotografia si trova dentro il cestino. Dove si trova la fotografia?",
+          "target": " dentro il cestino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il cappello si trova nella valigia, la chiave si trova sotto il letto, la fotografia si trova dentro il cestino, la scatola si trova sul tavolo. Dove si trova il cappello?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cappello si trova nella valigia, la chiave si trova sotto il letto, la fotografia si trova dentro il cestino, la scatola si trova sul tavolo. Dove si trova la chiave?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cappello si trova nella valigia, la chiave si trova sotto il letto, la fotografia si trova dentro il cestino, la scatola si trova sul tavolo. Dove si trova la fotografia?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cappello si trova nella valigia, la chiave si trova sotto il letto, la fotografia si trova dentro il cestino, la scatola si trova sul tavolo. Dove si trova la scatola?",
+          "target": " sul tavolo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova sotto il letto, il cappello si trova nel mobile bianco, il quaderno si trova sotto la sedia, il guanto si trova dentro il cestino. Dove si trova la scatola?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova sotto il letto, il cappello si trova nel mobile bianco, il quaderno si trova sotto la sedia, il guanto si trova dentro il cestino. Dove si trova il cappello?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova sotto il letto, il cappello si trova nel mobile bianco, il quaderno si trova sotto la sedia, il guanto si trova dentro il cestino. Dove si trova il quaderno?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova sotto il letto, il cappello si trova nel mobile bianco, il quaderno si trova sotto la sedia, il guanto si trova dentro il cestino. Dove si trova il guanto?",
+          "target": " dentro il cestino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova vicino al termosifone, il fiore si trova sopra il frigorifero, la scatola si trova sotto il letto, il cucchiaio si trova vicino al divano. Dove si trova la fotografia?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova vicino al termosifone, il fiore si trova sopra il frigorifero, la scatola si trova sotto il letto, il cucchiaio si trova vicino al divano. Dove si trova il fiore?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova vicino al termosifone, il fiore si trova sopra il frigorifero, la scatola si trova sotto il letto, il cucchiaio si trova vicino al divano. Dove si trova la scatola?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova vicino al termosifone, il fiore si trova sopra il frigorifero, la scatola si trova sotto il letto, il cucchiaio si trova vicino al divano. Dove si trova il cucchiaio?",
+          "target": " vicino al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova nel cassetto alto, la mappa si trova nello zaino, il guanto si trova sotto la sedia, il libro si trova sopra la mensola. Dove si trova il bicchiere?",
+          "target": " nel cassetto alto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova nel cassetto alto, la mappa si trova nello zaino, il guanto si trova sotto la sedia, il libro si trova sopra la mensola. Dove si trova la mappa?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova nel cassetto alto, la mappa si trova nello zaino, il guanto si trova sotto la sedia, il libro si trova sopra la mensola. Dove si trova il guanto?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova nel cassetto alto, la mappa si trova nello zaino, il guanto si trova sotto la sedia, il libro si trova sopra la mensola. Dove si trova il libro?",
+          "target": " sopra la mensola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova dietro la tenda, il libro si trova nel mobile bianco, l'anello si trova dentro l'armadio, il fiore si trova dentro il cestino. Dove si trova l'orologio?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova dietro la tenda, il libro si trova nel mobile bianco, l'anello si trova dentro l'armadio, il fiore si trova dentro il cestino. Dove si trova il libro?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova dietro la tenda, il libro si trova nel mobile bianco, l'anello si trova dentro l'armadio, il fiore si trova dentro il cestino. Dove si trova l'anello?",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova dietro la tenda, il libro si trova nel mobile bianco, l'anello si trova dentro l'armadio, il fiore si trova dentro il cestino. Dove si trova il fiore?",
+          "target": " dentro il cestino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la penna si trova nello zaino, il fiore si trova sulla scrivania, il cucchiaio si trova sopra il frigorifero, il cappello si trova sopra la mensola. Dove si trova la penna?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la penna si trova nello zaino, il fiore si trova sulla scrivania, il cucchiaio si trova sopra il frigorifero, il cappello si trova sopra la mensola. Dove si trova il fiore?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: la penna si trova nello zaino, il fiore si trova sulla scrivania, il cucchiaio si trova sopra il frigorifero, il cappello si trova sopra la mensola. Dove si trova il cucchiaio?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: la penna si trova nello zaino, il fiore si trova sulla scrivania, il cucchiaio si trova sopra il frigorifero, il cappello si trova sopra la mensola. Dove si trova il cappello?",
+          "target": " sopra la mensola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova dentro l'armadio, il cucchiaio si trova nello zaino, la mappa si trova sulla scrivania, la candela si trova dietro la tenda. Dove si trova la moneta?",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova dentro l'armadio, il cucchiaio si trova nello zaino, la mappa si trova sulla scrivania, la candela si trova dietro la tenda. Dove si trova il cucchiaio?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova dentro l'armadio, il cucchiaio si trova nello zaino, la mappa si trova sulla scrivania, la candela si trova dietro la tenda. Dove si trova la mappa?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova dentro l'armadio, il cucchiaio si trova nello zaino, la mappa si trova sulla scrivania, la candela si trova dietro la tenda. Dove si trova la candela?",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova nella scatola rossa, la conchiglia si trova nella valigia, la candela si trova accanto alla lampada, la mappa si trova dietro la tenda. Dove si trova il bicchiere?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova nella scatola rossa, la conchiglia si trova nella valigia, la candela si trova accanto alla lampada, la mappa si trova dietro la tenda. Dove si trova la conchiglia?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova nella scatola rossa, la conchiglia si trova nella valigia, la candela si trova accanto alla lampada, la mappa si trova dietro la tenda. Dove si trova la candela?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova nella scatola rossa, la conchiglia si trova nella valigia, la candela si trova accanto alla lampada, la mappa si trova dietro la tenda. Dove si trova la mappa?",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova dietro la porta, la bottiglia si trova vicino al termosifone, la fotografia si trova sul tavolo, la chiave si trova sul ripiano basso. Dove si trova la conchiglia?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova dietro la porta, la bottiglia si trova vicino al termosifone, la fotografia si trova sul tavolo, la chiave si trova sul ripiano basso. Dove si trova la bottiglia?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova dietro la porta, la bottiglia si trova vicino al termosifone, la fotografia si trova sul tavolo, la chiave si trova sul ripiano basso. Dove si trova la fotografia?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova dietro la porta, la bottiglia si trova vicino al termosifone, la fotografia si trova sul tavolo, la chiave si trova sul ripiano basso. Dove si trova la chiave?",
+          "target": " sul ripiano basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il libro si trova accanto alla lampada, il fiore si trova sul ripiano basso, il bicchiere si trova sopra la mensola, la scatola si trova dentro il cestino. Dove si trova il libro?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova accanto alla lampada, il fiore si trova sul ripiano basso, il bicchiere si trova sopra la mensola, la scatola si trova dentro il cestino. Dove si trova il fiore?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova accanto alla lampada, il fiore si trova sul ripiano basso, il bicchiere si trova sopra la mensola, la scatola si trova dentro il cestino. Dove si trova il bicchiere?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova accanto alla lampada, il fiore si trova sul ripiano basso, il bicchiere si trova sopra la mensola, la scatola si trova dentro il cestino. Dove si trova la scatola?",
+          "target": " dentro il cestino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sotto il letto, il fiore si trova vicino al divano, l'orologio si trova nel mobile bianco, la bottiglia si trova dentro l'armadio. Dove si trova il quaderno?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sotto il letto, il fiore si trova vicino al divano, l'orologio si trova nel mobile bianco, la bottiglia si trova dentro l'armadio. Dove si trova il fiore?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sotto il letto, il fiore si trova vicino al divano, l'orologio si trova nel mobile bianco, la bottiglia si trova dentro l'armadio. Dove si trova l'orologio?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sotto il letto, il fiore si trova vicino al divano, l'orologio si trova nel mobile bianco, la bottiglia si trova dentro l'armadio. Dove si trova la bottiglia?",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la penna si trova nella valigia, la fotografia si trova nella scatola rossa, la scatola si trova sul ripiano basso, il libro si trova dietro la porta. Dove si trova la penna?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la penna si trova nella valigia, la fotografia si trova nella scatola rossa, la scatola si trova sul ripiano basso, il libro si trova dietro la porta. Dove si trova la fotografia?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: la penna si trova nella valigia, la fotografia si trova nella scatola rossa, la scatola si trova sul ripiano basso, il libro si trova dietro la porta. Dove si trova la scatola?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: la penna si trova nella valigia, la fotografia si trova nella scatola rossa, la scatola si trova sul ripiano basso, il libro si trova dietro la porta. Dove si trova il libro?",
+          "target": " dietro la porta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sul tavolo, il libro si trova nel cassetto alto, la chiave si trova nella valigia, la fotografia si trova dietro la tenda. Dove si trova la moneta?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sul tavolo, il libro si trova nel cassetto alto, la chiave si trova nella valigia, la fotografia si trova dietro la tenda. Dove si trova il libro?",
+          "target": " nel cassetto alto."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sul tavolo, il libro si trova nel cassetto alto, la chiave si trova nella valigia, la fotografia si trova dietro la tenda. Dove si trova la chiave?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sul tavolo, il libro si trova nel cassetto alto, la chiave si trova nella valigia, la fotografia si trova dietro la tenda. Dove si trova la fotografia?",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova vicino al termosifone, il guanto si trova dietro la tenda, il quaderno si trova accanto alla lampada, il bicchiere si trova dietro la porta. Dove si trova il cucchiaio?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova vicino al termosifone, il guanto si trova dietro la tenda, il quaderno si trova accanto alla lampada, il bicchiere si trova dietro la porta. Dove si trova il guanto?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova vicino al termosifone, il guanto si trova dietro la tenda, il quaderno si trova accanto alla lampada, il bicchiere si trova dietro la porta. Dove si trova il quaderno?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova vicino al termosifone, il guanto si trova dietro la tenda, il quaderno si trova accanto alla lampada, il bicchiere si trova dietro la porta. Dove si trova il bicchiere?",
+          "target": " dietro la porta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova sopra il frigorifero, il quaderno si trova vicino al divano, la penna si trova dietro la tenda, il fiore si trova sul ripiano basso. Dove si trova il biglietto?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova sopra il frigorifero, il quaderno si trova vicino al divano, la penna si trova dietro la tenda, il fiore si trova sul ripiano basso. Dove si trova il quaderno?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova sopra il frigorifero, il quaderno si trova vicino al divano, la penna si trova dietro la tenda, il fiore si trova sul ripiano basso. Dove si trova la penna?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova sopra il frigorifero, il quaderno si trova vicino al divano, la penna si trova dietro la tenda, il fiore si trova sul ripiano basso. Dove si trova il fiore?",
+          "target": " sul ripiano basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova nella valigia, la penna si trova nello zaino, l'orologio si trova dietro la porta, l'anello si trova accanto alla finestra. Dove si trova la chiave?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova nella valigia, la penna si trova nello zaino, l'orologio si trova dietro la porta, l'anello si trova accanto alla finestra. Dove si trova la penna?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova nella valigia, la penna si trova nello zaino, l'orologio si trova dietro la porta, l'anello si trova accanto alla finestra. Dove si trova l'orologio?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova nella valigia, la penna si trova nello zaino, l'orologio si trova dietro la porta, l'anello si trova accanto alla finestra. Dove si trova l'anello?",
+          "target": " accanto alla finestra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova sopra la mensola, la tazza si trova dentro il cestino, il bicchiere si trova nel mobile bianco, il biglietto si trova dietro la porta. Dove si trova il fiore?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova sopra la mensola, la tazza si trova dentro il cestino, il bicchiere si trova nel mobile bianco, il biglietto si trova dietro la porta. Dove si trova la tazza?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova sopra la mensola, la tazza si trova dentro il cestino, il bicchiere si trova nel mobile bianco, il biglietto si trova dietro la porta. Dove si trova il bicchiere?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova sopra la mensola, la tazza si trova dentro il cestino, il bicchiere si trova nel mobile bianco, il biglietto si trova dietro la porta. Dove si trova il biglietto?",
+          "target": " dietro la porta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova sul ripiano basso, il fiore si trova nella scatola rossa, la penna si trova sul tavolo, la chiave si trova dietro la porta. Dove si trova la tazza?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova sul ripiano basso, il fiore si trova nella scatola rossa, la penna si trova sul tavolo, la chiave si trova dietro la porta. Dove si trova il fiore?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova sul ripiano basso, il fiore si trova nella scatola rossa, la penna si trova sul tavolo, la chiave si trova dietro la porta. Dove si trova la penna?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova sul ripiano basso, il fiore si trova nella scatola rossa, la penna si trova sul tavolo, la chiave si trova dietro la porta. Dove si trova la chiave?",
+          "target": " dietro la porta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova sotto il letto, il guanto si trova nel cassetto alto, la scatola si trova sopra la mensola, il quaderno si trova dietro la tenda. Dove si trova il biglietto?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova sotto il letto, il guanto si trova nel cassetto alto, la scatola si trova sopra la mensola, il quaderno si trova dietro la tenda. Dove si trova il guanto?",
+          "target": " nel cassetto alto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova sotto il letto, il guanto si trova nel cassetto alto, la scatola si trova sopra la mensola, il quaderno si trova dietro la tenda. Dove si trova la scatola?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova sotto il letto, il guanto si trova nel cassetto alto, la scatola si trova sopra la mensola, il quaderno si trova dietro la tenda. Dove si trova il quaderno?",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sopra il frigorifero, il cucchiaio si trova sul ripiano basso, la tazza si trova accanto alla lampada, la bottiglia si trova sotto la sedia. Dove si trova l'anello?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sopra il frigorifero, il cucchiaio si trova sul ripiano basso, la tazza si trova accanto alla lampada, la bottiglia si trova sotto la sedia. Dove si trova il cucchiaio?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sopra il frigorifero, il cucchiaio si trova sul ripiano basso, la tazza si trova accanto alla lampada, la bottiglia si trova sotto la sedia. Dove si trova la tazza?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sopra il frigorifero, il cucchiaio si trova sul ripiano basso, la tazza si trova accanto alla lampada, la bottiglia si trova sotto la sedia. Dove si trova la bottiglia?",
+          "target": " sotto la sedia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova nella valigia, il quaderno si trova nel cassetto alto, la chiave si trova vicino al termosifone, il fiore si trova accanto alla lampada. Dove si trova la bottiglia?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova nella valigia, il quaderno si trova nel cassetto alto, la chiave si trova vicino al termosifone, il fiore si trova accanto alla lampada. Dove si trova il quaderno?",
+          "target": " nel cassetto alto."
+        },
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova nella valigia, il quaderno si trova nel cassetto alto, la chiave si trova vicino al termosifone, il fiore si trova accanto alla lampada. Dove si trova la chiave?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova nella valigia, il quaderno si trova nel cassetto alto, la chiave si trova vicino al termosifone, il fiore si trova accanto alla lampada. Dove si trova il fiore?",
+          "target": " accanto alla lampada."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova sul tavolo, la mappa si trova dietro la tenda, il libro si trova dietro la porta, la candela si trova sotto il letto. Dove si trova la chiave?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova sul tavolo, la mappa si trova dietro la tenda, il libro si trova dietro la porta, la candela si trova sotto il letto. Dove si trova la mappa?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova sul tavolo, la mappa si trova dietro la tenda, il libro si trova dietro la porta, la candela si trova sotto il letto. Dove si trova il libro?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova sul tavolo, la mappa si trova dietro la tenda, il libro si trova dietro la porta, la candela si trova sotto il letto. Dove si trova la candela?",
+          "target": " sotto il letto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova sopra il frigorifero, la fotografia si trova vicino al termosifone, la chiave si trova dentro l'armadio, il libro si trova nella valigia. Dove si trova la scatola?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova sopra il frigorifero, la fotografia si trova vicino al termosifone, la chiave si trova dentro l'armadio, il libro si trova nella valigia. Dove si trova la fotografia?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova sopra il frigorifero, la fotografia si trova vicino al termosifone, la chiave si trova dentro l'armadio, il libro si trova nella valigia. Dove si trova la chiave?",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova sopra il frigorifero, la fotografia si trova vicino al termosifone, la chiave si trova dentro l'armadio, il libro si trova nella valigia. Dove si trova il libro?",
+          "target": " nella valigia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sotto il letto, il cappello si trova sotto la sedia, la fotografia si trova sulla scrivania, il cucchiaio si trova nel mobile bianco. Dove si trova il quaderno?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sotto il letto, il cappello si trova sotto la sedia, la fotografia si trova sulla scrivania, il cucchiaio si trova nel mobile bianco. Dove si trova il cappello?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sotto il letto, il cappello si trova sotto la sedia, la fotografia si trova sulla scrivania, il cucchiaio si trova nel mobile bianco. Dove si trova la fotografia?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sotto il letto, il cappello si trova sotto la sedia, la fotografia si trova sulla scrivania, il cucchiaio si trova nel mobile bianco. Dove si trova il cucchiaio?",
+          "target": " nel mobile bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sul tavolo, la moneta si trova sul ripiano basso, la tazza si trova accanto alla finestra, la penna si trova dentro l'armadio. Dove si trova il libro?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sul tavolo, la moneta si trova sul ripiano basso, la tazza si trova accanto alla finestra, la penna si trova dentro l'armadio. Dove si trova la moneta?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sul tavolo, la moneta si trova sul ripiano basso, la tazza si trova accanto alla finestra, la penna si trova dentro l'armadio. Dove si trova la tazza?",
+          "target": " accanto alla finestra."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sul tavolo, la moneta si trova sul ripiano basso, la tazza si trova accanto alla finestra, la penna si trova dentro l'armadio. Dove si trova la penna?",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova vicino al divano, la conchiglia si trova sulla scrivania, il libro si trova sopra la mensola, la fotografia si trova nel mobile bianco. Dove si trova il bicchiere?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova vicino al divano, la conchiglia si trova sulla scrivania, il libro si trova sopra la mensola, la fotografia si trova nel mobile bianco. Dove si trova la conchiglia?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova vicino al divano, la conchiglia si trova sulla scrivania, il libro si trova sopra la mensola, la fotografia si trova nel mobile bianco. Dove si trova il libro?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova vicino al divano, la conchiglia si trova sulla scrivania, il libro si trova sopra la mensola, la fotografia si trova nel mobile bianco. Dove si trova la fotografia?",
+          "target": " nel mobile bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova nello zaino, la mappa si trova sotto la sedia, la moneta si trova dentro il cestino, la bottiglia si trova dietro la tenda. Dove si trova l'orologio?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova nello zaino, la mappa si trova sotto la sedia, la moneta si trova dentro il cestino, la bottiglia si trova dietro la tenda. Dove si trova la mappa?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova nello zaino, la mappa si trova sotto la sedia, la moneta si trova dentro il cestino, la bottiglia si trova dietro la tenda. Dove si trova la moneta?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova nello zaino, la mappa si trova sotto la sedia, la moneta si trova dentro il cestino, la bottiglia si trova dietro la tenda. Dove si trova la bottiglia?",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova dietro la tenda, il bicchiere si trova accanto alla finestra, il cucchiaio si trova nella valigia, la bottiglia si trova vicino al termosifone. Dove si trova il fiore?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova dietro la tenda, il bicchiere si trova accanto alla finestra, il cucchiaio si trova nella valigia, la bottiglia si trova vicino al termosifone. Dove si trova il bicchiere?",
+          "target": " accanto alla finestra."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova dietro la tenda, il bicchiere si trova accanto alla finestra, il cucchiaio si trova nella valigia, la bottiglia si trova vicino al termosifone. Dove si trova il cucchiaio?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova dietro la tenda, il bicchiere si trova accanto alla finestra, il cucchiaio si trova nella valigia, la bottiglia si trova vicino al termosifone. Dove si trova la bottiglia?",
+          "target": " vicino al termosifone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la mappa si trova sul tavolo, il guanto si trova sopra il frigorifero, il cucchiaio si trova dentro il cestino, la chiave si trova nel cassetto alto. Dove si trova la mappa?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: la mappa si trova sul tavolo, il guanto si trova sopra il frigorifero, il cucchiaio si trova dentro il cestino, la chiave si trova nel cassetto alto. Dove si trova il guanto?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: la mappa si trova sul tavolo, il guanto si trova sopra il frigorifero, il cucchiaio si trova dentro il cestino, la chiave si trova nel cassetto alto. Dove si trova il cucchiaio?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la mappa si trova sul tavolo, il guanto si trova sopra il frigorifero, il cucchiaio si trova dentro il cestino, la chiave si trova nel cassetto alto. Dove si trova la chiave?",
+          "target": " nel cassetto alto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il cappello si trova nel mobile bianco, il bicchiere si trova sul ripiano basso, il cucchiaio si trova sopra il frigorifero, la candela si trova nella scatola rossa. Dove si trova il cappello?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cappello si trova nel mobile bianco, il bicchiere si trova sul ripiano basso, il cucchiaio si trova sopra il frigorifero, la candela si trova nella scatola rossa. Dove si trova il bicchiere?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cappello si trova nel mobile bianco, il bicchiere si trova sul ripiano basso, il cucchiaio si trova sopra il frigorifero, la candela si trova nella scatola rossa. Dove si trova il cucchiaio?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cappello si trova nel mobile bianco, il bicchiere si trova sul ripiano basso, il cucchiaio si trova sopra il frigorifero, la candela si trova nella scatola rossa. Dove si trova la candela?",
+          "target": " nella scatola rossa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il libro si trova vicino al divano, il bicchiere si trova vicino al termosifone, il fiore si trova sul ripiano basso, la chiave si trova sotto la sedia. Dove si trova il libro?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova vicino al divano, il bicchiere si trova vicino al termosifone, il fiore si trova sul ripiano basso, la chiave si trova sotto la sedia. Dove si trova il bicchiere?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova vicino al divano, il bicchiere si trova vicino al termosifone, il fiore si trova sul ripiano basso, la chiave si trova sotto la sedia. Dove si trova il fiore?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova vicino al divano, il bicchiere si trova vicino al termosifone, il fiore si trova sul ripiano basso, la chiave si trova sotto la sedia. Dove si trova la chiave?",
+          "target": " sotto la sedia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova nel cassetto alto, la chiave si trova vicino al divano, la bottiglia si trova accanto alla finestra, la conchiglia si trova dietro la porta. Dove si trova il bicchiere?",
+          "target": " nel cassetto alto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova nel cassetto alto, la chiave si trova vicino al divano, la bottiglia si trova accanto alla finestra, la conchiglia si trova dietro la porta. Dove si trova la chiave?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova nel cassetto alto, la chiave si trova vicino al divano, la bottiglia si trova accanto alla finestra, la conchiglia si trova dietro la porta. Dove si trova la bottiglia?",
+          "target": " accanto alla finestra."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova nel cassetto alto, la chiave si trova vicino al divano, la bottiglia si trova accanto alla finestra, la conchiglia si trova dietro la porta. Dove si trova la conchiglia?",
+          "target": " dietro la porta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova dietro la porta, il fiore si trova sopra la mensola, il biglietto si trova vicino al termosifone, il bicchiere si trova sopra il frigorifero. Dove si trova la conchiglia?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova dietro la porta, il fiore si trova sopra la mensola, il biglietto si trova vicino al termosifone, il bicchiere si trova sopra il frigorifero. Dove si trova il fiore?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova dietro la porta, il fiore si trova sopra la mensola, il biglietto si trova vicino al termosifone, il bicchiere si trova sopra il frigorifero. Dove si trova il biglietto?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova dietro la porta, il fiore si trova sopra la mensola, il biglietto si trova vicino al termosifone, il bicchiere si trova sopra il frigorifero. Dove si trova il bicchiere?",
+          "target": " sopra il frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la candela si trova dentro il cestino, il cappello si trova sopra la mensola, il biglietto si trova nello zaino, la fotografia si trova sotto il letto. Dove si trova la candela?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la candela si trova dentro il cestino, il cappello si trova sopra la mensola, il biglietto si trova nello zaino, la fotografia si trova sotto il letto. Dove si trova il cappello?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: la candela si trova dentro il cestino, il cappello si trova sopra la mensola, il biglietto si trova nello zaino, la fotografia si trova sotto il letto. Dove si trova il biglietto?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la candela si trova dentro il cestino, il cappello si trova sopra la mensola, il biglietto si trova nello zaino, la fotografia si trova sotto il letto. Dove si trova la fotografia?",
+          "target": " sotto il letto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova vicino al divano, la fotografia si trova sulla scrivania, il quaderno si trova dietro la porta, la tazza si trova sul ripiano basso. Dove si trova il guanto?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova vicino al divano, la fotografia si trova sulla scrivania, il quaderno si trova dietro la porta, la tazza si trova sul ripiano basso. Dove si trova la fotografia?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova vicino al divano, la fotografia si trova sulla scrivania, il quaderno si trova dietro la porta, la tazza si trova sul ripiano basso. Dove si trova il quaderno?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova vicino al divano, la fotografia si trova sulla scrivania, il quaderno si trova dietro la porta, la tazza si trova sul ripiano basso. Dove si trova la tazza?",
+          "target": " sul ripiano basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sul tavolo, l'anello si trova dentro il cestino, il cappello si trova vicino al divano, il cucchiaio si trova dentro l'armadio. Dove si trova il quaderno?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sul tavolo, l'anello si trova dentro il cestino, il cappello si trova vicino al divano, il cucchiaio si trova dentro l'armadio. Dove si trova l'anello?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sul tavolo, l'anello si trova dentro il cestino, il cappello si trova vicino al divano, il cucchiaio si trova dentro l'armadio. Dove si trova il cappello?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova sul tavolo, l'anello si trova dentro il cestino, il cappello si trova vicino al divano, il cucchiaio si trova dentro l'armadio. Dove si trova il cucchiaio?",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova dentro il cestino, il cappello si trova sopra la mensola, la moneta si trova dietro la tenda, la penna si trova nel cassetto alto. Dove si trova il fiore?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova dentro il cestino, il cappello si trova sopra la mensola, la moneta si trova dietro la tenda, la penna si trova nel cassetto alto. Dove si trova il cappello?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova dentro il cestino, il cappello si trova sopra la mensola, la moneta si trova dietro la tenda, la penna si trova nel cassetto alto. Dove si trova la moneta?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova dentro il cestino, il cappello si trova sopra la mensola, la moneta si trova dietro la tenda, la penna si trova nel cassetto alto. Dove si trova la penna?",
+          "target": " nel cassetto alto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova sopra il frigorifero, il biglietto si trova dentro l'armadio, la conchiglia si trova nello zaino, il cappello si trova sotto il letto. Dove si trova l'orologio?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova sopra il frigorifero, il biglietto si trova dentro l'armadio, la conchiglia si trova nello zaino, il cappello si trova sotto il letto. Dove si trova il biglietto?",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova sopra il frigorifero, il biglietto si trova dentro l'armadio, la conchiglia si trova nello zaino, il cappello si trova sotto il letto. Dove si trova la conchiglia?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova sopra il frigorifero, il biglietto si trova dentro l'armadio, la conchiglia si trova nello zaino, il cappello si trova sotto il letto. Dove si trova il cappello?",
+          "target": " sotto il letto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova dentro l'armadio, la chiave si trova sul ripiano basso, il biglietto si trova accanto alla finestra, la moneta si trova vicino al divano. Dove si trova il cucchiaio?",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova dentro l'armadio, la chiave si trova sul ripiano basso, il biglietto si trova accanto alla finestra, la moneta si trova vicino al divano. Dove si trova la chiave?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova dentro l'armadio, la chiave si trova sul ripiano basso, il biglietto si trova accanto alla finestra, la moneta si trova vicino al divano. Dove si trova il biglietto?",
+          "target": " accanto alla finestra."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova dentro l'armadio, la chiave si trova sul ripiano basso, il biglietto si trova accanto alla finestra, la moneta si trova vicino al divano. Dove si trova la moneta?",
+          "target": " vicino al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sulla scrivania, il cappello si trova dentro l'armadio, la scatola si trova dietro la tenda, la penna si trova sopra il frigorifero. Dove si trova il libro?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sulla scrivania, il cappello si trova dentro l'armadio, la scatola si trova dietro la tenda, la penna si trova sopra il frigorifero. Dove si trova il cappello?",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sulla scrivania, il cappello si trova dentro l'armadio, la scatola si trova dietro la tenda, la penna si trova sopra il frigorifero. Dove si trova la scatola?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sulla scrivania, il cappello si trova dentro l'armadio, la scatola si trova dietro la tenda, la penna si trova sopra il frigorifero. Dove si trova la penna?",
+          "target": " sopra il frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova accanto alla finestra, la bottiglia si trova sopra il frigorifero, il fiore si trova sotto il letto, il bicchiere si trova sopra la mensola. Dove si trova l'anello?",
+          "target": " accanto alla finestra."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova accanto alla finestra, la bottiglia si trova sopra il frigorifero, il fiore si trova sotto il letto, il bicchiere si trova sopra la mensola. Dove si trova la bottiglia?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova accanto alla finestra, la bottiglia si trova sopra il frigorifero, il fiore si trova sotto il letto, il bicchiere si trova sopra la mensola. Dove si trova il fiore?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova accanto alla finestra, la bottiglia si trova sopra il frigorifero, il fiore si trova sotto il letto, il bicchiere si trova sopra la mensola. Dove si trova il bicchiere?",
+          "target": " sopra la mensola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sulla scrivania, il fiore si trova accanto alla finestra, la moneta si trova sopra il frigorifero, la bottiglia si trova nella valigia. Dove si trova l'anello?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sulla scrivania, il fiore si trova accanto alla finestra, la moneta si trova sopra il frigorifero, la bottiglia si trova nella valigia. Dove si trova il fiore?",
+          "target": " accanto alla finestra."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sulla scrivania, il fiore si trova accanto alla finestra, la moneta si trova sopra il frigorifero, la bottiglia si trova nella valigia. Dove si trova la moneta?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sulla scrivania, il fiore si trova accanto alla finestra, la moneta si trova sopra il frigorifero, la bottiglia si trova nella valigia. Dove si trova la bottiglia?",
+          "target": " nella valigia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova accanto alla lampada, l'orologio si trova sopra la mensola, il quaderno si trova sul tavolo, la mappa si trova sulla scrivania. Dove si trova la tazza?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova accanto alla lampada, l'orologio si trova sopra la mensola, il quaderno si trova sul tavolo, la mappa si trova sulla scrivania. Dove si trova l'orologio?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova accanto alla lampada, l'orologio si trova sopra la mensola, il quaderno si trova sul tavolo, la mappa si trova sulla scrivania. Dove si trova il quaderno?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova accanto alla lampada, l'orologio si trova sopra la mensola, il quaderno si trova sul tavolo, la mappa si trova sulla scrivania. Dove si trova la mappa?",
+          "target": " sulla scrivania."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il libro si trova accanto alla finestra, la fotografia si trova sotto la sedia, la bottiglia si trova nella scatola rossa, la scatola si trova nel cassetto alto. Dove si trova il libro?",
+          "target": " accanto alla finestra."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova accanto alla finestra, la fotografia si trova sotto la sedia, la bottiglia si trova nella scatola rossa, la scatola si trova nel cassetto alto. Dove si trova la fotografia?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova accanto alla finestra, la fotografia si trova sotto la sedia, la bottiglia si trova nella scatola rossa, la scatola si trova nel cassetto alto. Dove si trova la bottiglia?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova accanto alla finestra, la fotografia si trova sotto la sedia, la bottiglia si trova nella scatola rossa, la scatola si trova nel cassetto alto. Dove si trova la scatola?",
+          "target": " nel cassetto alto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova vicino al termosifone, il libro si trova accanto alla finestra, la tazza si trova sotto il letto, il biglietto si trova accanto alla lampada. Dove si trova il guanto?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova vicino al termosifone, il libro si trova accanto alla finestra, la tazza si trova sotto il letto, il biglietto si trova accanto alla lampada. Dove si trova il libro?",
+          "target": " accanto alla finestra."
+        },
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova vicino al termosifone, il libro si trova accanto alla finestra, la tazza si trova sotto il letto, il biglietto si trova accanto alla lampada. Dove si trova la tazza?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova vicino al termosifone, il libro si trova accanto alla finestra, la tazza si trova sotto il letto, il biglietto si trova accanto alla lampada. Dove si trova il biglietto?",
+          "target": " accanto alla lampada."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova sopra il frigorifero, il bicchiere si trova dietro la porta, la moneta si trova sopra la mensola, la penna si trova dentro l'armadio. Dove si trova la fotografia?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova sopra il frigorifero, il bicchiere si trova dietro la porta, la moneta si trova sopra la mensola, la penna si trova dentro l'armadio. Dove si trova il bicchiere?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova sopra il frigorifero, il bicchiere si trova dietro la porta, la moneta si trova sopra la mensola, la penna si trova dentro l'armadio. Dove si trova la moneta?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova sopra il frigorifero, il bicchiere si trova dietro la porta, la moneta si trova sopra la mensola, la penna si trova dentro l'armadio. Dove si trova la penna?",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova nel mobile bianco, il fiore si trova sotto la sedia, la fotografia si trova dietro la tenda, la penna si trova dentro l'armadio. Dove si trova la chiave?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova nel mobile bianco, il fiore si trova sotto la sedia, la fotografia si trova dietro la tenda, la penna si trova dentro l'armadio. Dove si trova il fiore?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova nel mobile bianco, il fiore si trova sotto la sedia, la fotografia si trova dietro la tenda, la penna si trova dentro l'armadio. Dove si trova la fotografia?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova nel mobile bianco, il fiore si trova sotto la sedia, la fotografia si trova dietro la tenda, la penna si trova dentro l'armadio. Dove si trova la penna?",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova sopra la mensola, la mappa si trova accanto alla lampada, il biglietto si trova nel mobile bianco, l'orologio si trova dentro il cestino. Dove si trova la tazza?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova sopra la mensola, la mappa si trova accanto alla lampada, il biglietto si trova nel mobile bianco, l'orologio si trova dentro il cestino. Dove si trova la mappa?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova sopra la mensola, la mappa si trova accanto alla lampada, il biglietto si trova nel mobile bianco, l'orologio si trova dentro il cestino. Dove si trova il biglietto?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova sopra la mensola, la mappa si trova accanto alla lampada, il biglietto si trova nel mobile bianco, l'orologio si trova dentro il cestino. Dove si trova l'orologio?",
+          "target": " dentro il cestino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova dentro il cestino, la mappa si trova nel mobile bianco, il guanto si trova sul tavolo, la fotografia si trova sulla scrivania. Dove si trova il cucchiaio?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova dentro il cestino, la mappa si trova nel mobile bianco, il guanto si trova sul tavolo, la fotografia si trova sulla scrivania. Dove si trova la mappa?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova dentro il cestino, la mappa si trova nel mobile bianco, il guanto si trova sul tavolo, la fotografia si trova sulla scrivania. Dove si trova il guanto?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova dentro il cestino, la mappa si trova nel mobile bianco, il guanto si trova sul tavolo, la fotografia si trova sulla scrivania. Dove si trova la fotografia?",
+          "target": " sulla scrivania."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova sotto la sedia, il cappello si trova dietro la tenda, la scatola si trova dietro la porta, il libro si trova sotto il letto. Dove si trova il cucchiaio?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova sotto la sedia, il cappello si trova dietro la tenda, la scatola si trova dietro la porta, il libro si trova sotto il letto. Dove si trova il cappello?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova sotto la sedia, il cappello si trova dietro la tenda, la scatola si trova dietro la porta, il libro si trova sotto il letto. Dove si trova la scatola?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova sotto la sedia, il cappello si trova dietro la tenda, la scatola si trova dietro la porta, il libro si trova sotto il letto. Dove si trova il libro?",
+          "target": " sotto il letto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova nella valigia, il libro si trova sul ripiano basso, il biglietto si trova nel mobile bianco, il fiore si trova sopra il frigorifero. Dove si trova il quaderno?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova nella valigia, il libro si trova sul ripiano basso, il biglietto si trova nel mobile bianco, il fiore si trova sopra il frigorifero. Dove si trova il libro?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova nella valigia, il libro si trova sul ripiano basso, il biglietto si trova nel mobile bianco, il fiore si trova sopra il frigorifero. Dove si trova il biglietto?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova nella valigia, il libro si trova sul ripiano basso, il biglietto si trova nel mobile bianco, il fiore si trova sopra il frigorifero. Dove si trova il fiore?",
+          "target": " sopra il frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova vicino al termosifone, il biglietto si trova sotto il letto, l'anello si trova accanto alla lampada, la moneta si trova nella scatola rossa. Dove si trova il quaderno?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova vicino al termosifone, il biglietto si trova sotto il letto, l'anello si trova accanto alla lampada, la moneta si trova nella scatola rossa. Dove si trova il biglietto?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova vicino al termosifone, il biglietto si trova sotto il letto, l'anello si trova accanto alla lampada, la moneta si trova nella scatola rossa. Dove si trova l'anello?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova vicino al termosifone, il biglietto si trova sotto il letto, l'anello si trova accanto alla lampada, la moneta si trova nella scatola rossa. Dove si trova la moneta?",
+          "target": " nella scatola rossa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova accanto alla lampada, l'anello si trova dietro la porta, il biglietto si trova dentro il cestino, la fotografia si trova sopra il frigorifero. Dove si trova la bottiglia?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova accanto alla lampada, l'anello si trova dietro la porta, il biglietto si trova dentro il cestino, la fotografia si trova sopra il frigorifero. Dove si trova l'anello?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova accanto alla lampada, l'anello si trova dietro la porta, il biglietto si trova dentro il cestino, la fotografia si trova sopra il frigorifero. Dove si trova il biglietto?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova accanto alla lampada, l'anello si trova dietro la porta, il biglietto si trova dentro il cestino, la fotografia si trova sopra il frigorifero. Dove si trova la fotografia?",
+          "target": " sopra il frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sopra la mensola, l'anello si trova nel mobile bianco, il cappello si trova sotto la sedia, la scatola si trova nella scatola rossa. Dove si trova la moneta?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sopra la mensola, l'anello si trova nel mobile bianco, il cappello si trova sotto la sedia, la scatola si trova nella scatola rossa. Dove si trova l'anello?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sopra la mensola, l'anello si trova nel mobile bianco, il cappello si trova sotto la sedia, la scatola si trova nella scatola rossa. Dove si trova il cappello?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sopra la mensola, l'anello si trova nel mobile bianco, il cappello si trova sotto la sedia, la scatola si trova nella scatola rossa. Dove si trova la scatola?",
+          "target": " nella scatola rossa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova sopra il frigorifero, l'orologio si trova sotto la sedia, la moneta si trova nel mobile bianco, il libro si trova sopra la mensola. Dove si trova la scatola?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova sopra il frigorifero, l'orologio si trova sotto la sedia, la moneta si trova nel mobile bianco, il libro si trova sopra la mensola. Dove si trova l'orologio?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova sopra il frigorifero, l'orologio si trova sotto la sedia, la moneta si trova nel mobile bianco, il libro si trova sopra la mensola. Dove si trova la moneta?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova sopra il frigorifero, l'orologio si trova sotto la sedia, la moneta si trova nel mobile bianco, il libro si trova sopra la mensola. Dove si trova il libro?",
+          "target": " sopra la mensola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova nel mobile bianco, l'anello si trova nella valigia, il cappello si trova vicino al termosifone, il quaderno si trova sotto il letto. Dove si trova il cucchiaio?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova nel mobile bianco, l'anello si trova nella valigia, il cappello si trova vicino al termosifone, il quaderno si trova sotto il letto. Dove si trova l'anello?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova nel mobile bianco, l'anello si trova nella valigia, il cappello si trova vicino al termosifone, il quaderno si trova sotto il letto. Dove si trova il cappello?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova nel mobile bianco, l'anello si trova nella valigia, il cappello si trova vicino al termosifone, il quaderno si trova sotto il letto. Dove si trova il quaderno?",
+          "target": " sotto il letto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova nella scatola rossa, il cucchiaio si trova sul ripiano basso, il libro si trova nel cassetto alto, il guanto si trova vicino al divano. Dove si trova il biglietto?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova nella scatola rossa, il cucchiaio si trova sul ripiano basso, il libro si trova nel cassetto alto, il guanto si trova vicino al divano. Dove si trova il cucchiaio?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova nella scatola rossa, il cucchiaio si trova sul ripiano basso, il libro si trova nel cassetto alto, il guanto si trova vicino al divano. Dove si trova il libro?",
+          "target": " nel cassetto alto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova nella scatola rossa, il cucchiaio si trova sul ripiano basso, il libro si trova nel cassetto alto, il guanto si trova vicino al divano. Dove si trova il guanto?",
+          "target": " vicino al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il libro si trova accanto alla finestra, la chiave si trova nella scatola rossa, la moneta si trova sotto la sedia, la fotografia si trova dietro la porta. Dove si trova il libro?",
+          "target": " accanto alla finestra."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova accanto alla finestra, la chiave si trova nella scatola rossa, la moneta si trova sotto la sedia, la fotografia si trova dietro la porta. Dove si trova la chiave?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova accanto alla finestra, la chiave si trova nella scatola rossa, la moneta si trova sotto la sedia, la fotografia si trova dietro la porta. Dove si trova la moneta?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova accanto alla finestra, la chiave si trova nella scatola rossa, la moneta si trova sotto la sedia, la fotografia si trova dietro la porta. Dove si trova la fotografia?",
+          "target": " dietro la porta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova dentro il cestino, la penna si trova vicino al divano, il quaderno si trova sopra la mensola, la tazza si trova nello zaino. Dove si trova il guanto?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova dentro il cestino, la penna si trova vicino al divano, il quaderno si trova sopra la mensola, la tazza si trova nello zaino. Dove si trova la penna?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova dentro il cestino, la penna si trova vicino al divano, il quaderno si trova sopra la mensola, la tazza si trova nello zaino. Dove si trova il quaderno?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova dentro il cestino, la penna si trova vicino al divano, il quaderno si trova sopra la mensola, la tazza si trova nello zaino. Dove si trova la tazza?",
+          "target": " nello zaino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova vicino al termosifone, la penna si trova sotto il letto, la moneta si trova dietro la tenda, l'orologio si trova accanto alla finestra. Dove si trova la bottiglia?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova vicino al termosifone, la penna si trova sotto il letto, la moneta si trova dietro la tenda, l'orologio si trova accanto alla finestra. Dove si trova la penna?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova vicino al termosifone, la penna si trova sotto il letto, la moneta si trova dietro la tenda, l'orologio si trova accanto alla finestra. Dove si trova la moneta?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova vicino al termosifone, la penna si trova sotto il letto, la moneta si trova dietro la tenda, l'orologio si trova accanto alla finestra. Dove si trova l'orologio?",
+          "target": " accanto alla finestra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova dietro la tenda, la fotografia si trova nello zaino, la penna si trova nel cassetto alto, la bottiglia si trova vicino al divano. Dove si trova la scatola?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova dietro la tenda, la fotografia si trova nello zaino, la penna si trova nel cassetto alto, la bottiglia si trova vicino al divano. Dove si trova la fotografia?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova dietro la tenda, la fotografia si trova nello zaino, la penna si trova nel cassetto alto, la bottiglia si trova vicino al divano. Dove si trova la penna?",
+          "target": " nel cassetto alto."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova dietro la tenda, la fotografia si trova nello zaino, la penna si trova nel cassetto alto, la bottiglia si trova vicino al divano. Dove si trova la bottiglia?",
+          "target": " vicino al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova nella scatola rossa, il libro si trova sopra il frigorifero, la mappa si trova accanto alla lampada, il cappello si trova nello zaino. Dove si trova la conchiglia?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova nella scatola rossa, il libro si trova sopra il frigorifero, la mappa si trova accanto alla lampada, il cappello si trova nello zaino. Dove si trova il libro?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova nella scatola rossa, il libro si trova sopra il frigorifero, la mappa si trova accanto alla lampada, il cappello si trova nello zaino. Dove si trova la mappa?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova nella scatola rossa, il libro si trova sopra il frigorifero, la mappa si trova accanto alla lampada, il cappello si trova nello zaino. Dove si trova il cappello?",
+          "target": " nello zaino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova sopra la mensola, la tazza si trova dentro l'armadio, il bicchiere si trova dentro il cestino, il biglietto si trova accanto alla lampada. Dove si trova la conchiglia?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova sopra la mensola, la tazza si trova dentro l'armadio, il bicchiere si trova dentro il cestino, il biglietto si trova accanto alla lampada. Dove si trova la tazza?",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova sopra la mensola, la tazza si trova dentro l'armadio, il bicchiere si trova dentro il cestino, il biglietto si trova accanto alla lampada. Dove si trova il bicchiere?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la conchiglia si trova sopra la mensola, la tazza si trova dentro l'armadio, il bicchiere si trova dentro il cestino, il biglietto si trova accanto alla lampada. Dove si trova il biglietto?",
+          "target": " accanto alla lampada."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova dietro la porta, la scatola si trova sul tavolo, il cucchiaio si trova dentro il cestino, il cappello si trova nel mobile bianco. Dove si trova il biglietto?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova dietro la porta, la scatola si trova sul tavolo, il cucchiaio si trova dentro il cestino, il cappello si trova nel mobile bianco. Dove si trova la scatola?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova dietro la porta, la scatola si trova sul tavolo, il cucchiaio si trova dentro il cestino, il cappello si trova nel mobile bianco. Dove si trova il cucchiaio?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova dietro la porta, la scatola si trova sul tavolo, il cucchiaio si trova dentro il cestino, il cappello si trova nel mobile bianco. Dove si trova il cappello?",
+          "target": " nel mobile bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova nella scatola rossa, la scatola si trova accanto alla lampada, l'anello si trova nella valigia, il cappello si trova sopra la mensola. Dove si trova la tazza?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova nella scatola rossa, la scatola si trova accanto alla lampada, l'anello si trova nella valigia, il cappello si trova sopra la mensola. Dove si trova la scatola?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova nella scatola rossa, la scatola si trova accanto alla lampada, l'anello si trova nella valigia, il cappello si trova sopra la mensola. Dove si trova l'anello?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova nella scatola rossa, la scatola si trova accanto alla lampada, l'anello si trova nella valigia, il cappello si trova sopra la mensola. Dove si trova il cappello?",
+          "target": " sopra la mensola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova dentro il cestino, la conchiglia si trova dietro la tenda, il cucchiaio si trova sul ripiano basso, il cappello si trova nella scatola rossa. Dove si trova il quaderno?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova dentro il cestino, la conchiglia si trova dietro la tenda, il cucchiaio si trova sul ripiano basso, il cappello si trova nella scatola rossa. Dove si trova la conchiglia?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova dentro il cestino, la conchiglia si trova dietro la tenda, il cucchiaio si trova sul ripiano basso, il cappello si trova nella scatola rossa. Dove si trova il cucchiaio?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova dentro il cestino, la conchiglia si trova dietro la tenda, il cucchiaio si trova sul ripiano basso, il cappello si trova nella scatola rossa. Dove si trova il cappello?",
+          "target": " nella scatola rossa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sul ripiano basso, la fotografia si trova dietro la porta, il biglietto si trova accanto alla lampada, il guanto si trova dietro la tenda. Dove si trova il libro?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sul ripiano basso, la fotografia si trova dietro la porta, il biglietto si trova accanto alla lampada, il guanto si trova dietro la tenda. Dove si trova la fotografia?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sul ripiano basso, la fotografia si trova dietro la porta, il biglietto si trova accanto alla lampada, il guanto si trova dietro la tenda. Dove si trova il biglietto?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sul ripiano basso, la fotografia si trova dietro la porta, il biglietto si trova accanto alla lampada, il guanto si trova dietro la tenda. Dove si trova il guanto?",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sotto il letto, il libro si trova dietro la porta, la bottiglia si trova sulla scrivania, la fotografia si trova vicino al divano. Dove si trova la moneta?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sotto il letto, il libro si trova dietro la porta, la bottiglia si trova sulla scrivania, la fotografia si trova vicino al divano. Dove si trova il libro?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sotto il letto, il libro si trova dietro la porta, la bottiglia si trova sulla scrivania, la fotografia si trova vicino al divano. Dove si trova la bottiglia?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: la moneta si trova sotto il letto, il libro si trova dietro la porta, la bottiglia si trova sulla scrivania, la fotografia si trova vicino al divano. Dove si trova la fotografia?",
+          "target": " vicino al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova sul ripiano basso, la mappa si trova nella valigia, la conchiglia si trova vicino al divano, il biglietto si trova nel mobile bianco. Dove si trova il fiore?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova sul ripiano basso, la mappa si trova nella valigia, la conchiglia si trova vicino al divano, il biglietto si trova nel mobile bianco. Dove si trova la mappa?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova sul ripiano basso, la mappa si trova nella valigia, la conchiglia si trova vicino al divano, il biglietto si trova nel mobile bianco. Dove si trova la conchiglia?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova sul ripiano basso, la mappa si trova nella valigia, la conchiglia si trova vicino al divano, il biglietto si trova nel mobile bianco. Dove si trova il biglietto?",
+          "target": " nel mobile bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova accanto alla finestra, il cucchiaio si trova nella valigia, la fotografia si trova nello zaino, la penna si trova sopra la mensola. Dove si trova la bottiglia?",
+          "target": " accanto alla finestra."
+        },
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova accanto alla finestra, il cucchiaio si trova nella valigia, la fotografia si trova nello zaino, la penna si trova sopra la mensola. Dove si trova il cucchiaio?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova accanto alla finestra, il cucchiaio si trova nella valigia, la fotografia si trova nello zaino, la penna si trova sopra la mensola. Dove si trova la fotografia?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la bottiglia si trova accanto alla finestra, il cucchiaio si trova nella valigia, la fotografia si trova nello zaino, la penna si trova sopra la mensola. Dove si trova la penna?",
+          "target": " sopra la mensola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova dietro la tenda, il guanto si trova sulla scrivania, il cucchiaio si trova nello zaino, la mappa si trova accanto alla finestra. Dove si trova il quaderno?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova dietro la tenda, il guanto si trova sulla scrivania, il cucchiaio si trova nello zaino, la mappa si trova accanto alla finestra. Dove si trova il guanto?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova dietro la tenda, il guanto si trova sulla scrivania, il cucchiaio si trova nello zaino, la mappa si trova accanto alla finestra. Dove si trova il cucchiaio?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: il quaderno si trova dietro la tenda, il guanto si trova sulla scrivania, il cucchiaio si trova nello zaino, la mappa si trova accanto alla finestra. Dove si trova la mappa?",
+          "target": " accanto alla finestra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova nella scatola rossa, la conchiglia si trova sul ripiano basso, la candela si trova sotto la sedia, la bottiglia si trova dentro il cestino. Dove si trova la fotografia?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova nella scatola rossa, la conchiglia si trova sul ripiano basso, la candela si trova sotto la sedia, la bottiglia si trova dentro il cestino. Dove si trova la conchiglia?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova nella scatola rossa, la conchiglia si trova sul ripiano basso, la candela si trova sotto la sedia, la bottiglia si trova dentro il cestino. Dove si trova la candela?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova nella scatola rossa, la conchiglia si trova sul ripiano basso, la candela si trova sotto la sedia, la bottiglia si trova dentro il cestino. Dove si trova la bottiglia?",
+          "target": " dentro il cestino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova accanto alla lampada, il fiore si trova nello zaino, la bottiglia si trova nella scatola rossa, il bicchiere si trova sulla scrivania. Dove si trova la chiave?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova accanto alla lampada, il fiore si trova nello zaino, la bottiglia si trova nella scatola rossa, il bicchiere si trova sulla scrivania. Dove si trova il fiore?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova accanto alla lampada, il fiore si trova nello zaino, la bottiglia si trova nella scatola rossa, il bicchiere si trova sulla scrivania. Dove si trova la bottiglia?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova accanto alla lampada, il fiore si trova nello zaino, la bottiglia si trova nella scatola rossa, il bicchiere si trova sulla scrivania. Dove si trova il bicchiere?",
+          "target": " sulla scrivania."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova nel cassetto alto, la tazza si trova dentro il cestino, il cappello si trova accanto alla lampada, la candela si trova nello zaino. Dove si trova il guanto?",
+          "target": " nel cassetto alto."
+        },
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova nel cassetto alto, la tazza si trova dentro il cestino, il cappello si trova accanto alla lampada, la candela si trova nello zaino. Dove si trova la tazza?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova nel cassetto alto, la tazza si trova dentro il cestino, il cappello si trova accanto alla lampada, la candela si trova nello zaino. Dove si trova il cappello?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: il guanto si trova nel cassetto alto, la tazza si trova dentro il cestino, il cappello si trova accanto alla lampada, la candela si trova nello zaino. Dove si trova la candela?",
+          "target": " nello zaino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sotto la sedia, il guanto si trova dietro la tenda, il libro si trova sulla scrivania, la chiave si trova sul tavolo. Dove si trova l'anello?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sotto la sedia, il guanto si trova dietro la tenda, il libro si trova sulla scrivania, la chiave si trova sul tavolo. Dove si trova il guanto?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sotto la sedia, il guanto si trova dietro la tenda, il libro si trova sulla scrivania, la chiave si trova sul tavolo. Dove si trova il libro?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'anello si trova sotto la sedia, il guanto si trova dietro la tenda, il libro si trova sulla scrivania, la chiave si trova sul tavolo. Dove si trova la chiave?",
+          "target": " sul tavolo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la penna si trova dentro l'armadio, il fiore si trova sotto il letto, il biglietto si trova nel mobile bianco, la fotografia si trova sul ripiano basso. Dove si trova la penna?",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Memorizza queste posizioni: la penna si trova dentro l'armadio, il fiore si trova sotto il letto, il biglietto si trova nel mobile bianco, la fotografia si trova sul ripiano basso. Dove si trova il fiore?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: la penna si trova dentro l'armadio, il fiore si trova sotto il letto, il biglietto si trova nel mobile bianco, la fotografia si trova sul ripiano basso. Dove si trova il biglietto?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: la penna si trova dentro l'armadio, il fiore si trova sotto il letto, il biglietto si trova nel mobile bianco, la fotografia si trova sul ripiano basso. Dove si trova la fotografia?",
+          "target": " sul ripiano basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova dietro la tenda, il biglietto si trova nello zaino, la bottiglia si trova accanto alla finestra, la chiave si trova sul ripiano basso. Dove si trova la scatola?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova dietro la tenda, il biglietto si trova nello zaino, la bottiglia si trova accanto alla finestra, la chiave si trova sul ripiano basso. Dove si trova il biglietto?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova dietro la tenda, il biglietto si trova nello zaino, la bottiglia si trova accanto alla finestra, la chiave si trova sul ripiano basso. Dove si trova la bottiglia?",
+          "target": " accanto alla finestra."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova dietro la tenda, il biglietto si trova nello zaino, la bottiglia si trova accanto alla finestra, la chiave si trova sul ripiano basso. Dove si trova la chiave?",
+          "target": " sul ripiano basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sul ripiano basso, la candela si trova sul tavolo, la fotografia si trova sopra la mensola, la scatola si trova nella scatola rossa. Dove si trova il libro?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sul ripiano basso, la candela si trova sul tavolo, la fotografia si trova sopra la mensola, la scatola si trova nella scatola rossa. Dove si trova la candela?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sul ripiano basso, la candela si trova sul tavolo, la fotografia si trova sopra la mensola, la scatola si trova nella scatola rossa. Dove si trova la fotografia?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: il libro si trova sul ripiano basso, la candela si trova sul tavolo, la fotografia si trova sopra la mensola, la scatola si trova nella scatola rossa. Dove si trova la scatola?",
+          "target": " nella scatola rossa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova dietro la porta, il guanto si trova sulla scrivania, la bottiglia si trova vicino al termosifone, la chiave si trova nel mobile bianco. Dove si trova la tazza?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova dietro la porta, il guanto si trova sulla scrivania, la bottiglia si trova vicino al termosifone, la chiave si trova nel mobile bianco. Dove si trova il guanto?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova dietro la porta, il guanto si trova sulla scrivania, la bottiglia si trova vicino al termosifone, la chiave si trova nel mobile bianco. Dove si trova la bottiglia?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova dietro la porta, il guanto si trova sulla scrivania, la bottiglia si trova vicino al termosifone, la chiave si trova nel mobile bianco. Dove si trova la chiave?",
+          "target": " nel mobile bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova nello zaino, il cucchiaio si trova sul ripiano basso, il quaderno si trova dietro la porta, il biglietto si trova sotto la sedia. Dove si trova la fotografia?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova nello zaino, il cucchiaio si trova sul ripiano basso, il quaderno si trova dietro la porta, il biglietto si trova sotto la sedia. Dove si trova il cucchiaio?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova nello zaino, il cucchiaio si trova sul ripiano basso, il quaderno si trova dietro la porta, il biglietto si trova sotto la sedia. Dove si trova il quaderno?",
+          "target": " dietro la porta."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova nello zaino, il cucchiaio si trova sul ripiano basso, il quaderno si trova dietro la porta, il biglietto si trova sotto la sedia. Dove si trova il biglietto?",
+          "target": " sotto la sedia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova sulla scrivania, il libro si trova vicino al termosifone, la chiave si trova dietro la tenda, la candela si trova nel mobile bianco. Dove si trova il bicchiere?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova sulla scrivania, il libro si trova vicino al termosifone, la chiave si trova dietro la tenda, la candela si trova nel mobile bianco. Dove si trova il libro?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova sulla scrivania, il libro si trova vicino al termosifone, la chiave si trova dietro la tenda, la candela si trova nel mobile bianco. Dove si trova la chiave?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: il bicchiere si trova sulla scrivania, il libro si trova vicino al termosifone, la chiave si trova dietro la tenda, la candela si trova nel mobile bianco. Dove si trova la candela?",
+          "target": " nel mobile bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova dentro l'armadio, la bottiglia si trova sul ripiano basso, l'anello si trova accanto alla lampada, il cucchiaio si trova nel mobile bianco. Dove si trova la tazza?",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova dentro l'armadio, la bottiglia si trova sul ripiano basso, l'anello si trova accanto alla lampada, il cucchiaio si trova nel mobile bianco. Dove si trova la bottiglia?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova dentro l'armadio, la bottiglia si trova sul ripiano basso, l'anello si trova accanto alla lampada, il cucchiaio si trova nel mobile bianco. Dove si trova l'anello?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova dentro l'armadio, la bottiglia si trova sul ripiano basso, l'anello si trova accanto alla lampada, il cucchiaio si trova nel mobile bianco. Dove si trova il cucchiaio?",
+          "target": " nel mobile bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova dietro la tenda, la chiave si trova dentro il cestino, il biglietto si trova nella scatola rossa, il cappello si trova sul tavolo. Dove si trova l'orologio?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova dietro la tenda, la chiave si trova dentro il cestino, il biglietto si trova nella scatola rossa, il cappello si trova sul tavolo. Dove si trova la chiave?",
+          "target": " dentro il cestino."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova dietro la tenda, la chiave si trova dentro il cestino, il biglietto si trova nella scatola rossa, il cappello si trova sul tavolo. Dove si trova il biglietto?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova dietro la tenda, la chiave si trova dentro il cestino, il biglietto si trova nella scatola rossa, il cappello si trova sul tavolo. Dove si trova il cappello?",
+          "target": " sul tavolo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova vicino al termosifone, l'orologio si trova nel cassetto alto, la moneta si trova sopra la mensola, il cucchiaio si trova accanto alla lampada. Dove si trova la scatola?",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova vicino al termosifone, l'orologio si trova nel cassetto alto, la moneta si trova sopra la mensola, il cucchiaio si trova accanto alla lampada. Dove si trova l'orologio?",
+          "target": " nel cassetto alto."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova vicino al termosifone, l'orologio si trova nel cassetto alto, la moneta si trova sopra la mensola, il cucchiaio si trova accanto alla lampada. Dove si trova la moneta?",
+          "target": " sopra la mensola."
+        },
+        {
+          "context": "Memorizza queste posizioni: la scatola si trova vicino al termosifone, l'orologio si trova nel cassetto alto, la moneta si trova sopra la mensola, il cucchiaio si trova accanto alla lampada. Dove si trova il cucchiaio?",
+          "target": " accanto alla lampada."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova sul tavolo, la candela si trova accanto alla lampada, il biglietto si trova vicino al divano, il guanto si trova sopra il frigorifero. Dove si trova il cucchiaio?",
+          "target": " sul tavolo."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova sul tavolo, la candela si trova accanto alla lampada, il biglietto si trova vicino al divano, il guanto si trova sopra il frigorifero. Dove si trova la candela?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova sul tavolo, la candela si trova accanto alla lampada, il biglietto si trova vicino al divano, il guanto si trova sopra il frigorifero. Dove si trova il biglietto?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cucchiaio si trova sul tavolo, la candela si trova accanto alla lampada, il biglietto si trova vicino al divano, il guanto si trova sopra il frigorifero. Dove si trova il guanto?",
+          "target": " sopra il frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il cappello si trova sopra il frigorifero, la penna si trova accanto alla lampada, la candela si trova sulla scrivania, l'orologio si trova sotto il letto. Dove si trova il cappello?",
+          "target": " sopra il frigorifero."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cappello si trova sopra il frigorifero, la penna si trova accanto alla lampada, la candela si trova sulla scrivania, l'orologio si trova sotto il letto. Dove si trova la penna?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cappello si trova sopra il frigorifero, la penna si trova accanto alla lampada, la candela si trova sulla scrivania, l'orologio si trova sotto il letto. Dove si trova la candela?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: il cappello si trova sopra il frigorifero, la penna si trova accanto alla lampada, la candela si trova sulla scrivania, l'orologio si trova sotto il letto. Dove si trova l'orologio?",
+          "target": " sotto il letto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova nella valigia, il libro si trova nello zaino, il cappello si trova sotto il letto, il cucchiaio si trova dentro l'armadio. Dove si trova la tazza?",
+          "target": " nella valigia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova nella valigia, il libro si trova nello zaino, il cappello si trova sotto il letto, il cucchiaio si trova dentro l'armadio. Dove si trova il libro?",
+          "target": " nello zaino."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova nella valigia, il libro si trova nello zaino, il cappello si trova sotto il letto, il cucchiaio si trova dentro l'armadio. Dove si trova il cappello?",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Memorizza queste posizioni: la tazza si trova nella valigia, il libro si trova nello zaino, il cappello si trova sotto il letto, il cucchiaio si trova dentro l'armadio. Dove si trova il cucchiaio?",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova accanto alla finestra, la tazza si trova dentro l'armadio, il biglietto si trova vicino al divano, la chiave si trova accanto alla lampada. Dove si trova il fiore?",
+          "target": " accanto alla finestra."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova accanto alla finestra, la tazza si trova dentro l'armadio, il biglietto si trova vicino al divano, la chiave si trova accanto alla lampada. Dove si trova la tazza?",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova accanto alla finestra, la tazza si trova dentro l'armadio, il biglietto si trova vicino al divano, la chiave si trova accanto alla lampada. Dove si trova il biglietto?",
+          "target": " vicino al divano."
+        },
+        {
+          "context": "Memorizza queste posizioni: il fiore si trova accanto alla finestra, la tazza si trova dentro l'armadio, il biglietto si trova vicino al divano, la chiave si trova accanto alla lampada. Dove si trova la chiave?",
+          "target": " accanto alla lampada."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova sulla scrivania, il quaderno si trova nel mobile bianco, il cucchiaio si trova accanto alla lampada, il bicchiere si trova nello zaino. Dove si trova la chiave?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova sulla scrivania, il quaderno si trova nel mobile bianco, il cucchiaio si trova accanto alla lampada, il bicchiere si trova nello zaino. Dove si trova il quaderno?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova sulla scrivania, il quaderno si trova nel mobile bianco, il cucchiaio si trova accanto alla lampada, il bicchiere si trova nello zaino. Dove si trova il cucchiaio?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: la chiave si trova sulla scrivania, il quaderno si trova nel mobile bianco, il cucchiaio si trova accanto alla lampada, il bicchiere si trova nello zaino. Dove si trova il bicchiere?",
+          "target": " nello zaino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova sul ripiano basso, la fotografia si trova nella scatola rossa, la candela si trova dietro la tenda, la bottiglia si trova sopra il frigorifero. Dove si trova l'orologio?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova sul ripiano basso, la fotografia si trova nella scatola rossa, la candela si trova dietro la tenda, la bottiglia si trova sopra il frigorifero. Dove si trova la fotografia?",
+          "target": " nella scatola rossa."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova sul ripiano basso, la fotografia si trova nella scatola rossa, la candela si trova dietro la tenda, la bottiglia si trova sopra il frigorifero. Dove si trova la candela?",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Memorizza queste posizioni: l'orologio si trova sul ripiano basso, la fotografia si trova nella scatola rossa, la candela si trova dietro la tenda, la bottiglia si trova sopra il frigorifero. Dove si trova la bottiglia?",
+          "target": " sopra il frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova sotto la sedia, la penna si trova accanto alla lampada, la tazza si trova sulla scrivania, la scatola si trova dentro l'armadio. Dove si trova la fotografia?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova sotto la sedia, la penna si trova accanto alla lampada, la tazza si trova sulla scrivania, la scatola si trova dentro l'armadio. Dove si trova la penna?",
+          "target": " accanto alla lampada."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova sotto la sedia, la penna si trova accanto alla lampada, la tazza si trova sulla scrivania, la scatola si trova dentro l'armadio. Dove si trova la tazza?",
+          "target": " sulla scrivania."
+        },
+        {
+          "context": "Memorizza queste posizioni: la fotografia si trova sotto la sedia, la penna si trova accanto alla lampada, la tazza si trova sulla scrivania, la scatola si trova dentro l'armadio. Dove si trova la scatola?",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova nel mobile bianco, il guanto si trova sul ripiano basso, la scatola si trova sotto la sedia, la fotografia si trova sotto il letto. Dove si trova il biglietto?",
+          "target": " nel mobile bianco."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova nel mobile bianco, il guanto si trova sul ripiano basso, la scatola si trova sotto la sedia, la fotografia si trova sotto il letto. Dove si trova il guanto?",
+          "target": " sul ripiano basso."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova nel mobile bianco, il guanto si trova sul ripiano basso, la scatola si trova sotto la sedia, la fotografia si trova sotto il letto. Dove si trova la scatola?",
+          "target": " sotto la sedia."
+        },
+        {
+          "context": "Memorizza queste posizioni: il biglietto si trova nel mobile bianco, il guanto si trova sul ripiano basso, la scatola si trova sotto la sedia, la fotografia si trova sotto il letto. Dove si trova la fotografia?",
+          "target": " sotto il letto."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

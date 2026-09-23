@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "id": "icl_object_location_bindings",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "objects": [
+      "la moneta", "la chiave", "il libro", "la penna", "il bicchiere",
+      "la candela", "il quaderno", "la fotografia", "il cucchiaio", "la bottiglia",
+      "il cappello", "la conchiglia", "l'anello", "il biglietto", "la tazza",
+      "il guanto", "la mappa", "il fiore", "la scatola", "l'orologio"
+    ],
+    "locations": [
+      "nella scatola rossa", "nel cassetto alto", "sul tavolo", "nello zaino",
+      "sotto la sedia", "sopra la mensola", "accanto alla finestra", "dietro la porta",
+      "dentro il cestino", "sulla scrivania", "nella valigia", "vicino al divano",
+      "sotto il letto", "sopra il frigorifero", "nel mobile bianco", "accanto alla lampada",
+      "dentro l'armadio", "sul ripiano basso", "vicino al termosifone", "dietro la tenda"
+    ]
+  },
+
+  "variables": {
+    "objects": {
+      "type": "sample",
+      "source": "objects",
+      "count": 4
+    },
+    "locations": {
+      "type": "sample",
+      "source": "locations",
+      "count": 4
+    },
+    "query_index": {
+      "type": "constant",
+      "value": 0
+    }
+  },
+
+  "derived": {
+    "bindings": {
+      "op": "pair_strings",
+      "args": ["$objects", " si trova ", "$locations"]
+    },
+    "query_object": {
+      "op": "item_at",
+      "args": ["$objects", "$query_index"]
+    },
+    "answer": {
+      "op": "item_at",
+      "args": ["$locations", "$query_index"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$query_object", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Memorizza queste posizioni: {bindings|comma_list}. Dove si trova {query_object}?",
+      "target": " {answer}."
+    }
+  ]
+}

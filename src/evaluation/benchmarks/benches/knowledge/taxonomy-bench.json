@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "entity_taxonomy",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la banana fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la cozza fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, il serpente fa parte",
+          "target": " dei rettili."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, l'elefante fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, la lattuga fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, l'ape fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, l'aragosta fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, il rospo fa parte",
+          "target": " degli anfibi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, l'aquila fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, la rana fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, la lattuga fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il gambero fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, l'elefante fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, lo scorpione fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il tonno fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, lo scorpione fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la ciliegia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, l'aragosta fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il gambero fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il sedano fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la lattuga fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la rana fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il gatto fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il gufo fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la carota fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, il rospo fa parte",
+          "target": " degli anfibi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il cane fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, l'aragosta fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la rana fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la lattuga fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, il rospo fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il sedano fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la banana fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il cane fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la carota fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, la ciliegia fa parte",
+          "target": " dei frutti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il gufo fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, la balena fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il rospo fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, la lattuga fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la banana fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, l'aquila fa parte",
+          "target": " degli uccelli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, l'ape fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, la cozza fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il rospo fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, l'ape fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, il tonno fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la balena fa parte",
+          "target": " dei mammiferi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, l'elefante fa parte",
+          "target": " dei mammiferi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il sedano fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, lo scorpione fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, il tonno fa parte",
+          "target": " dei pesci."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il tonno fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la carota fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, l'aragosta fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, l'ape fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, la rana fa parte",
+          "target": " degli anfibi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la balena fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il pinguino fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, la cozza fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, la rana fa parte",
+          "target": " degli anfibi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la cozza fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, il gatto fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, l'elefante fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, l'aragosta fa parte",
+          "target": " dei crostacei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il gambero fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, l'elefante fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il granchio fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, il cane fa parte",
+          "target": " dei mammiferi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, l'aquila fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, il granchio fa parte",
+          "target": " dei crostacei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il cane fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, l'elefante fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il gufo fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, la cozza fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, il granchio fa parte",
+          "target": " dei crostacei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la carota fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, il gambero fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, il rospo fa parte",
+          "target": " degli anfibi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, il rospo fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, il gatto fa parte",
+          "target": " dei mammiferi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il tonno fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la cozza fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, lo scorpione fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il tonno fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la carota fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, la rana fa parte",
+          "target": " degli anfibi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la carota fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il pinguino fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, l'aquila fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, il rospo fa parte",
+          "target": " degli anfibi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, il serpente fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, il gatto fa parte",
+          "target": " dei mammiferi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la salamandra fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, il sedano fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il sedano fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la ciliegia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il tonno fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, l'aquila fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la balena fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il tonno fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, il gambero fa parte",
+          "target": " dei crostacei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il gatto fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il granchio fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la lattuga fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la ciliegia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il cane fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il gambero fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, la lattuga fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, il cane fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la cozza fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, la salamandra fa parte",
+          "target": " degli anfibi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il gambero fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, lo scorpione fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il tonno fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, l'aragosta fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, la rana fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il gufo fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, il cane fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il gambero fa parte",
+          "target": " dei crostacei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il gatto fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, la ciliegia fa parte",
+          "target": " dei frutti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, l'aragosta fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il serpente fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, la cozza fa parte",
+          "target": " dei molluschi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, lo scorpione fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, il pinguino fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il gambero fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il cane fa parte",
+          "target": " dei mammiferi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la salamandra fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, la ciliegia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il tonno fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, il granchio fa parte",
+          "target": " dei crostacei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, la ciliegia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, l'aragosta fa parte",
+          "target": " dei crostacei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il rospo fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, lo scorpione fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, la lattuga fa parte",
+          "target": " degli ortaggi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il tonno fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, il sedano fa parte",
+          "target": " degli ortaggi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il rospo fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, l'ape fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, l'aragosta fa parte",
+          "target": " dei crostacei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il gatto fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, la lattuga fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, l'ape fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, la ciliegia fa parte",
+          "target": " dei frutti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, l'aquila fa parte",
+          "target": " degli uccelli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, l'aquila fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, la balena fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il serpente fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la banana fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la cozza fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, la balena fa parte",
+          "target": " dei mammiferi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il tonno fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, il pinguino fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, la rana fa parte",
+          "target": " degli anfibi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, l'aquila fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, la rana fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, il gatto fa parte",
+          "target": " dei mammiferi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, l'ape fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, l'elefante fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, l'aquila fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, lo squalo fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, l'aquila fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, la balena fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, la rana fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, lo scorpione fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, il cane fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il pinguino fa parte",
+          "target": " degli uccelli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, l'elefante fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, la salamandra fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la salamandra fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, la cozza fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, la ciliegia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il pinguino fa parte",
+          "target": " degli uccelli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il pinguino fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, lo scorpione fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la farfalla fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il gatto fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, la lattuga fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, l'arancia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il coccodrillo fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, il cane fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, la rana fa parte",
+          "target": " degli anfibi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il gatto fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, il pinguino fa parte",
+          "target": " degli uccelli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il serpente fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, il gambero fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, il rospo fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, la carota fa parte",
+          "target": " degli ortaggi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la formica fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la carota fa parte",
+          "target": " degli ortaggi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, l'ape fa parte",
+          "target": " degli insetti."
+        },
+        {
+          "context": "Nella classificazione generale, il ragno fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la ciliegia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il serpente fa parte",
+          "target": " dei rettili."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il granchio fa parte",
+          "target": " dei crostacei."
+        },
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, lo spinacio fa parte",
+          "target": " degli ortaggi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, lo scorpione fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, il rospo fa parte",
+          "target": " degli anfibi."
+        },
+        {
+          "context": "Nella classificazione generale, il salmone fa parte",
+          "target": " dei pesci."
+        },
+        {
+          "context": "Nella classificazione generale, il gambero fa parte",
+          "target": " dei crostacei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, l'elefante fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, lo scorpione fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, il gambero fa parte",
+          "target": " dei crostacei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la ciliegia fa parte",
+          "target": " dei frutti."
+        },
+        {
+          "context": "Nella classificazione generale, l'elefante fa parte",
+          "target": " dei mammiferi."
+        },
+        {
+          "context": "Nella classificazione generale, la tartaruga fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, la carota fa parte",
+          "target": " degli ortaggi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, la lumaca fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, il serpente fa parte",
+          "target": " dei rettili."
+        },
+        {
+          "context": "Nella classificazione generale, l'aquila fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, la pera fa parte",
+          "target": " dei frutti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella classificazione generale, il polpo fa parte",
+          "target": " dei molluschi."
+        },
+        {
+          "context": "Nella classificazione generale, il pinguino fa parte",
+          "target": " degli uccelli."
+        },
+        {
+          "context": "Nella classificazione generale, la zecca fa parte",
+          "target": " degli aracnidi."
+        },
+        {
+          "context": "Nella classificazione generale, la lattuga fa parte",
+          "target": " degli ortaggi."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

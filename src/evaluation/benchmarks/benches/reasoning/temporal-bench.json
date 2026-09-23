@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "reasoning_temporal_ordering",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Lampo, Lampo avviene prima di Iride, Iride avviene prima di Vento. Il primo evento è",
+          "target": " Alba."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Lampo, Lampo avviene prima di Iride, Iride avviene prima di Vento. Il secondo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Lampo, Lampo avviene prima di Iride, Iride avviene prima di Vento. Il terzo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Lampo, Lampo avviene prima di Iride, Iride avviene prima di Vento. L'ultimo evento è",
+          "target": " Vento."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Vento, Vento avviene prima di Cobalto, Cobalto avviene prima di Quercia. Il primo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Vento, Vento avviene prima di Cobalto, Cobalto avviene prima di Quercia. Il secondo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Vento, Vento avviene prima di Cobalto, Cobalto avviene prima di Quercia. Il terzo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Vento, Vento avviene prima di Cobalto, Cobalto avviene prima di Quercia. L'ultimo evento è",
+          "target": " Quercia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Cobalto, Cobalto avviene prima di Gelo, Gelo avviene prima di Iride. Il primo evento è",
+          "target": " Alba."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Cobalto, Cobalto avviene prima di Gelo, Gelo avviene prima di Iride. Il secondo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Cobalto, Cobalto avviene prima di Gelo, Gelo avviene prima di Iride. Il terzo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Cobalto, Cobalto avviene prima di Gelo, Gelo avviene prima di Iride. L'ultimo evento è",
+          "target": " Iride."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Gelo, Gelo avviene prima di Aurora, Aurora avviene prima di Quercia. Il primo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Gelo, Gelo avviene prima di Aurora, Aurora avviene prima di Quercia. Il secondo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Gelo, Gelo avviene prima di Aurora, Aurora avviene prima di Quercia. Il terzo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Gelo, Gelo avviene prima di Aurora, Aurora avviene prima di Quercia. L'ultimo evento è",
+          "target": " Quercia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Zefiro, Zefiro avviene prima di Lampo, Lampo avviene prima di Alba. Il primo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Zefiro, Zefiro avviene prima di Lampo, Lampo avviene prima di Alba. Il secondo evento è",
+          "target": " Zefiro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Zefiro, Zefiro avviene prima di Lampo, Lampo avviene prima di Alba. Il terzo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Zefiro, Zefiro avviene prima di Lampo, Lampo avviene prima di Alba. L'ultimo evento è",
+          "target": " Alba."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Nube, Nube avviene prima di Lampo, Lampo avviene prima di Edera. Il primo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Nube, Nube avviene prima di Lampo, Lampo avviene prima di Edera. Il secondo evento è",
+          "target": " Nube."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Nube, Nube avviene prima di Lampo, Lampo avviene prima di Edera. Il terzo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Nube, Nube avviene prima di Lampo, Lampo avviene prima di Edera. L'ultimo evento è",
+          "target": " Edera."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Duna, Duna avviene prima di Cobalto, Cobalto avviene prima di Pietra. Il primo evento è",
+          "target": " Nube."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Duna, Duna avviene prima di Cobalto, Cobalto avviene prima di Pietra. Il secondo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Duna, Duna avviene prima di Cobalto, Cobalto avviene prima di Pietra. Il terzo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Duna, Duna avviene prima di Cobalto, Cobalto avviene prima di Pietra. L'ultimo evento è",
+          "target": " Pietra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Aurora, Aurora avviene prima di Lampo, Lampo avviene prima di Bruma. Il primo evento è",
+          "target": " Onda."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Aurora, Aurora avviene prima di Lampo, Lampo avviene prima di Bruma. Il secondo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Aurora, Aurora avviene prima di Lampo, Lampo avviene prima di Bruma. Il terzo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Aurora, Aurora avviene prima di Lampo, Lampo avviene prima di Bruma. L'ultimo evento è",
+          "target": " Bruma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Duna, Duna avviene prima di Pietra, Pietra avviene prima di Cobalto. Il primo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Duna, Duna avviene prima di Pietra, Pietra avviene prima di Cobalto. Il secondo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Duna, Duna avviene prima di Pietra, Pietra avviene prima di Cobalto. Il terzo evento è",
+          "target": " Pietra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Duna, Duna avviene prima di Pietra, Pietra avviene prima di Cobalto. L'ultimo evento è",
+          "target": " Cobalto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Onda, Onda avviene prima di Gelo, Gelo avviene prima di Cobalto. Il primo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Onda, Onda avviene prima di Gelo, Gelo avviene prima di Cobalto. Il secondo evento è",
+          "target": " Onda."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Onda, Onda avviene prima di Gelo, Gelo avviene prima di Cobalto. Il terzo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Onda, Onda avviene prima di Gelo, Gelo avviene prima di Cobalto. L'ultimo evento è",
+          "target": " Cobalto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Marea, Marea avviene prima di Cobalto, Cobalto avviene prima di Aurora. Il primo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Marea, Marea avviene prima di Cobalto, Cobalto avviene prima di Aurora. Il secondo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Marea, Marea avviene prima di Cobalto, Cobalto avviene prima di Aurora. Il terzo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Marea, Marea avviene prima di Cobalto, Cobalto avviene prima di Aurora. L'ultimo evento è",
+          "target": " Aurora."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Pietra avviene prima di Lampo, Lampo avviene prima di Riva, Riva avviene prima di Onda. Il primo evento è",
+          "target": " Pietra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Pietra avviene prima di Lampo, Lampo avviene prima di Riva, Riva avviene prima di Onda. Il secondo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Pietra avviene prima di Lampo, Lampo avviene prima di Riva, Riva avviene prima di Onda. Il terzo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Pietra avviene prima di Lampo, Lampo avviene prima di Riva, Riva avviene prima di Onda. L'ultimo evento è",
+          "target": " Onda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Aurora, Aurora avviene prima di Gelo, Gelo avviene prima di Lampo. Il primo evento è",
+          "target": " Onda."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Aurora, Aurora avviene prima di Gelo, Gelo avviene prima di Lampo. Il secondo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Aurora, Aurora avviene prima di Gelo, Gelo avviene prima di Lampo. Il terzo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Aurora, Aurora avviene prima di Gelo, Gelo avviene prima di Lampo. L'ultimo evento è",
+          "target": " Lampo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Faro, Faro avviene prima di Vento, Vento avviene prima di Iride. Il primo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Faro, Faro avviene prima di Vento, Vento avviene prima di Iride. Il secondo evento è",
+          "target": " Faro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Faro, Faro avviene prima di Vento, Vento avviene prima di Iride. Il terzo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Faro, Faro avviene prima di Vento, Vento avviene prima di Iride. L'ultimo evento è",
+          "target": " Iride."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Pietra, Pietra avviene prima di Lampo, Lampo avviene prima di Iride. Il primo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Pietra, Pietra avviene prima di Lampo, Lampo avviene prima di Iride. Il secondo evento è",
+          "target": " Pietra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Pietra, Pietra avviene prima di Lampo, Lampo avviene prima di Iride. Il terzo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Pietra, Pietra avviene prima di Lampo, Lampo avviene prima di Iride. L'ultimo evento è",
+          "target": " Iride."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Iride, Iride avviene prima di Aurora, Aurora avviene prima di Nube. Il primo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Iride, Iride avviene prima di Aurora, Aurora avviene prima di Nube. Il secondo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Iride, Iride avviene prima di Aurora, Aurora avviene prima di Nube. Il terzo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Iride, Iride avviene prima di Aurora, Aurora avviene prima di Nube. L'ultimo evento è",
+          "target": " Nube."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Cobalto, Cobalto avviene prima di Gelo, Gelo avviene prima di Nube. Il primo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Cobalto, Cobalto avviene prima di Gelo, Gelo avviene prima di Nube. Il secondo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Cobalto, Cobalto avviene prima di Gelo, Gelo avviene prima di Nube. Il terzo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Cobalto, Cobalto avviene prima di Gelo, Gelo avviene prima di Nube. L'ultimo evento è",
+          "target": " Nube."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Pietra, Pietra avviene prima di Riva, Riva avviene prima di Edera. Il primo evento è",
+          "target": " Sole."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Pietra, Pietra avviene prima di Riva, Riva avviene prima di Edera. Il secondo evento è",
+          "target": " Pietra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Pietra, Pietra avviene prima di Riva, Riva avviene prima di Edera. Il terzo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Pietra, Pietra avviene prima di Riva, Riva avviene prima di Edera. L'ultimo evento è",
+          "target": " Edera."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Iride, Iride avviene prima di Vento, Vento avviene prima di Lampo. Il primo evento è",
+          "target": " Edera."
+        },
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Iride, Iride avviene prima di Vento, Vento avviene prima di Lampo. Il secondo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Iride, Iride avviene prima di Vento, Vento avviene prima di Lampo. Il terzo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Iride, Iride avviene prima di Vento, Vento avviene prima di Lampo. L'ultimo evento è",
+          "target": " Lampo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Pietra, Pietra avviene prima di Onda, Onda avviene prima di Iride. Il primo evento è",
+          "target": " Zefiro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Pietra, Pietra avviene prima di Onda, Onda avviene prima di Iride. Il secondo evento è",
+          "target": " Pietra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Pietra, Pietra avviene prima di Onda, Onda avviene prima di Iride. Il terzo evento è",
+          "target": " Onda."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Pietra, Pietra avviene prima di Onda, Onda avviene prima di Iride. L'ultimo evento è",
+          "target": " Iride."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Terra avviene prima di Sole, Sole avviene prima di Cobalto, Cobalto avviene prima di Bruma. Il primo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Terra avviene prima di Sole, Sole avviene prima di Cobalto, Cobalto avviene prima di Bruma. Il secondo evento è",
+          "target": " Sole."
+        },
+        {
+          "context": "Considera l'ordine temporale: Terra avviene prima di Sole, Sole avviene prima di Cobalto, Cobalto avviene prima di Bruma. Il terzo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Terra avviene prima di Sole, Sole avviene prima di Cobalto, Cobalto avviene prima di Bruma. L'ultimo evento è",
+          "target": " Bruma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Faro, Faro avviene prima di Quercia, Quercia avviene prima di Cobalto. Il primo evento è",
+          "target": " Edera."
+        },
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Faro, Faro avviene prima di Quercia, Quercia avviene prima di Cobalto. Il secondo evento è",
+          "target": " Faro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Faro, Faro avviene prima di Quercia, Quercia avviene prima di Cobalto. Il terzo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Faro, Faro avviene prima di Quercia, Quercia avviene prima di Cobalto. L'ultimo evento è",
+          "target": " Cobalto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Pietra avviene prima di Riva, Riva avviene prima di Terra, Terra avviene prima di Lampo. Il primo evento è",
+          "target": " Pietra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Pietra avviene prima di Riva, Riva avviene prima di Terra, Terra avviene prima di Lampo. Il secondo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Pietra avviene prima di Riva, Riva avviene prima di Terra, Terra avviene prima di Lampo. Il terzo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Pietra avviene prima di Riva, Riva avviene prima di Terra, Terra avviene prima di Lampo. L'ultimo evento è",
+          "target": " Lampo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Vento, Vento avviene prima di Lampo, Lampo avviene prima di Nube. Il primo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Vento, Vento avviene prima di Lampo, Lampo avviene prima di Nube. Il secondo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Vento, Vento avviene prima di Lampo, Lampo avviene prima di Nube. Il terzo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Vento, Vento avviene prima di Lampo, Lampo avviene prima di Nube. L'ultimo evento è",
+          "target": " Nube."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Marea avviene prima di Quercia, Quercia avviene prima di Faro, Faro avviene prima di Riva. Il primo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Marea avviene prima di Quercia, Quercia avviene prima di Faro, Faro avviene prima di Riva. Il secondo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Marea avviene prima di Quercia, Quercia avviene prima di Faro, Faro avviene prima di Riva. Il terzo evento è",
+          "target": " Faro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Marea avviene prima di Quercia, Quercia avviene prima di Faro, Faro avviene prima di Riva. L'ultimo evento è",
+          "target": " Riva."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Terra, Terra avviene prima di Faro, Faro avviene prima di Zefiro. Il primo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Terra, Terra avviene prima di Faro, Faro avviene prima di Zefiro. Il secondo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Terra, Terra avviene prima di Faro, Faro avviene prima di Zefiro. Il terzo evento è",
+          "target": " Faro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Terra, Terra avviene prima di Faro, Faro avviene prima di Zefiro. L'ultimo evento è",
+          "target": " Zefiro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Marea avviene prima di Terra, Terra avviene prima di Gelo, Gelo avviene prima di Edera. Il primo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Marea avviene prima di Terra, Terra avviene prima di Gelo, Gelo avviene prima di Edera. Il secondo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Marea avviene prima di Terra, Terra avviene prima di Gelo, Gelo avviene prima di Edera. Il terzo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Marea avviene prima di Terra, Terra avviene prima di Gelo, Gelo avviene prima di Edera. L'ultimo evento è",
+          "target": " Edera."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Faro avviene prima di Vento, Vento avviene prima di Terra, Terra avviene prima di Alba. Il primo evento è",
+          "target": " Faro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Faro avviene prima di Vento, Vento avviene prima di Terra, Terra avviene prima di Alba. Il secondo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Faro avviene prima di Vento, Vento avviene prima di Terra, Terra avviene prima di Alba. Il terzo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Faro avviene prima di Vento, Vento avviene prima di Terra, Terra avviene prima di Alba. L'ultimo evento è",
+          "target": " Alba."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Alba, Alba avviene prima di Duna, Duna avviene prima di Onda. Il primo evento è",
+          "target": " Sole."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Alba, Alba avviene prima di Duna, Duna avviene prima di Onda. Il secondo evento è",
+          "target": " Alba."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Alba, Alba avviene prima di Duna, Duna avviene prima di Onda. Il terzo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Alba, Alba avviene prima di Duna, Duna avviene prima di Onda. L'ultimo evento è",
+          "target": " Onda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Bruma, Bruma avviene prima di Aurora, Aurora avviene prima di Cobalto. Il primo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Bruma, Bruma avviene prima di Aurora, Aurora avviene prima di Cobalto. Il secondo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Bruma, Bruma avviene prima di Aurora, Aurora avviene prima di Cobalto. Il terzo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Bruma, Bruma avviene prima di Aurora, Aurora avviene prima di Cobalto. L'ultimo evento è",
+          "target": " Cobalto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Cobalto, Cobalto avviene prima di Vento, Vento avviene prima di Edera. Il primo evento è",
+          "target": " Sole."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Cobalto, Cobalto avviene prima di Vento, Vento avviene prima di Edera. Il secondo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Cobalto, Cobalto avviene prima di Vento, Vento avviene prima di Edera. Il terzo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Cobalto, Cobalto avviene prima di Vento, Vento avviene prima di Edera. L'ultimo evento è",
+          "target": " Edera."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Vento, Vento avviene prima di Faro, Faro avviene prima di Lampo. Il primo evento è",
+          "target": " Sole."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Vento, Vento avviene prima di Faro, Faro avviene prima di Lampo. Il secondo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Vento, Vento avviene prima di Faro, Faro avviene prima di Lampo. Il terzo evento è",
+          "target": " Faro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Vento, Vento avviene prima di Faro, Faro avviene prima di Lampo. L'ultimo evento è",
+          "target": " Lampo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Vento, Vento avviene prima di Aurora, Aurora avviene prima di Marea. Il primo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Vento, Vento avviene prima di Aurora, Aurora avviene prima di Marea. Il secondo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Vento, Vento avviene prima di Aurora, Aurora avviene prima di Marea. Il terzo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Vento, Vento avviene prima di Aurora, Aurora avviene prima di Marea. L'ultimo evento è",
+          "target": " Marea."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Riva, Riva avviene prima di Terra, Terra avviene prima di Zefiro. Il primo evento è",
+          "target": " Onda."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Riva, Riva avviene prima di Terra, Terra avviene prima di Zefiro. Il secondo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Riva, Riva avviene prima di Terra, Terra avviene prima di Zefiro. Il terzo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Riva, Riva avviene prima di Terra, Terra avviene prima di Zefiro. L'ultimo evento è",
+          "target": " Zefiro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Aurora, Aurora avviene prima di Cobalto, Cobalto avviene prima di Nube. Il primo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Aurora, Aurora avviene prima di Cobalto, Cobalto avviene prima di Nube. Il secondo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Aurora, Aurora avviene prima di Cobalto, Cobalto avviene prima di Nube. Il terzo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Aurora, Aurora avviene prima di Cobalto, Cobalto avviene prima di Nube. L'ultimo evento è",
+          "target": " Nube."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Vento, Vento avviene prima di Iride, Iride avviene prima di Aurora. Il primo evento è",
+          "target": " Zefiro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Vento, Vento avviene prima di Iride, Iride avviene prima di Aurora. Il secondo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Vento, Vento avviene prima di Iride, Iride avviene prima di Aurora. Il terzo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Vento, Vento avviene prima di Iride, Iride avviene prima di Aurora. L'ultimo evento è",
+          "target": " Aurora."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Cobalto avviene prima di Bruma, Bruma avviene prima di Iride, Iride avviene prima di Aurora. Il primo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Cobalto avviene prima di Bruma, Bruma avviene prima di Iride, Iride avviene prima di Aurora. Il secondo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Cobalto avviene prima di Bruma, Bruma avviene prima di Iride, Iride avviene prima di Aurora. Il terzo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Cobalto avviene prima di Bruma, Bruma avviene prima di Iride, Iride avviene prima di Aurora. L'ultimo evento è",
+          "target": " Aurora."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Cobalto, Cobalto avviene prima di Terra, Terra avviene prima di Iride. Il primo evento è",
+          "target": " Nube."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Cobalto, Cobalto avviene prima di Terra, Terra avviene prima di Iride. Il secondo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Cobalto, Cobalto avviene prima di Terra, Terra avviene prima di Iride. Il terzo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Cobalto, Cobalto avviene prima di Terra, Terra avviene prima di Iride. L'ultimo evento è",
+          "target": " Iride."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Gelo, Gelo avviene prima di Vento, Vento avviene prima di Edera. Il primo evento è",
+          "target": " Sole."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Gelo, Gelo avviene prima di Vento, Vento avviene prima di Edera. Il secondo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Gelo, Gelo avviene prima di Vento, Vento avviene prima di Edera. Il terzo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Gelo, Gelo avviene prima di Vento, Vento avviene prima di Edera. L'ultimo evento è",
+          "target": " Edera."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Sole, Sole avviene prima di Quercia, Quercia avviene prima di Gelo. Il primo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Sole, Sole avviene prima di Quercia, Quercia avviene prima di Gelo. Il secondo evento è",
+          "target": " Sole."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Sole, Sole avviene prima di Quercia, Quercia avviene prima di Gelo. Il terzo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Sole, Sole avviene prima di Quercia, Quercia avviene prima di Gelo. L'ultimo evento è",
+          "target": " Gelo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Quercia, Quercia avviene prima di Onda, Onda avviene prima di Zefiro. Il primo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Quercia, Quercia avviene prima di Onda, Onda avviene prima di Zefiro. Il secondo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Quercia, Quercia avviene prima di Onda, Onda avviene prima di Zefiro. Il terzo evento è",
+          "target": " Onda."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Quercia, Quercia avviene prima di Onda, Onda avviene prima di Zefiro. L'ultimo evento è",
+          "target": " Zefiro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Bruma, Bruma avviene prima di Duna, Duna avviene prima di Zefiro. Il primo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Bruma, Bruma avviene prima di Duna, Duna avviene prima di Zefiro. Il secondo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Bruma, Bruma avviene prima di Duna, Duna avviene prima di Zefiro. Il terzo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Bruma, Bruma avviene prima di Duna, Duna avviene prima di Zefiro. L'ultimo evento è",
+          "target": " Zefiro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Duna, Duna avviene prima di Iride, Iride avviene prima di Gelo. Il primo evento è",
+          "target": " Nube."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Duna, Duna avviene prima di Iride, Iride avviene prima di Gelo. Il secondo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Duna, Duna avviene prima di Iride, Iride avviene prima di Gelo. Il terzo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Duna, Duna avviene prima di Iride, Iride avviene prima di Gelo. L'ultimo evento è",
+          "target": " Gelo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Riva, Riva avviene prima di Edera, Edera avviene prima di Quercia. Il primo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Riva, Riva avviene prima di Edera, Edera avviene prima di Quercia. Il secondo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Riva, Riva avviene prima di Edera, Edera avviene prima di Quercia. Il terzo evento è",
+          "target": " Edera."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Riva, Riva avviene prima di Edera, Edera avviene prima di Quercia. L'ultimo evento è",
+          "target": " Quercia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Riva, Riva avviene prima di Iride, Iride avviene prima di Cobalto. Il primo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Riva, Riva avviene prima di Iride, Iride avviene prima di Cobalto. Il secondo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Riva, Riva avviene prima di Iride, Iride avviene prima di Cobalto. Il terzo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Riva, Riva avviene prima di Iride, Iride avviene prima di Cobalto. L'ultimo evento è",
+          "target": " Cobalto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Duna, Duna avviene prima di Bruma, Bruma avviene prima di Alba. Il primo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Duna, Duna avviene prima di Bruma, Bruma avviene prima di Alba. Il secondo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Duna, Duna avviene prima di Bruma, Bruma avviene prima di Alba. Il terzo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Duna, Duna avviene prima di Bruma, Bruma avviene prima di Alba. L'ultimo evento è",
+          "target": " Alba."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Faro, Faro avviene prima di Quercia, Quercia avviene prima di Sole. Il primo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Faro, Faro avviene prima di Quercia, Quercia avviene prima di Sole. Il secondo evento è",
+          "target": " Faro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Faro, Faro avviene prima di Quercia, Quercia avviene prima di Sole. Il terzo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Faro, Faro avviene prima di Quercia, Quercia avviene prima di Sole. L'ultimo evento è",
+          "target": " Sole."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Pietra, Pietra avviene prima di Bruma, Bruma avviene prima di Faro. Il primo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Pietra, Pietra avviene prima di Bruma, Bruma avviene prima di Faro. Il secondo evento è",
+          "target": " Pietra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Pietra, Pietra avviene prima di Bruma, Bruma avviene prima di Faro. Il terzo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Pietra, Pietra avviene prima di Bruma, Bruma avviene prima di Faro. L'ultimo evento è",
+          "target": " Faro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Pietra, Pietra avviene prima di Lampo, Lampo avviene prima di Riva. Il primo evento è",
+          "target": " Alba."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Pietra, Pietra avviene prima di Lampo, Lampo avviene prima di Riva. Il secondo evento è",
+          "target": " Pietra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Pietra, Pietra avviene prima di Lampo, Lampo avviene prima di Riva. Il terzo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Pietra, Pietra avviene prima di Lampo, Lampo avviene prima di Riva. L'ultimo evento è",
+          "target": " Riva."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Vento, Vento avviene prima di Sole, Sole avviene prima di Edera. Il primo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Vento, Vento avviene prima di Sole, Sole avviene prima di Edera. Il secondo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Vento, Vento avviene prima di Sole, Sole avviene prima di Edera. Il terzo evento è",
+          "target": " Sole."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Vento, Vento avviene prima di Sole, Sole avviene prima di Edera. L'ultimo evento è",
+          "target": " Edera."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Marea avviene prima di Gelo, Gelo avviene prima di Bruma, Bruma avviene prima di Vento. Il primo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Marea avviene prima di Gelo, Gelo avviene prima di Bruma, Bruma avviene prima di Vento. Il secondo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Marea avviene prima di Gelo, Gelo avviene prima di Bruma, Bruma avviene prima di Vento. Il terzo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Marea avviene prima di Gelo, Gelo avviene prima di Bruma, Bruma avviene prima di Vento. L'ultimo evento è",
+          "target": " Vento."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Aurora, Aurora avviene prima di Sole, Sole avviene prima di Terra. Il primo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Aurora, Aurora avviene prima di Sole, Sole avviene prima di Terra. Il secondo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Aurora, Aurora avviene prima di Sole, Sole avviene prima di Terra. Il terzo evento è",
+          "target": " Sole."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Aurora, Aurora avviene prima di Sole, Sole avviene prima di Terra. L'ultimo evento è",
+          "target": " Terra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Terra, Terra avviene prima di Cobalto, Cobalto avviene prima di Faro. Il primo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Terra, Terra avviene prima di Cobalto, Cobalto avviene prima di Faro. Il secondo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Terra, Terra avviene prima di Cobalto, Cobalto avviene prima di Faro. Il terzo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Terra, Terra avviene prima di Cobalto, Cobalto avviene prima di Faro. L'ultimo evento è",
+          "target": " Faro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Cobalto, Cobalto avviene prima di Iride, Iride avviene prima di Pietra. Il primo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Cobalto, Cobalto avviene prima di Iride, Iride avviene prima di Pietra. Il secondo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Cobalto, Cobalto avviene prima di Iride, Iride avviene prima di Pietra. Il terzo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Cobalto, Cobalto avviene prima di Iride, Iride avviene prima di Pietra. L'ultimo evento è",
+          "target": " Pietra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Iride, Iride avviene prima di Bruma, Bruma avviene prima di Cobalto. Il primo evento è",
+          "target": " Zefiro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Iride, Iride avviene prima di Bruma, Bruma avviene prima di Cobalto. Il secondo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Iride, Iride avviene prima di Bruma, Bruma avviene prima di Cobalto. Il terzo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Iride, Iride avviene prima di Bruma, Bruma avviene prima di Cobalto. L'ultimo evento è",
+          "target": " Cobalto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Aurora, Aurora avviene prima di Terra, Terra avviene prima di Nube. Il primo evento è",
+          "target": " Zefiro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Aurora, Aurora avviene prima di Terra, Terra avviene prima di Nube. Il secondo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Aurora, Aurora avviene prima di Terra, Terra avviene prima di Nube. Il terzo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Aurora, Aurora avviene prima di Terra, Terra avviene prima di Nube. L'ultimo evento è",
+          "target": " Nube."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Nube, Nube avviene prima di Iride, Iride avviene prima di Lampo. Il primo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Nube, Nube avviene prima di Iride, Iride avviene prima di Lampo. Il secondo evento è",
+          "target": " Nube."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Nube, Nube avviene prima di Iride, Iride avviene prima di Lampo. Il terzo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Nube, Nube avviene prima di Iride, Iride avviene prima di Lampo. L'ultimo evento è",
+          "target": " Lampo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Marea, Marea avviene prima di Riva, Riva avviene prima di Nube. Il primo evento è",
+          "target": " Edera."
+        },
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Marea, Marea avviene prima di Riva, Riva avviene prima di Nube. Il secondo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Marea, Marea avviene prima di Riva, Riva avviene prima di Nube. Il terzo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Marea, Marea avviene prima di Riva, Riva avviene prima di Nube. L'ultimo evento è",
+          "target": " Nube."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Riva, Riva avviene prima di Duna, Duna avviene prima di Cobalto. Il primo evento è",
+          "target": " Alba."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Riva, Riva avviene prima di Duna, Duna avviene prima di Cobalto. Il secondo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Riva, Riva avviene prima di Duna, Duna avviene prima di Cobalto. Il terzo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Riva, Riva avviene prima di Duna, Duna avviene prima di Cobalto. L'ultimo evento è",
+          "target": " Cobalto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Terra avviene prima di Lampo, Lampo avviene prima di Edera, Edera avviene prima di Onda. Il primo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Terra avviene prima di Lampo, Lampo avviene prima di Edera, Edera avviene prima di Onda. Il secondo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Terra avviene prima di Lampo, Lampo avviene prima di Edera, Edera avviene prima di Onda. Il terzo evento è",
+          "target": " Edera."
+        },
+        {
+          "context": "Considera l'ordine temporale: Terra avviene prima di Lampo, Lampo avviene prima di Edera, Edera avviene prima di Onda. L'ultimo evento è",
+          "target": " Onda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Onda, Onda avviene prima di Marea, Marea avviene prima di Faro. Il primo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Onda, Onda avviene prima di Marea, Marea avviene prima di Faro. Il secondo evento è",
+          "target": " Onda."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Onda, Onda avviene prima di Marea, Marea avviene prima di Faro. Il terzo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Onda, Onda avviene prima di Marea, Marea avviene prima di Faro. L'ultimo evento è",
+          "target": " Faro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Marea, Marea avviene prima di Terra, Terra avviene prima di Alba. Il primo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Marea, Marea avviene prima di Terra, Terra avviene prima di Alba. Il secondo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Marea, Marea avviene prima di Terra, Terra avviene prima di Alba. Il terzo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Marea, Marea avviene prima di Terra, Terra avviene prima di Alba. L'ultimo evento è",
+          "target": " Alba."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Edera, Edera avviene prima di Lampo, Lampo avviene prima di Aurora. Il primo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Edera, Edera avviene prima di Lampo, Lampo avviene prima di Aurora. Il secondo evento è",
+          "target": " Edera."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Edera, Edera avviene prima di Lampo, Lampo avviene prima di Aurora. Il terzo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Edera, Edera avviene prima di Lampo, Lampo avviene prima di Aurora. L'ultimo evento è",
+          "target": " Aurora."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Edera, Edera avviene prima di Lampo, Lampo avviene prima di Marea. Il primo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Edera, Edera avviene prima di Lampo, Lampo avviene prima di Marea. Il secondo evento è",
+          "target": " Edera."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Edera, Edera avviene prima di Lampo, Lampo avviene prima di Marea. Il terzo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Edera, Edera avviene prima di Lampo, Lampo avviene prima di Marea. L'ultimo evento è",
+          "target": " Marea."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Gelo, Gelo avviene prima di Lampo, Lampo avviene prima di Terra. Il primo evento è",
+          "target": " Nube."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Gelo, Gelo avviene prima di Lampo, Lampo avviene prima di Terra. Il secondo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Gelo, Gelo avviene prima di Lampo, Lampo avviene prima di Terra. Il terzo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Gelo, Gelo avviene prima di Lampo, Lampo avviene prima di Terra. L'ultimo evento è",
+          "target": " Terra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Bruma, Bruma avviene prima di Cobalto, Cobalto avviene prima di Quercia. Il primo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Bruma, Bruma avviene prima di Cobalto, Cobalto avviene prima di Quercia. Il secondo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Bruma, Bruma avviene prima di Cobalto, Cobalto avviene prima di Quercia. Il terzo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Bruma, Bruma avviene prima di Cobalto, Cobalto avviene prima di Quercia. L'ultimo evento è",
+          "target": " Quercia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Alba, Alba avviene prima di Nube, Nube avviene prima di Edera. Il primo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Alba, Alba avviene prima di Nube, Nube avviene prima di Edera. Il secondo evento è",
+          "target": " Alba."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Alba, Alba avviene prima di Nube, Nube avviene prima di Edera. Il terzo evento è",
+          "target": " Nube."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Alba, Alba avviene prima di Nube, Nube avviene prima di Edera. L'ultimo evento è",
+          "target": " Edera."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Faro avviene prima di Riva, Riva avviene prima di Vento, Vento avviene prima di Quercia. Il primo evento è",
+          "target": " Faro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Faro avviene prima di Riva, Riva avviene prima di Vento, Vento avviene prima di Quercia. Il secondo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Faro avviene prima di Riva, Riva avviene prima di Vento, Vento avviene prima di Quercia. Il terzo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Faro avviene prima di Riva, Riva avviene prima di Vento, Vento avviene prima di Quercia. L'ultimo evento è",
+          "target": " Quercia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Cobalto, Cobalto avviene prima di Edera, Edera avviene prima di Bruma. Il primo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Cobalto, Cobalto avviene prima di Edera, Edera avviene prima di Bruma. Il secondo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Cobalto, Cobalto avviene prima di Edera, Edera avviene prima di Bruma. Il terzo evento è",
+          "target": " Edera."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Cobalto, Cobalto avviene prima di Edera, Edera avviene prima di Bruma. L'ultimo evento è",
+          "target": " Bruma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Vento, Vento avviene prima di Edera, Edera avviene prima di Quercia. Il primo evento è",
+          "target": " Zefiro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Vento, Vento avviene prima di Edera, Edera avviene prima di Quercia. Il secondo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Vento, Vento avviene prima di Edera, Edera avviene prima di Quercia. Il terzo evento è",
+          "target": " Edera."
+        },
+        {
+          "context": "Considera l'ordine temporale: Zefiro avviene prima di Vento, Vento avviene prima di Edera, Edera avviene prima di Quercia. L'ultimo evento è",
+          "target": " Quercia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Marea, Marea avviene prima di Onda, Onda avviene prima di Aurora. Il primo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Marea, Marea avviene prima di Onda, Onda avviene prima di Aurora. Il secondo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Marea, Marea avviene prima di Onda, Onda avviene prima di Aurora. Il terzo evento è",
+          "target": " Onda."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Marea, Marea avviene prima di Onda, Onda avviene prima di Aurora. L'ultimo evento è",
+          "target": " Aurora."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Iride, Iride avviene prima di Duna, Duna avviene prima di Onda. Il primo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Iride, Iride avviene prima di Duna, Duna avviene prima di Onda. Il secondo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Iride, Iride avviene prima di Duna, Duna avviene prima di Onda. Il terzo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Iride, Iride avviene prima di Duna, Duna avviene prima di Onda. L'ultimo evento è",
+          "target": " Onda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Edera, Edera avviene prima di Iride, Iride avviene prima di Faro. Il primo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Edera, Edera avviene prima di Iride, Iride avviene prima di Faro. Il secondo evento è",
+          "target": " Edera."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Edera, Edera avviene prima di Iride, Iride avviene prima di Faro. Il terzo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Edera, Edera avviene prima di Iride, Iride avviene prima di Faro. L'ultimo evento è",
+          "target": " Faro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Alba, Alba avviene prima di Faro, Faro avviene prima di Nube. Il primo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Alba, Alba avviene prima di Faro, Faro avviene prima di Nube. Il secondo evento è",
+          "target": " Alba."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Alba, Alba avviene prima di Faro, Faro avviene prima di Nube. Il terzo evento è",
+          "target": " Faro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Alba, Alba avviene prima di Faro, Faro avviene prima di Nube. L'ultimo evento è",
+          "target": " Nube."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Lampo, Lampo avviene prima di Faro, Faro avviene prima di Duna. Il primo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Lampo, Lampo avviene prima di Faro, Faro avviene prima di Duna. Il secondo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Lampo, Lampo avviene prima di Faro, Faro avviene prima di Duna. Il terzo evento è",
+          "target": " Faro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Lampo, Lampo avviene prima di Faro, Faro avviene prima di Duna. L'ultimo evento è",
+          "target": " Duna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Sole, Sole avviene prima di Iride, Iride avviene prima di Gelo. Il primo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Sole, Sole avviene prima di Iride, Iride avviene prima di Gelo. Il secondo evento è",
+          "target": " Sole."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Sole, Sole avviene prima di Iride, Iride avviene prima di Gelo. Il terzo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Sole, Sole avviene prima di Iride, Iride avviene prima di Gelo. L'ultimo evento è",
+          "target": " Gelo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Marea, Marea avviene prima di Iride, Iride avviene prima di Vento. Il primo evento è",
+          "target": " Onda."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Marea, Marea avviene prima di Iride, Iride avviene prima di Vento. Il secondo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Marea, Marea avviene prima di Iride, Iride avviene prima di Vento. Il terzo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Marea, Marea avviene prima di Iride, Iride avviene prima di Vento. L'ultimo evento è",
+          "target": " Vento."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Pietra, Pietra avviene prima di Nube, Nube avviene prima di Lampo. Il primo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Pietra, Pietra avviene prima di Nube, Nube avviene prima di Lampo. Il secondo evento è",
+          "target": " Pietra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Pietra, Pietra avviene prima di Nube, Nube avviene prima di Lampo. Il terzo evento è",
+          "target": " Nube."
+        },
+        {
+          "context": "Considera l'ordine temporale: Gelo avviene prima di Pietra, Pietra avviene prima di Nube, Nube avviene prima di Lampo. L'ultimo evento è",
+          "target": " Lampo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Onda, Onda avviene prima di Terra, Terra avviene prima di Pietra. Il primo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Onda, Onda avviene prima di Terra, Terra avviene prima di Pietra. Il secondo evento è",
+          "target": " Onda."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Onda, Onda avviene prima di Terra, Terra avviene prima di Pietra. Il terzo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Onda, Onda avviene prima di Terra, Terra avviene prima di Pietra. L'ultimo evento è",
+          "target": " Pietra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Duna, Duna avviene prima di Lampo, Lampo avviene prima di Faro. Il primo evento è",
+          "target": " Alba."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Duna, Duna avviene prima di Lampo, Lampo avviene prima di Faro. Il secondo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Duna, Duna avviene prima di Lampo, Lampo avviene prima di Faro. Il terzo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Duna, Duna avviene prima di Lampo, Lampo avviene prima di Faro. L'ultimo evento è",
+          "target": " Faro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Duna, Duna avviene prima di Quercia, Quercia avviene prima di Onda. Il primo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Duna, Duna avviene prima di Quercia, Quercia avviene prima di Onda. Il secondo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Duna, Duna avviene prima di Quercia, Quercia avviene prima di Onda. Il terzo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Duna, Duna avviene prima di Quercia, Quercia avviene prima di Onda. L'ultimo evento è",
+          "target": " Onda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Terra, Terra avviene prima di Duna, Duna avviene prima di Pietra. Il primo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Terra, Terra avviene prima di Duna, Duna avviene prima di Pietra. Il secondo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Terra, Terra avviene prima di Duna, Duna avviene prima di Pietra. Il terzo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Terra, Terra avviene prima di Duna, Duna avviene prima di Pietra. L'ultimo evento è",
+          "target": " Pietra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Bruma, Bruma avviene prima di Quercia, Quercia avviene prima di Alba. Il primo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Bruma, Bruma avviene prima di Quercia, Quercia avviene prima di Alba. Il secondo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Bruma, Bruma avviene prima di Quercia, Quercia avviene prima di Alba. Il terzo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Lampo avviene prima di Bruma, Bruma avviene prima di Quercia, Quercia avviene prima di Alba. L'ultimo evento è",
+          "target": " Alba."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Quercia, Quercia avviene prima di Cobalto, Cobalto avviene prima di Nube. Il primo evento è",
+          "target": " Onda."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Quercia, Quercia avviene prima di Cobalto, Cobalto avviene prima di Nube. Il secondo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Quercia, Quercia avviene prima di Cobalto, Cobalto avviene prima di Nube. Il terzo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Onda avviene prima di Quercia, Quercia avviene prima di Cobalto, Cobalto avviene prima di Nube. L'ultimo evento è",
+          "target": " Nube."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Marea, Marea avviene prima di Terra, Terra avviene prima di Zefiro. Il primo evento è",
+          "target": " Duna."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Marea, Marea avviene prima di Terra, Terra avviene prima di Zefiro. Il secondo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Marea, Marea avviene prima di Terra, Terra avviene prima di Zefiro. Il terzo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Duna avviene prima di Marea, Marea avviene prima di Terra, Terra avviene prima di Zefiro. L'ultimo evento è",
+          "target": " Zefiro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Pietra, Pietra avviene prima di Marea, Marea avviene prima di Edera. Il primo evento è",
+          "target": " Nube."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Pietra, Pietra avviene prima di Marea, Marea avviene prima di Edera. Il secondo evento è",
+          "target": " Pietra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Pietra, Pietra avviene prima di Marea, Marea avviene prima di Edera. Il terzo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Nube avviene prima di Pietra, Pietra avviene prima di Marea, Marea avviene prima di Edera. L'ultimo evento è",
+          "target": " Edera."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Pietra, Pietra avviene prima di Faro, Faro avviene prima di Marea. Il primo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Pietra, Pietra avviene prima di Faro, Faro avviene prima di Marea. Il secondo evento è",
+          "target": " Pietra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Pietra, Pietra avviene prima di Faro, Faro avviene prima di Marea. Il terzo evento è",
+          "target": " Faro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Pietra, Pietra avviene prima di Faro, Faro avviene prima di Marea. L'ultimo evento è",
+          "target": " Marea."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Alba, Alba avviene prima di Marea, Marea avviene prima di Aurora. Il primo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Alba, Alba avviene prima di Marea, Marea avviene prima di Aurora. Il secondo evento è",
+          "target": " Alba."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Alba, Alba avviene prima di Marea, Marea avviene prima di Aurora. Il terzo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Vento avviene prima di Alba, Alba avviene prima di Marea, Marea avviene prima di Aurora. L'ultimo evento è",
+          "target": " Aurora."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Zefiro, Zefiro avviene prima di Nube, Nube avviene prima di Riva. Il primo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Zefiro, Zefiro avviene prima di Nube, Nube avviene prima di Riva. Il secondo evento è",
+          "target": " Zefiro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Zefiro, Zefiro avviene prima di Nube, Nube avviene prima di Riva. Il terzo evento è",
+          "target": " Nube."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Zefiro, Zefiro avviene prima di Nube, Nube avviene prima di Riva. L'ultimo evento è",
+          "target": " Riva."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Gelo, Gelo avviene prima di Terra, Terra avviene prima di Sole. Il primo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Gelo, Gelo avviene prima di Terra, Terra avviene prima di Sole. Il secondo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Gelo, Gelo avviene prima di Terra, Terra avviene prima di Sole. Il terzo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Gelo, Gelo avviene prima di Terra, Terra avviene prima di Sole. L'ultimo evento è",
+          "target": " Sole."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Cobalto avviene prima di Marea, Marea avviene prima di Terra, Terra avviene prima di Nube. Il primo evento è",
+          "target": " Cobalto."
+        },
+        {
+          "context": "Considera l'ordine temporale: Cobalto avviene prima di Marea, Marea avviene prima di Terra, Terra avviene prima di Nube. Il secondo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Cobalto avviene prima di Marea, Marea avviene prima di Terra, Terra avviene prima di Nube. Il terzo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Cobalto avviene prima di Marea, Marea avviene prima di Terra, Terra avviene prima di Nube. L'ultimo evento è",
+          "target": " Nube."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Marea, Marea avviene prima di Aurora, Aurora avviene prima di Gelo. Il primo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Marea, Marea avviene prima di Aurora, Aurora avviene prima di Gelo. Il secondo evento è",
+          "target": " Marea."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Marea, Marea avviene prima di Aurora, Aurora avviene prima di Gelo. Il terzo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Iride avviene prima di Marea, Marea avviene prima di Aurora, Aurora avviene prima di Gelo. L'ultimo evento è",
+          "target": " Gelo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Bruma, Bruma avviene prima di Iride, Iride avviene prima di Sole. Il primo evento è",
+          "target": " Alba."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Bruma, Bruma avviene prima di Iride, Iride avviene prima di Sole. Il secondo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Bruma, Bruma avviene prima di Iride, Iride avviene prima di Sole. Il terzo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Alba avviene prima di Bruma, Bruma avviene prima di Iride, Iride avviene prima di Sole. L'ultimo evento è",
+          "target": " Sole."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Quercia, Quercia avviene prima di Gelo, Gelo avviene prima di Pietra. Il primo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Quercia, Quercia avviene prima di Gelo, Gelo avviene prima di Pietra. Il secondo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Quercia, Quercia avviene prima di Gelo, Gelo avviene prima di Pietra. Il terzo evento è",
+          "target": " Gelo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Riva avviene prima di Quercia, Quercia avviene prima di Gelo, Gelo avviene prima di Pietra. L'ultimo evento è",
+          "target": " Pietra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Pietra avviene prima di Iride, Iride avviene prima di Edera, Edera avviene prima di Alba. Il primo evento è",
+          "target": " Pietra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Pietra avviene prima di Iride, Iride avviene prima di Edera, Edera avviene prima di Alba. Il secondo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Pietra avviene prima di Iride, Iride avviene prima di Edera, Edera avviene prima di Alba. Il terzo evento è",
+          "target": " Edera."
+        },
+        {
+          "context": "Considera l'ordine temporale: Pietra avviene prima di Iride, Iride avviene prima di Edera, Edera avviene prima di Alba. L'ultimo evento è",
+          "target": " Alba."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Iride, Iride avviene prima di Faro, Faro avviene prima di Terra. Il primo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Iride, Iride avviene prima di Faro, Faro avviene prima di Terra. Il secondo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Iride, Iride avviene prima di Faro, Faro avviene prima di Terra. Il terzo evento è",
+          "target": " Faro."
+        },
+        {
+          "context": "Considera l'ordine temporale: Quercia avviene prima di Iride, Iride avviene prima di Faro, Faro avviene prima di Terra. L'ultimo evento è",
+          "target": " Terra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Vento, Vento avviene prima di Iride, Iride avviene prima di Duna. Il primo evento è",
+          "target": " Bruma."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Vento, Vento avviene prima di Iride, Iride avviene prima di Duna. Il secondo evento è",
+          "target": " Vento."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Vento, Vento avviene prima di Iride, Iride avviene prima di Duna. Il terzo evento è",
+          "target": " Iride."
+        },
+        {
+          "context": "Considera l'ordine temporale: Bruma avviene prima di Vento, Vento avviene prima di Iride, Iride avviene prima di Duna. L'ultimo evento è",
+          "target": " Duna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Riva, Riva avviene prima di Terra, Terra avviene prima di Nube. Il primo evento è",
+          "target": " Edera."
+        },
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Riva, Riva avviene prima di Terra, Terra avviene prima di Nube. Il secondo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Riva, Riva avviene prima di Terra, Terra avviene prima di Nube. Il terzo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Edera avviene prima di Riva, Riva avviene prima di Terra, Terra avviene prima di Nube. L'ultimo evento è",
+          "target": " Nube."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Terra, Terra avviene prima di Quercia, Quercia avviene prima di Riva. Il primo evento è",
+          "target": " Aurora."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Terra, Terra avviene prima di Quercia, Quercia avviene prima di Riva. Il secondo evento è",
+          "target": " Terra."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Terra, Terra avviene prima di Quercia, Quercia avviene prima di Riva. Il terzo evento è",
+          "target": " Quercia."
+        },
+        {
+          "context": "Considera l'ordine temporale: Aurora avviene prima di Terra, Terra avviene prima di Quercia, Quercia avviene prima di Riva. L'ultimo evento è",
+          "target": " Riva."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Riva, Riva avviene prima di Lampo, Lampo avviene prima di Iride. Il primo evento è",
+          "target": " Sole."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Riva, Riva avviene prima di Lampo, Lampo avviene prima di Iride. Il secondo evento è",
+          "target": " Riva."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Riva, Riva avviene prima di Lampo, Lampo avviene prima di Iride. Il terzo evento è",
+          "target": " Lampo."
+        },
+        {
+          "context": "Considera l'ordine temporale: Sole avviene prima di Riva, Riva avviene prima di Lampo, Lampo avviene prima di Iride. L'ultimo evento è",
+          "target": " Iride."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

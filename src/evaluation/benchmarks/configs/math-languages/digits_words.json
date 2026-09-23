@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "id": "digits_words_conversion",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "variables": {
+    "number": {
+      "type": "integer",
+      "min": 0,
+      "max": 96
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "number",
+        "operation": "offset",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$number"]
+  },
+
+  "templates": [
+    {
+      "context": "Il numero {number} scritto in lettere è",
+      "target": " {number|it_number}."
+    },
+    {
+      "context": "Il numero {number|it_number} scritto in cifre è",
+      "target": " {number}."
+    }
+  ]
+}

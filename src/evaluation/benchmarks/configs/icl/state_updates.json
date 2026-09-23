@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "icl_state_updates",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "objects": [
+      "la moneta", "la chiave", "la penna", "la candela", "la tazza",
+      "la fotografia", "la bottiglia", "la conchiglia", "la pallina", "la mappa",
+      "la lettera", "la forchetta", "la scarpa", "la collana", "la spugna",
+      "la coperta", "la scatola", "la borsa", "la matita", "la sveglia"
+    ],
+    "initial_locations": [
+      "nella scatola rossa", "nel cassetto alto", "sul tavolo", "nello zaino",
+      "sotto la sedia", "sul ripiano basso", "accanto alla finestra", "dietro la porta",
+      "nel cestino", "sulla scrivania", "nella valigia", "vicino alla lampada"
+    ],
+    "final_locations": [
+      "nella scatola verde", "nel cassetto basso", "sulla mensola alta", "dentro l'armadio",
+      "sotto il letto", "vicino al termosifone", "accanto al divano", "dietro la tenda",
+      "sul frigorifero", "nella borsa gialla", "sopra il mobile", "vicino alla libreria"
+    ]
+  },
+
+  "variables": {
+    "objects": {
+      "type": "sample",
+      "source": "objects",
+      "count": 4
+    },
+    "initial_locations": {
+      "type": "sample",
+      "source": "initial_locations",
+      "count": 4
+    },
+    "final_locations": {
+      "type": "sample",
+      "source": "final_locations",
+      "count": 4
+    },
+    "query_index": {
+      "type": "constant",
+      "value": 0
+    }
+  },
+
+  "derived": {
+    "initial_bindings": {
+      "op": "pair_strings",
+      "args": ["$objects", " si trova ", "$initial_locations"]
+    },
+    "updates": {
+      "op": "pair_strings",
+      "args": ["$objects", " viene spostata ", "$final_locations"]
+    },
+    "events": {
+      "op": "concatenate",
+      "args": ["$initial_bindings", "$updates"]
+    },
+    "query_object": {
+      "op": "item_at",
+      "args": ["$objects", "$query_index"]
+    },
+    "answer": {
+      "op": "item_at",
+      "args": ["$final_locations", "$query_index"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$query_object", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Segui gli spostamenti in ordine: {events|comma_list}. Alla fine, {query_object} si trova",
+      "target": " {answer}."
+    }
+  ]
+}

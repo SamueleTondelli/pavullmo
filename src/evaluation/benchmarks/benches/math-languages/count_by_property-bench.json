@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "count_items_by_property",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu. Quante sono le palline rosse?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu. Quante sono le palline rosse?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere pieno. Quanti sono i bicchieri pieni?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere pieno. Quanti sono i bicchieri pieni?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu. Quante sono le palline rosse?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere pieno. Quanti sono i bicchieri pieni?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere pieno, un bicchiere pieno, un bicchiere pieno. Quanti sono i bicchieri pieni?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere pieno, un bicchiere pieno, un bicchiere pieno, un bicchiere pieno, un bicchiere pieno. Quanti sono i bicchieri pieni?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato. Quanti sono i fogli bianchi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio colorato, un foglio colorato. Quanti sono i fogli bianchi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato. Quanti sono i fogli bianchi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere pieno. Quanti sono i bicchieri pieni?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave metallica. Quante sono le chiavi metalliche?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu. Quante sono le palline rosse?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave metallica. Quante sono le chiavi metalliche?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave metallica, una chiave metallica, una chiave metallica. Quante sono le chiavi metalliche?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta, una scatola aperta, una scatola aperta, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave metallica. Quante sono le chiavi metalliche?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde. Quante sono le stelle gialle?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla, una stella gialla, una stella gialla, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde. Quante sono le stelle gialle?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato. Quanti sono i fogli bianchi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu. Quante sono le palline rosse?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde. Quante sono le stelle gialle?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu. Quante sono le palline rosse?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato. Quanti sono i fogli bianchi?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato. Quanti sono i fogli bianchi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato, un foglio colorato. Quanti sono i fogli bianchi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio colorato, un foglio colorato. Quanti sono i fogli bianchi?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere pieno. Quanti sono i bicchieri pieni?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu. Quante sono le palline rosse?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde. Quante sono le stelle gialle?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde. Quante sono le stelle gialle?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato. Quanti sono i fogli bianchi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina blu, una pallina blu. Quante sono le palline rosse?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde. Quante sono le stelle gialle?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla, una stella gialla, una stella gialla, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave metallica. Quante sono le chiavi metalliche?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave metallica. Quante sono le chiavi metalliche?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave metallica, una chiave metallica, una chiave metallica. Quante sono le chiavi metalliche?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde. Quante sono le stelle gialle?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu. Quante sono le palline rosse?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave metallica. Quante sono le chiavi metalliche?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave metallica, una chiave metallica, una chiave metallica. Quante sono le chiavi metalliche?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde. Quante sono le stelle gialle?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave di plastica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica. Quante sono le chiavi metalliche?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave di plastica, una chiave metallica, una chiave metallica. Quante sono le chiavi metalliche?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde. Quante sono le stelle gialle?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato. Quanti sono i fogli bianchi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu. Quante sono le palline rosse?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: una pallina rossa, una pallina blu, una pallina rossa, una pallina blu, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa, una pallina rossa. Quante sono le palline rosse?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde. Quante sono le stelle gialle?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere pieno, un bicchiere vuoto, un bicchiere vuoto, un bicchiere vuoto. Quanti sono i bicchieri pieni?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato. Quanti sono i fogli bianchi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: un foglio bianco, un foglio colorato, un foglio bianco, un foglio colorato, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco, un foglio bianco. Quanti sono i fogli bianchi?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande, un quadrato grande. Quanti sono i quadrati grandi?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato piccolo, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo, un quadrato grande, un quadrato piccolo. Quanti sono i quadrati grandi?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " sei."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " sette."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola aperta, una scatola aperta, una scatola aperta, una scatola aperta, una scatola aperta. Quante sono le scatole aperte?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " uno."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " due."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola aperta, una scatola chiusa, una scatola chiusa, una scatola chiusa. Quante sono le scatole aperte?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella verde, una stella verde. Quante sono le stelle gialle?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde. Quante sono le stelle gialle?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella verde, una stella gialla, una stella gialla. Quante sono le stelle gialle?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " tre."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro vecchio, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " quattro."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio. Quanti sono i libri nuovi?",
+          "target": " cinque."
+        },
+        {
+          "context": "Osserva gli elementi: un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro vecchio, un libro nuovo, un libro nuovo. Quanti sono i libri nuovi?",
+          "target": " sei."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

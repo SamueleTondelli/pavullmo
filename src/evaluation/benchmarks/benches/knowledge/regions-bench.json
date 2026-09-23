@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "regions_city",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Trentino-Alto Adige è",
+          "target": " Trento."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Marche è",
+          "target": " Ancona."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Puglia è",
+          "target": " Bari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Valle d'Aosta è",
+          "target": " Aosta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Friuli-Venezia Giulia è",
+          "target": " Trieste."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Molise è",
+          "target": " Campobasso."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sicilia è",
+          "target": " Palermo."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Lombardia è",
+          "target": " Milano."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Sardegna è",
+          "target": " Cagliari."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Calabria è",
+          "target": " Catanzaro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Umbria è",
+          "target": " Perugia."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Basilicata è",
+          "target": " Potenza."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Piemonte è",
+          "target": " Torino."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Abruzzo è",
+          "target": " L'Aquila."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Liguria è",
+          "target": " Genova."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Veneto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il capoluogo di regione della regione Emilia-Romagna è",
+          "target": " Bologna."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Toscana è",
+          "target": " Firenze."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Campania è",
+          "target": " Napoli."
+        },
+        {
+          "context": "Il capoluogo di regione della regione Lazio è",
+          "target": " Roma."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "id": "reasoning_temporal_ordering",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "event_names": [
+      "Alba", "Bruma", "Cobalto", "Duna", "Edera", "Faro", "Gelo", "Iride",
+      "Lampo", "Marea", "Nube", "Onda", "Pietra", "Quercia", "Riva", "Sole",
+      "Terra", "Vento", "Zefiro", "Aurora"
+    ]
+  },
+
+  "variables": {
+    "events": {
+      "type": "sample",
+      "source": "event_names",
+      "count": 4
+    },
+    "order_prompts": {
+      "type": "constant",
+      "value": [
+        "Il primo evento",
+        "Il secondo evento",
+        "Il terzo evento",
+        "L'ultimo evento"
+      ]
+    },
+    "query_index": {
+      "type": "constant",
+      "value": 0
+    }
+  },
+
+  "derived": {
+    "earlier_events": {
+      "op": "slice",
+      "args": ["$events", 0, 3]
+    },
+    "later_events": {
+      "op": "slice",
+      "args": ["$events", 1, 4]
+    },
+    "facts": {
+      "op": "pair_strings",
+      "args": ["$earlier_events", " avviene prima di ", "$later_events"]
+    },
+    "query_prompt": {
+      "op": "item_at",
+      "args": ["$order_prompts", "$query_index"]
+    },
+    "answer": {
+      "op": "item_at",
+      "args": ["$events", "$query_index"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$query_prompt", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Considera l'ordine temporale: {facts|comma_list}. {query_prompt} è",
+      "target": " {answer}."
+    }
+  ]
+}

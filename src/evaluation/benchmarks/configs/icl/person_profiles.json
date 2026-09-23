@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "id": "icl_person_profiles",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "people": [
+      "Luca", "Marco", "Paolo", "Davide", "Matteo", "Simone", "Fabio", "Andrea",
+      "Giorgio", "Stefano", "Alessandro", "Roberto", "Federico", "Nicola", "Pietro",
+      "Tommaso", "Francesco", "Emanuele", "Riccardo", "Michele"
+    ],
+    "professions": [
+      "medico", "insegnante", "architetto", "cuoco", "avvocato", "giornalista",
+      "farmacista", "musicista", "ingegnere", "fotografo", "bibliotecario", "geologo",
+      "dentista", "pittore", "traduttore", "ricercatore", "panettiere", "veterinario"
+    ],
+    "cities": [
+      "Torino", "Bologna", "Genova", "Firenze", "Napoli", "Bari", "Palermo", "Cagliari",
+      "Perugia", "Parma", "Verona", "Trieste", "Ancona", "Pisa", "Lecce", "Ravenna",
+      "Modena", "Padova", "Siena", "Mantova"
+    ]
+  },
+
+  "variables": {
+    "people": {
+      "type": "sample",
+      "source": "people",
+      "count": 4
+    },
+    "professions": {
+      "type": "sample",
+      "source": "professions",
+      "count": 4
+    },
+    "cities": {
+      "type": "sample",
+      "source": "cities",
+      "count": 4
+    },
+    "query_index": {
+      "type": "constant",
+      "value": 0
+    }
+  },
+
+  "derived": {
+    "profession_and_city": {
+      "op": "pair_strings",
+      "args": ["$professions", " e vive a ", "$cities"]
+    },
+    "profiles": {
+      "op": "pair_strings",
+      "args": ["$people", " è ", "$profession_and_city"]
+    },
+    "query_person": {
+      "op": "item_at",
+      "args": ["$people", "$query_index"]
+    },
+    "answer": {
+      "op": "item_at",
+      "args": ["$profession_and_city", "$query_index"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$query_person", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Memorizza questi profili: {profiles|comma_list}. Secondo le informazioni fornite, {query_person} è",
+      "target": " {answer}."
+    }
+  ]
+}

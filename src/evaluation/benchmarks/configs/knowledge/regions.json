@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "id": "regions_city",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "regions_cities": [
+      {"region": "Abruzzo", "city": "L'Aquila"},
+      {"region": "Basilicata", "city": "Potenza"},
+      {"region": "Calabria", "city": "Catanzaro"},
+      {"region": "Campania", "city": "Napoli"},
+      {"region": "Emilia-Romagna", "city": "Bologna"},
+      {"region": "Friuli-Venezia Giulia", "city": "Trieste"},
+      {"region": "Lazio", "city": "Roma"},
+      {"region": "Liguria", "city": "Genova"},
+      {"region": "Lombardia", "city": "Milano"},
+      {"region": "Marche", "city": "Ancona"},
+      {"region": "Molise", "city": "Campobasso"},
+      {"region": "Piemonte", "city": "Torino"},
+      {"region": "Puglia", "city": "Bari"},
+      {"region": "Sardegna", "city": "Cagliari"},
+      {"region": "Sicilia", "city": "Palermo"},
+      {"region": "Toscana", "city": "Firenze"},
+      {"region": "Trentino-Alto Adige", "city": "Trento"},
+      {"region": "Umbria", "city": "Perugia"},
+      {"region": "Valle d'Aosta", "city": "Aosta"},
+      {"region": "Veneto", "city": "Venezia"}
+    ]
+  },
+
+  "variables": {
+    "fact": {
+      "type": "choice",
+      "source": "regions_cities"
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "fact",
+        "operation": "resample_distinct"
+      }
+    ],
+    "unique_on": ["$fact.region", "$fact.city"]
+  },
+
+  "templates": [
+    {
+      "context": "Il capoluogo di regione della regione {fact.region} è",
+      "target": " {fact.city}."
+    }
+  ]
+}

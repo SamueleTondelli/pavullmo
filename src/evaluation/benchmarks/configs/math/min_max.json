@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "id": "minimum_maximum",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "operations": [
+      {"name": "minimo", "is_maximum": 0},
+      {"name": "massimo", "is_maximum": 1}
+    ]
+  },
+
+  "variables": {
+    "operation": {
+      "type": "choice",
+      "source": "operations"
+    },
+    "result": {
+      "type": "integer",
+      "min": 0,
+      "max": 97
+    },
+    "distance": {
+      "type": "integer",
+      "min": 1,
+      "max": 20
+    },
+    "answer_position": {
+      "type": "integer",
+      "min": 0,
+      "max": 1
+    }
+  },
+
+  "derived": {
+    "direction": {
+      "op": "subtract",
+      "args": [
+        1,
+        {
+          "op": "multiply",
+          "args": [2, "$operation.is_maximum"]
+        }
+      ]
+    },
+    "other": {
+      "op": "add",
+      "args": [
+        "$result",
+        {
+          "op": "multiply",
+          "args": ["$distance", "$direction"]
+        }
+      ]
+    },
+    "opposite_position": {
+      "op": "subtract",
+      "args": [1, "$answer_position"]
+    },
+    "left": {
+      "op": "add",
+      "args": [
+        {
+          "op": "multiply",
+          "args": ["$answer_position", "$result"]
+        },
+        {
+          "op": "multiply",
+          "args": ["$opposite_position", "$other"]
+        }
+      ]
+    },
+    "right": {
+      "op": "add",
+      "args": [
+        {
+          "op": "multiply",
+          "args": ["$opposite_position", "$result"]
+        },
+        {
+          "op": "multiply",
+          "args": ["$answer_position", "$other"]
+        }
+      ]
+    }
+  },
+
+  "constraints": [
+    {
+      "op": "greater_or_equal",
+      "args": ["$other", 0]
+    },
+    {
+      "op": "less_or_equal",
+      "args": ["$other", 100]
+    }
+  ],
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "result",
+        "operation": "offset",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$result"]
+  },
+
+  "templates": [
+    {
+      "context": "Il {operation.name} tra {left} e {right} è",
+      "target": " {result}"
+    }
+  ]
+}

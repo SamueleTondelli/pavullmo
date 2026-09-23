@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "id": "entity_taxonomy",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "taxonomy": [
+      {"item": "il gatto", "category": "dei mammiferi"},
+      {"item": "il cane", "category": "dei mammiferi"},
+      {"item": "l'elefante", "category": "dei mammiferi"},
+      {"item": "la balena", "category": "dei mammiferi"},
+
+      {"item": "l'aquila", "category": "degli uccelli"},
+      {"item": "il pinguino", "category": "degli uccelli"},
+      {"item": "il gufo", "category": "degli uccelli"},
+
+      {"item": "il coccodrillo", "category": "dei rettili"},
+      {"item": "la tartaruga", "category": "dei rettili"},
+      {"item": "il serpente", "category": "dei rettili"},
+
+      {"item": "la rana", "category": "degli anfibi"},
+      {"item": "la salamandra", "category": "degli anfibi"},
+      {"item": "il rospo", "category": "degli anfibi"},
+
+      {"item": "il tonno", "category": "dei pesci"},
+      {"item": "lo squalo", "category": "dei pesci"},
+      {"item": "il salmone", "category": "dei pesci"},
+
+      {"item": "la farfalla", "category": "degli insetti"},
+      {"item": "la formica", "category": "degli insetti"},
+      {"item": "l'ape", "category": "degli insetti"},
+
+      {"item": "il ragno", "category": "degli aracnidi"},
+      {"item": "lo scorpione", "category": "degli aracnidi"},
+      {"item": "la zecca", "category": "degli aracnidi"},
+
+      {"item": "il granchio", "category": "dei crostacei"},
+      {"item": "l'aragosta", "category": "dei crostacei"},
+      {"item": "il gambero", "category": "dei crostacei"},
+
+      {"item": "il polpo", "category": "dei molluschi"},
+      {"item": "la lumaca", "category": "dei molluschi"},
+      {"item": "la cozza", "category": "dei molluschi"},
+
+      {"item": "la banana", "category": "dei frutti"},
+      {"item": "l'arancia", "category": "dei frutti"},
+      {"item": "la pera", "category": "dei frutti"},
+      {"item": "la ciliegia", "category": "dei frutti"},
+
+      {"item": "la carota", "category": "degli ortaggi"},
+      {"item": "il sedano", "category": "degli ortaggi"},
+      {"item": "la lattuga", "category": "degli ortaggi"},
+      {"item": "lo spinacio", "category": "degli ortaggi"}
+    ]
+  },
+
+  "variables": {
+    "fact": {
+      "type": "choice",
+      "source": "taxonomy"
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "fact",
+        "operation": "resample_distinct"
+      }
+    ],
+    "unique_on": ["$fact.item", "$fact.category"]
+  },
+
+  "templates": [
+    {
+      "context": "Nella classificazione generale, {fact.item} fa parte",
+      "target": " {fact.category}."
+    }
+  ]
+}

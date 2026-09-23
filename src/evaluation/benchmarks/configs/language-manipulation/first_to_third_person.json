@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "id": "few_shot_first_to_third_person",
+  "language": "it",
+
+  "generation": {"sets": 100, "seed": 42},
+
+  "sources": {
+    "transformations": [
+      {"input": "io mangio", "output": "lui mangia"},
+      {"input": "io bevo", "output": "lui beve"},
+      {"input": "io dormo", "output": "lui dorme"},
+      {"input": "io corro", "output": "lui corre"},
+      {"input": "io leggo", "output": "lui legge"},
+      {"input": "io scrivo", "output": "lui scrive"},
+      {"input": "io parlo", "output": "lui parla"},
+      {"input": "io ascolto", "output": "lui ascolta"},
+      {"input": "io apro", "output": "lui apre"},
+      {"input": "io chiudo", "output": "lui chiude"},
+      {"input": "io vado", "output": "lui va"},
+      {"input": "io vengo", "output": "lui viene"},
+      {"input": "io faccio", "output": "lui fa"},
+      {"input": "io dico", "output": "lui dice"},
+      {"input": "io posso", "output": "lui può"},
+      {"input": "io voglio", "output": "lui vuole"},
+      {"input": "io so", "output": "lui sa"},
+      {"input": "io sono", "output": "lui è"},
+      {"input": "io ho", "output": "lui ha"},
+      {"input": "io esco", "output": "lui esce"},
+      {"input": "io salgo", "output": "lui sale"},
+      {"input": "io scelgo", "output": "lui sceglie"},
+      {"input": "io finisco", "output": "lui finisce"},
+      {"input": "io capisco", "output": "lui capisce"}
+    ]
+  },
+
+  "variables": {
+    "examples": {"type": "sample", "source": "transformations", "count": 6},
+    "query_index": {"type": "constant", "value": 2}
+  },
+
+  "derived": {
+    "inputs": {"op": "pluck", "args": ["$examples", "input"]},
+    "outputs": {"op": "pluck", "args": ["$examples", "output"]},
+    "demo_inputs": {"op": "slice", "args": ["$inputs", 0, 2]},
+    "demo_outputs": {"op": "slice", "args": ["$outputs", 0, 2]},
+    "demonstrations": {
+      "op": "pair_strings",
+      "args": ["$demo_inputs", " → ", "$demo_outputs"]
+    },
+    "query_input": {"op": "item_at", "args": ["$inputs", "$query_index"]},
+    "answer": {"op": "item_at", "args": ["$outputs", "$query_index"]}
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [2, 3, 4, 5]
+      }
+    ],
+    "unique_on": ["$query_input", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Segui la trasformazione mostrata negli esempi: {demonstrations|comma_list}. {query_input} →",
+      "target": " {answer}"
+    }
+  ]
+}

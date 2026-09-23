@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "id": "count_sequence_occurrences",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "symbol_groups": [
+      {"target": "A", "other_a": "B", "other_b": "C"},
+      {"target": "X", "other_a": "Y", "other_b": "Z"},
+      {"target": "7", "other_a": "3", "other_b": "9"},
+      {"target": "2", "other_a": "5", "other_b": "8"},
+      {"target": "rosso", "other_a": "blu", "other_b": "verde"},
+      {"target": "sole", "other_a": "luna", "other_b": "stella"},
+      {"target": "gatto", "other_a": "cane", "other_b": "topo"},
+      {"target": "uno", "other_a": "due", "other_b": "tre"}
+    ]
+  },
+
+  "variables": {
+    "symbols": {
+      "type": "choice",
+      "source": "symbol_groups"
+    },
+    "requested_count": {
+      "type": "integer",
+      "min": 1,
+      "max": 5
+    },
+    "total_count": {
+      "type": "constant",
+      "value": 12
+    },
+    "other_a_count": {
+      "type": "constant",
+      "value": 3
+    }
+  },
+
+  "derived": {
+    "other_b_count": {
+      "op": "subtract",
+      "args": [
+        {
+          "op": "subtract",
+          "args": ["$total_count", "$requested_count"]
+        },
+        "$other_a_count"
+      ]
+    },
+    "target_values": {
+      "op": "repeat",
+      "args": ["$symbols.target", "$requested_count"]
+    },
+    "other_a_values": {
+      "op": "repeat",
+      "args": ["$symbols.other_a", "$other_a_count"]
+    },
+    "other_b_values": {
+      "op": "repeat",
+      "args": ["$symbols.other_b", "$other_b_count"]
+    },
+    "sequence": {
+      "op": "interleave",
+      "args": ["$target_values", "$other_a_values", "$other_b_values"]
+    },
+    "count": {
+      "op": "count_equal",
+      "args": ["$sequence", "$symbols.target"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "requested_count",
+        "operation": "offset",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$count"]
+  },
+
+  "templates": [
+    {
+      "context": "Nella sequenza {sequence|comma_list}, quante volte compare {symbols.target}?",
+      "target": " {count|it_number}."
+    }
+  ]
+}

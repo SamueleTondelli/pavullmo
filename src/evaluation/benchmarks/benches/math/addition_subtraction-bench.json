@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "addition_subtraction",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "59 + 35 =",
+          "target": " 94"
+        },
+        {
+          "context": "60 + 35 =",
+          "target": " 95"
+        },
+        {
+          "context": "61 + 35 =",
+          "target": " 96"
+        },
+        {
+          "context": "62 + 35 =",
+          "target": " 97"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "21 + 54 =",
+          "target": " 75"
+        },
+        {
+          "context": "22 + 54 =",
+          "target": " 76"
+        },
+        {
+          "context": "23 + 54 =",
+          "target": " 77"
+        },
+        {
+          "context": "24 + 54 =",
+          "target": " 78"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "46 + 25 =",
+          "target": " 71"
+        },
+        {
+          "context": "47 + 25 =",
+          "target": " 72"
+        },
+        {
+          "context": "48 + 25 =",
+          "target": " 73"
+        },
+        {
+          "context": "49 + 25 =",
+          "target": " 74"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "77 + 20 =",
+          "target": " 97"
+        },
+        {
+          "context": "78 + 20 =",
+          "target": " 98"
+        },
+        {
+          "context": "79 + 20 =",
+          "target": " 99"
+        },
+        {
+          "context": "80 + 20 =",
+          "target": " 100"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "54 - 19 =",
+          "target": " 35"
+        },
+        {
+          "context": "55 - 19 =",
+          "target": " 36"
+        },
+        {
+          "context": "56 - 19 =",
+          "target": " 37"
+        },
+        {
+          "context": "57 - 19 =",
+          "target": " 38"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "24 - 11 =",
+          "target": " 13"
+        },
+        {
+          "context": "25 - 11 =",
+          "target": " 14"
+        },
+        {
+          "context": "26 - 11 =",
+          "target": " 15"
+        },
+        {
+          "context": "27 - 11 =",
+          "target": " 16"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "1 + 44 =",
+          "target": " 45"
+        },
+        {
+          "context": "2 + 44 =",
+          "target": " 46"
+        },
+        {
+          "context": "3 + 44 =",
+          "target": " 47"
+        },
+        {
+          "context": "4 + 44 =",
+          "target": " 48"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "35 + 58 =",
+          "target": " 93"
+        },
+        {
+          "context": "36 + 58 =",
+          "target": " 94"
+        },
+        {
+          "context": "37 + 58 =",
+          "target": " 95"
+        },
+        {
+          "context": "38 + 58 =",
+          "target": " 96"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "80 - 70 =",
+          "target": " 10"
+        },
+        {
+          "context": "81 - 70 =",
+          "target": " 11"
+        },
+        {
+          "context": "82 - 70 =",
+          "target": " 12"
+        },
+        {
+          "context": "83 - 70 =",
+          "target": " 13"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "97 - 24 =",
+          "target": " 73"
+        },
+        {
+          "context": "98 - 24 =",
+          "target": " 74"
+        },
+        {
+          "context": "99 - 24 =",
+          "target": " 75"
+        },
+        {
+          "context": "100 - 24 =",
+          "target": " 76"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "55 + 29 =",
+          "target": " 84"
+        },
+        {
+          "context": "56 + 29 =",
+          "target": " 85"
+        },
+        {
+          "context": "57 + 29 =",
+          "target": " 86"
+        },
+        {
+          "context": "58 + 29 =",
+          "target": " 87"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "17 + 12 =",
+          "target": " 29"
+        },
+        {
+          "context": "18 + 12 =",
+          "target": " 30"
+        },
+        {
+          "context": "19 + 12 =",
+          "target": " 31"
+        },
+        {
+          "context": "20 + 12 =",
+          "target": " 32"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "2 + 45 =",
+          "target": " 47"
+        },
+        {
+          "context": "3 + 45 =",
+          "target": " 48"
+        },
+        {
+          "context": "4 + 45 =",
+          "target": " 49"
+        },
+        {
+          "context": "5 + 45 =",
+          "target": " 50"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "11 + 48 =",
+          "target": " 59"
+        },
+        {
+          "context": "12 + 48 =",
+          "target": " 60"
+        },
+        {
+          "context": "13 + 48 =",
+          "target": " 61"
+        },
+        {
+          "context": "14 + 48 =",
+          "target": " 62"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "46 + 41 =",
+          "target": " 87"
+        },
+        {
+          "context": "47 + 41 =",
+          "target": " 88"
+        },
+        {
+          "context": "48 + 41 =",
+          "target": " 89"
+        },
+        {
+          "context": "49 + 41 =",
+          "target": " 90"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "35 - 27 =",
+          "target": " 8"
+        },
+        {
+          "context": "36 - 27 =",
+          "target": " 9"
+        },
+        {
+          "context": "37 - 27 =",
+          "target": " 10"
+        },
+        {
+          "context": "38 - 27 =",
+          "target": " 11"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "20 + 63 =",
+          "target": " 83"
+        },
+        {
+          "context": "21 + 63 =",
+          "target": " 84"
+        },
+        {
+          "context": "22 + 63 =",
+          "target": " 85"
+        },
+        {
+          "context": "23 + 63 =",
+          "target": " 86"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "51 - 33 =",
+          "target": " 18"
+        },
+        {
+          "context": "52 - 33 =",
+          "target": " 19"
+        },
+        {
+          "context": "53 - 33 =",
+          "target": " 20"
+        },
+        {
+          "context": "54 - 33 =",
+          "target": " 21"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "24 + 71 =",
+          "target": " 95"
+        },
+        {
+          "context": "25 + 71 =",
+          "target": " 96"
+        },
+        {
+          "context": "26 + 71 =",
+          "target": " 97"
+        },
+        {
+          "context": "27 + 71 =",
+          "target": " 98"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "90 + 6 =",
+          "target": " 96"
+        },
+        {
+          "context": "91 + 6 =",
+          "target": " 97"
+        },
+        {
+          "context": "92 + 6 =",
+          "target": " 98"
+        },
+        {
+          "context": "93 + 6 =",
+          "target": " 99"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "60 + 20 =",
+          "target": " 80"
+        },
+        {
+          "context": "61 + 20 =",
+          "target": " 81"
+        },
+        {
+          "context": "62 + 20 =",
+          "target": " 82"
+        },
+        {
+          "context": "63 + 20 =",
+          "target": " 83"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "1 + 48 =",
+          "target": " 49"
+        },
+        {
+          "context": "2 + 48 =",
+          "target": " 50"
+        },
+        {
+          "context": "3 + 48 =",
+          "target": " 51"
+        },
+        {
+          "context": "4 + 48 =",
+          "target": " 52"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "71 - 1 =",
+          "target": " 70"
+        },
+        {
+          "context": "72 - 1 =",
+          "target": " 71"
+        },
+        {
+          "context": "73 - 1 =",
+          "target": " 72"
+        },
+        {
+          "context": "74 - 1 =",
+          "target": " 73"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "75 - 20 =",
+          "target": " 55"
+        },
+        {
+          "context": "76 - 20 =",
+          "target": " 56"
+        },
+        {
+          "context": "77 - 20 =",
+          "target": " 57"
+        },
+        {
+          "context": "78 - 20 =",
+          "target": " 58"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "0 + 92 =",
+          "target": " 92"
+        },
+        {
+          "context": "1 + 92 =",
+          "target": " 93"
+        },
+        {
+          "context": "2 + 92 =",
+          "target": " 94"
+        },
+        {
+          "context": "3 + 92 =",
+          "target": " 95"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "51 + 13 =",
+          "target": " 64"
+        },
+        {
+          "context": "52 + 13 =",
+          "target": " 65"
+        },
+        {
+          "context": "53 + 13 =",
+          "target": " 66"
+        },
+        {
+          "context": "54 + 13 =",
+          "target": " 67"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "35 + 41 =",
+          "target": " 76"
+        },
+        {
+          "context": "36 + 41 =",
+          "target": " 77"
+        },
+        {
+          "context": "37 + 41 =",
+          "target": " 78"
+        },
+        {
+          "context": "38 + 41 =",
+          "target": " 79"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "31 + 62 =",
+          "target": " 93"
+        },
+        {
+          "context": "32 + 62 =",
+          "target": " 94"
+        },
+        {
+          "context": "33 + 62 =",
+          "target": " 95"
+        },
+        {
+          "context": "34 + 62 =",
+          "target": " 96"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "20 + 8 =",
+          "target": " 28"
+        },
+        {
+          "context": "21 + 8 =",
+          "target": " 29"
+        },
+        {
+          "context": "22 + 8 =",
+          "target": " 30"
+        },
+        {
+          "context": "23 + 8 =",
+          "target": " 31"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "5 + 70 =",
+          "target": " 75"
+        },
+        {
+          "context": "6 + 70 =",
+          "target": " 76"
+        },
+        {
+          "context": "7 + 70 =",
+          "target": " 77"
+        },
+        {
+          "context": "8 + 70 =",
+          "target": " 78"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "4 + 4 =",
+          "target": " 8"
+        },
+        {
+          "context": "5 + 4 =",
+          "target": " 9"
+        },
+        {
+          "context": "6 + 4 =",
+          "target": " 10"
+        },
+        {
+          "context": "7 + 4 =",
+          "target": " 11"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "35 + 30 =",
+          "target": " 65"
+        },
+        {
+          "context": "36 + 30 =",
+          "target": " 66"
+        },
+        {
+          "context": "37 + 30 =",
+          "target": " 67"
+        },
+        {
+          "context": "38 + 30 =",
+          "target": " 68"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "96 - 69 =",
+          "target": " 27"
+        },
+        {
+          "context": "97 - 69 =",
+          "target": " 28"
+        },
+        {
+          "context": "98 - 69 =",
+          "target": " 29"
+        },
+        {
+          "context": "99 - 69 =",
+          "target": " 30"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "36 - 12 =",
+          "target": " 24"
+        },
+        {
+          "context": "37 - 12 =",
+          "target": " 25"
+        },
+        {
+          "context": "38 - 12 =",
+          "target": " 26"
+        },
+        {
+          "context": "39 - 12 =",
+          "target": " 27"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "7 + 24 =",
+          "target": " 31"
+        },
+        {
+          "context": "8 + 24 =",
+          "target": " 32"
+        },
+        {
+          "context": "9 + 24 =",
+          "target": " 33"
+        },
+        {
+          "context": "10 + 24 =",
+          "target": " 34"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "71 - 54 =",
+          "target": " 17"
+        },
+        {
+          "context": "72 - 54 =",
+          "target": " 18"
+        },
+        {
+          "context": "73 - 54 =",
+          "target": " 19"
+        },
+        {
+          "context": "74 - 54 =",
+          "target": " 20"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "90 - 31 =",
+          "target": " 59"
+        },
+        {
+          "context": "91 - 31 =",
+          "target": " 60"
+        },
+        {
+          "context": "92 - 31 =",
+          "target": " 61"
+        },
+        {
+          "context": "93 - 31 =",
+          "target": " 62"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "82 - 12 =",
+          "target": " 70"
+        },
+        {
+          "context": "83 - 12 =",
+          "target": " 71"
+        },
+        {
+          "context": "84 - 12 =",
+          "target": " 72"
+        },
+        {
+          "context": "85 - 12 =",
+          "target": " 73"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "44 + 7 =",
+          "target": " 51"
+        },
+        {
+          "context": "45 + 7 =",
+          "target": " 52"
+        },
+        {
+          "context": "46 + 7 =",
+          "target": " 53"
+        },
+        {
+          "context": "47 + 7 =",
+          "target": " 54"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "49 - 49 =",
+          "target": " 0"
+        },
+        {
+          "context": "50 - 49 =",
+          "target": " 1"
+        },
+        {
+          "context": "51 - 49 =",
+          "target": " 2"
+        },
+        {
+          "context": "52 - 49 =",
+          "target": " 3"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "90 - 54 =",
+          "target": " 36"
+        },
+        {
+          "context": "91 - 54 =",
+          "target": " 37"
+        },
+        {
+          "context": "92 - 54 =",
+          "target": " 38"
+        },
+        {
+          "context": "93 - 54 =",
+          "target": " 39"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "13 - 6 =",
+          "target": " 7"
+        },
+        {
+          "context": "14 - 6 =",
+          "target": " 8"
+        },
+        {
+          "context": "15 - 6 =",
+          "target": " 9"
+        },
+        {
+          "context": "16 - 6 =",
+          "target": " 10"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "36 + 15 =",
+          "target": " 51"
+        },
+        {
+          "context": "37 + 15 =",
+          "target": " 52"
+        },
+        {
+          "context": "38 + 15 =",
+          "target": " 53"
+        },
+        {
+          "context": "39 + 15 =",
+          "target": " 54"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "69 + 10 =",
+          "target": " 79"
+        },
+        {
+          "context": "70 + 10 =",
+          "target": " 80"
+        },
+        {
+          "context": "71 + 10 =",
+          "target": " 81"
+        },
+        {
+          "context": "72 + 10 =",
+          "target": " 82"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "59 - 26 =",
+          "target": " 33"
+        },
+        {
+          "context": "60 - 26 =",
+          "target": " 34"
+        },
+        {
+          "context": "61 - 26 =",
+          "target": " 35"
+        },
+        {
+          "context": "62 - 26 =",
+          "target": " 36"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "41 + 27 =",
+          "target": " 68"
+        },
+        {
+          "context": "42 + 27 =",
+          "target": " 69"
+        },
+        {
+          "context": "43 + 27 =",
+          "target": " 70"
+        },
+        {
+          "context": "44 + 27 =",
+          "target": " 71"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "36 + 8 =",
+          "target": " 44"
+        },
+        {
+          "context": "37 + 8 =",
+          "target": " 45"
+        },
+        {
+          "context": "38 + 8 =",
+          "target": " 46"
+        },
+        {
+          "context": "39 + 8 =",
+          "target": " 47"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "56 - 20 =",
+          "target": " 36"
+        },
+        {
+          "context": "57 - 20 =",
+          "target": " 37"
+        },
+        {
+          "context": "58 - 20 =",
+          "target": " 38"
+        },
+        {
+          "context": "59 - 20 =",
+          "target": " 39"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "97 - 13 =",
+          "target": " 84"
+        },
+        {
+          "context": "98 - 13 =",
+          "target": " 85"
+        },
+        {
+          "context": "99 - 13 =",
+          "target": " 86"
+        },
+        {
+          "context": "100 - 13 =",
+          "target": " 87"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "27 - 13 =",
+          "target": " 14"
+        },
+        {
+          "context": "28 - 13 =",
+          "target": " 15"
+        },
+        {
+          "context": "29 - 13 =",
+          "target": " 16"
+        },
+        {
+          "context": "30 - 13 =",
+          "target": " 17"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "38 - 6 =",
+          "target": " 32"
+        },
+        {
+          "context": "39 - 6 =",
+          "target": " 33"
+        },
+        {
+          "context": "40 - 6 =",
+          "target": " 34"
+        },
+        {
+          "context": "41 - 6 =",
+          "target": " 35"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "40 - 5 =",
+          "target": " 35"
+        },
+        {
+          "context": "41 - 5 =",
+          "target": " 36"
+        },
+        {
+          "context": "42 - 5 =",
+          "target": " 37"
+        },
+        {
+          "context": "43 - 5 =",
+          "target": " 38"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "97 - 81 =",
+          "target": " 16"
+        },
+        {
+          "context": "98 - 81 =",
+          "target": " 17"
+        },
+        {
+          "context": "99 - 81 =",
+          "target": " 18"
+        },
+        {
+          "context": "100 - 81 =",
+          "target": " 19"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "38 + 56 =",
+          "target": " 94"
+        },
+        {
+          "context": "39 + 56 =",
+          "target": " 95"
+        },
+        {
+          "context": "40 + 56 =",
+          "target": " 96"
+        },
+        {
+          "context": "41 + 56 =",
+          "target": " 97"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "5 + 9 =",
+          "target": " 14"
+        },
+        {
+          "context": "6 + 9 =",
+          "target": " 15"
+        },
+        {
+          "context": "7 + 9 =",
+          "target": " 16"
+        },
+        {
+          "context": "8 + 9 =",
+          "target": " 17"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "21 - 5 =",
+          "target": " 16"
+        },
+        {
+          "context": "22 - 5 =",
+          "target": " 17"
+        },
+        {
+          "context": "23 - 5 =",
+          "target": " 18"
+        },
+        {
+          "context": "24 - 5 =",
+          "target": " 19"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "50 - 45 =",
+          "target": " 5"
+        },
+        {
+          "context": "51 - 45 =",
+          "target": " 6"
+        },
+        {
+          "context": "52 - 45 =",
+          "target": " 7"
+        },
+        {
+          "context": "53 - 45 =",
+          "target": " 8"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "72 + 13 =",
+          "target": " 85"
+        },
+        {
+          "context": "73 + 13 =",
+          "target": " 86"
+        },
+        {
+          "context": "74 + 13 =",
+          "target": " 87"
+        },
+        {
+          "context": "75 + 13 =",
+          "target": " 88"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "64 - 60 =",
+          "target": " 4"
+        },
+        {
+          "context": "65 - 60 =",
+          "target": " 5"
+        },
+        {
+          "context": "66 - 60 =",
+          "target": " 6"
+        },
+        {
+          "context": "67 - 60 =",
+          "target": " 7"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "14 + 44 =",
+          "target": " 58"
+        },
+        {
+          "context": "15 + 44 =",
+          "target": " 59"
+        },
+        {
+          "context": "16 + 44 =",
+          "target": " 60"
+        },
+        {
+          "context": "17 + 44 =",
+          "target": " 61"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "25 + 3 =",
+          "target": " 28"
+        },
+        {
+          "context": "26 + 3 =",
+          "target": " 29"
+        },
+        {
+          "context": "27 + 3 =",
+          "target": " 30"
+        },
+        {
+          "context": "28 + 3 =",
+          "target": " 31"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "77 - 35 =",
+          "target": " 42"
+        },
+        {
+          "context": "78 - 35 =",
+          "target": " 43"
+        },
+        {
+          "context": "79 - 35 =",
+          "target": " 44"
+        },
+        {
+          "context": "80 - 35 =",
+          "target": " 45"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "17 - 14 =",
+          "target": " 3"
+        },
+        {
+          "context": "18 - 14 =",
+          "target": " 4"
+        },
+        {
+          "context": "19 - 14 =",
+          "target": " 5"
+        },
+        {
+          "context": "20 - 14 =",
+          "target": " 6"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "41 + 33 =",
+          "target": " 74"
+        },
+        {
+          "context": "42 + 33 =",
+          "target": " 75"
+        },
+        {
+          "context": "43 + 33 =",
+          "target": " 76"
+        },
+        {
+          "context": "44 + 33 =",
+          "target": " 77"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "21 + 55 =",
+          "target": " 76"
+        },
+        {
+          "context": "22 + 55 =",
+          "target": " 77"
+        },
+        {
+          "context": "23 + 55 =",
+          "target": " 78"
+        },
+        {
+          "context": "24 + 55 =",
+          "target": " 79"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "97 - 24 =",
+          "target": " 73"
+        },
+        {
+          "context": "98 - 24 =",
+          "target": " 74"
+        },
+        {
+          "context": "99 - 24 =",
+          "target": " 75"
+        },
+        {
+          "context": "100 - 24 =",
+          "target": " 76"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "35 + 55 =",
+          "target": " 90"
+        },
+        {
+          "context": "36 + 55 =",
+          "target": " 91"
+        },
+        {
+          "context": "37 + 55 =",
+          "target": " 92"
+        },
+        {
+          "context": "38 + 55 =",
+          "target": " 93"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "6 + 72 =",
+          "target": " 78"
+        },
+        {
+          "context": "7 + 72 =",
+          "target": " 79"
+        },
+        {
+          "context": "8 + 72 =",
+          "target": " 80"
+        },
+        {
+          "context": "9 + 72 =",
+          "target": " 81"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "70 - 0 =",
+          "target": " 70"
+        },
+        {
+          "context": "71 - 0 =",
+          "target": " 71"
+        },
+        {
+          "context": "72 - 0 =",
+          "target": " 72"
+        },
+        {
+          "context": "73 - 0 =",
+          "target": " 73"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "81 - 55 =",
+          "target": " 26"
+        },
+        {
+          "context": "82 - 55 =",
+          "target": " 27"
+        },
+        {
+          "context": "83 - 55 =",
+          "target": " 28"
+        },
+        {
+          "context": "84 - 55 =",
+          "target": " 29"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "66 + 30 =",
+          "target": " 96"
+        },
+        {
+          "context": "67 + 30 =",
+          "target": " 97"
+        },
+        {
+          "context": "68 + 30 =",
+          "target": " 98"
+        },
+        {
+          "context": "69 + 30 =",
+          "target": " 99"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "7 + 18 =",
+          "target": " 25"
+        },
+        {
+          "context": "8 + 18 =",
+          "target": " 26"
+        },
+        {
+          "context": "9 + 18 =",
+          "target": " 27"
+        },
+        {
+          "context": "10 + 18 =",
+          "target": " 28"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "26 + 28 =",
+          "target": " 54"
+        },
+        {
+          "context": "27 + 28 =",
+          "target": " 55"
+        },
+        {
+          "context": "28 + 28 =",
+          "target": " 56"
+        },
+        {
+          "context": "29 + 28 =",
+          "target": " 57"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "77 - 71 =",
+          "target": " 6"
+        },
+        {
+          "context": "78 - 71 =",
+          "target": " 7"
+        },
+        {
+          "context": "79 - 71 =",
+          "target": " 8"
+        },
+        {
+          "context": "80 - 71 =",
+          "target": " 9"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "41 + 17 =",
+          "target": " 58"
+        },
+        {
+          "context": "42 + 17 =",
+          "target": " 59"
+        },
+        {
+          "context": "43 + 17 =",
+          "target": " 60"
+        },
+        {
+          "context": "44 + 17 =",
+          "target": " 61"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "65 - 9 =",
+          "target": " 56"
+        },
+        {
+          "context": "66 - 9 =",
+          "target": " 57"
+        },
+        {
+          "context": "67 - 9 =",
+          "target": " 58"
+        },
+        {
+          "context": "68 - 9 =",
+          "target": " 59"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "1 + 52 =",
+          "target": " 53"
+        },
+        {
+          "context": "2 + 52 =",
+          "target": " 54"
+        },
+        {
+          "context": "3 + 52 =",
+          "target": " 55"
+        },
+        {
+          "context": "4 + 52 =",
+          "target": " 56"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "60 - 7 =",
+          "target": " 53"
+        },
+        {
+          "context": "61 - 7 =",
+          "target": " 54"
+        },
+        {
+          "context": "62 - 7 =",
+          "target": " 55"
+        },
+        {
+          "context": "63 - 7 =",
+          "target": " 56"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "61 - 0 =",
+          "target": " 61"
+        },
+        {
+          "context": "62 - 0 =",
+          "target": " 62"
+        },
+        {
+          "context": "63 - 0 =",
+          "target": " 63"
+        },
+        {
+          "context": "64 - 0 =",
+          "target": " 64"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "34 + 28 =",
+          "target": " 62"
+        },
+        {
+          "context": "35 + 28 =",
+          "target": " 63"
+        },
+        {
+          "context": "36 + 28 =",
+          "target": " 64"
+        },
+        {
+          "context": "37 + 28 =",
+          "target": " 65"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "65 - 3 =",
+          "target": " 62"
+        },
+        {
+          "context": "66 - 3 =",
+          "target": " 63"
+        },
+        {
+          "context": "67 - 3 =",
+          "target": " 64"
+        },
+        {
+          "context": "68 - 3 =",
+          "target": " 65"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "43 + 16 =",
+          "target": " 59"
+        },
+        {
+          "context": "44 + 16 =",
+          "target": " 60"
+        },
+        {
+          "context": "45 + 16 =",
+          "target": " 61"
+        },
+        {
+          "context": "46 + 16 =",
+          "target": " 62"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "28 + 54 =",
+          "target": " 82"
+        },
+        {
+          "context": "29 + 54 =",
+          "target": " 83"
+        },
+        {
+          "context": "30 + 54 =",
+          "target": " 84"
+        },
+        {
+          "context": "31 + 54 =",
+          "target": " 85"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "29 - 6 =",
+          "target": " 23"
+        },
+        {
+          "context": "30 - 6 =",
+          "target": " 24"
+        },
+        {
+          "context": "31 - 6 =",
+          "target": " 25"
+        },
+        {
+          "context": "32 - 6 =",
+          "target": " 26"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "68 - 27 =",
+          "target": " 41"
+        },
+        {
+          "context": "69 - 27 =",
+          "target": " 42"
+        },
+        {
+          "context": "70 - 27 =",
+          "target": " 43"
+        },
+        {
+          "context": "71 - 27 =",
+          "target": " 44"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "58 + 2 =",
+          "target": " 60"
+        },
+        {
+          "context": "59 + 2 =",
+          "target": " 61"
+        },
+        {
+          "context": "60 + 2 =",
+          "target": " 62"
+        },
+        {
+          "context": "61 + 2 =",
+          "target": " 63"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "93 + 3 =",
+          "target": " 96"
+        },
+        {
+          "context": "94 + 3 =",
+          "target": " 97"
+        },
+        {
+          "context": "95 + 3 =",
+          "target": " 98"
+        },
+        {
+          "context": "96 + 3 =",
+          "target": " 99"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "26 + 13 =",
+          "target": " 39"
+        },
+        {
+          "context": "27 + 13 =",
+          "target": " 40"
+        },
+        {
+          "context": "28 + 13 =",
+          "target": " 41"
+        },
+        {
+          "context": "29 + 13 =",
+          "target": " 42"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "33 + 22 =",
+          "target": " 55"
+        },
+        {
+          "context": "34 + 22 =",
+          "target": " 56"
+        },
+        {
+          "context": "35 + 22 =",
+          "target": " 57"
+        },
+        {
+          "context": "36 + 22 =",
+          "target": " 58"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "42 - 11 =",
+          "target": " 31"
+        },
+        {
+          "context": "43 - 11 =",
+          "target": " 32"
+        },
+        {
+          "context": "44 - 11 =",
+          "target": " 33"
+        },
+        {
+          "context": "45 - 11 =",
+          "target": " 34"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "46 - 3 =",
+          "target": " 43"
+        },
+        {
+          "context": "47 - 3 =",
+          "target": " 44"
+        },
+        {
+          "context": "48 - 3 =",
+          "target": " 45"
+        },
+        {
+          "context": "49 - 3 =",
+          "target": " 46"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "85 - 62 =",
+          "target": " 23"
+        },
+        {
+          "context": "86 - 62 =",
+          "target": " 24"
+        },
+        {
+          "context": "87 - 62 =",
+          "target": " 25"
+        },
+        {
+          "context": "88 - 62 =",
+          "target": " 26"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "76 - 43 =",
+          "target": " 33"
+        },
+        {
+          "context": "77 - 43 =",
+          "target": " 34"
+        },
+        {
+          "context": "78 - 43 =",
+          "target": " 35"
+        },
+        {
+          "context": "79 - 43 =",
+          "target": " 36"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "72 - 1 =",
+          "target": " 71"
+        },
+        {
+          "context": "73 - 1 =",
+          "target": " 72"
+        },
+        {
+          "context": "74 - 1 =",
+          "target": " 73"
+        },
+        {
+          "context": "75 - 1 =",
+          "target": " 74"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "13 - 11 =",
+          "target": " 2"
+        },
+        {
+          "context": "14 - 11 =",
+          "target": " 3"
+        },
+        {
+          "context": "15 - 11 =",
+          "target": " 4"
+        },
+        {
+          "context": "16 - 11 =",
+          "target": " 5"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "61 - 29 =",
+          "target": " 32"
+        },
+        {
+          "context": "62 - 29 =",
+          "target": " 33"
+        },
+        {
+          "context": "63 - 29 =",
+          "target": " 34"
+        },
+        {
+          "context": "64 - 29 =",
+          "target": " 35"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "25 + 15 =",
+          "target": " 40"
+        },
+        {
+          "context": "26 + 15 =",
+          "target": " 41"
+        },
+        {
+          "context": "27 + 15 =",
+          "target": " 42"
+        },
+        {
+          "context": "28 + 15 =",
+          "target": " 43"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "60 - 38 =",
+          "target": " 22"
+        },
+        {
+          "context": "61 - 38 =",
+          "target": " 23"
+        },
+        {
+          "context": "62 - 38 =",
+          "target": " 24"
+        },
+        {
+          "context": "63 - 38 =",
+          "target": " 25"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "30 + 5 =",
+          "target": " 35"
+        },
+        {
+          "context": "31 + 5 =",
+          "target": " 36"
+        },
+        {
+          "context": "32 + 5 =",
+          "target": " 37"
+        },
+        {
+          "context": "33 + 5 =",
+          "target": " 38"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "16 + 15 =",
+          "target": " 31"
+        },
+        {
+          "context": "17 + 15 =",
+          "target": " 32"
+        },
+        {
+          "context": "18 + 15 =",
+          "target": " 33"
+        },
+        {
+          "context": "19 + 15 =",
+          "target": " 34"
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

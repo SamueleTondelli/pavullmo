@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "count_sequence_occurrences",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, C, C, C, quante volte compare A?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, C, quante volte compare A?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, A, quante volte compare A?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, A, A, quante volte compare A?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 5, 8, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, X, X, quante volte compare X?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, X, X, X, X, quante volte compare X?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, X, Y, X, X, X, X, X, quante volte compare X?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza A, B, C, B, C, B, C, C, C, C, C, C, quante volte compare A?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, B, C, C, C, C, C, quante volte compare A?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, C, C, C, quante volte compare A?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, C, quante volte compare A?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 5, 8, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 2, 2, quante volte compare 2?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 2, 2, 2, 2, quante volte compare 2?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 2, 5, 2, 2, 2, 2, 2, quante volte compare 2?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 2, 2, quante volte compare 2?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 2, 2, 2, 2, quante volte compare 2?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, B, C, C, C, C, C, quante volte compare A?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, C, C, C, quante volte compare A?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, C, quante volte compare A?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, A, quante volte compare A?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, stella, quante volte compare sole?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, sole, quante volte compare sole?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, sole, sole, quante volte compare sole?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 2, 2, quante volte compare 2?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, X, X, quante volte compare X?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, X, X, X, X, quante volte compare X?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, stella, quante volte compare sole?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, sole, quante volte compare sole?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, sole, sole, quante volte compare sole?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, C, quante volte compare A?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, A, quante volte compare A?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, A, A, quante volte compare A?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, A, A, A, A, quante volte compare A?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, cane, topo, cane, topo, cane, topo, topo, topo, topo, topo, topo, quante volte compare gatto?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, cane, topo, topo, topo, topo, topo, quante volte compare gatto?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, topo, topo, topo, quante volte compare gatto?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, topo, quante volte compare gatto?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, sole, quante volte compare sole?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, sole, sole, quante volte compare sole?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, sole, sole, sole, sole, quante volte compare sole?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, sole, luna, sole, sole, sole, sole, sole, quante volte compare sole?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, Y, Z, Y, Z, Z, Z, Z, Z, Z, quante volte compare X?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, Y, Z, Z, Z, Z, Z, quante volte compare X?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, Z, Z, Z, quante volte compare X?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, blu, verde, blu, verde, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, blu, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, X, X, quante volte compare X?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, X, X, X, X, quante volte compare X?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, tre, tre, tre, quante volte compare uno?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, uno, tre, tre, quante volte compare uno?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, uno, tre, uno, quante volte compare uno?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, uno, uno, uno, quante volte compare uno?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, stella, quante volte compare sole?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, sole, quante volte compare sole?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, sole, sole, quante volte compare sole?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, blu, verde, blu, verde, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, blu, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 5, 8, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, topo, topo, topo, quante volte compare gatto?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, topo, quante volte compare gatto?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, gatto, quante volte compare gatto?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, gatto, gatto, quante volte compare gatto?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza sole, luna, stella, luna, stella, luna, stella, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, luna, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, stella, quante volte compare sole?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, C, C, C, quante volte compare A?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, C, quante volte compare A?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, A, quante volte compare A?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, A, A, quante volte compare A?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, blu, verde, blu, verde, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, blu, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, luna, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, stella, quante volte compare sole?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, sole, quante volte compare sole?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, topo, quante volte compare gatto?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, gatto, quante volte compare gatto?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, gatto, gatto, quante volte compare gatto?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, gatto, gatto, gatto, gatto, quante volte compare gatto?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, blu, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, rosso, quante volte compare rosso?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, rosso, quante volte compare rosso?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, rosso, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, rosso, blu, rosso, rosso, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, topo, topo, topo, quante volte compare gatto?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, topo, quante volte compare gatto?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, gatto, quante volte compare gatto?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, gatto, gatto, quante volte compare gatto?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 7, quante volte compare 7?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 7, 7, quante volte compare 7?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 7, 7, 7, 7, quante volte compare 7?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 7, 3, 7, 7, 7, 7, 7, quante volte compare 7?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, Y, Z, Y, Z, Z, Z, Z, Z, Z, quante volte compare X?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, Y, Z, Z, Z, Z, Z, quante volte compare X?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, Z, Z, Z, quante volte compare X?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 3, 9, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 9, quante volte compare 7?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 7, quante volte compare 7?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, X, X, quante volte compare X?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, X, X, X, X, quante volte compare X?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, uno, tre, uno, quante volte compare uno?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, uno, uno, uno, quante volte compare uno?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, uno, uno, uno, uno, quante volte compare uno?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, uno, due, uno, uno, uno, uno, uno, quante volte compare uno?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza A, B, C, B, C, B, C, C, C, C, C, C, quante volte compare A?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, B, C, C, C, C, C, quante volte compare A?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, C, C, C, quante volte compare A?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, C, quante volte compare A?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza sole, luna, stella, luna, stella, luna, stella, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, luna, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, stella, quante volte compare sole?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, cane, topo, topo, topo, topo, topo, quante volte compare gatto?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, topo, topo, topo, quante volte compare gatto?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, topo, quante volte compare gatto?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, gatto, quante volte compare gatto?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, C, C, C, quante volte compare A?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, C, quante volte compare A?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, A, quante volte compare A?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, A, A, quante volte compare A?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, Z, Z, Z, quante volte compare X?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, X, X, quante volte compare X?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 9, quante volte compare 7?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 7, quante volte compare 7?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 7, 7, quante volte compare 7?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, A, quante volte compare A?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, A, A, quante volte compare A?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, A, A, A, A, quante volte compare A?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, A, B, A, A, A, A, A, quante volte compare A?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza uno, due, tre, due, tre, due, tre, tre, tre, tre, tre, tre, quante volte compare uno?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, due, tre, tre, tre, tre, tre, quante volte compare uno?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, tre, tre, tre, quante volte compare uno?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, uno, tre, tre, quante volte compare uno?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, stella, quante volte compare sole?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, sole, quante volte compare sole?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, sole, sole, quante volte compare sole?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, B, C, C, C, C, C, quante volte compare A?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, C, C, C, quante volte compare A?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, C, quante volte compare A?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, A, quante volte compare A?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, X, X, quante volte compare X?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, X, X, X, X, quante volte compare X?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 3, 9, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 9, quante volte compare 7?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 7, quante volte compare 7?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 9, quante volte compare 7?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 7, quante volte compare 7?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 7, 7, quante volte compare 7?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 2, 2, quante volte compare 2?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 2, 2, 2, 2, quante volte compare 2?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 2, 5, 2, 2, 2, 2, 2, quante volte compare 2?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, rosso, quante volte compare rosso?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, rosso, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, uno, tre, uno, quante volte compare uno?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, uno, uno, uno, quante volte compare uno?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, uno, uno, uno, uno, quante volte compare uno?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, uno, due, uno, uno, uno, uno, uno, quante volte compare uno?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, Y, Z, Z, Z, Z, Z, quante volte compare X?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, Z, Z, Z, quante volte compare X?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, Z, Z, Z, quante volte compare X?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, X, X, quante volte compare X?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 2, 2, quante volte compare 2?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 2, 2, 2, 2, quante volte compare 2?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 2, 5, 2, 2, 2, 2, 2, quante volte compare 2?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza A, B, C, B, C, B, C, C, C, C, C, C, quante volte compare A?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, B, C, C, C, C, C, quante volte compare A?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, C, C, C, quante volte compare A?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, C, quante volte compare A?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 5, 8, 5, 8, 8, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 5, 8, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza sole, luna, stella, luna, stella, luna, stella, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, luna, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, stella, quante volte compare sole?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, rosso, quante volte compare rosso?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, rosso, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 7, quante volte compare 7?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 7, 7, quante volte compare 7?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 7, 7, 7, 7, quante volte compare 7?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 7, 3, 7, 7, 7, 7, 7, quante volte compare 7?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 2, 2, quante volte compare 2?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 2, 2, 2, 2, quante volte compare 2?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 5, 8, 5, 8, 8, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 5, 8, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, topo, topo, topo, quante volte compare gatto?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, topo, quante volte compare gatto?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, gatto, quante volte compare gatto?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, gatto, gatto, quante volte compare gatto?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, topo, quante volte compare gatto?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, gatto, quante volte compare gatto?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, gatto, gatto, quante volte compare gatto?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, gatto, gatto, gatto, gatto, quante volte compare gatto?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, Y, Z, Y, Z, Z, Z, Z, Z, Z, quante volte compare X?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, Y, Z, Z, Z, Z, Z, quante volte compare X?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, Z, Z, Z, quante volte compare X?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza sole, luna, stella, luna, stella, luna, stella, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, luna, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, stella, quante volte compare sole?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 5, 8, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 9, quante volte compare 7?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 7, quante volte compare 7?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 7, 7, quante volte compare 7?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 7, 7, 7, 7, quante volte compare 7?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, rosso, quante volte compare rosso?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, rosso, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, X, X, quante volte compare X?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, X, X, X, X, quante volte compare X?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, A, quante volte compare A?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, A, A, quante volte compare A?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, A, A, A, A, quante volte compare A?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, A, B, A, A, A, A, A, quante volte compare A?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, Y, Z, Z, Z, Z, Z, quante volte compare X?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, Z, Z, Z, quante volte compare X?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, topo, quante volte compare gatto?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, gatto, quante volte compare gatto?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, gatto, gatto, quante volte compare gatto?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, gatto, gatto, gatto, gatto, quante volte compare gatto?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 2, 2, quante volte compare 2?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 2, 2, 2, 2, quante volte compare 2?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 9, quante volte compare 7?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 7, quante volte compare 7?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 7, 7, quante volte compare 7?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 7, 7, 7, 7, quante volte compare 7?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, topo, topo, topo, quante volte compare gatto?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, topo, quante volte compare gatto?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, topo, gatto, quante volte compare gatto?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza gatto, cane, topo, gatto, cane, topo, gatto, cane, topo, gatto, gatto, gatto, quante volte compare gatto?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, rosso, quante volte compare rosso?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, rosso, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 3, 9, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 9, quante volte compare 7?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 7, quante volte compare 7?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 5, 8, 5, 8, 8, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 5, 8, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza sole, luna, stella, luna, stella, luna, stella, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, luna, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, stella, quante volte compare sole?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, uno, tre, uno, quante volte compare uno?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, uno, uno, uno, quante volte compare uno?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, uno, uno, uno, uno, quante volte compare uno?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, uno, due, uno, uno, uno, uno, uno, quante volte compare uno?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, C, A, quante volte compare A?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, C, A, A, A, quante volte compare A?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, C, A, B, A, A, A, A, quante volte compare A?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza A, B, C, A, B, A, B, A, A, A, A, A, quante volte compare A?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 7, 3, 9, 3, 9, 3, 9, 9, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 3, 9, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 9, quante volte compare 7?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 2, 2, quante volte compare 2?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 2, 2, 2, 2, quante volte compare 2?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 2, 2, quante volte compare 2?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 2, 2, 2, 2, quante volte compare 2?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 2, 5, 2, 2, 2, 2, 2, quante volte compare 2?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, X, X, quante volte compare X?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, X, X, X, X, quante volte compare X?",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, blu, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, rosso, quante volte compare rosso?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 2, 2, quante volte compare 2?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 9, quante volte compare 7?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 7, quante volte compare 7?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 7, 7, quante volte compare 7?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza sole, luna, stella, luna, stella, luna, stella, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, luna, stella, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, stella, stella, stella, quante volte compare sole?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza sole, luna, stella, sole, luna, stella, sole, luna, stella, sole, stella, stella, quante volte compare sole?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, uno, tre, uno, quante volte compare uno?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, tre, uno, uno, uno, quante volte compare uno?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, tre, uno, due, uno, uno, uno, uno, quante volte compare uno?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza uno, due, tre, uno, due, uno, due, uno, uno, uno, uno, uno, quante volte compare uno?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, X, X, quante volte compare X?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, X, X, X, X, quante volte compare X?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, X, Y, X, X, X, X, X, quante volte compare X?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, blu, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, rosso, quante volte compare rosso?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, Y, Z, Z, Z, Z, Z, quante volte compare X?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, Z, Z, Z, quante volte compare X?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, Z, quante volte compare X?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza X, Y, Z, X, Y, Z, X, Y, Z, X, Z, X, quante volte compare X?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, blu, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, rosso, quante volte compare rosso?",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, rosso, quante volte compare rosso?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " sei."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, rosso, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " sette."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, rosso, blu, rosso, rosso, rosso, rosso, rosso, quante volte compare rosso?",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, blu, verde, blu, verde, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, blu, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza rosso, blu, verde, blu, verde, blu, verde, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " uno."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, blu, verde, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " due."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, verde, verde, verde, quante volte compare rosso?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza rosso, blu, verde, rosso, blu, verde, rosso, blu, verde, rosso, verde, verde, quante volte compare rosso?",
+          "target": " quattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 9, 9, 9, quante volte compare 7?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 9, quante volte compare 7?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 9, 7, quante volte compare 7?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 7, 3, 9, 7, 3, 9, 7, 3, 9, 7, 7, 7, quante volte compare 7?",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 8, 8, 8, quante volte compare 2?",
+          "target": " tre."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 8, quante volte compare 2?",
+          "target": " quattro."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 8, 2, quante volte compare 2?",
+          "target": " cinque."
+        },
+        {
+          "context": "Nella sequenza 2, 5, 8, 2, 5, 8, 2, 5, 8, 2, 2, 2, quante volte compare 2?",
+          "target": " sei."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

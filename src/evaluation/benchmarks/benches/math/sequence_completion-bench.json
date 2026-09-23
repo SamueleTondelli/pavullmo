@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "integer_sequence_completion",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 25 a 30 sono:",
+          "target": " 25, 26, 27, 28, 29, 30"
+        },
+        {
+          "context": "I numeri interi in ordine da 35 a 40 sono:",
+          "target": " 35, 36, 37, 38, 39, 40"
+        },
+        {
+          "context": "I numeri interi in ordine da 45 a 50 sono:",
+          "target": " 45, 46, 47, 48, 49, 50"
+        },
+        {
+          "context": "I numeri interi in ordine da 55 a 60 sono:",
+          "target": " 55, 56, 57, 58, 59, 60"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 228 a 232 sono:",
+          "target": " 228, 229, 230, 231, 232"
+        },
+        {
+          "context": "I numeri interi in ordine da 238 a 242 sono:",
+          "target": " 238, 239, 240, 241, 242"
+        },
+        {
+          "context": "I numeri interi in ordine da 248 a 252 sono:",
+          "target": " 248, 249, 250, 251, 252"
+        },
+        {
+          "context": "I numeri interi in ordine da 258 a 262 sono:",
+          "target": " 258, 259, 260, 261, 262"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 692 a 699 sono:",
+          "target": " 692, 693, 694, 695, 696, 697, 698, 699"
+        },
+        {
+          "context": "I numeri interi in ordine da 702 a 709 sono:",
+          "target": " 702, 703, 704, 705, 706, 707, 708, 709"
+        },
+        {
+          "context": "I numeri interi in ordine da 712 a 719 sono:",
+          "target": " 712, 713, 714, 715, 716, 717, 718, 719"
+        },
+        {
+          "context": "I numeri interi in ordine da 722 a 729 sono:",
+          "target": " 722, 723, 724, 725, 726, 727, 728, 729"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 604 a 610 sono:",
+          "target": " 604, 605, 606, 607, 608, 609, 610"
+        },
+        {
+          "context": "I numeri interi in ordine da 614 a 620 sono:",
+          "target": " 614, 615, 616, 617, 618, 619, 620"
+        },
+        {
+          "context": "I numeri interi in ordine da 624 a 630 sono:",
+          "target": " 624, 625, 626, 627, 628, 629, 630"
+        },
+        {
+          "context": "I numeri interi in ordine da 634 a 640 sono:",
+          "target": " 634, 635, 636, 637, 638, 639, 640"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 30 a 33 sono:",
+          "target": " 30, 31, 32, 33"
+        },
+        {
+          "context": "I numeri interi in ordine da 40 a 43 sono:",
+          "target": " 40, 41, 42, 43"
+        },
+        {
+          "context": "I numeri interi in ordine da 50 a 53 sono:",
+          "target": " 50, 51, 52, 53"
+        },
+        {
+          "context": "I numeri interi in ordine da 60 a 63 sono:",
+          "target": " 60, 61, 62, 63"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 238 a 245 sono:",
+          "target": " 238, 239, 240, 241, 242, 243, 244, 245"
+        },
+        {
+          "context": "I numeri interi in ordine da 248 a 255 sono:",
+          "target": " 248, 249, 250, 251, 252, 253, 254, 255"
+        },
+        {
+          "context": "I numeri interi in ordine da 258 a 265 sono:",
+          "target": " 258, 259, 260, 261, 262, 263, 264, 265"
+        },
+        {
+          "context": "I numeri interi in ordine da 268 a 275 sono:",
+          "target": " 268, 269, 270, 271, 272, 273, 274, 275"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 574 a 578 sono:",
+          "target": " 574, 575, 576, 577, 578"
+        },
+        {
+          "context": "I numeri interi in ordine da 584 a 588 sono:",
+          "target": " 584, 585, 586, 587, 588"
+        },
+        {
+          "context": "I numeri interi in ordine da 594 a 598 sono:",
+          "target": " 594, 595, 596, 597, 598"
+        },
+        {
+          "context": "I numeri interi in ordine da 604 a 608 sono:",
+          "target": " 604, 605, 606, 607, 608"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 225 a 231 sono:",
+          "target": " 225, 226, 227, 228, 229, 230, 231"
+        },
+        {
+          "context": "I numeri interi in ordine da 235 a 241 sono:",
+          "target": " 235, 236, 237, 238, 239, 240, 241"
+        },
+        {
+          "context": "I numeri interi in ordine da 245 a 251 sono:",
+          "target": " 245, 246, 247, 248, 249, 250, 251"
+        },
+        {
+          "context": "I numeri interi in ordine da 255 a 261 sono:",
+          "target": " 255, 256, 257, 258, 259, 260, 261"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 828 a 831 sono:",
+          "target": " 828, 829, 830, 831"
+        },
+        {
+          "context": "I numeri interi in ordine da 838 a 841 sono:",
+          "target": " 838, 839, 840, 841"
+        },
+        {
+          "context": "I numeri interi in ordine da 848 a 851 sono:",
+          "target": " 848, 849, 850, 851"
+        },
+        {
+          "context": "I numeri interi in ordine da 858 a 861 sono:",
+          "target": " 858, 859, 860, 861"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 714 a 720 sono:",
+          "target": " 714, 715, 716, 717, 718, 719, 720"
+        },
+        {
+          "context": "I numeri interi in ordine da 724 a 730 sono:",
+          "target": " 724, 725, 726, 727, 728, 729, 730"
+        },
+        {
+          "context": "I numeri interi in ordine da 734 a 740 sono:",
+          "target": " 734, 735, 736, 737, 738, 739, 740"
+        },
+        {
+          "context": "I numeri interi in ordine da 744 a 750 sono:",
+          "target": " 744, 745, 746, 747, 748, 749, 750"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 284 a 288 sono:",
+          "target": " 284, 285, 286, 287, 288"
+        },
+        {
+          "context": "I numeri interi in ordine da 294 a 298 sono:",
+          "target": " 294, 295, 296, 297, 298"
+        },
+        {
+          "context": "I numeri interi in ordine da 304 a 308 sono:",
+          "target": " 304, 305, 306, 307, 308"
+        },
+        {
+          "context": "I numeri interi in ordine da 314 a 318 sono:",
+          "target": " 314, 315, 316, 317, 318"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 781 a 786 sono:",
+          "target": " 781, 782, 783, 784, 785, 786"
+        },
+        {
+          "context": "I numeri interi in ordine da 791 a 796 sono:",
+          "target": " 791, 792, 793, 794, 795, 796"
+        },
+        {
+          "context": "I numeri interi in ordine da 801 a 806 sono:",
+          "target": " 801, 802, 803, 804, 805, 806"
+        },
+        {
+          "context": "I numeri interi in ordine da 811 a 816 sono:",
+          "target": " 811, 812, 813, 814, 815, 816"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 94 a 100 sono:",
+          "target": " 94, 95, 96, 97, 98, 99, 100"
+        },
+        {
+          "context": "I numeri interi in ordine da 104 a 110 sono:",
+          "target": " 104, 105, 106, 107, 108, 109, 110"
+        },
+        {
+          "context": "I numeri interi in ordine da 114 a 120 sono:",
+          "target": " 114, 115, 116, 117, 118, 119, 120"
+        },
+        {
+          "context": "I numeri interi in ordine da 124 a 130 sono:",
+          "target": " 124, 125, 126, 127, 128, 129, 130"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 367 a 372 sono:",
+          "target": " 367, 368, 369, 370, 371, 372"
+        },
+        {
+          "context": "I numeri interi in ordine da 377 a 382 sono:",
+          "target": " 377, 378, 379, 380, 381, 382"
+        },
+        {
+          "context": "I numeri interi in ordine da 387 a 392 sono:",
+          "target": " 387, 388, 389, 390, 391, 392"
+        },
+        {
+          "context": "I numeri interi in ordine da 397 a 402 sono:",
+          "target": " 397, 398, 399, 400, 401, 402"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 826 a 829 sono:",
+          "target": " 826, 827, 828, 829"
+        },
+        {
+          "context": "I numeri interi in ordine da 836 a 839 sono:",
+          "target": " 836, 837, 838, 839"
+        },
+        {
+          "context": "I numeri interi in ordine da 846 a 849 sono:",
+          "target": " 846, 847, 848, 849"
+        },
+        {
+          "context": "I numeri interi in ordine da 856 a 859 sono:",
+          "target": " 856, 857, 858, 859"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 549 a 552 sono:",
+          "target": " 549, 550, 551, 552"
+        },
+        {
+          "context": "I numeri interi in ordine da 559 a 562 sono:",
+          "target": " 559, 560, 561, 562"
+        },
+        {
+          "context": "I numeri interi in ordine da 569 a 572 sono:",
+          "target": " 569, 570, 571, 572"
+        },
+        {
+          "context": "I numeri interi in ordine da 579 a 582 sono:",
+          "target": " 579, 580, 581, 582"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 80 a 87 sono:",
+          "target": " 80, 81, 82, 83, 84, 85, 86, 87"
+        },
+        {
+          "context": "I numeri interi in ordine da 90 a 97 sono:",
+          "target": " 90, 91, 92, 93, 94, 95, 96, 97"
+        },
+        {
+          "context": "I numeri interi in ordine da 100 a 107 sono:",
+          "target": " 100, 101, 102, 103, 104, 105, 106, 107"
+        },
+        {
+          "context": "I numeri interi in ordine da 110 a 117 sono:",
+          "target": " 110, 111, 112, 113, 114, 115, 116, 117"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 849 a 856 sono:",
+          "target": " 849, 850, 851, 852, 853, 854, 855, 856"
+        },
+        {
+          "context": "I numeri interi in ordine da 859 a 866 sono:",
+          "target": " 859, 860, 861, 862, 863, 864, 865, 866"
+        },
+        {
+          "context": "I numeri interi in ordine da 869 a 876 sono:",
+          "target": " 869, 870, 871, 872, 873, 874, 875, 876"
+        },
+        {
+          "context": "I numeri interi in ordine da 879 a 886 sono:",
+          "target": " 879, 880, 881, 882, 883, 884, 885, 886"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 591 a 595 sono:",
+          "target": " 591, 592, 593, 594, 595"
+        },
+        {
+          "context": "I numeri interi in ordine da 601 a 605 sono:",
+          "target": " 601, 602, 603, 604, 605"
+        },
+        {
+          "context": "I numeri interi in ordine da 611 a 615 sono:",
+          "target": " 611, 612, 613, 614, 615"
+        },
+        {
+          "context": "I numeri interi in ordine da 621 a 625 sono:",
+          "target": " 621, 622, 623, 624, 625"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 46 a 50 sono:",
+          "target": " 46, 47, 48, 49, 50"
+        },
+        {
+          "context": "I numeri interi in ordine da 56 a 60 sono:",
+          "target": " 56, 57, 58, 59, 60"
+        },
+        {
+          "context": "I numeri interi in ordine da 66 a 70 sono:",
+          "target": " 66, 67, 68, 69, 70"
+        },
+        {
+          "context": "I numeri interi in ordine da 76 a 80 sono:",
+          "target": " 76, 77, 78, 79, 80"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 81 a 85 sono:",
+          "target": " 81, 82, 83, 84, 85"
+        },
+        {
+          "context": "I numeri interi in ordine da 91 a 95 sono:",
+          "target": " 91, 92, 93, 94, 95"
+        },
+        {
+          "context": "I numeri interi in ordine da 101 a 105 sono:",
+          "target": " 101, 102, 103, 104, 105"
+        },
+        {
+          "context": "I numeri interi in ordine da 111 a 115 sono:",
+          "target": " 111, 112, 113, 114, 115"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 389 a 394 sono:",
+          "target": " 389, 390, 391, 392, 393, 394"
+        },
+        {
+          "context": "I numeri interi in ordine da 399 a 404 sono:",
+          "target": " 399, 400, 401, 402, 403, 404"
+        },
+        {
+          "context": "I numeri interi in ordine da 409 a 414 sono:",
+          "target": " 409, 410, 411, 412, 413, 414"
+        },
+        {
+          "context": "I numeri interi in ordine da 419 a 424 sono:",
+          "target": " 419, 420, 421, 422, 423, 424"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 650 a 655 sono:",
+          "target": " 650, 651, 652, 653, 654, 655"
+        },
+        {
+          "context": "I numeri interi in ordine da 660 a 665 sono:",
+          "target": " 660, 661, 662, 663, 664, 665"
+        },
+        {
+          "context": "I numeri interi in ordine da 670 a 675 sono:",
+          "target": " 670, 671, 672, 673, 674, 675"
+        },
+        {
+          "context": "I numeri interi in ordine da 680 a 685 sono:",
+          "target": " 680, 681, 682, 683, 684, 685"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 379 a 384 sono:",
+          "target": " 379, 380, 381, 382, 383, 384"
+        },
+        {
+          "context": "I numeri interi in ordine da 389 a 394 sono:",
+          "target": " 389, 390, 391, 392, 393, 394"
+        },
+        {
+          "context": "I numeri interi in ordine da 399 a 404 sono:",
+          "target": " 399, 400, 401, 402, 403, 404"
+        },
+        {
+          "context": "I numeri interi in ordine da 409 a 414 sono:",
+          "target": " 409, 410, 411, 412, 413, 414"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 686 a 691 sono:",
+          "target": " 686, 687, 688, 689, 690, 691"
+        },
+        {
+          "context": "I numeri interi in ordine da 696 a 701 sono:",
+          "target": " 696, 697, 698, 699, 700, 701"
+        },
+        {
+          "context": "I numeri interi in ordine da 706 a 711 sono:",
+          "target": " 706, 707, 708, 709, 710, 711"
+        },
+        {
+          "context": "I numeri interi in ordine da 716 a 721 sono:",
+          "target": " 716, 717, 718, 719, 720, 721"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 623 a 627 sono:",
+          "target": " 623, 624, 625, 626, 627"
+        },
+        {
+          "context": "I numeri interi in ordine da 633 a 637 sono:",
+          "target": " 633, 634, 635, 636, 637"
+        },
+        {
+          "context": "I numeri interi in ordine da 643 a 647 sono:",
+          "target": " 643, 644, 645, 646, 647"
+        },
+        {
+          "context": "I numeri interi in ordine da 653 a 657 sono:",
+          "target": " 653, 654, 655, 656, 657"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 167 a 173 sono:",
+          "target": " 167, 168, 169, 170, 171, 172, 173"
+        },
+        {
+          "context": "I numeri interi in ordine da 177 a 183 sono:",
+          "target": " 177, 178, 179, 180, 181, 182, 183"
+        },
+        {
+          "context": "I numeri interi in ordine da 187 a 193 sono:",
+          "target": " 187, 188, 189, 190, 191, 192, 193"
+        },
+        {
+          "context": "I numeri interi in ordine da 197 a 203 sono:",
+          "target": " 197, 198, 199, 200, 201, 202, 203"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 276 a 283 sono:",
+          "target": " 276, 277, 278, 279, 280, 281, 282, 283"
+        },
+        {
+          "context": "I numeri interi in ordine da 286 a 293 sono:",
+          "target": " 286, 287, 288, 289, 290, 291, 292, 293"
+        },
+        {
+          "context": "I numeri interi in ordine da 296 a 303 sono:",
+          "target": " 296, 297, 298, 299, 300, 301, 302, 303"
+        },
+        {
+          "context": "I numeri interi in ordine da 306 a 313 sono:",
+          "target": " 306, 307, 308, 309, 310, 311, 312, 313"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 701 a 706 sono:",
+          "target": " 701, 702, 703, 704, 705, 706"
+        },
+        {
+          "context": "I numeri interi in ordine da 711 a 716 sono:",
+          "target": " 711, 712, 713, 714, 715, 716"
+        },
+        {
+          "context": "I numeri interi in ordine da 721 a 726 sono:",
+          "target": " 721, 722, 723, 724, 725, 726"
+        },
+        {
+          "context": "I numeri interi in ordine da 731 a 736 sono:",
+          "target": " 731, 732, 733, 734, 735, 736"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 234 a 237 sono:",
+          "target": " 234, 235, 236, 237"
+        },
+        {
+          "context": "I numeri interi in ordine da 244 a 247 sono:",
+          "target": " 244, 245, 246, 247"
+        },
+        {
+          "context": "I numeri interi in ordine da 254 a 257 sono:",
+          "target": " 254, 255, 256, 257"
+        },
+        {
+          "context": "I numeri interi in ordine da 264 a 267 sono:",
+          "target": " 264, 265, 266, 267"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 410 a 415 sono:",
+          "target": " 410, 411, 412, 413, 414, 415"
+        },
+        {
+          "context": "I numeri interi in ordine da 420 a 425 sono:",
+          "target": " 420, 421, 422, 423, 424, 425"
+        },
+        {
+          "context": "I numeri interi in ordine da 430 a 435 sono:",
+          "target": " 430, 431, 432, 433, 434, 435"
+        },
+        {
+          "context": "I numeri interi in ordine da 440 a 445 sono:",
+          "target": " 440, 441, 442, 443, 444, 445"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 216 a 223 sono:",
+          "target": " 216, 217, 218, 219, 220, 221, 222, 223"
+        },
+        {
+          "context": "I numeri interi in ordine da 226 a 233 sono:",
+          "target": " 226, 227, 228, 229, 230, 231, 232, 233"
+        },
+        {
+          "context": "I numeri interi in ordine da 236 a 243 sono:",
+          "target": " 236, 237, 238, 239, 240, 241, 242, 243"
+        },
+        {
+          "context": "I numeri interi in ordine da 246 a 253 sono:",
+          "target": " 246, 247, 248, 249, 250, 251, 252, 253"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 217 a 223 sono:",
+          "target": " 217, 218, 219, 220, 221, 222, 223"
+        },
+        {
+          "context": "I numeri interi in ordine da 227 a 233 sono:",
+          "target": " 227, 228, 229, 230, 231, 232, 233"
+        },
+        {
+          "context": "I numeri interi in ordine da 237 a 243 sono:",
+          "target": " 237, 238, 239, 240, 241, 242, 243"
+        },
+        {
+          "context": "I numeri interi in ordine da 247 a 253 sono:",
+          "target": " 247, 248, 249, 250, 251, 252, 253"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 905 a 911 sono:",
+          "target": " 905, 906, 907, 908, 909, 910, 911"
+        },
+        {
+          "context": "I numeri interi in ordine da 915 a 921 sono:",
+          "target": " 915, 916, 917, 918, 919, 920, 921"
+        },
+        {
+          "context": "I numeri interi in ordine da 925 a 931 sono:",
+          "target": " 925, 926, 927, 928, 929, 930, 931"
+        },
+        {
+          "context": "I numeri interi in ordine da 935 a 941 sono:",
+          "target": " 935, 936, 937, 938, 939, 940, 941"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 271 a 275 sono:",
+          "target": " 271, 272, 273, 274, 275"
+        },
+        {
+          "context": "I numeri interi in ordine da 281 a 285 sono:",
+          "target": " 281, 282, 283, 284, 285"
+        },
+        {
+          "context": "I numeri interi in ordine da 291 a 295 sono:",
+          "target": " 291, 292, 293, 294, 295"
+        },
+        {
+          "context": "I numeri interi in ordine da 301 a 305 sono:",
+          "target": " 301, 302, 303, 304, 305"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 762 a 769 sono:",
+          "target": " 762, 763, 764, 765, 766, 767, 768, 769"
+        },
+        {
+          "context": "I numeri interi in ordine da 772 a 779 sono:",
+          "target": " 772, 773, 774, 775, 776, 777, 778, 779"
+        },
+        {
+          "context": "I numeri interi in ordine da 782 a 789 sono:",
+          "target": " 782, 783, 784, 785, 786, 787, 788, 789"
+        },
+        {
+          "context": "I numeri interi in ordine da 792 a 799 sono:",
+          "target": " 792, 793, 794, 795, 796, 797, 798, 799"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 764 a 771 sono:",
+          "target": " 764, 765, 766, 767, 768, 769, 770, 771"
+        },
+        {
+          "context": "I numeri interi in ordine da 774 a 781 sono:",
+          "target": " 774, 775, 776, 777, 778, 779, 780, 781"
+        },
+        {
+          "context": "I numeri interi in ordine da 784 a 791 sono:",
+          "target": " 784, 785, 786, 787, 788, 789, 790, 791"
+        },
+        {
+          "context": "I numeri interi in ordine da 794 a 801 sono:",
+          "target": " 794, 795, 796, 797, 798, 799, 800, 801"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 919 a 926 sono:",
+          "target": " 919, 920, 921, 922, 923, 924, 925, 926"
+        },
+        {
+          "context": "I numeri interi in ordine da 929 a 936 sono:",
+          "target": " 929, 930, 931, 932, 933, 934, 935, 936"
+        },
+        {
+          "context": "I numeri interi in ordine da 939 a 946 sono:",
+          "target": " 939, 940, 941, 942, 943, 944, 945, 946"
+        },
+        {
+          "context": "I numeri interi in ordine da 949 a 956 sono:",
+          "target": " 949, 950, 951, 952, 953, 954, 955, 956"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 370 a 374 sono:",
+          "target": " 370, 371, 372, 373, 374"
+        },
+        {
+          "context": "I numeri interi in ordine da 380 a 384 sono:",
+          "target": " 380, 381, 382, 383, 384"
+        },
+        {
+          "context": "I numeri interi in ordine da 390 a 394 sono:",
+          "target": " 390, 391, 392, 393, 394"
+        },
+        {
+          "context": "I numeri interi in ordine da 400 a 404 sono:",
+          "target": " 400, 401, 402, 403, 404"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 521 a 527 sono:",
+          "target": " 521, 522, 523, 524, 525, 526, 527"
+        },
+        {
+          "context": "I numeri interi in ordine da 531 a 537 sono:",
+          "target": " 531, 532, 533, 534, 535, 536, 537"
+        },
+        {
+          "context": "I numeri interi in ordine da 541 a 547 sono:",
+          "target": " 541, 542, 543, 544, 545, 546, 547"
+        },
+        {
+          "context": "I numeri interi in ordine da 551 a 557 sono:",
+          "target": " 551, 552, 553, 554, 555, 556, 557"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 773 a 776 sono:",
+          "target": " 773, 774, 775, 776"
+        },
+        {
+          "context": "I numeri interi in ordine da 783 a 786 sono:",
+          "target": " 783, 784, 785, 786"
+        },
+        {
+          "context": "I numeri interi in ordine da 793 a 796 sono:",
+          "target": " 793, 794, 795, 796"
+        },
+        {
+          "context": "I numeri interi in ordine da 803 a 806 sono:",
+          "target": " 803, 804, 805, 806"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 156 a 160 sono:",
+          "target": " 156, 157, 158, 159, 160"
+        },
+        {
+          "context": "I numeri interi in ordine da 166 a 170 sono:",
+          "target": " 166, 167, 168, 169, 170"
+        },
+        {
+          "context": "I numeri interi in ordine da 176 a 180 sono:",
+          "target": " 176, 177, 178, 179, 180"
+        },
+        {
+          "context": "I numeri interi in ordine da 186 a 190 sono:",
+          "target": " 186, 187, 188, 189, 190"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 610 a 613 sono:",
+          "target": " 610, 611, 612, 613"
+        },
+        {
+          "context": "I numeri interi in ordine da 620 a 623 sono:",
+          "target": " 620, 621, 622, 623"
+        },
+        {
+          "context": "I numeri interi in ordine da 630 a 633 sono:",
+          "target": " 630, 631, 632, 633"
+        },
+        {
+          "context": "I numeri interi in ordine da 640 a 643 sono:",
+          "target": " 640, 641, 642, 643"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 390 a 397 sono:",
+          "target": " 390, 391, 392, 393, 394, 395, 396, 397"
+        },
+        {
+          "context": "I numeri interi in ordine da 400 a 407 sono:",
+          "target": " 400, 401, 402, 403, 404, 405, 406, 407"
+        },
+        {
+          "context": "I numeri interi in ordine da 410 a 417 sono:",
+          "target": " 410, 411, 412, 413, 414, 415, 416, 417"
+        },
+        {
+          "context": "I numeri interi in ordine da 420 a 427 sono:",
+          "target": " 420, 421, 422, 423, 424, 425, 426, 427"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 541 a 546 sono:",
+          "target": " 541, 542, 543, 544, 545, 546"
+        },
+        {
+          "context": "I numeri interi in ordine da 551 a 556 sono:",
+          "target": " 551, 552, 553, 554, 555, 556"
+        },
+        {
+          "context": "I numeri interi in ordine da 561 a 566 sono:",
+          "target": " 561, 562, 563, 564, 565, 566"
+        },
+        {
+          "context": "I numeri interi in ordine da 571 a 576 sono:",
+          "target": " 571, 572, 573, 574, 575, 576"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 696 a 699 sono:",
+          "target": " 696, 697, 698, 699"
+        },
+        {
+          "context": "I numeri interi in ordine da 706 a 709 sono:",
+          "target": " 706, 707, 708, 709"
+        },
+        {
+          "context": "I numeri interi in ordine da 716 a 719 sono:",
+          "target": " 716, 717, 718, 719"
+        },
+        {
+          "context": "I numeri interi in ordine da 726 a 729 sono:",
+          "target": " 726, 727, 728, 729"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 787 a 792 sono:",
+          "target": " 787, 788, 789, 790, 791, 792"
+        },
+        {
+          "context": "I numeri interi in ordine da 797 a 802 sono:",
+          "target": " 797, 798, 799, 800, 801, 802"
+        },
+        {
+          "context": "I numeri interi in ordine da 807 a 812 sono:",
+          "target": " 807, 808, 809, 810, 811, 812"
+        },
+        {
+          "context": "I numeri interi in ordine da 817 a 822 sono:",
+          "target": " 817, 818, 819, 820, 821, 822"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 300 a 306 sono:",
+          "target": " 300, 301, 302, 303, 304, 305, 306"
+        },
+        {
+          "context": "I numeri interi in ordine da 310 a 316 sono:",
+          "target": " 310, 311, 312, 313, 314, 315, 316"
+        },
+        {
+          "context": "I numeri interi in ordine da 320 a 326 sono:",
+          "target": " 320, 321, 322, 323, 324, 325, 326"
+        },
+        {
+          "context": "I numeri interi in ordine da 330 a 336 sono:",
+          "target": " 330, 331, 332, 333, 334, 335, 336"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 464 a 467 sono:",
+          "target": " 464, 465, 466, 467"
+        },
+        {
+          "context": "I numeri interi in ordine da 474 a 477 sono:",
+          "target": " 474, 475, 476, 477"
+        },
+        {
+          "context": "I numeri interi in ordine da 484 a 487 sono:",
+          "target": " 484, 485, 486, 487"
+        },
+        {
+          "context": "I numeri interi in ordine da 494 a 497 sono:",
+          "target": " 494, 495, 496, 497"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 512 a 516 sono:",
+          "target": " 512, 513, 514, 515, 516"
+        },
+        {
+          "context": "I numeri interi in ordine da 522 a 526 sono:",
+          "target": " 522, 523, 524, 525, 526"
+        },
+        {
+          "context": "I numeri interi in ordine da 532 a 536 sono:",
+          "target": " 532, 533, 534, 535, 536"
+        },
+        {
+          "context": "I numeri interi in ordine da 542 a 546 sono:",
+          "target": " 542, 543, 544, 545, 546"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 891 a 896 sono:",
+          "target": " 891, 892, 893, 894, 895, 896"
+        },
+        {
+          "context": "I numeri interi in ordine da 901 a 906 sono:",
+          "target": " 901, 902, 903, 904, 905, 906"
+        },
+        {
+          "context": "I numeri interi in ordine da 911 a 916 sono:",
+          "target": " 911, 912, 913, 914, 915, 916"
+        },
+        {
+          "context": "I numeri interi in ordine da 921 a 926 sono:",
+          "target": " 921, 922, 923, 924, 925, 926"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 156 a 161 sono:",
+          "target": " 156, 157, 158, 159, 160, 161"
+        },
+        {
+          "context": "I numeri interi in ordine da 166 a 171 sono:",
+          "target": " 166, 167, 168, 169, 170, 171"
+        },
+        {
+          "context": "I numeri interi in ordine da 176 a 181 sono:",
+          "target": " 176, 177, 178, 179, 180, 181"
+        },
+        {
+          "context": "I numeri interi in ordine da 186 a 191 sono:",
+          "target": " 186, 187, 188, 189, 190, 191"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 552 a 559 sono:",
+          "target": " 552, 553, 554, 555, 556, 557, 558, 559"
+        },
+        {
+          "context": "I numeri interi in ordine da 562 a 569 sono:",
+          "target": " 562, 563, 564, 565, 566, 567, 568, 569"
+        },
+        {
+          "context": "I numeri interi in ordine da 572 a 579 sono:",
+          "target": " 572, 573, 574, 575, 576, 577, 578, 579"
+        },
+        {
+          "context": "I numeri interi in ordine da 582 a 589 sono:",
+          "target": " 582, 583, 584, 585, 586, 587, 588, 589"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 613 a 618 sono:",
+          "target": " 613, 614, 615, 616, 617, 618"
+        },
+        {
+          "context": "I numeri interi in ordine da 623 a 628 sono:",
+          "target": " 623, 624, 625, 626, 627, 628"
+        },
+        {
+          "context": "I numeri interi in ordine da 633 a 638 sono:",
+          "target": " 633, 634, 635, 636, 637, 638"
+        },
+        {
+          "context": "I numeri interi in ordine da 643 a 648 sono:",
+          "target": " 643, 644, 645, 646, 647, 648"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 19 a 22 sono:",
+          "target": " 19, 20, 21, 22"
+        },
+        {
+          "context": "I numeri interi in ordine da 29 a 32 sono:",
+          "target": " 29, 30, 31, 32"
+        },
+        {
+          "context": "I numeri interi in ordine da 39 a 42 sono:",
+          "target": " 39, 40, 41, 42"
+        },
+        {
+          "context": "I numeri interi in ordine da 49 a 52 sono:",
+          "target": " 49, 50, 51, 52"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 899 a 904 sono:",
+          "target": " 899, 900, 901, 902, 903, 904"
+        },
+        {
+          "context": "I numeri interi in ordine da 909 a 914 sono:",
+          "target": " 909, 910, 911, 912, 913, 914"
+        },
+        {
+          "context": "I numeri interi in ordine da 919 a 924 sono:",
+          "target": " 919, 920, 921, 922, 923, 924"
+        },
+        {
+          "context": "I numeri interi in ordine da 929 a 934 sono:",
+          "target": " 929, 930, 931, 932, 933, 934"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 59 a 63 sono:",
+          "target": " 59, 60, 61, 62, 63"
+        },
+        {
+          "context": "I numeri interi in ordine da 69 a 73 sono:",
+          "target": " 69, 70, 71, 72, 73"
+        },
+        {
+          "context": "I numeri interi in ordine da 79 a 83 sono:",
+          "target": " 79, 80, 81, 82, 83"
+        },
+        {
+          "context": "I numeri interi in ordine da 89 a 93 sono:",
+          "target": " 89, 90, 91, 92, 93"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 87 a 93 sono:",
+          "target": " 87, 88, 89, 90, 91, 92, 93"
+        },
+        {
+          "context": "I numeri interi in ordine da 97 a 103 sono:",
+          "target": " 97, 98, 99, 100, 101, 102, 103"
+        },
+        {
+          "context": "I numeri interi in ordine da 107 a 113 sono:",
+          "target": " 107, 108, 109, 110, 111, 112, 113"
+        },
+        {
+          "context": "I numeri interi in ordine da 117 a 123 sono:",
+          "target": " 117, 118, 119, 120, 121, 122, 123"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 778 a 785 sono:",
+          "target": " 778, 779, 780, 781, 782, 783, 784, 785"
+        },
+        {
+          "context": "I numeri interi in ordine da 788 a 795 sono:",
+          "target": " 788, 789, 790, 791, 792, 793, 794, 795"
+        },
+        {
+          "context": "I numeri interi in ordine da 798 a 805 sono:",
+          "target": " 798, 799, 800, 801, 802, 803, 804, 805"
+        },
+        {
+          "context": "I numeri interi in ordine da 808 a 815 sono:",
+          "target": " 808, 809, 810, 811, 812, 813, 814, 815"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 131 a 137 sono:",
+          "target": " 131, 132, 133, 134, 135, 136, 137"
+        },
+        {
+          "context": "I numeri interi in ordine da 141 a 147 sono:",
+          "target": " 141, 142, 143, 144, 145, 146, 147"
+        },
+        {
+          "context": "I numeri interi in ordine da 151 a 157 sono:",
+          "target": " 151, 152, 153, 154, 155, 156, 157"
+        },
+        {
+          "context": "I numeri interi in ordine da 161 a 167 sono:",
+          "target": " 161, 162, 163, 164, 165, 166, 167"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 271 a 278 sono:",
+          "target": " 271, 272, 273, 274, 275, 276, 277, 278"
+        },
+        {
+          "context": "I numeri interi in ordine da 281 a 288 sono:",
+          "target": " 281, 282, 283, 284, 285, 286, 287, 288"
+        },
+        {
+          "context": "I numeri interi in ordine da 291 a 298 sono:",
+          "target": " 291, 292, 293, 294, 295, 296, 297, 298"
+        },
+        {
+          "context": "I numeri interi in ordine da 301 a 308 sono:",
+          "target": " 301, 302, 303, 304, 305, 306, 307, 308"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 216 a 223 sono:",
+          "target": " 216, 217, 218, 219, 220, 221, 222, 223"
+        },
+        {
+          "context": "I numeri interi in ordine da 226 a 233 sono:",
+          "target": " 226, 227, 228, 229, 230, 231, 232, 233"
+        },
+        {
+          "context": "I numeri interi in ordine da 236 a 243 sono:",
+          "target": " 236, 237, 238, 239, 240, 241, 242, 243"
+        },
+        {
+          "context": "I numeri interi in ordine da 246 a 253 sono:",
+          "target": " 246, 247, 248, 249, 250, 251, 252, 253"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 730 a 735 sono:",
+          "target": " 730, 731, 732, 733, 734, 735"
+        },
+        {
+          "context": "I numeri interi in ordine da 740 a 745 sono:",
+          "target": " 740, 741, 742, 743, 744, 745"
+        },
+        {
+          "context": "I numeri interi in ordine da 750 a 755 sono:",
+          "target": " 750, 751, 752, 753, 754, 755"
+        },
+        {
+          "context": "I numeri interi in ordine da 760 a 765 sono:",
+          "target": " 760, 761, 762, 763, 764, 765"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 687 a 692 sono:",
+          "target": " 687, 688, 689, 690, 691, 692"
+        },
+        {
+          "context": "I numeri interi in ordine da 697 a 702 sono:",
+          "target": " 697, 698, 699, 700, 701, 702"
+        },
+        {
+          "context": "I numeri interi in ordine da 707 a 712 sono:",
+          "target": " 707, 708, 709, 710, 711, 712"
+        },
+        {
+          "context": "I numeri interi in ordine da 717 a 722 sono:",
+          "target": " 717, 718, 719, 720, 721, 722"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 921 a 928 sono:",
+          "target": " 921, 922, 923, 924, 925, 926, 927, 928"
+        },
+        {
+          "context": "I numeri interi in ordine da 931 a 938 sono:",
+          "target": " 931, 932, 933, 934, 935, 936, 937, 938"
+        },
+        {
+          "context": "I numeri interi in ordine da 941 a 948 sono:",
+          "target": " 941, 942, 943, 944, 945, 946, 947, 948"
+        },
+        {
+          "context": "I numeri interi in ordine da 951 a 958 sono:",
+          "target": " 951, 952, 953, 954, 955, 956, 957, 958"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 123 a 127 sono:",
+          "target": " 123, 124, 125, 126, 127"
+        },
+        {
+          "context": "I numeri interi in ordine da 133 a 137 sono:",
+          "target": " 133, 134, 135, 136, 137"
+        },
+        {
+          "context": "I numeri interi in ordine da 143 a 147 sono:",
+          "target": " 143, 144, 145, 146, 147"
+        },
+        {
+          "context": "I numeri interi in ordine da 153 a 157 sono:",
+          "target": " 153, 154, 155, 156, 157"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 65 a 70 sono:",
+          "target": " 65, 66, 67, 68, 69, 70"
+        },
+        {
+          "context": "I numeri interi in ordine da 75 a 80 sono:",
+          "target": " 75, 76, 77, 78, 79, 80"
+        },
+        {
+          "context": "I numeri interi in ordine da 85 a 90 sono:",
+          "target": " 85, 86, 87, 88, 89, 90"
+        },
+        {
+          "context": "I numeri interi in ordine da 95 a 100 sono:",
+          "target": " 95, 96, 97, 98, 99, 100"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 602 a 609 sono:",
+          "target": " 602, 603, 604, 605, 606, 607, 608, 609"
+        },
+        {
+          "context": "I numeri interi in ordine da 612 a 619 sono:",
+          "target": " 612, 613, 614, 615, 616, 617, 618, 619"
+        },
+        {
+          "context": "I numeri interi in ordine da 622 a 629 sono:",
+          "target": " 622, 623, 624, 625, 626, 627, 628, 629"
+        },
+        {
+          "context": "I numeri interi in ordine da 632 a 639 sono:",
+          "target": " 632, 633, 634, 635, 636, 637, 638, 639"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 602 a 606 sono:",
+          "target": " 602, 603, 604, 605, 606"
+        },
+        {
+          "context": "I numeri interi in ordine da 612 a 616 sono:",
+          "target": " 612, 613, 614, 615, 616"
+        },
+        {
+          "context": "I numeri interi in ordine da 622 a 626 sono:",
+          "target": " 622, 623, 624, 625, 626"
+        },
+        {
+          "context": "I numeri interi in ordine da 632 a 636 sono:",
+          "target": " 632, 633, 634, 635, 636"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 72 a 75 sono:",
+          "target": " 72, 73, 74, 75"
+        },
+        {
+          "context": "I numeri interi in ordine da 82 a 85 sono:",
+          "target": " 82, 83, 84, 85"
+        },
+        {
+          "context": "I numeri interi in ordine da 92 a 95 sono:",
+          "target": " 92, 93, 94, 95"
+        },
+        {
+          "context": "I numeri interi in ordine da 102 a 105 sono:",
+          "target": " 102, 103, 104, 105"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 69 a 72 sono:",
+          "target": " 69, 70, 71, 72"
+        },
+        {
+          "context": "I numeri interi in ordine da 79 a 82 sono:",
+          "target": " 79, 80, 81, 82"
+        },
+        {
+          "context": "I numeri interi in ordine da 89 a 92 sono:",
+          "target": " 89, 90, 91, 92"
+        },
+        {
+          "context": "I numeri interi in ordine da 99 a 102 sono:",
+          "target": " 99, 100, 101, 102"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 72 a 79 sono:",
+          "target": " 72, 73, 74, 75, 76, 77, 78, 79"
+        },
+        {
+          "context": "I numeri interi in ordine da 82 a 89 sono:",
+          "target": " 82, 83, 84, 85, 86, 87, 88, 89"
+        },
+        {
+          "context": "I numeri interi in ordine da 92 a 99 sono:",
+          "target": " 92, 93, 94, 95, 96, 97, 98, 99"
+        },
+        {
+          "context": "I numeri interi in ordine da 102 a 109 sono:",
+          "target": " 102, 103, 104, 105, 106, 107, 108, 109"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 285 a 291 sono:",
+          "target": " 285, 286, 287, 288, 289, 290, 291"
+        },
+        {
+          "context": "I numeri interi in ordine da 295 a 301 sono:",
+          "target": " 295, 296, 297, 298, 299, 300, 301"
+        },
+        {
+          "context": "I numeri interi in ordine da 305 a 311 sono:",
+          "target": " 305, 306, 307, 308, 309, 310, 311"
+        },
+        {
+          "context": "I numeri interi in ordine da 315 a 321 sono:",
+          "target": " 315, 316, 317, 318, 319, 320, 321"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 552 a 556 sono:",
+          "target": " 552, 553, 554, 555, 556"
+        },
+        {
+          "context": "I numeri interi in ordine da 562 a 566 sono:",
+          "target": " 562, 563, 564, 565, 566"
+        },
+        {
+          "context": "I numeri interi in ordine da 572 a 576 sono:",
+          "target": " 572, 573, 574, 575, 576"
+        },
+        {
+          "context": "I numeri interi in ordine da 582 a 586 sono:",
+          "target": " 582, 583, 584, 585, 586"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 248 a 254 sono:",
+          "target": " 248, 249, 250, 251, 252, 253, 254"
+        },
+        {
+          "context": "I numeri interi in ordine da 258 a 264 sono:",
+          "target": " 258, 259, 260, 261, 262, 263, 264"
+        },
+        {
+          "context": "I numeri interi in ordine da 268 a 274 sono:",
+          "target": " 268, 269, 270, 271, 272, 273, 274"
+        },
+        {
+          "context": "I numeri interi in ordine da 278 a 284 sono:",
+          "target": " 278, 279, 280, 281, 282, 283, 284"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 194 a 197 sono:",
+          "target": " 194, 195, 196, 197"
+        },
+        {
+          "context": "I numeri interi in ordine da 204 a 207 sono:",
+          "target": " 204, 205, 206, 207"
+        },
+        {
+          "context": "I numeri interi in ordine da 214 a 217 sono:",
+          "target": " 214, 215, 216, 217"
+        },
+        {
+          "context": "I numeri interi in ordine da 224 a 227 sono:",
+          "target": " 224, 225, 226, 227"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 674 a 680 sono:",
+          "target": " 674, 675, 676, 677, 678, 679, 680"
+        },
+        {
+          "context": "I numeri interi in ordine da 684 a 690 sono:",
+          "target": " 684, 685, 686, 687, 688, 689, 690"
+        },
+        {
+          "context": "I numeri interi in ordine da 694 a 700 sono:",
+          "target": " 694, 695, 696, 697, 698, 699, 700"
+        },
+        {
+          "context": "I numeri interi in ordine da 704 a 710 sono:",
+          "target": " 704, 705, 706, 707, 708, 709, 710"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 433 a 439 sono:",
+          "target": " 433, 434, 435, 436, 437, 438, 439"
+        },
+        {
+          "context": "I numeri interi in ordine da 443 a 449 sono:",
+          "target": " 443, 444, 445, 446, 447, 448, 449"
+        },
+        {
+          "context": "I numeri interi in ordine da 453 a 459 sono:",
+          "target": " 453, 454, 455, 456, 457, 458, 459"
+        },
+        {
+          "context": "I numeri interi in ordine da 463 a 469 sono:",
+          "target": " 463, 464, 465, 466, 467, 468, 469"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 884 a 887 sono:",
+          "target": " 884, 885, 886, 887"
+        },
+        {
+          "context": "I numeri interi in ordine da 894 a 897 sono:",
+          "target": " 894, 895, 896, 897"
+        },
+        {
+          "context": "I numeri interi in ordine da 904 a 907 sono:",
+          "target": " 904, 905, 906, 907"
+        },
+        {
+          "context": "I numeri interi in ordine da 914 a 917 sono:",
+          "target": " 914, 915, 916, 917"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 62 a 68 sono:",
+          "target": " 62, 63, 64, 65, 66, 67, 68"
+        },
+        {
+          "context": "I numeri interi in ordine da 72 a 78 sono:",
+          "target": " 72, 73, 74, 75, 76, 77, 78"
+        },
+        {
+          "context": "I numeri interi in ordine da 82 a 88 sono:",
+          "target": " 82, 83, 84, 85, 86, 87, 88"
+        },
+        {
+          "context": "I numeri interi in ordine da 92 a 98 sono:",
+          "target": " 92, 93, 94, 95, 96, 97, 98"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 819 a 822 sono:",
+          "target": " 819, 820, 821, 822"
+        },
+        {
+          "context": "I numeri interi in ordine da 829 a 832 sono:",
+          "target": " 829, 830, 831, 832"
+        },
+        {
+          "context": "I numeri interi in ordine da 839 a 842 sono:",
+          "target": " 839, 840, 841, 842"
+        },
+        {
+          "context": "I numeri interi in ordine da 849 a 852 sono:",
+          "target": " 849, 850, 851, 852"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 196 a 200 sono:",
+          "target": " 196, 197, 198, 199, 200"
+        },
+        {
+          "context": "I numeri interi in ordine da 206 a 210 sono:",
+          "target": " 206, 207, 208, 209, 210"
+        },
+        {
+          "context": "I numeri interi in ordine da 216 a 220 sono:",
+          "target": " 216, 217, 218, 219, 220"
+        },
+        {
+          "context": "I numeri interi in ordine da 226 a 230 sono:",
+          "target": " 226, 227, 228, 229, 230"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 143 a 149 sono:",
+          "target": " 143, 144, 145, 146, 147, 148, 149"
+        },
+        {
+          "context": "I numeri interi in ordine da 153 a 159 sono:",
+          "target": " 153, 154, 155, 156, 157, 158, 159"
+        },
+        {
+          "context": "I numeri interi in ordine da 163 a 169 sono:",
+          "target": " 163, 164, 165, 166, 167, 168, 169"
+        },
+        {
+          "context": "I numeri interi in ordine da 173 a 179 sono:",
+          "target": " 173, 174, 175, 176, 177, 178, 179"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 285 a 291 sono:",
+          "target": " 285, 286, 287, 288, 289, 290, 291"
+        },
+        {
+          "context": "I numeri interi in ordine da 295 a 301 sono:",
+          "target": " 295, 296, 297, 298, 299, 300, 301"
+        },
+        {
+          "context": "I numeri interi in ordine da 305 a 311 sono:",
+          "target": " 305, 306, 307, 308, 309, 310, 311"
+        },
+        {
+          "context": "I numeri interi in ordine da 315 a 321 sono:",
+          "target": " 315, 316, 317, 318, 319, 320, 321"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 895 a 898 sono:",
+          "target": " 895, 896, 897, 898"
+        },
+        {
+          "context": "I numeri interi in ordine da 905 a 908 sono:",
+          "target": " 905, 906, 907, 908"
+        },
+        {
+          "context": "I numeri interi in ordine da 915 a 918 sono:",
+          "target": " 915, 916, 917, 918"
+        },
+        {
+          "context": "I numeri interi in ordine da 925 a 928 sono:",
+          "target": " 925, 926, 927, 928"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 827 a 834 sono:",
+          "target": " 827, 828, 829, 830, 831, 832, 833, 834"
+        },
+        {
+          "context": "I numeri interi in ordine da 837 a 844 sono:",
+          "target": " 837, 838, 839, 840, 841, 842, 843, 844"
+        },
+        {
+          "context": "I numeri interi in ordine da 847 a 854 sono:",
+          "target": " 847, 848, 849, 850, 851, 852, 853, 854"
+        },
+        {
+          "context": "I numeri interi in ordine da 857 a 864 sono:",
+          "target": " 857, 858, 859, 860, 861, 862, 863, 864"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 51 a 58 sono:",
+          "target": " 51, 52, 53, 54, 55, 56, 57, 58"
+        },
+        {
+          "context": "I numeri interi in ordine da 61 a 68 sono:",
+          "target": " 61, 62, 63, 64, 65, 66, 67, 68"
+        },
+        {
+          "context": "I numeri interi in ordine da 71 a 78 sono:",
+          "target": " 71, 72, 73, 74, 75, 76, 77, 78"
+        },
+        {
+          "context": "I numeri interi in ordine da 81 a 88 sono:",
+          "target": " 81, 82, 83, 84, 85, 86, 87, 88"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 95 a 99 sono:",
+          "target": " 95, 96, 97, 98, 99"
+        },
+        {
+          "context": "I numeri interi in ordine da 105 a 109 sono:",
+          "target": " 105, 106, 107, 108, 109"
+        },
+        {
+          "context": "I numeri interi in ordine da 115 a 119 sono:",
+          "target": " 115, 116, 117, 118, 119"
+        },
+        {
+          "context": "I numeri interi in ordine da 125 a 129 sono:",
+          "target": " 125, 126, 127, 128, 129"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 416 a 422 sono:",
+          "target": " 416, 417, 418, 419, 420, 421, 422"
+        },
+        {
+          "context": "I numeri interi in ordine da 426 a 432 sono:",
+          "target": " 426, 427, 428, 429, 430, 431, 432"
+        },
+        {
+          "context": "I numeri interi in ordine da 436 a 442 sono:",
+          "target": " 436, 437, 438, 439, 440, 441, 442"
+        },
+        {
+          "context": "I numeri interi in ordine da 446 a 452 sono:",
+          "target": " 446, 447, 448, 449, 450, 451, 452"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 218 a 224 sono:",
+          "target": " 218, 219, 220, 221, 222, 223, 224"
+        },
+        {
+          "context": "I numeri interi in ordine da 228 a 234 sono:",
+          "target": " 228, 229, 230, 231, 232, 233, 234"
+        },
+        {
+          "context": "I numeri interi in ordine da 238 a 244 sono:",
+          "target": " 238, 239, 240, 241, 242, 243, 244"
+        },
+        {
+          "context": "I numeri interi in ordine da 248 a 254 sono:",
+          "target": " 248, 249, 250, 251, 252, 253, 254"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 168 a 174 sono:",
+          "target": " 168, 169, 170, 171, 172, 173, 174"
+        },
+        {
+          "context": "I numeri interi in ordine da 178 a 184 sono:",
+          "target": " 178, 179, 180, 181, 182, 183, 184"
+        },
+        {
+          "context": "I numeri interi in ordine da 188 a 194 sono:",
+          "target": " 188, 189, 190, 191, 192, 193, 194"
+        },
+        {
+          "context": "I numeri interi in ordine da 198 a 204 sono:",
+          "target": " 198, 199, 200, 201, 202, 203, 204"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 399 a 404 sono:",
+          "target": " 399, 400, 401, 402, 403, 404"
+        },
+        {
+          "context": "I numeri interi in ordine da 409 a 414 sono:",
+          "target": " 409, 410, 411, 412, 413, 414"
+        },
+        {
+          "context": "I numeri interi in ordine da 419 a 424 sono:",
+          "target": " 419, 420, 421, 422, 423, 424"
+        },
+        {
+          "context": "I numeri interi in ordine da 429 a 434 sono:",
+          "target": " 429, 430, 431, 432, 433, 434"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 292 a 298 sono:",
+          "target": " 292, 293, 294, 295, 296, 297, 298"
+        },
+        {
+          "context": "I numeri interi in ordine da 302 a 308 sono:",
+          "target": " 302, 303, 304, 305, 306, 307, 308"
+        },
+        {
+          "context": "I numeri interi in ordine da 312 a 318 sono:",
+          "target": " 312, 313, 314, 315, 316, 317, 318"
+        },
+        {
+          "context": "I numeri interi in ordine da 322 a 328 sono:",
+          "target": " 322, 323, 324, 325, 326, 327, 328"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 158 a 162 sono:",
+          "target": " 158, 159, 160, 161, 162"
+        },
+        {
+          "context": "I numeri interi in ordine da 168 a 172 sono:",
+          "target": " 168, 169, 170, 171, 172"
+        },
+        {
+          "context": "I numeri interi in ordine da 178 a 182 sono:",
+          "target": " 178, 179, 180, 181, 182"
+        },
+        {
+          "context": "I numeri interi in ordine da 188 a 192 sono:",
+          "target": " 188, 189, 190, 191, 192"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 222 a 225 sono:",
+          "target": " 222, 223, 224, 225"
+        },
+        {
+          "context": "I numeri interi in ordine da 232 a 235 sono:",
+          "target": " 232, 233, 234, 235"
+        },
+        {
+          "context": "I numeri interi in ordine da 242 a 245 sono:",
+          "target": " 242, 243, 244, 245"
+        },
+        {
+          "context": "I numeri interi in ordine da 252 a 255 sono:",
+          "target": " 252, 253, 254, 255"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 765 a 770 sono:",
+          "target": " 765, 766, 767, 768, 769, 770"
+        },
+        {
+          "context": "I numeri interi in ordine da 775 a 780 sono:",
+          "target": " 775, 776, 777, 778, 779, 780"
+        },
+        {
+          "context": "I numeri interi in ordine da 785 a 790 sono:",
+          "target": " 785, 786, 787, 788, 789, 790"
+        },
+        {
+          "context": "I numeri interi in ordine da 795 a 800 sono:",
+          "target": " 795, 796, 797, 798, 799, 800"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 51 a 58 sono:",
+          "target": " 51, 52, 53, 54, 55, 56, 57, 58"
+        },
+        {
+          "context": "I numeri interi in ordine da 61 a 68 sono:",
+          "target": " 61, 62, 63, 64, 65, 66, 67, 68"
+        },
+        {
+          "context": "I numeri interi in ordine da 71 a 78 sono:",
+          "target": " 71, 72, 73, 74, 75, 76, 77, 78"
+        },
+        {
+          "context": "I numeri interi in ordine da 81 a 88 sono:",
+          "target": " 81, 82, 83, 84, 85, 86, 87, 88"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 514 a 521 sono:",
+          "target": " 514, 515, 516, 517, 518, 519, 520, 521"
+        },
+        {
+          "context": "I numeri interi in ordine da 524 a 531 sono:",
+          "target": " 524, 525, 526, 527, 528, 529, 530, 531"
+        },
+        {
+          "context": "I numeri interi in ordine da 534 a 541 sono:",
+          "target": " 534, 535, 536, 537, 538, 539, 540, 541"
+        },
+        {
+          "context": "I numeri interi in ordine da 544 a 551 sono:",
+          "target": " 544, 545, 546, 547, 548, 549, 550, 551"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 58 a 65 sono:",
+          "target": " 58, 59, 60, 61, 62, 63, 64, 65"
+        },
+        {
+          "context": "I numeri interi in ordine da 68 a 75 sono:",
+          "target": " 68, 69, 70, 71, 72, 73, 74, 75"
+        },
+        {
+          "context": "I numeri interi in ordine da 78 a 85 sono:",
+          "target": " 78, 79, 80, 81, 82, 83, 84, 85"
+        },
+        {
+          "context": "I numeri interi in ordine da 88 a 95 sono:",
+          "target": " 88, 89, 90, 91, 92, 93, 94, 95"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "I numeri interi in ordine da 871 a 875 sono:",
+          "target": " 871, 872, 873, 874, 875"
+        },
+        {
+          "context": "I numeri interi in ordine da 881 a 885 sono:",
+          "target": " 881, 882, 883, 884, 885"
+        },
+        {
+          "context": "I numeri interi in ordine da 891 a 895 sono:",
+          "target": " 891, 892, 893, 894, 895"
+        },
+        {
+          "context": "I numeri interi in ordine da 901 a 905 sono:",
+          "target": " 901, 902, 903, 904, 905"
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

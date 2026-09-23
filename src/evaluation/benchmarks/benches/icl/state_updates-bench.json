@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "icl_state_updates",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova sul tavolo, la pallina si trova nel cassetto alto, la conchiglia si trova nel cestino, la borsa si trova nella valigia, la moneta viene spostata nella borsa gialla, la pallina viene spostata accanto al divano, la conchiglia viene spostata nella scatola verde, la borsa viene spostata vicino alla libreria. Alla fine, la moneta si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova sul tavolo, la pallina si trova nel cassetto alto, la conchiglia si trova nel cestino, la borsa si trova nella valigia, la moneta viene spostata nella borsa gialla, la pallina viene spostata accanto al divano, la conchiglia viene spostata nella scatola verde, la borsa viene spostata vicino alla libreria. Alla fine, la pallina si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova sul tavolo, la pallina si trova nel cassetto alto, la conchiglia si trova nel cestino, la borsa si trova nella valigia, la moneta viene spostata nella borsa gialla, la pallina viene spostata accanto al divano, la conchiglia viene spostata nella scatola verde, la borsa viene spostata vicino alla libreria. Alla fine, la conchiglia si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova sul tavolo, la pallina si trova nel cassetto alto, la conchiglia si trova nel cestino, la borsa si trova nella valigia, la moneta viene spostata nella borsa gialla, la pallina viene spostata accanto al divano, la conchiglia viene spostata nella scatola verde, la borsa viene spostata vicino alla libreria. Alla fine, la borsa si trova",
+          "target": " vicino alla libreria."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova nel cestino, la conchiglia si trova nello zaino, la scatola si trova vicino alla lampada, la moneta si trova accanto alla finestra, la bottiglia viene spostata dentro l'armadio, la conchiglia viene spostata dietro la tenda, la scatola viene spostata nella borsa gialla, la moneta viene spostata sotto il letto. Alla fine, la bottiglia si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova nel cestino, la conchiglia si trova nello zaino, la scatola si trova vicino alla lampada, la moneta si trova accanto alla finestra, la bottiglia viene spostata dentro l'armadio, la conchiglia viene spostata dietro la tenda, la scatola viene spostata nella borsa gialla, la moneta viene spostata sotto il letto. Alla fine, la conchiglia si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova nel cestino, la conchiglia si trova nello zaino, la scatola si trova vicino alla lampada, la moneta si trova accanto alla finestra, la bottiglia viene spostata dentro l'armadio, la conchiglia viene spostata dietro la tenda, la scatola viene spostata nella borsa gialla, la moneta viene spostata sotto il letto. Alla fine, la scatola si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova nel cestino, la conchiglia si trova nello zaino, la scatola si trova vicino alla lampada, la moneta si trova accanto alla finestra, la bottiglia viene spostata dentro l'armadio, la conchiglia viene spostata dietro la tenda, la scatola viene spostata nella borsa gialla, la moneta viene spostata sotto il letto. Alla fine, la moneta si trova",
+          "target": " sotto il letto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova sul tavolo, la collana si trova nello zaino, la lettera si trova sul ripiano basso, la pallina si trova nel cassetto alto, la fotografia viene spostata nel cassetto basso, la collana viene spostata accanto al divano, la lettera viene spostata vicino alla libreria, la pallina viene spostata vicino al termosifone. Alla fine, la fotografia si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova sul tavolo, la collana si trova nello zaino, la lettera si trova sul ripiano basso, la pallina si trova nel cassetto alto, la fotografia viene spostata nel cassetto basso, la collana viene spostata accanto al divano, la lettera viene spostata vicino alla libreria, la pallina viene spostata vicino al termosifone. Alla fine, la collana si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova sul tavolo, la collana si trova nello zaino, la lettera si trova sul ripiano basso, la pallina si trova nel cassetto alto, la fotografia viene spostata nel cassetto basso, la collana viene spostata accanto al divano, la lettera viene spostata vicino alla libreria, la pallina viene spostata vicino al termosifone. Alla fine, la lettera si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova sul tavolo, la collana si trova nello zaino, la lettera si trova sul ripiano basso, la pallina si trova nel cassetto alto, la fotografia viene spostata nel cassetto basso, la collana viene spostata accanto al divano, la lettera viene spostata vicino alla libreria, la pallina viene spostata vicino al termosifone. Alla fine, la pallina si trova",
+          "target": " vicino al termosifone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova nel cestino, la pallina si trova nel cassetto alto, la chiave si trova accanto alla finestra, la spugna si trova nella valigia, la sveglia viene spostata sul frigorifero, la pallina viene spostata sotto il letto, la chiave viene spostata nella borsa gialla, la spugna viene spostata vicino al termosifone. Alla fine, la sveglia si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova nel cestino, la pallina si trova nel cassetto alto, la chiave si trova accanto alla finestra, la spugna si trova nella valigia, la sveglia viene spostata sul frigorifero, la pallina viene spostata sotto il letto, la chiave viene spostata nella borsa gialla, la spugna viene spostata vicino al termosifone. Alla fine, la pallina si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova nel cestino, la pallina si trova nel cassetto alto, la chiave si trova accanto alla finestra, la spugna si trova nella valigia, la sveglia viene spostata sul frigorifero, la pallina viene spostata sotto il letto, la chiave viene spostata nella borsa gialla, la spugna viene spostata vicino al termosifone. Alla fine, la chiave si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova nel cestino, la pallina si trova nel cassetto alto, la chiave si trova accanto alla finestra, la spugna si trova nella valigia, la sveglia viene spostata sul frigorifero, la pallina viene spostata sotto il letto, la chiave viene spostata nella borsa gialla, la spugna viene spostata vicino al termosifone. Alla fine, la spugna si trova",
+          "target": " vicino al termosifone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova nel cassetto alto, la chiave si trova nello zaino, la conchiglia si trova vicino alla lampada, la mappa si trova accanto alla finestra, la penna viene spostata sotto il letto, la chiave viene spostata dietro la tenda, la conchiglia viene spostata vicino al termosifone, la mappa viene spostata sulla mensola alta. Alla fine, la penna si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova nel cassetto alto, la chiave si trova nello zaino, la conchiglia si trova vicino alla lampada, la mappa si trova accanto alla finestra, la penna viene spostata sotto il letto, la chiave viene spostata dietro la tenda, la conchiglia viene spostata vicino al termosifone, la mappa viene spostata sulla mensola alta. Alla fine, la chiave si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova nel cassetto alto, la chiave si trova nello zaino, la conchiglia si trova vicino alla lampada, la mappa si trova accanto alla finestra, la penna viene spostata sotto il letto, la chiave viene spostata dietro la tenda, la conchiglia viene spostata vicino al termosifone, la mappa viene spostata sulla mensola alta. Alla fine, la conchiglia si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova nel cassetto alto, la chiave si trova nello zaino, la conchiglia si trova vicino alla lampada, la mappa si trova accanto alla finestra, la penna viene spostata sotto il letto, la chiave viene spostata dietro la tenda, la conchiglia viene spostata vicino al termosifone, la mappa viene spostata sulla mensola alta. Alla fine, la mappa si trova",
+          "target": " sulla mensola alta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova sulla scrivania, la bottiglia si trova nella valigia, la pallina si trova sul tavolo, la penna si trova nel cestino, la forchetta viene spostata vicino alla libreria, la bottiglia viene spostata dentro l'armadio, la pallina viene spostata sulla mensola alta, la penna viene spostata dietro la tenda. Alla fine, la forchetta si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova sulla scrivania, la bottiglia si trova nella valigia, la pallina si trova sul tavolo, la penna si trova nel cestino, la forchetta viene spostata vicino alla libreria, la bottiglia viene spostata dentro l'armadio, la pallina viene spostata sulla mensola alta, la penna viene spostata dietro la tenda. Alla fine, la bottiglia si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova sulla scrivania, la bottiglia si trova nella valigia, la pallina si trova sul tavolo, la penna si trova nel cestino, la forchetta viene spostata vicino alla libreria, la bottiglia viene spostata dentro l'armadio, la pallina viene spostata sulla mensola alta, la penna viene spostata dietro la tenda. Alla fine, la pallina si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova sulla scrivania, la bottiglia si trova nella valigia, la pallina si trova sul tavolo, la penna si trova nel cestino, la forchetta viene spostata vicino alla libreria, la bottiglia viene spostata dentro l'armadio, la pallina viene spostata sulla mensola alta, la penna viene spostata dietro la tenda. Alla fine, la penna si trova",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nella scatola rossa, la borsa si trova nello zaino, la conchiglia si trova vicino alla lampada, la lettera si trova sul ripiano basso, la pallina viene spostata accanto al divano, la borsa viene spostata sotto il letto, la conchiglia viene spostata nel cassetto basso, la lettera viene spostata dentro l'armadio. Alla fine, la pallina si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nella scatola rossa, la borsa si trova nello zaino, la conchiglia si trova vicino alla lampada, la lettera si trova sul ripiano basso, la pallina viene spostata accanto al divano, la borsa viene spostata sotto il letto, la conchiglia viene spostata nel cassetto basso, la lettera viene spostata dentro l'armadio. Alla fine, la borsa si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nella scatola rossa, la borsa si trova nello zaino, la conchiglia si trova vicino alla lampada, la lettera si trova sul ripiano basso, la pallina viene spostata accanto al divano, la borsa viene spostata sotto il letto, la conchiglia viene spostata nel cassetto basso, la lettera viene spostata dentro l'armadio. Alla fine, la conchiglia si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nella scatola rossa, la borsa si trova nello zaino, la conchiglia si trova vicino alla lampada, la lettera si trova sul ripiano basso, la pallina viene spostata accanto al divano, la borsa viene spostata sotto il letto, la conchiglia viene spostata nel cassetto basso, la lettera viene spostata dentro l'armadio. Alla fine, la lettera si trova",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sul tavolo, la coperta si trova sotto la sedia, la scarpa si trova vicino alla lampada, la spugna si trova nello zaino, la bottiglia viene spostata vicino alla libreria, la coperta viene spostata sul frigorifero, la scarpa viene spostata sopra il mobile, la spugna viene spostata sotto il letto. Alla fine, la bottiglia si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sul tavolo, la coperta si trova sotto la sedia, la scarpa si trova vicino alla lampada, la spugna si trova nello zaino, la bottiglia viene spostata vicino alla libreria, la coperta viene spostata sul frigorifero, la scarpa viene spostata sopra il mobile, la spugna viene spostata sotto il letto. Alla fine, la coperta si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sul tavolo, la coperta si trova sotto la sedia, la scarpa si trova vicino alla lampada, la spugna si trova nello zaino, la bottiglia viene spostata vicino alla libreria, la coperta viene spostata sul frigorifero, la scarpa viene spostata sopra il mobile, la spugna viene spostata sotto il letto. Alla fine, la scarpa si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sul tavolo, la coperta si trova sotto la sedia, la scarpa si trova vicino alla lampada, la spugna si trova nello zaino, la bottiglia viene spostata vicino alla libreria, la coperta viene spostata sul frigorifero, la scarpa viene spostata sopra il mobile, la spugna viene spostata sotto il letto. Alla fine, la spugna si trova",
+          "target": " sotto il letto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova sul tavolo, la scarpa si trova nel cestino, la forchetta si trova dietro la porta, la conchiglia si trova nel cassetto alto, la matita viene spostata nella scatola verde, la scarpa viene spostata nel cassetto basso, la forchetta viene spostata sulla mensola alta, la conchiglia viene spostata nella borsa gialla. Alla fine, la matita si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova sul tavolo, la scarpa si trova nel cestino, la forchetta si trova dietro la porta, la conchiglia si trova nel cassetto alto, la matita viene spostata nella scatola verde, la scarpa viene spostata nel cassetto basso, la forchetta viene spostata sulla mensola alta, la conchiglia viene spostata nella borsa gialla. Alla fine, la scarpa si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova sul tavolo, la scarpa si trova nel cestino, la forchetta si trova dietro la porta, la conchiglia si trova nel cassetto alto, la matita viene spostata nella scatola verde, la scarpa viene spostata nel cassetto basso, la forchetta viene spostata sulla mensola alta, la conchiglia viene spostata nella borsa gialla. Alla fine, la forchetta si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova sul tavolo, la scarpa si trova nel cestino, la forchetta si trova dietro la porta, la conchiglia si trova nel cassetto alto, la matita viene spostata nella scatola verde, la scarpa viene spostata nel cassetto basso, la forchetta viene spostata sulla mensola alta, la conchiglia viene spostata nella borsa gialla. Alla fine, la conchiglia si trova",
+          "target": " nella borsa gialla."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova sulla scrivania, la penna si trova dietro la porta, la scarpa si trova nel cestino, la borsa si trova sotto la sedia, la sveglia viene spostata sul frigorifero, la penna viene spostata nella scatola verde, la scarpa viene spostata nel cassetto basso, la borsa viene spostata vicino alla libreria. Alla fine, la sveglia si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova sulla scrivania, la penna si trova dietro la porta, la scarpa si trova nel cestino, la borsa si trova sotto la sedia, la sveglia viene spostata sul frigorifero, la penna viene spostata nella scatola verde, la scarpa viene spostata nel cassetto basso, la borsa viene spostata vicino alla libreria. Alla fine, la penna si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova sulla scrivania, la penna si trova dietro la porta, la scarpa si trova nel cestino, la borsa si trova sotto la sedia, la sveglia viene spostata sul frigorifero, la penna viene spostata nella scatola verde, la scarpa viene spostata nel cassetto basso, la borsa viene spostata vicino alla libreria. Alla fine, la scarpa si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova sulla scrivania, la penna si trova dietro la porta, la scarpa si trova nel cestino, la borsa si trova sotto la sedia, la sveglia viene spostata sul frigorifero, la penna viene spostata nella scatola verde, la scarpa viene spostata nel cassetto basso, la borsa viene spostata vicino alla libreria. Alla fine, la borsa si trova",
+          "target": " vicino alla libreria."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova sul tavolo, la candela si trova dietro la porta, la mappa si trova nella scatola rossa, la collana si trova sotto la sedia, la lettera viene spostata sul frigorifero, la candela viene spostata sulla mensola alta, la mappa viene spostata vicino alla libreria, la collana viene spostata nel cassetto basso. Alla fine, la lettera si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova sul tavolo, la candela si trova dietro la porta, la mappa si trova nella scatola rossa, la collana si trova sotto la sedia, la lettera viene spostata sul frigorifero, la candela viene spostata sulla mensola alta, la mappa viene spostata vicino alla libreria, la collana viene spostata nel cassetto basso. Alla fine, la candela si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova sul tavolo, la candela si trova dietro la porta, la mappa si trova nella scatola rossa, la collana si trova sotto la sedia, la lettera viene spostata sul frigorifero, la candela viene spostata sulla mensola alta, la mappa viene spostata vicino alla libreria, la collana viene spostata nel cassetto basso. Alla fine, la mappa si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova sul tavolo, la candela si trova dietro la porta, la mappa si trova nella scatola rossa, la collana si trova sotto la sedia, la lettera viene spostata sul frigorifero, la candela viene spostata sulla mensola alta, la mappa viene spostata vicino alla libreria, la collana viene spostata nel cassetto basso. Alla fine, la collana si trova",
+          "target": " nel cassetto basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova sul tavolo, la bottiglia si trova nel cestino, la tazza si trova nella valigia, la forchetta si trova nella scatola rossa, la scatola viene spostata nella borsa gialla, la bottiglia viene spostata vicino al termosifone, la tazza viene spostata dietro la tenda, la forchetta viene spostata nella scatola verde. Alla fine, la scatola si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova sul tavolo, la bottiglia si trova nel cestino, la tazza si trova nella valigia, la forchetta si trova nella scatola rossa, la scatola viene spostata nella borsa gialla, la bottiglia viene spostata vicino al termosifone, la tazza viene spostata dietro la tenda, la forchetta viene spostata nella scatola verde. Alla fine, la bottiglia si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova sul tavolo, la bottiglia si trova nel cestino, la tazza si trova nella valigia, la forchetta si trova nella scatola rossa, la scatola viene spostata nella borsa gialla, la bottiglia viene spostata vicino al termosifone, la tazza viene spostata dietro la tenda, la forchetta viene spostata nella scatola verde. Alla fine, la tazza si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova sul tavolo, la bottiglia si trova nel cestino, la tazza si trova nella valigia, la forchetta si trova nella scatola rossa, la scatola viene spostata nella borsa gialla, la bottiglia viene spostata vicino al termosifone, la tazza viene spostata dietro la tenda, la forchetta viene spostata nella scatola verde. Alla fine, la forchetta si trova",
+          "target": " nella scatola verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nello zaino, la mappa si trova sulla scrivania, la conchiglia si trova nel cassetto alto, la chiave si trova nella valigia, la forchetta viene spostata vicino alla libreria, la mappa viene spostata dietro la tenda, la conchiglia viene spostata nel cassetto basso, la chiave viene spostata sul frigorifero. Alla fine, la forchetta si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nello zaino, la mappa si trova sulla scrivania, la conchiglia si trova nel cassetto alto, la chiave si trova nella valigia, la forchetta viene spostata vicino alla libreria, la mappa viene spostata dietro la tenda, la conchiglia viene spostata nel cassetto basso, la chiave viene spostata sul frigorifero. Alla fine, la mappa si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nello zaino, la mappa si trova sulla scrivania, la conchiglia si trova nel cassetto alto, la chiave si trova nella valigia, la forchetta viene spostata vicino alla libreria, la mappa viene spostata dietro la tenda, la conchiglia viene spostata nel cassetto basso, la chiave viene spostata sul frigorifero. Alla fine, la conchiglia si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nello zaino, la mappa si trova sulla scrivania, la conchiglia si trova nel cassetto alto, la chiave si trova nella valigia, la forchetta viene spostata vicino alla libreria, la mappa viene spostata dietro la tenda, la conchiglia viene spostata nel cassetto basso, la chiave viene spostata sul frigorifero. Alla fine, la chiave si trova",
+          "target": " sul frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova sotto la sedia, la coperta si trova nel cestino, la borsa si trova sulla scrivania, la fotografia si trova accanto alla finestra, la tazza viene spostata dentro l'armadio, la coperta viene spostata sul frigorifero, la borsa viene spostata vicino alla libreria, la fotografia viene spostata sotto il letto. Alla fine, la tazza si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova sotto la sedia, la coperta si trova nel cestino, la borsa si trova sulla scrivania, la fotografia si trova accanto alla finestra, la tazza viene spostata dentro l'armadio, la coperta viene spostata sul frigorifero, la borsa viene spostata vicino alla libreria, la fotografia viene spostata sotto il letto. Alla fine, la coperta si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova sotto la sedia, la coperta si trova nel cestino, la borsa si trova sulla scrivania, la fotografia si trova accanto alla finestra, la tazza viene spostata dentro l'armadio, la coperta viene spostata sul frigorifero, la borsa viene spostata vicino alla libreria, la fotografia viene spostata sotto il letto. Alla fine, la borsa si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova sotto la sedia, la coperta si trova nel cestino, la borsa si trova sulla scrivania, la fotografia si trova accanto alla finestra, la tazza viene spostata dentro l'armadio, la coperta viene spostata sul frigorifero, la borsa viene spostata vicino alla libreria, la fotografia viene spostata sotto il letto. Alla fine, la fotografia si trova",
+          "target": " sotto il letto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nel cassetto alto, la spugna si trova nello zaino, la scatola si trova nella valigia, la matita si trova vicino alla lampada, la forchetta viene spostata vicino al termosifone, la spugna viene spostata nella scatola verde, la scatola viene spostata nella borsa gialla, la matita viene spostata sul frigorifero. Alla fine, la forchetta si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nel cassetto alto, la spugna si trova nello zaino, la scatola si trova nella valigia, la matita si trova vicino alla lampada, la forchetta viene spostata vicino al termosifone, la spugna viene spostata nella scatola verde, la scatola viene spostata nella borsa gialla, la matita viene spostata sul frigorifero. Alla fine, la spugna si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nel cassetto alto, la spugna si trova nello zaino, la scatola si trova nella valigia, la matita si trova vicino alla lampada, la forchetta viene spostata vicino al termosifone, la spugna viene spostata nella scatola verde, la scatola viene spostata nella borsa gialla, la matita viene spostata sul frigorifero. Alla fine, la scatola si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nel cassetto alto, la spugna si trova nello zaino, la scatola si trova nella valigia, la matita si trova vicino alla lampada, la forchetta viene spostata vicino al termosifone, la spugna viene spostata nella scatola verde, la scatola viene spostata nella borsa gialla, la matita viene spostata sul frigorifero. Alla fine, la matita si trova",
+          "target": " sul frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova vicino alla lampada, la conchiglia si trova nella valigia, la moneta si trova nella scatola rossa, la penna si trova nello zaino, la matita viene spostata nel cassetto basso, la conchiglia viene spostata nella scatola verde, la moneta viene spostata vicino al termosifone, la penna viene spostata vicino alla libreria. Alla fine, la matita si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova vicino alla lampada, la conchiglia si trova nella valigia, la moneta si trova nella scatola rossa, la penna si trova nello zaino, la matita viene spostata nel cassetto basso, la conchiglia viene spostata nella scatola verde, la moneta viene spostata vicino al termosifone, la penna viene spostata vicino alla libreria. Alla fine, la conchiglia si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova vicino alla lampada, la conchiglia si trova nella valigia, la moneta si trova nella scatola rossa, la penna si trova nello zaino, la matita viene spostata nel cassetto basso, la conchiglia viene spostata nella scatola verde, la moneta viene spostata vicino al termosifone, la penna viene spostata vicino alla libreria. Alla fine, la moneta si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova vicino alla lampada, la conchiglia si trova nella valigia, la moneta si trova nella scatola rossa, la penna si trova nello zaino, la matita viene spostata nel cassetto basso, la conchiglia viene spostata nella scatola verde, la moneta viene spostata vicino al termosifone, la penna viene spostata vicino alla libreria. Alla fine, la penna si trova",
+          "target": " vicino alla libreria."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova vicino alla lampada, la coperta si trova sulla scrivania, la bottiglia si trova nella valigia, la tazza si trova dietro la porta, la pallina viene spostata dentro l'armadio, la coperta viene spostata dietro la tenda, la bottiglia viene spostata accanto al divano, la tazza viene spostata vicino alla libreria. Alla fine, la pallina si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova vicino alla lampada, la coperta si trova sulla scrivania, la bottiglia si trova nella valigia, la tazza si trova dietro la porta, la pallina viene spostata dentro l'armadio, la coperta viene spostata dietro la tenda, la bottiglia viene spostata accanto al divano, la tazza viene spostata vicino alla libreria. Alla fine, la coperta si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova vicino alla lampada, la coperta si trova sulla scrivania, la bottiglia si trova nella valigia, la tazza si trova dietro la porta, la pallina viene spostata dentro l'armadio, la coperta viene spostata dietro la tenda, la bottiglia viene spostata accanto al divano, la tazza viene spostata vicino alla libreria. Alla fine, la bottiglia si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova vicino alla lampada, la coperta si trova sulla scrivania, la bottiglia si trova nella valigia, la tazza si trova dietro la porta, la pallina viene spostata dentro l'armadio, la coperta viene spostata dietro la tenda, la bottiglia viene spostata accanto al divano, la tazza viene spostata vicino alla libreria. Alla fine, la tazza si trova",
+          "target": " vicino alla libreria."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova accanto alla finestra, la collana si trova dietro la porta, la forchetta si trova nella scatola rossa, la matita si trova nel cassetto alto, la candela viene spostata nella scatola verde, la collana viene spostata accanto al divano, la forchetta viene spostata vicino al termosifone, la matita viene spostata nel cassetto basso. Alla fine, la candela si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova accanto alla finestra, la collana si trova dietro la porta, la forchetta si trova nella scatola rossa, la matita si trova nel cassetto alto, la candela viene spostata nella scatola verde, la collana viene spostata accanto al divano, la forchetta viene spostata vicino al termosifone, la matita viene spostata nel cassetto basso. Alla fine, la collana si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova accanto alla finestra, la collana si trova dietro la porta, la forchetta si trova nella scatola rossa, la matita si trova nel cassetto alto, la candela viene spostata nella scatola verde, la collana viene spostata accanto al divano, la forchetta viene spostata vicino al termosifone, la matita viene spostata nel cassetto basso. Alla fine, la forchetta si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova accanto alla finestra, la collana si trova dietro la porta, la forchetta si trova nella scatola rossa, la matita si trova nel cassetto alto, la candela viene spostata nella scatola verde, la collana viene spostata accanto al divano, la forchetta viene spostata vicino al termosifone, la matita viene spostata nel cassetto basso. Alla fine, la matita si trova",
+          "target": " nel cassetto basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sul tavolo, la sveglia si trova accanto alla finestra, la borsa si trova vicino alla lampada, la spugna si trova sotto la sedia, la bottiglia viene spostata dietro la tenda, la sveglia viene spostata dentro l'armadio, la borsa viene spostata nel cassetto basso, la spugna viene spostata vicino alla libreria. Alla fine, la bottiglia si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sul tavolo, la sveglia si trova accanto alla finestra, la borsa si trova vicino alla lampada, la spugna si trova sotto la sedia, la bottiglia viene spostata dietro la tenda, la sveglia viene spostata dentro l'armadio, la borsa viene spostata nel cassetto basso, la spugna viene spostata vicino alla libreria. Alla fine, la sveglia si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sul tavolo, la sveglia si trova accanto alla finestra, la borsa si trova vicino alla lampada, la spugna si trova sotto la sedia, la bottiglia viene spostata dietro la tenda, la sveglia viene spostata dentro l'armadio, la borsa viene spostata nel cassetto basso, la spugna viene spostata vicino alla libreria. Alla fine, la borsa si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sul tavolo, la sveglia si trova accanto alla finestra, la borsa si trova vicino alla lampada, la spugna si trova sotto la sedia, la bottiglia viene spostata dietro la tenda, la sveglia viene spostata dentro l'armadio, la borsa viene spostata nel cassetto basso, la spugna viene spostata vicino alla libreria. Alla fine, la spugna si trova",
+          "target": " vicino alla libreria."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la chiave si trova nello zaino, la borsa si trova sul tavolo, la moneta si trova accanto alla finestra, la penna si trova dietro la porta, la chiave viene spostata dietro la tenda, la borsa viene spostata dentro l'armadio, la moneta viene spostata accanto al divano, la penna viene spostata nella scatola verde. Alla fine, la chiave si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la chiave si trova nello zaino, la borsa si trova sul tavolo, la moneta si trova accanto alla finestra, la penna si trova dietro la porta, la chiave viene spostata dietro la tenda, la borsa viene spostata dentro l'armadio, la moneta viene spostata accanto al divano, la penna viene spostata nella scatola verde. Alla fine, la borsa si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la chiave si trova nello zaino, la borsa si trova sul tavolo, la moneta si trova accanto alla finestra, la penna si trova dietro la porta, la chiave viene spostata dietro la tenda, la borsa viene spostata dentro l'armadio, la moneta viene spostata accanto al divano, la penna viene spostata nella scatola verde. Alla fine, la moneta si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la chiave si trova nello zaino, la borsa si trova sul tavolo, la moneta si trova accanto alla finestra, la penna si trova dietro la porta, la chiave viene spostata dietro la tenda, la borsa viene spostata dentro l'armadio, la moneta viene spostata accanto al divano, la penna viene spostata nella scatola verde. Alla fine, la penna si trova",
+          "target": " nella scatola verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova dietro la porta, la moneta si trova sotto la sedia, la sveglia si trova accanto alla finestra, la pallina si trova nel cestino, la scarpa viene spostata sopra il mobile, la moneta viene spostata dietro la tenda, la sveglia viene spostata sulla mensola alta, la pallina viene spostata dentro l'armadio. Alla fine, la scarpa si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova dietro la porta, la moneta si trova sotto la sedia, la sveglia si trova accanto alla finestra, la pallina si trova nel cestino, la scarpa viene spostata sopra il mobile, la moneta viene spostata dietro la tenda, la sveglia viene spostata sulla mensola alta, la pallina viene spostata dentro l'armadio. Alla fine, la moneta si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova dietro la porta, la moneta si trova sotto la sedia, la sveglia si trova accanto alla finestra, la pallina si trova nel cestino, la scarpa viene spostata sopra il mobile, la moneta viene spostata dietro la tenda, la sveglia viene spostata sulla mensola alta, la pallina viene spostata dentro l'armadio. Alla fine, la sveglia si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova dietro la porta, la moneta si trova sotto la sedia, la sveglia si trova accanto alla finestra, la pallina si trova nel cestino, la scarpa viene spostata sopra il mobile, la moneta viene spostata dietro la tenda, la sveglia viene spostata sulla mensola alta, la pallina viene spostata dentro l'armadio. Alla fine, la pallina si trova",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova vicino alla lampada, la chiave si trova sul ripiano basso, la borsa si trova nella scatola rossa, la matita si trova sulla scrivania, la bottiglia viene spostata nella borsa gialla, la chiave viene spostata dietro la tenda, la borsa viene spostata sul frigorifero, la matita viene spostata vicino alla libreria. Alla fine, la bottiglia si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova vicino alla lampada, la chiave si trova sul ripiano basso, la borsa si trova nella scatola rossa, la matita si trova sulla scrivania, la bottiglia viene spostata nella borsa gialla, la chiave viene spostata dietro la tenda, la borsa viene spostata sul frigorifero, la matita viene spostata vicino alla libreria. Alla fine, la chiave si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova vicino alla lampada, la chiave si trova sul ripiano basso, la borsa si trova nella scatola rossa, la matita si trova sulla scrivania, la bottiglia viene spostata nella borsa gialla, la chiave viene spostata dietro la tenda, la borsa viene spostata sul frigorifero, la matita viene spostata vicino alla libreria. Alla fine, la borsa si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova vicino alla lampada, la chiave si trova sul ripiano basso, la borsa si trova nella scatola rossa, la matita si trova sulla scrivania, la bottiglia viene spostata nella borsa gialla, la chiave viene spostata dietro la tenda, la borsa viene spostata sul frigorifero, la matita viene spostata vicino alla libreria. Alla fine, la matita si trova",
+          "target": " vicino alla libreria."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la chiave si trova nel cassetto alto, la scatola si trova sulla scrivania, la penna si trova vicino alla lampada, la fotografia si trova nello zaino, la chiave viene spostata accanto al divano, la scatola viene spostata nel cassetto basso, la penna viene spostata nella borsa gialla, la fotografia viene spostata dentro l'armadio. Alla fine, la chiave si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la chiave si trova nel cassetto alto, la scatola si trova sulla scrivania, la penna si trova vicino alla lampada, la fotografia si trova nello zaino, la chiave viene spostata accanto al divano, la scatola viene spostata nel cassetto basso, la penna viene spostata nella borsa gialla, la fotografia viene spostata dentro l'armadio. Alla fine, la scatola si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la chiave si trova nel cassetto alto, la scatola si trova sulla scrivania, la penna si trova vicino alla lampada, la fotografia si trova nello zaino, la chiave viene spostata accanto al divano, la scatola viene spostata nel cassetto basso, la penna viene spostata nella borsa gialla, la fotografia viene spostata dentro l'armadio. Alla fine, la penna si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la chiave si trova nel cassetto alto, la scatola si trova sulla scrivania, la penna si trova vicino alla lampada, la fotografia si trova nello zaino, la chiave viene spostata accanto al divano, la scatola viene spostata nel cassetto basso, la penna viene spostata nella borsa gialla, la fotografia viene spostata dentro l'armadio. Alla fine, la fotografia si trova",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova sul ripiano basso, la penna si trova sotto la sedia, la collana si trova nello zaino, la scatola si trova vicino alla lampada, la sveglia viene spostata dentro l'armadio, la penna viene spostata sotto il letto, la collana viene spostata accanto al divano, la scatola viene spostata sulla mensola alta. Alla fine, la sveglia si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova sul ripiano basso, la penna si trova sotto la sedia, la collana si trova nello zaino, la scatola si trova vicino alla lampada, la sveglia viene spostata dentro l'armadio, la penna viene spostata sotto il letto, la collana viene spostata accanto al divano, la scatola viene spostata sulla mensola alta. Alla fine, la penna si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova sul ripiano basso, la penna si trova sotto la sedia, la collana si trova nello zaino, la scatola si trova vicino alla lampada, la sveglia viene spostata dentro l'armadio, la penna viene spostata sotto il letto, la collana viene spostata accanto al divano, la scatola viene spostata sulla mensola alta. Alla fine, la collana si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova sul ripiano basso, la penna si trova sotto la sedia, la collana si trova nello zaino, la scatola si trova vicino alla lampada, la sveglia viene spostata dentro l'armadio, la penna viene spostata sotto il letto, la collana viene spostata accanto al divano, la scatola viene spostata sulla mensola alta. Alla fine, la scatola si trova",
+          "target": " sulla mensola alta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova dietro la porta, la lettera si trova sulla scrivania, la penna si trova nella valigia, la moneta si trova nel cassetto alto, la spugna viene spostata nel cassetto basso, la lettera viene spostata sul frigorifero, la penna viene spostata dentro l'armadio, la moneta viene spostata sopra il mobile. Alla fine, la spugna si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova dietro la porta, la lettera si trova sulla scrivania, la penna si trova nella valigia, la moneta si trova nel cassetto alto, la spugna viene spostata nel cassetto basso, la lettera viene spostata sul frigorifero, la penna viene spostata dentro l'armadio, la moneta viene spostata sopra il mobile. Alla fine, la lettera si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova dietro la porta, la lettera si trova sulla scrivania, la penna si trova nella valigia, la moneta si trova nel cassetto alto, la spugna viene spostata nel cassetto basso, la lettera viene spostata sul frigorifero, la penna viene spostata dentro l'armadio, la moneta viene spostata sopra il mobile. Alla fine, la penna si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova dietro la porta, la lettera si trova sulla scrivania, la penna si trova nella valigia, la moneta si trova nel cassetto alto, la spugna viene spostata nel cassetto basso, la lettera viene spostata sul frigorifero, la penna viene spostata dentro l'armadio, la moneta viene spostata sopra il mobile. Alla fine, la moneta si trova",
+          "target": " sopra il mobile."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova sul ripiano basso, la forchetta si trova sotto la sedia, la penna si trova sul tavolo, la conchiglia si trova dietro la porta, la tazza viene spostata sul frigorifero, la forchetta viene spostata sotto il letto, la penna viene spostata nella borsa gialla, la conchiglia viene spostata vicino alla libreria. Alla fine, la tazza si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova sul ripiano basso, la forchetta si trova sotto la sedia, la penna si trova sul tavolo, la conchiglia si trova dietro la porta, la tazza viene spostata sul frigorifero, la forchetta viene spostata sotto il letto, la penna viene spostata nella borsa gialla, la conchiglia viene spostata vicino alla libreria. Alla fine, la forchetta si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova sul ripiano basso, la forchetta si trova sotto la sedia, la penna si trova sul tavolo, la conchiglia si trova dietro la porta, la tazza viene spostata sul frigorifero, la forchetta viene spostata sotto il letto, la penna viene spostata nella borsa gialla, la conchiglia viene spostata vicino alla libreria. Alla fine, la penna si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova sul ripiano basso, la forchetta si trova sotto la sedia, la penna si trova sul tavolo, la conchiglia si trova dietro la porta, la tazza viene spostata sul frigorifero, la forchetta viene spostata sotto il letto, la penna viene spostata nella borsa gialla, la conchiglia viene spostata vicino alla libreria. Alla fine, la conchiglia si trova",
+          "target": " vicino alla libreria."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sotto la sedia, la mappa si trova nel cassetto alto, la candela si trova nella valigia, la tazza si trova nel cestino, la borsa viene spostata sulla mensola alta, la mappa viene spostata sotto il letto, la candela viene spostata sopra il mobile, la tazza viene spostata dentro l'armadio. Alla fine, la borsa si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sotto la sedia, la mappa si trova nel cassetto alto, la candela si trova nella valigia, la tazza si trova nel cestino, la borsa viene spostata sulla mensola alta, la mappa viene spostata sotto il letto, la candela viene spostata sopra il mobile, la tazza viene spostata dentro l'armadio. Alla fine, la mappa si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sotto la sedia, la mappa si trova nel cassetto alto, la candela si trova nella valigia, la tazza si trova nel cestino, la borsa viene spostata sulla mensola alta, la mappa viene spostata sotto il letto, la candela viene spostata sopra il mobile, la tazza viene spostata dentro l'armadio. Alla fine, la candela si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sotto la sedia, la mappa si trova nel cassetto alto, la candela si trova nella valigia, la tazza si trova nel cestino, la borsa viene spostata sulla mensola alta, la mappa viene spostata sotto il letto, la candela viene spostata sopra il mobile, la tazza viene spostata dentro l'armadio. Alla fine, la tazza si trova",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sotto la sedia, la pallina si trova nella scatola rossa, la scatola si trova nel cassetto alto, la coperta si trova accanto alla finestra, la bottiglia viene spostata sotto il letto, la pallina viene spostata nella scatola verde, la scatola viene spostata sopra il mobile, la coperta viene spostata vicino al termosifone. Alla fine, la bottiglia si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sotto la sedia, la pallina si trova nella scatola rossa, la scatola si trova nel cassetto alto, la coperta si trova accanto alla finestra, la bottiglia viene spostata sotto il letto, la pallina viene spostata nella scatola verde, la scatola viene spostata sopra il mobile, la coperta viene spostata vicino al termosifone. Alla fine, la pallina si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sotto la sedia, la pallina si trova nella scatola rossa, la scatola si trova nel cassetto alto, la coperta si trova accanto alla finestra, la bottiglia viene spostata sotto il letto, la pallina viene spostata nella scatola verde, la scatola viene spostata sopra il mobile, la coperta viene spostata vicino al termosifone. Alla fine, la scatola si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sotto la sedia, la pallina si trova nella scatola rossa, la scatola si trova nel cassetto alto, la coperta si trova accanto alla finestra, la bottiglia viene spostata sotto il letto, la pallina viene spostata nella scatola verde, la scatola viene spostata sopra il mobile, la coperta viene spostata vicino al termosifone. Alla fine, la coperta si trova",
+          "target": " vicino al termosifone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nel cestino, la fotografia si trova nella scatola rossa, la spugna si trova nel cassetto alto, la collana si trova sulla scrivania, la pallina viene spostata vicino alla libreria, la fotografia viene spostata sulla mensola alta, la spugna viene spostata sul frigorifero, la collana viene spostata nella scatola verde. Alla fine, la pallina si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nel cestino, la fotografia si trova nella scatola rossa, la spugna si trova nel cassetto alto, la collana si trova sulla scrivania, la pallina viene spostata vicino alla libreria, la fotografia viene spostata sulla mensola alta, la spugna viene spostata sul frigorifero, la collana viene spostata nella scatola verde. Alla fine, la fotografia si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nel cestino, la fotografia si trova nella scatola rossa, la spugna si trova nel cassetto alto, la collana si trova sulla scrivania, la pallina viene spostata vicino alla libreria, la fotografia viene spostata sulla mensola alta, la spugna viene spostata sul frigorifero, la collana viene spostata nella scatola verde. Alla fine, la spugna si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nel cestino, la fotografia si trova nella scatola rossa, la spugna si trova nel cassetto alto, la collana si trova sulla scrivania, la pallina viene spostata vicino alla libreria, la fotografia viene spostata sulla mensola alta, la spugna viene spostata sul frigorifero, la collana viene spostata nella scatola verde. Alla fine, la collana si trova",
+          "target": " nella scatola verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova sul tavolo, la borsa si trova nella scatola rossa, la tazza si trova sotto la sedia, la collana si trova sul ripiano basso, la matita viene spostata nella scatola verde, la borsa viene spostata vicino al termosifone, la tazza viene spostata dentro l'armadio, la collana viene spostata nella borsa gialla. Alla fine, la matita si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova sul tavolo, la borsa si trova nella scatola rossa, la tazza si trova sotto la sedia, la collana si trova sul ripiano basso, la matita viene spostata nella scatola verde, la borsa viene spostata vicino al termosifone, la tazza viene spostata dentro l'armadio, la collana viene spostata nella borsa gialla. Alla fine, la borsa si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova sul tavolo, la borsa si trova nella scatola rossa, la tazza si trova sotto la sedia, la collana si trova sul ripiano basso, la matita viene spostata nella scatola verde, la borsa viene spostata vicino al termosifone, la tazza viene spostata dentro l'armadio, la collana viene spostata nella borsa gialla. Alla fine, la tazza si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova sul tavolo, la borsa si trova nella scatola rossa, la tazza si trova sotto la sedia, la collana si trova sul ripiano basso, la matita viene spostata nella scatola verde, la borsa viene spostata vicino al termosifone, la tazza viene spostata dentro l'armadio, la collana viene spostata nella borsa gialla. Alla fine, la collana si trova",
+          "target": " nella borsa gialla."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nello zaino, la borsa si trova sul tavolo, la collana si trova nella valigia, la tazza si trova accanto alla finestra, la forchetta viene spostata nella scatola verde, la borsa viene spostata sulla mensola alta, la collana viene spostata vicino al termosifone, la tazza viene spostata accanto al divano. Alla fine, la forchetta si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nello zaino, la borsa si trova sul tavolo, la collana si trova nella valigia, la tazza si trova accanto alla finestra, la forchetta viene spostata nella scatola verde, la borsa viene spostata sulla mensola alta, la collana viene spostata vicino al termosifone, la tazza viene spostata accanto al divano. Alla fine, la borsa si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nello zaino, la borsa si trova sul tavolo, la collana si trova nella valigia, la tazza si trova accanto alla finestra, la forchetta viene spostata nella scatola verde, la borsa viene spostata sulla mensola alta, la collana viene spostata vicino al termosifone, la tazza viene spostata accanto al divano. Alla fine, la collana si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nello zaino, la borsa si trova sul tavolo, la collana si trova nella valigia, la tazza si trova accanto alla finestra, la forchetta viene spostata nella scatola verde, la borsa viene spostata sulla mensola alta, la collana viene spostata vicino al termosifone, la tazza viene spostata accanto al divano. Alla fine, la tazza si trova",
+          "target": " accanto al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nella scatola rossa, la fotografia si trova dietro la porta, la candela si trova nello zaino, la scarpa si trova sulla scrivania, la pallina viene spostata dietro la tenda, la fotografia viene spostata vicino al termosifone, la candela viene spostata sotto il letto, la scarpa viene spostata dentro l'armadio. Alla fine, la pallina si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nella scatola rossa, la fotografia si trova dietro la porta, la candela si trova nello zaino, la scarpa si trova sulla scrivania, la pallina viene spostata dietro la tenda, la fotografia viene spostata vicino al termosifone, la candela viene spostata sotto il letto, la scarpa viene spostata dentro l'armadio. Alla fine, la fotografia si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nella scatola rossa, la fotografia si trova dietro la porta, la candela si trova nello zaino, la scarpa si trova sulla scrivania, la pallina viene spostata dietro la tenda, la fotografia viene spostata vicino al termosifone, la candela viene spostata sotto il letto, la scarpa viene spostata dentro l'armadio. Alla fine, la candela si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nella scatola rossa, la fotografia si trova dietro la porta, la candela si trova nello zaino, la scarpa si trova sulla scrivania, la pallina viene spostata dietro la tenda, la fotografia viene spostata vicino al termosifone, la candela viene spostata sotto il letto, la scarpa viene spostata dentro l'armadio. Alla fine, la scarpa si trova",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova sotto la sedia, la bottiglia si trova nel cassetto alto, la scarpa si trova vicino alla lampada, la lettera si trova sul ripiano basso, la moneta viene spostata sopra il mobile, la bottiglia viene spostata sul frigorifero, la scarpa viene spostata accanto al divano, la lettera viene spostata vicino alla libreria. Alla fine, la moneta si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova sotto la sedia, la bottiglia si trova nel cassetto alto, la scarpa si trova vicino alla lampada, la lettera si trova sul ripiano basso, la moneta viene spostata sopra il mobile, la bottiglia viene spostata sul frigorifero, la scarpa viene spostata accanto al divano, la lettera viene spostata vicino alla libreria. Alla fine, la bottiglia si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova sotto la sedia, la bottiglia si trova nel cassetto alto, la scarpa si trova vicino alla lampada, la lettera si trova sul ripiano basso, la moneta viene spostata sopra il mobile, la bottiglia viene spostata sul frigorifero, la scarpa viene spostata accanto al divano, la lettera viene spostata vicino alla libreria. Alla fine, la scarpa si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova sotto la sedia, la bottiglia si trova nel cassetto alto, la scarpa si trova vicino alla lampada, la lettera si trova sul ripiano basso, la moneta viene spostata sopra il mobile, la bottiglia viene spostata sul frigorifero, la scarpa viene spostata accanto al divano, la lettera viene spostata vicino alla libreria. Alla fine, la lettera si trova",
+          "target": " vicino alla libreria."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova sulla scrivania, la candela si trova sotto la sedia, la pallina si trova nella scatola rossa, la fotografia si trova nel cassetto alto, la moneta viene spostata nella borsa gialla, la candela viene spostata accanto al divano, la pallina viene spostata vicino al termosifone, la fotografia viene spostata vicino alla libreria. Alla fine, la moneta si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova sulla scrivania, la candela si trova sotto la sedia, la pallina si trova nella scatola rossa, la fotografia si trova nel cassetto alto, la moneta viene spostata nella borsa gialla, la candela viene spostata accanto al divano, la pallina viene spostata vicino al termosifone, la fotografia viene spostata vicino alla libreria. Alla fine, la candela si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova sulla scrivania, la candela si trova sotto la sedia, la pallina si trova nella scatola rossa, la fotografia si trova nel cassetto alto, la moneta viene spostata nella borsa gialla, la candela viene spostata accanto al divano, la pallina viene spostata vicino al termosifone, la fotografia viene spostata vicino alla libreria. Alla fine, la pallina si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova sulla scrivania, la candela si trova sotto la sedia, la pallina si trova nella scatola rossa, la fotografia si trova nel cassetto alto, la moneta viene spostata nella borsa gialla, la candela viene spostata accanto al divano, la pallina viene spostata vicino al termosifone, la fotografia viene spostata vicino alla libreria. Alla fine, la fotografia si trova",
+          "target": " vicino alla libreria."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova sulla scrivania, la scatola si trova nello zaino, la candela si trova sotto la sedia, la scarpa si trova nella scatola rossa, la sveglia viene spostata vicino alla libreria, la scatola viene spostata accanto al divano, la candela viene spostata nella scatola verde, la scarpa viene spostata sul frigorifero. Alla fine, la sveglia si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova sulla scrivania, la scatola si trova nello zaino, la candela si trova sotto la sedia, la scarpa si trova nella scatola rossa, la sveglia viene spostata vicino alla libreria, la scatola viene spostata accanto al divano, la candela viene spostata nella scatola verde, la scarpa viene spostata sul frigorifero. Alla fine, la scatola si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova sulla scrivania, la scatola si trova nello zaino, la candela si trova sotto la sedia, la scarpa si trova nella scatola rossa, la sveglia viene spostata vicino alla libreria, la scatola viene spostata accanto al divano, la candela viene spostata nella scatola verde, la scarpa viene spostata sul frigorifero. Alla fine, la candela si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova sulla scrivania, la scatola si trova nello zaino, la candela si trova sotto la sedia, la scarpa si trova nella scatola rossa, la sveglia viene spostata vicino alla libreria, la scatola viene spostata accanto al divano, la candela viene spostata nella scatola verde, la scarpa viene spostata sul frigorifero. Alla fine, la scarpa si trova",
+          "target": " sul frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova sulla scrivania, la collana si trova sul ripiano basso, la penna si trova nel cassetto alto, la lettera si trova sotto la sedia, la forchetta viene spostata sul frigorifero, la collana viene spostata sotto il letto, la penna viene spostata accanto al divano, la lettera viene spostata vicino al termosifone. Alla fine, la forchetta si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova sulla scrivania, la collana si trova sul ripiano basso, la penna si trova nel cassetto alto, la lettera si trova sotto la sedia, la forchetta viene spostata sul frigorifero, la collana viene spostata sotto il letto, la penna viene spostata accanto al divano, la lettera viene spostata vicino al termosifone. Alla fine, la collana si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova sulla scrivania, la collana si trova sul ripiano basso, la penna si trova nel cassetto alto, la lettera si trova sotto la sedia, la forchetta viene spostata sul frigorifero, la collana viene spostata sotto il letto, la penna viene spostata accanto al divano, la lettera viene spostata vicino al termosifone. Alla fine, la penna si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova sulla scrivania, la collana si trova sul ripiano basso, la penna si trova nel cassetto alto, la lettera si trova sotto la sedia, la forchetta viene spostata sul frigorifero, la collana viene spostata sotto il letto, la penna viene spostata accanto al divano, la lettera viene spostata vicino al termosifone. Alla fine, la lettera si trova",
+          "target": " vicino al termosifone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova accanto alla finestra, la borsa si trova nella valigia, la tazza si trova vicino alla lampada, la bottiglia si trova sul tavolo, la mappa viene spostata nella borsa gialla, la borsa viene spostata vicino alla libreria, la tazza viene spostata sotto il letto, la bottiglia viene spostata accanto al divano. Alla fine, la mappa si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova accanto alla finestra, la borsa si trova nella valigia, la tazza si trova vicino alla lampada, la bottiglia si trova sul tavolo, la mappa viene spostata nella borsa gialla, la borsa viene spostata vicino alla libreria, la tazza viene spostata sotto il letto, la bottiglia viene spostata accanto al divano. Alla fine, la borsa si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova accanto alla finestra, la borsa si trova nella valigia, la tazza si trova vicino alla lampada, la bottiglia si trova sul tavolo, la mappa viene spostata nella borsa gialla, la borsa viene spostata vicino alla libreria, la tazza viene spostata sotto il letto, la bottiglia viene spostata accanto al divano. Alla fine, la tazza si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova accanto alla finestra, la borsa si trova nella valigia, la tazza si trova vicino alla lampada, la bottiglia si trova sul tavolo, la mappa viene spostata nella borsa gialla, la borsa viene spostata vicino alla libreria, la tazza viene spostata sotto il letto, la bottiglia viene spostata accanto al divano. Alla fine, la bottiglia si trova",
+          "target": " accanto al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova sulla scrivania, la sveglia si trova vicino alla lampada, la bottiglia si trova sul ripiano basso, la collana si trova dietro la porta, la mappa viene spostata dietro la tenda, la sveglia viene spostata vicino alla libreria, la bottiglia viene spostata dentro l'armadio, la collana viene spostata sul frigorifero. Alla fine, la mappa si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova sulla scrivania, la sveglia si trova vicino alla lampada, la bottiglia si trova sul ripiano basso, la collana si trova dietro la porta, la mappa viene spostata dietro la tenda, la sveglia viene spostata vicino alla libreria, la bottiglia viene spostata dentro l'armadio, la collana viene spostata sul frigorifero. Alla fine, la sveglia si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova sulla scrivania, la sveglia si trova vicino alla lampada, la bottiglia si trova sul ripiano basso, la collana si trova dietro la porta, la mappa viene spostata dietro la tenda, la sveglia viene spostata vicino alla libreria, la bottiglia viene spostata dentro l'armadio, la collana viene spostata sul frigorifero. Alla fine, la bottiglia si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova sulla scrivania, la sveglia si trova vicino alla lampada, la bottiglia si trova sul ripiano basso, la collana si trova dietro la porta, la mappa viene spostata dietro la tenda, la sveglia viene spostata vicino alla libreria, la bottiglia viene spostata dentro l'armadio, la collana viene spostata sul frigorifero. Alla fine, la collana si trova",
+          "target": " sul frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova nella valigia, la penna si trova vicino alla lampada, la mappa si trova sulla scrivania, la scatola si trova sul ripiano basso, la fotografia viene spostata nel cassetto basso, la penna viene spostata dentro l'armadio, la mappa viene spostata sotto il letto, la scatola viene spostata sopra il mobile. Alla fine, la fotografia si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova nella valigia, la penna si trova vicino alla lampada, la mappa si trova sulla scrivania, la scatola si trova sul ripiano basso, la fotografia viene spostata nel cassetto basso, la penna viene spostata dentro l'armadio, la mappa viene spostata sotto il letto, la scatola viene spostata sopra il mobile. Alla fine, la penna si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova nella valigia, la penna si trova vicino alla lampada, la mappa si trova sulla scrivania, la scatola si trova sul ripiano basso, la fotografia viene spostata nel cassetto basso, la penna viene spostata dentro l'armadio, la mappa viene spostata sotto il letto, la scatola viene spostata sopra il mobile. Alla fine, la mappa si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova nella valigia, la penna si trova vicino alla lampada, la mappa si trova sulla scrivania, la scatola si trova sul ripiano basso, la fotografia viene spostata nel cassetto basso, la penna viene spostata dentro l'armadio, la mappa viene spostata sotto il letto, la scatola viene spostata sopra il mobile. Alla fine, la scatola si trova",
+          "target": " sopra il mobile."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova dietro la porta, la moneta si trova sulla scrivania, la chiave si trova nel cassetto alto, la conchiglia si trova vicino alla lampada, la tazza viene spostata accanto al divano, la moneta viene spostata sopra il mobile, la chiave viene spostata nella borsa gialla, la conchiglia viene spostata dentro l'armadio. Alla fine, la tazza si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova dietro la porta, la moneta si trova sulla scrivania, la chiave si trova nel cassetto alto, la conchiglia si trova vicino alla lampada, la tazza viene spostata accanto al divano, la moneta viene spostata sopra il mobile, la chiave viene spostata nella borsa gialla, la conchiglia viene spostata dentro l'armadio. Alla fine, la moneta si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova dietro la porta, la moneta si trova sulla scrivania, la chiave si trova nel cassetto alto, la conchiglia si trova vicino alla lampada, la tazza viene spostata accanto al divano, la moneta viene spostata sopra il mobile, la chiave viene spostata nella borsa gialla, la conchiglia viene spostata dentro l'armadio. Alla fine, la chiave si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova dietro la porta, la moneta si trova sulla scrivania, la chiave si trova nel cassetto alto, la conchiglia si trova vicino alla lampada, la tazza viene spostata accanto al divano, la moneta viene spostata sopra il mobile, la chiave viene spostata nella borsa gialla, la conchiglia viene spostata dentro l'armadio. Alla fine, la conchiglia si trova",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova nella valigia, la scarpa si trova nella scatola rossa, la conchiglia si trova nel cassetto alto, la tazza si trova accanto alla finestra, la coperta viene spostata dentro l'armadio, la scarpa viene spostata sulla mensola alta, la conchiglia viene spostata sul frigorifero, la tazza viene spostata dietro la tenda. Alla fine, la coperta si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova nella valigia, la scarpa si trova nella scatola rossa, la conchiglia si trova nel cassetto alto, la tazza si trova accanto alla finestra, la coperta viene spostata dentro l'armadio, la scarpa viene spostata sulla mensola alta, la conchiglia viene spostata sul frigorifero, la tazza viene spostata dietro la tenda. Alla fine, la scarpa si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova nella valigia, la scarpa si trova nella scatola rossa, la conchiglia si trova nel cassetto alto, la tazza si trova accanto alla finestra, la coperta viene spostata dentro l'armadio, la scarpa viene spostata sulla mensola alta, la conchiglia viene spostata sul frigorifero, la tazza viene spostata dietro la tenda. Alla fine, la conchiglia si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova nella valigia, la scarpa si trova nella scatola rossa, la conchiglia si trova nel cassetto alto, la tazza si trova accanto alla finestra, la coperta viene spostata dentro l'armadio, la scarpa viene spostata sulla mensola alta, la conchiglia viene spostata sul frigorifero, la tazza viene spostata dietro la tenda. Alla fine, la tazza si trova",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sul tavolo, la conchiglia si trova dietro la porta, la candela si trova nel cestino, la spugna si trova sulla scrivania, la borsa viene spostata nella borsa gialla, la conchiglia viene spostata vicino al termosifone, la candela viene spostata dietro la tenda, la spugna viene spostata sul frigorifero. Alla fine, la borsa si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sul tavolo, la conchiglia si trova dietro la porta, la candela si trova nel cestino, la spugna si trova sulla scrivania, la borsa viene spostata nella borsa gialla, la conchiglia viene spostata vicino al termosifone, la candela viene spostata dietro la tenda, la spugna viene spostata sul frigorifero. Alla fine, la conchiglia si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sul tavolo, la conchiglia si trova dietro la porta, la candela si trova nel cestino, la spugna si trova sulla scrivania, la borsa viene spostata nella borsa gialla, la conchiglia viene spostata vicino al termosifone, la candela viene spostata dietro la tenda, la spugna viene spostata sul frigorifero. Alla fine, la candela si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sul tavolo, la conchiglia si trova dietro la porta, la candela si trova nel cestino, la spugna si trova sulla scrivania, la borsa viene spostata nella borsa gialla, la conchiglia viene spostata vicino al termosifone, la candela viene spostata dietro la tenda, la spugna viene spostata sul frigorifero. Alla fine, la spugna si trova",
+          "target": " sul frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova dietro la porta, la spugna si trova sotto la sedia, la fotografia si trova nello zaino, la coperta si trova nella valigia, la borsa viene spostata sul frigorifero, la spugna viene spostata dietro la tenda, la fotografia viene spostata dentro l'armadio, la coperta viene spostata sotto il letto. Alla fine, la borsa si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova dietro la porta, la spugna si trova sotto la sedia, la fotografia si trova nello zaino, la coperta si trova nella valigia, la borsa viene spostata sul frigorifero, la spugna viene spostata dietro la tenda, la fotografia viene spostata dentro l'armadio, la coperta viene spostata sotto il letto. Alla fine, la spugna si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova dietro la porta, la spugna si trova sotto la sedia, la fotografia si trova nello zaino, la coperta si trova nella valigia, la borsa viene spostata sul frigorifero, la spugna viene spostata dietro la tenda, la fotografia viene spostata dentro l'armadio, la coperta viene spostata sotto il letto. Alla fine, la fotografia si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova dietro la porta, la spugna si trova sotto la sedia, la fotografia si trova nello zaino, la coperta si trova nella valigia, la borsa viene spostata sul frigorifero, la spugna viene spostata dietro la tenda, la fotografia viene spostata dentro l'armadio, la coperta viene spostata sotto il letto. Alla fine, la coperta si trova",
+          "target": " sotto il letto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova sul ripiano basso, la mappa si trova vicino alla lampada, la conchiglia si trova nel cestino, la pallina si trova nel cassetto alto, la penna viene spostata sulla mensola alta, la mappa viene spostata vicino alla libreria, la conchiglia viene spostata dentro l'armadio, la pallina viene spostata accanto al divano. Alla fine, la penna si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova sul ripiano basso, la mappa si trova vicino alla lampada, la conchiglia si trova nel cestino, la pallina si trova nel cassetto alto, la penna viene spostata sulla mensola alta, la mappa viene spostata vicino alla libreria, la conchiglia viene spostata dentro l'armadio, la pallina viene spostata accanto al divano. Alla fine, la mappa si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova sul ripiano basso, la mappa si trova vicino alla lampada, la conchiglia si trova nel cestino, la pallina si trova nel cassetto alto, la penna viene spostata sulla mensola alta, la mappa viene spostata vicino alla libreria, la conchiglia viene spostata dentro l'armadio, la pallina viene spostata accanto al divano. Alla fine, la conchiglia si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova sul ripiano basso, la mappa si trova vicino alla lampada, la conchiglia si trova nel cestino, la pallina si trova nel cassetto alto, la penna viene spostata sulla mensola alta, la mappa viene spostata vicino alla libreria, la conchiglia viene spostata dentro l'armadio, la pallina viene spostata accanto al divano. Alla fine, la pallina si trova",
+          "target": " accanto al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sul ripiano basso, la penna si trova nel cestino, la collana si trova dietro la porta, la borsa si trova accanto alla finestra, la bottiglia viene spostata nella scatola verde, la penna viene spostata dentro l'armadio, la collana viene spostata accanto al divano, la borsa viene spostata nella borsa gialla. Alla fine, la bottiglia si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sul ripiano basso, la penna si trova nel cestino, la collana si trova dietro la porta, la borsa si trova accanto alla finestra, la bottiglia viene spostata nella scatola verde, la penna viene spostata dentro l'armadio, la collana viene spostata accanto al divano, la borsa viene spostata nella borsa gialla. Alla fine, la penna si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sul ripiano basso, la penna si trova nel cestino, la collana si trova dietro la porta, la borsa si trova accanto alla finestra, la bottiglia viene spostata nella scatola verde, la penna viene spostata dentro l'armadio, la collana viene spostata accanto al divano, la borsa viene spostata nella borsa gialla. Alla fine, la collana si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova sul ripiano basso, la penna si trova nel cestino, la collana si trova dietro la porta, la borsa si trova accanto alla finestra, la bottiglia viene spostata nella scatola verde, la penna viene spostata dentro l'armadio, la collana viene spostata accanto al divano, la borsa viene spostata nella borsa gialla. Alla fine, la borsa si trova",
+          "target": " nella borsa gialla."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova sul ripiano basso, la scarpa si trova sotto la sedia, la coperta si trova accanto alla finestra, la moneta si trova sulla scrivania, la matita viene spostata sul frigorifero, la scarpa viene spostata vicino alla libreria, la coperta viene spostata nella borsa gialla, la moneta viene spostata dentro l'armadio. Alla fine, la matita si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova sul ripiano basso, la scarpa si trova sotto la sedia, la coperta si trova accanto alla finestra, la moneta si trova sulla scrivania, la matita viene spostata sul frigorifero, la scarpa viene spostata vicino alla libreria, la coperta viene spostata nella borsa gialla, la moneta viene spostata dentro l'armadio. Alla fine, la scarpa si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova sul ripiano basso, la scarpa si trova sotto la sedia, la coperta si trova accanto alla finestra, la moneta si trova sulla scrivania, la matita viene spostata sul frigorifero, la scarpa viene spostata vicino alla libreria, la coperta viene spostata nella borsa gialla, la moneta viene spostata dentro l'armadio. Alla fine, la coperta si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova sul ripiano basso, la scarpa si trova sotto la sedia, la coperta si trova accanto alla finestra, la moneta si trova sulla scrivania, la matita viene spostata sul frigorifero, la scarpa viene spostata vicino alla libreria, la coperta viene spostata nella borsa gialla, la moneta viene spostata dentro l'armadio. Alla fine, la moneta si trova",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la conchiglia si trova nella scatola rossa, la pallina si trova accanto alla finestra, la collana si trova sul ripiano basso, la coperta si trova nella valigia, la conchiglia viene spostata vicino alla libreria, la pallina viene spostata sulla mensola alta, la collana viene spostata dietro la tenda, la coperta viene spostata sopra il mobile. Alla fine, la conchiglia si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la conchiglia si trova nella scatola rossa, la pallina si trova accanto alla finestra, la collana si trova sul ripiano basso, la coperta si trova nella valigia, la conchiglia viene spostata vicino alla libreria, la pallina viene spostata sulla mensola alta, la collana viene spostata dietro la tenda, la coperta viene spostata sopra il mobile. Alla fine, la pallina si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la conchiglia si trova nella scatola rossa, la pallina si trova accanto alla finestra, la collana si trova sul ripiano basso, la coperta si trova nella valigia, la conchiglia viene spostata vicino alla libreria, la pallina viene spostata sulla mensola alta, la collana viene spostata dietro la tenda, la coperta viene spostata sopra il mobile. Alla fine, la collana si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la conchiglia si trova nella scatola rossa, la pallina si trova accanto alla finestra, la collana si trova sul ripiano basso, la coperta si trova nella valigia, la conchiglia viene spostata vicino alla libreria, la pallina viene spostata sulla mensola alta, la collana viene spostata dietro la tenda, la coperta viene spostata sopra il mobile. Alla fine, la coperta si trova",
+          "target": " sopra il mobile."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova nella valigia, la matita si trova accanto alla finestra, la moneta si trova sul tavolo, la penna si trova dietro la porta, la scarpa viene spostata sulla mensola alta, la matita viene spostata nella scatola verde, la moneta viene spostata sotto il letto, la penna viene spostata accanto al divano. Alla fine, la scarpa si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova nella valigia, la matita si trova accanto alla finestra, la moneta si trova sul tavolo, la penna si trova dietro la porta, la scarpa viene spostata sulla mensola alta, la matita viene spostata nella scatola verde, la moneta viene spostata sotto il letto, la penna viene spostata accanto al divano. Alla fine, la matita si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova nella valigia, la matita si trova accanto alla finestra, la moneta si trova sul tavolo, la penna si trova dietro la porta, la scarpa viene spostata sulla mensola alta, la matita viene spostata nella scatola verde, la moneta viene spostata sotto il letto, la penna viene spostata accanto al divano. Alla fine, la moneta si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova nella valigia, la matita si trova accanto alla finestra, la moneta si trova sul tavolo, la penna si trova dietro la porta, la scarpa viene spostata sulla mensola alta, la matita viene spostata nella scatola verde, la moneta viene spostata sotto il letto, la penna viene spostata accanto al divano. Alla fine, la penna si trova",
+          "target": " accanto al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova accanto alla finestra, la spugna si trova sotto la sedia, la lettera si trova vicino alla lampada, la borsa si trova nella valigia, la bottiglia viene spostata nel cassetto basso, la spugna viene spostata dietro la tenda, la lettera viene spostata nella scatola verde, la borsa viene spostata sul frigorifero. Alla fine, la bottiglia si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova accanto alla finestra, la spugna si trova sotto la sedia, la lettera si trova vicino alla lampada, la borsa si trova nella valigia, la bottiglia viene spostata nel cassetto basso, la spugna viene spostata dietro la tenda, la lettera viene spostata nella scatola verde, la borsa viene spostata sul frigorifero. Alla fine, la spugna si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova accanto alla finestra, la spugna si trova sotto la sedia, la lettera si trova vicino alla lampada, la borsa si trova nella valigia, la bottiglia viene spostata nel cassetto basso, la spugna viene spostata dietro la tenda, la lettera viene spostata nella scatola verde, la borsa viene spostata sul frigorifero. Alla fine, la lettera si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova accanto alla finestra, la spugna si trova sotto la sedia, la lettera si trova vicino alla lampada, la borsa si trova nella valigia, la bottiglia viene spostata nel cassetto basso, la spugna viene spostata dietro la tenda, la lettera viene spostata nella scatola verde, la borsa viene spostata sul frigorifero. Alla fine, la borsa si trova",
+          "target": " sul frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nella scatola rossa, la conchiglia si trova nello zaino, la penna si trova nella valigia, la chiave si trova vicino alla lampada, la forchetta viene spostata nella borsa gialla, la conchiglia viene spostata sulla mensola alta, la penna viene spostata dentro l'armadio, la chiave viene spostata sopra il mobile. Alla fine, la forchetta si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nella scatola rossa, la conchiglia si trova nello zaino, la penna si trova nella valigia, la chiave si trova vicino alla lampada, la forchetta viene spostata nella borsa gialla, la conchiglia viene spostata sulla mensola alta, la penna viene spostata dentro l'armadio, la chiave viene spostata sopra il mobile. Alla fine, la conchiglia si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nella scatola rossa, la conchiglia si trova nello zaino, la penna si trova nella valigia, la chiave si trova vicino alla lampada, la forchetta viene spostata nella borsa gialla, la conchiglia viene spostata sulla mensola alta, la penna viene spostata dentro l'armadio, la chiave viene spostata sopra il mobile. Alla fine, la penna si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nella scatola rossa, la conchiglia si trova nello zaino, la penna si trova nella valigia, la chiave si trova vicino alla lampada, la forchetta viene spostata nella borsa gialla, la conchiglia viene spostata sulla mensola alta, la penna viene spostata dentro l'armadio, la chiave viene spostata sopra il mobile. Alla fine, la chiave si trova",
+          "target": " sopra il mobile."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova vicino alla lampada, la matita si trova sotto la sedia, la bottiglia si trova sul ripiano basso, la spugna si trova sul tavolo, la candela viene spostata nella borsa gialla, la matita viene spostata vicino alla libreria, la bottiglia viene spostata nel cassetto basso, la spugna viene spostata sulla mensola alta. Alla fine, la candela si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova vicino alla lampada, la matita si trova sotto la sedia, la bottiglia si trova sul ripiano basso, la spugna si trova sul tavolo, la candela viene spostata nella borsa gialla, la matita viene spostata vicino alla libreria, la bottiglia viene spostata nel cassetto basso, la spugna viene spostata sulla mensola alta. Alla fine, la matita si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova vicino alla lampada, la matita si trova sotto la sedia, la bottiglia si trova sul ripiano basso, la spugna si trova sul tavolo, la candela viene spostata nella borsa gialla, la matita viene spostata vicino alla libreria, la bottiglia viene spostata nel cassetto basso, la spugna viene spostata sulla mensola alta. Alla fine, la bottiglia si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova vicino alla lampada, la matita si trova sotto la sedia, la bottiglia si trova sul ripiano basso, la spugna si trova sul tavolo, la candela viene spostata nella borsa gialla, la matita viene spostata vicino alla libreria, la bottiglia viene spostata nel cassetto basso, la spugna viene spostata sulla mensola alta. Alla fine, la spugna si trova",
+          "target": " sulla mensola alta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova sulla scrivania, la matita si trova nella valigia, la moneta si trova accanto alla finestra, la mappa si trova vicino alla lampada, la candela viene spostata vicino alla libreria, la matita viene spostata dentro l'armadio, la moneta viene spostata nel cassetto basso, la mappa viene spostata sopra il mobile. Alla fine, la candela si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova sulla scrivania, la matita si trova nella valigia, la moneta si trova accanto alla finestra, la mappa si trova vicino alla lampada, la candela viene spostata vicino alla libreria, la matita viene spostata dentro l'armadio, la moneta viene spostata nel cassetto basso, la mappa viene spostata sopra il mobile. Alla fine, la matita si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova sulla scrivania, la matita si trova nella valigia, la moneta si trova accanto alla finestra, la mappa si trova vicino alla lampada, la candela viene spostata vicino alla libreria, la matita viene spostata dentro l'armadio, la moneta viene spostata nel cassetto basso, la mappa viene spostata sopra il mobile. Alla fine, la moneta si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova sulla scrivania, la matita si trova nella valigia, la moneta si trova accanto alla finestra, la mappa si trova vicino alla lampada, la candela viene spostata vicino alla libreria, la matita viene spostata dentro l'armadio, la moneta viene spostata nel cassetto basso, la mappa viene spostata sopra il mobile. Alla fine, la mappa si trova",
+          "target": " sopra il mobile."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova nel cestino, la candela si trova accanto alla finestra, la chiave si trova sul ripiano basso, la forchetta si trova nel cassetto alto, la mappa viene spostata sul frigorifero, la candela viene spostata sopra il mobile, la chiave viene spostata vicino al termosifone, la forchetta viene spostata nella scatola verde. Alla fine, la mappa si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova nel cestino, la candela si trova accanto alla finestra, la chiave si trova sul ripiano basso, la forchetta si trova nel cassetto alto, la mappa viene spostata sul frigorifero, la candela viene spostata sopra il mobile, la chiave viene spostata vicino al termosifone, la forchetta viene spostata nella scatola verde. Alla fine, la candela si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova nel cestino, la candela si trova accanto alla finestra, la chiave si trova sul ripiano basso, la forchetta si trova nel cassetto alto, la mappa viene spostata sul frigorifero, la candela viene spostata sopra il mobile, la chiave viene spostata vicino al termosifone, la forchetta viene spostata nella scatola verde. Alla fine, la chiave si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova nel cestino, la candela si trova accanto alla finestra, la chiave si trova sul ripiano basso, la forchetta si trova nel cassetto alto, la mappa viene spostata sul frigorifero, la candela viene spostata sopra il mobile, la chiave viene spostata vicino al termosifone, la forchetta viene spostata nella scatola verde. Alla fine, la forchetta si trova",
+          "target": " nella scatola verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova nella valigia, la candela si trova dietro la porta, la collana si trova sul tavolo, la forchetta si trova accanto alla finestra, la coperta viene spostata sulla mensola alta, la candela viene spostata sul frigorifero, la collana viene spostata sotto il letto, la forchetta viene spostata sopra il mobile. Alla fine, la coperta si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova nella valigia, la candela si trova dietro la porta, la collana si trova sul tavolo, la forchetta si trova accanto alla finestra, la coperta viene spostata sulla mensola alta, la candela viene spostata sul frigorifero, la collana viene spostata sotto il letto, la forchetta viene spostata sopra il mobile. Alla fine, la candela si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova nella valigia, la candela si trova dietro la porta, la collana si trova sul tavolo, la forchetta si trova accanto alla finestra, la coperta viene spostata sulla mensola alta, la candela viene spostata sul frigorifero, la collana viene spostata sotto il letto, la forchetta viene spostata sopra il mobile. Alla fine, la collana si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova nella valigia, la candela si trova dietro la porta, la collana si trova sul tavolo, la forchetta si trova accanto alla finestra, la coperta viene spostata sulla mensola alta, la candela viene spostata sul frigorifero, la collana viene spostata sotto il letto, la forchetta viene spostata sopra il mobile. Alla fine, la forchetta si trova",
+          "target": " sopra il mobile."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova nello zaino, la collana si trova nel cassetto alto, la pallina si trova sotto la sedia, la lettera si trova dietro la porta, la spugna viene spostata dentro l'armadio, la collana viene spostata dietro la tenda, la pallina viene spostata nella borsa gialla, la lettera viene spostata accanto al divano. Alla fine, la spugna si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova nello zaino, la collana si trova nel cassetto alto, la pallina si trova sotto la sedia, la lettera si trova dietro la porta, la spugna viene spostata dentro l'armadio, la collana viene spostata dietro la tenda, la pallina viene spostata nella borsa gialla, la lettera viene spostata accanto al divano. Alla fine, la collana si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova nello zaino, la collana si trova nel cassetto alto, la pallina si trova sotto la sedia, la lettera si trova dietro la porta, la spugna viene spostata dentro l'armadio, la collana viene spostata dietro la tenda, la pallina viene spostata nella borsa gialla, la lettera viene spostata accanto al divano. Alla fine, la pallina si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova nello zaino, la collana si trova nel cassetto alto, la pallina si trova sotto la sedia, la lettera si trova dietro la porta, la spugna viene spostata dentro l'armadio, la collana viene spostata dietro la tenda, la pallina viene spostata nella borsa gialla, la lettera viene spostata accanto al divano. Alla fine, la lettera si trova",
+          "target": " accanto al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova dietro la porta, la coperta si trova nello zaino, la lettera si trova sul ripiano basso, la fotografia si trova sotto la sedia, la moneta viene spostata vicino al termosifone, la coperta viene spostata sotto il letto, la lettera viene spostata nella borsa gialla, la fotografia viene spostata sopra il mobile. Alla fine, la moneta si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova dietro la porta, la coperta si trova nello zaino, la lettera si trova sul ripiano basso, la fotografia si trova sotto la sedia, la moneta viene spostata vicino al termosifone, la coperta viene spostata sotto il letto, la lettera viene spostata nella borsa gialla, la fotografia viene spostata sopra il mobile. Alla fine, la coperta si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova dietro la porta, la coperta si trova nello zaino, la lettera si trova sul ripiano basso, la fotografia si trova sotto la sedia, la moneta viene spostata vicino al termosifone, la coperta viene spostata sotto il letto, la lettera viene spostata nella borsa gialla, la fotografia viene spostata sopra il mobile. Alla fine, la lettera si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la moneta si trova dietro la porta, la coperta si trova nello zaino, la lettera si trova sul ripiano basso, la fotografia si trova sotto la sedia, la moneta viene spostata vicino al termosifone, la coperta viene spostata sotto il letto, la lettera viene spostata nella borsa gialla, la fotografia viene spostata sopra il mobile. Alla fine, la fotografia si trova",
+          "target": " sopra il mobile."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova vicino alla lampada, la bottiglia si trova accanto alla finestra, la penna si trova dietro la porta, la conchiglia si trova nel cestino, la scatola viene spostata dentro l'armadio, la bottiglia viene spostata dietro la tenda, la penna viene spostata sopra il mobile, la conchiglia viene spostata nella borsa gialla. Alla fine, la scatola si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova vicino alla lampada, la bottiglia si trova accanto alla finestra, la penna si trova dietro la porta, la conchiglia si trova nel cestino, la scatola viene spostata dentro l'armadio, la bottiglia viene spostata dietro la tenda, la penna viene spostata sopra il mobile, la conchiglia viene spostata nella borsa gialla. Alla fine, la bottiglia si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova vicino alla lampada, la bottiglia si trova accanto alla finestra, la penna si trova dietro la porta, la conchiglia si trova nel cestino, la scatola viene spostata dentro l'armadio, la bottiglia viene spostata dietro la tenda, la penna viene spostata sopra il mobile, la conchiglia viene spostata nella borsa gialla. Alla fine, la penna si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova vicino alla lampada, la bottiglia si trova accanto alla finestra, la penna si trova dietro la porta, la conchiglia si trova nel cestino, la scatola viene spostata dentro l'armadio, la bottiglia viene spostata dietro la tenda, la penna viene spostata sopra il mobile, la conchiglia viene spostata nella borsa gialla. Alla fine, la conchiglia si trova",
+          "target": " nella borsa gialla."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova vicino alla lampada, la mappa si trova nello zaino, la conchiglia si trova sotto la sedia, la scarpa si trova sul ripiano basso, la penna viene spostata dietro la tenda, la mappa viene spostata sul frigorifero, la conchiglia viene spostata sopra il mobile, la scarpa viene spostata vicino al termosifone. Alla fine, la penna si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova vicino alla lampada, la mappa si trova nello zaino, la conchiglia si trova sotto la sedia, la scarpa si trova sul ripiano basso, la penna viene spostata dietro la tenda, la mappa viene spostata sul frigorifero, la conchiglia viene spostata sopra il mobile, la scarpa viene spostata vicino al termosifone. Alla fine, la mappa si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova vicino alla lampada, la mappa si trova nello zaino, la conchiglia si trova sotto la sedia, la scarpa si trova sul ripiano basso, la penna viene spostata dietro la tenda, la mappa viene spostata sul frigorifero, la conchiglia viene spostata sopra il mobile, la scarpa viene spostata vicino al termosifone. Alla fine, la conchiglia si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova vicino alla lampada, la mappa si trova nello zaino, la conchiglia si trova sotto la sedia, la scarpa si trova sul ripiano basso, la penna viene spostata dietro la tenda, la mappa viene spostata sul frigorifero, la conchiglia viene spostata sopra il mobile, la scarpa viene spostata vicino al termosifone. Alla fine, la scarpa si trova",
+          "target": " vicino al termosifone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sotto la sedia, la lettera si trova vicino alla lampada, la forchetta si trova nella valigia, la spugna si trova nello zaino, la borsa viene spostata nel cassetto basso, la lettera viene spostata dentro l'armadio, la forchetta viene spostata vicino al termosifone, la spugna viene spostata vicino alla libreria. Alla fine, la borsa si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sotto la sedia, la lettera si trova vicino alla lampada, la forchetta si trova nella valigia, la spugna si trova nello zaino, la borsa viene spostata nel cassetto basso, la lettera viene spostata dentro l'armadio, la forchetta viene spostata vicino al termosifone, la spugna viene spostata vicino alla libreria. Alla fine, la lettera si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sotto la sedia, la lettera si trova vicino alla lampada, la forchetta si trova nella valigia, la spugna si trova nello zaino, la borsa viene spostata nel cassetto basso, la lettera viene spostata dentro l'armadio, la forchetta viene spostata vicino al termosifone, la spugna viene spostata vicino alla libreria. Alla fine, la forchetta si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sotto la sedia, la lettera si trova vicino alla lampada, la forchetta si trova nella valigia, la spugna si trova nello zaino, la borsa viene spostata nel cassetto basso, la lettera viene spostata dentro l'armadio, la forchetta viene spostata vicino al termosifone, la spugna viene spostata vicino alla libreria. Alla fine, la spugna si trova",
+          "target": " vicino alla libreria."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova vicino alla lampada, la sveglia si trova sulla scrivania, la coperta si trova nel cestino, la pallina si trova sotto la sedia, la bottiglia viene spostata nel cassetto basso, la sveglia viene spostata dentro l'armadio, la coperta viene spostata sotto il letto, la pallina viene spostata sopra il mobile. Alla fine, la bottiglia si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova vicino alla lampada, la sveglia si trova sulla scrivania, la coperta si trova nel cestino, la pallina si trova sotto la sedia, la bottiglia viene spostata nel cassetto basso, la sveglia viene spostata dentro l'armadio, la coperta viene spostata sotto il letto, la pallina viene spostata sopra il mobile. Alla fine, la sveglia si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova vicino alla lampada, la sveglia si trova sulla scrivania, la coperta si trova nel cestino, la pallina si trova sotto la sedia, la bottiglia viene spostata nel cassetto basso, la sveglia viene spostata dentro l'armadio, la coperta viene spostata sotto il letto, la pallina viene spostata sopra il mobile. Alla fine, la coperta si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova vicino alla lampada, la sveglia si trova sulla scrivania, la coperta si trova nel cestino, la pallina si trova sotto la sedia, la bottiglia viene spostata nel cassetto basso, la sveglia viene spostata dentro l'armadio, la coperta viene spostata sotto il letto, la pallina viene spostata sopra il mobile. Alla fine, la pallina si trova",
+          "target": " sopra il mobile."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova sotto la sedia, la mappa si trova nella scatola rossa, la moneta si trova nella valigia, la tazza si trova nel cestino, la fotografia viene spostata sotto il letto, la mappa viene spostata sulla mensola alta, la moneta viene spostata dietro la tenda, la tazza viene spostata nel cassetto basso. Alla fine, la fotografia si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova sotto la sedia, la mappa si trova nella scatola rossa, la moneta si trova nella valigia, la tazza si trova nel cestino, la fotografia viene spostata sotto il letto, la mappa viene spostata sulla mensola alta, la moneta viene spostata dietro la tenda, la tazza viene spostata nel cassetto basso. Alla fine, la mappa si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova sotto la sedia, la mappa si trova nella scatola rossa, la moneta si trova nella valigia, la tazza si trova nel cestino, la fotografia viene spostata sotto il letto, la mappa viene spostata sulla mensola alta, la moneta viene spostata dietro la tenda, la tazza viene spostata nel cassetto basso. Alla fine, la moneta si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova sotto la sedia, la mappa si trova nella scatola rossa, la moneta si trova nella valigia, la tazza si trova nel cestino, la fotografia viene spostata sotto il letto, la mappa viene spostata sulla mensola alta, la moneta viene spostata dietro la tenda, la tazza viene spostata nel cassetto basso. Alla fine, la tazza si trova",
+          "target": " nel cassetto basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova dietro la porta, la mappa si trova sul ripiano basso, la coperta si trova sul tavolo, la borsa si trova nella scatola rossa, la matita viene spostata sotto il letto, la mappa viene spostata dietro la tenda, la coperta viene spostata nel cassetto basso, la borsa viene spostata nella borsa gialla. Alla fine, la matita si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova dietro la porta, la mappa si trova sul ripiano basso, la coperta si trova sul tavolo, la borsa si trova nella scatola rossa, la matita viene spostata sotto il letto, la mappa viene spostata dietro la tenda, la coperta viene spostata nel cassetto basso, la borsa viene spostata nella borsa gialla. Alla fine, la mappa si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova dietro la porta, la mappa si trova sul ripiano basso, la coperta si trova sul tavolo, la borsa si trova nella scatola rossa, la matita viene spostata sotto il letto, la mappa viene spostata dietro la tenda, la coperta viene spostata nel cassetto basso, la borsa viene spostata nella borsa gialla. Alla fine, la coperta si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova dietro la porta, la mappa si trova sul ripiano basso, la coperta si trova sul tavolo, la borsa si trova nella scatola rossa, la matita viene spostata sotto il letto, la mappa viene spostata dietro la tenda, la coperta viene spostata nel cassetto basso, la borsa viene spostata nella borsa gialla. Alla fine, la borsa si trova",
+          "target": " nella borsa gialla."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova sul tavolo, la penna si trova sulla scrivania, la chiave si trova sotto la sedia, la tazza si trova nel cassetto alto, la coperta viene spostata dentro l'armadio, la penna viene spostata nel cassetto basso, la chiave viene spostata sul frigorifero, la tazza viene spostata accanto al divano. Alla fine, la coperta si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova sul tavolo, la penna si trova sulla scrivania, la chiave si trova sotto la sedia, la tazza si trova nel cassetto alto, la coperta viene spostata dentro l'armadio, la penna viene spostata nel cassetto basso, la chiave viene spostata sul frigorifero, la tazza viene spostata accanto al divano. Alla fine, la penna si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova sul tavolo, la penna si trova sulla scrivania, la chiave si trova sotto la sedia, la tazza si trova nel cassetto alto, la coperta viene spostata dentro l'armadio, la penna viene spostata nel cassetto basso, la chiave viene spostata sul frigorifero, la tazza viene spostata accanto al divano. Alla fine, la chiave si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova sul tavolo, la penna si trova sulla scrivania, la chiave si trova sotto la sedia, la tazza si trova nel cassetto alto, la coperta viene spostata dentro l'armadio, la penna viene spostata nel cassetto basso, la chiave viene spostata sul frigorifero, la tazza viene spostata accanto al divano. Alla fine, la tazza si trova",
+          "target": " accanto al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova sotto la sedia, la scarpa si trova sulla scrivania, la spugna si trova accanto alla finestra, la borsa si trova vicino alla lampada, la scatola viene spostata nella borsa gialla, la scarpa viene spostata vicino alla libreria, la spugna viene spostata nella scatola verde, la borsa viene spostata nel cassetto basso. Alla fine, la scatola si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova sotto la sedia, la scarpa si trova sulla scrivania, la spugna si trova accanto alla finestra, la borsa si trova vicino alla lampada, la scatola viene spostata nella borsa gialla, la scarpa viene spostata vicino alla libreria, la spugna viene spostata nella scatola verde, la borsa viene spostata nel cassetto basso. Alla fine, la scarpa si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova sotto la sedia, la scarpa si trova sulla scrivania, la spugna si trova accanto alla finestra, la borsa si trova vicino alla lampada, la scatola viene spostata nella borsa gialla, la scarpa viene spostata vicino alla libreria, la spugna viene spostata nella scatola verde, la borsa viene spostata nel cassetto basso. Alla fine, la spugna si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova sotto la sedia, la scarpa si trova sulla scrivania, la spugna si trova accanto alla finestra, la borsa si trova vicino alla lampada, la scatola viene spostata nella borsa gialla, la scarpa viene spostata vicino alla libreria, la spugna viene spostata nella scatola verde, la borsa viene spostata nel cassetto basso. Alla fine, la borsa si trova",
+          "target": " nel cassetto basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova nello zaino, la pallina si trova sul tavolo, la penna si trova nel cestino, la fotografia si trova nel cassetto alto, la bottiglia viene spostata sulla mensola alta, la pallina viene spostata nella scatola verde, la penna viene spostata accanto al divano, la fotografia viene spostata dietro la tenda. Alla fine, la bottiglia si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova nello zaino, la pallina si trova sul tavolo, la penna si trova nel cestino, la fotografia si trova nel cassetto alto, la bottiglia viene spostata sulla mensola alta, la pallina viene spostata nella scatola verde, la penna viene spostata accanto al divano, la fotografia viene spostata dietro la tenda. Alla fine, la pallina si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova nello zaino, la pallina si trova sul tavolo, la penna si trova nel cestino, la fotografia si trova nel cassetto alto, la bottiglia viene spostata sulla mensola alta, la pallina viene spostata nella scatola verde, la penna viene spostata accanto al divano, la fotografia viene spostata dietro la tenda. Alla fine, la penna si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la bottiglia si trova nello zaino, la pallina si trova sul tavolo, la penna si trova nel cestino, la fotografia si trova nel cassetto alto, la bottiglia viene spostata sulla mensola alta, la pallina viene spostata nella scatola verde, la penna viene spostata accanto al divano, la fotografia viene spostata dietro la tenda. Alla fine, la fotografia si trova",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova vicino alla lampada, la chiave si trova sotto la sedia, la conchiglia si trova dietro la porta, la sveglia si trova nel cassetto alto, la mappa viene spostata sopra il mobile, la chiave viene spostata dentro l'armadio, la conchiglia viene spostata sotto il letto, la sveglia viene spostata vicino alla libreria. Alla fine, la mappa si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova vicino alla lampada, la chiave si trova sotto la sedia, la conchiglia si trova dietro la porta, la sveglia si trova nel cassetto alto, la mappa viene spostata sopra il mobile, la chiave viene spostata dentro l'armadio, la conchiglia viene spostata sotto il letto, la sveglia viene spostata vicino alla libreria. Alla fine, la chiave si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova vicino alla lampada, la chiave si trova sotto la sedia, la conchiglia si trova dietro la porta, la sveglia si trova nel cassetto alto, la mappa viene spostata sopra il mobile, la chiave viene spostata dentro l'armadio, la conchiglia viene spostata sotto il letto, la sveglia viene spostata vicino alla libreria. Alla fine, la conchiglia si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova vicino alla lampada, la chiave si trova sotto la sedia, la conchiglia si trova dietro la porta, la sveglia si trova nel cassetto alto, la mappa viene spostata sopra il mobile, la chiave viene spostata dentro l'armadio, la conchiglia viene spostata sotto il letto, la sveglia viene spostata vicino alla libreria. Alla fine, la sveglia si trova",
+          "target": " vicino alla libreria."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova sotto la sedia, la borsa si trova sul tavolo, la conchiglia si trova nel cassetto alto, la tazza si trova nella scatola rossa, la candela viene spostata sulla mensola alta, la borsa viene spostata sotto il letto, la conchiglia viene spostata nella borsa gialla, la tazza viene spostata sopra il mobile. Alla fine, la candela si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova sotto la sedia, la borsa si trova sul tavolo, la conchiglia si trova nel cassetto alto, la tazza si trova nella scatola rossa, la candela viene spostata sulla mensola alta, la borsa viene spostata sotto il letto, la conchiglia viene spostata nella borsa gialla, la tazza viene spostata sopra il mobile. Alla fine, la borsa si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova sotto la sedia, la borsa si trova sul tavolo, la conchiglia si trova nel cassetto alto, la tazza si trova nella scatola rossa, la candela viene spostata sulla mensola alta, la borsa viene spostata sotto il letto, la conchiglia viene spostata nella borsa gialla, la tazza viene spostata sopra il mobile. Alla fine, la conchiglia si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova sotto la sedia, la borsa si trova sul tavolo, la conchiglia si trova nel cassetto alto, la tazza si trova nella scatola rossa, la candela viene spostata sulla mensola alta, la borsa viene spostata sotto il letto, la conchiglia viene spostata nella borsa gialla, la tazza viene spostata sopra il mobile. Alla fine, la tazza si trova",
+          "target": " sopra il mobile."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova sotto la sedia, la spugna si trova nel cestino, la mappa si trova nella valigia, la scarpa si trova dietro la porta, la candela viene spostata dietro la tenda, la spugna viene spostata nel cassetto basso, la mappa viene spostata nella borsa gialla, la scarpa viene spostata nella scatola verde. Alla fine, la candela si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova sotto la sedia, la spugna si trova nel cestino, la mappa si trova nella valigia, la scarpa si trova dietro la porta, la candela viene spostata dietro la tenda, la spugna viene spostata nel cassetto basso, la mappa viene spostata nella borsa gialla, la scarpa viene spostata nella scatola verde. Alla fine, la spugna si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova sotto la sedia, la spugna si trova nel cestino, la mappa si trova nella valigia, la scarpa si trova dietro la porta, la candela viene spostata dietro la tenda, la spugna viene spostata nel cassetto basso, la mappa viene spostata nella borsa gialla, la scarpa viene spostata nella scatola verde. Alla fine, la mappa si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la candela si trova sotto la sedia, la spugna si trova nel cestino, la mappa si trova nella valigia, la scarpa si trova dietro la porta, la candela viene spostata dietro la tenda, la spugna viene spostata nel cassetto basso, la mappa viene spostata nella borsa gialla, la scarpa viene spostata nella scatola verde. Alla fine, la scarpa si trova",
+          "target": " nella scatola verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova nello zaino, la pallina si trova nella valigia, la moneta si trova sulla scrivania, la penna si trova nella scatola rossa, la lettera viene spostata sopra il mobile, la pallina viene spostata sotto il letto, la moneta viene spostata nella borsa gialla, la penna viene spostata nella scatola verde. Alla fine, la lettera si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova nello zaino, la pallina si trova nella valigia, la moneta si trova sulla scrivania, la penna si trova nella scatola rossa, la lettera viene spostata sopra il mobile, la pallina viene spostata sotto il letto, la moneta viene spostata nella borsa gialla, la penna viene spostata nella scatola verde. Alla fine, la pallina si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova nello zaino, la pallina si trova nella valigia, la moneta si trova sulla scrivania, la penna si trova nella scatola rossa, la lettera viene spostata sopra il mobile, la pallina viene spostata sotto il letto, la moneta viene spostata nella borsa gialla, la penna viene spostata nella scatola verde. Alla fine, la moneta si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova nello zaino, la pallina si trova nella valigia, la moneta si trova sulla scrivania, la penna si trova nella scatola rossa, la lettera viene spostata sopra il mobile, la pallina viene spostata sotto il letto, la moneta viene spostata nella borsa gialla, la penna viene spostata nella scatola verde. Alla fine, la penna si trova",
+          "target": " nella scatola verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova sul tavolo, la scatola si trova sulla scrivania, la spugna si trova accanto alla finestra, la pallina si trova dietro la porta, la coperta viene spostata nel cassetto basso, la scatola viene spostata dietro la tenda, la spugna viene spostata vicino al termosifone, la pallina viene spostata accanto al divano. Alla fine, la coperta si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova sul tavolo, la scatola si trova sulla scrivania, la spugna si trova accanto alla finestra, la pallina si trova dietro la porta, la coperta viene spostata nel cassetto basso, la scatola viene spostata dietro la tenda, la spugna viene spostata vicino al termosifone, la pallina viene spostata accanto al divano. Alla fine, la scatola si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova sul tavolo, la scatola si trova sulla scrivania, la spugna si trova accanto alla finestra, la pallina si trova dietro la porta, la coperta viene spostata nel cassetto basso, la scatola viene spostata dietro la tenda, la spugna viene spostata vicino al termosifone, la pallina viene spostata accanto al divano. Alla fine, la spugna si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova sul tavolo, la scatola si trova sulla scrivania, la spugna si trova accanto alla finestra, la pallina si trova dietro la porta, la coperta viene spostata nel cassetto basso, la scatola viene spostata dietro la tenda, la spugna viene spostata vicino al termosifone, la pallina viene spostata accanto al divano. Alla fine, la pallina si trova",
+          "target": " accanto al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova accanto alla finestra, la candela si trova dietro la porta, la fotografia si trova sotto la sedia, la sveglia si trova vicino alla lampada, la lettera viene spostata sul frigorifero, la candela viene spostata nella scatola verde, la fotografia viene spostata dietro la tenda, la sveglia viene spostata nel cassetto basso. Alla fine, la lettera si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova accanto alla finestra, la candela si trova dietro la porta, la fotografia si trova sotto la sedia, la sveglia si trova vicino alla lampada, la lettera viene spostata sul frigorifero, la candela viene spostata nella scatola verde, la fotografia viene spostata dietro la tenda, la sveglia viene spostata nel cassetto basso. Alla fine, la candela si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova accanto alla finestra, la candela si trova dietro la porta, la fotografia si trova sotto la sedia, la sveglia si trova vicino alla lampada, la lettera viene spostata sul frigorifero, la candela viene spostata nella scatola verde, la fotografia viene spostata dietro la tenda, la sveglia viene spostata nel cassetto basso. Alla fine, la fotografia si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova accanto alla finestra, la candela si trova dietro la porta, la fotografia si trova sotto la sedia, la sveglia si trova vicino alla lampada, la lettera viene spostata sul frigorifero, la candela viene spostata nella scatola verde, la fotografia viene spostata dietro la tenda, la sveglia viene spostata nel cassetto basso. Alla fine, la sveglia si trova",
+          "target": " nel cassetto basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nel cestino, la lettera si trova nella scatola rossa, la candela si trova vicino alla lampada, la scarpa si trova dietro la porta, la pallina viene spostata accanto al divano, la lettera viene spostata nella scatola verde, la candela viene spostata dentro l'armadio, la scarpa viene spostata sul frigorifero. Alla fine, la pallina si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nel cestino, la lettera si trova nella scatola rossa, la candela si trova vicino alla lampada, la scarpa si trova dietro la porta, la pallina viene spostata accanto al divano, la lettera viene spostata nella scatola verde, la candela viene spostata dentro l'armadio, la scarpa viene spostata sul frigorifero. Alla fine, la lettera si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nel cestino, la lettera si trova nella scatola rossa, la candela si trova vicino alla lampada, la scarpa si trova dietro la porta, la pallina viene spostata accanto al divano, la lettera viene spostata nella scatola verde, la candela viene spostata dentro l'armadio, la scarpa viene spostata sul frigorifero. Alla fine, la candela si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nel cestino, la lettera si trova nella scatola rossa, la candela si trova vicino alla lampada, la scarpa si trova dietro la porta, la pallina viene spostata accanto al divano, la lettera viene spostata nella scatola verde, la candela viene spostata dentro l'armadio, la scarpa viene spostata sul frigorifero. Alla fine, la scarpa si trova",
+          "target": " sul frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova nello zaino, la coperta si trova sotto la sedia, la spugna si trova nel cestino, la chiave si trova sul tavolo, la sveglia viene spostata sotto il letto, la coperta viene spostata dietro la tenda, la spugna viene spostata sopra il mobile, la chiave viene spostata nel cassetto basso. Alla fine, la sveglia si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova nello zaino, la coperta si trova sotto la sedia, la spugna si trova nel cestino, la chiave si trova sul tavolo, la sveglia viene spostata sotto il letto, la coperta viene spostata dietro la tenda, la spugna viene spostata sopra il mobile, la chiave viene spostata nel cassetto basso. Alla fine, la coperta si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova nello zaino, la coperta si trova sotto la sedia, la spugna si trova nel cestino, la chiave si trova sul tavolo, la sveglia viene spostata sotto il letto, la coperta viene spostata dietro la tenda, la spugna viene spostata sopra il mobile, la chiave viene spostata nel cassetto basso. Alla fine, la spugna si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova nello zaino, la coperta si trova sotto la sedia, la spugna si trova nel cestino, la chiave si trova sul tavolo, la sveglia viene spostata sotto il letto, la coperta viene spostata dietro la tenda, la spugna viene spostata sopra il mobile, la chiave viene spostata nel cassetto basso. Alla fine, la chiave si trova",
+          "target": " nel cassetto basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova nel cestino, la conchiglia si trova nella scatola rossa, la fotografia si trova vicino alla lampada, la mappa si trova accanto alla finestra, la sveglia viene spostata nel cassetto basso, la conchiglia viene spostata dentro l'armadio, la fotografia viene spostata vicino alla libreria, la mappa viene spostata dietro la tenda. Alla fine, la sveglia si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova nel cestino, la conchiglia si trova nella scatola rossa, la fotografia si trova vicino alla lampada, la mappa si trova accanto alla finestra, la sveglia viene spostata nel cassetto basso, la conchiglia viene spostata dentro l'armadio, la fotografia viene spostata vicino alla libreria, la mappa viene spostata dietro la tenda. Alla fine, la conchiglia si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova nel cestino, la conchiglia si trova nella scatola rossa, la fotografia si trova vicino alla lampada, la mappa si trova accanto alla finestra, la sveglia viene spostata nel cassetto basso, la conchiglia viene spostata dentro l'armadio, la fotografia viene spostata vicino alla libreria, la mappa viene spostata dietro la tenda. Alla fine, la fotografia si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova nel cestino, la conchiglia si trova nella scatola rossa, la fotografia si trova vicino alla lampada, la mappa si trova accanto alla finestra, la sveglia viene spostata nel cassetto basso, la conchiglia viene spostata dentro l'armadio, la fotografia viene spostata vicino alla libreria, la mappa viene spostata dietro la tenda. Alla fine, la mappa si trova",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova vicino alla lampada, la coperta si trova sotto la sedia, la mappa si trova accanto alla finestra, la scatola si trova dietro la porta, la tazza viene spostata dietro la tenda, la coperta viene spostata dentro l'armadio, la mappa viene spostata vicino alla libreria, la scatola viene spostata sul frigorifero. Alla fine, la tazza si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova vicino alla lampada, la coperta si trova sotto la sedia, la mappa si trova accanto alla finestra, la scatola si trova dietro la porta, la tazza viene spostata dietro la tenda, la coperta viene spostata dentro l'armadio, la mappa viene spostata vicino alla libreria, la scatola viene spostata sul frigorifero. Alla fine, la coperta si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova vicino alla lampada, la coperta si trova sotto la sedia, la mappa si trova accanto alla finestra, la scatola si trova dietro la porta, la tazza viene spostata dietro la tenda, la coperta viene spostata dentro l'armadio, la mappa viene spostata vicino alla libreria, la scatola viene spostata sul frigorifero. Alla fine, la mappa si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova vicino alla lampada, la coperta si trova sotto la sedia, la mappa si trova accanto alla finestra, la scatola si trova dietro la porta, la tazza viene spostata dietro la tenda, la coperta viene spostata dentro l'armadio, la mappa viene spostata vicino alla libreria, la scatola viene spostata sul frigorifero. Alla fine, la scatola si trova",
+          "target": " sul frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova nel cassetto alto, la bottiglia si trova sotto la sedia, la scatola si trova accanto alla finestra, la tazza si trova sul ripiano basso, la scarpa viene spostata sul frigorifero, la bottiglia viene spostata sotto il letto, la scatola viene spostata nella scatola verde, la tazza viene spostata sopra il mobile. Alla fine, la scarpa si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova nel cassetto alto, la bottiglia si trova sotto la sedia, la scatola si trova accanto alla finestra, la tazza si trova sul ripiano basso, la scarpa viene spostata sul frigorifero, la bottiglia viene spostata sotto il letto, la scatola viene spostata nella scatola verde, la tazza viene spostata sopra il mobile. Alla fine, la bottiglia si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova nel cassetto alto, la bottiglia si trova sotto la sedia, la scatola si trova accanto alla finestra, la tazza si trova sul ripiano basso, la scarpa viene spostata sul frigorifero, la bottiglia viene spostata sotto il letto, la scatola viene spostata nella scatola verde, la tazza viene spostata sopra il mobile. Alla fine, la scatola si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova nel cassetto alto, la bottiglia si trova sotto la sedia, la scatola si trova accanto alla finestra, la tazza si trova sul ripiano basso, la scarpa viene spostata sul frigorifero, la bottiglia viene spostata sotto il letto, la scatola viene spostata nella scatola verde, la tazza viene spostata sopra il mobile. Alla fine, la tazza si trova",
+          "target": " sopra il mobile."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova dietro la porta, la sveglia si trova nel cestino, la coperta si trova vicino alla lampada, la tazza si trova sul ripiano basso, la matita viene spostata vicino al termosifone, la sveglia viene spostata sul frigorifero, la coperta viene spostata sopra il mobile, la tazza viene spostata accanto al divano. Alla fine, la matita si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova dietro la porta, la sveglia si trova nel cestino, la coperta si trova vicino alla lampada, la tazza si trova sul ripiano basso, la matita viene spostata vicino al termosifone, la sveglia viene spostata sul frigorifero, la coperta viene spostata sopra il mobile, la tazza viene spostata accanto al divano. Alla fine, la sveglia si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova dietro la porta, la sveglia si trova nel cestino, la coperta si trova vicino alla lampada, la tazza si trova sul ripiano basso, la matita viene spostata vicino al termosifone, la sveglia viene spostata sul frigorifero, la coperta viene spostata sopra il mobile, la tazza viene spostata accanto al divano. Alla fine, la coperta si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova dietro la porta, la sveglia si trova nel cestino, la coperta si trova vicino alla lampada, la tazza si trova sul ripiano basso, la matita viene spostata vicino al termosifone, la sveglia viene spostata sul frigorifero, la coperta viene spostata sopra il mobile, la tazza viene spostata accanto al divano. Alla fine, la tazza si trova",
+          "target": " accanto al divano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova nello zaino, la bottiglia si trova accanto alla finestra, la conchiglia si trova nella scatola rossa, la scarpa si trova sul ripiano basso, la lettera viene spostata vicino alla libreria, la bottiglia viene spostata dietro la tenda, la conchiglia viene spostata accanto al divano, la scarpa viene spostata nella borsa gialla. Alla fine, la lettera si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova nello zaino, la bottiglia si trova accanto alla finestra, la conchiglia si trova nella scatola rossa, la scarpa si trova sul ripiano basso, la lettera viene spostata vicino alla libreria, la bottiglia viene spostata dietro la tenda, la conchiglia viene spostata accanto al divano, la scarpa viene spostata nella borsa gialla. Alla fine, la bottiglia si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova nello zaino, la bottiglia si trova accanto alla finestra, la conchiglia si trova nella scatola rossa, la scarpa si trova sul ripiano basso, la lettera viene spostata vicino alla libreria, la bottiglia viene spostata dietro la tenda, la conchiglia viene spostata accanto al divano, la scarpa viene spostata nella borsa gialla. Alla fine, la conchiglia si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova nello zaino, la bottiglia si trova accanto alla finestra, la conchiglia si trova nella scatola rossa, la scarpa si trova sul ripiano basso, la lettera viene spostata vicino alla libreria, la bottiglia viene spostata dietro la tenda, la conchiglia viene spostata accanto al divano, la scarpa viene spostata nella borsa gialla. Alla fine, la scarpa si trova",
+          "target": " nella borsa gialla."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova sulla scrivania, la chiave si trova sul ripiano basso, la tazza si trova nel cassetto alto, la scatola si trova dietro la porta, la coperta viene spostata nel cassetto basso, la chiave viene spostata sul frigorifero, la tazza viene spostata dietro la tenda, la scatola viene spostata nella scatola verde. Alla fine, la coperta si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova sulla scrivania, la chiave si trova sul ripiano basso, la tazza si trova nel cassetto alto, la scatola si trova dietro la porta, la coperta viene spostata nel cassetto basso, la chiave viene spostata sul frigorifero, la tazza viene spostata dietro la tenda, la scatola viene spostata nella scatola verde. Alla fine, la chiave si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova sulla scrivania, la chiave si trova sul ripiano basso, la tazza si trova nel cassetto alto, la scatola si trova dietro la porta, la coperta viene spostata nel cassetto basso, la chiave viene spostata sul frigorifero, la tazza viene spostata dietro la tenda, la scatola viene spostata nella scatola verde. Alla fine, la tazza si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la coperta si trova sulla scrivania, la chiave si trova sul ripiano basso, la tazza si trova nel cassetto alto, la scatola si trova dietro la porta, la coperta viene spostata nel cassetto basso, la chiave viene spostata sul frigorifero, la tazza viene spostata dietro la tenda, la scatola viene spostata nella scatola verde. Alla fine, la scatola si trova",
+          "target": " nella scatola verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la collana si trova sotto la sedia, la tazza si trova sul ripiano basso, la penna si trova sulla scrivania, la coperta si trova accanto alla finestra, la collana viene spostata sopra il mobile, la tazza viene spostata nel cassetto basso, la penna viene spostata vicino al termosifone, la coperta viene spostata sul frigorifero. Alla fine, la collana si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la collana si trova sotto la sedia, la tazza si trova sul ripiano basso, la penna si trova sulla scrivania, la coperta si trova accanto alla finestra, la collana viene spostata sopra il mobile, la tazza viene spostata nel cassetto basso, la penna viene spostata vicino al termosifone, la coperta viene spostata sul frigorifero. Alla fine, la tazza si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la collana si trova sotto la sedia, la tazza si trova sul ripiano basso, la penna si trova sulla scrivania, la coperta si trova accanto alla finestra, la collana viene spostata sopra il mobile, la tazza viene spostata nel cassetto basso, la penna viene spostata vicino al termosifone, la coperta viene spostata sul frigorifero. Alla fine, la penna si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la collana si trova sotto la sedia, la tazza si trova sul ripiano basso, la penna si trova sulla scrivania, la coperta si trova accanto alla finestra, la collana viene spostata sopra il mobile, la tazza viene spostata nel cassetto basso, la penna viene spostata vicino al termosifone, la coperta viene spostata sul frigorifero. Alla fine, la coperta si trova",
+          "target": " sul frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova sulla scrivania, la coperta si trova nel cassetto alto, la borsa si trova nello zaino, la chiave si trova sotto la sedia, la lettera viene spostata dentro l'armadio, la coperta viene spostata nel cassetto basso, la borsa viene spostata accanto al divano, la chiave viene spostata sopra il mobile. Alla fine, la lettera si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova sulla scrivania, la coperta si trova nel cassetto alto, la borsa si trova nello zaino, la chiave si trova sotto la sedia, la lettera viene spostata dentro l'armadio, la coperta viene spostata nel cassetto basso, la borsa viene spostata accanto al divano, la chiave viene spostata sopra il mobile. Alla fine, la coperta si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova sulla scrivania, la coperta si trova nel cassetto alto, la borsa si trova nello zaino, la chiave si trova sotto la sedia, la lettera viene spostata dentro l'armadio, la coperta viene spostata nel cassetto basso, la borsa viene spostata accanto al divano, la chiave viene spostata sopra il mobile. Alla fine, la borsa si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la lettera si trova sulla scrivania, la coperta si trova nel cassetto alto, la borsa si trova nello zaino, la chiave si trova sotto la sedia, la lettera viene spostata dentro l'armadio, la coperta viene spostata nel cassetto basso, la borsa viene spostata accanto al divano, la chiave viene spostata sopra il mobile. Alla fine, la chiave si trova",
+          "target": " sopra il mobile."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova nella scatola rossa, la fotografia si trova sul ripiano basso, la mappa si trova vicino alla lampada, la moneta si trova sotto la sedia, la spugna viene spostata vicino al termosifone, la fotografia viene spostata vicino alla libreria, la mappa viene spostata accanto al divano, la moneta viene spostata sulla mensola alta. Alla fine, la spugna si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova nella scatola rossa, la fotografia si trova sul ripiano basso, la mappa si trova vicino alla lampada, la moneta si trova sotto la sedia, la spugna viene spostata vicino al termosifone, la fotografia viene spostata vicino alla libreria, la mappa viene spostata accanto al divano, la moneta viene spostata sulla mensola alta. Alla fine, la fotografia si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova nella scatola rossa, la fotografia si trova sul ripiano basso, la mappa si trova vicino alla lampada, la moneta si trova sotto la sedia, la spugna viene spostata vicino al termosifone, la fotografia viene spostata vicino alla libreria, la mappa viene spostata accanto al divano, la moneta viene spostata sulla mensola alta. Alla fine, la mappa si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova nella scatola rossa, la fotografia si trova sul ripiano basso, la mappa si trova vicino alla lampada, la moneta si trova sotto la sedia, la spugna viene spostata vicino al termosifone, la fotografia viene spostata vicino alla libreria, la mappa viene spostata accanto al divano, la moneta viene spostata sulla mensola alta. Alla fine, la moneta si trova",
+          "target": " sulla mensola alta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova sul tavolo, la collana si trova nel cassetto alto, la fotografia si trova sulla scrivania, la borsa si trova accanto alla finestra, la scatola viene spostata nella borsa gialla, la collana viene spostata sopra il mobile, la fotografia viene spostata dentro l'armadio, la borsa viene spostata dietro la tenda. Alla fine, la scatola si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova sul tavolo, la collana si trova nel cassetto alto, la fotografia si trova sulla scrivania, la borsa si trova accanto alla finestra, la scatola viene spostata nella borsa gialla, la collana viene spostata sopra il mobile, la fotografia viene spostata dentro l'armadio, la borsa viene spostata dietro la tenda. Alla fine, la collana si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova sul tavolo, la collana si trova nel cassetto alto, la fotografia si trova sulla scrivania, la borsa si trova accanto alla finestra, la scatola viene spostata nella borsa gialla, la collana viene spostata sopra il mobile, la fotografia viene spostata dentro l'armadio, la borsa viene spostata dietro la tenda. Alla fine, la fotografia si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scatola si trova sul tavolo, la collana si trova nel cassetto alto, la fotografia si trova sulla scrivania, la borsa si trova accanto alla finestra, la scatola viene spostata nella borsa gialla, la collana viene spostata sopra il mobile, la fotografia viene spostata dentro l'armadio, la borsa viene spostata dietro la tenda. Alla fine, la borsa si trova",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la conchiglia si trova sotto la sedia, la spugna si trova nella valigia, la pallina si trova nella scatola rossa, la matita si trova dietro la porta, la conchiglia viene spostata sotto il letto, la spugna viene spostata sopra il mobile, la pallina viene spostata sul frigorifero, la matita viene spostata sulla mensola alta. Alla fine, la conchiglia si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la conchiglia si trova sotto la sedia, la spugna si trova nella valigia, la pallina si trova nella scatola rossa, la matita si trova dietro la porta, la conchiglia viene spostata sotto il letto, la spugna viene spostata sopra il mobile, la pallina viene spostata sul frigorifero, la matita viene spostata sulla mensola alta. Alla fine, la spugna si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la conchiglia si trova sotto la sedia, la spugna si trova nella valigia, la pallina si trova nella scatola rossa, la matita si trova dietro la porta, la conchiglia viene spostata sotto il letto, la spugna viene spostata sopra il mobile, la pallina viene spostata sul frigorifero, la matita viene spostata sulla mensola alta. Alla fine, la pallina si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la conchiglia si trova sotto la sedia, la spugna si trova nella valigia, la pallina si trova nella scatola rossa, la matita si trova dietro la porta, la conchiglia viene spostata sotto il letto, la spugna viene spostata sopra il mobile, la pallina viene spostata sul frigorifero, la matita viene spostata sulla mensola alta. Alla fine, la matita si trova",
+          "target": " sulla mensola alta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova vicino alla lampada, la forchetta si trova sotto la sedia, la mappa si trova dietro la porta, la collana si trova nella valigia, la spugna viene spostata dentro l'armadio, la forchetta viene spostata accanto al divano, la mappa viene spostata dietro la tenda, la collana viene spostata nel cassetto basso. Alla fine, la spugna si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova vicino alla lampada, la forchetta si trova sotto la sedia, la mappa si trova dietro la porta, la collana si trova nella valigia, la spugna viene spostata dentro l'armadio, la forchetta viene spostata accanto al divano, la mappa viene spostata dietro la tenda, la collana viene spostata nel cassetto basso. Alla fine, la forchetta si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova vicino alla lampada, la forchetta si trova sotto la sedia, la mappa si trova dietro la porta, la collana si trova nella valigia, la spugna viene spostata dentro l'armadio, la forchetta viene spostata accanto al divano, la mappa viene spostata dietro la tenda, la collana viene spostata nel cassetto basso. Alla fine, la mappa si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova vicino alla lampada, la forchetta si trova sotto la sedia, la mappa si trova dietro la porta, la collana si trova nella valigia, la spugna viene spostata dentro l'armadio, la forchetta viene spostata accanto al divano, la mappa viene spostata dietro la tenda, la collana viene spostata nel cassetto basso. Alla fine, la collana si trova",
+          "target": " nel cassetto basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova vicino alla lampada, la matita si trova sotto la sedia, la forchetta si trova nella scatola rossa, la mappa si trova accanto alla finestra, la scarpa viene spostata sotto il letto, la matita viene spostata nella scatola verde, la forchetta viene spostata nella borsa gialla, la mappa viene spostata sopra il mobile. Alla fine, la scarpa si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova vicino alla lampada, la matita si trova sotto la sedia, la forchetta si trova nella scatola rossa, la mappa si trova accanto alla finestra, la scarpa viene spostata sotto il letto, la matita viene spostata nella scatola verde, la forchetta viene spostata nella borsa gialla, la mappa viene spostata sopra il mobile. Alla fine, la matita si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova vicino alla lampada, la matita si trova sotto la sedia, la forchetta si trova nella scatola rossa, la mappa si trova accanto alla finestra, la scarpa viene spostata sotto il letto, la matita viene spostata nella scatola verde, la forchetta viene spostata nella borsa gialla, la mappa viene spostata sopra il mobile. Alla fine, la forchetta si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova vicino alla lampada, la matita si trova sotto la sedia, la forchetta si trova nella scatola rossa, la mappa si trova accanto alla finestra, la scarpa viene spostata sotto il letto, la matita viene spostata nella scatola verde, la forchetta viene spostata nella borsa gialla, la mappa viene spostata sopra il mobile. Alla fine, la mappa si trova",
+          "target": " sopra il mobile."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova nella valigia, la conchiglia si trova nello zaino, la forchetta si trova sulla scrivania, la matita si trova sotto la sedia, la mappa viene spostata sopra il mobile, la conchiglia viene spostata vicino alla libreria, la forchetta viene spostata sulla mensola alta, la matita viene spostata nel cassetto basso. Alla fine, la mappa si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova nella valigia, la conchiglia si trova nello zaino, la forchetta si trova sulla scrivania, la matita si trova sotto la sedia, la mappa viene spostata sopra il mobile, la conchiglia viene spostata vicino alla libreria, la forchetta viene spostata sulla mensola alta, la matita viene spostata nel cassetto basso. Alla fine, la conchiglia si trova",
+          "target": " vicino alla libreria."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova nella valigia, la conchiglia si trova nello zaino, la forchetta si trova sulla scrivania, la matita si trova sotto la sedia, la mappa viene spostata sopra il mobile, la conchiglia viene spostata vicino alla libreria, la forchetta viene spostata sulla mensola alta, la matita viene spostata nel cassetto basso. Alla fine, la forchetta si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova nella valigia, la conchiglia si trova nello zaino, la forchetta si trova sulla scrivania, la matita si trova sotto la sedia, la mappa viene spostata sopra il mobile, la conchiglia viene spostata vicino alla libreria, la forchetta viene spostata sulla mensola alta, la matita viene spostata nel cassetto basso. Alla fine, la matita si trova",
+          "target": " nel cassetto basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova vicino alla lampada, la spugna si trova sul tavolo, la chiave si trova nel cassetto alto, la forchetta si trova sotto la sedia, la mappa viene spostata vicino al termosifone, la spugna viene spostata accanto al divano, la chiave viene spostata sulla mensola alta, la forchetta viene spostata dentro l'armadio. Alla fine, la mappa si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova vicino alla lampada, la spugna si trova sul tavolo, la chiave si trova nel cassetto alto, la forchetta si trova sotto la sedia, la mappa viene spostata vicino al termosifone, la spugna viene spostata accanto al divano, la chiave viene spostata sulla mensola alta, la forchetta viene spostata dentro l'armadio. Alla fine, la spugna si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova vicino alla lampada, la spugna si trova sul tavolo, la chiave si trova nel cassetto alto, la forchetta si trova sotto la sedia, la mappa viene spostata vicino al termosifone, la spugna viene spostata accanto al divano, la chiave viene spostata sulla mensola alta, la forchetta viene spostata dentro l'armadio. Alla fine, la chiave si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la mappa si trova vicino alla lampada, la spugna si trova sul tavolo, la chiave si trova nel cassetto alto, la forchetta si trova sotto la sedia, la mappa viene spostata vicino al termosifone, la spugna viene spostata accanto al divano, la chiave viene spostata sulla mensola alta, la forchetta viene spostata dentro l'armadio. Alla fine, la forchetta si trova",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sotto la sedia, la forchetta si trova sul tavolo, la scatola si trova vicino alla lampada, la sveglia si trova dietro la porta, la borsa viene spostata sotto il letto, la forchetta viene spostata vicino al termosifone, la scatola viene spostata nel cassetto basso, la sveglia viene spostata dietro la tenda. Alla fine, la borsa si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sotto la sedia, la forchetta si trova sul tavolo, la scatola si trova vicino alla lampada, la sveglia si trova dietro la porta, la borsa viene spostata sotto il letto, la forchetta viene spostata vicino al termosifone, la scatola viene spostata nel cassetto basso, la sveglia viene spostata dietro la tenda. Alla fine, la forchetta si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sotto la sedia, la forchetta si trova sul tavolo, la scatola si trova vicino alla lampada, la sveglia si trova dietro la porta, la borsa viene spostata sotto il letto, la forchetta viene spostata vicino al termosifone, la scatola viene spostata nel cassetto basso, la sveglia viene spostata dietro la tenda. Alla fine, la scatola si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la borsa si trova sotto la sedia, la forchetta si trova sul tavolo, la scatola si trova vicino alla lampada, la sveglia si trova dietro la porta, la borsa viene spostata sotto il letto, la forchetta viene spostata vicino al termosifone, la scatola viene spostata nel cassetto basso, la sveglia viene spostata dietro la tenda. Alla fine, la sveglia si trova",
+          "target": " dietro la tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova nel cassetto alto, la conchiglia si trova accanto alla finestra, la scarpa si trova nella scatola rossa, la forchetta si trova sotto la sedia, la tazza viene spostata sul frigorifero, la conchiglia viene spostata nel cassetto basso, la scarpa viene spostata dietro la tenda, la forchetta viene spostata vicino al termosifone. Alla fine, la tazza si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova nel cassetto alto, la conchiglia si trova accanto alla finestra, la scarpa si trova nella scatola rossa, la forchetta si trova sotto la sedia, la tazza viene spostata sul frigorifero, la conchiglia viene spostata nel cassetto basso, la scarpa viene spostata dietro la tenda, la forchetta viene spostata vicino al termosifone. Alla fine, la conchiglia si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova nel cassetto alto, la conchiglia si trova accanto alla finestra, la scarpa si trova nella scatola rossa, la forchetta si trova sotto la sedia, la tazza viene spostata sul frigorifero, la conchiglia viene spostata nel cassetto basso, la scarpa viene spostata dietro la tenda, la forchetta viene spostata vicino al termosifone. Alla fine, la scarpa si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la tazza si trova nel cassetto alto, la conchiglia si trova accanto alla finestra, la scarpa si trova nella scatola rossa, la forchetta si trova sotto la sedia, la tazza viene spostata sul frigorifero, la conchiglia viene spostata nel cassetto basso, la scarpa viene spostata dietro la tenda, la forchetta viene spostata vicino al termosifone. Alla fine, la forchetta si trova",
+          "target": " vicino al termosifone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova nella valigia, la scarpa si trova nello zaino, la forchetta si trova dietro la porta, la candela si trova nella scatola rossa, la matita viene spostata nella borsa gialla, la scarpa viene spostata sul frigorifero, la forchetta viene spostata vicino al termosifone, la candela viene spostata dentro l'armadio. Alla fine, la matita si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova nella valigia, la scarpa si trova nello zaino, la forchetta si trova dietro la porta, la candela si trova nella scatola rossa, la matita viene spostata nella borsa gialla, la scarpa viene spostata sul frigorifero, la forchetta viene spostata vicino al termosifone, la candela viene spostata dentro l'armadio. Alla fine, la scarpa si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova nella valigia, la scarpa si trova nello zaino, la forchetta si trova dietro la porta, la candela si trova nella scatola rossa, la matita viene spostata nella borsa gialla, la scarpa viene spostata sul frigorifero, la forchetta viene spostata vicino al termosifone, la candela viene spostata dentro l'armadio. Alla fine, la forchetta si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la matita si trova nella valigia, la scarpa si trova nello zaino, la forchetta si trova dietro la porta, la candela si trova nella scatola rossa, la matita viene spostata nella borsa gialla, la scarpa viene spostata sul frigorifero, la forchetta viene spostata vicino al termosifone, la candela viene spostata dentro l'armadio. Alla fine, la candela si trova",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova sul tavolo, la mappa si trova nella scatola rossa, la collana si trova nella valigia, la candela si trova sotto la sedia, la spugna viene spostata dietro la tenda, la mappa viene spostata nel cassetto basso, la collana viene spostata sopra il mobile, la candela viene spostata dentro l'armadio. Alla fine, la spugna si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova sul tavolo, la mappa si trova nella scatola rossa, la collana si trova nella valigia, la candela si trova sotto la sedia, la spugna viene spostata dietro la tenda, la mappa viene spostata nel cassetto basso, la collana viene spostata sopra il mobile, la candela viene spostata dentro l'armadio. Alla fine, la mappa si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova sul tavolo, la mappa si trova nella scatola rossa, la collana si trova nella valigia, la candela si trova sotto la sedia, la spugna viene spostata dietro la tenda, la mappa viene spostata nel cassetto basso, la collana viene spostata sopra il mobile, la candela viene spostata dentro l'armadio. Alla fine, la collana si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova sul tavolo, la mappa si trova nella scatola rossa, la collana si trova nella valigia, la candela si trova sotto la sedia, la spugna viene spostata dietro la tenda, la mappa viene spostata nel cassetto basso, la collana viene spostata sopra il mobile, la candela viene spostata dentro l'armadio. Alla fine, la candela si trova",
+          "target": " dentro l'armadio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova sulla scrivania, la spugna si trova sul tavolo, la forchetta si trova accanto alla finestra, la collana si trova nel cassetto alto, la scarpa viene spostata dietro la tenda, la spugna viene spostata nella borsa gialla, la forchetta viene spostata accanto al divano, la collana viene spostata sotto il letto. Alla fine, la scarpa si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova sulla scrivania, la spugna si trova sul tavolo, la forchetta si trova accanto alla finestra, la collana si trova nel cassetto alto, la scarpa viene spostata dietro la tenda, la spugna viene spostata nella borsa gialla, la forchetta viene spostata accanto al divano, la collana viene spostata sotto il letto. Alla fine, la spugna si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova sulla scrivania, la spugna si trova sul tavolo, la forchetta si trova accanto alla finestra, la collana si trova nel cassetto alto, la scarpa viene spostata dietro la tenda, la spugna viene spostata nella borsa gialla, la forchetta viene spostata accanto al divano, la collana viene spostata sotto il letto. Alla fine, la forchetta si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la scarpa si trova sulla scrivania, la spugna si trova sul tavolo, la forchetta si trova accanto alla finestra, la collana si trova nel cassetto alto, la scarpa viene spostata dietro la tenda, la spugna viene spostata nella borsa gialla, la forchetta viene spostata accanto al divano, la collana viene spostata sotto il letto. Alla fine, la collana si trova",
+          "target": " sotto il letto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nello zaino, la bottiglia si trova sul ripiano basso, la spugna si trova nel cassetto alto, la borsa si trova nella valigia, la forchetta viene spostata sul frigorifero, la bottiglia viene spostata sopra il mobile, la spugna viene spostata vicino al termosifone, la borsa viene spostata nella scatola verde. Alla fine, la forchetta si trova",
+          "target": " sul frigorifero."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nello zaino, la bottiglia si trova sul ripiano basso, la spugna si trova nel cassetto alto, la borsa si trova nella valigia, la forchetta viene spostata sul frigorifero, la bottiglia viene spostata sopra il mobile, la spugna viene spostata vicino al termosifone, la borsa viene spostata nella scatola verde. Alla fine, la bottiglia si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nello zaino, la bottiglia si trova sul ripiano basso, la spugna si trova nel cassetto alto, la borsa si trova nella valigia, la forchetta viene spostata sul frigorifero, la bottiglia viene spostata sopra il mobile, la spugna viene spostata vicino al termosifone, la borsa viene spostata nella scatola verde. Alla fine, la spugna si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la forchetta si trova nello zaino, la bottiglia si trova sul ripiano basso, la spugna si trova nel cassetto alto, la borsa si trova nella valigia, la forchetta viene spostata sul frigorifero, la bottiglia viene spostata sopra il mobile, la spugna viene spostata vicino al termosifone, la borsa viene spostata nella scatola verde. Alla fine, la borsa si trova",
+          "target": " nella scatola verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nel cassetto alto, la bottiglia si trova nella valigia, la candela si trova nello zaino, la spugna si trova nella scatola rossa, la pallina viene spostata nella scatola verde, la bottiglia viene spostata vicino al termosifone, la candela viene spostata dentro l'armadio, la spugna viene spostata sulla mensola alta. Alla fine, la pallina si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nel cassetto alto, la bottiglia si trova nella valigia, la candela si trova nello zaino, la spugna si trova nella scatola rossa, la pallina viene spostata nella scatola verde, la bottiglia viene spostata vicino al termosifone, la candela viene spostata dentro l'armadio, la spugna viene spostata sulla mensola alta. Alla fine, la bottiglia si trova",
+          "target": " vicino al termosifone."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nel cassetto alto, la bottiglia si trova nella valigia, la candela si trova nello zaino, la spugna si trova nella scatola rossa, la pallina viene spostata nella scatola verde, la bottiglia viene spostata vicino al termosifone, la candela viene spostata dentro l'armadio, la spugna viene spostata sulla mensola alta. Alla fine, la candela si trova",
+          "target": " dentro l'armadio."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la pallina si trova nel cassetto alto, la bottiglia si trova nella valigia, la candela si trova nello zaino, la spugna si trova nella scatola rossa, la pallina viene spostata nella scatola verde, la bottiglia viene spostata vicino al termosifone, la candela viene spostata dentro l'armadio, la spugna viene spostata sulla mensola alta. Alla fine, la spugna si trova",
+          "target": " sulla mensola alta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova nello zaino, la borsa si trova sul ripiano basso, la bottiglia si trova sul tavolo, la matita si trova nella scatola rossa, la penna viene spostata sotto il letto, la borsa viene spostata sulla mensola alta, la bottiglia viene spostata sopra il mobile, la matita viene spostata sul frigorifero. Alla fine, la penna si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova nello zaino, la borsa si trova sul ripiano basso, la bottiglia si trova sul tavolo, la matita si trova nella scatola rossa, la penna viene spostata sotto il letto, la borsa viene spostata sulla mensola alta, la bottiglia viene spostata sopra il mobile, la matita viene spostata sul frigorifero. Alla fine, la borsa si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova nello zaino, la borsa si trova sul ripiano basso, la bottiglia si trova sul tavolo, la matita si trova nella scatola rossa, la penna viene spostata sotto il letto, la borsa viene spostata sulla mensola alta, la bottiglia viene spostata sopra il mobile, la matita viene spostata sul frigorifero. Alla fine, la bottiglia si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la penna si trova nello zaino, la borsa si trova sul ripiano basso, la bottiglia si trova sul tavolo, la matita si trova nella scatola rossa, la penna viene spostata sotto il letto, la borsa viene spostata sulla mensola alta, la bottiglia viene spostata sopra il mobile, la matita viene spostata sul frigorifero. Alla fine, la matita si trova",
+          "target": " sul frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova nella scatola rossa, la candela si trova sul ripiano basso, la moneta si trova nello zaino, la tazza si trova nella valigia, la fotografia viene spostata nella scatola verde, la candela viene spostata sulla mensola alta, la moneta viene spostata sotto il letto, la tazza viene spostata vicino alla libreria. Alla fine, la fotografia si trova",
+          "target": " nella scatola verde."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova nella scatola rossa, la candela si trova sul ripiano basso, la moneta si trova nello zaino, la tazza si trova nella valigia, la fotografia viene spostata nella scatola verde, la candela viene spostata sulla mensola alta, la moneta viene spostata sotto il letto, la tazza viene spostata vicino alla libreria. Alla fine, la candela si trova",
+          "target": " sulla mensola alta."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova nella scatola rossa, la candela si trova sul ripiano basso, la moneta si trova nello zaino, la tazza si trova nella valigia, la fotografia viene spostata nella scatola verde, la candela viene spostata sulla mensola alta, la moneta viene spostata sotto il letto, la tazza viene spostata vicino alla libreria. Alla fine, la moneta si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la fotografia si trova nella scatola rossa, la candela si trova sul ripiano basso, la moneta si trova nello zaino, la tazza si trova nella valigia, la fotografia viene spostata nella scatola verde, la candela viene spostata sulla mensola alta, la moneta viene spostata sotto il letto, la tazza viene spostata vicino alla libreria. Alla fine, la tazza si trova",
+          "target": " vicino alla libreria."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la collana si trova dietro la porta, la scatola si trova vicino alla lampada, la candela si trova sul ripiano basso, la penna si trova nel cestino, la collana viene spostata nella borsa gialla, la scatola viene spostata nel cassetto basso, la candela viene spostata dietro la tenda, la penna viene spostata sul frigorifero. Alla fine, la collana si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la collana si trova dietro la porta, la scatola si trova vicino alla lampada, la candela si trova sul ripiano basso, la penna si trova nel cestino, la collana viene spostata nella borsa gialla, la scatola viene spostata nel cassetto basso, la candela viene spostata dietro la tenda, la penna viene spostata sul frigorifero. Alla fine, la scatola si trova",
+          "target": " nel cassetto basso."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la collana si trova dietro la porta, la scatola si trova vicino alla lampada, la candela si trova sul ripiano basso, la penna si trova nel cestino, la collana viene spostata nella borsa gialla, la scatola viene spostata nel cassetto basso, la candela viene spostata dietro la tenda, la penna viene spostata sul frigorifero. Alla fine, la candela si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la collana si trova dietro la porta, la scatola si trova vicino alla lampada, la candela si trova sul ripiano basso, la penna si trova nel cestino, la collana viene spostata nella borsa gialla, la scatola viene spostata nel cassetto basso, la candela viene spostata dietro la tenda, la penna viene spostata sul frigorifero. Alla fine, la penna si trova",
+          "target": " sul frigorifero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova dietro la porta, la chiave si trova nella valigia, la scatola si trova nella scatola rossa, la mappa si trova sulla scrivania, la sveglia viene spostata dietro la tenda, la chiave viene spostata accanto al divano, la scatola viene spostata sopra il mobile, la mappa viene spostata nel cassetto basso. Alla fine, la sveglia si trova",
+          "target": " dietro la tenda."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova dietro la porta, la chiave si trova nella valigia, la scatola si trova nella scatola rossa, la mappa si trova sulla scrivania, la sveglia viene spostata dietro la tenda, la chiave viene spostata accanto al divano, la scatola viene spostata sopra il mobile, la mappa viene spostata nel cassetto basso. Alla fine, la chiave si trova",
+          "target": " accanto al divano."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova dietro la porta, la chiave si trova nella valigia, la scatola si trova nella scatola rossa, la mappa si trova sulla scrivania, la sveglia viene spostata dietro la tenda, la chiave viene spostata accanto al divano, la scatola viene spostata sopra il mobile, la mappa viene spostata nel cassetto basso. Alla fine, la scatola si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la sveglia si trova dietro la porta, la chiave si trova nella valigia, la scatola si trova nella scatola rossa, la mappa si trova sulla scrivania, la sveglia viene spostata dietro la tenda, la chiave viene spostata accanto al divano, la scatola viene spostata sopra il mobile, la mappa viene spostata nel cassetto basso. Alla fine, la mappa si trova",
+          "target": " nel cassetto basso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova sulla scrivania, la penna si trova sul tavolo, la matita si trova nel cassetto alto, la lettera si trova nella valigia, la spugna viene spostata sotto il letto, la penna viene spostata nella borsa gialla, la matita viene spostata sopra il mobile, la lettera viene spostata sul frigorifero. Alla fine, la spugna si trova",
+          "target": " sotto il letto."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova sulla scrivania, la penna si trova sul tavolo, la matita si trova nel cassetto alto, la lettera si trova nella valigia, la spugna viene spostata sotto il letto, la penna viene spostata nella borsa gialla, la matita viene spostata sopra il mobile, la lettera viene spostata sul frigorifero. Alla fine, la penna si trova",
+          "target": " nella borsa gialla."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova sulla scrivania, la penna si trova sul tavolo, la matita si trova nel cassetto alto, la lettera si trova nella valigia, la spugna viene spostata sotto il letto, la penna viene spostata nella borsa gialla, la matita viene spostata sopra il mobile, la lettera viene spostata sul frigorifero. Alla fine, la matita si trova",
+          "target": " sopra il mobile."
+        },
+        {
+          "context": "Segui gli spostamenti in ordine: la spugna si trova sulla scrivania, la penna si trova sul tavolo, la matita si trova nel cassetto alto, la lettera si trova nella valigia, la spugna viene spostata sotto il letto, la penna viene spostata nella borsa gialla, la matita viene spostata sopra il mobile, la lettera viene spostata sul frigorifero. Alla fine, la lettera si trova",
+          "target": " sul frigorifero."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

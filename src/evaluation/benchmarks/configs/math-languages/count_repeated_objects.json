@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "id": "count_repeated_objects",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "objects": [
+      {"singular": "mela", "plural": "mele"},
+      {"singular": "libro", "plural": "libri"},
+      {"singular": "chiave", "plural": "chiavi"},
+      {"singular": "bicchiere", "plural": "bicchieri"},
+      {"singular": "penna", "plural": "penne"},
+      {"singular": "moneta", "plural": "monete"},
+      {"singular": "bottone", "plural": "bottoni"},
+      {"singular": "sasso", "plural": "sassi"},
+      {"singular": "fiore", "plural": "fiori"},
+      {"singular": "candela", "plural": "candele"}
+    ]
+  },
+
+  "variables": {
+    "object": {
+      "type": "choice",
+      "source": "objects"
+    },
+    "requested_count": {
+      "type": "integer",
+      "min": 2,
+      "max": 6
+    }
+  },
+
+  "derived": {
+    "objects": {
+      "op": "repeat",
+      "args": ["$object.singular", "$requested_count"]
+    },
+    "count": {
+      "op": "count_equal",
+      "args": ["$objects", "$object.singular"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "requested_count",
+        "operation": "offset",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$count"]
+  },
+
+  "templates": [
+    {
+      "context": "Sul tavolo sono disposti questi oggetti: {objects|comma_list}. Il numero di {object.plural} è",
+      "target": " {count|it_number}."
+    }
+  ]
+}

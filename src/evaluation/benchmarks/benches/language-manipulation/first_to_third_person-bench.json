@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "few_shot_first_to_third_person",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io apro → lui apre. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io apro → lui apre. io scelgo →",
+          "target": " lui sceglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io apro → lui apre. io leggo →",
+          "target": " lui legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io apro → lui apre. io corro →",
+          "target": " lui corre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → lui ha, io dico → lui dice. io bevo →",
+          "target": " lui beve"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → lui ha, io dico → lui dice. io mangio →",
+          "target": " lui mangia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → lui ha, io dico → lui dice. io dormo →",
+          "target": " lui dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → lui ha, io dico → lui dice. io parlo →",
+          "target": " lui parla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io esco → lui esce. io mangio →",
+          "target": " lui mangia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io esco → lui esce. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io esco → lui esce. io parlo →",
+          "target": " lui parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io esco → lui esce. io salgo →",
+          "target": " lui sale"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io posso → lui può. io ho →",
+          "target": " lui ha"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io posso → lui può. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io posso → lui può. io mangio →",
+          "target": " lui mangia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io posso → lui può. io scrivo →",
+          "target": " lui scrive"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io apro → lui apre. io leggo →",
+          "target": " lui legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io apro → lui apre. io parlo →",
+          "target": " lui parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io apro → lui apre. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io apro → lui apre. io corro →",
+          "target": " lui corre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io corro → lui corre. io vengo →",
+          "target": " lui viene"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io corro → lui corre. io scelgo →",
+          "target": " lui sceglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io corro → lui corre. io esco →",
+          "target": " lui esce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io corro → lui corre. io apro →",
+          "target": " lui apre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io posso → lui può. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io posso → lui può. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io posso → lui può. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io posso → lui può. io dormo →",
+          "target": " lui dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io esco → lui esce. io vengo →",
+          "target": " lui viene"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io esco → lui esce. io ho →",
+          "target": " lui ha"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io esco → lui esce. io parlo →",
+          "target": " lui parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io esco → lui esce. io dormo →",
+          "target": " lui dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io ascolto → lui ascolta. io chiudo →",
+          "target": " lui chiude"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io ascolto → lui ascolta. io dormo →",
+          "target": " lui dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io ascolto → lui ascolta. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io ascolto → lui ascolta. io corro →",
+          "target": " lui corre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io posso → lui può. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io posso → lui può. io vengo →",
+          "target": " lui viene"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io posso → lui può. io scrivo →",
+          "target": " lui scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io posso → lui può. io scelgo →",
+          "target": " lui sceglie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io scelgo → lui sceglie. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io scelgo → lui sceglie. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io scelgo → lui sceglie. io dormo →",
+          "target": " lui dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io scelgo → lui sceglie. io scrivo →",
+          "target": " lui scrive"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → lui scrive, io posso → lui può. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → lui scrive, io posso → lui può. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → lui scrive, io posso → lui può. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → lui scrive, io posso → lui può. io ascolto →",
+          "target": " lui ascolta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io ascolto → lui ascolta. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io ascolto → lui ascolta. io vado →",
+          "target": " lui va"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io ascolto → lui ascolta. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io ascolto → lui ascolta. io apro →",
+          "target": " lui apre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io ho → lui ha. io vado →",
+          "target": " lui va"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io ho → lui ha. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io ho → lui ha. io voglio →",
+          "target": " lui vuole"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io ho → lui ha. io faccio →",
+          "target": " lui fa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io apro → lui apre. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io apro → lui apre. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io apro → lui apre. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io apro → lui apre. io esco →",
+          "target": " lui esce"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io ho → lui ha. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io ho → lui ha. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io ho → lui ha. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io ho → lui ha. io vengo →",
+          "target": " lui viene"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io so → lui sa. io voglio →",
+          "target": " lui vuole"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io so → lui sa. io dormo →",
+          "target": " lui dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io so → lui sa. io bevo →",
+          "target": " lui beve"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io so → lui sa. io corro →",
+          "target": " lui corre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io scrivo → lui scrive. io scelgo →",
+          "target": " lui sceglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io scrivo → lui scrive. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io scrivo → lui scrive. io esco →",
+          "target": " lui esce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io scrivo → lui scrive. io dormo →",
+          "target": " lui dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io esco → lui esce. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io esco → lui esce. io so →",
+          "target": " lui sa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io esco → lui esce. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io esco → lui esce. io sono →",
+          "target": " lui è"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io corro → lui corre. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io corro → lui corre. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io corro → lui corre. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io corro → lui corre. io vado →",
+          "target": " lui va"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io dico → lui dice. io scrivo →",
+          "target": " lui scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io dico → lui dice. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io dico → lui dice. io mangio →",
+          "target": " lui mangia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io dico → lui dice. io apro →",
+          "target": " lui apre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io corro → lui corre. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io corro → lui corre. io chiudo →",
+          "target": " lui chiude"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io corro → lui corre. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io corro → lui corre. io parlo →",
+          "target": " lui parla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io scrivo → lui scrive. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io scrivo → lui scrive. io so →",
+          "target": " lui sa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io scrivo → lui scrive. io mangio →",
+          "target": " lui mangia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io scrivo → lui scrive. io vado →",
+          "target": " lui va"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io corro → lui corre. io vengo →",
+          "target": " lui viene"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io corro → lui corre. io chiudo →",
+          "target": " lui chiude"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io corro → lui corre. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io corro → lui corre. io bevo →",
+          "target": " lui beve"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → lui ha, io dormo → lui dorme. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → lui ha, io dormo → lui dorme. io voglio →",
+          "target": " lui vuole"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → lui ha, io dormo → lui dorme. io scelgo →",
+          "target": " lui sceglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → lui ha, io dormo → lui dorme. io sono →",
+          "target": " lui è"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io scelgo → lui sceglie. io voglio →",
+          "target": " lui vuole"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io scelgo → lui sceglie. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io scelgo → lui sceglie. io scrivo →",
+          "target": " lui scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io scelgo → lui sceglie. io apro →",
+          "target": " lui apre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io sono → lui è. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io sono → lui è. io chiudo →",
+          "target": " lui chiude"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io sono → lui è. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io sono → lui è. io vengo →",
+          "target": " lui viene"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io posso → lui può. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io posso → lui può. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io posso → lui può. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io posso → lui può. io dormo →",
+          "target": " lui dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io ho → lui ha. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io ho → lui ha. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io ho → lui ha. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io ho → lui ha. io salgo →",
+          "target": " lui sale"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → lui dorme, io finisco → lui finisce. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → lui dorme, io finisco → lui finisce. io bevo →",
+          "target": " lui beve"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → lui dorme, io finisco → lui finisce. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → lui dorme, io finisco → lui finisce. io capisco →",
+          "target": " lui capisce"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io dormo → lui dorme. io so →",
+          "target": " lui sa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io dormo → lui dorme. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io dormo → lui dorme. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io dormo → lui dorme. io voglio →",
+          "target": " lui vuole"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → lui è, io leggo → lui legge. io ho →",
+          "target": " lui ha"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → lui è, io leggo → lui legge. io scelgo →",
+          "target": " lui sceglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → lui è, io leggo → lui legge. io voglio →",
+          "target": " lui vuole"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → lui è, io leggo → lui legge. io ascolto →",
+          "target": " lui ascolta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → lui dice, io parlo → lui parla. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → lui dice, io parlo → lui parla. io scelgo →",
+          "target": " lui sceglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → lui dice, io parlo → lui parla. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → lui dice, io parlo → lui parla. io vengo →",
+          "target": " lui viene"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → lui dice, io posso → lui può. io bevo →",
+          "target": " lui beve"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → lui dice, io posso → lui può. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → lui dice, io posso → lui può. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → lui dice, io posso → lui può. io scelgo →",
+          "target": " lui sceglie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io vado → lui va. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io vado → lui va. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io vado → lui va. io parlo →",
+          "target": " lui parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io vado → lui va. io esco →",
+          "target": " lui esce"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io dico → lui dice. io scrivo →",
+          "target": " lui scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io dico → lui dice. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io dico → lui dice. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io dico → lui dice. io ascolto →",
+          "target": " lui ascolta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io sono → lui è. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io sono → lui è. io bevo →",
+          "target": " lui beve"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io sono → lui è. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io sono → lui è. io mangio →",
+          "target": " lui mangia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io scrivo → lui scrive. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io scrivo → lui scrive. io voglio →",
+          "target": " lui vuole"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io scrivo → lui scrive. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io scrivo → lui scrive. io parlo →",
+          "target": " lui parla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io scrivo → lui scrive. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io scrivo → lui scrive. io mangio →",
+          "target": " lui mangia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io scrivo → lui scrive. io scelgo →",
+          "target": " lui sceglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io scrivo → lui scrive. io apro →",
+          "target": " lui apre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io dico → lui dice. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io dico → lui dice. io voglio →",
+          "target": " lui vuole"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io dico → lui dice. io leggo →",
+          "target": " lui legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io dico → lui dice. io parlo →",
+          "target": " lui parla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io bevo → lui beve. io ho →",
+          "target": " lui ha"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io bevo → lui beve. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io bevo → lui beve. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io bevo → lui beve. io vado →",
+          "target": " lui va"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io ho → lui ha. io voglio →",
+          "target": " lui vuole"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io ho → lui ha. io so →",
+          "target": " lui sa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io ho → lui ha. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io ho → lui ha. io scrivo →",
+          "target": " lui scrive"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io dormo → lui dorme. io scrivo →",
+          "target": " lui scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io dormo → lui dorme. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io dormo → lui dorme. io esco →",
+          "target": " lui esce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io dormo → lui dorme. io salgo →",
+          "target": " lui sale"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io corro → lui corre. io ho →",
+          "target": " lui ha"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io corro → lui corre. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io corro → lui corre. io scelgo →",
+          "target": " lui sceglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io corro → lui corre. io bevo →",
+          "target": " lui beve"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → lui dice, io scelgo → lui sceglie. io ho →",
+          "target": " lui ha"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → lui dice, io scelgo → lui sceglie. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → lui dice, io scelgo → lui sceglie. io so →",
+          "target": " lui sa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → lui dice, io scelgo → lui sceglie. io vado →",
+          "target": " lui va"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io scelgo → lui sceglie. io vado →",
+          "target": " lui va"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io scelgo → lui sceglie. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io scelgo → lui sceglie. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io scelgo → lui sceglie. io faccio →",
+          "target": " lui fa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io salgo → lui sale. io chiudo →",
+          "target": " lui chiude"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io salgo → lui sale. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io salgo → lui sale. io vado →",
+          "target": " lui va"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io salgo → lui sale. io dormo →",
+          "target": " lui dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io esco → lui esce. io ho →",
+          "target": " lui ha"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io esco → lui esce. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io esco → lui esce. io dormo →",
+          "target": " lui dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io esco → lui esce. io sono →",
+          "target": " lui è"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io apro → lui apre. io leggo →",
+          "target": " lui legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io apro → lui apre. io vengo →",
+          "target": " lui viene"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io apro → lui apre. io dormo →",
+          "target": " lui dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io apro → lui apre. io ascolto →",
+          "target": " lui ascolta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io scrivo → lui scrive. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io scrivo → lui scrive. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io scrivo → lui scrive. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io scrivo → lui scrive. io so →",
+          "target": " lui sa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io sono → lui è. io chiudo →",
+          "target": " lui chiude"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io sono → lui è. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io sono → lui è. io leggo →",
+          "target": " lui legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io sono → lui è. io apro →",
+          "target": " lui apre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → lui corre, io sono → lui è. io leggo →",
+          "target": " lui legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → lui corre, io sono → lui è. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → lui corre, io sono → lui è. io chiudo →",
+          "target": " lui chiude"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → lui corre, io sono → lui è. io parlo →",
+          "target": " lui parla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io scelgo → lui sceglie. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io scelgo → lui sceglie. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io scelgo → lui sceglie. io so →",
+          "target": " lui sa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io scelgo → lui sceglie. io voglio →",
+          "target": " lui vuole"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io dormo → lui dorme. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io dormo → lui dorme. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io dormo → lui dorme. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → lui beve, io dormo → lui dorme. io capisco →",
+          "target": " lui capisce"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io leggo → lui legge. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io leggo → lui legge. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io leggo → lui legge. io scrivo →",
+          "target": " lui scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io leggo → lui legge. io posso →",
+          "target": " lui può"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → lui è, io mangio → lui mangia. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → lui è, io mangio → lui mangia. io dormo →",
+          "target": " lui dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → lui è, io mangio → lui mangia. io leggo →",
+          "target": " lui legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → lui è, io mangio → lui mangia. io capisco →",
+          "target": " lui capisce"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io ho → lui ha. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io ho → lui ha. io leggo →",
+          "target": " lui legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io ho → lui ha. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io ho → lui ha. io salgo →",
+          "target": " lui sale"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io vengo → lui viene. io bevo →",
+          "target": " lui beve"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io vengo → lui viene. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io vengo → lui viene. io parlo →",
+          "target": " lui parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io vengo → lui viene. io ascolto →",
+          "target": " lui ascolta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io sono → lui è. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io sono → lui è. io esco →",
+          "target": " lui esce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io sono → lui è. io leggo →",
+          "target": " lui legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io sono → lui è. io ascolto →",
+          "target": " lui ascolta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → lui scrive, io dico → lui dice. io mangio →",
+          "target": " lui mangia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → lui scrive, io dico → lui dice. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → lui scrive, io dico → lui dice. io vado →",
+          "target": " lui va"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → lui scrive, io dico → lui dice. io finisco →",
+          "target": " lui finisce"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io scrivo → lui scrive. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io scrivo → lui scrive. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io scrivo → lui scrive. io bevo →",
+          "target": " lui beve"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io scrivo → lui scrive. io voglio →",
+          "target": " lui vuole"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io posso → lui può. io vengo →",
+          "target": " lui viene"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io posso → lui può. io chiudo →",
+          "target": " lui chiude"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io posso → lui può. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io posso → lui può. io esco →",
+          "target": " lui esce"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io parlo → lui parla. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io parlo → lui parla. io vado →",
+          "target": " lui va"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io parlo → lui parla. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io parlo → lui parla. io dormo →",
+          "target": " lui dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io salgo → lui sale. io so →",
+          "target": " lui sa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io salgo → lui sale. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io salgo → lui sale. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io salgo → lui sale. io vado →",
+          "target": " lui va"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → lui corre, io apro → lui apre. io scrivo →",
+          "target": " lui scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → lui corre, io apro → lui apre. io ho →",
+          "target": " lui ha"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → lui corre, io apro → lui apre. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → lui corre, io apro → lui apre. io bevo →",
+          "target": " lui beve"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → lui esce, io dico → lui dice. io vengo →",
+          "target": " lui viene"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → lui esce, io dico → lui dice. io vado →",
+          "target": " lui va"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → lui esce, io dico → lui dice. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → lui esce, io dico → lui dice. io so →",
+          "target": " lui sa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io ho → lui ha. io parlo →",
+          "target": " lui parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io ho → lui ha. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io ho → lui ha. io bevo →",
+          "target": " lui beve"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io ho → lui ha. io dico →",
+          "target": " lui dice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io sono → lui è. io scelgo →",
+          "target": " lui sceglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io sono → lui è. io parlo →",
+          "target": " lui parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io sono → lui è. io vengo →",
+          "target": " lui viene"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io sono → lui è. io dico →",
+          "target": " lui dice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io vado → lui va. io esco →",
+          "target": " lui esce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io vado → lui va. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io vado → lui va. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io vado → lui va. io chiudo →",
+          "target": " lui chiude"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io dico → lui dice. io vado →",
+          "target": " lui va"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io dico → lui dice. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io dico → lui dice. io chiudo →",
+          "target": " lui chiude"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io dico → lui dice. io sono →",
+          "target": " lui è"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io dico → lui dice. io scelgo →",
+          "target": " lui sceglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io dico → lui dice. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io dico → lui dice. io scrivo →",
+          "target": " lui scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → lui parla, io dico → lui dice. io ho →",
+          "target": " lui ha"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io sono → lui è. io mangio →",
+          "target": " lui mangia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io sono → lui è. io chiudo →",
+          "target": " lui chiude"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io sono → lui è. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io sono → lui è. io parlo →",
+          "target": " lui parla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → lui ha, io esco → lui esce. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → lui ha, io esco → lui esce. io vado →",
+          "target": " lui va"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → lui ha, io esco → lui esce. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → lui ha, io esco → lui esce. io finisco →",
+          "target": " lui finisce"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io parlo → lui parla. io so →",
+          "target": " lui sa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io parlo → lui parla. io voglio →",
+          "target": " lui vuole"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io parlo → lui parla. io scrivo →",
+          "target": " lui scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io parlo → lui parla. io dormo →",
+          "target": " lui dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io scelgo → lui sceglie. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io scelgo → lui sceglie. io esco →",
+          "target": " lui esce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io scelgo → lui sceglie. io vado →",
+          "target": " lui va"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → lui sa, io scelgo → lui sceglie. io dormo →",
+          "target": " lui dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io chiudo → lui chiude. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io chiudo → lui chiude. io parlo →",
+          "target": " lui parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io chiudo → lui chiude. io leggo →",
+          "target": " lui legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → lui sceglie, io chiudo → lui chiude. io mangio →",
+          "target": " lui mangia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io voglio → lui vuole. io esco →",
+          "target": " lui esce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io voglio → lui vuole. io dormo →",
+          "target": " lui dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io voglio → lui vuole. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io voglio → lui vuole. io dico →",
+          "target": " lui dice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → lui finisce, io capisco → lui capisce. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → lui finisce, io capisco → lui capisce. io voglio →",
+          "target": " lui vuole"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → lui finisce, io capisco → lui capisce. io scelgo →",
+          "target": " lui sceglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → lui finisce, io capisco → lui capisce. io ascolto →",
+          "target": " lui ascolta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io finisco → lui finisce. io mangio →",
+          "target": " lui mangia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io finisco → lui finisce. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io finisco → lui finisce. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io finisco → lui finisce. io ascolto →",
+          "target": " lui ascolta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → lui finisce, io so → lui sa. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → lui finisce, io so → lui sa. io bevo →",
+          "target": " lui beve"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → lui finisce, io so → lui sa. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → lui finisce, io so → lui sa. io ascolto →",
+          "target": " lui ascolta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io leggo → lui legge. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io leggo → lui legge. io so →",
+          "target": " lui sa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io leggo → lui legge. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io leggo → lui legge. io vado →",
+          "target": " lui va"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → lui esce, io so → lui sa. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → lui esce, io so → lui sa. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → lui esce, io so → lui sa. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → lui esce, io so → lui sa. io scrivo →",
+          "target": " lui scrive"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io apro → lui apre. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io apro → lui apre. io salgo →",
+          "target": " lui sale"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io apro → lui apre. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → lui può, io apro → lui apre. io so →",
+          "target": " lui sa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io ascolto → lui ascolta. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io ascolto → lui ascolta. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io ascolto → lui ascolta. io dormo →",
+          "target": " lui dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → lui sale, io ascolto → lui ascolta. io chiudo →",
+          "target": " lui chiude"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io vado → lui va. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io vado → lui va. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io vado → lui va. io dormo →",
+          "target": " lui dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io vado → lui va. io leggo →",
+          "target": " lui legge"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io faccio → lui fa. io leggo →",
+          "target": " lui legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io faccio → lui fa. io parlo →",
+          "target": " lui parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io faccio → lui fa. io dormo →",
+          "target": " lui dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → lui ascolta, io faccio → lui fa. io dico →",
+          "target": " lui dice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io sono → lui è. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io sono → lui è. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io sono → lui è. io bevo →",
+          "target": " lui beve"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io sono → lui è. io parlo →",
+          "target": " lui parla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io ho → lui ha. io mangio →",
+          "target": " lui mangia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io ho → lui ha. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io ho → lui ha. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io ho → lui ha. io voglio →",
+          "target": " lui vuole"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io chiudo → lui chiude. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io chiudo → lui chiude. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io chiudo → lui chiude. io sono →",
+          "target": " lui è"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → lui viene, io chiudo → lui chiude. io esco →",
+          "target": " lui esce"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io voglio → lui vuole, io ascolto → lui ascolta. io apro →",
+          "target": " lui apre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io voglio → lui vuole, io ascolto → lui ascolta. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io voglio → lui vuole, io ascolto → lui ascolta. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io voglio → lui vuole, io ascolto → lui ascolta. io mangio →",
+          "target": " lui mangia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io scelgo → lui sceglie. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io scelgo → lui sceglie. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io scelgo → lui sceglie. io scrivo →",
+          "target": " lui scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → lui va, io scelgo → lui sceglie. io posso →",
+          "target": " lui può"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → lui esce, io sono → lui è. io mangio →",
+          "target": " lui mangia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → lui esce, io sono → lui è. io faccio →",
+          "target": " lui fa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → lui esce, io sono → lui è. io ho →",
+          "target": " lui ha"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → lui esce, io sono → lui è. io capisco →",
+          "target": " lui capisce"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → lui dorme, io salgo → lui sale. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → lui dorme, io salgo → lui sale. io leggo →",
+          "target": " lui legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → lui dorme, io salgo → lui sale. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → lui dorme, io salgo → lui sale. io scrivo →",
+          "target": " lui scrive"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io faccio → lui fa. io vado →",
+          "target": " lui va"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io faccio → lui fa. io parlo →",
+          "target": " lui parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io faccio → lui fa. io posso →",
+          "target": " lui può"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → lui apre, io faccio → lui fa. io scelgo →",
+          "target": " lui sceglie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io apro → lui apre. io dico →",
+          "target": " lui dice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io apro → lui apre. io finisco →",
+          "target": " lui finisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io apro → lui apre. io dormo →",
+          "target": " lui dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → lui fa, io apro → lui apre. io voglio →",
+          "target": " lui vuole"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io sono → lui è. io bevo →",
+          "target": " lui beve"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io sono → lui è. io vengo →",
+          "target": " lui viene"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io sono → lui è. io ascolto →",
+          "target": " lui ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → lui capisce, io sono → lui è. io dormo →",
+          "target": " lui dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io ascolto → lui ascolta. io parlo →",
+          "target": " lui parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io ascolto → lui ascolta. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io ascolto → lui ascolta. io esco →",
+          "target": " lui esce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → lui mangia, io ascolto → lui ascolta. io leggo →",
+          "target": " lui legge"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io voglio → lui vuole. io scelgo →",
+          "target": " lui sceglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io voglio → lui vuole. io corro →",
+          "target": " lui corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io voglio → lui vuole. io ho →",
+          "target": " lui ha"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → lui legge, io voglio → lui vuole. io parlo →",
+          "target": " lui parla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → lui finisce, io apro → lui apre. io vengo →",
+          "target": " lui viene"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → lui finisce, io apro → lui apre. io scrivo →",
+          "target": " lui scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → lui finisce, io apro → lui apre. io esco →",
+          "target": " lui esce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → lui finisce, io apro → lui apre. io corro →",
+          "target": " lui corre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io corro → lui corre. io ho →",
+          "target": " lui ha"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io corro → lui corre. io mangio →",
+          "target": " lui mangia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io corro → lui corre. io capisco →",
+          "target": " lui capisce"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → lui chiude, io corro → lui corre. io scelgo →",
+          "target": " lui sceglie"
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

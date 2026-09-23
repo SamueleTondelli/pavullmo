@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "country_capitals",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        },
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        },
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        },
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di India è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        },
+        {
+          "context": "La capitale di Paesi Bassi è",
+          "target": " Amsterdam."
+        },
+        {
+          "context": "La capitale di Brasile è",
+          "target": " Brasilia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        },
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        },
+        {
+          "context": "La capitale di Marocco è",
+          "target": " Rabat."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        },
+        {
+          "context": "La capitale di Marocco è",
+          "target": " Rabat."
+        },
+        {
+          "context": "La capitale di Paesi Bassi è",
+          "target": " Amsterdam."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Paesi Bassi è",
+          "target": " Amsterdam."
+        },
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        },
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        },
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di Marocco è",
+          "target": " Rabat."
+        },
+        {
+          "context": "La capitale di India è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        },
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Finlandia è",
+          "target": " Helsinki."
+        },
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        },
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        },
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Paesi Bassi è",
+          "target": " Amsterdam."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Stati Uniti d'America è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La capitale di Finlandia è",
+          "target": " Helsinki."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di India è",
+          "target": " Nuova Delhi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        },
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Brasile è",
+          "target": " Brasilia."
+        },
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        },
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        },
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        },
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        },
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        },
+        {
+          "context": "La capitale di Marocco è",
+          "target": " Rabat."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Paesi Bassi è",
+          "target": " Amsterdam."
+        },
+        {
+          "context": "La capitale di India è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di Finlandia è",
+          "target": " Helsinki."
+        },
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        },
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Finlandia è",
+          "target": " Helsinki."
+        },
+        {
+          "context": "La capitale di Marocco è",
+          "target": " Rabat."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        },
+        {
+          "context": "La capitale di India è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La capitale di Stati Uniti d'America è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La capitale di Brasile è",
+          "target": " Brasilia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        },
+        {
+          "context": "La capitale di India è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        },
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Stati Uniti d'America è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        },
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        },
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di Stati Uniti d'America è",
+          "target": " Washington, D.C.."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La capitale di Finlandia è",
+          "target": " Helsinki."
+        },
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La capitale di Finlandia è",
+          "target": " Helsinki."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        },
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        },
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        },
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        },
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        },
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di India è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        },
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        },
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La capitale di Finlandia è",
+          "target": " Helsinki."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Stati Uniti d'America è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Brasile è",
+          "target": " Brasilia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        },
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        },
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Brasile è",
+          "target": " Brasilia."
+        },
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        },
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di India è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La capitale di Paesi Bassi è",
+          "target": " Amsterdam."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        },
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        },
+        {
+          "context": "La capitale di Marocco è",
+          "target": " Rabat."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        },
+        {
+          "context": "La capitale di Stati Uniti d'America è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        },
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        },
+        {
+          "context": "La capitale di Brasile è",
+          "target": " Brasilia."
+        },
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        },
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La capitale di Stati Uniti d'America è",
+          "target": " Washington, D.C.."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        },
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        },
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di India è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La capitale di Marocco è",
+          "target": " Rabat."
+        },
+        {
+          "context": "La capitale di Paesi Bassi è",
+          "target": " Amsterdam."
+        },
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        },
+        {
+          "context": "La capitale di Paesi Bassi è",
+          "target": " Amsterdam."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        },
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        },
+        {
+          "context": "La capitale di Brasile è",
+          "target": " Brasilia."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        },
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Finlandia è",
+          "target": " Helsinki."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        },
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Marocco è",
+          "target": " Rabat."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        },
+        {
+          "context": "La capitale di Marocco è",
+          "target": " Rabat."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di India è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La capitale di Paesi Bassi è",
+          "target": " Amsterdam."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Marocco è",
+          "target": " Rabat."
+        },
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        },
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La capitale di Russia è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        },
+        {
+          "context": "La capitale di Paesi Bassi è",
+          "target": " Amsterdam."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Brasile è",
+          "target": " Brasilia."
+        },
+        {
+          "context": "La capitale di Stati Uniti d'America è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        },
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Francia è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        },
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        },
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        },
+        {
+          "context": "La capitale di Germania è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Spagna è",
+          "target": " Madrid."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        },
+        {
+          "context": "La capitale di Stati Uniti d'America è",
+          "target": " Washington, D.C.."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        },
+        {
+          "context": "La capitale di Polona è",
+          "target": " Varsavia."
+        },
+        {
+          "context": "La capitale di Danimarca è",
+          "target": " Copenaghen."
+        },
+        {
+          "context": "La capitale di Giappone è",
+          "target": " Tokyo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Brasile è",
+          "target": " Brasilia."
+        },
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Canada è",
+          "target": " Ottawa."
+        },
+        {
+          "context": "La capitale di Marocco è",
+          "target": " Rabat."
+        },
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        },
+        {
+          "context": "La capitale di Ucraina è",
+          "target": " Kiev."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Svezia è",
+          "target": " Stoccolma."
+        },
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Messico è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La capitale di Brasile è",
+          "target": " Brasilia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Norvegia è",
+          "target": " Oslo."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Stati Uniti d'America è",
+          "target": " Washington, D.C.."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Corea del Sud è",
+          "target": " Seoul."
+        },
+        {
+          "context": "La capitale di Inghilterra è",
+          "target": " Londra."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Stati Uniti d'America è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La capitale di Argentina è",
+          "target": " Buenos Aires."
+        },
+        {
+          "context": "La capitale di Brasile è",
+          "target": " Brasilia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Marocco è",
+          "target": " Rabat."
+        },
+        {
+          "context": "La capitale di India è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La capitale di Irlanda è",
+          "target": " Dublino."
+        },
+        {
+          "context": "La capitale di Cina è",
+          "target": " Pechino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La capitale di Egitto è",
+          "target": " il Cairo."
+        },
+        {
+          "context": "La capitale di Scozia è",
+          "target": " Edimburgo."
+        },
+        {
+          "context": "La capitale di Portogallo è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La capitale di Italia è",
+          "target": " Roma."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

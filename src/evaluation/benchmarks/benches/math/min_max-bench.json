@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "minimum_maximum",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 6 e 3 è",
+          "target": " 3"
+        },
+        {
+          "context": "Il minimo tra 7 e 4 è",
+          "target": " 4"
+        },
+        {
+          "context": "Il minimo tra 8 e 5 è",
+          "target": " 5"
+        },
+        {
+          "context": "Il minimo tra 9 e 6 è",
+          "target": " 6"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 71 e 78 è",
+          "target": " 71"
+        },
+        {
+          "context": "Il minimo tra 72 e 79 è",
+          "target": " 72"
+        },
+        {
+          "context": "Il minimo tra 73 e 80 è",
+          "target": " 73"
+        },
+        {
+          "context": "Il minimo tra 74 e 81 è",
+          "target": " 74"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 66 e 75 è",
+          "target": " 75"
+        },
+        {
+          "context": "Il massimo tra 67 e 76 è",
+          "target": " 76"
+        },
+        {
+          "context": "Il massimo tra 68 e 77 è",
+          "target": " 77"
+        },
+        {
+          "context": "Il massimo tra 69 e 78 è",
+          "target": " 78"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 34 e 43 è",
+          "target": " 43"
+        },
+        {
+          "context": "Il massimo tra 35 e 44 è",
+          "target": " 44"
+        },
+        {
+          "context": "Il massimo tra 36 e 45 è",
+          "target": " 45"
+        },
+        {
+          "context": "Il massimo tra 37 e 46 è",
+          "target": " 46"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 13 e 10 è",
+          "target": " 13"
+        },
+        {
+          "context": "Il massimo tra 14 e 11 è",
+          "target": " 14"
+        },
+        {
+          "context": "Il massimo tra 15 e 12 è",
+          "target": " 15"
+        },
+        {
+          "context": "Il massimo tra 16 e 13 è",
+          "target": " 16"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 44 e 24 è",
+          "target": " 44"
+        },
+        {
+          "context": "Il massimo tra 45 e 25 è",
+          "target": " 45"
+        },
+        {
+          "context": "Il massimo tra 46 e 26 è",
+          "target": " 46"
+        },
+        {
+          "context": "Il massimo tra 47 e 27 è",
+          "target": " 47"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 68 e 64 è",
+          "target": " 68"
+        },
+        {
+          "context": "Il massimo tra 69 e 65 è",
+          "target": " 69"
+        },
+        {
+          "context": "Il massimo tra 70 e 66 è",
+          "target": " 70"
+        },
+        {
+          "context": "Il massimo tra 71 e 67 è",
+          "target": " 71"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 80 e 60 è",
+          "target": " 80"
+        },
+        {
+          "context": "Il massimo tra 81 e 61 è",
+          "target": " 81"
+        },
+        {
+          "context": "Il massimo tra 82 e 62 è",
+          "target": " 82"
+        },
+        {
+          "context": "Il massimo tra 83 e 63 è",
+          "target": " 83"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 5 e 13 è",
+          "target": " 5"
+        },
+        {
+          "context": "Il minimo tra 6 e 14 è",
+          "target": " 6"
+        },
+        {
+          "context": "Il minimo tra 7 e 15 è",
+          "target": " 7"
+        },
+        {
+          "context": "Il minimo tra 8 e 16 è",
+          "target": " 8"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 12 e 25 è",
+          "target": " 12"
+        },
+        {
+          "context": "Il minimo tra 13 e 26 è",
+          "target": " 13"
+        },
+        {
+          "context": "Il minimo tra 14 e 27 è",
+          "target": " 14"
+        },
+        {
+          "context": "Il minimo tra 15 e 28 è",
+          "target": " 15"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 20 e 8 è",
+          "target": " 20"
+        },
+        {
+          "context": "Il massimo tra 21 e 9 è",
+          "target": " 21"
+        },
+        {
+          "context": "Il massimo tra 22 e 10 è",
+          "target": " 22"
+        },
+        {
+          "context": "Il massimo tra 23 e 11 è",
+          "target": " 23"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 86 e 89 è",
+          "target": " 89"
+        },
+        {
+          "context": "Il massimo tra 87 e 90 è",
+          "target": " 90"
+        },
+        {
+          "context": "Il massimo tra 88 e 91 è",
+          "target": " 91"
+        },
+        {
+          "context": "Il massimo tra 89 e 92 è",
+          "target": " 92"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 59 e 72 è",
+          "target": " 59"
+        },
+        {
+          "context": "Il minimo tra 60 e 73 è",
+          "target": " 60"
+        },
+        {
+          "context": "Il minimo tra 61 e 74 è",
+          "target": " 61"
+        },
+        {
+          "context": "Il minimo tra 62 e 75 è",
+          "target": " 62"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 31 e 34 è",
+          "target": " 34"
+        },
+        {
+          "context": "Il massimo tra 32 e 35 è",
+          "target": " 35"
+        },
+        {
+          "context": "Il massimo tra 33 e 36 è",
+          "target": " 36"
+        },
+        {
+          "context": "Il massimo tra 34 e 37 è",
+          "target": " 37"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 38 e 33 è",
+          "target": " 33"
+        },
+        {
+          "context": "Il minimo tra 39 e 34 è",
+          "target": " 34"
+        },
+        {
+          "context": "Il minimo tra 40 e 35 è",
+          "target": " 35"
+        },
+        {
+          "context": "Il minimo tra 41 e 36 è",
+          "target": " 36"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 74 e 61 è",
+          "target": " 74"
+        },
+        {
+          "context": "Il massimo tra 75 e 62 è",
+          "target": " 75"
+        },
+        {
+          "context": "Il massimo tra 76 e 63 è",
+          "target": " 76"
+        },
+        {
+          "context": "Il massimo tra 77 e 64 è",
+          "target": " 77"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 81 e 65 è",
+          "target": " 65"
+        },
+        {
+          "context": "Il minimo tra 82 e 66 è",
+          "target": " 66"
+        },
+        {
+          "context": "Il minimo tra 83 e 67 è",
+          "target": " 67"
+        },
+        {
+          "context": "Il minimo tra 84 e 68 è",
+          "target": " 68"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 19 e 25 è",
+          "target": " 19"
+        },
+        {
+          "context": "Il minimo tra 20 e 26 è",
+          "target": " 20"
+        },
+        {
+          "context": "Il minimo tra 21 e 27 è",
+          "target": " 21"
+        },
+        {
+          "context": "Il minimo tra 22 e 28 è",
+          "target": " 22"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 48 e 28 è",
+          "target": " 48"
+        },
+        {
+          "context": "Il massimo tra 49 e 29 è",
+          "target": " 49"
+        },
+        {
+          "context": "Il massimo tra 50 e 30 è",
+          "target": " 50"
+        },
+        {
+          "context": "Il massimo tra 51 e 31 è",
+          "target": " 51"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 87 e 91 è",
+          "target": " 87"
+        },
+        {
+          "context": "Il minimo tra 88 e 92 è",
+          "target": " 88"
+        },
+        {
+          "context": "Il minimo tra 89 e 93 è",
+          "target": " 89"
+        },
+        {
+          "context": "Il minimo tra 90 e 94 è",
+          "target": " 90"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 51 e 37 è",
+          "target": " 37"
+        },
+        {
+          "context": "Il minimo tra 52 e 38 è",
+          "target": " 38"
+        },
+        {
+          "context": "Il minimo tra 53 e 39 è",
+          "target": " 39"
+        },
+        {
+          "context": "Il minimo tra 54 e 40 è",
+          "target": " 40"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 64 e 81 è",
+          "target": " 81"
+        },
+        {
+          "context": "Il massimo tra 65 e 82 è",
+          "target": " 82"
+        },
+        {
+          "context": "Il massimo tra 66 e 83 è",
+          "target": " 83"
+        },
+        {
+          "context": "Il massimo tra 67 e 84 è",
+          "target": " 84"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 91 e 97 è",
+          "target": " 97"
+        },
+        {
+          "context": "Il massimo tra 92 e 98 è",
+          "target": " 98"
+        },
+        {
+          "context": "Il massimo tra 93 e 99 è",
+          "target": " 99"
+        },
+        {
+          "context": "Il massimo tra 94 e 100 è",
+          "target": " 100"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 15 e 7 è",
+          "target": " 7"
+        },
+        {
+          "context": "Il minimo tra 16 e 8 è",
+          "target": " 8"
+        },
+        {
+          "context": "Il minimo tra 17 e 9 è",
+          "target": " 9"
+        },
+        {
+          "context": "Il minimo tra 18 e 10 è",
+          "target": " 10"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 70 e 64 è",
+          "target": " 70"
+        },
+        {
+          "context": "Il massimo tra 71 e 65 è",
+          "target": " 71"
+        },
+        {
+          "context": "Il massimo tra 72 e 66 è",
+          "target": " 72"
+        },
+        {
+          "context": "Il massimo tra 73 e 67 è",
+          "target": " 73"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 69 e 76 è",
+          "target": " 69"
+        },
+        {
+          "context": "Il minimo tra 70 e 77 è",
+          "target": " 70"
+        },
+        {
+          "context": "Il minimo tra 71 e 78 è",
+          "target": " 71"
+        },
+        {
+          "context": "Il minimo tra 72 e 79 è",
+          "target": " 72"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 56 e 39 è",
+          "target": " 56"
+        },
+        {
+          "context": "Il massimo tra 57 e 40 è",
+          "target": " 57"
+        },
+        {
+          "context": "Il massimo tra 58 e 41 è",
+          "target": " 58"
+        },
+        {
+          "context": "Il massimo tra 59 e 42 è",
+          "target": " 59"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 28 e 31 è",
+          "target": " 28"
+        },
+        {
+          "context": "Il minimo tra 29 e 32 è",
+          "target": " 29"
+        },
+        {
+          "context": "Il minimo tra 30 e 33 è",
+          "target": " 30"
+        },
+        {
+          "context": "Il minimo tra 31 e 34 è",
+          "target": " 31"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 83 e 75 è",
+          "target": " 75"
+        },
+        {
+          "context": "Il minimo tra 84 e 76 è",
+          "target": " 76"
+        },
+        {
+          "context": "Il minimo tra 85 e 77 è",
+          "target": " 77"
+        },
+        {
+          "context": "Il minimo tra 86 e 78 è",
+          "target": " 78"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 32 e 29 è",
+          "target": " 29"
+        },
+        {
+          "context": "Il minimo tra 33 e 30 è",
+          "target": " 30"
+        },
+        {
+          "context": "Il minimo tra 34 e 31 è",
+          "target": " 31"
+        },
+        {
+          "context": "Il minimo tra 35 e 32 è",
+          "target": " 32"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 65 e 73 è",
+          "target": " 65"
+        },
+        {
+          "context": "Il minimo tra 66 e 74 è",
+          "target": " 66"
+        },
+        {
+          "context": "Il minimo tra 67 e 75 è",
+          "target": " 67"
+        },
+        {
+          "context": "Il minimo tra 68 e 76 è",
+          "target": " 68"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 69 e 74 è",
+          "target": " 69"
+        },
+        {
+          "context": "Il minimo tra 70 e 75 è",
+          "target": " 70"
+        },
+        {
+          "context": "Il minimo tra 71 e 76 è",
+          "target": " 71"
+        },
+        {
+          "context": "Il minimo tra 72 e 77 è",
+          "target": " 72"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 45 e 52 è",
+          "target": " 52"
+        },
+        {
+          "context": "Il massimo tra 46 e 53 è",
+          "target": " 53"
+        },
+        {
+          "context": "Il massimo tra 47 e 54 è",
+          "target": " 54"
+        },
+        {
+          "context": "Il massimo tra 48 e 55 è",
+          "target": " 55"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 45 e 31 è",
+          "target": " 45"
+        },
+        {
+          "context": "Il massimo tra 46 e 32 è",
+          "target": " 46"
+        },
+        {
+          "context": "Il massimo tra 47 e 33 è",
+          "target": " 47"
+        },
+        {
+          "context": "Il massimo tra 48 e 34 è",
+          "target": " 48"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 90 e 86 è",
+          "target": " 86"
+        },
+        {
+          "context": "Il minimo tra 91 e 87 è",
+          "target": " 87"
+        },
+        {
+          "context": "Il minimo tra 92 e 88 è",
+          "target": " 88"
+        },
+        {
+          "context": "Il minimo tra 93 e 89 è",
+          "target": " 89"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 5 e 13 è",
+          "target": " 13"
+        },
+        {
+          "context": "Il massimo tra 6 e 14 è",
+          "target": " 14"
+        },
+        {
+          "context": "Il massimo tra 7 e 15 è",
+          "target": " 15"
+        },
+        {
+          "context": "Il massimo tra 8 e 16 è",
+          "target": " 16"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 3 e 17 è",
+          "target": " 17"
+        },
+        {
+          "context": "Il massimo tra 4 e 18 è",
+          "target": " 18"
+        },
+        {
+          "context": "Il massimo tra 5 e 19 è",
+          "target": " 19"
+        },
+        {
+          "context": "Il massimo tra 6 e 20 è",
+          "target": " 20"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 31 e 28 è",
+          "target": " 31"
+        },
+        {
+          "context": "Il massimo tra 32 e 29 è",
+          "target": " 32"
+        },
+        {
+          "context": "Il massimo tra 33 e 30 è",
+          "target": " 33"
+        },
+        {
+          "context": "Il massimo tra 34 e 31 è",
+          "target": " 34"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 21 e 35 è",
+          "target": " 21"
+        },
+        {
+          "context": "Il minimo tra 22 e 36 è",
+          "target": " 22"
+        },
+        {
+          "context": "Il minimo tra 23 e 37 è",
+          "target": " 23"
+        },
+        {
+          "context": "Il minimo tra 24 e 38 è",
+          "target": " 24"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 53 e 51 è",
+          "target": " 51"
+        },
+        {
+          "context": "Il minimo tra 54 e 52 è",
+          "target": " 52"
+        },
+        {
+          "context": "Il minimo tra 55 e 53 è",
+          "target": " 53"
+        },
+        {
+          "context": "Il minimo tra 56 e 54 è",
+          "target": " 54"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 49 e 58 è",
+          "target": " 49"
+        },
+        {
+          "context": "Il minimo tra 50 e 59 è",
+          "target": " 50"
+        },
+        {
+          "context": "Il minimo tra 51 e 60 è",
+          "target": " 51"
+        },
+        {
+          "context": "Il minimo tra 52 e 61 è",
+          "target": " 52"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 89 e 71 è",
+          "target": " 89"
+        },
+        {
+          "context": "Il massimo tra 90 e 72 è",
+          "target": " 90"
+        },
+        {
+          "context": "Il massimo tra 91 e 73 è",
+          "target": " 91"
+        },
+        {
+          "context": "Il massimo tra 92 e 74 è",
+          "target": " 92"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 44 e 37 è",
+          "target": " 37"
+        },
+        {
+          "context": "Il minimo tra 45 e 38 è",
+          "target": " 38"
+        },
+        {
+          "context": "Il minimo tra 46 e 39 è",
+          "target": " 39"
+        },
+        {
+          "context": "Il minimo tra 47 e 40 è",
+          "target": " 40"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 7 e 5 è",
+          "target": " 7"
+        },
+        {
+          "context": "Il massimo tra 8 e 6 è",
+          "target": " 8"
+        },
+        {
+          "context": "Il massimo tra 9 e 7 è",
+          "target": " 9"
+        },
+        {
+          "context": "Il massimo tra 10 e 8 è",
+          "target": " 10"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 68 e 65 è",
+          "target": " 65"
+        },
+        {
+          "context": "Il minimo tra 69 e 66 è",
+          "target": " 66"
+        },
+        {
+          "context": "Il minimo tra 70 e 67 è",
+          "target": " 67"
+        },
+        {
+          "context": "Il minimo tra 71 e 68 è",
+          "target": " 68"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 86 e 94 è",
+          "target": " 86"
+        },
+        {
+          "context": "Il minimo tra 87 e 95 è",
+          "target": " 87"
+        },
+        {
+          "context": "Il minimo tra 88 e 96 è",
+          "target": " 88"
+        },
+        {
+          "context": "Il minimo tra 89 e 97 è",
+          "target": " 89"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 94 e 74 è",
+          "target": " 74"
+        },
+        {
+          "context": "Il minimo tra 95 e 75 è",
+          "target": " 75"
+        },
+        {
+          "context": "Il minimo tra 96 e 76 è",
+          "target": " 76"
+        },
+        {
+          "context": "Il minimo tra 97 e 77 è",
+          "target": " 77"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 84 e 65 è",
+          "target": " 84"
+        },
+        {
+          "context": "Il massimo tra 85 e 66 è",
+          "target": " 85"
+        },
+        {
+          "context": "Il massimo tra 86 e 67 è",
+          "target": " 86"
+        },
+        {
+          "context": "Il massimo tra 87 e 68 è",
+          "target": " 87"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 96 e 85 è",
+          "target": " 85"
+        },
+        {
+          "context": "Il minimo tra 97 e 86 è",
+          "target": " 86"
+        },
+        {
+          "context": "Il minimo tra 98 e 87 è",
+          "target": " 87"
+        },
+        {
+          "context": "Il minimo tra 99 e 88 è",
+          "target": " 88"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 16 e 6 è",
+          "target": " 16"
+        },
+        {
+          "context": "Il massimo tra 17 e 7 è",
+          "target": " 17"
+        },
+        {
+          "context": "Il massimo tra 18 e 8 è",
+          "target": " 18"
+        },
+        {
+          "context": "Il massimo tra 19 e 9 è",
+          "target": " 19"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 16 e 1 è",
+          "target": " 1"
+        },
+        {
+          "context": "Il minimo tra 17 e 2 è",
+          "target": " 2"
+        },
+        {
+          "context": "Il minimo tra 18 e 3 è",
+          "target": " 3"
+        },
+        {
+          "context": "Il minimo tra 19 e 4 è",
+          "target": " 4"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 73 e 64 è",
+          "target": " 64"
+        },
+        {
+          "context": "Il minimo tra 74 e 65 è",
+          "target": " 65"
+        },
+        {
+          "context": "Il minimo tra 75 e 66 è",
+          "target": " 66"
+        },
+        {
+          "context": "Il minimo tra 76 e 67 è",
+          "target": " 67"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 31 e 43 è",
+          "target": " 31"
+        },
+        {
+          "context": "Il minimo tra 32 e 44 è",
+          "target": " 32"
+        },
+        {
+          "context": "Il minimo tra 33 e 45 è",
+          "target": " 33"
+        },
+        {
+          "context": "Il minimo tra 34 e 46 è",
+          "target": " 34"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 59 e 69 è",
+          "target": " 69"
+        },
+        {
+          "context": "Il massimo tra 60 e 70 è",
+          "target": " 70"
+        },
+        {
+          "context": "Il massimo tra 61 e 71 è",
+          "target": " 71"
+        },
+        {
+          "context": "Il massimo tra 62 e 72 è",
+          "target": " 72"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 26 e 17 è",
+          "target": " 17"
+        },
+        {
+          "context": "Il minimo tra 27 e 18 è",
+          "target": " 18"
+        },
+        {
+          "context": "Il minimo tra 28 e 19 è",
+          "target": " 19"
+        },
+        {
+          "context": "Il minimo tra 29 e 20 è",
+          "target": " 20"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 44 e 34 è",
+          "target": " 34"
+        },
+        {
+          "context": "Il minimo tra 45 e 35 è",
+          "target": " 35"
+        },
+        {
+          "context": "Il minimo tra 46 e 36 è",
+          "target": " 36"
+        },
+        {
+          "context": "Il minimo tra 47 e 37 è",
+          "target": " 37"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 87 e 96 è",
+          "target": " 87"
+        },
+        {
+          "context": "Il minimo tra 88 e 97 è",
+          "target": " 88"
+        },
+        {
+          "context": "Il minimo tra 89 e 98 è",
+          "target": " 89"
+        },
+        {
+          "context": "Il minimo tra 90 e 99 è",
+          "target": " 90"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 11 e 25 è",
+          "target": " 11"
+        },
+        {
+          "context": "Il minimo tra 12 e 26 è",
+          "target": " 12"
+        },
+        {
+          "context": "Il minimo tra 13 e 27 è",
+          "target": " 13"
+        },
+        {
+          "context": "Il minimo tra 14 e 28 è",
+          "target": " 14"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 42 e 47 è",
+          "target": " 42"
+        },
+        {
+          "context": "Il minimo tra 43 e 48 è",
+          "target": " 43"
+        },
+        {
+          "context": "Il minimo tra 44 e 49 è",
+          "target": " 44"
+        },
+        {
+          "context": "Il minimo tra 45 e 50 è",
+          "target": " 45"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 56 e 70 è",
+          "target": " 70"
+        },
+        {
+          "context": "Il massimo tra 57 e 71 è",
+          "target": " 71"
+        },
+        {
+          "context": "Il massimo tra 58 e 72 è",
+          "target": " 72"
+        },
+        {
+          "context": "Il massimo tra 59 e 73 è",
+          "target": " 73"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 93 e 88 è",
+          "target": " 88"
+        },
+        {
+          "context": "Il minimo tra 94 e 89 è",
+          "target": " 89"
+        },
+        {
+          "context": "Il minimo tra 95 e 90 è",
+          "target": " 90"
+        },
+        {
+          "context": "Il minimo tra 96 e 91 è",
+          "target": " 91"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 60 e 55 è",
+          "target": " 55"
+        },
+        {
+          "context": "Il minimo tra 61 e 56 è",
+          "target": " 56"
+        },
+        {
+          "context": "Il minimo tra 62 e 57 è",
+          "target": " 57"
+        },
+        {
+          "context": "Il minimo tra 63 e 58 è",
+          "target": " 58"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 45 e 63 è",
+          "target": " 45"
+        },
+        {
+          "context": "Il minimo tra 46 e 64 è",
+          "target": " 46"
+        },
+        {
+          "context": "Il minimo tra 47 e 65 è",
+          "target": " 47"
+        },
+        {
+          "context": "Il minimo tra 48 e 66 è",
+          "target": " 48"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 20 e 26 è",
+          "target": " 20"
+        },
+        {
+          "context": "Il minimo tra 21 e 27 è",
+          "target": " 21"
+        },
+        {
+          "context": "Il minimo tra 22 e 28 è",
+          "target": " 22"
+        },
+        {
+          "context": "Il minimo tra 23 e 29 è",
+          "target": " 23"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 20 e 16 è",
+          "target": " 20"
+        },
+        {
+          "context": "Il massimo tra 21 e 17 è",
+          "target": " 21"
+        },
+        {
+          "context": "Il massimo tra 22 e 18 è",
+          "target": " 22"
+        },
+        {
+          "context": "Il massimo tra 23 e 19 è",
+          "target": " 23"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 28 e 21 è",
+          "target": " 28"
+        },
+        {
+          "context": "Il massimo tra 29 e 22 è",
+          "target": " 29"
+        },
+        {
+          "context": "Il massimo tra 30 e 23 è",
+          "target": " 30"
+        },
+        {
+          "context": "Il massimo tra 31 e 24 è",
+          "target": " 31"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 21 e 29 è",
+          "target": " 29"
+        },
+        {
+          "context": "Il massimo tra 22 e 30 è",
+          "target": " 30"
+        },
+        {
+          "context": "Il massimo tra 23 e 31 è",
+          "target": " 31"
+        },
+        {
+          "context": "Il massimo tra 24 e 32 è",
+          "target": " 32"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 33 e 42 è",
+          "target": " 42"
+        },
+        {
+          "context": "Il massimo tra 34 e 43 è",
+          "target": " 43"
+        },
+        {
+          "context": "Il massimo tra 35 e 44 è",
+          "target": " 44"
+        },
+        {
+          "context": "Il massimo tra 36 e 45 è",
+          "target": " 45"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 82 e 65 è",
+          "target": " 82"
+        },
+        {
+          "context": "Il massimo tra 83 e 66 è",
+          "target": " 83"
+        },
+        {
+          "context": "Il massimo tra 84 e 67 è",
+          "target": " 84"
+        },
+        {
+          "context": "Il massimo tra 85 e 68 è",
+          "target": " 85"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 23 e 14 è",
+          "target": " 14"
+        },
+        {
+          "context": "Il minimo tra 24 e 15 è",
+          "target": " 15"
+        },
+        {
+          "context": "Il minimo tra 25 e 16 è",
+          "target": " 16"
+        },
+        {
+          "context": "Il minimo tra 26 e 17 è",
+          "target": " 17"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 13 e 33 è",
+          "target": " 13"
+        },
+        {
+          "context": "Il minimo tra 14 e 34 è",
+          "target": " 14"
+        },
+        {
+          "context": "Il minimo tra 15 e 35 è",
+          "target": " 15"
+        },
+        {
+          "context": "Il minimo tra 16 e 36 è",
+          "target": " 16"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 35 e 55 è",
+          "target": " 55"
+        },
+        {
+          "context": "Il massimo tra 36 e 56 è",
+          "target": " 56"
+        },
+        {
+          "context": "Il massimo tra 37 e 57 è",
+          "target": " 57"
+        },
+        {
+          "context": "Il massimo tra 38 e 58 è",
+          "target": " 58"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 32 e 34 è",
+          "target": " 32"
+        },
+        {
+          "context": "Il minimo tra 33 e 35 è",
+          "target": " 33"
+        },
+        {
+          "context": "Il minimo tra 34 e 36 è",
+          "target": " 34"
+        },
+        {
+          "context": "Il minimo tra 35 e 37 è",
+          "target": " 35"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 60 e 46 è",
+          "target": " 46"
+        },
+        {
+          "context": "Il minimo tra 61 e 47 è",
+          "target": " 47"
+        },
+        {
+          "context": "Il minimo tra 62 e 48 è",
+          "target": " 48"
+        },
+        {
+          "context": "Il minimo tra 63 e 49 è",
+          "target": " 49"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 84 e 80 è",
+          "target": " 84"
+        },
+        {
+          "context": "Il massimo tra 85 e 81 è",
+          "target": " 85"
+        },
+        {
+          "context": "Il massimo tra 86 e 82 è",
+          "target": " 86"
+        },
+        {
+          "context": "Il massimo tra 87 e 83 è",
+          "target": " 87"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 41 e 28 è",
+          "target": " 41"
+        },
+        {
+          "context": "Il massimo tra 42 e 29 è",
+          "target": " 42"
+        },
+        {
+          "context": "Il massimo tra 43 e 30 è",
+          "target": " 43"
+        },
+        {
+          "context": "Il massimo tra 44 e 31 è",
+          "target": " 44"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 66 e 53 è",
+          "target": " 53"
+        },
+        {
+          "context": "Il minimo tra 67 e 54 è",
+          "target": " 54"
+        },
+        {
+          "context": "Il minimo tra 68 e 55 è",
+          "target": " 55"
+        },
+        {
+          "context": "Il minimo tra 69 e 56 è",
+          "target": " 56"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 70 e 69 è",
+          "target": " 70"
+        },
+        {
+          "context": "Il massimo tra 71 e 70 è",
+          "target": " 71"
+        },
+        {
+          "context": "Il massimo tra 72 e 71 è",
+          "target": " 72"
+        },
+        {
+          "context": "Il massimo tra 73 e 72 è",
+          "target": " 73"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 55 e 74 è",
+          "target": " 55"
+        },
+        {
+          "context": "Il minimo tra 56 e 75 è",
+          "target": " 56"
+        },
+        {
+          "context": "Il minimo tra 57 e 76 è",
+          "target": " 57"
+        },
+        {
+          "context": "Il minimo tra 58 e 77 è",
+          "target": " 58"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 56 e 49 è",
+          "target": " 56"
+        },
+        {
+          "context": "Il massimo tra 57 e 50 è",
+          "target": " 57"
+        },
+        {
+          "context": "Il massimo tra 58 e 51 è",
+          "target": " 58"
+        },
+        {
+          "context": "Il massimo tra 59 e 52 è",
+          "target": " 59"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 36 e 53 è",
+          "target": " 36"
+        },
+        {
+          "context": "Il minimo tra 37 e 54 è",
+          "target": " 37"
+        },
+        {
+          "context": "Il minimo tra 38 e 55 è",
+          "target": " 38"
+        },
+        {
+          "context": "Il minimo tra 39 e 56 è",
+          "target": " 39"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 96 e 86 è",
+          "target": " 86"
+        },
+        {
+          "context": "Il minimo tra 97 e 87 è",
+          "target": " 87"
+        },
+        {
+          "context": "Il minimo tra 98 e 88 è",
+          "target": " 88"
+        },
+        {
+          "context": "Il minimo tra 99 e 89 è",
+          "target": " 89"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 5 e 3 è",
+          "target": " 3"
+        },
+        {
+          "context": "Il minimo tra 6 e 4 è",
+          "target": " 4"
+        },
+        {
+          "context": "Il minimo tra 7 e 5 è",
+          "target": " 5"
+        },
+        {
+          "context": "Il minimo tra 8 e 6 è",
+          "target": " 6"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 72 e 58 è",
+          "target": " 58"
+        },
+        {
+          "context": "Il minimo tra 73 e 59 è",
+          "target": " 59"
+        },
+        {
+          "context": "Il minimo tra 74 e 60 è",
+          "target": " 60"
+        },
+        {
+          "context": "Il minimo tra 75 e 61 è",
+          "target": " 61"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 43 e 51 è",
+          "target": " 51"
+        },
+        {
+          "context": "Il massimo tra 44 e 52 è",
+          "target": " 52"
+        },
+        {
+          "context": "Il massimo tra 45 e 53 è",
+          "target": " 53"
+        },
+        {
+          "context": "Il massimo tra 46 e 54 è",
+          "target": " 54"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 62 e 54 è",
+          "target": " 54"
+        },
+        {
+          "context": "Il minimo tra 63 e 55 è",
+          "target": " 55"
+        },
+        {
+          "context": "Il minimo tra 64 e 56 è",
+          "target": " 56"
+        },
+        {
+          "context": "Il minimo tra 65 e 57 è",
+          "target": " 57"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 79 e 71 è",
+          "target": " 71"
+        },
+        {
+          "context": "Il minimo tra 80 e 72 è",
+          "target": " 72"
+        },
+        {
+          "context": "Il minimo tra 81 e 73 è",
+          "target": " 73"
+        },
+        {
+          "context": "Il minimo tra 82 e 74 è",
+          "target": " 74"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 59 e 76 è",
+          "target": " 59"
+        },
+        {
+          "context": "Il minimo tra 60 e 77 è",
+          "target": " 60"
+        },
+        {
+          "context": "Il minimo tra 61 e 78 è",
+          "target": " 61"
+        },
+        {
+          "context": "Il minimo tra 62 e 79 è",
+          "target": " 62"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 55 e 70 è",
+          "target": " 70"
+        },
+        {
+          "context": "Il massimo tra 56 e 71 è",
+          "target": " 71"
+        },
+        {
+          "context": "Il massimo tra 57 e 72 è",
+          "target": " 72"
+        },
+        {
+          "context": "Il massimo tra 58 e 73 è",
+          "target": " 73"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 33 e 25 è",
+          "target": " 33"
+        },
+        {
+          "context": "Il massimo tra 34 e 26 è",
+          "target": " 34"
+        },
+        {
+          "context": "Il massimo tra 35 e 27 è",
+          "target": " 35"
+        },
+        {
+          "context": "Il massimo tra 36 e 28 è",
+          "target": " 36"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 50 e 35 è",
+          "target": " 35"
+        },
+        {
+          "context": "Il minimo tra 51 e 36 è",
+          "target": " 36"
+        },
+        {
+          "context": "Il minimo tra 52 e 37 è",
+          "target": " 37"
+        },
+        {
+          "context": "Il minimo tra 53 e 38 è",
+          "target": " 38"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 34 e 45 è",
+          "target": " 34"
+        },
+        {
+          "context": "Il minimo tra 35 e 46 è",
+          "target": " 35"
+        },
+        {
+          "context": "Il minimo tra 36 e 47 è",
+          "target": " 36"
+        },
+        {
+          "context": "Il minimo tra 37 e 48 è",
+          "target": " 37"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 19 e 27 è",
+          "target": " 19"
+        },
+        {
+          "context": "Il minimo tra 20 e 28 è",
+          "target": " 20"
+        },
+        {
+          "context": "Il minimo tra 21 e 29 è",
+          "target": " 21"
+        },
+        {
+          "context": "Il minimo tra 22 e 30 è",
+          "target": " 22"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 8 e 22 è",
+          "target": " 8"
+        },
+        {
+          "context": "Il minimo tra 9 e 23 è",
+          "target": " 9"
+        },
+        {
+          "context": "Il minimo tra 10 e 24 è",
+          "target": " 10"
+        },
+        {
+          "context": "Il minimo tra 11 e 25 è",
+          "target": " 11"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 51 e 53 è",
+          "target": " 53"
+        },
+        {
+          "context": "Il massimo tra 52 e 54 è",
+          "target": " 54"
+        },
+        {
+          "context": "Il massimo tra 53 e 55 è",
+          "target": " 55"
+        },
+        {
+          "context": "Il massimo tra 54 e 56 è",
+          "target": " 56"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il massimo tra 74 e 73 è",
+          "target": " 74"
+        },
+        {
+          "context": "Il massimo tra 75 e 74 è",
+          "target": " 75"
+        },
+        {
+          "context": "Il massimo tra 76 e 75 è",
+          "target": " 76"
+        },
+        {
+          "context": "Il massimo tra 77 e 76 è",
+          "target": " 77"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 45 e 55 è",
+          "target": " 45"
+        },
+        {
+          "context": "Il minimo tra 46 e 56 è",
+          "target": " 46"
+        },
+        {
+          "context": "Il minimo tra 47 e 57 è",
+          "target": " 47"
+        },
+        {
+          "context": "Il minimo tra 48 e 58 è",
+          "target": " 48"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 62 e 70 è",
+          "target": " 62"
+        },
+        {
+          "context": "Il minimo tra 63 e 71 è",
+          "target": " 63"
+        },
+        {
+          "context": "Il minimo tra 64 e 72 è",
+          "target": " 64"
+        },
+        {
+          "context": "Il minimo tra 65 e 73 è",
+          "target": " 65"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 64 e 59 è",
+          "target": " 59"
+        },
+        {
+          "context": "Il minimo tra 65 e 60 è",
+          "target": " 60"
+        },
+        {
+          "context": "Il minimo tra 66 e 61 è",
+          "target": " 61"
+        },
+        {
+          "context": "Il minimo tra 67 e 62 è",
+          "target": " 62"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il minimo tra 24 e 10 è",
+          "target": " 10"
+        },
+        {
+          "context": "Il minimo tra 25 e 11 è",
+          "target": " 11"
+        },
+        {
+          "context": "Il minimo tra 26 e 12 è",
+          "target": " 12"
+        },
+        {
+          "context": "Il minimo tra 27 e 13 è",
+          "target": " 13"
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

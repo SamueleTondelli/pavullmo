@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "id": "count_items_by_property",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "properties": [
+      {
+        "matching": "una pallina rossa",
+        "distractor": "una pallina blu",
+        "question_word": "Quante",
+        "question": "le palline rosse"
+      },
+      {
+        "matching": "un quadrato grande",
+        "distractor": "un quadrato piccolo",
+        "question_word": "Quanti",
+        "question": "i quadrati grandi"
+      },
+      {
+        "matching": "una stella gialla",
+        "distractor": "una stella verde",
+        "question_word": "Quante",
+        "question": "le stelle gialle"
+      },
+      {
+        "matching": "un libro nuovo",
+        "distractor": "un libro vecchio",
+        "question_word": "Quanti",
+        "question": "i libri nuovi"
+      },
+      {
+        "matching": "una scatola aperta",
+        "distractor": "una scatola chiusa",
+        "question_word": "Quante",
+        "question": "le scatole aperte"
+      },
+      {
+        "matching": "un bicchiere pieno",
+        "distractor": "un bicchiere vuoto",
+        "question_word": "Quanti",
+        "question": "i bicchieri pieni"
+      },
+      {
+        "matching": "una chiave metallica",
+        "distractor": "una chiave di plastica",
+        "question_word": "Quante",
+        "question": "le chiavi metalliche"
+      },
+      {
+        "matching": "un foglio bianco",
+        "distractor": "un foglio colorato",
+        "question_word": "Quanti",
+        "question": "i fogli bianchi"
+      }
+    ]
+  },
+
+  "variables": {
+    "property": {
+      "type": "choice",
+      "source": "properties"
+    },
+    "requested_count": {
+      "type": "integer",
+      "min": 1,
+      "max": 5
+    },
+    "total_count": {
+      "type": "constant",
+      "value": 10
+    }
+  },
+
+  "derived": {
+    "distractor_count": {
+      "op": "subtract",
+      "args": ["$total_count", "$requested_count"]
+    },
+    "matching_items": {
+      "op": "repeat",
+      "args": ["$property.matching", "$requested_count"]
+    },
+    "distractor_items": {
+      "op": "repeat",
+      "args": ["$property.distractor", "$distractor_count"]
+    },
+    "items": {
+      "op": "interleave",
+      "args": ["$matching_items", "$distractor_items"]
+    },
+    "count": {
+      "op": "count_equal",
+      "args": ["$items", "$property.matching"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "requested_count",
+        "operation": "offset",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$count"]
+  },
+
+  "templates": [
+    {
+      "context": "Osserva gli elementi: {items|comma_list}. {property.question_word} sono {property.question}?",
+      "target": " {count|it_number}."
+    }
+  ]
+}

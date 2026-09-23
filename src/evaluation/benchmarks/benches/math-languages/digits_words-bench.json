@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "digits_words_conversion",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Il numero 3 scritto in lettere è",
+          "target": " tre."
+        },
+        {
+          "context": "Il numero 4 scritto in lettere è",
+          "target": " quattro."
+        },
+        {
+          "context": "Il numero 5 scritto in lettere è",
+          "target": " cinque."
+        },
+        {
+          "context": "Il numero 6 scritto in lettere è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero trentuno scritto in cifre è",
+          "target": " 31."
+        },
+        {
+          "context": "Il numero trentadue scritto in cifre è",
+          "target": " 32."
+        },
+        {
+          "context": "Il numero trentatré scritto in cifre è",
+          "target": " 33."
+        },
+        {
+          "context": "Il numero trentaquattro scritto in cifre è",
+          "target": " 34."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 17 scritto in lettere è",
+          "target": " diciassette."
+        },
+        {
+          "context": "Il numero 18 scritto in lettere è",
+          "target": " diciotto."
+        },
+        {
+          "context": "Il numero 19 scritto in lettere è",
+          "target": " diciannove."
+        },
+        {
+          "context": "Il numero 20 scritto in lettere è",
+          "target": " venti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 86 scritto in lettere è",
+          "target": " ottantasei."
+        },
+        {
+          "context": "Il numero 87 scritto in lettere è",
+          "target": " ottantasette."
+        },
+        {
+          "context": "Il numero 88 scritto in lettere è",
+          "target": " ottantotto."
+        },
+        {
+          "context": "Il numero 89 scritto in lettere è",
+          "target": " ottantanove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 75 scritto in lettere è",
+          "target": " settantacinque."
+        },
+        {
+          "context": "Il numero 76 scritto in lettere è",
+          "target": " settantasei."
+        },
+        {
+          "context": "Il numero 77 scritto in lettere è",
+          "target": " settantasette."
+        },
+        {
+          "context": "Il numero 78 scritto in lettere è",
+          "target": " settantotto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero quattro scritto in cifre è",
+          "target": " 4."
+        },
+        {
+          "context": "Il numero cinque scritto in cifre è",
+          "target": " 5."
+        },
+        {
+          "context": "Il numero sei scritto in cifre è",
+          "target": " 6."
+        },
+        {
+          "context": "Il numero sette scritto in cifre è",
+          "target": " 7."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 11 scritto in lettere è",
+          "target": " undici."
+        },
+        {
+          "context": "Il numero 12 scritto in lettere è",
+          "target": " dodici."
+        },
+        {
+          "context": "Il numero 13 scritto in lettere è",
+          "target": " tredici."
+        },
+        {
+          "context": "Il numero 14 scritto in lettere è",
+          "target": " quattordici."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 29 scritto in lettere è",
+          "target": " ventinove."
+        },
+        {
+          "context": "Il numero 30 scritto in lettere è",
+          "target": " trenta."
+        },
+        {
+          "context": "Il numero 31 scritto in lettere è",
+          "target": " trentuno."
+        },
+        {
+          "context": "Il numero 32 scritto in lettere è",
+          "target": " trentadue."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 71 scritto in lettere è",
+          "target": " settantuno."
+        },
+        {
+          "context": "Il numero 72 scritto in lettere è",
+          "target": " settantadue."
+        },
+        {
+          "context": "Il numero 73 scritto in lettere è",
+          "target": " settantatré."
+        },
+        {
+          "context": "Il numero 74 scritto in lettere è",
+          "target": " settantaquattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 91 scritto in lettere è",
+          "target": " novantuno."
+        },
+        {
+          "context": "Il numero 92 scritto in lettere è",
+          "target": " novantadue."
+        },
+        {
+          "context": "Il numero 93 scritto in lettere è",
+          "target": " novantatré."
+        },
+        {
+          "context": "Il numero 94 scritto in lettere è",
+          "target": " novantaquattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero ventotto scritto in cifre è",
+          "target": " 28."
+        },
+        {
+          "context": "Il numero ventinove scritto in cifre è",
+          "target": " 29."
+        },
+        {
+          "context": "Il numero trenta scritto in cifre è",
+          "target": " 30."
+        },
+        {
+          "context": "Il numero trentuno scritto in cifre è",
+          "target": " 31."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero settantacinque scritto in cifre è",
+          "target": " 75."
+        },
+        {
+          "context": "Il numero settantasei scritto in cifre è",
+          "target": " 76."
+        },
+        {
+          "context": "Il numero settantasette scritto in cifre è",
+          "target": " 77."
+        },
+        {
+          "context": "Il numero settantotto scritto in cifre è",
+          "target": " 78."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero zero scritto in cifre è",
+          "target": " 0."
+        },
+        {
+          "context": "Il numero uno scritto in cifre è",
+          "target": " 1."
+        },
+        {
+          "context": "Il numero due scritto in cifre è",
+          "target": " 2."
+        },
+        {
+          "context": "Il numero tre scritto in cifre è",
+          "target": " 3."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 89 scritto in lettere è",
+          "target": " ottantanove."
+        },
+        {
+          "context": "Il numero 90 scritto in lettere è",
+          "target": " novanta."
+        },
+        {
+          "context": "Il numero 91 scritto in lettere è",
+          "target": " novantuno."
+        },
+        {
+          "context": "Il numero 92 scritto in lettere è",
+          "target": " novantadue."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero quarantatré scritto in cifre è",
+          "target": " 43."
+        },
+        {
+          "context": "Il numero quarantaquattro scritto in cifre è",
+          "target": " 44."
+        },
+        {
+          "context": "Il numero quarantacinque scritto in cifre è",
+          "target": " 45."
+        },
+        {
+          "context": "Il numero quarantasei scritto in cifre è",
+          "target": " 46."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero diciannove scritto in cifre è",
+          "target": " 19."
+        },
+        {
+          "context": "Il numero venti scritto in cifre è",
+          "target": " 20."
+        },
+        {
+          "context": "Il numero ventuno scritto in cifre è",
+          "target": " 21."
+        },
+        {
+          "context": "Il numero ventidue scritto in cifre è",
+          "target": " 22."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 43 scritto in lettere è",
+          "target": " quarantatré."
+        },
+        {
+          "context": "Il numero 44 scritto in lettere è",
+          "target": " quarantaquattro."
+        },
+        {
+          "context": "Il numero 45 scritto in lettere è",
+          "target": " quarantacinque."
+        },
+        {
+          "context": "Il numero 46 scritto in lettere è",
+          "target": " quarantasei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 11 scritto in lettere è",
+          "target": " undici."
+        },
+        {
+          "context": "Il numero 12 scritto in lettere è",
+          "target": " dodici."
+        },
+        {
+          "context": "Il numero 13 scritto in lettere è",
+          "target": " tredici."
+        },
+        {
+          "context": "Il numero 14 scritto in lettere è",
+          "target": " quattordici."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero dodici scritto in cifre è",
+          "target": " 12."
+        },
+        {
+          "context": "Il numero tredici scritto in cifre è",
+          "target": " 13."
+        },
+        {
+          "context": "Il numero quattordici scritto in cifre è",
+          "target": " 14."
+        },
+        {
+          "context": "Il numero quindici scritto in cifre è",
+          "target": " 15."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero quarantaquattro scritto in cifre è",
+          "target": " 44."
+        },
+        {
+          "context": "Il numero quarantacinque scritto in cifre è",
+          "target": " 45."
+        },
+        {
+          "context": "Il numero quarantasei scritto in cifre è",
+          "target": " 46."
+        },
+        {
+          "context": "Il numero quarantasette scritto in cifre è",
+          "target": " 47."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero cinque scritto in cifre è",
+          "target": " 5."
+        },
+        {
+          "context": "Il numero sei scritto in cifre è",
+          "target": " 6."
+        },
+        {
+          "context": "Il numero sette scritto in cifre è",
+          "target": " 7."
+        },
+        {
+          "context": "Il numero otto scritto in cifre è",
+          "target": " 8."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero sessantotto scritto in cifre è",
+          "target": " 68."
+        },
+        {
+          "context": "Il numero sessantanove scritto in cifre è",
+          "target": " 69."
+        },
+        {
+          "context": "Il numero settanta scritto in cifre è",
+          "target": " 70."
+        },
+        {
+          "context": "Il numero settantuno scritto in cifre è",
+          "target": " 71."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 48 scritto in lettere è",
+          "target": " quarantotto."
+        },
+        {
+          "context": "Il numero 49 scritto in lettere è",
+          "target": " quarantanove."
+        },
+        {
+          "context": "Il numero 50 scritto in lettere è",
+          "target": " cinquanta."
+        },
+        {
+          "context": "Il numero 51 scritto in lettere è",
+          "target": " cinquantuno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 70 scritto in lettere è",
+          "target": " settanta."
+        },
+        {
+          "context": "Il numero 71 scritto in lettere è",
+          "target": " settantuno."
+        },
+        {
+          "context": "Il numero 72 scritto in lettere è",
+          "target": " settantadue."
+        },
+        {
+          "context": "Il numero 73 scritto in lettere è",
+          "target": " settantatré."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero ottanta scritto in cifre è",
+          "target": " 80."
+        },
+        {
+          "context": "Il numero ottantuno scritto in cifre è",
+          "target": " 81."
+        },
+        {
+          "context": "Il numero ottantadue scritto in cifre è",
+          "target": " 82."
+        },
+        {
+          "context": "Il numero ottantatré scritto in cifre è",
+          "target": " 83."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero settantatré scritto in cifre è",
+          "target": " 73."
+        },
+        {
+          "context": "Il numero settantaquattro scritto in cifre è",
+          "target": " 74."
+        },
+        {
+          "context": "Il numero settantacinque scritto in cifre è",
+          "target": " 75."
+        },
+        {
+          "context": "Il numero settantasei scritto in cifre è",
+          "target": " 76."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 90 scritto in lettere è",
+          "target": " novanta."
+        },
+        {
+          "context": "Il numero 91 scritto in lettere è",
+          "target": " novantuno."
+        },
+        {
+          "context": "Il numero 92 scritto in lettere è",
+          "target": " novantadue."
+        },
+        {
+          "context": "Il numero 93 scritto in lettere è",
+          "target": " novantatré."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 5 scritto in lettere è",
+          "target": " cinque."
+        },
+        {
+          "context": "Il numero 6 scritto in lettere è",
+          "target": " sei."
+        },
+        {
+          "context": "Il numero 7 scritto in lettere è",
+          "target": " sette."
+        },
+        {
+          "context": "Il numero 8 scritto in lettere è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 37 scritto in lettere è",
+          "target": " trentasette."
+        },
+        {
+          "context": "Il numero 38 scritto in lettere è",
+          "target": " trentotto."
+        },
+        {
+          "context": "Il numero 39 scritto in lettere è",
+          "target": " trentanove."
+        },
+        {
+          "context": "Il numero 40 scritto in lettere è",
+          "target": " quaranta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 29 scritto in lettere è",
+          "target": " ventinove."
+        },
+        {
+          "context": "Il numero 30 scritto in lettere è",
+          "target": " trenta."
+        },
+        {
+          "context": "Il numero 31 scritto in lettere è",
+          "target": " trentuno."
+        },
+        {
+          "context": "Il numero 32 scritto in lettere è",
+          "target": " trentadue."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 48 scritto in lettere è",
+          "target": " quarantotto."
+        },
+        {
+          "context": "Il numero 49 scritto in lettere è",
+          "target": " quarantanove."
+        },
+        {
+          "context": "Il numero 50 scritto in lettere è",
+          "target": " cinquanta."
+        },
+        {
+          "context": "Il numero 51 scritto in lettere è",
+          "target": " cinquantuno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero cinquantotto scritto in cifre è",
+          "target": " 58."
+        },
+        {
+          "context": "Il numero cinquantanove scritto in cifre è",
+          "target": " 59."
+        },
+        {
+          "context": "Il numero sessanta scritto in cifre è",
+          "target": " 60."
+        },
+        {
+          "context": "Il numero sessantuno scritto in cifre è",
+          "target": " 61."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero venti scritto in cifre è",
+          "target": " 20."
+        },
+        {
+          "context": "Il numero ventuno scritto in cifre è",
+          "target": " 21."
+        },
+        {
+          "context": "Il numero ventidue scritto in cifre è",
+          "target": " 22."
+        },
+        {
+          "context": "Il numero ventitré scritto in cifre è",
+          "target": " 23."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero quarantacinque scritto in cifre è",
+          "target": " 45."
+        },
+        {
+          "context": "Il numero quarantasei scritto in cifre è",
+          "target": " 46."
+        },
+        {
+          "context": "Il numero quarantasette scritto in cifre è",
+          "target": " 47."
+        },
+        {
+          "context": "Il numero quarantotto scritto in cifre è",
+          "target": " 48."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 85 scritto in lettere è",
+          "target": " ottantacinque."
+        },
+        {
+          "context": "Il numero 86 scritto in lettere è",
+          "target": " ottantasei."
+        },
+        {
+          "context": "Il numero 87 scritto in lettere è",
+          "target": " ottantasette."
+        },
+        {
+          "context": "Il numero 88 scritto in lettere è",
+          "target": " ottantotto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero ottantanove scritto in cifre è",
+          "target": " 89."
+        },
+        {
+          "context": "Il numero novanta scritto in cifre è",
+          "target": " 90."
+        },
+        {
+          "context": "Il numero novantuno scritto in cifre è",
+          "target": " 91."
+        },
+        {
+          "context": "Il numero novantadue scritto in cifre è",
+          "target": " 92."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 77 scritto in lettere è",
+          "target": " settantasette."
+        },
+        {
+          "context": "Il numero 78 scritto in lettere è",
+          "target": " settantotto."
+        },
+        {
+          "context": "Il numero 79 scritto in lettere è",
+          "target": " settantanove."
+        },
+        {
+          "context": "Il numero 80 scritto in lettere è",
+          "target": " ottanta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 68 scritto in lettere è",
+          "target": " sessantotto."
+        },
+        {
+          "context": "Il numero 69 scritto in lettere è",
+          "target": " sessantanove."
+        },
+        {
+          "context": "Il numero 70 scritto in lettere è",
+          "target": " settanta."
+        },
+        {
+          "context": "Il numero 71 scritto in lettere è",
+          "target": " settantuno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 20 scritto in lettere è",
+          "target": " venti."
+        },
+        {
+          "context": "Il numero 21 scritto in lettere è",
+          "target": " ventuno."
+        },
+        {
+          "context": "Il numero 22 scritto in lettere è",
+          "target": " ventidue."
+        },
+        {
+          "context": "Il numero 23 scritto in lettere è",
+          "target": " ventitré."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero quarantotto scritto in cifre è",
+          "target": " 48."
+        },
+        {
+          "context": "Il numero quarantanove scritto in cifre è",
+          "target": " 49."
+        },
+        {
+          "context": "Il numero cinquanta scritto in cifre è",
+          "target": " 50."
+        },
+        {
+          "context": "Il numero cinquantuno scritto in cifre è",
+          "target": " 51."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero ottantuno scritto in cifre è",
+          "target": " 81."
+        },
+        {
+          "context": "Il numero ottantadue scritto in cifre è",
+          "target": " 82."
+        },
+        {
+          "context": "Il numero ottantatré scritto in cifre è",
+          "target": " 83."
+        },
+        {
+          "context": "Il numero ottantaquattro scritto in cifre è",
+          "target": " 84."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 87 scritto in lettere è",
+          "target": " ottantasette."
+        },
+        {
+          "context": "Il numero 88 scritto in lettere è",
+          "target": " ottantotto."
+        },
+        {
+          "context": "Il numero 89 scritto in lettere è",
+          "target": " ottantanove."
+        },
+        {
+          "context": "Il numero 90 scritto in lettere è",
+          "target": " novanta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero sette scritto in cifre è",
+          "target": " 7."
+        },
+        {
+          "context": "Il numero otto scritto in cifre è",
+          "target": " 8."
+        },
+        {
+          "context": "Il numero nove scritto in cifre è",
+          "target": " 9."
+        },
+        {
+          "context": "Il numero dieci scritto in cifre è",
+          "target": " 10."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 4 scritto in lettere è",
+          "target": " quattro."
+        },
+        {
+          "context": "Il numero 5 scritto in lettere è",
+          "target": " cinque."
+        },
+        {
+          "context": "Il numero 6 scritto in lettere è",
+          "target": " sei."
+        },
+        {
+          "context": "Il numero 7 scritto in lettere è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero cinquantuno scritto in cifre è",
+          "target": " 51."
+        },
+        {
+          "context": "Il numero cinquantadue scritto in cifre è",
+          "target": " 52."
+        },
+        {
+          "context": "Il numero cinquantatré scritto in cifre è",
+          "target": " 53."
+        },
+        {
+          "context": "Il numero cinquantaquattro scritto in cifre è",
+          "target": " 54."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero otto scritto in cifre è",
+          "target": " 8."
+        },
+        {
+          "context": "Il numero nove scritto in cifre è",
+          "target": " 9."
+        },
+        {
+          "context": "Il numero dieci scritto in cifre è",
+          "target": " 10."
+        },
+        {
+          "context": "Il numero undici scritto in cifre è",
+          "target": " 11."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 72 scritto in lettere è",
+          "target": " settantadue."
+        },
+        {
+          "context": "Il numero 73 scritto in lettere è",
+          "target": " settantatré."
+        },
+        {
+          "context": "Il numero 74 scritto in lettere è",
+          "target": " settantaquattro."
+        },
+        {
+          "context": "Il numero 75 scritto in lettere è",
+          "target": " settantacinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero ventisette scritto in cifre è",
+          "target": " 27."
+        },
+        {
+          "context": "Il numero ventotto scritto in cifre è",
+          "target": " 28."
+        },
+        {
+          "context": "Il numero ventinove scritto in cifre è",
+          "target": " 29."
+        },
+        {
+          "context": "Il numero trenta scritto in cifre è",
+          "target": " 30."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero cinquanta scritto in cifre è",
+          "target": " 50."
+        },
+        {
+          "context": "Il numero cinquantuno scritto in cifre è",
+          "target": " 51."
+        },
+        {
+          "context": "Il numero cinquantadue scritto in cifre è",
+          "target": " 52."
+        },
+        {
+          "context": "Il numero cinquantatré scritto in cifre è",
+          "target": " 53."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero diciotto scritto in cifre è",
+          "target": " 18."
+        },
+        {
+          "context": "Il numero diciannove scritto in cifre è",
+          "target": " 19."
+        },
+        {
+          "context": "Il numero venti scritto in cifre è",
+          "target": " 20."
+        },
+        {
+          "context": "Il numero ventuno scritto in cifre è",
+          "target": " 21."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero diciassette scritto in cifre è",
+          "target": " 17."
+        },
+        {
+          "context": "Il numero diciotto scritto in cifre è",
+          "target": " 18."
+        },
+        {
+          "context": "Il numero diciannove scritto in cifre è",
+          "target": " 19."
+        },
+        {
+          "context": "Il numero venti scritto in cifre è",
+          "target": " 20."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 95 scritto in lettere è",
+          "target": " novantacinque."
+        },
+        {
+          "context": "Il numero 96 scritto in lettere è",
+          "target": " novantasei."
+        },
+        {
+          "context": "Il numero 97 scritto in lettere è",
+          "target": " novantasette."
+        },
+        {
+          "context": "Il numero 98 scritto in lettere è",
+          "target": " novantotto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero novantacinque scritto in cifre è",
+          "target": " 95."
+        },
+        {
+          "context": "Il numero novantasei scritto in cifre è",
+          "target": " 96."
+        },
+        {
+          "context": "Il numero novantasette scritto in cifre è",
+          "target": " 97."
+        },
+        {
+          "context": "Il numero novantotto scritto in cifre è",
+          "target": " 98."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero settantaquattro scritto in cifre è",
+          "target": " 74."
+        },
+        {
+          "context": "Il numero settantacinque scritto in cifre è",
+          "target": " 75."
+        },
+        {
+          "context": "Il numero settantasei scritto in cifre è",
+          "target": " 76."
+        },
+        {
+          "context": "Il numero settantasette scritto in cifre è",
+          "target": " 77."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero quarantasei scritto in cifre è",
+          "target": " 46."
+        },
+        {
+          "context": "Il numero quarantasette scritto in cifre è",
+          "target": " 47."
+        },
+        {
+          "context": "Il numero quarantotto scritto in cifre è",
+          "target": " 48."
+        },
+        {
+          "context": "Il numero quarantanove scritto in cifre è",
+          "target": " 49."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 17 scritto in lettere è",
+          "target": " diciassette."
+        },
+        {
+          "context": "Il numero 18 scritto in lettere è",
+          "target": " diciotto."
+        },
+        {
+          "context": "Il numero 19 scritto in lettere è",
+          "target": " diciannove."
+        },
+        {
+          "context": "Il numero 20 scritto in lettere è",
+          "target": " venti."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero undici scritto in cifre è",
+          "target": " 11."
+        },
+        {
+          "context": "Il numero dodici scritto in cifre è",
+          "target": " 12."
+        },
+        {
+          "context": "Il numero tredici scritto in cifre è",
+          "target": " 13."
+        },
+        {
+          "context": "Il numero quattordici scritto in cifre è",
+          "target": " 14."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 14 scritto in lettere è",
+          "target": " quattordici."
+        },
+        {
+          "context": "Il numero 15 scritto in lettere è",
+          "target": " quindici."
+        },
+        {
+          "context": "Il numero 16 scritto in lettere è",
+          "target": " sedici."
+        },
+        {
+          "context": "Il numero 17 scritto in lettere è",
+          "target": " diciassette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 80 scritto in lettere è",
+          "target": " ottanta."
+        },
+        {
+          "context": "Il numero 81 scritto in lettere è",
+          "target": " ottantuno."
+        },
+        {
+          "context": "Il numero 82 scritto in lettere è",
+          "target": " ottantadue."
+        },
+        {
+          "context": "Il numero 83 scritto in lettere è",
+          "target": " ottantatré."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 87 scritto in lettere è",
+          "target": " ottantasette."
+        },
+        {
+          "context": "Il numero 88 scritto in lettere è",
+          "target": " ottantotto."
+        },
+        {
+          "context": "Il numero 89 scritto in lettere è",
+          "target": " ottantanove."
+        },
+        {
+          "context": "Il numero 90 scritto in lettere è",
+          "target": " novanta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero settantasei scritto in cifre è",
+          "target": " 76."
+        },
+        {
+          "context": "Il numero settantasette scritto in cifre è",
+          "target": " 77."
+        },
+        {
+          "context": "Il numero settantotto scritto in cifre è",
+          "target": " 78."
+        },
+        {
+          "context": "Il numero settantanove scritto in cifre è",
+          "target": " 79."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 49 scritto in lettere è",
+          "target": " quarantanove."
+        },
+        {
+          "context": "Il numero 50 scritto in lettere è",
+          "target": " cinquanta."
+        },
+        {
+          "context": "Il numero 51 scritto in lettere è",
+          "target": " cinquantuno."
+        },
+        {
+          "context": "Il numero 52 scritto in lettere è",
+          "target": " cinquantadue."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero settantasei scritto in cifre è",
+          "target": " 76."
+        },
+        {
+          "context": "Il numero settantasette scritto in cifre è",
+          "target": " 77."
+        },
+        {
+          "context": "Il numero settantotto scritto in cifre è",
+          "target": " 78."
+        },
+        {
+          "context": "Il numero settantanove scritto in cifre è",
+          "target": " 79."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero sessantasette scritto in cifre è",
+          "target": " 67."
+        },
+        {
+          "context": "Il numero sessantotto scritto in cifre è",
+          "target": " 68."
+        },
+        {
+          "context": "Il numero sessantanove scritto in cifre è",
+          "target": " 69."
+        },
+        {
+          "context": "Il numero settanta scritto in cifre è",
+          "target": " 70."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero settanta scritto in cifre è",
+          "target": " 70."
+        },
+        {
+          "context": "Il numero settantuno scritto in cifre è",
+          "target": " 71."
+        },
+        {
+          "context": "Il numero settantadue scritto in cifre è",
+          "target": " 72."
+        },
+        {
+          "context": "Il numero settantatré scritto in cifre è",
+          "target": " 73."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 87 scritto in lettere è",
+          "target": " ottantasette."
+        },
+        {
+          "context": "Il numero 88 scritto in lettere è",
+          "target": " ottantotto."
+        },
+        {
+          "context": "Il numero 89 scritto in lettere è",
+          "target": " ottantanove."
+        },
+        {
+          "context": "Il numero 90 scritto in lettere è",
+          "target": " novanta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 87 scritto in lettere è",
+          "target": " ottantasette."
+        },
+        {
+          "context": "Il numero 88 scritto in lettere è",
+          "target": " ottantotto."
+        },
+        {
+          "context": "Il numero 89 scritto in lettere è",
+          "target": " ottantanove."
+        },
+        {
+          "context": "Il numero 90 scritto in lettere è",
+          "target": " novanta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero ottantadue scritto in cifre è",
+          "target": " 82."
+        },
+        {
+          "context": "Il numero ottantatré scritto in cifre è",
+          "target": " 83."
+        },
+        {
+          "context": "Il numero ottantaquattro scritto in cifre è",
+          "target": " 84."
+        },
+        {
+          "context": "Il numero ottantacinque scritto in cifre è",
+          "target": " 85."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero quattordici scritto in cifre è",
+          "target": " 14."
+        },
+        {
+          "context": "Il numero quindici scritto in cifre è",
+          "target": " 15."
+        },
+        {
+          "context": "Il numero sedici scritto in cifre è",
+          "target": " 16."
+        },
+        {
+          "context": "Il numero diciassette scritto in cifre è",
+          "target": " 17."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero cinquantacinque scritto in cifre è",
+          "target": " 55."
+        },
+        {
+          "context": "Il numero cinquantasei scritto in cifre è",
+          "target": " 56."
+        },
+        {
+          "context": "Il numero cinquantasette scritto in cifre è",
+          "target": " 57."
+        },
+        {
+          "context": "Il numero cinquantotto scritto in cifre è",
+          "target": " 58."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 58 scritto in lettere è",
+          "target": " cinquantotto."
+        },
+        {
+          "context": "Il numero 59 scritto in lettere è",
+          "target": " cinquantanove."
+        },
+        {
+          "context": "Il numero 60 scritto in lettere è",
+          "target": " sessanta."
+        },
+        {
+          "context": "Il numero 61 scritto in lettere è",
+          "target": " sessantuno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 92 scritto in lettere è",
+          "target": " novantadue."
+        },
+        {
+          "context": "Il numero 93 scritto in lettere è",
+          "target": " novantatré."
+        },
+        {
+          "context": "Il numero 94 scritto in lettere è",
+          "target": " novantaquattro."
+        },
+        {
+          "context": "Il numero 95 scritto in lettere è",
+          "target": " novantacinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero sessantaquattro scritto in cifre è",
+          "target": " 64."
+        },
+        {
+          "context": "Il numero sessantacinque scritto in cifre è",
+          "target": " 65."
+        },
+        {
+          "context": "Il numero sessantasei scritto in cifre è",
+          "target": " 66."
+        },
+        {
+          "context": "Il numero sessantasette scritto in cifre è",
+          "target": " 67."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 64 scritto in lettere è",
+          "target": " sessantaquattro."
+        },
+        {
+          "context": "Il numero 65 scritto in lettere è",
+          "target": " sessantacinque."
+        },
+        {
+          "context": "Il numero 66 scritto in lettere è",
+          "target": " sessantasei."
+        },
+        {
+          "context": "Il numero 67 scritto in lettere è",
+          "target": " sessantasette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 80 scritto in lettere è",
+          "target": " ottanta."
+        },
+        {
+          "context": "Il numero 81 scritto in lettere è",
+          "target": " ottantuno."
+        },
+        {
+          "context": "Il numero 82 scritto in lettere è",
+          "target": " ottantadue."
+        },
+        {
+          "context": "Il numero 83 scritto in lettere è",
+          "target": " ottantatré."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero ottantuno scritto in cifre è",
+          "target": " 81."
+        },
+        {
+          "context": "Il numero ottantadue scritto in cifre è",
+          "target": " 82."
+        },
+        {
+          "context": "Il numero ottantatré scritto in cifre è",
+          "target": " 83."
+        },
+        {
+          "context": "Il numero ottantaquattro scritto in cifre è",
+          "target": " 84."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 19 scritto in lettere è",
+          "target": " diciannove."
+        },
+        {
+          "context": "Il numero 20 scritto in lettere è",
+          "target": " venti."
+        },
+        {
+          "context": "Il numero 21 scritto in lettere è",
+          "target": " ventuno."
+        },
+        {
+          "context": "Il numero 22 scritto in lettere è",
+          "target": " ventidue."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero venti scritto in cifre è",
+          "target": " 20."
+        },
+        {
+          "context": "Il numero ventuno scritto in cifre è",
+          "target": " 21."
+        },
+        {
+          "context": "Il numero ventidue scritto in cifre è",
+          "target": " 22."
+        },
+        {
+          "context": "Il numero ventitré scritto in cifre è",
+          "target": " 23."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 76 scritto in lettere è",
+          "target": " settantasei."
+        },
+        {
+          "context": "Il numero 77 scritto in lettere è",
+          "target": " settantasette."
+        },
+        {
+          "context": "Il numero 78 scritto in lettere è",
+          "target": " settantotto."
+        },
+        {
+          "context": "Il numero 79 scritto in lettere è",
+          "target": " settantanove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero sessantadue scritto in cifre è",
+          "target": " 62."
+        },
+        {
+          "context": "Il numero sessantatré scritto in cifre è",
+          "target": " 63."
+        },
+        {
+          "context": "Il numero sessantaquattro scritto in cifre è",
+          "target": " 64."
+        },
+        {
+          "context": "Il numero sessantacinque scritto in cifre è",
+          "target": " 65."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 14 scritto in lettere è",
+          "target": " quattordici."
+        },
+        {
+          "context": "Il numero 15 scritto in lettere è",
+          "target": " quindici."
+        },
+        {
+          "context": "Il numero 16 scritto in lettere è",
+          "target": " sedici."
+        },
+        {
+          "context": "Il numero 17 scritto in lettere è",
+          "target": " diciassette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero trentanove scritto in cifre è",
+          "target": " 39."
+        },
+        {
+          "context": "Il numero quaranta scritto in cifre è",
+          "target": " 40."
+        },
+        {
+          "context": "Il numero quarantuno scritto in cifre è",
+          "target": " 41."
+        },
+        {
+          "context": "Il numero quarantadue scritto in cifre è",
+          "target": " 42."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 7 scritto in lettere è",
+          "target": " sette."
+        },
+        {
+          "context": "Il numero 8 scritto in lettere è",
+          "target": " otto."
+        },
+        {
+          "context": "Il numero 9 scritto in lettere è",
+          "target": " nove."
+        },
+        {
+          "context": "Il numero 10 scritto in lettere è",
+          "target": " dieci."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 72 scritto in lettere è",
+          "target": " settantadue."
+        },
+        {
+          "context": "Il numero 73 scritto in lettere è",
+          "target": " settantatré."
+        },
+        {
+          "context": "Il numero 74 scritto in lettere è",
+          "target": " settantaquattro."
+        },
+        {
+          "context": "Il numero 75 scritto in lettere è",
+          "target": " settantacinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 10 scritto in lettere è",
+          "target": " dieci."
+        },
+        {
+          "context": "Il numero 11 scritto in lettere è",
+          "target": " undici."
+        },
+        {
+          "context": "Il numero 12 scritto in lettere è",
+          "target": " dodici."
+        },
+        {
+          "context": "Il numero 13 scritto in lettere è",
+          "target": " tredici."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero otto scritto in cifre è",
+          "target": " 8."
+        },
+        {
+          "context": "Il numero nove scritto in cifre è",
+          "target": " 9."
+        },
+        {
+          "context": "Il numero dieci scritto in cifre è",
+          "target": " 10."
+        },
+        {
+          "context": "Il numero undici scritto in cifre è",
+          "target": " 11."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 16 scritto in lettere è",
+          "target": " sedici."
+        },
+        {
+          "context": "Il numero 17 scritto in lettere è",
+          "target": " diciassette."
+        },
+        {
+          "context": "Il numero 18 scritto in lettere è",
+          "target": " diciotto."
+        },
+        {
+          "context": "Il numero 19 scritto in lettere è",
+          "target": " diciannove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero settanta scritto in cifre è",
+          "target": " 70."
+        },
+        {
+          "context": "Il numero settantuno scritto in cifre è",
+          "target": " 71."
+        },
+        {
+          "context": "Il numero settantadue scritto in cifre è",
+          "target": " 72."
+        },
+        {
+          "context": "Il numero settantatré scritto in cifre è",
+          "target": " 73."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 33 scritto in lettere è",
+          "target": " trentatré."
+        },
+        {
+          "context": "Il numero 34 scritto in lettere è",
+          "target": " trentaquattro."
+        },
+        {
+          "context": "Il numero 35 scritto in lettere è",
+          "target": " trentacinque."
+        },
+        {
+          "context": "Il numero 36 scritto in lettere è",
+          "target": " trentasei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero ventisette scritto in cifre è",
+          "target": " 27."
+        },
+        {
+          "context": "Il numero ventotto scritto in cifre è",
+          "target": " 28."
+        },
+        {
+          "context": "Il numero ventinove scritto in cifre è",
+          "target": " 29."
+        },
+        {
+          "context": "Il numero trenta scritto in cifre è",
+          "target": " 30."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 91 scritto in lettere è",
+          "target": " novantuno."
+        },
+        {
+          "context": "Il numero 92 scritto in lettere è",
+          "target": " novantadue."
+        },
+        {
+          "context": "Il numero 93 scritto in lettere è",
+          "target": " novantatré."
+        },
+        {
+          "context": "Il numero 94 scritto in lettere è",
+          "target": " novantaquattro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero cinquantuno scritto in cifre è",
+          "target": " 51."
+        },
+        {
+          "context": "Il numero cinquantadue scritto in cifre è",
+          "target": " 52."
+        },
+        {
+          "context": "Il numero cinquantatré scritto in cifre è",
+          "target": " 53."
+        },
+        {
+          "context": "Il numero cinquantaquattro scritto in cifre è",
+          "target": " 54."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero cinquantasei scritto in cifre è",
+          "target": " 56."
+        },
+        {
+          "context": "Il numero cinquantasette scritto in cifre è",
+          "target": " 57."
+        },
+        {
+          "context": "Il numero cinquantotto scritto in cifre è",
+          "target": " 58."
+        },
+        {
+          "context": "Il numero cinquantanove scritto in cifre è",
+          "target": " 59."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero quindici scritto in cifre è",
+          "target": " 15."
+        },
+        {
+          "context": "Il numero sedici scritto in cifre è",
+          "target": " 16."
+        },
+        {
+          "context": "Il numero diciassette scritto in cifre è",
+          "target": " 17."
+        },
+        {
+          "context": "Il numero diciotto scritto in cifre è",
+          "target": " 18."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 28 scritto in lettere è",
+          "target": " ventotto."
+        },
+        {
+          "context": "Il numero 29 scritto in lettere è",
+          "target": " ventinove."
+        },
+        {
+          "context": "Il numero 30 scritto in lettere è",
+          "target": " trenta."
+        },
+        {
+          "context": "Il numero 31 scritto in lettere è",
+          "target": " trentuno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 43 scritto in lettere è",
+          "target": " quarantatré."
+        },
+        {
+          "context": "Il numero 44 scritto in lettere è",
+          "target": " quarantaquattro."
+        },
+        {
+          "context": "Il numero 45 scritto in lettere è",
+          "target": " quarantacinque."
+        },
+        {
+          "context": "Il numero 46 scritto in lettere è",
+          "target": " quarantasei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 75 scritto in lettere è",
+          "target": " settantacinque."
+        },
+        {
+          "context": "Il numero 76 scritto in lettere è",
+          "target": " settantasei."
+        },
+        {
+          "context": "Il numero 77 scritto in lettere è",
+          "target": " settantasette."
+        },
+        {
+          "context": "Il numero 78 scritto in lettere è",
+          "target": " settantotto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 75 scritto in lettere è",
+          "target": " settantacinque."
+        },
+        {
+          "context": "Il numero 76 scritto in lettere è",
+          "target": " settantasei."
+        },
+        {
+          "context": "Il numero 77 scritto in lettere è",
+          "target": " settantasette."
+        },
+        {
+          "context": "Il numero 78 scritto in lettere è",
+          "target": " settantotto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 0 scritto in lettere è",
+          "target": " zero."
+        },
+        {
+          "context": "Il numero 1 scritto in lettere è",
+          "target": " uno."
+        },
+        {
+          "context": "Il numero 2 scritto in lettere è",
+          "target": " due."
+        },
+        {
+          "context": "Il numero 3 scritto in lettere è",
+          "target": " tre."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 90 scritto in lettere è",
+          "target": " novanta."
+        },
+        {
+          "context": "Il numero 91 scritto in lettere è",
+          "target": " novantuno."
+        },
+        {
+          "context": "Il numero 92 scritto in lettere è",
+          "target": " novantadue."
+        },
+        {
+          "context": "Il numero 93 scritto in lettere è",
+          "target": " novantatré."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

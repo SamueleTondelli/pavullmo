@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "icl_person_profiles",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Luca è avvocato e vive a Pisa, Giorgio è cuoco e vive a Bologna, Andrea è architetto e vive a Torino, Emanuele è fotografo e vive a Genova. Secondo le informazioni fornite, Luca è",
+          "target": " avvocato e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è avvocato e vive a Pisa, Giorgio è cuoco e vive a Bologna, Andrea è architetto e vive a Torino, Emanuele è fotografo e vive a Genova. Secondo le informazioni fornite, Giorgio è",
+          "target": " cuoco e vive a Bologna."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è avvocato e vive a Pisa, Giorgio è cuoco e vive a Bologna, Andrea è architetto e vive a Torino, Emanuele è fotografo e vive a Genova. Secondo le informazioni fornite, Andrea è",
+          "target": " architetto e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è avvocato e vive a Pisa, Giorgio è cuoco e vive a Bologna, Andrea è architetto e vive a Torino, Emanuele è fotografo e vive a Genova. Secondo le informazioni fornite, Emanuele è",
+          "target": " fotografo e vive a Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Andrea è veterinario e vive a Siena, Francesco è pittore e vive a Perugia, Luca è musicista e vive a Torino, Fabio è ricercatore e vive a Bari. Secondo le informazioni fornite, Andrea è",
+          "target": " veterinario e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è veterinario e vive a Siena, Francesco è pittore e vive a Perugia, Luca è musicista e vive a Torino, Fabio è ricercatore e vive a Bari. Secondo le informazioni fornite, Francesco è",
+          "target": " pittore e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è veterinario e vive a Siena, Francesco è pittore e vive a Perugia, Luca è musicista e vive a Torino, Fabio è ricercatore e vive a Bari. Secondo le informazioni fornite, Luca è",
+          "target": " musicista e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è veterinario e vive a Siena, Francesco è pittore e vive a Perugia, Luca è musicista e vive a Torino, Fabio è ricercatore e vive a Bari. Secondo le informazioni fornite, Fabio è",
+          "target": " ricercatore e vive a Bari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Alessandro è bibliotecario e vive a Firenze, Giorgio è cuoco e vive a Trieste, Matteo è architetto e vive a Siena, Fabio è farmacista e vive a Perugia. Secondo le informazioni fornite, Alessandro è",
+          "target": " bibliotecario e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è bibliotecario e vive a Firenze, Giorgio è cuoco e vive a Trieste, Matteo è architetto e vive a Siena, Fabio è farmacista e vive a Perugia. Secondo le informazioni fornite, Giorgio è",
+          "target": " cuoco e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è bibliotecario e vive a Firenze, Giorgio è cuoco e vive a Trieste, Matteo è architetto e vive a Siena, Fabio è farmacista e vive a Perugia. Secondo le informazioni fornite, Matteo è",
+          "target": " architetto e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è bibliotecario e vive a Firenze, Giorgio è cuoco e vive a Trieste, Matteo è architetto e vive a Siena, Fabio è farmacista e vive a Perugia. Secondo le informazioni fornite, Fabio è",
+          "target": " farmacista e vive a Perugia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Pietro è architetto e vive a Palermo, Emanuele è fotografo e vive a Genova, Davide è geologo e vive a Bologna, Federico è panettiere e vive a Cagliari. Secondo le informazioni fornite, Pietro è",
+          "target": " architetto e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è architetto e vive a Palermo, Emanuele è fotografo e vive a Genova, Davide è geologo e vive a Bologna, Federico è panettiere e vive a Cagliari. Secondo le informazioni fornite, Emanuele è",
+          "target": " fotografo e vive a Genova."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è architetto e vive a Palermo, Emanuele è fotografo e vive a Genova, Davide è geologo e vive a Bologna, Federico è panettiere e vive a Cagliari. Secondo le informazioni fornite, Davide è",
+          "target": " geologo e vive a Bologna."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è architetto e vive a Palermo, Emanuele è fotografo e vive a Genova, Davide è geologo e vive a Bologna, Federico è panettiere e vive a Cagliari. Secondo le informazioni fornite, Federico è",
+          "target": " panettiere e vive a Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Paolo è ingegnere e vive a Trieste, Andrea è traduttore e vive a Mantova, Davide è geologo e vive a Palermo, Federico è architetto e vive a Perugia. Secondo le informazioni fornite, Paolo è",
+          "target": " ingegnere e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è ingegnere e vive a Trieste, Andrea è traduttore e vive a Mantova, Davide è geologo e vive a Palermo, Federico è architetto e vive a Perugia. Secondo le informazioni fornite, Andrea è",
+          "target": " traduttore e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è ingegnere e vive a Trieste, Andrea è traduttore e vive a Mantova, Davide è geologo e vive a Palermo, Federico è architetto e vive a Perugia. Secondo le informazioni fornite, Davide è",
+          "target": " geologo e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è ingegnere e vive a Trieste, Andrea è traduttore e vive a Mantova, Davide è geologo e vive a Palermo, Federico è architetto e vive a Perugia. Secondo le informazioni fornite, Federico è",
+          "target": " architetto e vive a Perugia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Michele è giornalista e vive a Padova, Simone è traduttore e vive a Cagliari, Emanuele è dentista e vive a Verona, Andrea è avvocato e vive a Bologna. Secondo le informazioni fornite, Michele è",
+          "target": " giornalista e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Michele è giornalista e vive a Padova, Simone è traduttore e vive a Cagliari, Emanuele è dentista e vive a Verona, Andrea è avvocato e vive a Bologna. Secondo le informazioni fornite, Simone è",
+          "target": " traduttore e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Michele è giornalista e vive a Padova, Simone è traduttore e vive a Cagliari, Emanuele è dentista e vive a Verona, Andrea è avvocato e vive a Bologna. Secondo le informazioni fornite, Emanuele è",
+          "target": " dentista e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Michele è giornalista e vive a Padova, Simone è traduttore e vive a Cagliari, Emanuele è dentista e vive a Verona, Andrea è avvocato e vive a Bologna. Secondo le informazioni fornite, Andrea è",
+          "target": " avvocato e vive a Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Marco è architetto e vive a Ravenna, Alessandro è farmacista e vive a Ancona, Federico è bibliotecario e vive a Lecce, Giorgio è cuoco e vive a Napoli. Secondo le informazioni fornite, Marco è",
+          "target": " architetto e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è architetto e vive a Ravenna, Alessandro è farmacista e vive a Ancona, Federico è bibliotecario e vive a Lecce, Giorgio è cuoco e vive a Napoli. Secondo le informazioni fornite, Alessandro è",
+          "target": " farmacista e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è architetto e vive a Ravenna, Alessandro è farmacista e vive a Ancona, Federico è bibliotecario e vive a Lecce, Giorgio è cuoco e vive a Napoli. Secondo le informazioni fornite, Federico è",
+          "target": " bibliotecario e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è architetto e vive a Ravenna, Alessandro è farmacista e vive a Ancona, Federico è bibliotecario e vive a Lecce, Giorgio è cuoco e vive a Napoli. Secondo le informazioni fornite, Giorgio è",
+          "target": " cuoco e vive a Napoli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Matteo è pittore e vive a Napoli, Andrea è dentista e vive a Modena, Emanuele è geologo e vive a Ravenna, Giorgio è cuoco e vive a Genova. Secondo le informazioni fornite, Matteo è",
+          "target": " pittore e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Matteo è pittore e vive a Napoli, Andrea è dentista e vive a Modena, Emanuele è geologo e vive a Ravenna, Giorgio è cuoco e vive a Genova. Secondo le informazioni fornite, Andrea è",
+          "target": " dentista e vive a Modena."
+        },
+        {
+          "context": "Memorizza questi profili: Matteo è pittore e vive a Napoli, Andrea è dentista e vive a Modena, Emanuele è geologo e vive a Ravenna, Giorgio è cuoco e vive a Genova. Secondo le informazioni fornite, Emanuele è",
+          "target": " geologo e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Matteo è pittore e vive a Napoli, Andrea è dentista e vive a Modena, Emanuele è geologo e vive a Ravenna, Giorgio è cuoco e vive a Genova. Secondo le informazioni fornite, Giorgio è",
+          "target": " cuoco e vive a Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Davide è architetto e vive a Lecce, Matteo è dentista e vive a Modena, Simone è panettiere e vive a Perugia, Nicola è fotografo e vive a Torino. Secondo le informazioni fornite, Davide è",
+          "target": " architetto e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è architetto e vive a Lecce, Matteo è dentista e vive a Modena, Simone è panettiere e vive a Perugia, Nicola è fotografo e vive a Torino. Secondo le informazioni fornite, Matteo è",
+          "target": " dentista e vive a Modena."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è architetto e vive a Lecce, Matteo è dentista e vive a Modena, Simone è panettiere e vive a Perugia, Nicola è fotografo e vive a Torino. Secondo le informazioni fornite, Simone è",
+          "target": " panettiere e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è architetto e vive a Lecce, Matteo è dentista e vive a Modena, Simone è panettiere e vive a Perugia, Nicola è fotografo e vive a Torino. Secondo le informazioni fornite, Nicola è",
+          "target": " fotografo e vive a Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Emanuele è fotografo e vive a Torino, Giorgio è pittore e vive a Perugia, Alessandro è giornalista e vive a Modena, Davide è musicista e vive a Bari. Secondo le informazioni fornite, Emanuele è",
+          "target": " fotografo e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Emanuele è fotografo e vive a Torino, Giorgio è pittore e vive a Perugia, Alessandro è giornalista e vive a Modena, Davide è musicista e vive a Bari. Secondo le informazioni fornite, Giorgio è",
+          "target": " pittore e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Emanuele è fotografo e vive a Torino, Giorgio è pittore e vive a Perugia, Alessandro è giornalista e vive a Modena, Davide è musicista e vive a Bari. Secondo le informazioni fornite, Alessandro è",
+          "target": " giornalista e vive a Modena."
+        },
+        {
+          "context": "Memorizza questi profili: Emanuele è fotografo e vive a Torino, Giorgio è pittore e vive a Perugia, Alessandro è giornalista e vive a Modena, Davide è musicista e vive a Bari. Secondo le informazioni fornite, Davide è",
+          "target": " musicista e vive a Bari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Stefano è geologo e vive a Verona, Francesco è giornalista e vive a Ravenna, Fabio è medico e vive a Torino, Matteo è fotografo e vive a Firenze. Secondo le informazioni fornite, Stefano è",
+          "target": " geologo e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è geologo e vive a Verona, Francesco è giornalista e vive a Ravenna, Fabio è medico e vive a Torino, Matteo è fotografo e vive a Firenze. Secondo le informazioni fornite, Francesco è",
+          "target": " giornalista e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è geologo e vive a Verona, Francesco è giornalista e vive a Ravenna, Fabio è medico e vive a Torino, Matteo è fotografo e vive a Firenze. Secondo le informazioni fornite, Fabio è",
+          "target": " medico e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è geologo e vive a Verona, Francesco è giornalista e vive a Ravenna, Fabio è medico e vive a Torino, Matteo è fotografo e vive a Firenze. Secondo le informazioni fornite, Matteo è",
+          "target": " fotografo e vive a Firenze."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Stefano è architetto e vive a Genova, Andrea è veterinario e vive a Padova, Marco è ricercatore e vive a Napoli, Riccardo è pittore e vive a Siena. Secondo le informazioni fornite, Stefano è",
+          "target": " architetto e vive a Genova."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è architetto e vive a Genova, Andrea è veterinario e vive a Padova, Marco è ricercatore e vive a Napoli, Riccardo è pittore e vive a Siena. Secondo le informazioni fornite, Andrea è",
+          "target": " veterinario e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è architetto e vive a Genova, Andrea è veterinario e vive a Padova, Marco è ricercatore e vive a Napoli, Riccardo è pittore e vive a Siena. Secondo le informazioni fornite, Marco è",
+          "target": " ricercatore e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è architetto e vive a Genova, Andrea è veterinario e vive a Padova, Marco è ricercatore e vive a Napoli, Riccardo è pittore e vive a Siena. Secondo le informazioni fornite, Riccardo è",
+          "target": " pittore e vive a Siena."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Emanuele è pittore e vive a Parma, Simone è farmacista e vive a Ancona, Giorgio è panettiere e vive a Trieste, Francesco è geologo e vive a Lecce. Secondo le informazioni fornite, Emanuele è",
+          "target": " pittore e vive a Parma."
+        },
+        {
+          "context": "Memorizza questi profili: Emanuele è pittore e vive a Parma, Simone è farmacista e vive a Ancona, Giorgio è panettiere e vive a Trieste, Francesco è geologo e vive a Lecce. Secondo le informazioni fornite, Simone è",
+          "target": " farmacista e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Emanuele è pittore e vive a Parma, Simone è farmacista e vive a Ancona, Giorgio è panettiere e vive a Trieste, Francesco è geologo e vive a Lecce. Secondo le informazioni fornite, Giorgio è",
+          "target": " panettiere e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Emanuele è pittore e vive a Parma, Simone è farmacista e vive a Ancona, Giorgio è panettiere e vive a Trieste, Francesco è geologo e vive a Lecce. Secondo le informazioni fornite, Francesco è",
+          "target": " geologo e vive a Lecce."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Davide è bibliotecario e vive a Cagliari, Andrea è medico e vive a Torino, Riccardo è musicista e vive a Genova, Paolo è fotografo e vive a Bologna. Secondo le informazioni fornite, Davide è",
+          "target": " bibliotecario e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è bibliotecario e vive a Cagliari, Andrea è medico e vive a Torino, Riccardo è musicista e vive a Genova, Paolo è fotografo e vive a Bologna. Secondo le informazioni fornite, Andrea è",
+          "target": " medico e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è bibliotecario e vive a Cagliari, Andrea è medico e vive a Torino, Riccardo è musicista e vive a Genova, Paolo è fotografo e vive a Bologna. Secondo le informazioni fornite, Riccardo è",
+          "target": " musicista e vive a Genova."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è bibliotecario e vive a Cagliari, Andrea è medico e vive a Torino, Riccardo è musicista e vive a Genova, Paolo è fotografo e vive a Bologna. Secondo le informazioni fornite, Paolo è",
+          "target": " fotografo e vive a Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Paolo è panettiere e vive a Ravenna, Marco è musicista e vive a Palermo, Alessandro è ingegnere e vive a Padova, Michele è bibliotecario e vive a Napoli. Secondo le informazioni fornite, Paolo è",
+          "target": " panettiere e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è panettiere e vive a Ravenna, Marco è musicista e vive a Palermo, Alessandro è ingegnere e vive a Padova, Michele è bibliotecario e vive a Napoli. Secondo le informazioni fornite, Marco è",
+          "target": " musicista e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è panettiere e vive a Ravenna, Marco è musicista e vive a Palermo, Alessandro è ingegnere e vive a Padova, Michele è bibliotecario e vive a Napoli. Secondo le informazioni fornite, Alessandro è",
+          "target": " ingegnere e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è panettiere e vive a Ravenna, Marco è musicista e vive a Palermo, Alessandro è ingegnere e vive a Padova, Michele è bibliotecario e vive a Napoli. Secondo le informazioni fornite, Michele è",
+          "target": " bibliotecario e vive a Napoli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Andrea è cuoco e vive a Pisa, Tommaso è veterinario e vive a Mantova, Nicola è pittore e vive a Lecce, Fabio è giornalista e vive a Bologna. Secondo le informazioni fornite, Andrea è",
+          "target": " cuoco e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è cuoco e vive a Pisa, Tommaso è veterinario e vive a Mantova, Nicola è pittore e vive a Lecce, Fabio è giornalista e vive a Bologna. Secondo le informazioni fornite, Tommaso è",
+          "target": " veterinario e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è cuoco e vive a Pisa, Tommaso è veterinario e vive a Mantova, Nicola è pittore e vive a Lecce, Fabio è giornalista e vive a Bologna. Secondo le informazioni fornite, Nicola è",
+          "target": " pittore e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è cuoco e vive a Pisa, Tommaso è veterinario e vive a Mantova, Nicola è pittore e vive a Lecce, Fabio è giornalista e vive a Bologna. Secondo le informazioni fornite, Fabio è",
+          "target": " giornalista e vive a Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Marco è musicista e vive a Lecce, Federico è farmacista e vive a Napoli, Alessandro è panettiere e vive a Pisa, Davide è ingegnere e vive a Bari. Secondo le informazioni fornite, Marco è",
+          "target": " musicista e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è musicista e vive a Lecce, Federico è farmacista e vive a Napoli, Alessandro è panettiere e vive a Pisa, Davide è ingegnere e vive a Bari. Secondo le informazioni fornite, Federico è",
+          "target": " farmacista e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è musicista e vive a Lecce, Federico è farmacista e vive a Napoli, Alessandro è panettiere e vive a Pisa, Davide è ingegnere e vive a Bari. Secondo le informazioni fornite, Alessandro è",
+          "target": " panettiere e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è musicista e vive a Lecce, Federico è farmacista e vive a Napoli, Alessandro è panettiere e vive a Pisa, Davide è ingegnere e vive a Bari. Secondo le informazioni fornite, Davide è",
+          "target": " ingegnere e vive a Bari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Pietro è veterinario e vive a Padova, Andrea è cuoco e vive a Torino, Paolo è insegnante e vive a Genova, Michele è bibliotecario e vive a Cagliari. Secondo le informazioni fornite, Pietro è",
+          "target": " veterinario e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è veterinario e vive a Padova, Andrea è cuoco e vive a Torino, Paolo è insegnante e vive a Genova, Michele è bibliotecario e vive a Cagliari. Secondo le informazioni fornite, Andrea è",
+          "target": " cuoco e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è veterinario e vive a Padova, Andrea è cuoco e vive a Torino, Paolo è insegnante e vive a Genova, Michele è bibliotecario e vive a Cagliari. Secondo le informazioni fornite, Paolo è",
+          "target": " insegnante e vive a Genova."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è veterinario e vive a Padova, Andrea è cuoco e vive a Torino, Paolo è insegnante e vive a Genova, Michele è bibliotecario e vive a Cagliari. Secondo le informazioni fornite, Michele è",
+          "target": " bibliotecario e vive a Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Nicola è dentista e vive a Torino, Tommaso è insegnante e vive a Ancona, Riccardo è giornalista e vive a Perugia, Fabio è farmacista e vive a Lecce. Secondo le informazioni fornite, Nicola è",
+          "target": " dentista e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è dentista e vive a Torino, Tommaso è insegnante e vive a Ancona, Riccardo è giornalista e vive a Perugia, Fabio è farmacista e vive a Lecce. Secondo le informazioni fornite, Tommaso è",
+          "target": " insegnante e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è dentista e vive a Torino, Tommaso è insegnante e vive a Ancona, Riccardo è giornalista e vive a Perugia, Fabio è farmacista e vive a Lecce. Secondo le informazioni fornite, Riccardo è",
+          "target": " giornalista e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è dentista e vive a Torino, Tommaso è insegnante e vive a Ancona, Riccardo è giornalista e vive a Perugia, Fabio è farmacista e vive a Lecce. Secondo le informazioni fornite, Fabio è",
+          "target": " farmacista e vive a Lecce."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Nicola è farmacista e vive a Siena, Emanuele è fotografo e vive a Padova, Tommaso è veterinario e vive a Bologna, Matteo è medico e vive a Verona. Secondo le informazioni fornite, Nicola è",
+          "target": " farmacista e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è farmacista e vive a Siena, Emanuele è fotografo e vive a Padova, Tommaso è veterinario e vive a Bologna, Matteo è medico e vive a Verona. Secondo le informazioni fornite, Emanuele è",
+          "target": " fotografo e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è farmacista e vive a Siena, Emanuele è fotografo e vive a Padova, Tommaso è veterinario e vive a Bologna, Matteo è medico e vive a Verona. Secondo le informazioni fornite, Tommaso è",
+          "target": " veterinario e vive a Bologna."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è farmacista e vive a Siena, Emanuele è fotografo e vive a Padova, Tommaso è veterinario e vive a Bologna, Matteo è medico e vive a Verona. Secondo le informazioni fornite, Matteo è",
+          "target": " medico e vive a Verona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Marco è panettiere e vive a Genova, Riccardo è giornalista e vive a Bari, Tommaso è insegnante e vive a Mantova, Francesco è ingegnere e vive a Padova. Secondo le informazioni fornite, Marco è",
+          "target": " panettiere e vive a Genova."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è panettiere e vive a Genova, Riccardo è giornalista e vive a Bari, Tommaso è insegnante e vive a Mantova, Francesco è ingegnere e vive a Padova. Secondo le informazioni fornite, Riccardo è",
+          "target": " giornalista e vive a Bari."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è panettiere e vive a Genova, Riccardo è giornalista e vive a Bari, Tommaso è insegnante e vive a Mantova, Francesco è ingegnere e vive a Padova. Secondo le informazioni fornite, Tommaso è",
+          "target": " insegnante e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è panettiere e vive a Genova, Riccardo è giornalista e vive a Bari, Tommaso è insegnante e vive a Mantova, Francesco è ingegnere e vive a Padova. Secondo le informazioni fornite, Francesco è",
+          "target": " ingegnere e vive a Padova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Federico è architetto e vive a Perugia, Davide è pittore e vive a Palermo, Andrea è bibliotecario e vive a Verona, Marco è traduttore e vive a Cagliari. Secondo le informazioni fornite, Federico è",
+          "target": " architetto e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Federico è architetto e vive a Perugia, Davide è pittore e vive a Palermo, Andrea è bibliotecario e vive a Verona, Marco è traduttore e vive a Cagliari. Secondo le informazioni fornite, Davide è",
+          "target": " pittore e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Federico è architetto e vive a Perugia, Davide è pittore e vive a Palermo, Andrea è bibliotecario e vive a Verona, Marco è traduttore e vive a Cagliari. Secondo le informazioni fornite, Andrea è",
+          "target": " bibliotecario e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Federico è architetto e vive a Perugia, Davide è pittore e vive a Palermo, Andrea è bibliotecario e vive a Verona, Marco è traduttore e vive a Cagliari. Secondo le informazioni fornite, Marco è",
+          "target": " traduttore e vive a Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Federico è bibliotecario e vive a Mantova, Matteo è architetto e vive a Siena, Stefano è medico e vive a Firenze, Pietro è musicista e vive a Genova. Secondo le informazioni fornite, Federico è",
+          "target": " bibliotecario e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Federico è bibliotecario e vive a Mantova, Matteo è architetto e vive a Siena, Stefano è medico e vive a Firenze, Pietro è musicista e vive a Genova. Secondo le informazioni fornite, Matteo è",
+          "target": " architetto e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Federico è bibliotecario e vive a Mantova, Matteo è architetto e vive a Siena, Stefano è medico e vive a Firenze, Pietro è musicista e vive a Genova. Secondo le informazioni fornite, Stefano è",
+          "target": " medico e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Federico è bibliotecario e vive a Mantova, Matteo è architetto e vive a Siena, Stefano è medico e vive a Firenze, Pietro è musicista e vive a Genova. Secondo le informazioni fornite, Pietro è",
+          "target": " musicista e vive a Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Francesco è architetto e vive a Bari, Giorgio è musicista e vive a Lecce, Matteo è geologo e vive a Padova, Roberto è avvocato e vive a Parma. Secondo le informazioni fornite, Francesco è",
+          "target": " architetto e vive a Bari."
+        },
+        {
+          "context": "Memorizza questi profili: Francesco è architetto e vive a Bari, Giorgio è musicista e vive a Lecce, Matteo è geologo e vive a Padova, Roberto è avvocato e vive a Parma. Secondo le informazioni fornite, Giorgio è",
+          "target": " musicista e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Francesco è architetto e vive a Bari, Giorgio è musicista e vive a Lecce, Matteo è geologo e vive a Padova, Roberto è avvocato e vive a Parma. Secondo le informazioni fornite, Matteo è",
+          "target": " geologo e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Francesco è architetto e vive a Bari, Giorgio è musicista e vive a Lecce, Matteo è geologo e vive a Padova, Roberto è avvocato e vive a Parma. Secondo le informazioni fornite, Roberto è",
+          "target": " avvocato e vive a Parma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Emanuele è ingegnere e vive a Padova, Stefano è cuoco e vive a Napoli, Davide è panettiere e vive a Perugia, Matteo è geologo e vive a Parma. Secondo le informazioni fornite, Emanuele è",
+          "target": " ingegnere e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Emanuele è ingegnere e vive a Padova, Stefano è cuoco e vive a Napoli, Davide è panettiere e vive a Perugia, Matteo è geologo e vive a Parma. Secondo le informazioni fornite, Stefano è",
+          "target": " cuoco e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Emanuele è ingegnere e vive a Padova, Stefano è cuoco e vive a Napoli, Davide è panettiere e vive a Perugia, Matteo è geologo e vive a Parma. Secondo le informazioni fornite, Davide è",
+          "target": " panettiere e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Emanuele è ingegnere e vive a Padova, Stefano è cuoco e vive a Napoli, Davide è panettiere e vive a Perugia, Matteo è geologo e vive a Parma. Secondo le informazioni fornite, Matteo è",
+          "target": " geologo e vive a Parma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Alessandro è ricercatore e vive a Pisa, Fabio è ingegnere e vive a Perugia, Giorgio è insegnante e vive a Bologna, Francesco è veterinario e vive a Torino. Secondo le informazioni fornite, Alessandro è",
+          "target": " ricercatore e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è ricercatore e vive a Pisa, Fabio è ingegnere e vive a Perugia, Giorgio è insegnante e vive a Bologna, Francesco è veterinario e vive a Torino. Secondo le informazioni fornite, Fabio è",
+          "target": " ingegnere e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è ricercatore e vive a Pisa, Fabio è ingegnere e vive a Perugia, Giorgio è insegnante e vive a Bologna, Francesco è veterinario e vive a Torino. Secondo le informazioni fornite, Giorgio è",
+          "target": " insegnante e vive a Bologna."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è ricercatore e vive a Pisa, Fabio è ingegnere e vive a Perugia, Giorgio è insegnante e vive a Bologna, Francesco è veterinario e vive a Torino. Secondo le informazioni fornite, Francesco è",
+          "target": " veterinario e vive a Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Matteo è veterinario e vive a Genova, Giorgio è pittore e vive a Napoli, Simone è medico e vive a Padova, Pietro è insegnante e vive a Bologna. Secondo le informazioni fornite, Matteo è",
+          "target": " veterinario e vive a Genova."
+        },
+        {
+          "context": "Memorizza questi profili: Matteo è veterinario e vive a Genova, Giorgio è pittore e vive a Napoli, Simone è medico e vive a Padova, Pietro è insegnante e vive a Bologna. Secondo le informazioni fornite, Giorgio è",
+          "target": " pittore e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Matteo è veterinario e vive a Genova, Giorgio è pittore e vive a Napoli, Simone è medico e vive a Padova, Pietro è insegnante e vive a Bologna. Secondo le informazioni fornite, Simone è",
+          "target": " medico e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Matteo è veterinario e vive a Genova, Giorgio è pittore e vive a Napoli, Simone è medico e vive a Padova, Pietro è insegnante e vive a Bologna. Secondo le informazioni fornite, Pietro è",
+          "target": " insegnante e vive a Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Riccardo è avvocato e vive a Bologna, Emanuele è insegnante e vive a Trieste, Matteo è fotografo e vive a Palermo, Nicola è giornalista e vive a Cagliari. Secondo le informazioni fornite, Riccardo è",
+          "target": " avvocato e vive a Bologna."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è avvocato e vive a Bologna, Emanuele è insegnante e vive a Trieste, Matteo è fotografo e vive a Palermo, Nicola è giornalista e vive a Cagliari. Secondo le informazioni fornite, Emanuele è",
+          "target": " insegnante e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è avvocato e vive a Bologna, Emanuele è insegnante e vive a Trieste, Matteo è fotografo e vive a Palermo, Nicola è giornalista e vive a Cagliari. Secondo le informazioni fornite, Matteo è",
+          "target": " fotografo e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è avvocato e vive a Bologna, Emanuele è insegnante e vive a Trieste, Matteo è fotografo e vive a Palermo, Nicola è giornalista e vive a Cagliari. Secondo le informazioni fornite, Nicola è",
+          "target": " giornalista e vive a Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Roberto è musicista e vive a Pisa, Emanuele è giornalista e vive a Torino, Nicola è panettiere e vive a Bari, Matteo è traduttore e vive a Verona. Secondo le informazioni fornite, Roberto è",
+          "target": " musicista e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Roberto è musicista e vive a Pisa, Emanuele è giornalista e vive a Torino, Nicola è panettiere e vive a Bari, Matteo è traduttore e vive a Verona. Secondo le informazioni fornite, Emanuele è",
+          "target": " giornalista e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Roberto è musicista e vive a Pisa, Emanuele è giornalista e vive a Torino, Nicola è panettiere e vive a Bari, Matteo è traduttore e vive a Verona. Secondo le informazioni fornite, Nicola è",
+          "target": " panettiere e vive a Bari."
+        },
+        {
+          "context": "Memorizza questi profili: Roberto è musicista e vive a Pisa, Emanuele è giornalista e vive a Torino, Nicola è panettiere e vive a Bari, Matteo è traduttore e vive a Verona. Secondo le informazioni fornite, Matteo è",
+          "target": " traduttore e vive a Verona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Andrea è dentista e vive a Palermo, Giorgio è insegnante e vive a Lecce, Simone è ricercatore e vive a Trieste, Davide è cuoco e vive a Parma. Secondo le informazioni fornite, Andrea è",
+          "target": " dentista e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è dentista e vive a Palermo, Giorgio è insegnante e vive a Lecce, Simone è ricercatore e vive a Trieste, Davide è cuoco e vive a Parma. Secondo le informazioni fornite, Giorgio è",
+          "target": " insegnante e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è dentista e vive a Palermo, Giorgio è insegnante e vive a Lecce, Simone è ricercatore e vive a Trieste, Davide è cuoco e vive a Parma. Secondo le informazioni fornite, Simone è",
+          "target": " ricercatore e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è dentista e vive a Palermo, Giorgio è insegnante e vive a Lecce, Simone è ricercatore e vive a Trieste, Davide è cuoco e vive a Parma. Secondo le informazioni fornite, Davide è",
+          "target": " cuoco e vive a Parma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Andrea è bibliotecario e vive a Perugia, Luca è ingegnere e vive a Trieste, Fabio è architetto e vive a Modena, Federico è dentista e vive a Ancona. Secondo le informazioni fornite, Andrea è",
+          "target": " bibliotecario e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è bibliotecario e vive a Perugia, Luca è ingegnere e vive a Trieste, Fabio è architetto e vive a Modena, Federico è dentista e vive a Ancona. Secondo le informazioni fornite, Luca è",
+          "target": " ingegnere e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è bibliotecario e vive a Perugia, Luca è ingegnere e vive a Trieste, Fabio è architetto e vive a Modena, Federico è dentista e vive a Ancona. Secondo le informazioni fornite, Fabio è",
+          "target": " architetto e vive a Modena."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è bibliotecario e vive a Perugia, Luca è ingegnere e vive a Trieste, Fabio è architetto e vive a Modena, Federico è dentista e vive a Ancona. Secondo le informazioni fornite, Federico è",
+          "target": " dentista e vive a Ancona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Luca è ingegnere e vive a Pisa, Davide è insegnante e vive a Trieste, Giorgio è cuoco e vive a Verona, Simone è fotografo e vive a Mantova. Secondo le informazioni fornite, Luca è",
+          "target": " ingegnere e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è ingegnere e vive a Pisa, Davide è insegnante e vive a Trieste, Giorgio è cuoco e vive a Verona, Simone è fotografo e vive a Mantova. Secondo le informazioni fornite, Davide è",
+          "target": " insegnante e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è ingegnere e vive a Pisa, Davide è insegnante e vive a Trieste, Giorgio è cuoco e vive a Verona, Simone è fotografo e vive a Mantova. Secondo le informazioni fornite, Giorgio è",
+          "target": " cuoco e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è ingegnere e vive a Pisa, Davide è insegnante e vive a Trieste, Giorgio è cuoco e vive a Verona, Simone è fotografo e vive a Mantova. Secondo le informazioni fornite, Simone è",
+          "target": " fotografo e vive a Mantova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Federico è insegnante e vive a Padova, Riccardo è pittore e vive a Palermo, Fabio è medico e vive a Trieste, Giorgio è ingegnere e vive a Pisa. Secondo le informazioni fornite, Federico è",
+          "target": " insegnante e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Federico è insegnante e vive a Padova, Riccardo è pittore e vive a Palermo, Fabio è medico e vive a Trieste, Giorgio è ingegnere e vive a Pisa. Secondo le informazioni fornite, Riccardo è",
+          "target": " pittore e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Federico è insegnante e vive a Padova, Riccardo è pittore e vive a Palermo, Fabio è medico e vive a Trieste, Giorgio è ingegnere e vive a Pisa. Secondo le informazioni fornite, Fabio è",
+          "target": " medico e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Federico è insegnante e vive a Padova, Riccardo è pittore e vive a Palermo, Fabio è medico e vive a Trieste, Giorgio è ingegnere e vive a Pisa. Secondo le informazioni fornite, Giorgio è",
+          "target": " ingegnere e vive a Pisa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Alessandro è panettiere e vive a Ancona, Michele è fotografo e vive a Parma, Davide è pittore e vive a Padova, Stefano è giornalista e vive a Napoli. Secondo le informazioni fornite, Alessandro è",
+          "target": " panettiere e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è panettiere e vive a Ancona, Michele è fotografo e vive a Parma, Davide è pittore e vive a Padova, Stefano è giornalista e vive a Napoli. Secondo le informazioni fornite, Michele è",
+          "target": " fotografo e vive a Parma."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è panettiere e vive a Ancona, Michele è fotografo e vive a Parma, Davide è pittore e vive a Padova, Stefano è giornalista e vive a Napoli. Secondo le informazioni fornite, Davide è",
+          "target": " pittore e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è panettiere e vive a Ancona, Michele è fotografo e vive a Parma, Davide è pittore e vive a Padova, Stefano è giornalista e vive a Napoli. Secondo le informazioni fornite, Stefano è",
+          "target": " giornalista e vive a Napoli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Nicola è dentista e vive a Palermo, Federico è medico e vive a Pisa, Simone è fotografo e vive a Verona, Stefano è avvocato e vive a Lecce. Secondo le informazioni fornite, Nicola è",
+          "target": " dentista e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è dentista e vive a Palermo, Federico è medico e vive a Pisa, Simone è fotografo e vive a Verona, Stefano è avvocato e vive a Lecce. Secondo le informazioni fornite, Federico è",
+          "target": " medico e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è dentista e vive a Palermo, Federico è medico e vive a Pisa, Simone è fotografo e vive a Verona, Stefano è avvocato e vive a Lecce. Secondo le informazioni fornite, Simone è",
+          "target": " fotografo e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è dentista e vive a Palermo, Federico è medico e vive a Pisa, Simone è fotografo e vive a Verona, Stefano è avvocato e vive a Lecce. Secondo le informazioni fornite, Stefano è",
+          "target": " avvocato e vive a Lecce."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Pietro è giornalista e vive a Mantova, Fabio è architetto e vive a Verona, Francesco è fotografo e vive a Genova, Tommaso è ingegnere e vive a Cagliari. Secondo le informazioni fornite, Pietro è",
+          "target": " giornalista e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è giornalista e vive a Mantova, Fabio è architetto e vive a Verona, Francesco è fotografo e vive a Genova, Tommaso è ingegnere e vive a Cagliari. Secondo le informazioni fornite, Fabio è",
+          "target": " architetto e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è giornalista e vive a Mantova, Fabio è architetto e vive a Verona, Francesco è fotografo e vive a Genova, Tommaso è ingegnere e vive a Cagliari. Secondo le informazioni fornite, Francesco è",
+          "target": " fotografo e vive a Genova."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è giornalista e vive a Mantova, Fabio è architetto e vive a Verona, Francesco è fotografo e vive a Genova, Tommaso è ingegnere e vive a Cagliari. Secondo le informazioni fornite, Tommaso è",
+          "target": " ingegnere e vive a Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Andrea è insegnante e vive a Genova, Fabio è musicista e vive a Lecce, Matteo è ricercatore e vive a Pisa, Luca è fotografo e vive a Palermo. Secondo le informazioni fornite, Andrea è",
+          "target": " insegnante e vive a Genova."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è insegnante e vive a Genova, Fabio è musicista e vive a Lecce, Matteo è ricercatore e vive a Pisa, Luca è fotografo e vive a Palermo. Secondo le informazioni fornite, Fabio è",
+          "target": " musicista e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è insegnante e vive a Genova, Fabio è musicista e vive a Lecce, Matteo è ricercatore e vive a Pisa, Luca è fotografo e vive a Palermo. Secondo le informazioni fornite, Matteo è",
+          "target": " ricercatore e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è insegnante e vive a Genova, Fabio è musicista e vive a Lecce, Matteo è ricercatore e vive a Pisa, Luca è fotografo e vive a Palermo. Secondo le informazioni fornite, Luca è",
+          "target": " fotografo e vive a Palermo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Tommaso è medico e vive a Bari, Federico è cuoco e vive a Modena, Andrea è pittore e vive a Lecce, Matteo è panettiere e vive a Bologna. Secondo le informazioni fornite, Tommaso è",
+          "target": " medico e vive a Bari."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è medico e vive a Bari, Federico è cuoco e vive a Modena, Andrea è pittore e vive a Lecce, Matteo è panettiere e vive a Bologna. Secondo le informazioni fornite, Federico è",
+          "target": " cuoco e vive a Modena."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è medico e vive a Bari, Federico è cuoco e vive a Modena, Andrea è pittore e vive a Lecce, Matteo è panettiere e vive a Bologna. Secondo le informazioni fornite, Andrea è",
+          "target": " pittore e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è medico e vive a Bari, Federico è cuoco e vive a Modena, Andrea è pittore e vive a Lecce, Matteo è panettiere e vive a Bologna. Secondo le informazioni fornite, Matteo è",
+          "target": " panettiere e vive a Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Davide è panettiere e vive a Modena, Pietro è bibliotecario e vive a Pisa, Matteo è traduttore e vive a Padova, Riccardo è fotografo e vive a Lecce. Secondo le informazioni fornite, Davide è",
+          "target": " panettiere e vive a Modena."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è panettiere e vive a Modena, Pietro è bibliotecario e vive a Pisa, Matteo è traduttore e vive a Padova, Riccardo è fotografo e vive a Lecce. Secondo le informazioni fornite, Pietro è",
+          "target": " bibliotecario e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è panettiere e vive a Modena, Pietro è bibliotecario e vive a Pisa, Matteo è traduttore e vive a Padova, Riccardo è fotografo e vive a Lecce. Secondo le informazioni fornite, Matteo è",
+          "target": " traduttore e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è panettiere e vive a Modena, Pietro è bibliotecario e vive a Pisa, Matteo è traduttore e vive a Padova, Riccardo è fotografo e vive a Lecce. Secondo le informazioni fornite, Riccardo è",
+          "target": " fotografo e vive a Lecce."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Tommaso è ingegnere e vive a Cagliari, Pietro è panettiere e vive a Perugia, Giorgio è ricercatore e vive a Lecce, Andrea è bibliotecario e vive a Genova. Secondo le informazioni fornite, Tommaso è",
+          "target": " ingegnere e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è ingegnere e vive a Cagliari, Pietro è panettiere e vive a Perugia, Giorgio è ricercatore e vive a Lecce, Andrea è bibliotecario e vive a Genova. Secondo le informazioni fornite, Pietro è",
+          "target": " panettiere e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è ingegnere e vive a Cagliari, Pietro è panettiere e vive a Perugia, Giorgio è ricercatore e vive a Lecce, Andrea è bibliotecario e vive a Genova. Secondo le informazioni fornite, Giorgio è",
+          "target": " ricercatore e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è ingegnere e vive a Cagliari, Pietro è panettiere e vive a Perugia, Giorgio è ricercatore e vive a Lecce, Andrea è bibliotecario e vive a Genova. Secondo le informazioni fornite, Andrea è",
+          "target": " bibliotecario e vive a Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Andrea è veterinario e vive a Cagliari, Giorgio è architetto e vive a Ancona, Alessandro è avvocato e vive a Napoli, Emanuele è panettiere e vive a Palermo. Secondo le informazioni fornite, Andrea è",
+          "target": " veterinario e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è veterinario e vive a Cagliari, Giorgio è architetto e vive a Ancona, Alessandro è avvocato e vive a Napoli, Emanuele è panettiere e vive a Palermo. Secondo le informazioni fornite, Giorgio è",
+          "target": " architetto e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è veterinario e vive a Cagliari, Giorgio è architetto e vive a Ancona, Alessandro è avvocato e vive a Napoli, Emanuele è panettiere e vive a Palermo. Secondo le informazioni fornite, Alessandro è",
+          "target": " avvocato e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è veterinario e vive a Cagliari, Giorgio è architetto e vive a Ancona, Alessandro è avvocato e vive a Napoli, Emanuele è panettiere e vive a Palermo. Secondo le informazioni fornite, Emanuele è",
+          "target": " panettiere e vive a Palermo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Nicola è pittore e vive a Pisa, Michele è insegnante e vive a Ancona, Alessandro è farmacista e vive a Torino, Pietro è veterinario e vive a Siena. Secondo le informazioni fornite, Nicola è",
+          "target": " pittore e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è pittore e vive a Pisa, Michele è insegnante e vive a Ancona, Alessandro è farmacista e vive a Torino, Pietro è veterinario e vive a Siena. Secondo le informazioni fornite, Michele è",
+          "target": " insegnante e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è pittore e vive a Pisa, Michele è insegnante e vive a Ancona, Alessandro è farmacista e vive a Torino, Pietro è veterinario e vive a Siena. Secondo le informazioni fornite, Alessandro è",
+          "target": " farmacista e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è pittore e vive a Pisa, Michele è insegnante e vive a Ancona, Alessandro è farmacista e vive a Torino, Pietro è veterinario e vive a Siena. Secondo le informazioni fornite, Pietro è",
+          "target": " veterinario e vive a Siena."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Luca è pittore e vive a Perugia, Roberto è musicista e vive a Pisa, Stefano è ricercatore e vive a Ravenna, Federico è cuoco e vive a Torino. Secondo le informazioni fornite, Luca è",
+          "target": " pittore e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è pittore e vive a Perugia, Roberto è musicista e vive a Pisa, Stefano è ricercatore e vive a Ravenna, Federico è cuoco e vive a Torino. Secondo le informazioni fornite, Roberto è",
+          "target": " musicista e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è pittore e vive a Perugia, Roberto è musicista e vive a Pisa, Stefano è ricercatore e vive a Ravenna, Federico è cuoco e vive a Torino. Secondo le informazioni fornite, Stefano è",
+          "target": " ricercatore e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è pittore e vive a Perugia, Roberto è musicista e vive a Pisa, Stefano è ricercatore e vive a Ravenna, Federico è cuoco e vive a Torino. Secondo le informazioni fornite, Federico è",
+          "target": " cuoco e vive a Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Alessandro è avvocato e vive a Siena, Federico è medico e vive a Torino, Simone è dentista e vive a Genova, Pietro è fotografo e vive a Pisa. Secondo le informazioni fornite, Alessandro è",
+          "target": " avvocato e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è avvocato e vive a Siena, Federico è medico e vive a Torino, Simone è dentista e vive a Genova, Pietro è fotografo e vive a Pisa. Secondo le informazioni fornite, Federico è",
+          "target": " medico e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è avvocato e vive a Siena, Federico è medico e vive a Torino, Simone è dentista e vive a Genova, Pietro è fotografo e vive a Pisa. Secondo le informazioni fornite, Simone è",
+          "target": " dentista e vive a Genova."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è avvocato e vive a Siena, Federico è medico e vive a Torino, Simone è dentista e vive a Genova, Pietro è fotografo e vive a Pisa. Secondo le informazioni fornite, Pietro è",
+          "target": " fotografo e vive a Pisa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Pietro è dentista e vive a Verona, Simone è bibliotecario e vive a Mantova, Marco è farmacista e vive a Ancona, Giorgio è musicista e vive a Perugia. Secondo le informazioni fornite, Pietro è",
+          "target": " dentista e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è dentista e vive a Verona, Simone è bibliotecario e vive a Mantova, Marco è farmacista e vive a Ancona, Giorgio è musicista e vive a Perugia. Secondo le informazioni fornite, Simone è",
+          "target": " bibliotecario e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è dentista e vive a Verona, Simone è bibliotecario e vive a Mantova, Marco è farmacista e vive a Ancona, Giorgio è musicista e vive a Perugia. Secondo le informazioni fornite, Marco è",
+          "target": " farmacista e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è dentista e vive a Verona, Simone è bibliotecario e vive a Mantova, Marco è farmacista e vive a Ancona, Giorgio è musicista e vive a Perugia. Secondo le informazioni fornite, Giorgio è",
+          "target": " musicista e vive a Perugia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Giorgio è veterinario e vive a Genova, Paolo è insegnante e vive a Bologna, Tommaso è geologo e vive a Torino, Luca è cuoco e vive a Cagliari. Secondo le informazioni fornite, Giorgio è",
+          "target": " veterinario e vive a Genova."
+        },
+        {
+          "context": "Memorizza questi profili: Giorgio è veterinario e vive a Genova, Paolo è insegnante e vive a Bologna, Tommaso è geologo e vive a Torino, Luca è cuoco e vive a Cagliari. Secondo le informazioni fornite, Paolo è",
+          "target": " insegnante e vive a Bologna."
+        },
+        {
+          "context": "Memorizza questi profili: Giorgio è veterinario e vive a Genova, Paolo è insegnante e vive a Bologna, Tommaso è geologo e vive a Torino, Luca è cuoco e vive a Cagliari. Secondo le informazioni fornite, Tommaso è",
+          "target": " geologo e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Giorgio è veterinario e vive a Genova, Paolo è insegnante e vive a Bologna, Tommaso è geologo e vive a Torino, Luca è cuoco e vive a Cagliari. Secondo le informazioni fornite, Luca è",
+          "target": " cuoco e vive a Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Luca è ricercatore e vive a Perugia, Matteo è cuoco e vive a Trieste, Andrea è farmacista e vive a Bari, Riccardo è musicista e vive a Firenze. Secondo le informazioni fornite, Luca è",
+          "target": " ricercatore e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è ricercatore e vive a Perugia, Matteo è cuoco e vive a Trieste, Andrea è farmacista e vive a Bari, Riccardo è musicista e vive a Firenze. Secondo le informazioni fornite, Matteo è",
+          "target": " cuoco e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è ricercatore e vive a Perugia, Matteo è cuoco e vive a Trieste, Andrea è farmacista e vive a Bari, Riccardo è musicista e vive a Firenze. Secondo le informazioni fornite, Andrea è",
+          "target": " farmacista e vive a Bari."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è ricercatore e vive a Perugia, Matteo è cuoco e vive a Trieste, Andrea è farmacista e vive a Bari, Riccardo è musicista e vive a Firenze. Secondo le informazioni fornite, Riccardo è",
+          "target": " musicista e vive a Firenze."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Stefano è dentista e vive a Siena, Davide è veterinario e vive a Cagliari, Luca è farmacista e vive a Firenze, Michele è insegnante e vive a Parma. Secondo le informazioni fornite, Stefano è",
+          "target": " dentista e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è dentista e vive a Siena, Davide è veterinario e vive a Cagliari, Luca è farmacista e vive a Firenze, Michele è insegnante e vive a Parma. Secondo le informazioni fornite, Davide è",
+          "target": " veterinario e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è dentista e vive a Siena, Davide è veterinario e vive a Cagliari, Luca è farmacista e vive a Firenze, Michele è insegnante e vive a Parma. Secondo le informazioni fornite, Luca è",
+          "target": " farmacista e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è dentista e vive a Siena, Davide è veterinario e vive a Cagliari, Luca è farmacista e vive a Firenze, Michele è insegnante e vive a Parma. Secondo le informazioni fornite, Michele è",
+          "target": " insegnante e vive a Parma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Riccardo è geologo e vive a Pisa, Marco è architetto e vive a Ravenna, Roberto è bibliotecario e vive a Firenze, Nicola è medico e vive a Mantova. Secondo le informazioni fornite, Riccardo è",
+          "target": " geologo e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è geologo e vive a Pisa, Marco è architetto e vive a Ravenna, Roberto è bibliotecario e vive a Firenze, Nicola è medico e vive a Mantova. Secondo le informazioni fornite, Marco è",
+          "target": " architetto e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è geologo e vive a Pisa, Marco è architetto e vive a Ravenna, Roberto è bibliotecario e vive a Firenze, Nicola è medico e vive a Mantova. Secondo le informazioni fornite, Roberto è",
+          "target": " bibliotecario e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è geologo e vive a Pisa, Marco è architetto e vive a Ravenna, Roberto è bibliotecario e vive a Firenze, Nicola è medico e vive a Mantova. Secondo le informazioni fornite, Nicola è",
+          "target": " medico e vive a Mantova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Pietro è panettiere e vive a Pisa, Matteo è ingegnere e vive a Siena, Nicola è ricercatore e vive a Perugia, Simone è musicista e vive a Verona. Secondo le informazioni fornite, Pietro è",
+          "target": " panettiere e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è panettiere e vive a Pisa, Matteo è ingegnere e vive a Siena, Nicola è ricercatore e vive a Perugia, Simone è musicista e vive a Verona. Secondo le informazioni fornite, Matteo è",
+          "target": " ingegnere e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è panettiere e vive a Pisa, Matteo è ingegnere e vive a Siena, Nicola è ricercatore e vive a Perugia, Simone è musicista e vive a Verona. Secondo le informazioni fornite, Nicola è",
+          "target": " ricercatore e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è panettiere e vive a Pisa, Matteo è ingegnere e vive a Siena, Nicola è ricercatore e vive a Perugia, Simone è musicista e vive a Verona. Secondo le informazioni fornite, Simone è",
+          "target": " musicista e vive a Verona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Paolo è traduttore e vive a Ravenna, Giorgio è dentista e vive a Verona, Pietro è bibliotecario e vive a Bari, Andrea è medico e vive a Mantova. Secondo le informazioni fornite, Paolo è",
+          "target": " traduttore e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è traduttore e vive a Ravenna, Giorgio è dentista e vive a Verona, Pietro è bibliotecario e vive a Bari, Andrea è medico e vive a Mantova. Secondo le informazioni fornite, Giorgio è",
+          "target": " dentista e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è traduttore e vive a Ravenna, Giorgio è dentista e vive a Verona, Pietro è bibliotecario e vive a Bari, Andrea è medico e vive a Mantova. Secondo le informazioni fornite, Pietro è",
+          "target": " bibliotecario e vive a Bari."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è traduttore e vive a Ravenna, Giorgio è dentista e vive a Verona, Pietro è bibliotecario e vive a Bari, Andrea è medico e vive a Mantova. Secondo le informazioni fornite, Andrea è",
+          "target": " medico e vive a Mantova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Roberto è ingegnere e vive a Cagliari, Giorgio è medico e vive a Pisa, Alessandro è farmacista e vive a Ravenna, Riccardo è insegnante e vive a Mantova. Secondo le informazioni fornite, Roberto è",
+          "target": " ingegnere e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Roberto è ingegnere e vive a Cagliari, Giorgio è medico e vive a Pisa, Alessandro è farmacista e vive a Ravenna, Riccardo è insegnante e vive a Mantova. Secondo le informazioni fornite, Giorgio è",
+          "target": " medico e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Roberto è ingegnere e vive a Cagliari, Giorgio è medico e vive a Pisa, Alessandro è farmacista e vive a Ravenna, Riccardo è insegnante e vive a Mantova. Secondo le informazioni fornite, Alessandro è",
+          "target": " farmacista e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Roberto è ingegnere e vive a Cagliari, Giorgio è medico e vive a Pisa, Alessandro è farmacista e vive a Ravenna, Riccardo è insegnante e vive a Mantova. Secondo le informazioni fornite, Riccardo è",
+          "target": " insegnante e vive a Mantova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Tommaso è fotografo e vive a Cagliari, Pietro è musicista e vive a Parma, Luca è dentista e vive a Trieste, Paolo è geologo e vive a Ravenna. Secondo le informazioni fornite, Tommaso è",
+          "target": " fotografo e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è fotografo e vive a Cagliari, Pietro è musicista e vive a Parma, Luca è dentista e vive a Trieste, Paolo è geologo e vive a Ravenna. Secondo le informazioni fornite, Pietro è",
+          "target": " musicista e vive a Parma."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è fotografo e vive a Cagliari, Pietro è musicista e vive a Parma, Luca è dentista e vive a Trieste, Paolo è geologo e vive a Ravenna. Secondo le informazioni fornite, Luca è",
+          "target": " dentista e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è fotografo e vive a Cagliari, Pietro è musicista e vive a Parma, Luca è dentista e vive a Trieste, Paolo è geologo e vive a Ravenna. Secondo le informazioni fornite, Paolo è",
+          "target": " geologo e vive a Ravenna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Nicola è traduttore e vive a Cagliari, Emanuele è ingegnere e vive a Firenze, Alessandro è fotografo e vive a Palermo, Roberto è avvocato e vive a Verona. Secondo le informazioni fornite, Nicola è",
+          "target": " traduttore e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è traduttore e vive a Cagliari, Emanuele è ingegnere e vive a Firenze, Alessandro è fotografo e vive a Palermo, Roberto è avvocato e vive a Verona. Secondo le informazioni fornite, Emanuele è",
+          "target": " ingegnere e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è traduttore e vive a Cagliari, Emanuele è ingegnere e vive a Firenze, Alessandro è fotografo e vive a Palermo, Roberto è avvocato e vive a Verona. Secondo le informazioni fornite, Alessandro è",
+          "target": " fotografo e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è traduttore e vive a Cagliari, Emanuele è ingegnere e vive a Firenze, Alessandro è fotografo e vive a Palermo, Roberto è avvocato e vive a Verona. Secondo le informazioni fornite, Roberto è",
+          "target": " avvocato e vive a Verona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Emanuele è ricercatore e vive a Palermo, Simone è ingegnere e vive a Parma, Fabio è fotografo e vive a Cagliari, Michele è insegnante e vive a Trieste. Secondo le informazioni fornite, Emanuele è",
+          "target": " ricercatore e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Emanuele è ricercatore e vive a Palermo, Simone è ingegnere e vive a Parma, Fabio è fotografo e vive a Cagliari, Michele è insegnante e vive a Trieste. Secondo le informazioni fornite, Simone è",
+          "target": " ingegnere e vive a Parma."
+        },
+        {
+          "context": "Memorizza questi profili: Emanuele è ricercatore e vive a Palermo, Simone è ingegnere e vive a Parma, Fabio è fotografo e vive a Cagliari, Michele è insegnante e vive a Trieste. Secondo le informazioni fornite, Fabio è",
+          "target": " fotografo e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Emanuele è ricercatore e vive a Palermo, Simone è ingegnere e vive a Parma, Fabio è fotografo e vive a Cagliari, Michele è insegnante e vive a Trieste. Secondo le informazioni fornite, Michele è",
+          "target": " insegnante e vive a Trieste."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Stefano è ingegnere e vive a Parma, Luca è insegnante e vive a Napoli, Emanuele è panettiere e vive a Ravenna, Matteo è veterinario e vive a Firenze. Secondo le informazioni fornite, Stefano è",
+          "target": " ingegnere e vive a Parma."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è ingegnere e vive a Parma, Luca è insegnante e vive a Napoli, Emanuele è panettiere e vive a Ravenna, Matteo è veterinario e vive a Firenze. Secondo le informazioni fornite, Luca è",
+          "target": " insegnante e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è ingegnere e vive a Parma, Luca è insegnante e vive a Napoli, Emanuele è panettiere e vive a Ravenna, Matteo è veterinario e vive a Firenze. Secondo le informazioni fornite, Emanuele è",
+          "target": " panettiere e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è ingegnere e vive a Parma, Luca è insegnante e vive a Napoli, Emanuele è panettiere e vive a Ravenna, Matteo è veterinario e vive a Firenze. Secondo le informazioni fornite, Matteo è",
+          "target": " veterinario e vive a Firenze."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Riccardo è traduttore e vive a Perugia, Stefano è bibliotecario e vive a Ravenna, Tommaso è giornalista e vive a Firenze, Emanuele è medico e vive a Genova. Secondo le informazioni fornite, Riccardo è",
+          "target": " traduttore e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è traduttore e vive a Perugia, Stefano è bibliotecario e vive a Ravenna, Tommaso è giornalista e vive a Firenze, Emanuele è medico e vive a Genova. Secondo le informazioni fornite, Stefano è",
+          "target": " bibliotecario e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è traduttore e vive a Perugia, Stefano è bibliotecario e vive a Ravenna, Tommaso è giornalista e vive a Firenze, Emanuele è medico e vive a Genova. Secondo le informazioni fornite, Tommaso è",
+          "target": " giornalista e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è traduttore e vive a Perugia, Stefano è bibliotecario e vive a Ravenna, Tommaso è giornalista e vive a Firenze, Emanuele è medico e vive a Genova. Secondo le informazioni fornite, Emanuele è",
+          "target": " medico e vive a Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Tommaso è avvocato e vive a Firenze, Paolo è fotografo e vive a Padova, Marco è architetto e vive a Pisa, Matteo è cuoco e vive a Cagliari. Secondo le informazioni fornite, Tommaso è",
+          "target": " avvocato e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è avvocato e vive a Firenze, Paolo è fotografo e vive a Padova, Marco è architetto e vive a Pisa, Matteo è cuoco e vive a Cagliari. Secondo le informazioni fornite, Paolo è",
+          "target": " fotografo e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è avvocato e vive a Firenze, Paolo è fotografo e vive a Padova, Marco è architetto e vive a Pisa, Matteo è cuoco e vive a Cagliari. Secondo le informazioni fornite, Marco è",
+          "target": " architetto e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è avvocato e vive a Firenze, Paolo è fotografo e vive a Padova, Marco è architetto e vive a Pisa, Matteo è cuoco e vive a Cagliari. Secondo le informazioni fornite, Matteo è",
+          "target": " cuoco e vive a Cagliari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Pietro è fotografo e vive a Palermo, Michele è insegnante e vive a Mantova, Stefano è cuoco e vive a Perugia, Nicola è dentista e vive a Genova. Secondo le informazioni fornite, Pietro è",
+          "target": " fotografo e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è fotografo e vive a Palermo, Michele è insegnante e vive a Mantova, Stefano è cuoco e vive a Perugia, Nicola è dentista e vive a Genova. Secondo le informazioni fornite, Michele è",
+          "target": " insegnante e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è fotografo e vive a Palermo, Michele è insegnante e vive a Mantova, Stefano è cuoco e vive a Perugia, Nicola è dentista e vive a Genova. Secondo le informazioni fornite, Stefano è",
+          "target": " cuoco e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è fotografo e vive a Palermo, Michele è insegnante e vive a Mantova, Stefano è cuoco e vive a Perugia, Nicola è dentista e vive a Genova. Secondo le informazioni fornite, Nicola è",
+          "target": " dentista e vive a Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Andrea è giornalista e vive a Mantova, Simone è medico e vive a Ravenna, Emanuele è pittore e vive a Parma, Paolo è musicista e vive a Bologna. Secondo le informazioni fornite, Andrea è",
+          "target": " giornalista e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è giornalista e vive a Mantova, Simone è medico e vive a Ravenna, Emanuele è pittore e vive a Parma, Paolo è musicista e vive a Bologna. Secondo le informazioni fornite, Simone è",
+          "target": " medico e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è giornalista e vive a Mantova, Simone è medico e vive a Ravenna, Emanuele è pittore e vive a Parma, Paolo è musicista e vive a Bologna. Secondo le informazioni fornite, Emanuele è",
+          "target": " pittore e vive a Parma."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è giornalista e vive a Mantova, Simone è medico e vive a Ravenna, Emanuele è pittore e vive a Parma, Paolo è musicista e vive a Bologna. Secondo le informazioni fornite, Paolo è",
+          "target": " musicista e vive a Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Stefano è musicista e vive a Firenze, Michele è ingegnere e vive a Padova, Pietro è farmacista e vive a Cagliari, Paolo è ricercatore e vive a Napoli. Secondo le informazioni fornite, Stefano è",
+          "target": " musicista e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è musicista e vive a Firenze, Michele è ingegnere e vive a Padova, Pietro è farmacista e vive a Cagliari, Paolo è ricercatore e vive a Napoli. Secondo le informazioni fornite, Michele è",
+          "target": " ingegnere e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è musicista e vive a Firenze, Michele è ingegnere e vive a Padova, Pietro è farmacista e vive a Cagliari, Paolo è ricercatore e vive a Napoli. Secondo le informazioni fornite, Pietro è",
+          "target": " farmacista e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è musicista e vive a Firenze, Michele è ingegnere e vive a Padova, Pietro è farmacista e vive a Cagliari, Paolo è ricercatore e vive a Napoli. Secondo le informazioni fornite, Paolo è",
+          "target": " ricercatore e vive a Napoli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Matteo è fotografo e vive a Lecce, Paolo è veterinario e vive a Parma, Marco è traduttore e vive a Ancona, Simone è insegnante e vive a Perugia. Secondo le informazioni fornite, Matteo è",
+          "target": " fotografo e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Matteo è fotografo e vive a Lecce, Paolo è veterinario e vive a Parma, Marco è traduttore e vive a Ancona, Simone è insegnante e vive a Perugia. Secondo le informazioni fornite, Paolo è",
+          "target": " veterinario e vive a Parma."
+        },
+        {
+          "context": "Memorizza questi profili: Matteo è fotografo e vive a Lecce, Paolo è veterinario e vive a Parma, Marco è traduttore e vive a Ancona, Simone è insegnante e vive a Perugia. Secondo le informazioni fornite, Marco è",
+          "target": " traduttore e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Matteo è fotografo e vive a Lecce, Paolo è veterinario e vive a Parma, Marco è traduttore e vive a Ancona, Simone è insegnante e vive a Perugia. Secondo le informazioni fornite, Simone è",
+          "target": " insegnante e vive a Perugia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Pietro è bibliotecario e vive a Cagliari, Paolo è ingegnere e vive a Siena, Marco è medico e vive a Torino, Nicola è insegnante e vive a Perugia. Secondo le informazioni fornite, Pietro è",
+          "target": " bibliotecario e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è bibliotecario e vive a Cagliari, Paolo è ingegnere e vive a Siena, Marco è medico e vive a Torino, Nicola è insegnante e vive a Perugia. Secondo le informazioni fornite, Paolo è",
+          "target": " ingegnere e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è bibliotecario e vive a Cagliari, Paolo è ingegnere e vive a Siena, Marco è medico e vive a Torino, Nicola è insegnante e vive a Perugia. Secondo le informazioni fornite, Marco è",
+          "target": " medico e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è bibliotecario e vive a Cagliari, Paolo è ingegnere e vive a Siena, Marco è medico e vive a Torino, Nicola è insegnante e vive a Perugia. Secondo le informazioni fornite, Nicola è",
+          "target": " insegnante e vive a Perugia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Simone è ingegnere e vive a Ravenna, Tommaso è giornalista e vive a Genova, Francesco è pittore e vive a Mantova, Pietro è bibliotecario e vive a Trieste. Secondo le informazioni fornite, Simone è",
+          "target": " ingegnere e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Simone è ingegnere e vive a Ravenna, Tommaso è giornalista e vive a Genova, Francesco è pittore e vive a Mantova, Pietro è bibliotecario e vive a Trieste. Secondo le informazioni fornite, Tommaso è",
+          "target": " giornalista e vive a Genova."
+        },
+        {
+          "context": "Memorizza questi profili: Simone è ingegnere e vive a Ravenna, Tommaso è giornalista e vive a Genova, Francesco è pittore e vive a Mantova, Pietro è bibliotecario e vive a Trieste. Secondo le informazioni fornite, Francesco è",
+          "target": " pittore e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Simone è ingegnere e vive a Ravenna, Tommaso è giornalista e vive a Genova, Francesco è pittore e vive a Mantova, Pietro è bibliotecario e vive a Trieste. Secondo le informazioni fornite, Pietro è",
+          "target": " bibliotecario e vive a Trieste."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Alessandro è bibliotecario e vive a Ancona, Michele è pittore e vive a Padova, Davide è ricercatore e vive a Bologna, Simone è avvocato e vive a Lecce. Secondo le informazioni fornite, Alessandro è",
+          "target": " bibliotecario e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è bibliotecario e vive a Ancona, Michele è pittore e vive a Padova, Davide è ricercatore e vive a Bologna, Simone è avvocato e vive a Lecce. Secondo le informazioni fornite, Michele è",
+          "target": " pittore e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è bibliotecario e vive a Ancona, Michele è pittore e vive a Padova, Davide è ricercatore e vive a Bologna, Simone è avvocato e vive a Lecce. Secondo le informazioni fornite, Davide è",
+          "target": " ricercatore e vive a Bologna."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è bibliotecario e vive a Ancona, Michele è pittore e vive a Padova, Davide è ricercatore e vive a Bologna, Simone è avvocato e vive a Lecce. Secondo le informazioni fornite, Simone è",
+          "target": " avvocato e vive a Lecce."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Alessandro è dentista e vive a Padova, Giorgio è panettiere e vive a Lecce, Michele è medico e vive a Pisa, Davide è bibliotecario e vive a Bologna. Secondo le informazioni fornite, Alessandro è",
+          "target": " dentista e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è dentista e vive a Padova, Giorgio è panettiere e vive a Lecce, Michele è medico e vive a Pisa, Davide è bibliotecario e vive a Bologna. Secondo le informazioni fornite, Giorgio è",
+          "target": " panettiere e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è dentista e vive a Padova, Giorgio è panettiere e vive a Lecce, Michele è medico e vive a Pisa, Davide è bibliotecario e vive a Bologna. Secondo le informazioni fornite, Michele è",
+          "target": " medico e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Alessandro è dentista e vive a Padova, Giorgio è panettiere e vive a Lecce, Michele è medico e vive a Pisa, Davide è bibliotecario e vive a Bologna. Secondo le informazioni fornite, Davide è",
+          "target": " bibliotecario e vive a Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Francesco è insegnante e vive a Napoli, Roberto è farmacista e vive a Parma, Tommaso è ingegnere e vive a Lecce, Pietro è ricercatore e vive a Ravenna. Secondo le informazioni fornite, Francesco è",
+          "target": " insegnante e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Francesco è insegnante e vive a Napoli, Roberto è farmacista e vive a Parma, Tommaso è ingegnere e vive a Lecce, Pietro è ricercatore e vive a Ravenna. Secondo le informazioni fornite, Roberto è",
+          "target": " farmacista e vive a Parma."
+        },
+        {
+          "context": "Memorizza questi profili: Francesco è insegnante e vive a Napoli, Roberto è farmacista e vive a Parma, Tommaso è ingegnere e vive a Lecce, Pietro è ricercatore e vive a Ravenna. Secondo le informazioni fornite, Tommaso è",
+          "target": " ingegnere e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Francesco è insegnante e vive a Napoli, Roberto è farmacista e vive a Parma, Tommaso è ingegnere e vive a Lecce, Pietro è ricercatore e vive a Ravenna. Secondo le informazioni fornite, Pietro è",
+          "target": " ricercatore e vive a Ravenna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Luca è veterinario e vive a Cagliari, Andrea è medico e vive a Firenze, Simone è pittore e vive a Lecce, Stefano è insegnante e vive a Siena. Secondo le informazioni fornite, Luca è",
+          "target": " veterinario e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è veterinario e vive a Cagliari, Andrea è medico e vive a Firenze, Simone è pittore e vive a Lecce, Stefano è insegnante e vive a Siena. Secondo le informazioni fornite, Andrea è",
+          "target": " medico e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è veterinario e vive a Cagliari, Andrea è medico e vive a Firenze, Simone è pittore e vive a Lecce, Stefano è insegnante e vive a Siena. Secondo le informazioni fornite, Simone è",
+          "target": " pittore e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Luca è veterinario e vive a Cagliari, Andrea è medico e vive a Firenze, Simone è pittore e vive a Lecce, Stefano è insegnante e vive a Siena. Secondo le informazioni fornite, Stefano è",
+          "target": " insegnante e vive a Siena."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Tommaso è pittore e vive a Lecce, Stefano è ricercatore e vive a Padova, Francesco è panettiere e vive a Napoli, Giorgio è cuoco e vive a Ancona. Secondo le informazioni fornite, Tommaso è",
+          "target": " pittore e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è pittore e vive a Lecce, Stefano è ricercatore e vive a Padova, Francesco è panettiere e vive a Napoli, Giorgio è cuoco e vive a Ancona. Secondo le informazioni fornite, Stefano è",
+          "target": " ricercatore e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è pittore e vive a Lecce, Stefano è ricercatore e vive a Padova, Francesco è panettiere e vive a Napoli, Giorgio è cuoco e vive a Ancona. Secondo le informazioni fornite, Francesco è",
+          "target": " panettiere e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è pittore e vive a Lecce, Stefano è ricercatore e vive a Padova, Francesco è panettiere e vive a Napoli, Giorgio è cuoco e vive a Ancona. Secondo le informazioni fornite, Giorgio è",
+          "target": " cuoco e vive a Ancona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Michele è ingegnere e vive a Modena, Francesco è pittore e vive a Perugia, Matteo è bibliotecario e vive a Torino, Paolo è traduttore e vive a Parma. Secondo le informazioni fornite, Michele è",
+          "target": " ingegnere e vive a Modena."
+        },
+        {
+          "context": "Memorizza questi profili: Michele è ingegnere e vive a Modena, Francesco è pittore e vive a Perugia, Matteo è bibliotecario e vive a Torino, Paolo è traduttore e vive a Parma. Secondo le informazioni fornite, Francesco è",
+          "target": " pittore e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Michele è ingegnere e vive a Modena, Francesco è pittore e vive a Perugia, Matteo è bibliotecario e vive a Torino, Paolo è traduttore e vive a Parma. Secondo le informazioni fornite, Matteo è",
+          "target": " bibliotecario e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Michele è ingegnere e vive a Modena, Francesco è pittore e vive a Perugia, Matteo è bibliotecario e vive a Torino, Paolo è traduttore e vive a Parma. Secondo le informazioni fornite, Paolo è",
+          "target": " traduttore e vive a Parma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Riccardo è traduttore e vive a Padova, Michele è ricercatore e vive a Mantova, Tommaso è geologo e vive a Ancona, Matteo è giornalista e vive a Lecce. Secondo le informazioni fornite, Riccardo è",
+          "target": " traduttore e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è traduttore e vive a Padova, Michele è ricercatore e vive a Mantova, Tommaso è geologo e vive a Ancona, Matteo è giornalista e vive a Lecce. Secondo le informazioni fornite, Michele è",
+          "target": " ricercatore e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è traduttore e vive a Padova, Michele è ricercatore e vive a Mantova, Tommaso è geologo e vive a Ancona, Matteo è giornalista e vive a Lecce. Secondo le informazioni fornite, Tommaso è",
+          "target": " geologo e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è traduttore e vive a Padova, Michele è ricercatore e vive a Mantova, Tommaso è geologo e vive a Ancona, Matteo è giornalista e vive a Lecce. Secondo le informazioni fornite, Matteo è",
+          "target": " giornalista e vive a Lecce."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Fabio è pittore e vive a Ravenna, Andrea è insegnante e vive a Ancona, Federico è bibliotecario e vive a Siena, Riccardo è geologo e vive a Napoli. Secondo le informazioni fornite, Fabio è",
+          "target": " pittore e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Fabio è pittore e vive a Ravenna, Andrea è insegnante e vive a Ancona, Federico è bibliotecario e vive a Siena, Riccardo è geologo e vive a Napoli. Secondo le informazioni fornite, Andrea è",
+          "target": " insegnante e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Fabio è pittore e vive a Ravenna, Andrea è insegnante e vive a Ancona, Federico è bibliotecario e vive a Siena, Riccardo è geologo e vive a Napoli. Secondo le informazioni fornite, Federico è",
+          "target": " bibliotecario e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Fabio è pittore e vive a Ravenna, Andrea è insegnante e vive a Ancona, Federico è bibliotecario e vive a Siena, Riccardo è geologo e vive a Napoli. Secondo le informazioni fornite, Riccardo è",
+          "target": " geologo e vive a Napoli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Marco è cuoco e vive a Lecce, Matteo è traduttore e vive a Torino, Francesco è veterinario e vive a Napoli, Alessandro è ingegnere e vive a Pisa. Secondo le informazioni fornite, Marco è",
+          "target": " cuoco e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è cuoco e vive a Lecce, Matteo è traduttore e vive a Torino, Francesco è veterinario e vive a Napoli, Alessandro è ingegnere e vive a Pisa. Secondo le informazioni fornite, Matteo è",
+          "target": " traduttore e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è cuoco e vive a Lecce, Matteo è traduttore e vive a Torino, Francesco è veterinario e vive a Napoli, Alessandro è ingegnere e vive a Pisa. Secondo le informazioni fornite, Francesco è",
+          "target": " veterinario e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è cuoco e vive a Lecce, Matteo è traduttore e vive a Torino, Francesco è veterinario e vive a Napoli, Alessandro è ingegnere e vive a Pisa. Secondo le informazioni fornite, Alessandro è",
+          "target": " ingegnere e vive a Pisa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Paolo è dentista e vive a Padova, Tommaso è architetto e vive a Ancona, Giorgio è bibliotecario e vive a Verona, Alessandro è pittore e vive a Ravenna. Secondo le informazioni fornite, Paolo è",
+          "target": " dentista e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è dentista e vive a Padova, Tommaso è architetto e vive a Ancona, Giorgio è bibliotecario e vive a Verona, Alessandro è pittore e vive a Ravenna. Secondo le informazioni fornite, Tommaso è",
+          "target": " architetto e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è dentista e vive a Padova, Tommaso è architetto e vive a Ancona, Giorgio è bibliotecario e vive a Verona, Alessandro è pittore e vive a Ravenna. Secondo le informazioni fornite, Giorgio è",
+          "target": " bibliotecario e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è dentista e vive a Padova, Tommaso è architetto e vive a Ancona, Giorgio è bibliotecario e vive a Verona, Alessandro è pittore e vive a Ravenna. Secondo le informazioni fornite, Alessandro è",
+          "target": " pittore e vive a Ravenna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Michele è musicista e vive a Firenze, Paolo è architetto e vive a Lecce, Andrea è pittore e vive a Bari, Stefano è insegnante e vive a Parma. Secondo le informazioni fornite, Michele è",
+          "target": " musicista e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Michele è musicista e vive a Firenze, Paolo è architetto e vive a Lecce, Andrea è pittore e vive a Bari, Stefano è insegnante e vive a Parma. Secondo le informazioni fornite, Paolo è",
+          "target": " architetto e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Michele è musicista e vive a Firenze, Paolo è architetto e vive a Lecce, Andrea è pittore e vive a Bari, Stefano è insegnante e vive a Parma. Secondo le informazioni fornite, Andrea è",
+          "target": " pittore e vive a Bari."
+        },
+        {
+          "context": "Memorizza questi profili: Michele è musicista e vive a Firenze, Paolo è architetto e vive a Lecce, Andrea è pittore e vive a Bari, Stefano è insegnante e vive a Parma. Secondo le informazioni fornite, Stefano è",
+          "target": " insegnante e vive a Parma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Marco è geologo e vive a Cagliari, Alessandro è veterinario e vive a Modena, Michele è pittore e vive a Pisa, Stefano è architetto e vive a Bari. Secondo le informazioni fornite, Marco è",
+          "target": " geologo e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è geologo e vive a Cagliari, Alessandro è veterinario e vive a Modena, Michele è pittore e vive a Pisa, Stefano è architetto e vive a Bari. Secondo le informazioni fornite, Alessandro è",
+          "target": " veterinario e vive a Modena."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è geologo e vive a Cagliari, Alessandro è veterinario e vive a Modena, Michele è pittore e vive a Pisa, Stefano è architetto e vive a Bari. Secondo le informazioni fornite, Michele è",
+          "target": " pittore e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Marco è geologo e vive a Cagliari, Alessandro è veterinario e vive a Modena, Michele è pittore e vive a Pisa, Stefano è architetto e vive a Bari. Secondo le informazioni fornite, Stefano è",
+          "target": " architetto e vive a Bari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Simone è ricercatore e vive a Perugia, Paolo è avvocato e vive a Lecce, Federico è musicista e vive a Mantova, Andrea è veterinario e vive a Torino. Secondo le informazioni fornite, Simone è",
+          "target": " ricercatore e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Simone è ricercatore e vive a Perugia, Paolo è avvocato e vive a Lecce, Federico è musicista e vive a Mantova, Andrea è veterinario e vive a Torino. Secondo le informazioni fornite, Paolo è",
+          "target": " avvocato e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Simone è ricercatore e vive a Perugia, Paolo è avvocato e vive a Lecce, Federico è musicista e vive a Mantova, Andrea è veterinario e vive a Torino. Secondo le informazioni fornite, Federico è",
+          "target": " musicista e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Simone è ricercatore e vive a Perugia, Paolo è avvocato e vive a Lecce, Federico è musicista e vive a Mantova, Andrea è veterinario e vive a Torino. Secondo le informazioni fornite, Andrea è",
+          "target": " veterinario e vive a Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Stefano è traduttore e vive a Pisa, Emanuele è geologo e vive a Perugia, Simone è fotografo e vive a Lecce, Paolo è bibliotecario e vive a Parma. Secondo le informazioni fornite, Stefano è",
+          "target": " traduttore e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è traduttore e vive a Pisa, Emanuele è geologo e vive a Perugia, Simone è fotografo e vive a Lecce, Paolo è bibliotecario e vive a Parma. Secondo le informazioni fornite, Emanuele è",
+          "target": " geologo e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è traduttore e vive a Pisa, Emanuele è geologo e vive a Perugia, Simone è fotografo e vive a Lecce, Paolo è bibliotecario e vive a Parma. Secondo le informazioni fornite, Simone è",
+          "target": " fotografo e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è traduttore e vive a Pisa, Emanuele è geologo e vive a Perugia, Simone è fotografo e vive a Lecce, Paolo è bibliotecario e vive a Parma. Secondo le informazioni fornite, Paolo è",
+          "target": " bibliotecario e vive a Parma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Federico è dentista e vive a Parma, Tommaso è geologo e vive a Torino, Davide è fotografo e vive a Ancona, Andrea è panettiere e vive a Perugia. Secondo le informazioni fornite, Federico è",
+          "target": " dentista e vive a Parma."
+        },
+        {
+          "context": "Memorizza questi profili: Federico è dentista e vive a Parma, Tommaso è geologo e vive a Torino, Davide è fotografo e vive a Ancona, Andrea è panettiere e vive a Perugia. Secondo le informazioni fornite, Tommaso è",
+          "target": " geologo e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Federico è dentista e vive a Parma, Tommaso è geologo e vive a Torino, Davide è fotografo e vive a Ancona, Andrea è panettiere e vive a Perugia. Secondo le informazioni fornite, Davide è",
+          "target": " fotografo e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Federico è dentista e vive a Parma, Tommaso è geologo e vive a Torino, Davide è fotografo e vive a Ancona, Andrea è panettiere e vive a Perugia. Secondo le informazioni fornite, Andrea è",
+          "target": " panettiere e vive a Perugia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Riccardo è musicista e vive a Palermo, Marco è geologo e vive a Perugia, Tommaso è veterinario e vive a Napoli, Stefano è bibliotecario e vive a Firenze. Secondo le informazioni fornite, Riccardo è",
+          "target": " musicista e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è musicista e vive a Palermo, Marco è geologo e vive a Perugia, Tommaso è veterinario e vive a Napoli, Stefano è bibliotecario e vive a Firenze. Secondo le informazioni fornite, Marco è",
+          "target": " geologo e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è musicista e vive a Palermo, Marco è geologo e vive a Perugia, Tommaso è veterinario e vive a Napoli, Stefano è bibliotecario e vive a Firenze. Secondo le informazioni fornite, Tommaso è",
+          "target": " veterinario e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è musicista e vive a Palermo, Marco è geologo e vive a Perugia, Tommaso è veterinario e vive a Napoli, Stefano è bibliotecario e vive a Firenze. Secondo le informazioni fornite, Stefano è",
+          "target": " bibliotecario e vive a Firenze."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Stefano è avvocato e vive a Pisa, Pietro è architetto e vive a Bari, Marco è fotografo e vive a Palermo, Roberto è giornalista e vive a Napoli. Secondo le informazioni fornite, Stefano è",
+          "target": " avvocato e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è avvocato e vive a Pisa, Pietro è architetto e vive a Bari, Marco è fotografo e vive a Palermo, Roberto è giornalista e vive a Napoli. Secondo le informazioni fornite, Pietro è",
+          "target": " architetto e vive a Bari."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è avvocato e vive a Pisa, Pietro è architetto e vive a Bari, Marco è fotografo e vive a Palermo, Roberto è giornalista e vive a Napoli. Secondo le informazioni fornite, Marco è",
+          "target": " fotografo e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è avvocato e vive a Pisa, Pietro è architetto e vive a Bari, Marco è fotografo e vive a Palermo, Roberto è giornalista e vive a Napoli. Secondo le informazioni fornite, Roberto è",
+          "target": " giornalista e vive a Napoli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Francesco è ingegnere e vive a Verona, Michele è ricercatore e vive a Firenze, Giorgio è fotografo e vive a Lecce, Simone è geologo e vive a Genova. Secondo le informazioni fornite, Francesco è",
+          "target": " ingegnere e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Francesco è ingegnere e vive a Verona, Michele è ricercatore e vive a Firenze, Giorgio è fotografo e vive a Lecce, Simone è geologo e vive a Genova. Secondo le informazioni fornite, Michele è",
+          "target": " ricercatore e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Francesco è ingegnere e vive a Verona, Michele è ricercatore e vive a Firenze, Giorgio è fotografo e vive a Lecce, Simone è geologo e vive a Genova. Secondo le informazioni fornite, Giorgio è",
+          "target": " fotografo e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Francesco è ingegnere e vive a Verona, Michele è ricercatore e vive a Firenze, Giorgio è fotografo e vive a Lecce, Simone è geologo e vive a Genova. Secondo le informazioni fornite, Simone è",
+          "target": " geologo e vive a Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Andrea è architetto e vive a Padova, Federico è dentista e vive a Firenze, Emanuele è medico e vive a Lecce, Roberto è avvocato e vive a Trieste. Secondo le informazioni fornite, Andrea è",
+          "target": " architetto e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è architetto e vive a Padova, Federico è dentista e vive a Firenze, Emanuele è medico e vive a Lecce, Roberto è avvocato e vive a Trieste. Secondo le informazioni fornite, Federico è",
+          "target": " dentista e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è architetto e vive a Padova, Federico è dentista e vive a Firenze, Emanuele è medico e vive a Lecce, Roberto è avvocato e vive a Trieste. Secondo le informazioni fornite, Emanuele è",
+          "target": " medico e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Andrea è architetto e vive a Padova, Federico è dentista e vive a Firenze, Emanuele è medico e vive a Lecce, Roberto è avvocato e vive a Trieste. Secondo le informazioni fornite, Roberto è",
+          "target": " avvocato e vive a Trieste."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Riccardo è musicista e vive a Padova, Federico è ricercatore e vive a Verona, Roberto è medico e vive a Cagliari, Davide è fotografo e vive a Genova. Secondo le informazioni fornite, Riccardo è",
+          "target": " musicista e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è musicista e vive a Padova, Federico è ricercatore e vive a Verona, Roberto è medico e vive a Cagliari, Davide è fotografo e vive a Genova. Secondo le informazioni fornite, Federico è",
+          "target": " ricercatore e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è musicista e vive a Padova, Federico è ricercatore e vive a Verona, Roberto è medico e vive a Cagliari, Davide è fotografo e vive a Genova. Secondo le informazioni fornite, Roberto è",
+          "target": " medico e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è musicista e vive a Padova, Federico è ricercatore e vive a Verona, Roberto è medico e vive a Cagliari, Davide è fotografo e vive a Genova. Secondo le informazioni fornite, Davide è",
+          "target": " fotografo e vive a Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Stefano è insegnante e vive a Firenze, Nicola è veterinario e vive a Mantova, Davide è fotografo e vive a Cagliari, Matteo è musicista e vive a Napoli. Secondo le informazioni fornite, Stefano è",
+          "target": " insegnante e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è insegnante e vive a Firenze, Nicola è veterinario e vive a Mantova, Davide è fotografo e vive a Cagliari, Matteo è musicista e vive a Napoli. Secondo le informazioni fornite, Nicola è",
+          "target": " veterinario e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è insegnante e vive a Firenze, Nicola è veterinario e vive a Mantova, Davide è fotografo e vive a Cagliari, Matteo è musicista e vive a Napoli. Secondo le informazioni fornite, Davide è",
+          "target": " fotografo e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Stefano è insegnante e vive a Firenze, Nicola è veterinario e vive a Mantova, Davide è fotografo e vive a Cagliari, Matteo è musicista e vive a Napoli. Secondo le informazioni fornite, Matteo è",
+          "target": " musicista e vive a Napoli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Pietro è avvocato e vive a Ravenna, Roberto è pittore e vive a Pisa, Emanuele è cuoco e vive a Perugia, Nicola è panettiere e vive a Bologna. Secondo le informazioni fornite, Pietro è",
+          "target": " avvocato e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è avvocato e vive a Ravenna, Roberto è pittore e vive a Pisa, Emanuele è cuoco e vive a Perugia, Nicola è panettiere e vive a Bologna. Secondo le informazioni fornite, Roberto è",
+          "target": " pittore e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è avvocato e vive a Ravenna, Roberto è pittore e vive a Pisa, Emanuele è cuoco e vive a Perugia, Nicola è panettiere e vive a Bologna. Secondo le informazioni fornite, Emanuele è",
+          "target": " cuoco e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è avvocato e vive a Ravenna, Roberto è pittore e vive a Pisa, Emanuele è cuoco e vive a Perugia, Nicola è panettiere e vive a Bologna. Secondo le informazioni fornite, Nicola è",
+          "target": " panettiere e vive a Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Fabio è geologo e vive a Trieste, Pietro è cuoco e vive a Bologna, Riccardo è veterinario e vive a Ancona, Andrea è ingegnere e vive a Perugia. Secondo le informazioni fornite, Fabio è",
+          "target": " geologo e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Fabio è geologo e vive a Trieste, Pietro è cuoco e vive a Bologna, Riccardo è veterinario e vive a Ancona, Andrea è ingegnere e vive a Perugia. Secondo le informazioni fornite, Pietro è",
+          "target": " cuoco e vive a Bologna."
+        },
+        {
+          "context": "Memorizza questi profili: Fabio è geologo e vive a Trieste, Pietro è cuoco e vive a Bologna, Riccardo è veterinario e vive a Ancona, Andrea è ingegnere e vive a Perugia. Secondo le informazioni fornite, Riccardo è",
+          "target": " veterinario e vive a Ancona."
+        },
+        {
+          "context": "Memorizza questi profili: Fabio è geologo e vive a Trieste, Pietro è cuoco e vive a Bologna, Riccardo è veterinario e vive a Ancona, Andrea è ingegnere e vive a Perugia. Secondo le informazioni fornite, Andrea è",
+          "target": " ingegnere e vive a Perugia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Davide è medico e vive a Napoli, Pietro è insegnante e vive a Siena, Paolo è bibliotecario e vive a Palermo, Fabio è cuoco e vive a Genova. Secondo le informazioni fornite, Davide è",
+          "target": " medico e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è medico e vive a Napoli, Pietro è insegnante e vive a Siena, Paolo è bibliotecario e vive a Palermo, Fabio è cuoco e vive a Genova. Secondo le informazioni fornite, Pietro è",
+          "target": " insegnante e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è medico e vive a Napoli, Pietro è insegnante e vive a Siena, Paolo è bibliotecario e vive a Palermo, Fabio è cuoco e vive a Genova. Secondo le informazioni fornite, Paolo è",
+          "target": " bibliotecario e vive a Palermo."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è medico e vive a Napoli, Pietro è insegnante e vive a Siena, Paolo è bibliotecario e vive a Palermo, Fabio è cuoco e vive a Genova. Secondo le informazioni fornite, Fabio è",
+          "target": " cuoco e vive a Genova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Riccardo è avvocato e vive a Napoli, Fabio è medico e vive a Mantova, Andrea è ingegnere e vive a Padova, Alessandro è pittore e vive a Perugia. Secondo le informazioni fornite, Riccardo è",
+          "target": " avvocato e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è avvocato e vive a Napoli, Fabio è medico e vive a Mantova, Andrea è ingegnere e vive a Padova, Alessandro è pittore e vive a Perugia. Secondo le informazioni fornite, Fabio è",
+          "target": " medico e vive a Mantova."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è avvocato e vive a Napoli, Fabio è medico e vive a Mantova, Andrea è ingegnere e vive a Padova, Alessandro è pittore e vive a Perugia. Secondo le informazioni fornite, Andrea è",
+          "target": " ingegnere e vive a Padova."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è avvocato e vive a Napoli, Fabio è medico e vive a Mantova, Andrea è ingegnere e vive a Padova, Alessandro è pittore e vive a Perugia. Secondo le informazioni fornite, Alessandro è",
+          "target": " pittore e vive a Perugia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Davide è geologo e vive a Bari, Luca è musicista e vive a Perugia, Matteo è bibliotecario e vive a Bologna, Riccardo è medico e vive a Napoli. Secondo le informazioni fornite, Davide è",
+          "target": " geologo e vive a Bari."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è geologo e vive a Bari, Luca è musicista e vive a Perugia, Matteo è bibliotecario e vive a Bologna, Riccardo è medico e vive a Napoli. Secondo le informazioni fornite, Luca è",
+          "target": " musicista e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è geologo e vive a Bari, Luca è musicista e vive a Perugia, Matteo è bibliotecario e vive a Bologna, Riccardo è medico e vive a Napoli. Secondo le informazioni fornite, Matteo è",
+          "target": " bibliotecario e vive a Bologna."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è geologo e vive a Bari, Luca è musicista e vive a Perugia, Matteo è bibliotecario e vive a Bologna, Riccardo è medico e vive a Napoli. Secondo le informazioni fornite, Riccardo è",
+          "target": " medico e vive a Napoli."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Francesco è traduttore e vive a Modena, Davide è geologo e vive a Cagliari, Paolo è cuoco e vive a Bologna, Tommaso è musicista e vive a Mantova. Secondo le informazioni fornite, Francesco è",
+          "target": " traduttore e vive a Modena."
+        },
+        {
+          "context": "Memorizza questi profili: Francesco è traduttore e vive a Modena, Davide è geologo e vive a Cagliari, Paolo è cuoco e vive a Bologna, Tommaso è musicista e vive a Mantova. Secondo le informazioni fornite, Davide è",
+          "target": " geologo e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Francesco è traduttore e vive a Modena, Davide è geologo e vive a Cagliari, Paolo è cuoco e vive a Bologna, Tommaso è musicista e vive a Mantova. Secondo le informazioni fornite, Paolo è",
+          "target": " cuoco e vive a Bologna."
+        },
+        {
+          "context": "Memorizza questi profili: Francesco è traduttore e vive a Modena, Davide è geologo e vive a Cagliari, Paolo è cuoco e vive a Bologna, Tommaso è musicista e vive a Mantova. Secondo le informazioni fornite, Tommaso è",
+          "target": " musicista e vive a Mantova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Pietro è dentista e vive a Lecce, Luca è pittore e vive a Genova, Marco è cuoco e vive a Siena, Tommaso è musicista e vive a Verona. Secondo le informazioni fornite, Pietro è",
+          "target": " dentista e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è dentista e vive a Lecce, Luca è pittore e vive a Genova, Marco è cuoco e vive a Siena, Tommaso è musicista e vive a Verona. Secondo le informazioni fornite, Luca è",
+          "target": " pittore e vive a Genova."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è dentista e vive a Lecce, Luca è pittore e vive a Genova, Marco è cuoco e vive a Siena, Tommaso è musicista e vive a Verona. Secondo le informazioni fornite, Marco è",
+          "target": " cuoco e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Pietro è dentista e vive a Lecce, Luca è pittore e vive a Genova, Marco è cuoco e vive a Siena, Tommaso è musicista e vive a Verona. Secondo le informazioni fornite, Tommaso è",
+          "target": " musicista e vive a Verona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Paolo è dentista e vive a Modena, Matteo è panettiere e vive a Pisa, Giorgio è fotografo e vive a Firenze, Alessandro è musicista e vive a Padova. Secondo le informazioni fornite, Paolo è",
+          "target": " dentista e vive a Modena."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è dentista e vive a Modena, Matteo è panettiere e vive a Pisa, Giorgio è fotografo e vive a Firenze, Alessandro è musicista e vive a Padova. Secondo le informazioni fornite, Matteo è",
+          "target": " panettiere e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è dentista e vive a Modena, Matteo è panettiere e vive a Pisa, Giorgio è fotografo e vive a Firenze, Alessandro è musicista e vive a Padova. Secondo le informazioni fornite, Giorgio è",
+          "target": " fotografo e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Paolo è dentista e vive a Modena, Matteo è panettiere e vive a Pisa, Giorgio è fotografo e vive a Firenze, Alessandro è musicista e vive a Padova. Secondo le informazioni fornite, Alessandro è",
+          "target": " musicista e vive a Padova."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Nicola è bibliotecario e vive a Firenze, Pietro è traduttore e vive a Verona, Andrea è dentista e vive a Pisa, Michele è farmacista e vive a Siena. Secondo le informazioni fornite, Nicola è",
+          "target": " bibliotecario e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è bibliotecario e vive a Firenze, Pietro è traduttore e vive a Verona, Andrea è dentista e vive a Pisa, Michele è farmacista e vive a Siena. Secondo le informazioni fornite, Pietro è",
+          "target": " traduttore e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è bibliotecario e vive a Firenze, Pietro è traduttore e vive a Verona, Andrea è dentista e vive a Pisa, Michele è farmacista e vive a Siena. Secondo le informazioni fornite, Andrea è",
+          "target": " dentista e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Nicola è bibliotecario e vive a Firenze, Pietro è traduttore e vive a Verona, Andrea è dentista e vive a Pisa, Michele è farmacista e vive a Siena. Secondo le informazioni fornite, Michele è",
+          "target": " farmacista e vive a Siena."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Roberto è architetto e vive a Firenze, Matteo è veterinario e vive a Trieste, Tommaso è panettiere e vive a Napoli, Paolo è farmacista e vive a Bologna. Secondo le informazioni fornite, Roberto è",
+          "target": " architetto e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Roberto è architetto e vive a Firenze, Matteo è veterinario e vive a Trieste, Tommaso è panettiere e vive a Napoli, Paolo è farmacista e vive a Bologna. Secondo le informazioni fornite, Matteo è",
+          "target": " veterinario e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Roberto è architetto e vive a Firenze, Matteo è veterinario e vive a Trieste, Tommaso è panettiere e vive a Napoli, Paolo è farmacista e vive a Bologna. Secondo le informazioni fornite, Tommaso è",
+          "target": " panettiere e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Roberto è architetto e vive a Firenze, Matteo è veterinario e vive a Trieste, Tommaso è panettiere e vive a Napoli, Paolo è farmacista e vive a Bologna. Secondo le informazioni fornite, Paolo è",
+          "target": " farmacista e vive a Bologna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Davide è insegnante e vive a Firenze, Nicola è fotografo e vive a Siena, Roberto è panettiere e vive a Modena, Riccardo è giornalista e vive a Palermo. Secondo le informazioni fornite, Davide è",
+          "target": " insegnante e vive a Firenze."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è insegnante e vive a Firenze, Nicola è fotografo e vive a Siena, Roberto è panettiere e vive a Modena, Riccardo è giornalista e vive a Palermo. Secondo le informazioni fornite, Nicola è",
+          "target": " fotografo e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è insegnante e vive a Firenze, Nicola è fotografo e vive a Siena, Roberto è panettiere e vive a Modena, Riccardo è giornalista e vive a Palermo. Secondo le informazioni fornite, Roberto è",
+          "target": " panettiere e vive a Modena."
+        },
+        {
+          "context": "Memorizza questi profili: Davide è insegnante e vive a Firenze, Nicola è fotografo e vive a Siena, Roberto è panettiere e vive a Modena, Riccardo è giornalista e vive a Palermo. Secondo le informazioni fornite, Riccardo è",
+          "target": " giornalista e vive a Palermo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Tommaso è veterinario e vive a Perugia, Andrea è geologo e vive a Siena, Davide è cuoco e vive a Cagliari, Roberto è dentista e vive a Pisa. Secondo le informazioni fornite, Tommaso è",
+          "target": " veterinario e vive a Perugia."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è veterinario e vive a Perugia, Andrea è geologo e vive a Siena, Davide è cuoco e vive a Cagliari, Roberto è dentista e vive a Pisa. Secondo le informazioni fornite, Andrea è",
+          "target": " geologo e vive a Siena."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è veterinario e vive a Perugia, Andrea è geologo e vive a Siena, Davide è cuoco e vive a Cagliari, Roberto è dentista e vive a Pisa. Secondo le informazioni fornite, Davide è",
+          "target": " cuoco e vive a Cagliari."
+        },
+        {
+          "context": "Memorizza questi profili: Tommaso è veterinario e vive a Perugia, Andrea è geologo e vive a Siena, Davide è cuoco e vive a Cagliari, Roberto è dentista e vive a Pisa. Secondo le informazioni fornite, Roberto è",
+          "target": " dentista e vive a Pisa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Michele è ingegnere e vive a Torino, Giorgio è fotografo e vive a Bari, Luca è bibliotecario e vive a Napoli, Simone è giornalista e vive a Ancona. Secondo le informazioni fornite, Michele è",
+          "target": " ingegnere e vive a Torino."
+        },
+        {
+          "context": "Memorizza questi profili: Michele è ingegnere e vive a Torino, Giorgio è fotografo e vive a Bari, Luca è bibliotecario e vive a Napoli, Simone è giornalista e vive a Ancona. Secondo le informazioni fornite, Giorgio è",
+          "target": " fotografo e vive a Bari."
+        },
+        {
+          "context": "Memorizza questi profili: Michele è ingegnere e vive a Torino, Giorgio è fotografo e vive a Bari, Luca è bibliotecario e vive a Napoli, Simone è giornalista e vive a Ancona. Secondo le informazioni fornite, Luca è",
+          "target": " bibliotecario e vive a Napoli."
+        },
+        {
+          "context": "Memorizza questi profili: Michele è ingegnere e vive a Torino, Giorgio è fotografo e vive a Bari, Luca è bibliotecario e vive a Napoli, Simone è giornalista e vive a Ancona. Secondo le informazioni fornite, Simone è",
+          "target": " giornalista e vive a Ancona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Matteo è farmacista e vive a Verona, Luca è dentista e vive a Bari, Paolo è pittore e vive a Trieste, Francesco è musicista e vive a Parma. Secondo le informazioni fornite, Matteo è",
+          "target": " farmacista e vive a Verona."
+        },
+        {
+          "context": "Memorizza questi profili: Matteo è farmacista e vive a Verona, Luca è dentista e vive a Bari, Paolo è pittore e vive a Trieste, Francesco è musicista e vive a Parma. Secondo le informazioni fornite, Luca è",
+          "target": " dentista e vive a Bari."
+        },
+        {
+          "context": "Memorizza questi profili: Matteo è farmacista e vive a Verona, Luca è dentista e vive a Bari, Paolo è pittore e vive a Trieste, Francesco è musicista e vive a Parma. Secondo le informazioni fornite, Paolo è",
+          "target": " pittore e vive a Trieste."
+        },
+        {
+          "context": "Memorizza questi profili: Matteo è farmacista e vive a Verona, Luca è dentista e vive a Bari, Paolo è pittore e vive a Trieste, Francesco è musicista e vive a Parma. Secondo le informazioni fornite, Francesco è",
+          "target": " musicista e vive a Parma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Memorizza questi profili: Riccardo è giornalista e vive a Lecce, Paolo è insegnante e vive a Pisa, Marco è architetto e vive a Ravenna, Matteo è avvocato e vive a Mantova. Secondo le informazioni fornite, Riccardo è",
+          "target": " giornalista e vive a Lecce."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è giornalista e vive a Lecce, Paolo è insegnante e vive a Pisa, Marco è architetto e vive a Ravenna, Matteo è avvocato e vive a Mantova. Secondo le informazioni fornite, Paolo è",
+          "target": " insegnante e vive a Pisa."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è giornalista e vive a Lecce, Paolo è insegnante e vive a Pisa, Marco è architetto e vive a Ravenna, Matteo è avvocato e vive a Mantova. Secondo le informazioni fornite, Marco è",
+          "target": " architetto e vive a Ravenna."
+        },
+        {
+          "context": "Memorizza questi profili: Riccardo è giornalista e vive a Lecce, Paolo è insegnante e vive a Pisa, Marco è architetto e vive a Ravenna, Matteo è avvocato e vive a Mantova. Secondo le informazioni fornite, Matteo è",
+          "target": " avvocato e vive a Mantova."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

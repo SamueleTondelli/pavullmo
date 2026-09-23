@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "few_shot_masculine_to_feminine",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, uomo → donna. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, uomo → donna. padre →",
+          "target": " madre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, uomo → donna. figlio →",
+          "target": " figlia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, uomo → donna. attore →",
+          "target": " attrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, uomo → donna. cameriere →",
+          "target": " cameriera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, uomo → donna. bambino →",
+          "target": " bambina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, uomo → donna. direttore →",
+          "target": " direttrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, uomo → donna. infermiere →",
+          "target": " infermiera"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, bambino → bambina. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, bambino → bambina. padre →",
+          "target": " madre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, bambino → bambina. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, bambino → bambina. dottore →",
+          "target": " dottoressa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, re → regina. signore →",
+          "target": " signora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, re → regina. poeta →",
+          "target": " poetessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, re → regina. cugino →",
+          "target": " cugina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, re → regina. lavoratore →",
+          "target": " lavoratrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, leone → leonessa. direttore →",
+          "target": " direttrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, leone → leonessa. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, leone → leonessa. gatto →",
+          "target": " gatta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, leone → leonessa. scrittore →",
+          "target": " scrittrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, marito → moglie. attore →",
+          "target": " attrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, marito → moglie. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, marito → moglie. lavoratore →",
+          "target": " lavoratrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, marito → moglie. maestro →",
+          "target": " maestra"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, maestro → maestra. nonno →",
+          "target": " nonna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, maestro → maestra. cugino →",
+          "target": " cugina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, maestro → maestra. dottore →",
+          "target": " dottoressa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, maestro → maestra. marito →",
+          "target": " moglie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, leone → leonessa. cameriere →",
+          "target": " cameriera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, leone → leonessa. maestro →",
+          "target": " maestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, leone → leonessa. cuoco →",
+          "target": " cuoca"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, leone → leonessa. bambino →",
+          "target": " bambina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, poeta → poetessa. dottore →",
+          "target": " dottoressa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, poeta → poetessa. nonno →",
+          "target": " nonna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, poeta → poetessa. direttore →",
+          "target": " direttrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, poeta → poetessa. re →",
+          "target": " regina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, eroe → eroina. padre →",
+          "target": " madre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, eroe → eroina. figlio →",
+          "target": " figlia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, eroe → eroina. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, eroe → eroina. bambino →",
+          "target": " bambina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lavoratore → lavoratrice, maestro → maestra. cuoco →",
+          "target": " cuoca"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lavoratore → lavoratrice, maestro → maestra. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lavoratore → lavoratrice, maestro → maestra. leone →",
+          "target": " leonessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lavoratore → lavoratrice, maestro → maestra. poeta →",
+          "target": " poetessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: scrittore → scrittrice, nonno → nonna. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: scrittore → scrittrice, nonno → nonna. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: scrittore → scrittrice, nonno → nonna. eroe →",
+          "target": " eroina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: scrittore → scrittrice, nonno → nonna. marito →",
+          "target": " moglie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, poeta → poetessa. scrittore →",
+          "target": " scrittrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, poeta → poetessa. cameriere →",
+          "target": " cameriera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, poeta → poetessa. uomo →",
+          "target": " donna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, poeta → poetessa. padre →",
+          "target": " madre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, cuoco → cuoca. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, cuoco → cuoca. poeta →",
+          "target": " poetessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, cuoco → cuoca. signore →",
+          "target": " signora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, cuoco → cuoca. cameriere →",
+          "target": " cameriera"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, zio → zia. figlio →",
+          "target": " figlia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, zio → zia. cugino →",
+          "target": " cugina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, zio → zia. ragazzo →",
+          "target": " ragazza"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, zio → zia. padre →",
+          "target": " madre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, zio → zia. cuoco →",
+          "target": " cuoca"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, zio → zia. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, zio → zia. bambino →",
+          "target": " bambina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, zio → zia. re →",
+          "target": " regina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: re → regina, poeta → poetessa. gallo →",
+          "target": " gallina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: re → regina, poeta → poetessa. cuoco →",
+          "target": " cuoca"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: re → regina, poeta → poetessa. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: re → regina, poeta → poetessa. leone →",
+          "target": " leonessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, attore → attrice. padre →",
+          "target": " madre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, attore → attrice. uomo →",
+          "target": " donna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, attore → attrice. cameriere →",
+          "target": " cameriera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, attore → attrice. figlio →",
+          "target": " figlia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, direttore → direttrice. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, direttore → direttrice. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, direttore → direttrice. cuoco →",
+          "target": " cuoca"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, direttore → direttrice. nonno →",
+          "target": " nonna"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, principe → principessa. gallo →",
+          "target": " gallina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, principe → principessa. bambino →",
+          "target": " bambina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, principe → principessa. ragazzo →",
+          "target": " ragazza"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, principe → principessa. maestro →",
+          "target": " maestra"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: poeta → poetessa, scrittore → scrittrice. cugino →",
+          "target": " cugina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: poeta → poetessa, scrittore → scrittrice. eroe →",
+          "target": " eroina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: poeta → poetessa, scrittore → scrittrice. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: poeta → poetessa, scrittore → scrittrice. dottore →",
+          "target": " dottoressa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, lavoratore → lavoratrice. dottore →",
+          "target": " dottoressa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, lavoratore → lavoratrice. leone →",
+          "target": " leonessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, lavoratore → lavoratrice. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, lavoratore → lavoratrice. marito →",
+          "target": " moglie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, uomo → donna. maestro →",
+          "target": " maestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, uomo → donna. lavoratore →",
+          "target": " lavoratrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, uomo → donna. cameriere →",
+          "target": " cameriera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, uomo → donna. marito →",
+          "target": " moglie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: maestro → maestra, fratello → sorella. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: maestro → maestra, fratello → sorella. scrittore →",
+          "target": " scrittrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: maestro → maestra, fratello → sorella. leone →",
+          "target": " leonessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: maestro → maestra, fratello → sorella. gatto →",
+          "target": " gatta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: principe → principessa, figlio → figlia. scrittore →",
+          "target": " scrittrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: principe → principessa, figlio → figlia. lavoratore →",
+          "target": " lavoratrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: principe → principessa, figlio → figlia. maestro →",
+          "target": " maestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: principe → principessa, figlio → figlia. poeta →",
+          "target": " poetessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, poeta → poetessa. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, poeta → poetessa. dottore →",
+          "target": " dottoressa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, poeta → poetessa. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, poeta → poetessa. attore →",
+          "target": " attrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, scrittore → scrittrice. cameriere →",
+          "target": " cameriera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, scrittore → scrittrice. lavoratore →",
+          "target": " lavoratrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, scrittore → scrittrice. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, scrittore → scrittrice. gatto →",
+          "target": " gatta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gallo → gallina, gatto → gatta. maestro →",
+          "target": " maestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gallo → gallina, gatto → gatta. nonno →",
+          "target": " nonna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gallo → gallina, gatto → gatta. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gallo → gallina, gatto → gatta. padre →",
+          "target": " madre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, direttore → direttrice. bambino →",
+          "target": " bambina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, direttore → direttrice. cugino →",
+          "target": " cugina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, direttore → direttrice. uomo →",
+          "target": " donna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, direttore → direttrice. gallo →",
+          "target": " gallina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, cameriere → cameriera. lavoratore →",
+          "target": " lavoratrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, cameriere → cameriera. attore →",
+          "target": " attrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, cameriere → cameriera. cugino →",
+          "target": " cugina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, cameriere → cameriera. eroe →",
+          "target": " eroina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, scrittore → scrittrice. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, scrittore → scrittrice. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, scrittore → scrittrice. dottore →",
+          "target": " dottoressa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, scrittore → scrittrice. infermiere →",
+          "target": " infermiera"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, figlio → figlia. uomo →",
+          "target": " donna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, figlio → figlia. signore →",
+          "target": " signora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, figlio → figlia. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, figlio → figlia. studente →",
+          "target": " studentessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, eroe → eroina. poeta →",
+          "target": " poetessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, eroe → eroina. nonno →",
+          "target": " nonna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, eroe → eroina. leone →",
+          "target": " leonessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, eroe → eroina. principe →",
+          "target": " principessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: maestro → maestra, padre → madre. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: maestro → maestra, padre → madre. bambino →",
+          "target": " bambina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: maestro → maestra, padre → madre. zio →",
+          "target": " zia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: maestro → maestra, padre → madre. gatto →",
+          "target": " gatta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: direttore → direttrice, padre → madre. gatto →",
+          "target": " gatta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: direttore → direttrice, padre → madre. bambino →",
+          "target": " bambina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: direttore → direttrice, padre → madre. signore →",
+          "target": " signora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: direttore → direttrice, padre → madre. poeta →",
+          "target": " poetessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, bambino → bambina. ragazzo →",
+          "target": " ragazza"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, bambino → bambina. zio →",
+          "target": " zia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, bambino → bambina. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, bambino → bambina. principe →",
+          "target": " principessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, eroe → eroina. gallo →",
+          "target": " gallina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, eroe → eroina. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, eroe → eroina. cameriere →",
+          "target": " cameriera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, eroe → eroina. attore →",
+          "target": " attrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, cugino → cugina. gallo →",
+          "target": " gallina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, cugino → cugina. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, cugino → cugina. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, cugino → cugina. maestro →",
+          "target": " maestra"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, infermiere → infermiera. nonno →",
+          "target": " nonna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, infermiere → infermiera. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, infermiere → infermiera. figlio →",
+          "target": " figlia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, infermiere → infermiera. leone →",
+          "target": " leonessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, poeta → poetessa. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, poeta → poetessa. maestro →",
+          "target": " maestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, poeta → poetessa. ragazzo →",
+          "target": " ragazza"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, poeta → poetessa. cuoco →",
+          "target": " cuoca"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, maestro → maestra. padre →",
+          "target": " madre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, maestro → maestra. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, maestro → maestra. figlio →",
+          "target": " figlia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, maestro → maestra. cameriere →",
+          "target": " cameriera"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, infermiere → infermiera. scrittore →",
+          "target": " scrittrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, infermiere → infermiera. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, infermiere → infermiera. leone →",
+          "target": " leonessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, infermiere → infermiera. padre →",
+          "target": " madre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, cugino → cugina. cameriere →",
+          "target": " cameriera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, cugino → cugina. maestro →",
+          "target": " maestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, cugino → cugina. ragazzo →",
+          "target": " ragazza"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, cugino → cugina. poeta →",
+          "target": " poetessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, figlio → figlia. padre →",
+          "target": " madre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, figlio → figlia. scrittore →",
+          "target": " scrittrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, figlio → figlia. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, figlio → figlia. gallo →",
+          "target": " gallina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: re → regina, cuoco → cuoca. ragazzo →",
+          "target": " ragazza"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: re → regina, cuoco → cuoca. scrittore →",
+          "target": " scrittrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: re → regina, cuoco → cuoca. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: re → regina, cuoco → cuoca. gatto →",
+          "target": " gatta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, cugino → cugina. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, cugino → cugina. leone →",
+          "target": " leonessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, cugino → cugina. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, cugino → cugina. infermiere →",
+          "target": " infermiera"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, re → regina. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, re → regina. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, re → regina. ragazzo →",
+          "target": " ragazza"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, re → regina. direttore →",
+          "target": " direttrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, zio → zia. ragazzo →",
+          "target": " ragazza"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, zio → zia. cugino →",
+          "target": " cugina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, zio → zia. direttore →",
+          "target": " direttrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, zio → zia. gallo →",
+          "target": " gallina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, principe → principessa. bambino →",
+          "target": " bambina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, principe → principessa. scrittore →",
+          "target": " scrittrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, principe → principessa. cugino →",
+          "target": " cugina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, principe → principessa. dottore →",
+          "target": " dottoressa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, padre → madre. cuoco →",
+          "target": " cuoca"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, padre → madre. maestro →",
+          "target": " maestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, padre → madre. direttore →",
+          "target": " direttrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, padre → madre. studente →",
+          "target": " studentessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, bambino → bambina. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, bambino → bambina. eroe →",
+          "target": " eroina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, bambino → bambina. direttore →",
+          "target": " direttrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, bambino → bambina. uomo →",
+          "target": " donna"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, re → regina. eroe →",
+          "target": " eroina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, re → regina. signore →",
+          "target": " signora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, re → regina. zio →",
+          "target": " zia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, re → regina. padre →",
+          "target": " madre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, attore → attrice. eroe →",
+          "target": " eroina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, attore → attrice. poeta →",
+          "target": " poetessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, attore → attrice. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, attore → attrice. leone →",
+          "target": " leonessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, bambino → bambina. gatto →",
+          "target": " gatta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, bambino → bambina. leone →",
+          "target": " leonessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, bambino → bambina. dottore →",
+          "target": " dottoressa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, bambino → bambina. direttore →",
+          "target": " direttrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, cameriere → cameriera. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, cameriere → cameriera. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, cameriere → cameriera. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, cameriere → cameriera. attore →",
+          "target": " attrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, padre → madre. nonno →",
+          "target": " nonna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, padre → madre. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, padre → madre. scrittore →",
+          "target": " scrittrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, padre → madre. leone →",
+          "target": " leonessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, cugino → cugina. poeta →",
+          "target": " poetessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, cugino → cugina. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, cugino → cugina. gatto →",
+          "target": " gatta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, cugino → cugina. eroe →",
+          "target": " eroina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, maestro → maestra. attore →",
+          "target": " attrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, maestro → maestra. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, maestro → maestra. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, maestro → maestra. uomo →",
+          "target": " donna"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, fratello → sorella. dottore →",
+          "target": " dottoressa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, fratello → sorella. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, fratello → sorella. signore →",
+          "target": " signora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: marito → moglie, fratello → sorella. zio →",
+          "target": " zia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, poeta → poetessa. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, poeta → poetessa. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, poeta → poetessa. gallo →",
+          "target": " gallina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, poeta → poetessa. cugino →",
+          "target": " cugina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, poeta → poetessa. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, poeta → poetessa. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, poeta → poetessa. ragazzo →",
+          "target": " ragazza"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bambino → bambina, poeta → poetessa. gatto →",
+          "target": " gatta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, attore → attrice. poeta →",
+          "target": " poetessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, attore → attrice. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, attore → attrice. scrittore →",
+          "target": " scrittrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, attore → attrice. leone →",
+          "target": " leonessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, gatto → gatta. maestro →",
+          "target": " maestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, gatto → gatta. bambino →",
+          "target": " bambina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, gatto → gatta. signore →",
+          "target": " signora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cameriere → cameriera, gatto → gatta. attore →",
+          "target": " attrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, nonno → nonna. direttore →",
+          "target": " direttrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, nonno → nonna. cameriere →",
+          "target": " cameriera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, nonno → nonna. attore →",
+          "target": " attrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, nonno → nonna. infermiere →",
+          "target": " infermiera"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, fratello → sorella. nonno →",
+          "target": " nonna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, fratello → sorella. lavoratore →",
+          "target": " lavoratrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, fratello → sorella. cugino →",
+          "target": " cugina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, fratello → sorella. re →",
+          "target": " regina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, maestro → maestra. nonno →",
+          "target": " nonna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, maestro → maestra. figlio →",
+          "target": " figlia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, maestro → maestra. cameriere →",
+          "target": " cameriera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, maestro → maestra. infermiere →",
+          "target": " infermiera"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, scrittore → scrittrice. cugino →",
+          "target": " cugina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, scrittore → scrittrice. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, scrittore → scrittrice. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, scrittore → scrittrice. gatto →",
+          "target": " gatta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, zio → zia. cugino →",
+          "target": " cugina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, zio → zia. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, zio → zia. eroe →",
+          "target": " eroina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → donna, zio → zia. padre →",
+          "target": " madre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: scrittore → scrittrice, cugino → cugina. signore →",
+          "target": " signora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: scrittore → scrittrice, cugino → cugina. maestro →",
+          "target": " maestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: scrittore → scrittrice, cugino → cugina. cuoco →",
+          "target": " cuoca"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: scrittore → scrittrice, cugino → cugina. ragazzo →",
+          "target": " ragazza"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, re → regina. leone →",
+          "target": " leonessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, re → regina. nonno →",
+          "target": " nonna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, re → regina. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: padre → madre, re → regina. lavoratore →",
+          "target": " lavoratrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, eroe → eroina. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, eroe → eroina. cuoco →",
+          "target": " cuoca"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, eroe → eroina. zio →",
+          "target": " zia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, eroe → eroina. marito →",
+          "target": " moglie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, marito → moglie. nonno →",
+          "target": " nonna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, marito → moglie. poeta →",
+          "target": " poetessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, marito → moglie. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, marito → moglie. cuoco →",
+          "target": " cuoca"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, maestro → maestra. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, maestro → maestra. scrittore →",
+          "target": " scrittrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, maestro → maestra. direttore →",
+          "target": " direttrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatta, maestro → maestra. cugino →",
+          "target": " cugina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: maestro → maestra, dottore → dottoressa. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: maestro → maestra, dottore → dottoressa. nonno →",
+          "target": " nonna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: maestro → maestra, dottore → dottoressa. uomo →",
+          "target": " donna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: maestro → maestra, dottore → dottoressa. zio →",
+          "target": " zia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, principe → principessa. maestro →",
+          "target": " maestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, principe → principessa. cuoco →",
+          "target": " cuoca"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, principe → principessa. direttore →",
+          "target": " direttrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: dottore → dottoressa, principe → principessa. re →",
+          "target": " regina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, signore → signora. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, signore → signora. gatto →",
+          "target": " gatta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, signore → signora. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazza, signore → signora. cameriere →",
+          "target": " cameriera"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: nonno → nonna, infermiere → infermiera. bambino →",
+          "target": " bambina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: nonno → nonna, infermiere → infermiera. eroe →",
+          "target": " eroina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: nonno → nonna, infermiere → infermiera. zio →",
+          "target": " zia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: nonno → nonna, infermiere → infermiera. dottore →",
+          "target": " dottoressa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, maestro → maestra. uomo →",
+          "target": " donna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, maestro → maestra. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, maestro → maestra. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: eroe → eroina, maestro → maestra. figlio →",
+          "target": " figlia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, cuoco → cuoca. signore →",
+          "target": " signora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, cuoco → cuoca. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, cuoco → cuoca. cameriere →",
+          "target": " cameriera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, cuoco → cuoca. attore →",
+          "target": " attrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: infermiere → infermiera, eroe → eroina. cuoco →",
+          "target": " cuoca"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: infermiere → infermiera, eroe → eroina. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: infermiere → infermiera, eroe → eroina. uomo →",
+          "target": " donna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: infermiere → infermiera, eroe → eroina. scrittore →",
+          "target": " scrittrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, cameriere → cameriera. gatto →",
+          "target": " gatta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, cameriere → cameriera. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, cameriere → cameriera. figlio →",
+          "target": " figlia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, cameriere → cameriera. re →",
+          "target": " regina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, direttore → direttrice. dottore →",
+          "target": " dottoressa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, direttore → direttrice. poeta →",
+          "target": " poetessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, direttore → direttrice. zio →",
+          "target": " zia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, direttore → direttrice. leone →",
+          "target": " leonessa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, eroe → eroina. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, eroe → eroina. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, eroe → eroina. gallo →",
+          "target": " gallina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, eroe → eroina. scrittore →",
+          "target": " scrittrice"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: fratello → sorella, principe → principessa. eroe →",
+          "target": " eroina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: fratello → sorella, principe → principessa. poeta →",
+          "target": " poetessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: fratello → sorella, principe → principessa. dottore →",
+          "target": " dottoressa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: fratello → sorella, principe → principessa. zio →",
+          "target": " zia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, figlio → figlia. padre →",
+          "target": " madre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, figlio → figlia. eroe →",
+          "target": " eroina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, figlio → figlia. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: studente → studentessa, figlio → figlia. cugino →",
+          "target": " cugina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, gatto → gatta. ragazzo →",
+          "target": " ragazza"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, gatto → gatta. padre →",
+          "target": " madre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, gatto → gatta. gallo →",
+          "target": " gallina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: attore → attrice, gatto → gatta. dottore →",
+          "target": " dottoressa"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, infermiere → infermiera. poeta →",
+          "target": " poetessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, infermiere → infermiera. direttore →",
+          "target": " direttrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, infermiere → infermiera. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, infermiere → infermiera. signore →",
+          "target": " signora"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gallo → gallina, cuoco → cuoca. padre →",
+          "target": " madre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gallo → gallina, cuoco → cuoca. attore →",
+          "target": " attrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gallo → gallina, cuoco → cuoca. poeta →",
+          "target": " poetessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gallo → gallina, cuoco → cuoca. signore →",
+          "target": " signora"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, lavoratore → lavoratrice. maestro →",
+          "target": " maestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, lavoratore → lavoratrice. studente →",
+          "target": " studentessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, lavoratore → lavoratrice. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, lavoratore → lavoratrice. padre →",
+          "target": " madre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, signore → signora. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, signore → signora. leone →",
+          "target": " leonessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, signore → signora. ragazzo →",
+          "target": " ragazza"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cugino → cugina, signore → signora. cameriere →",
+          "target": " cameriera"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lavoratore → lavoratrice, maestro → maestra. leone →",
+          "target": " leonessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lavoratore → lavoratrice, maestro → maestra. attore →",
+          "target": " attrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lavoratore → lavoratrice, maestro → maestra. cugino →",
+          "target": " cugina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lavoratore → lavoratrice, maestro → maestra. eroe →",
+          "target": " eroina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, leone → leonessa. dottore →",
+          "target": " dottoressa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, leone → leonessa. uomo →",
+          "target": " donna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, leone → leonessa. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, leone → leonessa. infermiere →",
+          "target": " infermiera"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: scrittore → scrittrice, uomo → donna. gallo →",
+          "target": " gallina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: scrittore → scrittrice, uomo → donna. leone →",
+          "target": " leonessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: scrittore → scrittrice, uomo → donna. marito →",
+          "target": " moglie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: scrittore → scrittrice, uomo → donna. padre →",
+          "target": " madre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, lavoratore → lavoratrice. principe →",
+          "target": " principessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, lavoratore → lavoratrice. gallo →",
+          "target": " gallina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, lavoratore → lavoratrice. poeta →",
+          "target": " poetessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: figlio → figlia, lavoratore → lavoratrice. padre →",
+          "target": " madre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, bambino → bambina. signore →",
+          "target": " signora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, bambino → bambina. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, bambino → bambina. padre →",
+          "target": " madre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: leone → leonessa, bambino → bambina. marito →",
+          "target": " moglie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, cameriere → cameriera. bambino →",
+          "target": " bambina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, cameriere → cameriera. attore →",
+          "target": " attrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, cameriere → cameriera. figlio →",
+          "target": " figlia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, cameriere → cameriera. padre →",
+          "target": " madre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: signore → signora, attore → attrice. lavoratore →",
+          "target": " lavoratrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: signore → signora, attore → attrice. re →",
+          "target": " regina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: signore → signora, attore → attrice. bambino →",
+          "target": " bambina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: signore → signora, attore → attrice. infermiere →",
+          "target": " infermiera"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, cameriere → cameriera. leone →",
+          "target": " leonessa"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, cameriere → cameriera. infermiere →",
+          "target": " infermiera"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, cameriere → cameriera. ragazzo →",
+          "target": " ragazza"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: zio → zia, cameriere → cameriera. re →",
+          "target": " regina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, figlio → figlia. direttore →",
+          "target": " direttrice"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, figlio → figlia. signore →",
+          "target": " signora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, figlio → figlia. gatto →",
+          "target": " gatta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cuoco → cuoca, figlio → figlia. cugino →",
+          "target": " cugina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gallo → gallina, gatto → gatta. nonno →",
+          "target": " nonna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gallo → gallina, gatto → gatta. fratello →",
+          "target": " sorella"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gallo → gallina, gatto → gatta. cuoco →",
+          "target": " cuoca"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gallo → gallina, gatto → gatta. infermiere →",
+          "target": " infermiera"
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

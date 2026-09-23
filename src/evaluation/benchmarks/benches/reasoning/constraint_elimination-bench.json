@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "reasoning_constraint_elimination",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Anna, Simone, Giulia, Paolo possiedono ciascuno un oggetto diverso tra un cappello, una moneta, un biglietto, un libro. Sono note queste assegnazioni: Simone possiede una moneta, Giulia possiede un biglietto, Paolo possiede un libro. Anna possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Anna, Simone, Giulia, Paolo possiedono ciascuno un oggetto diverso tra un cappello, una moneta, un biglietto, un libro. Sono note queste assegnazioni: Anna possiede un cappello, Giulia possiede un biglietto, Paolo possiede un libro. Simone possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Anna, Simone, Giulia, Paolo possiedono ciascuno un oggetto diverso tra un cappello, una moneta, un biglietto, un libro. Sono note queste assegnazioni: Anna possiede un cappello, Simone possiede una moneta, Paolo possiede un libro. Giulia possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Anna, Simone, Giulia, Paolo possiedono ciascuno un oggetto diverso tra un cappello, una moneta, un biglietto, un libro. Sono note queste assegnazioni: Anna possiede un cappello, Simone possiede una moneta, Giulia possiede un biglietto. Paolo possiede",
+          "target": " un libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Fabio, Anna, Marta, Luca possiedono ciascuno un oggetto diverso tra una candela, un ombrello, una mappa, un orologio. Sono note queste assegnazioni: Anna possiede un ombrello, Marta possiede una mappa, Luca possiede un orologio. Fabio possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Fabio, Anna, Marta, Luca possiedono ciascuno un oggetto diverso tra una candela, un ombrello, una mappa, un orologio. Sono note queste assegnazioni: Fabio possiede una candela, Marta possiede una mappa, Luca possiede un orologio. Anna possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Fabio, Anna, Marta, Luca possiedono ciascuno un oggetto diverso tra una candela, un ombrello, una mappa, un orologio. Sono note queste assegnazioni: Fabio possiede una candela, Anna possiede un ombrello, Luca possiede un orologio. Marta possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Fabio, Anna, Marta, Luca possiedono ciascuno un oggetto diverso tra una candela, un ombrello, una mappa, un orologio. Sono note queste assegnazioni: Fabio possiede una candela, Anna possiede un ombrello, Marta possiede una mappa. Luca possiede",
+          "target": " un orologio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Elena, Simone, Laura, Marta possiedono ciascuno un oggetto diverso tra un anello, un ombrello, un cappello, un orologio. Sono note queste assegnazioni: Simone possiede un ombrello, Laura possiede un cappello, Marta possiede un orologio. Elena possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Elena, Simone, Laura, Marta possiedono ciascuno un oggetto diverso tra un anello, un ombrello, un cappello, un orologio. Sono note queste assegnazioni: Elena possiede un anello, Laura possiede un cappello, Marta possiede un orologio. Simone possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Elena, Simone, Laura, Marta possiedono ciascuno un oggetto diverso tra un anello, un ombrello, un cappello, un orologio. Sono note queste assegnazioni: Elena possiede un anello, Simone possiede un ombrello, Marta possiede un orologio. Laura possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Elena, Simone, Laura, Marta possiedono ciascuno un oggetto diverso tra un anello, un ombrello, un cappello, un orologio. Sono note queste assegnazioni: Elena possiede un anello, Simone possiede un ombrello, Laura possiede un cappello. Marta possiede",
+          "target": " un orologio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Anna, Irene, Marta, Sara possiedono ciascuno un oggetto diverso tra un anello, un quaderno, una tazza, una moneta. Sono note queste assegnazioni: Irene possiede un quaderno, Marta possiede una tazza, Sara possiede una moneta. Anna possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Anna, Irene, Marta, Sara possiedono ciascuno un oggetto diverso tra un anello, un quaderno, una tazza, una moneta. Sono note queste assegnazioni: Anna possiede un anello, Marta possiede una tazza, Sara possiede una moneta. Irene possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Anna, Irene, Marta, Sara possiedono ciascuno un oggetto diverso tra un anello, un quaderno, una tazza, una moneta. Sono note queste assegnazioni: Anna possiede un anello, Irene possiede un quaderno, Sara possiede una moneta. Marta possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Anna, Irene, Marta, Sara possiedono ciascuno un oggetto diverso tra un anello, un quaderno, una tazza, una moneta. Sono note queste assegnazioni: Anna possiede un anello, Irene possiede un quaderno, Marta possiede una tazza. Sara possiede",
+          "target": " una moneta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Laura, Luca, Marta, Elena possiedono ciascuno un oggetto diverso tra un ombrello, un quaderno, un anello, una fotografia. Sono note queste assegnazioni: Luca possiede un quaderno, Marta possiede un anello, Elena possiede una fotografia. Laura possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Laura, Luca, Marta, Elena possiedono ciascuno un oggetto diverso tra un ombrello, un quaderno, un anello, una fotografia. Sono note queste assegnazioni: Laura possiede un ombrello, Marta possiede un anello, Elena possiede una fotografia. Luca possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Laura, Luca, Marta, Elena possiedono ciascuno un oggetto diverso tra un ombrello, un quaderno, un anello, una fotografia. Sono note queste assegnazioni: Laura possiede un ombrello, Luca possiede un quaderno, Elena possiede una fotografia. Marta possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Laura, Luca, Marta, Elena possiedono ciascuno un oggetto diverso tra un ombrello, un quaderno, un anello, una fotografia. Sono note queste assegnazioni: Laura possiede un ombrello, Luca possiede un quaderno, Marta possiede un anello. Elena possiede",
+          "target": " una fotografia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Luca, Simone, Davide, Chiara possiedono ciascuno un oggetto diverso tra un ombrello, una fotografia, una candela, un libro. Sono note queste assegnazioni: Simone possiede una fotografia, Davide possiede una candela, Chiara possiede un libro. Luca possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Luca, Simone, Davide, Chiara possiedono ciascuno un oggetto diverso tra un ombrello, una fotografia, una candela, un libro. Sono note queste assegnazioni: Luca possiede un ombrello, Davide possiede una candela, Chiara possiede un libro. Simone possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Luca, Simone, Davide, Chiara possiedono ciascuno un oggetto diverso tra un ombrello, una fotografia, una candela, un libro. Sono note queste assegnazioni: Luca possiede un ombrello, Simone possiede una fotografia, Chiara possiede un libro. Davide possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Luca, Simone, Davide, Chiara possiedono ciascuno un oggetto diverso tra un ombrello, una fotografia, una candela, un libro. Sono note queste assegnazioni: Luca possiede un ombrello, Simone possiede una fotografia, Davide possiede una candela. Chiara possiede",
+          "target": " un libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Simone, Matteo, Paolo, Andrea possiedono ciascuno un oggetto diverso tra una moneta, una chiave, una penna, un ombrello. Sono note queste assegnazioni: Matteo possiede una chiave, Paolo possiede una penna, Andrea possiede un ombrello. Simone possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Simone, Matteo, Paolo, Andrea possiedono ciascuno un oggetto diverso tra una moneta, una chiave, una penna, un ombrello. Sono note queste assegnazioni: Simone possiede una moneta, Paolo possiede una penna, Andrea possiede un ombrello. Matteo possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Simone, Matteo, Paolo, Andrea possiedono ciascuno un oggetto diverso tra una moneta, una chiave, una penna, un ombrello. Sono note queste assegnazioni: Simone possiede una moneta, Matteo possiede una chiave, Andrea possiede un ombrello. Paolo possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Simone, Matteo, Paolo, Andrea possiedono ciascuno un oggetto diverso tra una moneta, una chiave, una penna, un ombrello. Sono note queste assegnazioni: Simone possiede una moneta, Matteo possiede una chiave, Paolo possiede una penna. Andrea possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sara, Fabio, Paolo, Luca possiedono ciascuno un oggetto diverso tra una bottiglia, una tazza, un cappello, una penna. Sono note queste assegnazioni: Fabio possiede una tazza, Paolo possiede un cappello, Luca possiede una penna. Sara possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Sara, Fabio, Paolo, Luca possiedono ciascuno un oggetto diverso tra una bottiglia, una tazza, un cappello, una penna. Sono note queste assegnazioni: Sara possiede una bottiglia, Paolo possiede un cappello, Luca possiede una penna. Fabio possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Sara, Fabio, Paolo, Luca possiedono ciascuno un oggetto diverso tra una bottiglia, una tazza, un cappello, una penna. Sono note queste assegnazioni: Sara possiede una bottiglia, Fabio possiede una tazza, Luca possiede una penna. Paolo possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Sara, Fabio, Paolo, Luca possiedono ciascuno un oggetto diverso tra una bottiglia, una tazza, un cappello, una penna. Sono note queste assegnazioni: Sara possiede una bottiglia, Fabio possiede una tazza, Paolo possiede un cappello. Luca possiede",
+          "target": " una penna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Marco, Andrea, Marta, Paolo possiedono ciascuno un oggetto diverso tra una mappa, un biglietto, una penna, un anello. Sono note queste assegnazioni: Andrea possiede un biglietto, Marta possiede una penna, Paolo possiede un anello. Marco possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Marco, Andrea, Marta, Paolo possiedono ciascuno un oggetto diverso tra una mappa, un biglietto, una penna, un anello. Sono note queste assegnazioni: Marco possiede una mappa, Marta possiede una penna, Paolo possiede un anello. Andrea possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Marco, Andrea, Marta, Paolo possiedono ciascuno un oggetto diverso tra una mappa, un biglietto, una penna, un anello. Sono note queste assegnazioni: Marco possiede una mappa, Andrea possiede un biglietto, Paolo possiede un anello. Marta possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Marco, Andrea, Marta, Paolo possiedono ciascuno un oggetto diverso tra una mappa, un biglietto, una penna, un anello. Sono note queste assegnazioni: Marco possiede una mappa, Andrea possiede un biglietto, Marta possiede una penna. Paolo possiede",
+          "target": " un anello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Marco, Chiara, Simone, Paolo possiedono ciascuno un oggetto diverso tra un quaderno, un cappello, una candela, una tazza. Sono note queste assegnazioni: Chiara possiede un cappello, Simone possiede una candela, Paolo possiede una tazza. Marco possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Marco, Chiara, Simone, Paolo possiedono ciascuno un oggetto diverso tra un quaderno, un cappello, una candela, una tazza. Sono note queste assegnazioni: Marco possiede un quaderno, Simone possiede una candela, Paolo possiede una tazza. Chiara possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Marco, Chiara, Simone, Paolo possiedono ciascuno un oggetto diverso tra un quaderno, un cappello, una candela, una tazza. Sono note queste assegnazioni: Marco possiede un quaderno, Chiara possiede un cappello, Paolo possiede una tazza. Simone possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Marco, Chiara, Simone, Paolo possiedono ciascuno un oggetto diverso tra un quaderno, un cappello, una candela, una tazza. Sono note queste assegnazioni: Marco possiede un quaderno, Chiara possiede un cappello, Simone possiede una candela. Paolo possiede",
+          "target": " una tazza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Laura, Fabio, Irene, Marta possiedono ciascuno un oggetto diverso tra un libro, un ombrello, un anello, una chiave. Sono note queste assegnazioni: Fabio possiede un ombrello, Irene possiede un anello, Marta possiede una chiave. Laura possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Laura, Fabio, Irene, Marta possiedono ciascuno un oggetto diverso tra un libro, un ombrello, un anello, una chiave. Sono note queste assegnazioni: Laura possiede un libro, Irene possiede un anello, Marta possiede una chiave. Fabio possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Laura, Fabio, Irene, Marta possiedono ciascuno un oggetto diverso tra un libro, un ombrello, un anello, una chiave. Sono note queste assegnazioni: Laura possiede un libro, Fabio possiede un ombrello, Marta possiede una chiave. Irene possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Laura, Fabio, Irene, Marta possiedono ciascuno un oggetto diverso tra un libro, un ombrello, un anello, una chiave. Sono note queste assegnazioni: Laura possiede un libro, Fabio possiede un ombrello, Irene possiede un anello. Marta possiede",
+          "target": " una chiave."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Irene, Giulia, Luca, Paolo possiedono ciascuno un oggetto diverso tra una penna, un ombrello, un cucchiaio, un cappello. Sono note queste assegnazioni: Giulia possiede un ombrello, Luca possiede un cucchiaio, Paolo possiede un cappello. Irene possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Irene, Giulia, Luca, Paolo possiedono ciascuno un oggetto diverso tra una penna, un ombrello, un cucchiaio, un cappello. Sono note queste assegnazioni: Irene possiede una penna, Luca possiede un cucchiaio, Paolo possiede un cappello. Giulia possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Irene, Giulia, Luca, Paolo possiedono ciascuno un oggetto diverso tra una penna, un ombrello, un cucchiaio, un cappello. Sono note queste assegnazioni: Irene possiede una penna, Giulia possiede un ombrello, Paolo possiede un cappello. Luca possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Irene, Giulia, Luca, Paolo possiedono ciascuno un oggetto diverso tra una penna, un ombrello, un cucchiaio, un cappello. Sono note queste assegnazioni: Irene possiede una penna, Giulia possiede un ombrello, Luca possiede un cucchiaio. Paolo possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Marta, Sara, Giulia, Andrea possiedono ciascuno un oggetto diverso tra un cappello, un biglietto, una mappa, un anello. Sono note queste assegnazioni: Sara possiede un biglietto, Giulia possiede una mappa, Andrea possiede un anello. Marta possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Marta, Sara, Giulia, Andrea possiedono ciascuno un oggetto diverso tra un cappello, un biglietto, una mappa, un anello. Sono note queste assegnazioni: Marta possiede un cappello, Giulia possiede una mappa, Andrea possiede un anello. Sara possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Marta, Sara, Giulia, Andrea possiedono ciascuno un oggetto diverso tra un cappello, un biglietto, una mappa, un anello. Sono note queste assegnazioni: Marta possiede un cappello, Sara possiede un biglietto, Andrea possiede un anello. Giulia possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Marta, Sara, Giulia, Andrea possiedono ciascuno un oggetto diverso tra un cappello, un biglietto, una mappa, un anello. Sono note queste assegnazioni: Marta possiede un cappello, Sara possiede un biglietto, Giulia possiede una mappa. Andrea possiede",
+          "target": " un anello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Fabio, Marta, Matteo, Elena possiedono ciascuno un oggetto diverso tra un biglietto, un ombrello, una moneta, una mappa. Sono note queste assegnazioni: Marta possiede un ombrello, Matteo possiede una moneta, Elena possiede una mappa. Fabio possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Fabio, Marta, Matteo, Elena possiedono ciascuno un oggetto diverso tra un biglietto, un ombrello, una moneta, una mappa. Sono note queste assegnazioni: Fabio possiede un biglietto, Matteo possiede una moneta, Elena possiede una mappa. Marta possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Fabio, Marta, Matteo, Elena possiedono ciascuno un oggetto diverso tra un biglietto, un ombrello, una moneta, una mappa. Sono note queste assegnazioni: Fabio possiede un biglietto, Marta possiede un ombrello, Elena possiede una mappa. Matteo possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Fabio, Marta, Matteo, Elena possiedono ciascuno un oggetto diverso tra un biglietto, un ombrello, una moneta, una mappa. Sono note queste assegnazioni: Fabio possiede un biglietto, Marta possiede un ombrello, Matteo possiede una moneta. Elena possiede",
+          "target": " una mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sara, Irene, Anna, Luca possiedono ciascuno un oggetto diverso tra una tazza, una penna, una moneta, una bottiglia. Sono note queste assegnazioni: Irene possiede una penna, Anna possiede una moneta, Luca possiede una bottiglia. Sara possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Sara, Irene, Anna, Luca possiedono ciascuno un oggetto diverso tra una tazza, una penna, una moneta, una bottiglia. Sono note queste assegnazioni: Sara possiede una tazza, Anna possiede una moneta, Luca possiede una bottiglia. Irene possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Sara, Irene, Anna, Luca possiedono ciascuno un oggetto diverso tra una tazza, una penna, una moneta, una bottiglia. Sono note queste assegnazioni: Sara possiede una tazza, Irene possiede una penna, Luca possiede una bottiglia. Anna possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Sara, Irene, Anna, Luca possiedono ciascuno un oggetto diverso tra una tazza, una penna, una moneta, una bottiglia. Sono note queste assegnazioni: Sara possiede una tazza, Irene possiede una penna, Anna possiede una moneta. Luca possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sara, Elena, Marta, Matteo possiedono ciascuno un oggetto diverso tra una fotografia, una mappa, una tazza, un cucchiaio. Sono note queste assegnazioni: Elena possiede una mappa, Marta possiede una tazza, Matteo possiede un cucchiaio. Sara possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Sara, Elena, Marta, Matteo possiedono ciascuno un oggetto diverso tra una fotografia, una mappa, una tazza, un cucchiaio. Sono note queste assegnazioni: Sara possiede una fotografia, Marta possiede una tazza, Matteo possiede un cucchiaio. Elena possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Sara, Elena, Marta, Matteo possiedono ciascuno un oggetto diverso tra una fotografia, una mappa, una tazza, un cucchiaio. Sono note queste assegnazioni: Sara possiede una fotografia, Elena possiede una mappa, Matteo possiede un cucchiaio. Marta possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Sara, Elena, Marta, Matteo possiedono ciascuno un oggetto diverso tra una fotografia, una mappa, una tazza, un cucchiaio. Sono note queste assegnazioni: Sara possiede una fotografia, Elena possiede una mappa, Marta possiede una tazza. Matteo possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Paolo, Laura, Chiara, Irene possiedono ciascuno un oggetto diverso tra una mappa, una bottiglia, una penna, un quaderno. Sono note queste assegnazioni: Laura possiede una bottiglia, Chiara possiede una penna, Irene possiede un quaderno. Paolo possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Paolo, Laura, Chiara, Irene possiedono ciascuno un oggetto diverso tra una mappa, una bottiglia, una penna, un quaderno. Sono note queste assegnazioni: Paolo possiede una mappa, Chiara possiede una penna, Irene possiede un quaderno. Laura possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Paolo, Laura, Chiara, Irene possiedono ciascuno un oggetto diverso tra una mappa, una bottiglia, una penna, un quaderno. Sono note queste assegnazioni: Paolo possiede una mappa, Laura possiede una bottiglia, Irene possiede un quaderno. Chiara possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Paolo, Laura, Chiara, Irene possiedono ciascuno un oggetto diverso tra una mappa, una bottiglia, una penna, un quaderno. Sono note queste assegnazioni: Paolo possiede una mappa, Laura possiede una bottiglia, Chiara possiede una penna. Irene possiede",
+          "target": " un quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Matteo, Elena, Sara, Davide possiedono ciascuno un oggetto diverso tra una chiave, un biglietto, una fotografia, una tazza. Sono note queste assegnazioni: Elena possiede un biglietto, Sara possiede una fotografia, Davide possiede una tazza. Matteo possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Matteo, Elena, Sara, Davide possiedono ciascuno un oggetto diverso tra una chiave, un biglietto, una fotografia, una tazza. Sono note queste assegnazioni: Matteo possiede una chiave, Sara possiede una fotografia, Davide possiede una tazza. Elena possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Matteo, Elena, Sara, Davide possiedono ciascuno un oggetto diverso tra una chiave, un biglietto, una fotografia, una tazza. Sono note queste assegnazioni: Matteo possiede una chiave, Elena possiede un biglietto, Davide possiede una tazza. Sara possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Matteo, Elena, Sara, Davide possiedono ciascuno un oggetto diverso tra una chiave, un biglietto, una fotografia, una tazza. Sono note queste assegnazioni: Matteo possiede una chiave, Elena possiede un biglietto, Sara possiede una fotografia. Davide possiede",
+          "target": " una tazza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Paolo, Fabio, Laura, Giulia possiedono ciascuno un oggetto diverso tra una candela, una moneta, un quaderno, una bottiglia. Sono note queste assegnazioni: Fabio possiede una moneta, Laura possiede un quaderno, Giulia possiede una bottiglia. Paolo possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Paolo, Fabio, Laura, Giulia possiedono ciascuno un oggetto diverso tra una candela, una moneta, un quaderno, una bottiglia. Sono note queste assegnazioni: Paolo possiede una candela, Laura possiede un quaderno, Giulia possiede una bottiglia. Fabio possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Paolo, Fabio, Laura, Giulia possiedono ciascuno un oggetto diverso tra una candela, una moneta, un quaderno, una bottiglia. Sono note queste assegnazioni: Paolo possiede una candela, Fabio possiede una moneta, Giulia possiede una bottiglia. Laura possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Paolo, Fabio, Laura, Giulia possiedono ciascuno un oggetto diverso tra una candela, una moneta, un quaderno, una bottiglia. Sono note queste assegnazioni: Paolo possiede una candela, Fabio possiede una moneta, Laura possiede un quaderno. Giulia possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Anna, Matteo, Marco, Davide possiedono ciascuno un oggetto diverso tra una chiave, un libro, un quaderno, una bottiglia. Sono note queste assegnazioni: Matteo possiede un libro, Marco possiede un quaderno, Davide possiede una bottiglia. Anna possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Anna, Matteo, Marco, Davide possiedono ciascuno un oggetto diverso tra una chiave, un libro, un quaderno, una bottiglia. Sono note queste assegnazioni: Anna possiede una chiave, Marco possiede un quaderno, Davide possiede una bottiglia. Matteo possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Anna, Matteo, Marco, Davide possiedono ciascuno un oggetto diverso tra una chiave, un libro, un quaderno, una bottiglia. Sono note queste assegnazioni: Anna possiede una chiave, Matteo possiede un libro, Davide possiede una bottiglia. Marco possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Anna, Matteo, Marco, Davide possiedono ciascuno un oggetto diverso tra una chiave, un libro, un quaderno, una bottiglia. Sono note queste assegnazioni: Anna possiede una chiave, Matteo possiede un libro, Marco possiede un quaderno. Davide possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Davide, Anna, Paolo, Matteo possiedono ciascuno un oggetto diverso tra una moneta, un libro, un biglietto, un cappello. Sono note queste assegnazioni: Anna possiede un libro, Paolo possiede un biglietto, Matteo possiede un cappello. Davide possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Davide, Anna, Paolo, Matteo possiedono ciascuno un oggetto diverso tra una moneta, un libro, un biglietto, un cappello. Sono note queste assegnazioni: Davide possiede una moneta, Paolo possiede un biglietto, Matteo possiede un cappello. Anna possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Davide, Anna, Paolo, Matteo possiedono ciascuno un oggetto diverso tra una moneta, un libro, un biglietto, un cappello. Sono note queste assegnazioni: Davide possiede una moneta, Anna possiede un libro, Matteo possiede un cappello. Paolo possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Davide, Anna, Paolo, Matteo possiedono ciascuno un oggetto diverso tra una moneta, un libro, un biglietto, un cappello. Sono note queste assegnazioni: Davide possiede una moneta, Anna possiede un libro, Paolo possiede un biglietto. Matteo possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Giulia, Sara, Laura, Davide possiedono ciascuno un oggetto diverso tra un quaderno, una tazza, una mappa, un orologio. Sono note queste assegnazioni: Sara possiede una tazza, Laura possiede una mappa, Davide possiede un orologio. Giulia possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Giulia, Sara, Laura, Davide possiedono ciascuno un oggetto diverso tra un quaderno, una tazza, una mappa, un orologio. Sono note queste assegnazioni: Giulia possiede un quaderno, Laura possiede una mappa, Davide possiede un orologio. Sara possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Giulia, Sara, Laura, Davide possiedono ciascuno un oggetto diverso tra un quaderno, una tazza, una mappa, un orologio. Sono note queste assegnazioni: Giulia possiede un quaderno, Sara possiede una tazza, Davide possiede un orologio. Laura possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Giulia, Sara, Laura, Davide possiedono ciascuno un oggetto diverso tra un quaderno, una tazza, una mappa, un orologio. Sono note queste assegnazioni: Giulia possiede un quaderno, Sara possiede una tazza, Laura possiede una mappa. Davide possiede",
+          "target": " un orologio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Elena, Marta, Chiara, Irene possiedono ciascuno un oggetto diverso tra una candela, un biglietto, una tazza, un cucchiaio. Sono note queste assegnazioni: Marta possiede un biglietto, Chiara possiede una tazza, Irene possiede un cucchiaio. Elena possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Elena, Marta, Chiara, Irene possiedono ciascuno un oggetto diverso tra una candela, un biglietto, una tazza, un cucchiaio. Sono note queste assegnazioni: Elena possiede una candela, Chiara possiede una tazza, Irene possiede un cucchiaio. Marta possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Elena, Marta, Chiara, Irene possiedono ciascuno un oggetto diverso tra una candela, un biglietto, una tazza, un cucchiaio. Sono note queste assegnazioni: Elena possiede una candela, Marta possiede un biglietto, Irene possiede un cucchiaio. Chiara possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Elena, Marta, Chiara, Irene possiedono ciascuno un oggetto diverso tra una candela, un biglietto, una tazza, un cucchiaio. Sono note queste assegnazioni: Elena possiede una candela, Marta possiede un biglietto, Chiara possiede una tazza. Irene possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Marta, Andrea, Chiara, Davide possiedono ciascuno un oggetto diverso tra un ombrello, un cucchiaio, una fotografia, un libro. Sono note queste assegnazioni: Andrea possiede un cucchiaio, Chiara possiede una fotografia, Davide possiede un libro. Marta possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Marta, Andrea, Chiara, Davide possiedono ciascuno un oggetto diverso tra un ombrello, un cucchiaio, una fotografia, un libro. Sono note queste assegnazioni: Marta possiede un ombrello, Chiara possiede una fotografia, Davide possiede un libro. Andrea possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Marta, Andrea, Chiara, Davide possiedono ciascuno un oggetto diverso tra un ombrello, un cucchiaio, una fotografia, un libro. Sono note queste assegnazioni: Marta possiede un ombrello, Andrea possiede un cucchiaio, Davide possiede un libro. Chiara possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Marta, Andrea, Chiara, Davide possiedono ciascuno un oggetto diverso tra un ombrello, un cucchiaio, una fotografia, un libro. Sono note queste assegnazioni: Marta possiede un ombrello, Andrea possiede un cucchiaio, Chiara possiede una fotografia. Davide possiede",
+          "target": " un libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Anna, Matteo, Chiara, Paolo possiedono ciascuno un oggetto diverso tra un cappello, una chiave, un libro, un biglietto. Sono note queste assegnazioni: Matteo possiede una chiave, Chiara possiede un libro, Paolo possiede un biglietto. Anna possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Anna, Matteo, Chiara, Paolo possiedono ciascuno un oggetto diverso tra un cappello, una chiave, un libro, un biglietto. Sono note queste assegnazioni: Anna possiede un cappello, Chiara possiede un libro, Paolo possiede un biglietto. Matteo possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Anna, Matteo, Chiara, Paolo possiedono ciascuno un oggetto diverso tra un cappello, una chiave, un libro, un biglietto. Sono note queste assegnazioni: Anna possiede un cappello, Matteo possiede una chiave, Paolo possiede un biglietto. Chiara possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Anna, Matteo, Chiara, Paolo possiedono ciascuno un oggetto diverso tra un cappello, una chiave, un libro, un biglietto. Sono note queste assegnazioni: Anna possiede un cappello, Matteo possiede una chiave, Chiara possiede un libro. Paolo possiede",
+          "target": " un biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Davide, Luca, Anna, Marco possiedono ciascuno un oggetto diverso tra una moneta, una mappa, un ombrello, una tazza. Sono note queste assegnazioni: Luca possiede una mappa, Anna possiede un ombrello, Marco possiede una tazza. Davide possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Davide, Luca, Anna, Marco possiedono ciascuno un oggetto diverso tra una moneta, una mappa, un ombrello, una tazza. Sono note queste assegnazioni: Davide possiede una moneta, Anna possiede un ombrello, Marco possiede una tazza. Luca possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Davide, Luca, Anna, Marco possiedono ciascuno un oggetto diverso tra una moneta, una mappa, un ombrello, una tazza. Sono note queste assegnazioni: Davide possiede una moneta, Luca possiede una mappa, Marco possiede una tazza. Anna possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Davide, Luca, Anna, Marco possiedono ciascuno un oggetto diverso tra una moneta, una mappa, un ombrello, una tazza. Sono note queste assegnazioni: Davide possiede una moneta, Luca possiede una mappa, Anna possiede un ombrello. Marco possiede",
+          "target": " una tazza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Elena, Chiara, Sara, Simone possiedono ciascuno un oggetto diverso tra un cucchiaio, un ombrello, una bottiglia, un cappello. Sono note queste assegnazioni: Chiara possiede un ombrello, Sara possiede una bottiglia, Simone possiede un cappello. Elena possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Elena, Chiara, Sara, Simone possiedono ciascuno un oggetto diverso tra un cucchiaio, un ombrello, una bottiglia, un cappello. Sono note queste assegnazioni: Elena possiede un cucchiaio, Sara possiede una bottiglia, Simone possiede un cappello. Chiara possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Elena, Chiara, Sara, Simone possiedono ciascuno un oggetto diverso tra un cucchiaio, un ombrello, una bottiglia, un cappello. Sono note queste assegnazioni: Elena possiede un cucchiaio, Chiara possiede un ombrello, Simone possiede un cappello. Sara possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Elena, Chiara, Sara, Simone possiedono ciascuno un oggetto diverso tra un cucchiaio, un ombrello, una bottiglia, un cappello. Sono note queste assegnazioni: Elena possiede un cucchiaio, Chiara possiede un ombrello, Sara possiede una bottiglia. Simone possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Elena, Luca, Marta, Laura possiedono ciascuno un oggetto diverso tra un anello, un quaderno, una candela, un cucchiaio. Sono note queste assegnazioni: Luca possiede un quaderno, Marta possiede una candela, Laura possiede un cucchiaio. Elena possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Elena, Luca, Marta, Laura possiedono ciascuno un oggetto diverso tra un anello, un quaderno, una candela, un cucchiaio. Sono note queste assegnazioni: Elena possiede un anello, Marta possiede una candela, Laura possiede un cucchiaio. Luca possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Elena, Luca, Marta, Laura possiedono ciascuno un oggetto diverso tra un anello, un quaderno, una candela, un cucchiaio. Sono note queste assegnazioni: Elena possiede un anello, Luca possiede un quaderno, Laura possiede un cucchiaio. Marta possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Elena, Luca, Marta, Laura possiedono ciascuno un oggetto diverso tra un anello, un quaderno, una candela, un cucchiaio. Sono note queste assegnazioni: Elena possiede un anello, Luca possiede un quaderno, Marta possiede una candela. Laura possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Luca, Laura, Marta, Fabio possiedono ciascuno un oggetto diverso tra un ombrello, una chiave, una candela, un biglietto. Sono note queste assegnazioni: Laura possiede una chiave, Marta possiede una candela, Fabio possiede un biglietto. Luca possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Luca, Laura, Marta, Fabio possiedono ciascuno un oggetto diverso tra un ombrello, una chiave, una candela, un biglietto. Sono note queste assegnazioni: Luca possiede un ombrello, Marta possiede una candela, Fabio possiede un biglietto. Laura possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Luca, Laura, Marta, Fabio possiedono ciascuno un oggetto diverso tra un ombrello, una chiave, una candela, un biglietto. Sono note queste assegnazioni: Luca possiede un ombrello, Laura possiede una chiave, Fabio possiede un biglietto. Marta possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Luca, Laura, Marta, Fabio possiedono ciascuno un oggetto diverso tra un ombrello, una chiave, una candela, un biglietto. Sono note queste assegnazioni: Luca possiede un ombrello, Laura possiede una chiave, Marta possiede una candela. Fabio possiede",
+          "target": " un biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Paolo, Andrea, Marta, Fabio possiedono ciascuno un oggetto diverso tra una fotografia, una moneta, una candela, un cucchiaio. Sono note queste assegnazioni: Andrea possiede una moneta, Marta possiede una candela, Fabio possiede un cucchiaio. Paolo possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Paolo, Andrea, Marta, Fabio possiedono ciascuno un oggetto diverso tra una fotografia, una moneta, una candela, un cucchiaio. Sono note queste assegnazioni: Paolo possiede una fotografia, Marta possiede una candela, Fabio possiede un cucchiaio. Andrea possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Paolo, Andrea, Marta, Fabio possiedono ciascuno un oggetto diverso tra una fotografia, una moneta, una candela, un cucchiaio. Sono note queste assegnazioni: Paolo possiede una fotografia, Andrea possiede una moneta, Fabio possiede un cucchiaio. Marta possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Paolo, Andrea, Marta, Fabio possiedono ciascuno un oggetto diverso tra una fotografia, una moneta, una candela, un cucchiaio. Sono note queste assegnazioni: Paolo possiede una fotografia, Andrea possiede una moneta, Marta possiede una candela. Fabio possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Marta, Paolo, Fabio, Luca possiedono ciascuno un oggetto diverso tra una fotografia, una bottiglia, un anello, una mappa. Sono note queste assegnazioni: Paolo possiede una bottiglia, Fabio possiede un anello, Luca possiede una mappa. Marta possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Marta, Paolo, Fabio, Luca possiedono ciascuno un oggetto diverso tra una fotografia, una bottiglia, un anello, una mappa. Sono note queste assegnazioni: Marta possiede una fotografia, Fabio possiede un anello, Luca possiede una mappa. Paolo possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Marta, Paolo, Fabio, Luca possiedono ciascuno un oggetto diverso tra una fotografia, una bottiglia, un anello, una mappa. Sono note queste assegnazioni: Marta possiede una fotografia, Paolo possiede una bottiglia, Luca possiede una mappa. Fabio possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Marta, Paolo, Fabio, Luca possiedono ciascuno un oggetto diverso tra una fotografia, una bottiglia, un anello, una mappa. Sono note queste assegnazioni: Marta possiede una fotografia, Paolo possiede una bottiglia, Fabio possiede un anello. Luca possiede",
+          "target": " una mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Luca, Laura, Chiara, Anna possiedono ciascuno un oggetto diverso tra una moneta, una fotografia, una bottiglia, un ombrello. Sono note queste assegnazioni: Laura possiede una fotografia, Chiara possiede una bottiglia, Anna possiede un ombrello. Luca possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Luca, Laura, Chiara, Anna possiedono ciascuno un oggetto diverso tra una moneta, una fotografia, una bottiglia, un ombrello. Sono note queste assegnazioni: Luca possiede una moneta, Chiara possiede una bottiglia, Anna possiede un ombrello. Laura possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Luca, Laura, Chiara, Anna possiedono ciascuno un oggetto diverso tra una moneta, una fotografia, una bottiglia, un ombrello. Sono note queste assegnazioni: Luca possiede una moneta, Laura possiede una fotografia, Anna possiede un ombrello. Chiara possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Luca, Laura, Chiara, Anna possiedono ciascuno un oggetto diverso tra una moneta, una fotografia, una bottiglia, un ombrello. Sono note queste assegnazioni: Luca possiede una moneta, Laura possiede una fotografia, Chiara possiede una bottiglia. Anna possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Fabio, Davide, Marta, Paolo possiedono ciascuno un oggetto diverso tra una bottiglia, una fotografia, una chiave, una moneta. Sono note queste assegnazioni: Davide possiede una fotografia, Marta possiede una chiave, Paolo possiede una moneta. Fabio possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Fabio, Davide, Marta, Paolo possiedono ciascuno un oggetto diverso tra una bottiglia, una fotografia, una chiave, una moneta. Sono note queste assegnazioni: Fabio possiede una bottiglia, Marta possiede una chiave, Paolo possiede una moneta. Davide possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Fabio, Davide, Marta, Paolo possiedono ciascuno un oggetto diverso tra una bottiglia, una fotografia, una chiave, una moneta. Sono note queste assegnazioni: Fabio possiede una bottiglia, Davide possiede una fotografia, Paolo possiede una moneta. Marta possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Fabio, Davide, Marta, Paolo possiedono ciascuno un oggetto diverso tra una bottiglia, una fotografia, una chiave, una moneta. Sono note queste assegnazioni: Fabio possiede una bottiglia, Davide possiede una fotografia, Marta possiede una chiave. Paolo possiede",
+          "target": " una moneta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Anna, Elena, Giulia, Irene possiedono ciascuno un oggetto diverso tra una fotografia, una tazza, una candela, un biglietto. Sono note queste assegnazioni: Elena possiede una tazza, Giulia possiede una candela, Irene possiede un biglietto. Anna possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Anna, Elena, Giulia, Irene possiedono ciascuno un oggetto diverso tra una fotografia, una tazza, una candela, un biglietto. Sono note queste assegnazioni: Anna possiede una fotografia, Giulia possiede una candela, Irene possiede un biglietto. Elena possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Anna, Elena, Giulia, Irene possiedono ciascuno un oggetto diverso tra una fotografia, una tazza, una candela, un biglietto. Sono note queste assegnazioni: Anna possiede una fotografia, Elena possiede una tazza, Irene possiede un biglietto. Giulia possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Anna, Elena, Giulia, Irene possiedono ciascuno un oggetto diverso tra una fotografia, una tazza, una candela, un biglietto. Sono note queste assegnazioni: Anna possiede una fotografia, Elena possiede una tazza, Giulia possiede una candela. Irene possiede",
+          "target": " un biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Giulia, Paolo, Andrea, Marta possiedono ciascuno un oggetto diverso tra un libro, un orologio, un biglietto, una mappa. Sono note queste assegnazioni: Paolo possiede un orologio, Andrea possiede un biglietto, Marta possiede una mappa. Giulia possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Giulia, Paolo, Andrea, Marta possiedono ciascuno un oggetto diverso tra un libro, un orologio, un biglietto, una mappa. Sono note queste assegnazioni: Giulia possiede un libro, Andrea possiede un biglietto, Marta possiede una mappa. Paolo possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Giulia, Paolo, Andrea, Marta possiedono ciascuno un oggetto diverso tra un libro, un orologio, un biglietto, una mappa. Sono note queste assegnazioni: Giulia possiede un libro, Paolo possiede un orologio, Marta possiede una mappa. Andrea possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Giulia, Paolo, Andrea, Marta possiedono ciascuno un oggetto diverso tra un libro, un orologio, un biglietto, una mappa. Sono note queste assegnazioni: Giulia possiede un libro, Paolo possiede un orologio, Andrea possiede un biglietto. Marta possiede",
+          "target": " una mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Laura, Anna, Marta, Matteo possiedono ciascuno un oggetto diverso tra un cucchiaio, una mappa, un anello, una fotografia. Sono note queste assegnazioni: Anna possiede una mappa, Marta possiede un anello, Matteo possiede una fotografia. Laura possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Laura, Anna, Marta, Matteo possiedono ciascuno un oggetto diverso tra un cucchiaio, una mappa, un anello, una fotografia. Sono note queste assegnazioni: Laura possiede un cucchiaio, Marta possiede un anello, Matteo possiede una fotografia. Anna possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Laura, Anna, Marta, Matteo possiedono ciascuno un oggetto diverso tra un cucchiaio, una mappa, un anello, una fotografia. Sono note queste assegnazioni: Laura possiede un cucchiaio, Anna possiede una mappa, Matteo possiede una fotografia. Marta possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Laura, Anna, Marta, Matteo possiedono ciascuno un oggetto diverso tra un cucchiaio, una mappa, un anello, una fotografia. Sono note queste assegnazioni: Laura possiede un cucchiaio, Anna possiede una mappa, Marta possiede un anello. Matteo possiede",
+          "target": " una fotografia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Luca, Chiara, Andrea, Sara possiedono ciascuno un oggetto diverso tra una moneta, un orologio, un libro, una penna. Sono note queste assegnazioni: Chiara possiede un orologio, Andrea possiede un libro, Sara possiede una penna. Luca possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Luca, Chiara, Andrea, Sara possiedono ciascuno un oggetto diverso tra una moneta, un orologio, un libro, una penna. Sono note queste assegnazioni: Luca possiede una moneta, Andrea possiede un libro, Sara possiede una penna. Chiara possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Luca, Chiara, Andrea, Sara possiedono ciascuno un oggetto diverso tra una moneta, un orologio, un libro, una penna. Sono note queste assegnazioni: Luca possiede una moneta, Chiara possiede un orologio, Sara possiede una penna. Andrea possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Luca, Chiara, Andrea, Sara possiedono ciascuno un oggetto diverso tra una moneta, un orologio, un libro, una penna. Sono note queste assegnazioni: Luca possiede una moneta, Chiara possiede un orologio, Andrea possiede un libro. Sara possiede",
+          "target": " una penna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Irene, Luca, Matteo, Paolo possiedono ciascuno un oggetto diverso tra un libro, un orologio, un cucchiaio, una candela. Sono note queste assegnazioni: Luca possiede un orologio, Matteo possiede un cucchiaio, Paolo possiede una candela. Irene possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Irene, Luca, Matteo, Paolo possiedono ciascuno un oggetto diverso tra un libro, un orologio, un cucchiaio, una candela. Sono note queste assegnazioni: Irene possiede un libro, Matteo possiede un cucchiaio, Paolo possiede una candela. Luca possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Irene, Luca, Matteo, Paolo possiedono ciascuno un oggetto diverso tra un libro, un orologio, un cucchiaio, una candela. Sono note queste assegnazioni: Irene possiede un libro, Luca possiede un orologio, Paolo possiede una candela. Matteo possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Irene, Luca, Matteo, Paolo possiedono ciascuno un oggetto diverso tra un libro, un orologio, un cucchiaio, una candela. Sono note queste assegnazioni: Irene possiede un libro, Luca possiede un orologio, Matteo possiede un cucchiaio. Paolo possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Chiara, Paolo, Laura, Simone possiedono ciascuno un oggetto diverso tra una penna, un ombrello, una tazza, una candela. Sono note queste assegnazioni: Paolo possiede un ombrello, Laura possiede una tazza, Simone possiede una candela. Chiara possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Chiara, Paolo, Laura, Simone possiedono ciascuno un oggetto diverso tra una penna, un ombrello, una tazza, una candela. Sono note queste assegnazioni: Chiara possiede una penna, Laura possiede una tazza, Simone possiede una candela. Paolo possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Chiara, Paolo, Laura, Simone possiedono ciascuno un oggetto diverso tra una penna, un ombrello, una tazza, una candela. Sono note queste assegnazioni: Chiara possiede una penna, Paolo possiede un ombrello, Simone possiede una candela. Laura possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Chiara, Paolo, Laura, Simone possiedono ciascuno un oggetto diverso tra una penna, un ombrello, una tazza, una candela. Sono note queste assegnazioni: Chiara possiede una penna, Paolo possiede un ombrello, Laura possiede una tazza. Simone possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Matteo, Davide, Marco, Irene possiedono ciascuno un oggetto diverso tra una moneta, una chiave, un cappello, un orologio. Sono note queste assegnazioni: Davide possiede una chiave, Marco possiede un cappello, Irene possiede un orologio. Matteo possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Matteo, Davide, Marco, Irene possiedono ciascuno un oggetto diverso tra una moneta, una chiave, un cappello, un orologio. Sono note queste assegnazioni: Matteo possiede una moneta, Marco possiede un cappello, Irene possiede un orologio. Davide possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Matteo, Davide, Marco, Irene possiedono ciascuno un oggetto diverso tra una moneta, una chiave, un cappello, un orologio. Sono note queste assegnazioni: Matteo possiede una moneta, Davide possiede una chiave, Irene possiede un orologio. Marco possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Matteo, Davide, Marco, Irene possiedono ciascuno un oggetto diverso tra una moneta, una chiave, un cappello, un orologio. Sono note queste assegnazioni: Matteo possiede una moneta, Davide possiede una chiave, Marco possiede un cappello. Irene possiede",
+          "target": " un orologio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sara, Chiara, Paolo, Marta possiedono ciascuno un oggetto diverso tra una mappa, una moneta, un quaderno, un libro. Sono note queste assegnazioni: Chiara possiede una moneta, Paolo possiede un quaderno, Marta possiede un libro. Sara possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Sara, Chiara, Paolo, Marta possiedono ciascuno un oggetto diverso tra una mappa, una moneta, un quaderno, un libro. Sono note queste assegnazioni: Sara possiede una mappa, Paolo possiede un quaderno, Marta possiede un libro. Chiara possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Sara, Chiara, Paolo, Marta possiedono ciascuno un oggetto diverso tra una mappa, una moneta, un quaderno, un libro. Sono note queste assegnazioni: Sara possiede una mappa, Chiara possiede una moneta, Marta possiede un libro. Paolo possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Sara, Chiara, Paolo, Marta possiedono ciascuno un oggetto diverso tra una mappa, una moneta, un quaderno, un libro. Sono note queste assegnazioni: Sara possiede una mappa, Chiara possiede una moneta, Paolo possiede un quaderno. Marta possiede",
+          "target": " un libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Simone, Giulia, Sara, Davide possiedono ciascuno un oggetto diverso tra un orologio, un cucchiaio, una bottiglia, una penna. Sono note queste assegnazioni: Giulia possiede un cucchiaio, Sara possiede una bottiglia, Davide possiede una penna. Simone possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Simone, Giulia, Sara, Davide possiedono ciascuno un oggetto diverso tra un orologio, un cucchiaio, una bottiglia, una penna. Sono note queste assegnazioni: Simone possiede un orologio, Sara possiede una bottiglia, Davide possiede una penna. Giulia possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Simone, Giulia, Sara, Davide possiedono ciascuno un oggetto diverso tra un orologio, un cucchiaio, una bottiglia, una penna. Sono note queste assegnazioni: Simone possiede un orologio, Giulia possiede un cucchiaio, Davide possiede una penna. Sara possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Simone, Giulia, Sara, Davide possiedono ciascuno un oggetto diverso tra un orologio, un cucchiaio, una bottiglia, una penna. Sono note queste assegnazioni: Simone possiede un orologio, Giulia possiede un cucchiaio, Sara possiede una bottiglia. Davide possiede",
+          "target": " una penna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Matteo, Marta, Laura, Luca possiedono ciascuno un oggetto diverso tra una tazza, un cucchiaio, un libro, un anello. Sono note queste assegnazioni: Marta possiede un cucchiaio, Laura possiede un libro, Luca possiede un anello. Matteo possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Matteo, Marta, Laura, Luca possiedono ciascuno un oggetto diverso tra una tazza, un cucchiaio, un libro, un anello. Sono note queste assegnazioni: Matteo possiede una tazza, Laura possiede un libro, Luca possiede un anello. Marta possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Matteo, Marta, Laura, Luca possiedono ciascuno un oggetto diverso tra una tazza, un cucchiaio, un libro, un anello. Sono note queste assegnazioni: Matteo possiede una tazza, Marta possiede un cucchiaio, Luca possiede un anello. Laura possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Matteo, Marta, Laura, Luca possiedono ciascuno un oggetto diverso tra una tazza, un cucchiaio, un libro, un anello. Sono note queste assegnazioni: Matteo possiede una tazza, Marta possiede un cucchiaio, Laura possiede un libro. Luca possiede",
+          "target": " un anello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Chiara, Giulia, Matteo, Paolo possiedono ciascuno un oggetto diverso tra una penna, un ombrello, un cucchiaio, un anello. Sono note queste assegnazioni: Giulia possiede un ombrello, Matteo possiede un cucchiaio, Paolo possiede un anello. Chiara possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Chiara, Giulia, Matteo, Paolo possiedono ciascuno un oggetto diverso tra una penna, un ombrello, un cucchiaio, un anello. Sono note queste assegnazioni: Chiara possiede una penna, Matteo possiede un cucchiaio, Paolo possiede un anello. Giulia possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Chiara, Giulia, Matteo, Paolo possiedono ciascuno un oggetto diverso tra una penna, un ombrello, un cucchiaio, un anello. Sono note queste assegnazioni: Chiara possiede una penna, Giulia possiede un ombrello, Paolo possiede un anello. Matteo possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Chiara, Giulia, Matteo, Paolo possiedono ciascuno un oggetto diverso tra una penna, un ombrello, un cucchiaio, un anello. Sono note queste assegnazioni: Chiara possiede una penna, Giulia possiede un ombrello, Matteo possiede un cucchiaio. Paolo possiede",
+          "target": " un anello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Andrea, Giulia, Fabio, Anna possiedono ciascuno un oggetto diverso tra una moneta, una penna, una candela, una tazza. Sono note queste assegnazioni: Giulia possiede una penna, Fabio possiede una candela, Anna possiede una tazza. Andrea possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Andrea, Giulia, Fabio, Anna possiedono ciascuno un oggetto diverso tra una moneta, una penna, una candela, una tazza. Sono note queste assegnazioni: Andrea possiede una moneta, Fabio possiede una candela, Anna possiede una tazza. Giulia possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Andrea, Giulia, Fabio, Anna possiedono ciascuno un oggetto diverso tra una moneta, una penna, una candela, una tazza. Sono note queste assegnazioni: Andrea possiede una moneta, Giulia possiede una penna, Anna possiede una tazza. Fabio possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Andrea, Giulia, Fabio, Anna possiedono ciascuno un oggetto diverso tra una moneta, una penna, una candela, una tazza. Sono note queste assegnazioni: Andrea possiede una moneta, Giulia possiede una penna, Fabio possiede una candela. Anna possiede",
+          "target": " una tazza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Anna, Marco, Irene, Sara possiedono ciascuno un oggetto diverso tra una mappa, una moneta, un biglietto, un cappello. Sono note queste assegnazioni: Marco possiede una moneta, Irene possiede un biglietto, Sara possiede un cappello. Anna possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Anna, Marco, Irene, Sara possiedono ciascuno un oggetto diverso tra una mappa, una moneta, un biglietto, un cappello. Sono note queste assegnazioni: Anna possiede una mappa, Irene possiede un biglietto, Sara possiede un cappello. Marco possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Anna, Marco, Irene, Sara possiedono ciascuno un oggetto diverso tra una mappa, una moneta, un biglietto, un cappello. Sono note queste assegnazioni: Anna possiede una mappa, Marco possiede una moneta, Sara possiede un cappello. Irene possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Anna, Marco, Irene, Sara possiedono ciascuno un oggetto diverso tra una mappa, una moneta, un biglietto, un cappello. Sono note queste assegnazioni: Anna possiede una mappa, Marco possiede una moneta, Irene possiede un biglietto. Sara possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Anna, Luca, Marta, Simone possiedono ciascuno un oggetto diverso tra una tazza, una mappa, una chiave, un quaderno. Sono note queste assegnazioni: Luca possiede una mappa, Marta possiede una chiave, Simone possiede un quaderno. Anna possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Anna, Luca, Marta, Simone possiedono ciascuno un oggetto diverso tra una tazza, una mappa, una chiave, un quaderno. Sono note queste assegnazioni: Anna possiede una tazza, Marta possiede una chiave, Simone possiede un quaderno. Luca possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Anna, Luca, Marta, Simone possiedono ciascuno un oggetto diverso tra una tazza, una mappa, una chiave, un quaderno. Sono note queste assegnazioni: Anna possiede una tazza, Luca possiede una mappa, Simone possiede un quaderno. Marta possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Anna, Luca, Marta, Simone possiedono ciascuno un oggetto diverso tra una tazza, una mappa, una chiave, un quaderno. Sono note queste assegnazioni: Anna possiede una tazza, Luca possiede una mappa, Marta possiede una chiave. Simone possiede",
+          "target": " un quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Fabio, Sara, Anna, Giulia possiedono ciascuno un oggetto diverso tra un biglietto, una fotografia, una bottiglia, una chiave. Sono note queste assegnazioni: Sara possiede una fotografia, Anna possiede una bottiglia, Giulia possiede una chiave. Fabio possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Fabio, Sara, Anna, Giulia possiedono ciascuno un oggetto diverso tra un biglietto, una fotografia, una bottiglia, una chiave. Sono note queste assegnazioni: Fabio possiede un biglietto, Anna possiede una bottiglia, Giulia possiede una chiave. Sara possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Fabio, Sara, Anna, Giulia possiedono ciascuno un oggetto diverso tra un biglietto, una fotografia, una bottiglia, una chiave. Sono note queste assegnazioni: Fabio possiede un biglietto, Sara possiede una fotografia, Giulia possiede una chiave. Anna possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Fabio, Sara, Anna, Giulia possiedono ciascuno un oggetto diverso tra un biglietto, una fotografia, una bottiglia, una chiave. Sono note queste assegnazioni: Fabio possiede un biglietto, Sara possiede una fotografia, Anna possiede una bottiglia. Giulia possiede",
+          "target": " una chiave."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Elena, Laura, Paolo, Marta possiedono ciascuno un oggetto diverso tra un ombrello, un quaderno, una bottiglia, una mappa. Sono note queste assegnazioni: Laura possiede un quaderno, Paolo possiede una bottiglia, Marta possiede una mappa. Elena possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Elena, Laura, Paolo, Marta possiedono ciascuno un oggetto diverso tra un ombrello, un quaderno, una bottiglia, una mappa. Sono note queste assegnazioni: Elena possiede un ombrello, Paolo possiede una bottiglia, Marta possiede una mappa. Laura possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Elena, Laura, Paolo, Marta possiedono ciascuno un oggetto diverso tra un ombrello, un quaderno, una bottiglia, una mappa. Sono note queste assegnazioni: Elena possiede un ombrello, Laura possiede un quaderno, Marta possiede una mappa. Paolo possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Elena, Laura, Paolo, Marta possiedono ciascuno un oggetto diverso tra un ombrello, un quaderno, una bottiglia, una mappa. Sono note queste assegnazioni: Elena possiede un ombrello, Laura possiede un quaderno, Paolo possiede una bottiglia. Marta possiede",
+          "target": " una mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Giulia, Marta, Paolo, Sara possiedono ciascuno un oggetto diverso tra un quaderno, una fotografia, una candela, una chiave. Sono note queste assegnazioni: Marta possiede una fotografia, Paolo possiede una candela, Sara possiede una chiave. Giulia possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Giulia, Marta, Paolo, Sara possiedono ciascuno un oggetto diverso tra un quaderno, una fotografia, una candela, una chiave. Sono note queste assegnazioni: Giulia possiede un quaderno, Paolo possiede una candela, Sara possiede una chiave. Marta possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Giulia, Marta, Paolo, Sara possiedono ciascuno un oggetto diverso tra un quaderno, una fotografia, una candela, una chiave. Sono note queste assegnazioni: Giulia possiede un quaderno, Marta possiede una fotografia, Sara possiede una chiave. Paolo possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Giulia, Marta, Paolo, Sara possiedono ciascuno un oggetto diverso tra un quaderno, una fotografia, una candela, una chiave. Sono note queste assegnazioni: Giulia possiede un quaderno, Marta possiede una fotografia, Paolo possiede una candela. Sara possiede",
+          "target": " una chiave."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Laura, Irene, Elena, Marta possiedono ciascuno un oggetto diverso tra un cappello, una tazza, una moneta, una bottiglia. Sono note queste assegnazioni: Irene possiede una tazza, Elena possiede una moneta, Marta possiede una bottiglia. Laura possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Laura, Irene, Elena, Marta possiedono ciascuno un oggetto diverso tra un cappello, una tazza, una moneta, una bottiglia. Sono note queste assegnazioni: Laura possiede un cappello, Elena possiede una moneta, Marta possiede una bottiglia. Irene possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Laura, Irene, Elena, Marta possiedono ciascuno un oggetto diverso tra un cappello, una tazza, una moneta, una bottiglia. Sono note queste assegnazioni: Laura possiede un cappello, Irene possiede una tazza, Marta possiede una bottiglia. Elena possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Laura, Irene, Elena, Marta possiedono ciascuno un oggetto diverso tra un cappello, una tazza, una moneta, una bottiglia. Sono note queste assegnazioni: Laura possiede un cappello, Irene possiede una tazza, Elena possiede una moneta. Marta possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Irene, Fabio, Anna, Davide possiedono ciascuno un oggetto diverso tra un cappello, un ombrello, un anello, un cucchiaio. Sono note queste assegnazioni: Fabio possiede un ombrello, Anna possiede un anello, Davide possiede un cucchiaio. Irene possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Irene, Fabio, Anna, Davide possiedono ciascuno un oggetto diverso tra un cappello, un ombrello, un anello, un cucchiaio. Sono note queste assegnazioni: Irene possiede un cappello, Anna possiede un anello, Davide possiede un cucchiaio. Fabio possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Irene, Fabio, Anna, Davide possiedono ciascuno un oggetto diverso tra un cappello, un ombrello, un anello, un cucchiaio. Sono note queste assegnazioni: Irene possiede un cappello, Fabio possiede un ombrello, Davide possiede un cucchiaio. Anna possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Irene, Fabio, Anna, Davide possiedono ciascuno un oggetto diverso tra un cappello, un ombrello, un anello, un cucchiaio. Sono note queste assegnazioni: Irene possiede un cappello, Fabio possiede un ombrello, Anna possiede un anello. Davide possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Matteo, Fabio, Irene, Paolo possiedono ciascuno un oggetto diverso tra un cappello, una chiave, una penna, un ombrello. Sono note queste assegnazioni: Fabio possiede una chiave, Irene possiede una penna, Paolo possiede un ombrello. Matteo possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Matteo, Fabio, Irene, Paolo possiedono ciascuno un oggetto diverso tra un cappello, una chiave, una penna, un ombrello. Sono note queste assegnazioni: Matteo possiede un cappello, Irene possiede una penna, Paolo possiede un ombrello. Fabio possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Matteo, Fabio, Irene, Paolo possiedono ciascuno un oggetto diverso tra un cappello, una chiave, una penna, un ombrello. Sono note queste assegnazioni: Matteo possiede un cappello, Fabio possiede una chiave, Paolo possiede un ombrello. Irene possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Matteo, Fabio, Irene, Paolo possiedono ciascuno un oggetto diverso tra un cappello, una chiave, una penna, un ombrello. Sono note queste assegnazioni: Matteo possiede un cappello, Fabio possiede una chiave, Irene possiede una penna. Paolo possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Laura, Giulia, Fabio, Luca possiedono ciascuno un oggetto diverso tra una mappa, un quaderno, una penna, un cucchiaio. Sono note queste assegnazioni: Giulia possiede un quaderno, Fabio possiede una penna, Luca possiede un cucchiaio. Laura possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Laura, Giulia, Fabio, Luca possiedono ciascuno un oggetto diverso tra una mappa, un quaderno, una penna, un cucchiaio. Sono note queste assegnazioni: Laura possiede una mappa, Fabio possiede una penna, Luca possiede un cucchiaio. Giulia possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Laura, Giulia, Fabio, Luca possiedono ciascuno un oggetto diverso tra una mappa, un quaderno, una penna, un cucchiaio. Sono note queste assegnazioni: Laura possiede una mappa, Giulia possiede un quaderno, Luca possiede un cucchiaio. Fabio possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Laura, Giulia, Fabio, Luca possiedono ciascuno un oggetto diverso tra una mappa, un quaderno, una penna, un cucchiaio. Sono note queste assegnazioni: Laura possiede una mappa, Giulia possiede un quaderno, Fabio possiede una penna. Luca possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Laura, Anna, Luca, Giulia possiedono ciascuno un oggetto diverso tra un quaderno, un orologio, una tazza, una chiave. Sono note queste assegnazioni: Anna possiede un orologio, Luca possiede una tazza, Giulia possiede una chiave. Laura possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Laura, Anna, Luca, Giulia possiedono ciascuno un oggetto diverso tra un quaderno, un orologio, una tazza, una chiave. Sono note queste assegnazioni: Laura possiede un quaderno, Luca possiede una tazza, Giulia possiede una chiave. Anna possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Laura, Anna, Luca, Giulia possiedono ciascuno un oggetto diverso tra un quaderno, un orologio, una tazza, una chiave. Sono note queste assegnazioni: Laura possiede un quaderno, Anna possiede un orologio, Giulia possiede una chiave. Luca possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Laura, Anna, Luca, Giulia possiedono ciascuno un oggetto diverso tra un quaderno, un orologio, una tazza, una chiave. Sono note queste assegnazioni: Laura possiede un quaderno, Anna possiede un orologio, Luca possiede una tazza. Giulia possiede",
+          "target": " una chiave."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Fabio, Marco, Simone, Irene possiedono ciascuno un oggetto diverso tra una penna, una candela, un orologio, una mappa. Sono note queste assegnazioni: Marco possiede una candela, Simone possiede un orologio, Irene possiede una mappa. Fabio possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Fabio, Marco, Simone, Irene possiedono ciascuno un oggetto diverso tra una penna, una candela, un orologio, una mappa. Sono note queste assegnazioni: Fabio possiede una penna, Simone possiede un orologio, Irene possiede una mappa. Marco possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Fabio, Marco, Simone, Irene possiedono ciascuno un oggetto diverso tra una penna, una candela, un orologio, una mappa. Sono note queste assegnazioni: Fabio possiede una penna, Marco possiede una candela, Irene possiede una mappa. Simone possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Fabio, Marco, Simone, Irene possiedono ciascuno un oggetto diverso tra una penna, una candela, un orologio, una mappa. Sono note queste assegnazioni: Fabio possiede una penna, Marco possiede una candela, Simone possiede un orologio. Irene possiede",
+          "target": " una mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Irene, Marta, Matteo, Paolo possiedono ciascuno un oggetto diverso tra una mappa, una chiave, un biglietto, una candela. Sono note queste assegnazioni: Marta possiede una chiave, Matteo possiede un biglietto, Paolo possiede una candela. Irene possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Irene, Marta, Matteo, Paolo possiedono ciascuno un oggetto diverso tra una mappa, una chiave, un biglietto, una candela. Sono note queste assegnazioni: Irene possiede una mappa, Matteo possiede un biglietto, Paolo possiede una candela. Marta possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Irene, Marta, Matteo, Paolo possiedono ciascuno un oggetto diverso tra una mappa, una chiave, un biglietto, una candela. Sono note queste assegnazioni: Irene possiede una mappa, Marta possiede una chiave, Paolo possiede una candela. Matteo possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Irene, Marta, Matteo, Paolo possiedono ciascuno un oggetto diverso tra una mappa, una chiave, un biglietto, una candela. Sono note queste assegnazioni: Irene possiede una mappa, Marta possiede una chiave, Matteo possiede un biglietto. Paolo possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Elena, Marco, Andrea, Luca possiedono ciascuno un oggetto diverso tra una penna, un orologio, un quaderno, un cucchiaio. Sono note queste assegnazioni: Marco possiede un orologio, Andrea possiede un quaderno, Luca possiede un cucchiaio. Elena possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Elena, Marco, Andrea, Luca possiedono ciascuno un oggetto diverso tra una penna, un orologio, un quaderno, un cucchiaio. Sono note queste assegnazioni: Elena possiede una penna, Andrea possiede un quaderno, Luca possiede un cucchiaio. Marco possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Elena, Marco, Andrea, Luca possiedono ciascuno un oggetto diverso tra una penna, un orologio, un quaderno, un cucchiaio. Sono note queste assegnazioni: Elena possiede una penna, Marco possiede un orologio, Luca possiede un cucchiaio. Andrea possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Elena, Marco, Andrea, Luca possiedono ciascuno un oggetto diverso tra una penna, un orologio, un quaderno, un cucchiaio. Sono note queste assegnazioni: Elena possiede una penna, Marco possiede un orologio, Andrea possiede un quaderno. Luca possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Matteo, Chiara, Giulia, Laura possiedono ciascuno un oggetto diverso tra un anello, un quaderno, una candela, un biglietto. Sono note queste assegnazioni: Chiara possiede un quaderno, Giulia possiede una candela, Laura possiede un biglietto. Matteo possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Matteo, Chiara, Giulia, Laura possiedono ciascuno un oggetto diverso tra un anello, un quaderno, una candela, un biglietto. Sono note queste assegnazioni: Matteo possiede un anello, Giulia possiede una candela, Laura possiede un biglietto. Chiara possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Matteo, Chiara, Giulia, Laura possiedono ciascuno un oggetto diverso tra un anello, un quaderno, una candela, un biglietto. Sono note queste assegnazioni: Matteo possiede un anello, Chiara possiede un quaderno, Laura possiede un biglietto. Giulia possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Matteo, Chiara, Giulia, Laura possiedono ciascuno un oggetto diverso tra un anello, un quaderno, una candela, un biglietto. Sono note queste assegnazioni: Matteo possiede un anello, Chiara possiede un quaderno, Giulia possiede una candela. Laura possiede",
+          "target": " un biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Giulia, Paolo, Elena, Laura possiedono ciascuno un oggetto diverso tra una bottiglia, una penna, un biglietto, una moneta. Sono note queste assegnazioni: Paolo possiede una penna, Elena possiede un biglietto, Laura possiede una moneta. Giulia possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Giulia, Paolo, Elena, Laura possiedono ciascuno un oggetto diverso tra una bottiglia, una penna, un biglietto, una moneta. Sono note queste assegnazioni: Giulia possiede una bottiglia, Elena possiede un biglietto, Laura possiede una moneta. Paolo possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Giulia, Paolo, Elena, Laura possiedono ciascuno un oggetto diverso tra una bottiglia, una penna, un biglietto, una moneta. Sono note queste assegnazioni: Giulia possiede una bottiglia, Paolo possiede una penna, Laura possiede una moneta. Elena possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Giulia, Paolo, Elena, Laura possiedono ciascuno un oggetto diverso tra una bottiglia, una penna, un biglietto, una moneta. Sono note queste assegnazioni: Giulia possiede una bottiglia, Paolo possiede una penna, Elena possiede un biglietto. Laura possiede",
+          "target": " una moneta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Irene, Chiara, Fabio, Anna possiedono ciascuno un oggetto diverso tra un orologio, una tazza, un ombrello, una candela. Sono note queste assegnazioni: Chiara possiede una tazza, Fabio possiede un ombrello, Anna possiede una candela. Irene possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Irene, Chiara, Fabio, Anna possiedono ciascuno un oggetto diverso tra un orologio, una tazza, un ombrello, una candela. Sono note queste assegnazioni: Irene possiede un orologio, Fabio possiede un ombrello, Anna possiede una candela. Chiara possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Irene, Chiara, Fabio, Anna possiedono ciascuno un oggetto diverso tra un orologio, una tazza, un ombrello, una candela. Sono note queste assegnazioni: Irene possiede un orologio, Chiara possiede una tazza, Anna possiede una candela. Fabio possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Irene, Chiara, Fabio, Anna possiedono ciascuno un oggetto diverso tra un orologio, una tazza, un ombrello, una candela. Sono note queste assegnazioni: Irene possiede un orologio, Chiara possiede una tazza, Fabio possiede un ombrello. Anna possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Marta, Davide, Andrea, Laura possiedono ciascuno un oggetto diverso tra una candela, una mappa, un cappello, una bottiglia. Sono note queste assegnazioni: Davide possiede una mappa, Andrea possiede un cappello, Laura possiede una bottiglia. Marta possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Marta, Davide, Andrea, Laura possiedono ciascuno un oggetto diverso tra una candela, una mappa, un cappello, una bottiglia. Sono note queste assegnazioni: Marta possiede una candela, Andrea possiede un cappello, Laura possiede una bottiglia. Davide possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Marta, Davide, Andrea, Laura possiedono ciascuno un oggetto diverso tra una candela, una mappa, un cappello, una bottiglia. Sono note queste assegnazioni: Marta possiede una candela, Davide possiede una mappa, Laura possiede una bottiglia. Andrea possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Marta, Davide, Andrea, Laura possiedono ciascuno un oggetto diverso tra una candela, una mappa, un cappello, una bottiglia. Sono note queste assegnazioni: Marta possiede una candela, Davide possiede una mappa, Andrea possiede un cappello. Laura possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sara, Giulia, Chiara, Laura possiedono ciascuno un oggetto diverso tra una penna, un libro, un anello, una bottiglia. Sono note queste assegnazioni: Giulia possiede un libro, Chiara possiede un anello, Laura possiede una bottiglia. Sara possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Sara, Giulia, Chiara, Laura possiedono ciascuno un oggetto diverso tra una penna, un libro, un anello, una bottiglia. Sono note queste assegnazioni: Sara possiede una penna, Chiara possiede un anello, Laura possiede una bottiglia. Giulia possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Sara, Giulia, Chiara, Laura possiedono ciascuno un oggetto diverso tra una penna, un libro, un anello, una bottiglia. Sono note queste assegnazioni: Sara possiede una penna, Giulia possiede un libro, Laura possiede una bottiglia. Chiara possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Sara, Giulia, Chiara, Laura possiedono ciascuno un oggetto diverso tra una penna, un libro, un anello, una bottiglia. Sono note queste assegnazioni: Sara possiede una penna, Giulia possiede un libro, Chiara possiede un anello. Laura possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Matteo, Paolo, Irene, Marta possiedono ciascuno un oggetto diverso tra una tazza, una chiave, una fotografia, un ombrello. Sono note queste assegnazioni: Paolo possiede una chiave, Irene possiede una fotografia, Marta possiede un ombrello. Matteo possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Matteo, Paolo, Irene, Marta possiedono ciascuno un oggetto diverso tra una tazza, una chiave, una fotografia, un ombrello. Sono note queste assegnazioni: Matteo possiede una tazza, Irene possiede una fotografia, Marta possiede un ombrello. Paolo possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Matteo, Paolo, Irene, Marta possiedono ciascuno un oggetto diverso tra una tazza, una chiave, una fotografia, un ombrello. Sono note queste assegnazioni: Matteo possiede una tazza, Paolo possiede una chiave, Marta possiede un ombrello. Irene possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Matteo, Paolo, Irene, Marta possiedono ciascuno un oggetto diverso tra una tazza, una chiave, una fotografia, un ombrello. Sono note queste assegnazioni: Matteo possiede una tazza, Paolo possiede una chiave, Irene possiede una fotografia. Marta possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sara, Davide, Elena, Laura possiedono ciascuno un oggetto diverso tra una candela, un biglietto, una fotografia, un cucchiaio. Sono note queste assegnazioni: Davide possiede un biglietto, Elena possiede una fotografia, Laura possiede un cucchiaio. Sara possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Sara, Davide, Elena, Laura possiedono ciascuno un oggetto diverso tra una candela, un biglietto, una fotografia, un cucchiaio. Sono note queste assegnazioni: Sara possiede una candela, Elena possiede una fotografia, Laura possiede un cucchiaio. Davide possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Sara, Davide, Elena, Laura possiedono ciascuno un oggetto diverso tra una candela, un biglietto, una fotografia, un cucchiaio. Sono note queste assegnazioni: Sara possiede una candela, Davide possiede un biglietto, Laura possiede un cucchiaio. Elena possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Sara, Davide, Elena, Laura possiedono ciascuno un oggetto diverso tra una candela, un biglietto, una fotografia, un cucchiaio. Sono note queste assegnazioni: Sara possiede una candela, Davide possiede un biglietto, Elena possiede una fotografia. Laura possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Irene, Paolo, Sara, Laura possiedono ciascuno un oggetto diverso tra una chiave, una fotografia, una bottiglia, un anello. Sono note queste assegnazioni: Paolo possiede una fotografia, Sara possiede una bottiglia, Laura possiede un anello. Irene possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Irene, Paolo, Sara, Laura possiedono ciascuno un oggetto diverso tra una chiave, una fotografia, una bottiglia, un anello. Sono note queste assegnazioni: Irene possiede una chiave, Sara possiede una bottiglia, Laura possiede un anello. Paolo possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Irene, Paolo, Sara, Laura possiedono ciascuno un oggetto diverso tra una chiave, una fotografia, una bottiglia, un anello. Sono note queste assegnazioni: Irene possiede una chiave, Paolo possiede una fotografia, Laura possiede un anello. Sara possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Irene, Paolo, Sara, Laura possiedono ciascuno un oggetto diverso tra una chiave, una fotografia, una bottiglia, un anello. Sono note queste assegnazioni: Irene possiede una chiave, Paolo possiede una fotografia, Sara possiede una bottiglia. Laura possiede",
+          "target": " un anello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Fabio, Paolo, Sara, Irene possiedono ciascuno un oggetto diverso tra una fotografia, una chiave, una mappa, un ombrello. Sono note queste assegnazioni: Paolo possiede una chiave, Sara possiede una mappa, Irene possiede un ombrello. Fabio possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Fabio, Paolo, Sara, Irene possiedono ciascuno un oggetto diverso tra una fotografia, una chiave, una mappa, un ombrello. Sono note queste assegnazioni: Fabio possiede una fotografia, Sara possiede una mappa, Irene possiede un ombrello. Paolo possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Fabio, Paolo, Sara, Irene possiedono ciascuno un oggetto diverso tra una fotografia, una chiave, una mappa, un ombrello. Sono note queste assegnazioni: Fabio possiede una fotografia, Paolo possiede una chiave, Irene possiede un ombrello. Sara possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Fabio, Paolo, Sara, Irene possiedono ciascuno un oggetto diverso tra una fotografia, una chiave, una mappa, un ombrello. Sono note queste assegnazioni: Fabio possiede una fotografia, Paolo possiede una chiave, Sara possiede una mappa. Irene possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Marta, Sara, Irene, Davide possiedono ciascuno un oggetto diverso tra una penna, una bottiglia, un cappello, un orologio. Sono note queste assegnazioni: Sara possiede una bottiglia, Irene possiede un cappello, Davide possiede un orologio. Marta possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Marta, Sara, Irene, Davide possiedono ciascuno un oggetto diverso tra una penna, una bottiglia, un cappello, un orologio. Sono note queste assegnazioni: Marta possiede una penna, Irene possiede un cappello, Davide possiede un orologio. Sara possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Marta, Sara, Irene, Davide possiedono ciascuno un oggetto diverso tra una penna, una bottiglia, un cappello, un orologio. Sono note queste assegnazioni: Marta possiede una penna, Sara possiede una bottiglia, Davide possiede un orologio. Irene possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Marta, Sara, Irene, Davide possiedono ciascuno un oggetto diverso tra una penna, una bottiglia, un cappello, un orologio. Sono note queste assegnazioni: Marta possiede una penna, Sara possiede una bottiglia, Irene possiede un cappello. Davide possiede",
+          "target": " un orologio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Marta, Andrea, Sara, Simone possiedono ciascuno un oggetto diverso tra un cucchiaio, un cappello, una tazza, una bottiglia. Sono note queste assegnazioni: Andrea possiede un cappello, Sara possiede una tazza, Simone possiede una bottiglia. Marta possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Marta, Andrea, Sara, Simone possiedono ciascuno un oggetto diverso tra un cucchiaio, un cappello, una tazza, una bottiglia. Sono note queste assegnazioni: Marta possiede un cucchiaio, Sara possiede una tazza, Simone possiede una bottiglia. Andrea possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Marta, Andrea, Sara, Simone possiedono ciascuno un oggetto diverso tra un cucchiaio, un cappello, una tazza, una bottiglia. Sono note queste assegnazioni: Marta possiede un cucchiaio, Andrea possiede un cappello, Simone possiede una bottiglia. Sara possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Marta, Andrea, Sara, Simone possiedono ciascuno un oggetto diverso tra un cucchiaio, un cappello, una tazza, una bottiglia. Sono note queste assegnazioni: Marta possiede un cucchiaio, Andrea possiede un cappello, Sara possiede una tazza. Simone possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Chiara, Irene, Marta, Andrea possiedono ciascuno un oggetto diverso tra un cucchiaio, una penna, un ombrello, una tazza. Sono note queste assegnazioni: Irene possiede una penna, Marta possiede un ombrello, Andrea possiede una tazza. Chiara possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Chiara, Irene, Marta, Andrea possiedono ciascuno un oggetto diverso tra un cucchiaio, una penna, un ombrello, una tazza. Sono note queste assegnazioni: Chiara possiede un cucchiaio, Marta possiede un ombrello, Andrea possiede una tazza. Irene possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Chiara, Irene, Marta, Andrea possiedono ciascuno un oggetto diverso tra un cucchiaio, una penna, un ombrello, una tazza. Sono note queste assegnazioni: Chiara possiede un cucchiaio, Irene possiede una penna, Andrea possiede una tazza. Marta possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Chiara, Irene, Marta, Andrea possiedono ciascuno un oggetto diverso tra un cucchiaio, una penna, un ombrello, una tazza. Sono note queste assegnazioni: Chiara possiede un cucchiaio, Irene possiede una penna, Marta possiede un ombrello. Andrea possiede",
+          "target": " una tazza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sara, Simone, Giulia, Paolo possiedono ciascuno un oggetto diverso tra una mappa, un quaderno, una fotografia, un cucchiaio. Sono note queste assegnazioni: Simone possiede un quaderno, Giulia possiede una fotografia, Paolo possiede un cucchiaio. Sara possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Sara, Simone, Giulia, Paolo possiedono ciascuno un oggetto diverso tra una mappa, un quaderno, una fotografia, un cucchiaio. Sono note queste assegnazioni: Sara possiede una mappa, Giulia possiede una fotografia, Paolo possiede un cucchiaio. Simone possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Sara, Simone, Giulia, Paolo possiedono ciascuno un oggetto diverso tra una mappa, un quaderno, una fotografia, un cucchiaio. Sono note queste assegnazioni: Sara possiede una mappa, Simone possiede un quaderno, Paolo possiede un cucchiaio. Giulia possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Sara, Simone, Giulia, Paolo possiedono ciascuno un oggetto diverso tra una mappa, un quaderno, una fotografia, un cucchiaio. Sono note queste assegnazioni: Sara possiede una mappa, Simone possiede un quaderno, Giulia possiede una fotografia. Paolo possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Giulia, Sara, Paolo, Elena possiedono ciascuno un oggetto diverso tra una tazza, un biglietto, un ombrello, un libro. Sono note queste assegnazioni: Sara possiede un biglietto, Paolo possiede un ombrello, Elena possiede un libro. Giulia possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Giulia, Sara, Paolo, Elena possiedono ciascuno un oggetto diverso tra una tazza, un biglietto, un ombrello, un libro. Sono note queste assegnazioni: Giulia possiede una tazza, Paolo possiede un ombrello, Elena possiede un libro. Sara possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Giulia, Sara, Paolo, Elena possiedono ciascuno un oggetto diverso tra una tazza, un biglietto, un ombrello, un libro. Sono note queste assegnazioni: Giulia possiede una tazza, Sara possiede un biglietto, Elena possiede un libro. Paolo possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Giulia, Sara, Paolo, Elena possiedono ciascuno un oggetto diverso tra una tazza, un biglietto, un ombrello, un libro. Sono note queste assegnazioni: Giulia possiede una tazza, Sara possiede un biglietto, Paolo possiede un ombrello. Elena possiede",
+          "target": " un libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Fabio, Marco, Chiara, Davide possiedono ciascuno un oggetto diverso tra un anello, una chiave, un ombrello, una candela. Sono note queste assegnazioni: Marco possiede una chiave, Chiara possiede un ombrello, Davide possiede una candela. Fabio possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Fabio, Marco, Chiara, Davide possiedono ciascuno un oggetto diverso tra un anello, una chiave, un ombrello, una candela. Sono note queste assegnazioni: Fabio possiede un anello, Chiara possiede un ombrello, Davide possiede una candela. Marco possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Fabio, Marco, Chiara, Davide possiedono ciascuno un oggetto diverso tra un anello, una chiave, un ombrello, una candela. Sono note queste assegnazioni: Fabio possiede un anello, Marco possiede una chiave, Davide possiede una candela. Chiara possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Fabio, Marco, Chiara, Davide possiedono ciascuno un oggetto diverso tra un anello, una chiave, un ombrello, una candela. Sono note queste assegnazioni: Fabio possiede un anello, Marco possiede una chiave, Chiara possiede un ombrello. Davide possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Anna, Fabio, Irene, Matteo possiedono ciascuno un oggetto diverso tra una bottiglia, un cappello, una chiave, un quaderno. Sono note queste assegnazioni: Fabio possiede un cappello, Irene possiede una chiave, Matteo possiede un quaderno. Anna possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Anna, Fabio, Irene, Matteo possiedono ciascuno un oggetto diverso tra una bottiglia, un cappello, una chiave, un quaderno. Sono note queste assegnazioni: Anna possiede una bottiglia, Irene possiede una chiave, Matteo possiede un quaderno. Fabio possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Anna, Fabio, Irene, Matteo possiedono ciascuno un oggetto diverso tra una bottiglia, un cappello, una chiave, un quaderno. Sono note queste assegnazioni: Anna possiede una bottiglia, Fabio possiede un cappello, Matteo possiede un quaderno. Irene possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Anna, Fabio, Irene, Matteo possiedono ciascuno un oggetto diverso tra una bottiglia, un cappello, una chiave, un quaderno. Sono note queste assegnazioni: Anna possiede una bottiglia, Fabio possiede un cappello, Irene possiede una chiave. Matteo possiede",
+          "target": " un quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Irene, Fabio, Marta, Elena possiedono ciascuno un oggetto diverso tra un cappello, un cucchiaio, un ombrello, una tazza. Sono note queste assegnazioni: Fabio possiede un cucchiaio, Marta possiede un ombrello, Elena possiede una tazza. Irene possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Irene, Fabio, Marta, Elena possiedono ciascuno un oggetto diverso tra un cappello, un cucchiaio, un ombrello, una tazza. Sono note queste assegnazioni: Irene possiede un cappello, Marta possiede un ombrello, Elena possiede una tazza. Fabio possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Irene, Fabio, Marta, Elena possiedono ciascuno un oggetto diverso tra un cappello, un cucchiaio, un ombrello, una tazza. Sono note queste assegnazioni: Irene possiede un cappello, Fabio possiede un cucchiaio, Elena possiede una tazza. Marta possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Irene, Fabio, Marta, Elena possiedono ciascuno un oggetto diverso tra un cappello, un cucchiaio, un ombrello, una tazza. Sono note queste assegnazioni: Irene possiede un cappello, Fabio possiede un cucchiaio, Marta possiede un ombrello. Elena possiede",
+          "target": " una tazza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Andrea, Anna, Elena, Marco possiedono ciascuno un oggetto diverso tra una bottiglia, un biglietto, una moneta, un cappello. Sono note queste assegnazioni: Anna possiede un biglietto, Elena possiede una moneta, Marco possiede un cappello. Andrea possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Andrea, Anna, Elena, Marco possiedono ciascuno un oggetto diverso tra una bottiglia, un biglietto, una moneta, un cappello. Sono note queste assegnazioni: Andrea possiede una bottiglia, Elena possiede una moneta, Marco possiede un cappello. Anna possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Andrea, Anna, Elena, Marco possiedono ciascuno un oggetto diverso tra una bottiglia, un biglietto, una moneta, un cappello. Sono note queste assegnazioni: Andrea possiede una bottiglia, Anna possiede un biglietto, Marco possiede un cappello. Elena possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Andrea, Anna, Elena, Marco possiedono ciascuno un oggetto diverso tra una bottiglia, un biglietto, una moneta, un cappello. Sono note queste assegnazioni: Andrea possiede una bottiglia, Anna possiede un biglietto, Elena possiede una moneta. Marco possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Anna, Marta, Elena, Matteo possiedono ciascuno un oggetto diverso tra una chiave, un libro, una penna, una candela. Sono note queste assegnazioni: Marta possiede un libro, Elena possiede una penna, Matteo possiede una candela. Anna possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Anna, Marta, Elena, Matteo possiedono ciascuno un oggetto diverso tra una chiave, un libro, una penna, una candela. Sono note queste assegnazioni: Anna possiede una chiave, Elena possiede una penna, Matteo possiede una candela. Marta possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Anna, Marta, Elena, Matteo possiedono ciascuno un oggetto diverso tra una chiave, un libro, una penna, una candela. Sono note queste assegnazioni: Anna possiede una chiave, Marta possiede un libro, Matteo possiede una candela. Elena possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Anna, Marta, Elena, Matteo possiedono ciascuno un oggetto diverso tra una chiave, un libro, una penna, una candela. Sono note queste assegnazioni: Anna possiede una chiave, Marta possiede un libro, Elena possiede una penna. Matteo possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Marta, Sara, Anna, Giulia possiedono ciascuno un oggetto diverso tra una bottiglia, un quaderno, un ombrello, un cappello. Sono note queste assegnazioni: Sara possiede un quaderno, Anna possiede un ombrello, Giulia possiede un cappello. Marta possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Marta, Sara, Anna, Giulia possiedono ciascuno un oggetto diverso tra una bottiglia, un quaderno, un ombrello, un cappello. Sono note queste assegnazioni: Marta possiede una bottiglia, Anna possiede un ombrello, Giulia possiede un cappello. Sara possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Marta, Sara, Anna, Giulia possiedono ciascuno un oggetto diverso tra una bottiglia, un quaderno, un ombrello, un cappello. Sono note queste assegnazioni: Marta possiede una bottiglia, Sara possiede un quaderno, Giulia possiede un cappello. Anna possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Marta, Sara, Anna, Giulia possiedono ciascuno un oggetto diverso tra una bottiglia, un quaderno, un ombrello, un cappello. Sono note queste assegnazioni: Marta possiede una bottiglia, Sara possiede un quaderno, Anna possiede un ombrello. Giulia possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Laura, Irene, Elena, Giulia possiedono ciascuno un oggetto diverso tra un anello, una tazza, un cucchiaio, un libro. Sono note queste assegnazioni: Irene possiede una tazza, Elena possiede un cucchiaio, Giulia possiede un libro. Laura possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Laura, Irene, Elena, Giulia possiedono ciascuno un oggetto diverso tra un anello, una tazza, un cucchiaio, un libro. Sono note queste assegnazioni: Laura possiede un anello, Elena possiede un cucchiaio, Giulia possiede un libro. Irene possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Laura, Irene, Elena, Giulia possiedono ciascuno un oggetto diverso tra un anello, una tazza, un cucchiaio, un libro. Sono note queste assegnazioni: Laura possiede un anello, Irene possiede una tazza, Giulia possiede un libro. Elena possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Laura, Irene, Elena, Giulia possiedono ciascuno un oggetto diverso tra un anello, una tazza, un cucchiaio, un libro. Sono note queste assegnazioni: Laura possiede un anello, Irene possiede una tazza, Elena possiede un cucchiaio. Giulia possiede",
+          "target": " un libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Anna, Simone, Chiara, Andrea possiedono ciascuno un oggetto diverso tra un biglietto, un ombrello, una penna, un libro. Sono note queste assegnazioni: Simone possiede un ombrello, Chiara possiede una penna, Andrea possiede un libro. Anna possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Anna, Simone, Chiara, Andrea possiedono ciascuno un oggetto diverso tra un biglietto, un ombrello, una penna, un libro. Sono note queste assegnazioni: Anna possiede un biglietto, Chiara possiede una penna, Andrea possiede un libro. Simone possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Anna, Simone, Chiara, Andrea possiedono ciascuno un oggetto diverso tra un biglietto, un ombrello, una penna, un libro. Sono note queste assegnazioni: Anna possiede un biglietto, Simone possiede un ombrello, Andrea possiede un libro. Chiara possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Anna, Simone, Chiara, Andrea possiedono ciascuno un oggetto diverso tra un biglietto, un ombrello, una penna, un libro. Sono note queste assegnazioni: Anna possiede un biglietto, Simone possiede un ombrello, Chiara possiede una penna. Andrea possiede",
+          "target": " un libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Anna, Paolo, Marta, Andrea possiedono ciascuno un oggetto diverso tra una tazza, un ombrello, una moneta, un cappello. Sono note queste assegnazioni: Paolo possiede un ombrello, Marta possiede una moneta, Andrea possiede un cappello. Anna possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Anna, Paolo, Marta, Andrea possiedono ciascuno un oggetto diverso tra una tazza, un ombrello, una moneta, un cappello. Sono note queste assegnazioni: Anna possiede una tazza, Marta possiede una moneta, Andrea possiede un cappello. Paolo possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Anna, Paolo, Marta, Andrea possiedono ciascuno un oggetto diverso tra una tazza, un ombrello, una moneta, un cappello. Sono note queste assegnazioni: Anna possiede una tazza, Paolo possiede un ombrello, Andrea possiede un cappello. Marta possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Anna, Paolo, Marta, Andrea possiedono ciascuno un oggetto diverso tra una tazza, un ombrello, una moneta, un cappello. Sono note queste assegnazioni: Anna possiede una tazza, Paolo possiede un ombrello, Marta possiede una moneta. Andrea possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Elena, Davide, Simone, Giulia possiedono ciascuno un oggetto diverso tra un biglietto, una moneta, un orologio, un anello. Sono note queste assegnazioni: Davide possiede una moneta, Simone possiede un orologio, Giulia possiede un anello. Elena possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Elena, Davide, Simone, Giulia possiedono ciascuno un oggetto diverso tra un biglietto, una moneta, un orologio, un anello. Sono note queste assegnazioni: Elena possiede un biglietto, Simone possiede un orologio, Giulia possiede un anello. Davide possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Elena, Davide, Simone, Giulia possiedono ciascuno un oggetto diverso tra un biglietto, una moneta, un orologio, un anello. Sono note queste assegnazioni: Elena possiede un biglietto, Davide possiede una moneta, Giulia possiede un anello. Simone possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Elena, Davide, Simone, Giulia possiedono ciascuno un oggetto diverso tra un biglietto, una moneta, un orologio, un anello. Sono note queste assegnazioni: Elena possiede un biglietto, Davide possiede una moneta, Simone possiede un orologio. Giulia possiede",
+          "target": " un anello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Marco, Giulia, Luca, Matteo possiedono ciascuno un oggetto diverso tra una chiave, una fotografia, una tazza, un orologio. Sono note queste assegnazioni: Giulia possiede una fotografia, Luca possiede una tazza, Matteo possiede un orologio. Marco possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Marco, Giulia, Luca, Matteo possiedono ciascuno un oggetto diverso tra una chiave, una fotografia, una tazza, un orologio. Sono note queste assegnazioni: Marco possiede una chiave, Luca possiede una tazza, Matteo possiede un orologio. Giulia possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Marco, Giulia, Luca, Matteo possiedono ciascuno un oggetto diverso tra una chiave, una fotografia, una tazza, un orologio. Sono note queste assegnazioni: Marco possiede una chiave, Giulia possiede una fotografia, Matteo possiede un orologio. Luca possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Marco, Giulia, Luca, Matteo possiedono ciascuno un oggetto diverso tra una chiave, una fotografia, una tazza, un orologio. Sono note queste assegnazioni: Marco possiede una chiave, Giulia possiede una fotografia, Luca possiede una tazza. Matteo possiede",
+          "target": " un orologio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Irene, Simone, Paolo, Luca possiedono ciascuno un oggetto diverso tra un cappello, un libro, un biglietto, una bottiglia. Sono note queste assegnazioni: Simone possiede un libro, Paolo possiede un biglietto, Luca possiede una bottiglia. Irene possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Irene, Simone, Paolo, Luca possiedono ciascuno un oggetto diverso tra un cappello, un libro, un biglietto, una bottiglia. Sono note queste assegnazioni: Irene possiede un cappello, Paolo possiede un biglietto, Luca possiede una bottiglia. Simone possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Irene, Simone, Paolo, Luca possiedono ciascuno un oggetto diverso tra un cappello, un libro, un biglietto, una bottiglia. Sono note queste assegnazioni: Irene possiede un cappello, Simone possiede un libro, Luca possiede una bottiglia. Paolo possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Irene, Simone, Paolo, Luca possiedono ciascuno un oggetto diverso tra un cappello, un libro, un biglietto, una bottiglia. Sono note queste assegnazioni: Irene possiede un cappello, Simone possiede un libro, Paolo possiede un biglietto. Luca possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Paolo, Irene, Matteo, Marta possiedono ciascuno un oggetto diverso tra un libro, un quaderno, una mappa, una candela. Sono note queste assegnazioni: Irene possiede un quaderno, Matteo possiede una mappa, Marta possiede una candela. Paolo possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Paolo, Irene, Matteo, Marta possiedono ciascuno un oggetto diverso tra un libro, un quaderno, una mappa, una candela. Sono note queste assegnazioni: Paolo possiede un libro, Matteo possiede una mappa, Marta possiede una candela. Irene possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Paolo, Irene, Matteo, Marta possiedono ciascuno un oggetto diverso tra un libro, un quaderno, una mappa, una candela. Sono note queste assegnazioni: Paolo possiede un libro, Irene possiede un quaderno, Marta possiede una candela. Matteo possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Paolo, Irene, Matteo, Marta possiedono ciascuno un oggetto diverso tra un libro, un quaderno, una mappa, una candela. Sono note queste assegnazioni: Paolo possiede un libro, Irene possiede un quaderno, Matteo possiede una mappa. Marta possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sara, Chiara, Laura, Marco possiedono ciascuno un oggetto diverso tra una chiave, un anello, una candela, un cappello. Sono note queste assegnazioni: Chiara possiede un anello, Laura possiede una candela, Marco possiede un cappello. Sara possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Sara, Chiara, Laura, Marco possiedono ciascuno un oggetto diverso tra una chiave, un anello, una candela, un cappello. Sono note queste assegnazioni: Sara possiede una chiave, Laura possiede una candela, Marco possiede un cappello. Chiara possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Sara, Chiara, Laura, Marco possiedono ciascuno un oggetto diverso tra una chiave, un anello, una candela, un cappello. Sono note queste assegnazioni: Sara possiede una chiave, Chiara possiede un anello, Marco possiede un cappello. Laura possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Sara, Chiara, Laura, Marco possiedono ciascuno un oggetto diverso tra una chiave, un anello, una candela, un cappello. Sono note queste assegnazioni: Sara possiede una chiave, Chiara possiede un anello, Laura possiede una candela. Marco possiede",
+          "target": " un cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Fabio, Marco, Laura, Davide possiedono ciascuno un oggetto diverso tra una tazza, una candela, una moneta, un biglietto. Sono note queste assegnazioni: Marco possiede una candela, Laura possiede una moneta, Davide possiede un biglietto. Fabio possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Fabio, Marco, Laura, Davide possiedono ciascuno un oggetto diverso tra una tazza, una candela, una moneta, un biglietto. Sono note queste assegnazioni: Fabio possiede una tazza, Laura possiede una moneta, Davide possiede un biglietto. Marco possiede",
+          "target": " una candela."
+        },
+        {
+          "context": "Fabio, Marco, Laura, Davide possiedono ciascuno un oggetto diverso tra una tazza, una candela, una moneta, un biglietto. Sono note queste assegnazioni: Fabio possiede una tazza, Marco possiede una candela, Davide possiede un biglietto. Laura possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Fabio, Marco, Laura, Davide possiedono ciascuno un oggetto diverso tra una tazza, una candela, una moneta, un biglietto. Sono note queste assegnazioni: Fabio possiede una tazza, Marco possiede una candela, Laura possiede una moneta. Davide possiede",
+          "target": " un biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Andrea, Davide, Elena, Simone possiedono ciascuno un oggetto diverso tra una mappa, un quaderno, un anello, un ombrello. Sono note queste assegnazioni: Davide possiede un quaderno, Elena possiede un anello, Simone possiede un ombrello. Andrea possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Andrea, Davide, Elena, Simone possiedono ciascuno un oggetto diverso tra una mappa, un quaderno, un anello, un ombrello. Sono note queste assegnazioni: Andrea possiede una mappa, Elena possiede un anello, Simone possiede un ombrello. Davide possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Andrea, Davide, Elena, Simone possiedono ciascuno un oggetto diverso tra una mappa, un quaderno, un anello, un ombrello. Sono note queste assegnazioni: Andrea possiede una mappa, Davide possiede un quaderno, Simone possiede un ombrello. Elena possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Andrea, Davide, Elena, Simone possiedono ciascuno un oggetto diverso tra una mappa, un quaderno, un anello, un ombrello. Sono note queste assegnazioni: Andrea possiede una mappa, Davide possiede un quaderno, Elena possiede un anello. Simone possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Chiara, Marta, Davide, Paolo possiedono ciascuno un oggetto diverso tra una fotografia, un orologio, un cucchiaio, una penna. Sono note queste assegnazioni: Marta possiede un orologio, Davide possiede un cucchiaio, Paolo possiede una penna. Chiara possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Chiara, Marta, Davide, Paolo possiedono ciascuno un oggetto diverso tra una fotografia, un orologio, un cucchiaio, una penna. Sono note queste assegnazioni: Chiara possiede una fotografia, Davide possiede un cucchiaio, Paolo possiede una penna. Marta possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Chiara, Marta, Davide, Paolo possiedono ciascuno un oggetto diverso tra una fotografia, un orologio, un cucchiaio, una penna. Sono note queste assegnazioni: Chiara possiede una fotografia, Marta possiede un orologio, Paolo possiede una penna. Davide possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Chiara, Marta, Davide, Paolo possiedono ciascuno un oggetto diverso tra una fotografia, un orologio, un cucchiaio, una penna. Sono note queste assegnazioni: Chiara possiede una fotografia, Marta possiede un orologio, Davide possiede un cucchiaio. Paolo possiede",
+          "target": " una penna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Laura, Anna, Davide, Marco possiedono ciascuno un oggetto diverso tra un quaderno, un cappello, un ombrello, un cucchiaio. Sono note queste assegnazioni: Anna possiede un cappello, Davide possiede un ombrello, Marco possiede un cucchiaio. Laura possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Laura, Anna, Davide, Marco possiedono ciascuno un oggetto diverso tra un quaderno, un cappello, un ombrello, un cucchiaio. Sono note queste assegnazioni: Laura possiede un quaderno, Davide possiede un ombrello, Marco possiede un cucchiaio. Anna possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Laura, Anna, Davide, Marco possiedono ciascuno un oggetto diverso tra un quaderno, un cappello, un ombrello, un cucchiaio. Sono note queste assegnazioni: Laura possiede un quaderno, Anna possiede un cappello, Marco possiede un cucchiaio. Davide possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Laura, Anna, Davide, Marco possiedono ciascuno un oggetto diverso tra un quaderno, un cappello, un ombrello, un cucchiaio. Sono note queste assegnazioni: Laura possiede un quaderno, Anna possiede un cappello, Davide possiede un ombrello. Marco possiede",
+          "target": " un cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Laura, Giulia, Matteo, Simone possiedono ciascuno un oggetto diverso tra una mappa, un cucchiaio, una chiave, una fotografia. Sono note queste assegnazioni: Giulia possiede un cucchiaio, Matteo possiede una chiave, Simone possiede una fotografia. Laura possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Laura, Giulia, Matteo, Simone possiedono ciascuno un oggetto diverso tra una mappa, un cucchiaio, una chiave, una fotografia. Sono note queste assegnazioni: Laura possiede una mappa, Matteo possiede una chiave, Simone possiede una fotografia. Giulia possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Laura, Giulia, Matteo, Simone possiedono ciascuno un oggetto diverso tra una mappa, un cucchiaio, una chiave, una fotografia. Sono note queste assegnazioni: Laura possiede una mappa, Giulia possiede un cucchiaio, Simone possiede una fotografia. Matteo possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Laura, Giulia, Matteo, Simone possiedono ciascuno un oggetto diverso tra una mappa, un cucchiaio, una chiave, una fotografia. Sono note queste assegnazioni: Laura possiede una mappa, Giulia possiede un cucchiaio, Matteo possiede una chiave. Simone possiede",
+          "target": " una fotografia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sara, Paolo, Simone, Elena possiedono ciascuno un oggetto diverso tra un cucchiaio, una mappa, una bottiglia, un ombrello. Sono note queste assegnazioni: Paolo possiede una mappa, Simone possiede una bottiglia, Elena possiede un ombrello. Sara possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Sara, Paolo, Simone, Elena possiedono ciascuno un oggetto diverso tra un cucchiaio, una mappa, una bottiglia, un ombrello. Sono note queste assegnazioni: Sara possiede un cucchiaio, Simone possiede una bottiglia, Elena possiede un ombrello. Paolo possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Sara, Paolo, Simone, Elena possiedono ciascuno un oggetto diverso tra un cucchiaio, una mappa, una bottiglia, un ombrello. Sono note queste assegnazioni: Sara possiede un cucchiaio, Paolo possiede una mappa, Elena possiede un ombrello. Simone possiede",
+          "target": " una bottiglia."
+        },
+        {
+          "context": "Sara, Paolo, Simone, Elena possiedono ciascuno un oggetto diverso tra un cucchiaio, una mappa, una bottiglia, un ombrello. Sono note queste assegnazioni: Sara possiede un cucchiaio, Paolo possiede una mappa, Simone possiede una bottiglia. Elena possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Andrea, Davide, Irene, Anna possiedono ciascuno un oggetto diverso tra una moneta, una tazza, un ombrello, una candela. Sono note queste assegnazioni: Davide possiede una tazza, Irene possiede un ombrello, Anna possiede una candela. Andrea possiede",
+          "target": " una moneta."
+        },
+        {
+          "context": "Andrea, Davide, Irene, Anna possiedono ciascuno un oggetto diverso tra una moneta, una tazza, un ombrello, una candela. Sono note queste assegnazioni: Andrea possiede una moneta, Irene possiede un ombrello, Anna possiede una candela. Davide possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Andrea, Davide, Irene, Anna possiedono ciascuno un oggetto diverso tra una moneta, una tazza, un ombrello, una candela. Sono note queste assegnazioni: Andrea possiede una moneta, Davide possiede una tazza, Anna possiede una candela. Irene possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Andrea, Davide, Irene, Anna possiedono ciascuno un oggetto diverso tra una moneta, una tazza, un ombrello, una candela. Sono note queste assegnazioni: Andrea possiede una moneta, Davide possiede una tazza, Irene possiede un ombrello. Anna possiede",
+          "target": " una candela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Matteo, Laura, Andrea, Marco possiedono ciascuno un oggetto diverso tra un cucchiaio, una mappa, una fotografia, un quaderno. Sono note queste assegnazioni: Laura possiede una mappa, Andrea possiede una fotografia, Marco possiede un quaderno. Matteo possiede",
+          "target": " un cucchiaio."
+        },
+        {
+          "context": "Matteo, Laura, Andrea, Marco possiedono ciascuno un oggetto diverso tra un cucchiaio, una mappa, una fotografia, un quaderno. Sono note queste assegnazioni: Matteo possiede un cucchiaio, Andrea possiede una fotografia, Marco possiede un quaderno. Laura possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Matteo, Laura, Andrea, Marco possiedono ciascuno un oggetto diverso tra un cucchiaio, una mappa, una fotografia, un quaderno. Sono note queste assegnazioni: Matteo possiede un cucchiaio, Laura possiede una mappa, Marco possiede un quaderno. Andrea possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Matteo, Laura, Andrea, Marco possiedono ciascuno un oggetto diverso tra un cucchiaio, una mappa, una fotografia, un quaderno. Sono note queste assegnazioni: Matteo possiede un cucchiaio, Laura possiede una mappa, Andrea possiede una fotografia. Marco possiede",
+          "target": " un quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Laura, Marco, Simone, Davide possiedono ciascuno un oggetto diverso tra una mappa, una tazza, una fotografia, un ombrello. Sono note queste assegnazioni: Marco possiede una tazza, Simone possiede una fotografia, Davide possiede un ombrello. Laura possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Laura, Marco, Simone, Davide possiedono ciascuno un oggetto diverso tra una mappa, una tazza, una fotografia, un ombrello. Sono note queste assegnazioni: Laura possiede una mappa, Simone possiede una fotografia, Davide possiede un ombrello. Marco possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Laura, Marco, Simone, Davide possiedono ciascuno un oggetto diverso tra una mappa, una tazza, una fotografia, un ombrello. Sono note queste assegnazioni: Laura possiede una mappa, Marco possiede una tazza, Davide possiede un ombrello. Simone possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Laura, Marco, Simone, Davide possiedono ciascuno un oggetto diverso tra una mappa, una tazza, una fotografia, un ombrello. Sono note queste assegnazioni: Laura possiede una mappa, Marco possiede una tazza, Simone possiede una fotografia. Davide possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Elena, Marco, Luca, Simone possiedono ciascuno un oggetto diverso tra un quaderno, un ombrello, una fotografia, un biglietto. Sono note queste assegnazioni: Marco possiede un ombrello, Luca possiede una fotografia, Simone possiede un biglietto. Elena possiede",
+          "target": " un quaderno."
+        },
+        {
+          "context": "Elena, Marco, Luca, Simone possiedono ciascuno un oggetto diverso tra un quaderno, un ombrello, una fotografia, un biglietto. Sono note queste assegnazioni: Elena possiede un quaderno, Luca possiede una fotografia, Simone possiede un biglietto. Marco possiede",
+          "target": " un ombrello."
+        },
+        {
+          "context": "Elena, Marco, Luca, Simone possiedono ciascuno un oggetto diverso tra un quaderno, un ombrello, una fotografia, un biglietto. Sono note queste assegnazioni: Elena possiede un quaderno, Marco possiede un ombrello, Simone possiede un biglietto. Luca possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Elena, Marco, Luca, Simone possiedono ciascuno un oggetto diverso tra un quaderno, un ombrello, una fotografia, un biglietto. Sono note queste assegnazioni: Elena possiede un quaderno, Marco possiede un ombrello, Luca possiede una fotografia. Simone possiede",
+          "target": " un biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Chiara, Simone, Matteo, Irene possiedono ciascuno un oggetto diverso tra un orologio, un libro, un anello, un ombrello. Sono note queste assegnazioni: Simone possiede un libro, Matteo possiede un anello, Irene possiede un ombrello. Chiara possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Chiara, Simone, Matteo, Irene possiedono ciascuno un oggetto diverso tra un orologio, un libro, un anello, un ombrello. Sono note queste assegnazioni: Chiara possiede un orologio, Matteo possiede un anello, Irene possiede un ombrello. Simone possiede",
+          "target": " un libro."
+        },
+        {
+          "context": "Chiara, Simone, Matteo, Irene possiedono ciascuno un oggetto diverso tra un orologio, un libro, un anello, un ombrello. Sono note queste assegnazioni: Chiara possiede un orologio, Simone possiede un libro, Irene possiede un ombrello. Matteo possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Chiara, Simone, Matteo, Irene possiedono ciascuno un oggetto diverso tra un orologio, un libro, un anello, un ombrello. Sono note queste assegnazioni: Chiara possiede un orologio, Simone possiede un libro, Matteo possiede un anello. Irene possiede",
+          "target": " un ombrello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Davide, Marco, Sara, Giulia possiedono ciascuno un oggetto diverso tra una chiave, un biglietto, una mappa, una moneta. Sono note queste assegnazioni: Marco possiede un biglietto, Sara possiede una mappa, Giulia possiede una moneta. Davide possiede",
+          "target": " una chiave."
+        },
+        {
+          "context": "Davide, Marco, Sara, Giulia possiedono ciascuno un oggetto diverso tra una chiave, un biglietto, una mappa, una moneta. Sono note queste assegnazioni: Davide possiede una chiave, Sara possiede una mappa, Giulia possiede una moneta. Marco possiede",
+          "target": " un biglietto."
+        },
+        {
+          "context": "Davide, Marco, Sara, Giulia possiedono ciascuno un oggetto diverso tra una chiave, un biglietto, una mappa, una moneta. Sono note queste assegnazioni: Davide possiede una chiave, Marco possiede un biglietto, Giulia possiede una moneta. Sara possiede",
+          "target": " una mappa."
+        },
+        {
+          "context": "Davide, Marco, Sara, Giulia possiedono ciascuno un oggetto diverso tra una chiave, un biglietto, una mappa, una moneta. Sono note queste assegnazioni: Davide possiede una chiave, Marco possiede un biglietto, Sara possiede una mappa. Giulia possiede",
+          "target": " una moneta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Luca, Anna, Chiara, Giulia possiedono ciascuno un oggetto diverso tra una tazza, una penna, un anello, una bottiglia. Sono note queste assegnazioni: Anna possiede una penna, Chiara possiede un anello, Giulia possiede una bottiglia. Luca possiede",
+          "target": " una tazza."
+        },
+        {
+          "context": "Luca, Anna, Chiara, Giulia possiedono ciascuno un oggetto diverso tra una tazza, una penna, un anello, una bottiglia. Sono note queste assegnazioni: Luca possiede una tazza, Chiara possiede un anello, Giulia possiede una bottiglia. Anna possiede",
+          "target": " una penna."
+        },
+        {
+          "context": "Luca, Anna, Chiara, Giulia possiedono ciascuno un oggetto diverso tra una tazza, una penna, un anello, una bottiglia. Sono note queste assegnazioni: Luca possiede una tazza, Anna possiede una penna, Giulia possiede una bottiglia. Chiara possiede",
+          "target": " un anello."
+        },
+        {
+          "context": "Luca, Anna, Chiara, Giulia possiedono ciascuno un oggetto diverso tra una tazza, una penna, un anello, una bottiglia. Sono note queste assegnazioni: Luca possiede una tazza, Anna possiede una penna, Chiara possiede un anello. Giulia possiede",
+          "target": " una bottiglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Paolo, Fabio, Anna, Matteo possiedono ciascuno un oggetto diverso tra un orologio, un cappello, una fotografia, un anello. Sono note queste assegnazioni: Fabio possiede un cappello, Anna possiede una fotografia, Matteo possiede un anello. Paolo possiede",
+          "target": " un orologio."
+        },
+        {
+          "context": "Paolo, Fabio, Anna, Matteo possiedono ciascuno un oggetto diverso tra un orologio, un cappello, una fotografia, un anello. Sono note queste assegnazioni: Paolo possiede un orologio, Anna possiede una fotografia, Matteo possiede un anello. Fabio possiede",
+          "target": " un cappello."
+        },
+        {
+          "context": "Paolo, Fabio, Anna, Matteo possiedono ciascuno un oggetto diverso tra un orologio, un cappello, una fotografia, un anello. Sono note queste assegnazioni: Paolo possiede un orologio, Fabio possiede un cappello, Matteo possiede un anello. Anna possiede",
+          "target": " una fotografia."
+        },
+        {
+          "context": "Paolo, Fabio, Anna, Matteo possiedono ciascuno un oggetto diverso tra un orologio, un cappello, una fotografia, un anello. Sono note queste assegnazioni: Paolo possiede un orologio, Fabio possiede un cappello, Anna possiede una fotografia. Matteo possiede",
+          "target": " un anello."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

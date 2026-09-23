@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "id": "few_shot_masculine_to_feminine",
+  "language": "it",
+
+  "generation": {"sets": 100, "seed": 42},
+
+  "sources": {
+    "transformations": [
+      {"input": "gatto", "output": "gatta"},
+      {"input": "ragazzo", "output": "ragazza"},
+      {"input": "bambino", "output": "bambina"},
+      {"input": "maestro", "output": "maestra"},
+      {"input": "attore", "output": "attrice"},
+      {"input": "scrittore", "output": "scrittrice"},
+      {"input": "re", "output": "regina"},
+      {"input": "padre", "output": "madre"},
+      {"input": "marito", "output": "moglie"},
+      {"input": "fratello", "output": "sorella"},
+      {"input": "zio", "output": "zia"},
+      {"input": "nonno", "output": "nonna"},
+      {"input": "cuoco", "output": "cuoca"},
+      {"input": "infermiere", "output": "infermiera"},
+      {"input": "leone", "output": "leonessa"},
+      {"input": "gallo", "output": "gallina"},
+      {"input": "principe", "output": "principessa"},
+      {"input": "cameriere", "output": "cameriera"},
+      {"input": "direttore", "output": "direttrice"},
+      {"input": "dottore", "output": "dottoressa"},
+      {"input": "poeta", "output": "poetessa"},
+      {"input": "eroe", "output": "eroina"},
+      {"input": "signore", "output": "signora"},
+      {"input": "uomo", "output": "donna"},
+      {"input": "figlio", "output": "figlia"},
+      {"input": "cugino", "output": "cugina"},
+      {"input": "studente", "output": "studentessa"},
+      {"input": "lavoratore", "output": "lavoratrice"}
+    ]
+  },
+
+  "variables": {
+    "examples": {"type": "sample", "source": "transformations", "count": 6},
+    "query_index": {"type": "constant", "value": 2}
+  },
+
+  "derived": {
+    "inputs": {"op": "pluck", "args": ["$examples", "input"]},
+    "outputs": {"op": "pluck", "args": ["$examples", "output"]},
+    "demo_inputs": {"op": "slice", "args": ["$inputs", 0, 2]},
+    "demo_outputs": {"op": "slice", "args": ["$outputs", 0, 2]},
+    "demonstrations": {
+      "op": "pair_strings",
+      "args": ["$demo_inputs", " → ", "$demo_outputs"]
+    },
+    "query_input": {"op": "item_at", "args": ["$inputs", "$query_index"]},
+    "answer": {"op": "item_at", "args": ["$outputs", "$query_index"]}
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [2, 3, 4, 5]
+      }
+    ],
+    "unique_on": ["$query_input", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Segui la trasformazione mostrata negli esempi: {demonstrations|comma_list}. {query_input} →",
+      "target": " {answer}"
+    }
+  ]
+}

@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "reasoning_transitive_ordering",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Giorgio, Giorgio è più alto di Andrea, Andrea è più alto di Emanuele. La persona più alta di tutte è",
+          "target": " Luca."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Giorgio, Giorgio è più alto di Andrea, Andrea è più alto di Emanuele. La persona al secondo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Giorgio, Giorgio è più alto di Andrea, Andrea è più alto di Emanuele. La persona al terzo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Giorgio, Giorgio è più alto di Andrea, Andrea è più alto di Emanuele. La persona più bassa di tutte è",
+          "target": " Emanuele."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Emanuele, Emanuele è più alto di Marco, Marco è più alto di Nicola. La persona più alta di tutte è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Emanuele, Emanuele è più alto di Marco, Marco è più alto di Nicola. La persona al secondo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Emanuele, Emanuele è più alto di Marco, Marco è più alto di Nicola. La persona al terzo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Emanuele, Emanuele è più alto di Marco, Marco è più alto di Nicola. La persona più bassa di tutte è",
+          "target": " Nicola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Marco, Marco è più alto di Fabio, Fabio è più alto di Andrea. La persona più alta di tutte è",
+          "target": " Luca."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Marco, Marco è più alto di Fabio, Fabio è più alto di Andrea. La persona al secondo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Marco, Marco è più alto di Fabio, Fabio è più alto di Andrea. La persona al terzo posto per altezza è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Marco, Marco è più alto di Fabio, Fabio è più alto di Andrea. La persona più bassa di tutte è",
+          "target": " Andrea."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Fabio, Fabio è più alto di Michele, Michele è più alto di Nicola. La persona più alta di tutte è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Fabio, Fabio è più alto di Michele, Michele è più alto di Nicola. La persona al secondo posto per altezza è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Fabio, Fabio è più alto di Michele, Michele è più alto di Nicola. La persona al terzo posto per altezza è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Fabio, Fabio è più alto di Michele, Michele è più alto di Nicola. La persona più bassa di tutte è",
+          "target": " Nicola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Riccardo, Riccardo è più alto di Giorgio, Giorgio è più alto di Luca. La persona più alta di tutte è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Riccardo, Riccardo è più alto di Giorgio, Giorgio è più alto di Luca. La persona al secondo posto per altezza è",
+          "target": " Riccardo."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Riccardo, Riccardo è più alto di Giorgio, Giorgio è più alto di Luca. La persona al terzo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Riccardo, Riccardo è più alto di Giorgio, Giorgio è più alto di Luca. La persona più bassa di tutte è",
+          "target": " Luca."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Alessandro, Alessandro è più alto di Giorgio, Giorgio è più alto di Matteo. La persona più alta di tutte è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Alessandro, Alessandro è più alto di Giorgio, Giorgio è più alto di Matteo. La persona al secondo posto per altezza è",
+          "target": " Alessandro."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Alessandro, Alessandro è più alto di Giorgio, Giorgio è più alto di Matteo. La persona al terzo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Alessandro, Alessandro è più alto di Giorgio, Giorgio è più alto di Matteo. La persona più bassa di tutte è",
+          "target": " Matteo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Davide, Davide è più alto di Marco, Marco è più alto di Federico. La persona più alta di tutte è",
+          "target": " Alessandro."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Davide, Davide è più alto di Marco, Marco è più alto di Federico. La persona al secondo posto per altezza è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Davide, Davide è più alto di Marco, Marco è più alto di Federico. La persona al terzo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Davide, Davide è più alto di Marco, Marco è più alto di Federico. La persona più bassa di tutte è",
+          "target": " Federico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Michele, Michele è più alto di Giorgio, Giorgio è più alto di Paolo. La persona più alta di tutte è",
+          "target": " Roberto."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Michele, Michele è più alto di Giorgio, Giorgio è più alto di Paolo. La persona al secondo posto per altezza è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Michele, Michele è più alto di Giorgio, Giorgio è più alto di Paolo. La persona al terzo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Michele, Michele è più alto di Giorgio, Giorgio è più alto di Paolo. La persona più bassa di tutte è",
+          "target": " Paolo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Davide, Davide è più alto di Federico, Federico è più alto di Marco. La persona più alta di tutte è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Davide, Davide è più alto di Federico, Federico è più alto di Marco. La persona al secondo posto per altezza è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Davide, Davide è più alto di Federico, Federico è più alto di Marco. La persona al terzo posto per altezza è",
+          "target": " Federico."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Davide, Davide è più alto di Federico, Federico è più alto di Marco. La persona più bassa di tutte è",
+          "target": " Marco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Roberto, Roberto è più alto di Fabio, Fabio è più alto di Marco. La persona più alta di tutte è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Roberto, Roberto è più alto di Fabio, Fabio è più alto di Marco. La persona al secondo posto per altezza è",
+          "target": " Roberto."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Roberto, Roberto è più alto di Fabio, Fabio è più alto di Marco. La persona al terzo posto per altezza è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Roberto, Roberto è più alto di Fabio, Fabio è più alto di Marco. La persona più bassa di tutte è",
+          "target": " Marco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Stefano, Stefano è più alto di Marco, Marco è più alto di Michele. La persona più alta di tutte è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Stefano, Stefano è più alto di Marco, Marco è più alto di Michele. La persona al secondo posto per altezza è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Stefano, Stefano è più alto di Marco, Marco è più alto di Michele. La persona al terzo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Stefano, Stefano è più alto di Marco, Marco è più alto di Michele. La persona più bassa di tutte è",
+          "target": " Michele."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Federico è più alto di Giorgio, Giorgio è più alto di Pietro, Pietro è più alto di Roberto. La persona più alta di tutte è",
+          "target": " Federico."
+        },
+        {
+          "context": "Considera queste informazioni: Federico è più alto di Giorgio, Giorgio è più alto di Pietro, Pietro è più alto di Roberto. La persona al secondo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Federico è più alto di Giorgio, Giorgio è più alto di Pietro, Pietro è più alto di Roberto. La persona al terzo posto per altezza è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Federico è più alto di Giorgio, Giorgio è più alto di Pietro, Pietro è più alto di Roberto. La persona più bassa di tutte è",
+          "target": " Roberto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Michele, Michele è più alto di Fabio, Fabio è più alto di Giorgio. La persona più alta di tutte è",
+          "target": " Roberto."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Michele, Michele è più alto di Fabio, Fabio è più alto di Giorgio. La persona al secondo posto per altezza è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Michele, Michele è più alto di Fabio, Fabio è più alto di Giorgio. La persona al terzo posto per altezza è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Michele, Michele è più alto di Fabio, Fabio è più alto di Giorgio. La persona più bassa di tutte è",
+          "target": " Giorgio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Simone, Simone è più alto di Emanuele, Emanuele è più alto di Andrea. La persona più alta di tutte è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Simone, Simone è più alto di Emanuele, Emanuele è più alto di Andrea. La persona al secondo posto per altezza è",
+          "target": " Simone."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Simone, Simone è più alto di Emanuele, Emanuele è più alto di Andrea. La persona al terzo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Simone, Simone è più alto di Emanuele, Emanuele è più alto di Andrea. La persona più bassa di tutte è",
+          "target": " Andrea."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Federico, Federico è più alto di Giorgio, Giorgio è più alto di Andrea. La persona più alta di tutte è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Federico, Federico è più alto di Giorgio, Giorgio è più alto di Andrea. La persona al secondo posto per altezza è",
+          "target": " Federico."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Federico, Federico è più alto di Giorgio, Giorgio è più alto di Andrea. La persona al terzo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Federico, Federico è più alto di Giorgio, Giorgio è più alto di Andrea. La persona più bassa di tutte è",
+          "target": " Andrea."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Andrea, Andrea è più alto di Michele, Michele è più alto di Alessandro. La persona più alta di tutte è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Andrea, Andrea è più alto di Michele, Michele è più alto di Alessandro. La persona al secondo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Andrea, Andrea è più alto di Michele, Michele è più alto di Alessandro. La persona al terzo posto per altezza è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Andrea, Andrea è più alto di Michele, Michele è più alto di Alessandro. La persona più bassa di tutte è",
+          "target": " Alessandro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Marco, Marco è più alto di Fabio, Fabio è più alto di Alessandro. La persona più alta di tutte è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Marco, Marco è più alto di Fabio, Fabio è più alto di Alessandro. La persona al secondo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Marco, Marco è più alto di Fabio, Fabio è più alto di Alessandro. La persona al terzo posto per altezza è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Marco, Marco è più alto di Fabio, Fabio è più alto di Alessandro. La persona più bassa di tutte è",
+          "target": " Alessandro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Federico, Federico è più alto di Pietro, Pietro è più alto di Matteo. La persona più alta di tutte è",
+          "target": " Tommaso."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Federico, Federico è più alto di Pietro, Pietro è più alto di Matteo. La persona al secondo posto per altezza è",
+          "target": " Federico."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Federico, Federico è più alto di Pietro, Pietro è più alto di Matteo. La persona al terzo posto per altezza è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Federico, Federico è più alto di Pietro, Pietro è più alto di Matteo. La persona più bassa di tutte è",
+          "target": " Matteo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Andrea, Andrea è più alto di Emanuele, Emanuele è più alto di Giorgio. La persona più alta di tutte è",
+          "target": " Matteo."
+        },
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Andrea, Andrea è più alto di Emanuele, Emanuele è più alto di Giorgio. La persona al secondo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Andrea, Andrea è più alto di Emanuele, Emanuele è più alto di Giorgio. La persona al terzo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Andrea, Andrea è più alto di Emanuele, Emanuele è più alto di Giorgio. La persona più bassa di tutte è",
+          "target": " Giorgio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Federico, Federico è più alto di Roberto, Roberto è più alto di Andrea. La persona più alta di tutte è",
+          "target": " Riccardo."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Federico, Federico è più alto di Roberto, Roberto è più alto di Andrea. La persona al secondo posto per altezza è",
+          "target": " Federico."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Federico, Federico è più alto di Roberto, Roberto è più alto di Andrea. La persona al terzo posto per altezza è",
+          "target": " Roberto."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Federico, Federico è più alto di Roberto, Roberto è più alto di Andrea. La persona più bassa di tutte è",
+          "target": " Andrea."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Francesco è più alto di Tommaso, Tommaso è più alto di Marco, Marco è più alto di Paolo. La persona più alta di tutte è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Francesco è più alto di Tommaso, Tommaso è più alto di Marco, Marco è più alto di Paolo. La persona al secondo posto per altezza è",
+          "target": " Tommaso."
+        },
+        {
+          "context": "Considera queste informazioni: Francesco è più alto di Tommaso, Tommaso è più alto di Marco, Marco è più alto di Paolo. La persona al terzo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Francesco è più alto di Tommaso, Tommaso è più alto di Marco, Marco è più alto di Paolo. La persona più bassa di tutte è",
+          "target": " Paolo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Simone, Simone è più alto di Nicola, Nicola è più alto di Marco. La persona più alta di tutte è",
+          "target": " Matteo."
+        },
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Simone, Simone è più alto di Nicola, Nicola è più alto di Marco. La persona al secondo posto per altezza è",
+          "target": " Simone."
+        },
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Simone, Simone è più alto di Nicola, Nicola è più alto di Marco. La persona al terzo posto per altezza è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Simone, Simone è più alto di Nicola, Nicola è più alto di Marco. La persona più bassa di tutte è",
+          "target": " Marco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Federico è più alto di Pietro, Pietro è più alto di Francesco, Francesco è più alto di Giorgio. La persona più alta di tutte è",
+          "target": " Federico."
+        },
+        {
+          "context": "Considera queste informazioni: Federico è più alto di Pietro, Pietro è più alto di Francesco, Francesco è più alto di Giorgio. La persona al secondo posto per altezza è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Federico è più alto di Pietro, Pietro è più alto di Francesco, Francesco è più alto di Giorgio. La persona al terzo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Federico è più alto di Pietro, Pietro è più alto di Francesco, Francesco è più alto di Giorgio. La persona più bassa di tutte è",
+          "target": " Giorgio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Emanuele, Emanuele è più alto di Giorgio, Giorgio è più alto di Alessandro. La persona più alta di tutte è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Emanuele, Emanuele è più alto di Giorgio, Giorgio è più alto di Alessandro. La persona al secondo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Emanuele, Emanuele è più alto di Giorgio, Giorgio è più alto di Alessandro. La persona al terzo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Emanuele, Emanuele è più alto di Giorgio, Giorgio è più alto di Alessandro. La persona più bassa di tutte è",
+          "target": " Alessandro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Stefano è più alto di Nicola, Nicola è più alto di Simone, Simone è più alto di Pietro. La persona più alta di tutte è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Stefano è più alto di Nicola, Nicola è più alto di Simone, Simone è più alto di Pietro. La persona al secondo posto per altezza è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Stefano è più alto di Nicola, Nicola è più alto di Simone, Simone è più alto di Pietro. La persona al terzo posto per altezza è",
+          "target": " Simone."
+        },
+        {
+          "context": "Considera queste informazioni: Stefano è più alto di Nicola, Nicola è più alto di Simone, Simone è più alto di Pietro. La persona più bassa di tutte è",
+          "target": " Pietro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Francesco, Francesco è più alto di Simone, Simone è più alto di Riccardo. La persona più alta di tutte è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Francesco, Francesco è più alto di Simone, Simone è più alto di Riccardo. La persona al secondo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Francesco, Francesco è più alto di Simone, Simone è più alto di Riccardo. La persona al terzo posto per altezza è",
+          "target": " Simone."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Francesco, Francesco è più alto di Simone, Simone è più alto di Riccardo. La persona più bassa di tutte è",
+          "target": " Riccardo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Stefano è più alto di Francesco, Francesco è più alto di Fabio, Fabio è più alto di Matteo. La persona più alta di tutte è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Stefano è più alto di Francesco, Francesco è più alto di Fabio, Fabio è più alto di Matteo. La persona al secondo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Stefano è più alto di Francesco, Francesco è più alto di Fabio, Fabio è più alto di Matteo. La persona al terzo posto per altezza è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Stefano è più alto di Francesco, Francesco è più alto di Fabio, Fabio è più alto di Matteo. La persona più bassa di tutte è",
+          "target": " Matteo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Simone è più alto di Emanuele, Emanuele è più alto di Francesco, Francesco è più alto di Luca. La persona più alta di tutte è",
+          "target": " Simone."
+        },
+        {
+          "context": "Considera queste informazioni: Simone è più alto di Emanuele, Emanuele è più alto di Francesco, Francesco è più alto di Luca. La persona al secondo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Simone è più alto di Emanuele, Emanuele è più alto di Francesco, Francesco è più alto di Luca. La persona al terzo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Simone è più alto di Emanuele, Emanuele è più alto di Francesco, Francesco è più alto di Luca. La persona più bassa di tutte è",
+          "target": " Luca."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Luca, Luca è più alto di Davide, Davide è più alto di Roberto. La persona più alta di tutte è",
+          "target": " Tommaso."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Luca, Luca è più alto di Davide, Davide è più alto di Roberto. La persona al secondo posto per altezza è",
+          "target": " Luca."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Luca, Luca è più alto di Davide, Davide è più alto di Roberto. La persona al terzo posto per altezza è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Luca, Luca è più alto di Davide, Davide è più alto di Roberto. La persona più bassa di tutte è",
+          "target": " Roberto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Paolo, Paolo è più alto di Michele, Michele è più alto di Marco. La persona più alta di tutte è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Paolo, Paolo è più alto di Michele, Michele è più alto di Marco. La persona al secondo posto per altezza è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Paolo, Paolo è più alto di Michele, Michele è più alto di Marco. La persona al terzo posto per altezza è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Paolo, Paolo è più alto di Michele, Michele è più alto di Marco. La persona più bassa di tutte è",
+          "target": " Marco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Marco, Marco è più alto di Emanuele, Emanuele è più alto di Matteo. La persona più alta di tutte è",
+          "target": " Tommaso."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Marco, Marco è più alto di Emanuele, Emanuele è più alto di Matteo. La persona al secondo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Marco, Marco è più alto di Emanuele, Emanuele è più alto di Matteo. La persona al terzo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Marco, Marco è più alto di Emanuele, Emanuele è più alto di Matteo. La persona più bassa di tutte è",
+          "target": " Matteo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Emanuele, Emanuele è più alto di Simone, Simone è più alto di Giorgio. La persona più alta di tutte è",
+          "target": " Tommaso."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Emanuele, Emanuele è più alto di Simone, Simone è più alto di Giorgio. La persona al secondo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Emanuele, Emanuele è più alto di Simone, Simone è più alto di Giorgio. La persona al terzo posto per altezza è",
+          "target": " Simone."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Emanuele, Emanuele è più alto di Simone, Simone è più alto di Giorgio. La persona più bassa di tutte è",
+          "target": " Giorgio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Emanuele, Emanuele è più alto di Michele, Michele è più alto di Stefano. La persona più alta di tutte è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Emanuele, Emanuele è più alto di Michele, Michele è più alto di Stefano. La persona al secondo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Emanuele, Emanuele è più alto di Michele, Michele è più alto di Stefano. La persona al terzo posto per altezza è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Emanuele, Emanuele è più alto di Michele, Michele è più alto di Stefano. La persona più bassa di tutte è",
+          "target": " Stefano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Pietro, Pietro è più alto di Francesco, Francesco è più alto di Riccardo. La persona più alta di tutte è",
+          "target": " Roberto."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Pietro, Pietro è più alto di Francesco, Francesco è più alto di Riccardo. La persona al secondo posto per altezza è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Pietro, Pietro è più alto di Francesco, Francesco è più alto di Riccardo. La persona al terzo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Pietro, Pietro è più alto di Francesco, Francesco è più alto di Riccardo. La persona più bassa di tutte è",
+          "target": " Riccardo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Michele, Michele è più alto di Marco, Marco è più alto di Alessandro. La persona più alta di tutte è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Michele, Michele è più alto di Marco, Marco è più alto di Alessandro. La persona al secondo posto per altezza è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Michele, Michele è più alto di Marco, Marco è più alto di Alessandro. La persona al terzo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Michele, Michele è più alto di Marco, Marco è più alto di Alessandro. La persona più bassa di tutte è",
+          "target": " Alessandro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Emanuele, Emanuele è più alto di Andrea, Andrea è più alto di Michele. La persona più alta di tutte è",
+          "target": " Riccardo."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Emanuele, Emanuele è più alto di Andrea, Andrea è più alto di Michele. La persona al secondo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Emanuele, Emanuele è più alto di Andrea, Andrea è più alto di Michele. La persona al terzo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Emanuele, Emanuele è più alto di Andrea, Andrea è più alto di Michele. La persona più bassa di tutte è",
+          "target": " Michele."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Marco è più alto di Paolo, Paolo è più alto di Andrea, Andrea è più alto di Michele. La persona più alta di tutte è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Marco è più alto di Paolo, Paolo è più alto di Andrea, Andrea è più alto di Michele. La persona al secondo posto per altezza è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Marco è più alto di Paolo, Paolo è più alto di Andrea, Andrea è più alto di Michele. La persona al terzo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Marco è più alto di Paolo, Paolo è più alto di Andrea, Andrea è più alto di Michele. La persona più bassa di tutte è",
+          "target": " Michele."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Marco, Marco è più alto di Francesco, Francesco è più alto di Andrea. La persona più alta di tutte è",
+          "target": " Alessandro."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Marco, Marco è più alto di Francesco, Francesco è più alto di Andrea. La persona al secondo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Marco, Marco è più alto di Francesco, Francesco è più alto di Andrea. La persona al terzo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Marco, Marco è più alto di Francesco, Francesco è più alto di Andrea. La persona più bassa di tutte è",
+          "target": " Andrea."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Fabio, Fabio è più alto di Emanuele, Emanuele è più alto di Matteo. La persona più alta di tutte è",
+          "target": " Tommaso."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Fabio, Fabio è più alto di Emanuele, Emanuele è più alto di Matteo. La persona al secondo posto per altezza è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Fabio, Fabio è più alto di Emanuele, Emanuele è più alto di Matteo. La persona al terzo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Fabio, Fabio è più alto di Emanuele, Emanuele è più alto di Matteo. La persona più bassa di tutte è",
+          "target": " Matteo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Tommaso, Tommaso è più alto di Nicola, Nicola è più alto di Fabio. La persona più alta di tutte è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Tommaso, Tommaso è più alto di Nicola, Nicola è più alto di Fabio. La persona al secondo posto per altezza è",
+          "target": " Tommaso."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Tommaso, Tommaso è più alto di Nicola, Nicola è più alto di Fabio. La persona al terzo posto per altezza è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Tommaso, Tommaso è più alto di Nicola, Nicola è più alto di Fabio. La persona più bassa di tutte è",
+          "target": " Fabio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Nicola, Nicola è più alto di Roberto, Roberto è più alto di Riccardo. La persona più alta di tutte è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Nicola, Nicola è più alto di Roberto, Roberto è più alto di Riccardo. La persona al secondo posto per altezza è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Nicola, Nicola è più alto di Roberto, Roberto è più alto di Riccardo. La persona al terzo posto per altezza è",
+          "target": " Roberto."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Nicola, Nicola è più alto di Roberto, Roberto è più alto di Riccardo. La persona più bassa di tutte è",
+          "target": " Riccardo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Paolo, Paolo è più alto di Davide, Davide è più alto di Riccardo. La persona più alta di tutte è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Paolo, Paolo è più alto di Davide, Davide è più alto di Riccardo. La persona al secondo posto per altezza è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Paolo, Paolo è più alto di Davide, Davide è più alto di Riccardo. La persona al terzo posto per altezza è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Paolo, Paolo è più alto di Davide, Davide è più alto di Riccardo. La persona più bassa di tutte è",
+          "target": " Riccardo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Davide, Davide è più alto di Andrea, Andrea è più alto di Fabio. La persona più alta di tutte è",
+          "target": " Alessandro."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Davide, Davide è più alto di Andrea, Andrea è più alto di Fabio. La persona al secondo posto per altezza è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Davide, Davide è più alto di Andrea, Andrea è più alto di Fabio. La persona al terzo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Davide, Davide è più alto di Andrea, Andrea è più alto di Fabio. La persona più bassa di tutte è",
+          "target": " Fabio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Pietro, Pietro è più alto di Matteo, Matteo è più alto di Nicola. La persona più alta di tutte è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Pietro, Pietro è più alto di Matteo, Matteo è più alto di Nicola. La persona al secondo posto per altezza è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Pietro, Pietro è più alto di Matteo, Matteo è più alto di Nicola. La persona al terzo posto per altezza è",
+          "target": " Matteo."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Pietro, Pietro è più alto di Matteo, Matteo è più alto di Nicola. La persona più bassa di tutte è",
+          "target": " Nicola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Pietro, Pietro è più alto di Andrea, Andrea è più alto di Marco. La persona più alta di tutte è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Pietro, Pietro è più alto di Andrea, Andrea è più alto di Marco. La persona al secondo posto per altezza è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Pietro, Pietro è più alto di Andrea, Andrea è più alto di Marco. La persona al terzo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Pietro, Pietro è più alto di Andrea, Andrea è più alto di Marco. La persona più bassa di tutte è",
+          "target": " Marco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Davide, Davide è più alto di Paolo, Paolo è più alto di Luca. La persona più alta di tutte è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Davide, Davide è più alto di Paolo, Paolo è più alto di Luca. La persona al secondo posto per altezza è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Davide, Davide è più alto di Paolo, Paolo è più alto di Luca. La persona al terzo posto per altezza è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Davide, Davide è più alto di Paolo, Paolo è più alto di Luca. La persona più bassa di tutte è",
+          "target": " Luca."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Simone, Simone è più alto di Nicola, Nicola è più alto di Tommaso. La persona più alta di tutte è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Simone, Simone è più alto di Nicola, Nicola è più alto di Tommaso. La persona al secondo posto per altezza è",
+          "target": " Simone."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Simone, Simone è più alto di Nicola, Nicola è più alto di Tommaso. La persona al terzo posto per altezza è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Simone, Simone è più alto di Nicola, Nicola è più alto di Tommaso. La persona più bassa di tutte è",
+          "target": " Tommaso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Federico, Federico è più alto di Paolo, Paolo è più alto di Simone. La persona più alta di tutte è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Federico, Federico è più alto di Paolo, Paolo è più alto di Simone. La persona al secondo posto per altezza è",
+          "target": " Federico."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Federico, Federico è più alto di Paolo, Paolo è più alto di Simone. La persona al terzo posto per altezza è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Federico, Federico è più alto di Paolo, Paolo è più alto di Simone. La persona più bassa di tutte è",
+          "target": " Simone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Federico, Federico è più alto di Giorgio, Giorgio è più alto di Pietro. La persona più alta di tutte è",
+          "target": " Luca."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Federico, Federico è più alto di Giorgio, Giorgio è più alto di Pietro. La persona al secondo posto per altezza è",
+          "target": " Federico."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Federico, Federico è più alto di Giorgio, Giorgio è più alto di Pietro. La persona al terzo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Federico, Federico è più alto di Giorgio, Giorgio è più alto di Pietro. La persona più bassa di tutte è",
+          "target": " Pietro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Emanuele, Emanuele è più alto di Tommaso, Tommaso è più alto di Matteo. La persona più alta di tutte è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Emanuele, Emanuele è più alto di Tommaso, Tommaso è più alto di Matteo. La persona al secondo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Emanuele, Emanuele è più alto di Tommaso, Tommaso è più alto di Matteo. La persona al terzo posto per altezza è",
+          "target": " Tommaso."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Emanuele, Emanuele è più alto di Tommaso, Tommaso è più alto di Matteo. La persona più bassa di tutte è",
+          "target": " Matteo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Stefano è più alto di Fabio, Fabio è più alto di Paolo, Paolo è più alto di Emanuele. La persona più alta di tutte è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Stefano è più alto di Fabio, Fabio è più alto di Paolo, Paolo è più alto di Emanuele. La persona al secondo posto per altezza è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Stefano è più alto di Fabio, Fabio è più alto di Paolo, Paolo è più alto di Emanuele. La persona al terzo posto per altezza è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Stefano è più alto di Fabio, Fabio è più alto di Paolo, Paolo è più alto di Emanuele. La persona più bassa di tutte è",
+          "target": " Emanuele."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Michele, Michele è più alto di Tommaso, Tommaso è più alto di Francesco. La persona più alta di tutte è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Michele, Michele è più alto di Tommaso, Tommaso è più alto di Francesco. La persona al secondo posto per altezza è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Michele, Michele è più alto di Tommaso, Tommaso è più alto di Francesco. La persona al terzo posto per altezza è",
+          "target": " Tommaso."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Michele, Michele è più alto di Tommaso, Tommaso è più alto di Francesco. La persona più bassa di tutte è",
+          "target": " Francesco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Francesco, Francesco è più alto di Marco, Marco è più alto di Simone. La persona più alta di tutte è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Francesco, Francesco è più alto di Marco, Marco è più alto di Simone. La persona al secondo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Francesco, Francesco è più alto di Marco, Marco è più alto di Simone. La persona al terzo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Francesco, Francesco è più alto di Marco, Marco è più alto di Simone. La persona più bassa di tutte è",
+          "target": " Simone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Marco, Marco è più alto di Andrea, Andrea è più alto di Federico. La persona più alta di tutte è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Marco, Marco è più alto di Andrea, Andrea è più alto di Federico. La persona al secondo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Marco, Marco è più alto di Andrea, Andrea è più alto di Federico. La persona al terzo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Marco, Marco è più alto di Andrea, Andrea è più alto di Federico. La persona più bassa di tutte è",
+          "target": " Federico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Andrea, Andrea è più alto di Paolo, Paolo è più alto di Marco. La persona più alta di tutte è",
+          "target": " Riccardo."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Andrea, Andrea è più alto di Paolo, Paolo è più alto di Marco. La persona al secondo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Andrea, Andrea è più alto di Paolo, Paolo è più alto di Marco. La persona al terzo posto per altezza è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Andrea, Andrea è più alto di Paolo, Paolo è più alto di Marco. La persona più bassa di tutte è",
+          "target": " Marco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Michele, Michele è più alto di Francesco, Francesco è più alto di Alessandro. La persona più alta di tutte è",
+          "target": " Riccardo."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Michele, Michele è più alto di Francesco, Francesco è più alto di Alessandro. La persona al secondo posto per altezza è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Michele, Michele è più alto di Francesco, Francesco è più alto di Alessandro. La persona al terzo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Michele, Michele è più alto di Francesco, Francesco è più alto di Alessandro. La persona più bassa di tutte è",
+          "target": " Alessandro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Alessandro, Alessandro è più alto di Andrea, Andrea è più alto di Giorgio. La persona più alta di tutte è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Alessandro, Alessandro è più alto di Andrea, Andrea è più alto di Giorgio. La persona al secondo posto per altezza è",
+          "target": " Alessandro."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Alessandro, Alessandro è più alto di Andrea, Andrea è più alto di Giorgio. La persona al terzo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Alessandro, Alessandro è più alto di Andrea, Andrea è più alto di Giorgio. La persona più bassa di tutte è",
+          "target": " Giorgio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Stefano, Stefano è più alto di Pietro, Pietro è più alto di Alessandro. La persona più alta di tutte è",
+          "target": " Matteo."
+        },
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Stefano, Stefano è più alto di Pietro, Pietro è più alto di Alessandro. La persona al secondo posto per altezza è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Stefano, Stefano è più alto di Pietro, Pietro è più alto di Alessandro. La persona al terzo posto per altezza è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Stefano, Stefano è più alto di Pietro, Pietro è più alto di Alessandro. La persona più bassa di tutte è",
+          "target": " Alessandro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Pietro, Pietro è più alto di Davide, Davide è più alto di Marco. La persona più alta di tutte è",
+          "target": " Luca."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Pietro, Pietro è più alto di Davide, Davide è più alto di Marco. La persona al secondo posto per altezza è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Pietro, Pietro è più alto di Davide, Davide è più alto di Marco. La persona al terzo posto per altezza è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Pietro, Pietro è più alto di Davide, Davide è più alto di Marco. La persona più bassa di tutte è",
+          "target": " Marco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Francesco è più alto di Giorgio, Giorgio è più alto di Matteo, Matteo è più alto di Roberto. La persona più alta di tutte è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Francesco è più alto di Giorgio, Giorgio è più alto di Matteo, Matteo è più alto di Roberto. La persona al secondo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Francesco è più alto di Giorgio, Giorgio è più alto di Matteo, Matteo è più alto di Roberto. La persona al terzo posto per altezza è",
+          "target": " Matteo."
+        },
+        {
+          "context": "Considera queste informazioni: Francesco è più alto di Giorgio, Giorgio è più alto di Matteo, Matteo è più alto di Roberto. La persona più bassa di tutte è",
+          "target": " Roberto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Roberto, Roberto è più alto di Stefano, Stefano è più alto di Simone. La persona più alta di tutte è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Roberto, Roberto è più alto di Stefano, Stefano è più alto di Simone. La persona al secondo posto per altezza è",
+          "target": " Roberto."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Roberto, Roberto è più alto di Stefano, Stefano è più alto di Simone. La persona al terzo posto per altezza è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Roberto, Roberto è più alto di Stefano, Stefano è più alto di Simone. La persona più bassa di tutte è",
+          "target": " Simone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Stefano, Stefano è più alto di Francesco, Francesco è più alto di Luca. La persona più alta di tutte è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Stefano, Stefano è più alto di Francesco, Francesco è più alto di Luca. La persona al secondo posto per altezza è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Stefano, Stefano è più alto di Francesco, Francesco è più alto di Luca. La persona al terzo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Stefano, Stefano è più alto di Francesco, Francesco è più alto di Luca. La persona più bassa di tutte è",
+          "target": " Luca."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Matteo, Matteo è più alto di Giorgio, Giorgio è più alto di Michele. La persona più alta di tutte è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Matteo, Matteo è più alto di Giorgio, Giorgio è più alto di Michele. La persona al secondo posto per altezza è",
+          "target": " Matteo."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Matteo, Matteo è più alto di Giorgio, Giorgio è più alto di Michele. La persona al terzo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Matteo, Matteo è più alto di Giorgio, Giorgio è più alto di Michele. La persona più bassa di tutte è",
+          "target": " Michele."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Matteo, Matteo è più alto di Giorgio, Giorgio è più alto di Stefano. La persona più alta di tutte è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Matteo, Matteo è più alto di Giorgio, Giorgio è più alto di Stefano. La persona al secondo posto per altezza è",
+          "target": " Matteo."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Matteo, Matteo è più alto di Giorgio, Giorgio è più alto di Stefano. La persona al terzo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Matteo, Matteo è più alto di Giorgio, Giorgio è più alto di Stefano. La persona più bassa di tutte è",
+          "target": " Stefano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Fabio, Fabio è più alto di Giorgio, Giorgio è più alto di Francesco. La persona più alta di tutte è",
+          "target": " Alessandro."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Fabio, Fabio è più alto di Giorgio, Giorgio è più alto di Francesco. La persona al secondo posto per altezza è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Fabio, Fabio è più alto di Giorgio, Giorgio è più alto di Francesco. La persona al terzo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Fabio, Fabio è più alto di Giorgio, Giorgio è più alto di Francesco. La persona più bassa di tutte è",
+          "target": " Francesco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Paolo, Paolo è più alto di Marco, Marco è più alto di Nicola. La persona più alta di tutte è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Paolo, Paolo è più alto di Marco, Marco è più alto di Nicola. La persona al secondo posto per altezza è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Paolo, Paolo è più alto di Marco, Marco è più alto di Nicola. La persona al terzo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Paolo, Paolo è più alto di Marco, Marco è più alto di Nicola. La persona più bassa di tutte è",
+          "target": " Nicola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Luca, Luca è più alto di Alessandro, Alessandro è più alto di Matteo. La persona più alta di tutte è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Luca, Luca è più alto di Alessandro, Alessandro è più alto di Matteo. La persona al secondo posto per altezza è",
+          "target": " Luca."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Luca, Luca è più alto di Alessandro, Alessandro è più alto di Matteo. La persona al terzo posto per altezza è",
+          "target": " Alessandro."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Luca, Luca è più alto di Alessandro, Alessandro è più alto di Matteo. La persona più bassa di tutte è",
+          "target": " Matteo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Simone è più alto di Pietro, Pietro è più alto di Emanuele, Emanuele è più alto di Nicola. La persona più alta di tutte è",
+          "target": " Simone."
+        },
+        {
+          "context": "Considera queste informazioni: Simone è più alto di Pietro, Pietro è più alto di Emanuele, Emanuele è più alto di Nicola. La persona al secondo posto per altezza è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Simone è più alto di Pietro, Pietro è più alto di Emanuele, Emanuele è più alto di Nicola. La persona al terzo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Simone è più alto di Pietro, Pietro è più alto di Emanuele, Emanuele è più alto di Nicola. La persona più bassa di tutte è",
+          "target": " Nicola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Marco, Marco è più alto di Matteo, Matteo è più alto di Paolo. La persona più alta di tutte è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Marco, Marco è più alto di Matteo, Matteo è più alto di Paolo. La persona al secondo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Marco, Marco è più alto di Matteo, Matteo è più alto di Paolo. La persona al terzo posto per altezza è",
+          "target": " Matteo."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Marco, Marco è più alto di Matteo, Matteo è più alto di Paolo. La persona più bassa di tutte è",
+          "target": " Paolo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Emanuele, Emanuele è più alto di Matteo, Matteo è più alto di Nicola. La persona più alta di tutte è",
+          "target": " Riccardo."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Emanuele, Emanuele è più alto di Matteo, Matteo è più alto di Nicola. La persona al secondo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Emanuele, Emanuele è più alto di Matteo, Matteo è più alto di Nicola. La persona al terzo posto per altezza è",
+          "target": " Matteo."
+        },
+        {
+          "context": "Considera queste informazioni: Riccardo è più alto di Emanuele, Emanuele è più alto di Matteo, Matteo è più alto di Nicola. La persona più bassa di tutte è",
+          "target": " Nicola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Stefano, Stefano è più alto di Roberto, Roberto è più alto di Michele. La persona più alta di tutte è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Stefano, Stefano è più alto di Roberto, Roberto è più alto di Michele. La persona al secondo posto per altezza è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Stefano, Stefano è più alto di Roberto, Roberto è più alto di Michele. La persona al terzo posto per altezza è",
+          "target": " Roberto."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Stefano, Stefano è più alto di Roberto, Roberto è più alto di Michele. La persona più bassa di tutte è",
+          "target": " Michele."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Andrea, Andrea è più alto di Davide, Davide è più alto di Roberto. La persona più alta di tutte è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Andrea, Andrea è più alto di Davide, Davide è più alto di Roberto. La persona al secondo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Andrea, Andrea è più alto di Davide, Davide è più alto di Roberto. La persona al terzo posto per altezza è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Andrea, Andrea è più alto di Davide, Davide è più alto di Roberto. La persona più bassa di tutte è",
+          "target": " Roberto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Matteo, Matteo è più alto di Andrea, Andrea è più alto di Simone. La persona più alta di tutte è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Matteo, Matteo è più alto di Andrea, Andrea è più alto di Simone. La persona al secondo posto per altezza è",
+          "target": " Matteo."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Matteo, Matteo è più alto di Andrea, Andrea è più alto di Simone. La persona al terzo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Matteo, Matteo è più alto di Andrea, Andrea è più alto di Simone. La persona più bassa di tutte è",
+          "target": " Simone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Luca, Luca è più alto di Simone, Simone è più alto di Alessandro. La persona più alta di tutte è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Luca, Luca è più alto di Simone, Simone è più alto di Alessandro. La persona al secondo posto per altezza è",
+          "target": " Luca."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Luca, Luca è più alto di Simone, Simone è più alto di Alessandro. La persona al terzo posto per altezza è",
+          "target": " Simone."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Luca, Luca è più alto di Simone, Simone è più alto di Alessandro. La persona più bassa di tutte è",
+          "target": " Alessandro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Giorgio, Giorgio è più alto di Simone, Simone è più alto di Davide. La persona più alta di tutte è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Giorgio, Giorgio è più alto di Simone, Simone è più alto di Davide. La persona al secondo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Giorgio, Giorgio è più alto di Simone, Simone è più alto di Davide. La persona al terzo posto per altezza è",
+          "target": " Simone."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Giorgio, Giorgio è più alto di Simone, Simone è più alto di Davide. La persona più bassa di tutte è",
+          "target": " Davide."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Tommaso, Tommaso è più alto di Andrea, Andrea è più alto di Fabio. La persona più alta di tutte è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Tommaso, Tommaso è più alto di Andrea, Andrea è più alto di Fabio. La persona al secondo posto per altezza è",
+          "target": " Tommaso."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Tommaso, Tommaso è più alto di Andrea, Andrea è più alto di Fabio. La persona al terzo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Tommaso, Tommaso è più alto di Andrea, Andrea è più alto di Fabio. La persona più bassa di tutte è",
+          "target": " Fabio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Stefano, Stefano è più alto di Andrea, Andrea è più alto di Emanuele. La persona più alta di tutte è",
+          "target": " Roberto."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Stefano, Stefano è più alto di Andrea, Andrea è più alto di Emanuele. La persona al secondo posto per altezza è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Stefano, Stefano è più alto di Andrea, Andrea è più alto di Emanuele. La persona al terzo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Stefano, Stefano è più alto di Andrea, Andrea è più alto di Emanuele. La persona più bassa di tutte è",
+          "target": " Emanuele."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Federico, Federico è più alto di Alessandro, Alessandro è più alto di Giorgio. La persona più alta di tutte è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Federico, Federico è più alto di Alessandro, Alessandro è più alto di Giorgio. La persona al secondo posto per altezza è",
+          "target": " Federico."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Federico, Federico è più alto di Alessandro, Alessandro è più alto di Giorgio. La persona al terzo posto per altezza è",
+          "target": " Alessandro."
+        },
+        {
+          "context": "Considera queste informazioni: Fabio è più alto di Federico, Federico è più alto di Alessandro, Alessandro è più alto di Giorgio. La persona più bassa di tutte è",
+          "target": " Giorgio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Roberto, Roberto è più alto di Francesco, Francesco è più alto di Federico. La persona più alta di tutte è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Roberto, Roberto è più alto di Francesco, Francesco è più alto di Federico. La persona al secondo posto per altezza è",
+          "target": " Roberto."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Roberto, Roberto è più alto di Francesco, Francesco è più alto di Federico. La persona al terzo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Roberto, Roberto è più alto di Francesco, Francesco è più alto di Federico. La persona più bassa di tutte è",
+          "target": " Federico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Davide, Davide è più alto di Giorgio, Giorgio è più alto di Simone. La persona più alta di tutte è",
+          "target": " Luca."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Davide, Davide è più alto di Giorgio, Giorgio è più alto di Simone. La persona al secondo posto per altezza è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Davide, Davide è più alto di Giorgio, Giorgio è più alto di Simone. La persona al terzo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Davide, Davide è più alto di Giorgio, Giorgio è più alto di Simone. La persona più bassa di tutte è",
+          "target": " Simone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Davide, Davide è più alto di Nicola, Nicola è più alto di Roberto. La persona più alta di tutte è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Davide, Davide è più alto di Nicola, Nicola è più alto di Roberto. La persona al secondo posto per altezza è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Davide, Davide è più alto di Nicola, Nicola è più alto di Roberto. La persona al terzo posto per altezza è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Davide, Davide è più alto di Nicola, Nicola è più alto di Roberto. La persona più bassa di tutte è",
+          "target": " Roberto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Francesco, Francesco è più alto di Davide, Davide è più alto di Federico. La persona più alta di tutte è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Francesco, Francesco è più alto di Davide, Davide è più alto di Federico. La persona al secondo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Francesco, Francesco è più alto di Davide, Davide è più alto di Federico. La persona al terzo posto per altezza è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Francesco, Francesco è più alto di Davide, Davide è più alto di Federico. La persona più bassa di tutte è",
+          "target": " Federico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Paolo, Paolo è più alto di Nicola, Nicola è più alto di Luca. La persona più alta di tutte è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Paolo, Paolo è più alto di Nicola, Nicola è più alto di Luca. La persona al secondo posto per altezza è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Paolo, Paolo è più alto di Nicola, Nicola è più alto di Luca. La persona al terzo posto per altezza è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Giorgio è più alto di Paolo, Paolo è più alto di Nicola, Nicola è più alto di Luca. La persona più bassa di tutte è",
+          "target": " Luca."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Nicola, Nicola è più alto di Marco, Marco è più alto di Alessandro. La persona più alta di tutte è",
+          "target": " Roberto."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Nicola, Nicola è più alto di Marco, Marco è più alto di Alessandro. La persona al secondo posto per altezza è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Nicola, Nicola è più alto di Marco, Marco è più alto di Alessandro. La persona al terzo posto per altezza è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Roberto è più alto di Nicola, Nicola è più alto di Marco, Marco è più alto di Alessandro. La persona più bassa di tutte è",
+          "target": " Alessandro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Stefano, Stefano è più alto di Francesco, Francesco è più alto di Riccardo. La persona più alta di tutte è",
+          "target": " Davide."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Stefano, Stefano è più alto di Francesco, Francesco è più alto di Riccardo. La persona al secondo posto per altezza è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Stefano, Stefano è più alto di Francesco, Francesco è più alto di Riccardo. La persona al terzo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Davide è più alto di Stefano, Stefano è più alto di Francesco, Francesco è più alto di Riccardo. La persona più bassa di tutte è",
+          "target": " Riccardo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Federico, Federico è più alto di Stefano, Stefano è più alto di Matteo. La persona più alta di tutte è",
+          "target": " Alessandro."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Federico, Federico è più alto di Stefano, Stefano è più alto di Matteo. La persona al secondo posto per altezza è",
+          "target": " Federico."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Federico, Federico è più alto di Stefano, Stefano è più alto di Matteo. La persona al terzo posto per altezza è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Alessandro è più alto di Federico, Federico è più alto di Stefano, Stefano è più alto di Matteo. La persona più bassa di tutte è",
+          "target": " Matteo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Federico, Federico è più alto di Simone, Simone è più alto di Stefano. La persona più alta di tutte è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Federico, Federico è più alto di Simone, Simone è più alto di Stefano. La persona al secondo posto per altezza è",
+          "target": " Federico."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Federico, Federico è più alto di Simone, Simone è più alto di Stefano. La persona al terzo posto per altezza è",
+          "target": " Simone."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Federico, Federico è più alto di Simone, Simone è più alto di Stefano. La persona più bassa di tutte è",
+          "target": " Stefano."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Luca, Luca è più alto di Stefano, Stefano è più alto di Michele. La persona più alta di tutte è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Luca, Luca è più alto di Stefano, Stefano è più alto di Michele. La persona al secondo posto per altezza è",
+          "target": " Luca."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Luca, Luca è più alto di Stefano, Stefano è più alto di Michele. La persona al terzo posto per altezza è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Emanuele è più alto di Luca, Luca è più alto di Stefano, Stefano è più alto di Michele. La persona più bassa di tutte è",
+          "target": " Michele."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Riccardo, Riccardo è più alto di Alessandro, Alessandro è più alto di Pietro. La persona più alta di tutte è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Riccardo, Riccardo è più alto di Alessandro, Alessandro è più alto di Pietro. La persona al secondo posto per altezza è",
+          "target": " Riccardo."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Riccardo, Riccardo è più alto di Alessandro, Alessandro è più alto di Pietro. La persona al terzo posto per altezza è",
+          "target": " Alessandro."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Riccardo, Riccardo è più alto di Alessandro, Alessandro è più alto di Pietro. La persona più bassa di tutte è",
+          "target": " Pietro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Fabio, Fabio è più alto di Francesco, Francesco è più alto di Tommaso. La persona più alta di tutte è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Fabio, Fabio è più alto di Francesco, Francesco è più alto di Tommaso. La persona al secondo posto per altezza è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Fabio, Fabio è più alto di Francesco, Francesco è più alto di Tommaso. La persona al terzo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Fabio, Fabio è più alto di Francesco, Francesco è più alto di Tommaso. La persona più bassa di tutte è",
+          "target": " Tommaso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Marco è più alto di Stefano, Stefano è più alto di Francesco, Francesco è più alto di Alessandro. La persona più alta di tutte è",
+          "target": " Marco."
+        },
+        {
+          "context": "Considera queste informazioni: Marco è più alto di Stefano, Stefano è più alto di Francesco, Francesco è più alto di Alessandro. La persona al secondo posto per altezza è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Marco è più alto di Stefano, Stefano è più alto di Francesco, Francesco è più alto di Alessandro. La persona al terzo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Marco è più alto di Stefano, Stefano è più alto di Francesco, Francesco è più alto di Alessandro. La persona più bassa di tutte è",
+          "target": " Alessandro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Stefano, Stefano è più alto di Michele, Michele è più alto di Fabio. La persona più alta di tutte è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Stefano, Stefano è più alto di Michele, Michele è più alto di Fabio. La persona al secondo posto per altezza è",
+          "target": " Stefano."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Stefano, Stefano è più alto di Michele, Michele è più alto di Fabio. La persona al terzo posto per altezza è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Andrea è più alto di Stefano, Stefano è più alto di Michele, Michele è più alto di Fabio. La persona più bassa di tutte è",
+          "target": " Fabio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Paolo, Paolo è più alto di Andrea, Andrea è più alto di Tommaso. La persona più alta di tutte è",
+          "target": " Luca."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Paolo, Paolo è più alto di Andrea, Andrea è più alto di Tommaso. La persona al secondo posto per altezza è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Paolo, Paolo è più alto di Andrea, Andrea è più alto di Tommaso. La persona al terzo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Luca è più alto di Paolo, Paolo è più alto di Andrea, Andrea è più alto di Tommaso. La persona più bassa di tutte è",
+          "target": " Tommaso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Nicola, Nicola è più alto di Fabio, Fabio è più alto di Federico. La persona più alta di tutte è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Nicola, Nicola è più alto di Fabio, Fabio è più alto di Federico. La persona al secondo posto per altezza è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Nicola, Nicola è più alto di Fabio, Fabio è più alto di Federico. La persona al terzo posto per altezza è",
+          "target": " Fabio."
+        },
+        {
+          "context": "Considera queste informazioni: Pietro è più alto di Nicola, Nicola è più alto di Fabio, Fabio è più alto di Federico. La persona più bassa di tutte è",
+          "target": " Federico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Federico è più alto di Andrea, Andrea è più alto di Matteo, Matteo è più alto di Luca. La persona più alta di tutte è",
+          "target": " Federico."
+        },
+        {
+          "context": "Considera queste informazioni: Federico è più alto di Andrea, Andrea è più alto di Matteo, Matteo è più alto di Luca. La persona al secondo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Federico è più alto di Andrea, Andrea è più alto di Matteo, Matteo è più alto di Luca. La persona al terzo posto per altezza è",
+          "target": " Matteo."
+        },
+        {
+          "context": "Considera queste informazioni: Federico è più alto di Andrea, Andrea è più alto di Matteo, Matteo è più alto di Luca. La persona più bassa di tutte è",
+          "target": " Luca."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Andrea, Andrea è più alto di Simone, Simone è più alto di Francesco. La persona più alta di tutte è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Andrea, Andrea è più alto di Simone, Simone è più alto di Francesco. La persona al secondo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Andrea, Andrea è più alto di Simone, Simone è più alto di Francesco. La persona al terzo posto per altezza è",
+          "target": " Simone."
+        },
+        {
+          "context": "Considera queste informazioni: Nicola è più alto di Andrea, Andrea è più alto di Simone, Simone è più alto di Francesco. La persona più bassa di tutte è",
+          "target": " Francesco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Emanuele, Emanuele è più alto di Andrea, Andrea è più alto di Davide. La persona più alta di tutte è",
+          "target": " Paolo."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Emanuele, Emanuele è più alto di Andrea, Andrea è più alto di Davide. La persona al secondo posto per altezza è",
+          "target": " Emanuele."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Emanuele, Emanuele è più alto di Andrea, Andrea è più alto di Davide. La persona al terzo posto per altezza è",
+          "target": " Andrea."
+        },
+        {
+          "context": "Considera queste informazioni: Paolo è più alto di Emanuele, Emanuele è più alto di Andrea, Andrea è più alto di Davide. La persona più bassa di tutte è",
+          "target": " Davide."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Pietro, Pietro è più alto di Francesco, Francesco è più alto di Alessandro. La persona più alta di tutte è",
+          "target": " Matteo."
+        },
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Pietro, Pietro è più alto di Francesco, Francesco è più alto di Alessandro. La persona al secondo posto per altezza è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Pietro, Pietro è più alto di Francesco, Francesco è più alto di Alessandro. La persona al terzo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Matteo è più alto di Pietro, Pietro è più alto di Francesco, Francesco è più alto di Alessandro. La persona più bassa di tutte è",
+          "target": " Alessandro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Francesco, Francesco è più alto di Nicola, Nicola è più alto di Pietro. La persona più alta di tutte è",
+          "target": " Michele."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Francesco, Francesco è più alto di Nicola, Nicola è più alto di Pietro. La persona al secondo posto per altezza è",
+          "target": " Francesco."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Francesco, Francesco è più alto di Nicola, Nicola è più alto di Pietro. La persona al terzo posto per altezza è",
+          "target": " Nicola."
+        },
+        {
+          "context": "Considera queste informazioni: Michele è più alto di Francesco, Francesco è più alto di Nicola, Nicola è più alto di Pietro. La persona più bassa di tutte è",
+          "target": " Pietro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Pietro, Pietro è più alto di Giorgio, Giorgio è più alto di Andrea. La persona più alta di tutte è",
+          "target": " Tommaso."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Pietro, Pietro è più alto di Giorgio, Giorgio è più alto di Andrea. La persona al secondo posto per altezza è",
+          "target": " Pietro."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Pietro, Pietro è più alto di Giorgio, Giorgio è più alto di Andrea. La persona al terzo posto per altezza è",
+          "target": " Giorgio."
+        },
+        {
+          "context": "Considera queste informazioni: Tommaso è più alto di Pietro, Pietro è più alto di Giorgio, Giorgio è più alto di Andrea. La persona più bassa di tutte è",
+          "target": " Andrea."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

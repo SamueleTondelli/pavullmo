@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "id": "reasoning_constraint_elimination",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "people": [
+      "Anna", "Luca", "Sara", "Paolo", "Giulia", "Marco", "Elena", "Davide",
+      "Chiara", "Matteo", "Laura", "Simone", "Irene", "Fabio", "Marta", "Andrea"
+    ],
+    "objects": [
+      "una chiave", "un libro", "una moneta", "un ombrello", "una tazza",
+      "un quaderno", "una candela", "un cappello", "una mappa", "un orologio",
+      "una penna", "un biglietto", "una bottiglia", "un anello", "una fotografia",
+      "un cucchiaio"
+    ]
+  },
+
+  "variables": {
+    "people": {"type": "sample", "source": "people", "count": 4},
+    "objects": {"type": "sample", "source": "objects", "count": 4},
+    "query_index": {"type": "constant", "value": 0}
+  },
+
+  "derived": {
+    "bindings": {
+      "op": "pair_strings",
+      "args": ["$people", " possiede ", "$objects"]
+    },
+    "known_bindings": {
+      "op": "remove_at",
+      "args": ["$bindings", "$query_index"]
+    },
+    "query_person": {
+      "op": "item_at",
+      "args": ["$people", "$query_index"]
+    },
+    "answer": {
+      "op": "item_at",
+      "args": ["$objects", "$query_index"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$query_person", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "{people|comma_list} possiedono ciascuno un oggetto diverso tra {objects|comma_list}. Sono note queste assegnazioni: {known_bindings|comma_list}. {query_person} possiede",
+      "target": " {answer}."
+    }
+  ]
+}

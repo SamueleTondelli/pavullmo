@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "id": "landmark_cities",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "landmark_cities": [
+      {"landmark": "il Colosseo", "city": "Roma"},
+      {"landmark": "la Torre Eiffel", "city": "Parigi"},
+      {"landmark": "il Big Ben", "city": "Londra"},
+      {"landmark": "la Statua della Libertà", "city": "New York"},
+      {"landmark": "la Sagrada Família", "city": "Barcellona"},
+      {"landmark": "la Porta di Brandeburgo", "city": "Berlino"},
+      {"landmark": "l'Acropoli", "city": "Atene"},
+      {"landmark": "il Burj Khalifa", "city": "Dubai"},
+      {"landmark": "il Cristo Redentore", "city": "Rio de Janeiro"},
+      {"landmark": "il Taj Mahal", "city": "Agra"},
+      {"landmark": "la Città Proibita", "city": "Pechino"},
+      {"landmark": "il Golden Gate Bridge", "city": "San Francisco"},
+      {"landmark": "lo Space Needle", "city": "Seattle"},
+      {"landmark": "la CN Tower", "city": "Toronto"},
+      {"landmark": "l'Atomium", "city": "Bruxelles"},
+      {"landmark": "l'Alhambra", "city": "Granada"},
+      {"landmark": "il Ponte Carlo", "city": "Praga"},
+      {"landmark": "la Basilica di Santa Sofia", "city": "Istanbul"},
+      {"landmark": "il Cremlino", "city": "Mosca"},
+      {"landmark": "la Torre di Belém", "city": "Lisbona"},
+      {"landmark": "il Palazzo di Schönbrunn", "city": "Vienna"},
+      {"landmark": "la Cattedrale di Santa Maria del Fiore", "city": "Firenze"},
+      {"landmark": "il Ponte di Rialto", "city": "Venezia"},
+      {"landmark": "la Mole Antonelliana", "city": "Torino"},
+      {"landmark": "le Torri Petronas", "city": "Kuala Lumpur"},
+      {"landmark": "il Grande Palazzo Reale", "city": "Bangkok"},
+      {"landmark": "il Gateway of India", "city": "Mumbai"},
+      {"landmark": "il Tempio del Loto", "city": "Nuova Delhi"},
+      {"landmark": "la Casa Bianca", "city": "Washington, D.C."},
+      {"landmark": "il Cloud Gate", "city": "Chicago"},
+      {"landmark": "il Gateway Arch", "city": "Saint Louis"},
+      {"landmark": "il Palacio de Bellas Artes", "city": "Città del Messico"},
+      {"landmark": "il Museo Guggenheim progettato da Frank Gehry", "city": "Bilbao"}
+    ]
+  },
+
+  "variables": {
+    "fact": {
+      "type": "choice",
+      "source": "landmark_cities"
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "fact",
+        "operation": "resample_distinct"
+      }
+    ],
+    "unique_on": ["$fact.landmark", "$fact.city"]
+  },
+
+  "templates": [
+    {
+      "context": "La città in cui si trova {fact.landmark} è",
+      "target": " {fact.city}."
+    }
+  ]
+}

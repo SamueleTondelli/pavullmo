@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "count_repeated_objects",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela. Il numero di mele è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore. Il numero di fiori è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore. Il numero di fiori è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela. Il numero di mele è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela. Il numero di mele è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela. Il numero di mele è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore. Il numero di fiori è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela. Il numero di mele è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela. Il numero di mele è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone. Il numero di bottoni è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela. Il numero di candele è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro. Il numero di libri è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro. Il numero di libri è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro. Il numero di libri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna. Il numero di penne è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna. Il numero di penne è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna. Il numero di penne è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna. Il numero di penne è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna. Il numero di penne è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna. Il numero di penne è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore. Il numero di fiori è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore. Il numero di fiori è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela. Il numero di mele è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela. Il numero di mele è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro. Il numero di libri è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro. Il numero di libri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso. Il numero di sassi è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta. Il numero di monete è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela. Il numero di mele è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela. Il numero di mele è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela. Il numero di mele è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta. Il numero di monete è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta. Il numero di monete è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela. Il numero di mele è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore. Il numero di fiori è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore. Il numero di fiori è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela. Il numero di candele è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela. Il numero di mele è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela. Il numero di mele è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela. Il numero di mele è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna. Il numero di penne è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna. Il numero di penne è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore. Il numero di fiori è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro. Il numero di libri è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro. Il numero di libri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro. Il numero di libri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela. Il numero di candele è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela. Il numero di candele è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro. Il numero di libri è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro. Il numero di libri è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro. Il numero di libri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro. Il numero di libri è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro. Il numero di libri è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro. Il numero di libri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore. Il numero di fiori è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro. Il numero di libri è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro. Il numero di libri è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro. Il numero di libri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta. Il numero di monete è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta. Il numero di monete è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro. Il numero di libri è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro. Il numero di libri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bottone, bottone, bottone, bottone, bottone, bottone, bottone. Il numero di bottoni è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta. Il numero di monete è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta. Il numero di monete è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: mela, mela, mela, mela, mela, mela, mela, mela, mela. Il numero di mele è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave. Il numero di chiavi è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " otto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela. Il numero di candele è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela. Il numero di candele è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela. Il numero di candele è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela. Il numero di candele è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela. Il numero di candele è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: candela, candela, candela, candela, candela, candela, candela, candela, candela. Il numero di candele è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna. Il numero di penne è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna. Il numero di penne è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: penna, penna, penna, penna, penna, penna. Il numero di penne è",
+          "target": " sei."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere, bicchiere. Il numero di bicchieri è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: chiave, chiave, chiave, chiave, chiave, chiave, chiave. Il numero di chiavi è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta. Il numero di monete è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta. Il numero di monete è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " cinque."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: sasso, sasso, sasso, sasso, sasso, sasso, sasso, sasso, sasso. Il numero di sassi è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " sette."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " otto."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: libro, libro, libro, libro, libro, libro, libro, libro, libro. Il numero di libri è",
+          "target": " nove."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " cinque."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sei."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: fiore, fiore, fiore, fiore, fiore, fiore, fiore. Il numero di fiori è",
+          "target": " sette."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta. Il numero di monete è",
+          "target": " due."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta. Il numero di monete è",
+          "target": " tre."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " quattro."
+        },
+        {
+          "context": "Sul tavolo sono disposti questi oggetti: moneta, moneta, moneta, moneta, moneta. Il numero di monete è",
+          "target": " cinque."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

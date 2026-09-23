@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "id": "single_digit_multiplication",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "variables": {
+    "left": {
+      "type": "integer",
+      "min": 0,
+      "max": 6
+    },
+    "right": {
+      "type": "integer",
+      "min": 1,
+      "max": 9
+    }
+  },
+
+  "derived": {
+    "result": {
+      "op": "multiply",
+      "args": ["$left", "$right"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "left",
+        "operation": "offset",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$left", "$result"]
+  },
+
+  "templates": [
+    {
+      "context": "{left} × {right} =",
+      "target": " {result}"
+    }
+  ]
+}

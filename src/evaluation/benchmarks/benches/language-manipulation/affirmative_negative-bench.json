@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "few_shot_affirmative_to_negative",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Elena studia → Elena non studia. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Elena studia → Elena non studia. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Elena studia → Elena non studia. Giulia canta →",
+          "target": " Giulia non canta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Elena studia → Elena non studia. Paolo dorme →",
+          "target": " Paolo non dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Laura risponde → Laura non risponde, Giorgio parla → Giorgio non parla. Luca legge →",
+          "target": " Luca non legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Laura risponde → Laura non risponde, Giorgio parla → Giorgio non parla. Maria corre →",
+          "target": " Maria non corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Laura risponde → Laura non risponde, Giorgio parla → Giorgio non parla. Anna cucina →",
+          "target": " Anna non cucina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Laura risponde → Laura non risponde, Giorgio parla → Giorgio non parla. Sara nuota →",
+          "target": " Sara non nuota"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Simone salta → Simone non salta. Maria corre →",
+          "target": " Maria non corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Simone salta → Simone non salta. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Simone salta → Simone non salta. Sara nuota →",
+          "target": " Sara non nuota"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Simone salta → Simone non salta. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Alice disegna → Alice non disegna. Laura risponde →",
+          "target": " Laura non risponde"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Alice disegna → Alice non disegna. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Alice disegna → Alice non disegna. Maria corre →",
+          "target": " Maria non corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Alice disegna → Alice non disegna. Marco scrive →",
+          "target": " Marco non scrive"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Elena studia → Elena non studia. Giulia canta →",
+          "target": " Giulia non canta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Elena studia → Elena non studia. Sara nuota →",
+          "target": " Sara non nuota"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Elena studia → Elena non studia. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Elena studia → Elena non studia. Paolo dorme →",
+          "target": " Paolo non dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Paolo dorme → Paolo non dorme. Fabio parte →",
+          "target": " Fabio non parte"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Paolo dorme → Paolo non dorme. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Paolo dorme → Paolo non dorme. Simone salta →",
+          "target": " Simone non salta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Paolo dorme → Paolo non dorme. Elena studia →",
+          "target": " Elena non studia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Alice disegna → Alice non disegna. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Alice disegna → Alice non disegna. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Alice disegna → Alice non disegna. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Alice disegna → Alice non disegna. Anna cucina →",
+          "target": " Anna non cucina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Simone salta → Simone non salta. Fabio parte →",
+          "target": " Fabio non parte"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Simone salta → Simone non salta. Laura risponde →",
+          "target": " Laura non risponde"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Simone salta → Simone non salta. Sara nuota →",
+          "target": " Sara non nuota"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Simone salta → Simone non salta. Anna cucina →",
+          "target": " Anna non cucina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Davide cammina → Davide non cammina. Matteo lavora →",
+          "target": " Matteo non lavora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Davide cammina → Davide non cammina. Anna cucina →",
+          "target": " Anna non cucina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Davide cammina → Davide non cammina. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Davide cammina → Davide non cammina. Paolo dorme →",
+          "target": " Paolo non dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Alice disegna → Alice non disegna. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Alice disegna → Alice non disegna. Fabio parte →",
+          "target": " Fabio non parte"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Alice disegna → Alice non disegna. Marco scrive →",
+          "target": " Marco non scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Alice disegna → Alice non disegna. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Andrea compra il pane → Andrea non compra il pane. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Andrea compra il pane → Andrea non compra il pane. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Andrea compra il pane → Andrea non compra il pane. Anna cucina →",
+          "target": " Anna non cucina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Andrea compra il pane → Andrea non compra il pane. Marco scrive →",
+          "target": " Marco non scrive"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marco scrive → Marco non scrive, Alice disegna → Alice non disegna. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marco scrive → Marco non scrive, Alice disegna → Alice non disegna. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marco scrive → Marco non scrive, Alice disegna → Alice non disegna. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marco scrive → Marco non scrive, Alice disegna → Alice non disegna. Davide cammina →",
+          "target": " Davide non cammina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Davide cammina → Davide non cammina. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Davide cammina → Davide non cammina. Chiara sorride →",
+          "target": " Chiara non sorride"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Davide cammina → Davide non cammina. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Davide cammina → Davide non cammina. Elena studia →",
+          "target": " Elena non studia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Laura risponde → Laura non risponde. Chiara sorride →",
+          "target": " Chiara non sorride"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Laura risponde → Laura non risponde. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Laura risponde → Laura non risponde. Stefano guida →",
+          "target": " Stefano non guida"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Laura risponde → Laura non risponde. Marta ascolta →",
+          "target": " Marta non ascolta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Elena studia → Elena non studia. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Elena studia → Elena non studia. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Elena studia → Elena non studia. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Elena studia → Elena non studia. Simone salta →",
+          "target": " Simone non salta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Laura risponde → Laura non risponde. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Laura risponde → Laura non risponde. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Laura risponde → Laura non risponde. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Laura risponde → Laura non risponde. Fabio parte →",
+          "target": " Fabio non parte"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Irene balla → Irene non balla. Stefano guida →",
+          "target": " Stefano non guida"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Irene balla → Irene non balla. Anna cucina →",
+          "target": " Anna non cucina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Irene balla → Irene non balla. Luca legge →",
+          "target": " Luca non legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Irene balla → Irene non balla. Paolo dorme →",
+          "target": " Paolo non dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Marco scrive → Marco non scrive. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Marco scrive → Marco non scrive. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Marco scrive → Marco non scrive. Simone salta →",
+          "target": " Simone non salta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Marco scrive → Marco non scrive. Anna cucina →",
+          "target": " Anna non cucina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Simone salta → Simone non salta. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Simone salta → Simone non salta. Irene balla →",
+          "target": " Irene non balla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Simone salta → Simone non salta. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Simone salta → Simone non salta. Nicola arriva →",
+          "target": " Nicola non arriva"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Paolo dorme → Paolo non dorme. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Paolo dorme → Paolo non dorme. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Paolo dorme → Paolo non dorme. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Paolo dorme → Paolo non dorme. Chiara sorride →",
+          "target": " Chiara non sorride"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Giorgio parla → Giorgio non parla. Marco scrive →",
+          "target": " Marco non scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Giorgio parla → Giorgio non parla. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Giorgio parla → Giorgio non parla. Maria corre →",
+          "target": " Maria non corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Giorgio parla → Giorgio non parla. Elena studia →",
+          "target": " Elena non studia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Paolo dorme → Paolo non dorme. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Paolo dorme → Paolo non dorme. Matteo lavora →",
+          "target": " Matteo non lavora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Paolo dorme → Paolo non dorme. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Paolo dorme → Paolo non dorme. Sara nuota →",
+          "target": " Sara non nuota"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Marco scrive → Marco non scrive. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Marco scrive → Marco non scrive. Irene balla →",
+          "target": " Irene non balla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Marco scrive → Marco non scrive. Maria corre →",
+          "target": " Maria non corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Marco scrive → Marco non scrive. Chiara sorride →",
+          "target": " Chiara non sorride"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Paolo dorme → Paolo non dorme. Fabio parte →",
+          "target": " Fabio non parte"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Paolo dorme → Paolo non dorme. Matteo lavora →",
+          "target": " Matteo non lavora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Paolo dorme → Paolo non dorme. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Paolo dorme → Paolo non dorme. Luca legge →",
+          "target": " Luca non legge"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Laura risponde → Laura non risponde, Anna cucina → Anna non cucina. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Laura risponde → Laura non risponde, Anna cucina → Anna non cucina. Stefano guida →",
+          "target": " Stefano non guida"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Laura risponde → Laura non risponde, Anna cucina → Anna non cucina. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Laura risponde → Laura non risponde, Anna cucina → Anna non cucina. Nicola arriva →",
+          "target": " Nicola non arriva"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Andrea compra il pane → Andrea non compra il pane. Stefano guida →",
+          "target": " Stefano non guida"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Andrea compra il pane → Andrea non compra il pane. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Andrea compra il pane → Andrea non compra il pane. Marco scrive →",
+          "target": " Marco non scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Andrea compra il pane → Andrea non compra il pane. Elena studia →",
+          "target": " Elena non studia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Nicola arriva → Nicola non arriva. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Nicola arriva → Nicola non arriva. Matteo lavora →",
+          "target": " Matteo non lavora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Nicola arriva → Nicola non arriva. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Nicola arriva → Nicola non arriva. Fabio parte →",
+          "target": " Fabio non parte"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Alice disegna → Alice non disegna. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Alice disegna → Alice non disegna. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Alice disegna → Alice non disegna. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Alice disegna → Alice non disegna. Anna cucina →",
+          "target": " Anna non cucina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Laura risponde → Laura non risponde. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Laura risponde → Laura non risponde. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Laura risponde → Laura non risponde. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Laura risponde → Laura non risponde. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Anna cucina → Anna non cucina, Pietro guarda il film → Pietro non guarda il film. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Anna cucina → Anna non cucina, Pietro guarda il film → Pietro non guarda il film. Luca legge →",
+          "target": " Luca non legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Anna cucina → Anna non cucina, Pietro guarda il film → Pietro non guarda il film. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Anna cucina → Anna non cucina, Pietro guarda il film → Pietro non guarda il film. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Anna cucina → Anna non cucina. Irene balla →",
+          "target": " Irene non balla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Anna cucina → Anna non cucina. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Anna cucina → Anna non cucina. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Anna cucina → Anna non cucina. Stefano guida →",
+          "target": " Stefano non guida"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Nicola arriva → Nicola non arriva, Giulia canta → Giulia non canta. Laura risponde →",
+          "target": " Laura non risponde"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Nicola arriva → Nicola non arriva, Giulia canta → Giulia non canta. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Nicola arriva → Nicola non arriva, Giulia canta → Giulia non canta. Stefano guida →",
+          "target": " Stefano non guida"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Nicola arriva → Nicola non arriva, Giulia canta → Giulia non canta. Davide cammina →",
+          "target": " Davide non cammina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giorgio parla → Giorgio non parla, Sara nuota → Sara non nuota. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giorgio parla → Giorgio non parla, Sara nuota → Sara non nuota. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giorgio parla → Giorgio non parla, Sara nuota → Sara non nuota. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giorgio parla → Giorgio non parla, Sara nuota → Sara non nuota. Fabio parte →",
+          "target": " Fabio non parte"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giorgio parla → Giorgio non parla, Alice disegna → Alice non disegna. Luca legge →",
+          "target": " Luca non legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giorgio parla → Giorgio non parla, Alice disegna → Alice non disegna. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giorgio parla → Giorgio non parla, Alice disegna → Alice non disegna. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giorgio parla → Giorgio non parla, Alice disegna → Alice non disegna. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Chiara sorride → Chiara non sorride. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Chiara sorride → Chiara non sorride. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Chiara sorride → Chiara non sorride. Sara nuota →",
+          "target": " Sara non nuota"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Chiara sorride → Chiara non sorride. Simone salta →",
+          "target": " Simone non salta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Giorgio parla → Giorgio non parla. Marco scrive →",
+          "target": " Marco non scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Giorgio parla → Giorgio non parla. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Giorgio parla → Giorgio non parla. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Giorgio parla → Giorgio non parla. Davide cammina →",
+          "target": " Davide non cammina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Nicola arriva → Nicola non arriva. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Nicola arriva → Nicola non arriva. Luca legge →",
+          "target": " Luca non legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Nicola arriva → Nicola non arriva. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Nicola arriva → Nicola non arriva. Maria corre →",
+          "target": " Maria non corre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Marco scrive → Marco non scrive. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Marco scrive → Marco non scrive. Stefano guida →",
+          "target": " Stefano non guida"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Marco scrive → Marco non scrive. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Marco scrive → Marco non scrive. Sara nuota →",
+          "target": " Sara non nuota"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Marco scrive → Marco non scrive. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Marco scrive → Marco non scrive. Maria corre →",
+          "target": " Maria non corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Marco scrive → Marco non scrive. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Marco scrive → Marco non scrive. Elena studia →",
+          "target": " Elena non studia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Giorgio parla → Giorgio non parla. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Giorgio parla → Giorgio non parla. Stefano guida →",
+          "target": " Stefano non guida"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Giorgio parla → Giorgio non parla. Giulia canta →",
+          "target": " Giulia non canta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Giorgio parla → Giorgio non parla. Sara nuota →",
+          "target": " Sara non nuota"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Luca legge → Luca non legge. Laura risponde →",
+          "target": " Laura non risponde"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Luca legge → Luca non legge. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Luca legge → Luca non legge. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Luca legge → Luca non legge. Chiara sorride →",
+          "target": " Chiara non sorride"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Laura risponde → Laura non risponde. Stefano guida →",
+          "target": " Stefano non guida"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Laura risponde → Laura non risponde. Irene balla →",
+          "target": " Irene non balla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Laura risponde → Laura non risponde. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Laura risponde → Laura non risponde. Marco scrive →",
+          "target": " Marco non scrive"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Anna cucina → Anna non cucina. Marco scrive →",
+          "target": " Marco non scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Anna cucina → Anna non cucina. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Anna cucina → Anna non cucina. Simone salta →",
+          "target": " Simone non salta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Anna cucina → Anna non cucina. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Paolo dorme → Paolo non dorme. Laura risponde →",
+          "target": " Laura non risponde"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Paolo dorme → Paolo non dorme. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Paolo dorme → Paolo non dorme. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Paolo dorme → Paolo non dorme. Luca legge →",
+          "target": " Luca non legge"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giorgio parla → Giorgio non parla, Andrea compra il pane → Andrea non compra il pane. Laura risponde →",
+          "target": " Laura non risponde"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giorgio parla → Giorgio non parla, Andrea compra il pane → Andrea non compra il pane. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giorgio parla → Giorgio non parla, Andrea compra il pane → Andrea non compra il pane. Irene balla →",
+          "target": " Irene non balla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giorgio parla → Giorgio non parla, Andrea compra il pane → Andrea non compra il pane. Chiara sorride →",
+          "target": " Chiara non sorride"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Andrea compra il pane → Andrea non compra il pane. Chiara sorride →",
+          "target": " Chiara non sorride"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Andrea compra il pane → Andrea non compra il pane. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Andrea compra il pane → Andrea non compra il pane. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Andrea compra il pane → Andrea non compra il pane. Marta ascolta →",
+          "target": " Marta non ascolta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Sofia beve il tè → Sofia non beve il tè. Matteo lavora →",
+          "target": " Matteo non lavora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Sofia beve il tè → Sofia non beve il tè. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Sofia beve il tè → Sofia non beve il tè. Chiara sorride →",
+          "target": " Chiara non sorride"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Sofia beve il tè → Sofia non beve il tè. Anna cucina →",
+          "target": " Anna non cucina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Simone salta → Simone non salta. Laura risponde →",
+          "target": " Laura non risponde"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Simone salta → Simone non salta. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Simone salta → Simone non salta. Anna cucina →",
+          "target": " Anna non cucina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Simone salta → Simone non salta. Nicola arriva →",
+          "target": " Nicola non arriva"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Elena studia → Elena non studia. Giulia canta →",
+          "target": " Giulia non canta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Elena studia → Elena non studia. Fabio parte →",
+          "target": " Fabio non parte"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Elena studia → Elena non studia. Anna cucina →",
+          "target": " Anna non cucina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Elena studia → Elena non studia. Davide cammina →",
+          "target": " Davide non cammina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Marco scrive → Marco non scrive. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Marco scrive → Marco non scrive. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Marco scrive → Marco non scrive. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Marco scrive → Marco non scrive. Irene balla →",
+          "target": " Irene non balla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Nicola arriva → Nicola non arriva. Matteo lavora →",
+          "target": " Matteo non lavora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Nicola arriva → Nicola non arriva. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Nicola arriva → Nicola non arriva. Giulia canta →",
+          "target": " Giulia non canta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Nicola arriva → Nicola non arriva. Elena studia →",
+          "target": " Elena non studia"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Paolo dorme → Paolo non dorme, Nicola arriva → Nicola non arriva. Giulia canta →",
+          "target": " Giulia non canta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Paolo dorme → Paolo non dorme, Nicola arriva → Nicola non arriva. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Paolo dorme → Paolo non dorme, Nicola arriva → Nicola non arriva. Matteo lavora →",
+          "target": " Matteo non lavora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Paolo dorme → Paolo non dorme, Nicola arriva → Nicola non arriva. Sara nuota →",
+          "target": " Sara non nuota"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Andrea compra il pane → Andrea non compra il pane. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Andrea compra il pane → Andrea non compra il pane. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Andrea compra il pane → Andrea non compra il pane. Irene balla →",
+          "target": " Irene non balla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Andrea compra il pane → Andrea non compra il pane. Stefano guida →",
+          "target": " Stefano non guida"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Anna cucina → Anna non cucina. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Anna cucina → Anna non cucina. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Anna cucina → Anna non cucina. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Luca legge → Luca non legge, Anna cucina → Anna non cucina. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Giulia canta → Giulia non canta. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Giulia canta → Giulia non canta. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Giulia canta → Giulia non canta. Marco scrive →",
+          "target": " Marco non scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Giulia canta → Giulia non canta. Alice disegna →",
+          "target": " Alice non disegna"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Nicola arriva → Nicola non arriva, Maria corre → Maria non corre. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Nicola arriva → Nicola non arriva, Maria corre → Maria non corre. Anna cucina →",
+          "target": " Anna non cucina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Nicola arriva → Nicola non arriva, Maria corre → Maria non corre. Giulia canta →",
+          "target": " Giulia non canta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Nicola arriva → Nicola non arriva, Maria corre → Maria non corre. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Laura risponde → Laura non risponde. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Laura risponde → Laura non risponde. Giulia canta →",
+          "target": " Giulia non canta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Laura risponde → Laura non risponde. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Laura risponde → Laura non risponde. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Fabio parte → Fabio non parte. Luca legge →",
+          "target": " Luca non legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Fabio parte → Fabio non parte. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Fabio parte → Fabio non parte. Sara nuota →",
+          "target": " Sara non nuota"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Fabio parte → Fabio non parte. Davide cammina →",
+          "target": " Davide non cammina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Nicola arriva → Nicola non arriva. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Nicola arriva → Nicola non arriva. Simone salta →",
+          "target": " Simone non salta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Nicola arriva → Nicola non arriva. Giulia canta →",
+          "target": " Giulia non canta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Nicola arriva → Nicola non arriva. Davide cammina →",
+          "target": " Davide non cammina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marco scrive → Marco non scrive, Giorgio parla → Giorgio non parla. Maria corre →",
+          "target": " Maria non corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marco scrive → Marco non scrive, Giorgio parla → Giorgio non parla. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marco scrive → Marco non scrive, Giorgio parla → Giorgio non parla. Chiara sorride →",
+          "target": " Chiara non sorride"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marco scrive → Marco non scrive, Giorgio parla → Giorgio non parla. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Marco scrive → Marco non scrive. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Marco scrive → Marco non scrive. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Marco scrive → Marco non scrive. Luca legge →",
+          "target": " Luca non legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Marco scrive → Marco non scrive. Stefano guida →",
+          "target": " Stefano non guida"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Alice disegna → Alice non disegna. Fabio parte →",
+          "target": " Fabio non parte"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Alice disegna → Alice non disegna. Matteo lavora →",
+          "target": " Matteo non lavora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Alice disegna → Alice non disegna. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Alice disegna → Alice non disegna. Simone salta →",
+          "target": " Simone non salta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Sara nuota → Sara non nuota. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Sara nuota → Sara non nuota. Chiara sorride →",
+          "target": " Chiara non sorride"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Sara nuota → Sara non nuota. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Sara nuota → Sara non nuota. Anna cucina →",
+          "target": " Anna non cucina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Sofia beve il tè → Sofia non beve il tè. Irene balla →",
+          "target": " Irene non balla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Sofia beve il tè → Sofia non beve il tè. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Sofia beve il tè → Sofia non beve il tè. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Sofia beve il tè → Sofia non beve il tè. Chiara sorride →",
+          "target": " Chiara non sorride"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Paolo dorme → Paolo non dorme, Elena studia → Elena non studia. Marco scrive →",
+          "target": " Marco non scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Paolo dorme → Paolo non dorme, Elena studia → Elena non studia. Laura risponde →",
+          "target": " Laura non risponde"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Paolo dorme → Paolo non dorme, Elena studia → Elena non studia. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Paolo dorme → Paolo non dorme, Elena studia → Elena non studia. Luca legge →",
+          "target": " Luca non legge"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Simone salta → Simone non salta, Giorgio parla → Giorgio non parla. Fabio parte →",
+          "target": " Fabio non parte"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Simone salta → Simone non salta, Giorgio parla → Giorgio non parla. Chiara sorride →",
+          "target": " Chiara non sorride"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Simone salta → Simone non salta, Giorgio parla → Giorgio non parla. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Simone salta → Simone non salta, Giorgio parla → Giorgio non parla. Irene balla →",
+          "target": " Irene non balla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Laura risponde → Laura non risponde. Sara nuota →",
+          "target": " Sara non nuota"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Laura risponde → Laura non risponde. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Laura risponde → Laura non risponde. Luca legge →",
+          "target": " Luca non legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Laura risponde → Laura non risponde. Giorgio parla →",
+          "target": " Giorgio non parla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Nicola arriva → Nicola non arriva. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Nicola arriva → Nicola non arriva. Sara nuota →",
+          "target": " Sara non nuota"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Nicola arriva → Nicola non arriva. Fabio parte →",
+          "target": " Fabio non parte"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Nicola arriva → Nicola non arriva. Giorgio parla →",
+          "target": " Giorgio non parla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Chiara sorride → Chiara non sorride. Simone salta →",
+          "target": " Simone non salta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Chiara sorride → Chiara non sorride. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Chiara sorride → Chiara non sorride. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Chiara sorride → Chiara non sorride. Matteo lavora →",
+          "target": " Matteo non lavora"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Giorgio parla → Giorgio non parla. Chiara sorride →",
+          "target": " Chiara non sorride"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Giorgio parla → Giorgio non parla. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Giorgio parla → Giorgio non parla. Matteo lavora →",
+          "target": " Matteo non lavora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Giorgio parla → Giorgio non parla. Nicola arriva →",
+          "target": " Nicola non arriva"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Giorgio parla → Giorgio non parla. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Giorgio parla → Giorgio non parla. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Giorgio parla → Giorgio non parla. Marco scrive →",
+          "target": " Marco non scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sara nuota → Sara non nuota, Giorgio parla → Giorgio non parla. Laura risponde →",
+          "target": " Laura non risponde"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Nicola arriva → Nicola non arriva. Maria corre →",
+          "target": " Maria non corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Nicola arriva → Nicola non arriva. Matteo lavora →",
+          "target": " Matteo non lavora"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Nicola arriva → Nicola non arriva. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Nicola arriva → Nicola non arriva. Sara nuota →",
+          "target": " Sara non nuota"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Laura risponde → Laura non risponde, Simone salta → Simone non salta. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Laura risponde → Laura non risponde, Simone salta → Simone non salta. Chiara sorride →",
+          "target": " Chiara non sorride"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Laura risponde → Laura non risponde, Simone salta → Simone non salta. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Laura risponde → Laura non risponde, Simone salta → Simone non salta. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Sara nuota → Sara non nuota. Irene balla →",
+          "target": " Irene non balla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Sara nuota → Sara non nuota. Stefano guida →",
+          "target": " Stefano non guida"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Sara nuota → Sara non nuota. Marco scrive →",
+          "target": " Marco non scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Sara nuota → Sara non nuota. Anna cucina →",
+          "target": " Anna non cucina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Andrea compra il pane → Andrea non compra il pane. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Andrea compra il pane → Andrea non compra il pane. Simone salta →",
+          "target": " Simone non salta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Andrea compra il pane → Andrea non compra il pane. Chiara sorride →",
+          "target": " Chiara non sorride"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Irene balla → Irene non balla, Andrea compra il pane → Andrea non compra il pane. Anna cucina →",
+          "target": " Anna non cucina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Matteo lavora → Matteo non lavora. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Matteo lavora → Matteo non lavora. Sara nuota →",
+          "target": " Sara non nuota"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Matteo lavora → Matteo non lavora. Giulia canta →",
+          "target": " Giulia non canta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Andrea compra il pane → Andrea non compra il pane, Matteo lavora → Matteo non lavora. Maria corre →",
+          "target": " Maria non corre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Stefano guida → Stefano non guida. Simone salta →",
+          "target": " Simone non salta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Stefano guida → Stefano non guida. Anna cucina →",
+          "target": " Anna non cucina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Stefano guida → Stefano non guida. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Stefano guida → Stefano non guida. Giorgio parla →",
+          "target": " Giorgio non parla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Pietro guarda il film → Pietro non guarda il film, Roberto chiude la finestra → Roberto non chiude la finestra. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Pietro guarda il film → Pietro non guarda il film, Roberto chiude la finestra → Roberto non chiude la finestra. Stefano guida →",
+          "target": " Stefano non guida"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Pietro guarda il film → Pietro non guarda il film, Roberto chiude la finestra → Roberto non chiude la finestra. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Pietro guarda il film → Pietro non guarda il film, Roberto chiude la finestra → Roberto non chiude la finestra. Davide cammina →",
+          "target": " Davide non cammina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Pietro guarda il film → Pietro non guarda il film. Maria corre →",
+          "target": " Maria non corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Pietro guarda il film → Pietro non guarda il film. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Pietro guarda il film → Pietro non guarda il film. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Pietro guarda il film → Pietro non guarda il film. Davide cammina →",
+          "target": " Davide non cammina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Pietro guarda il film → Pietro non guarda il film, Irene balla → Irene non balla. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Pietro guarda il film → Pietro non guarda il film, Irene balla → Irene non balla. Luca legge →",
+          "target": " Luca non legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Pietro guarda il film → Pietro non guarda il film, Irene balla → Irene non balla. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Pietro guarda il film → Pietro non guarda il film, Irene balla → Irene non balla. Davide cammina →",
+          "target": " Davide non cammina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Giulia canta → Giulia non canta. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Giulia canta → Giulia non canta. Irene balla →",
+          "target": " Irene non balla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Giulia canta → Giulia non canta. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Giulia canta → Giulia non canta. Chiara sorride →",
+          "target": " Chiara non sorride"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Simone salta → Simone non salta, Irene balla → Irene non balla. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Simone salta → Simone non salta, Irene balla → Irene non balla. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Simone salta → Simone non salta, Irene balla → Irene non balla. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Simone salta → Simone non salta, Irene balla → Irene non balla. Marco scrive →",
+          "target": " Marco non scrive"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Elena studia → Elena non studia. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Elena studia → Elena non studia. Sofia beve il tè →",
+          "target": " Sofia non beve il tè"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Elena studia → Elena non studia. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Alice disegna → Alice non disegna, Elena studia → Elena non studia. Irene balla →",
+          "target": " Irene non balla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Davide cammina → Davide non cammina. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Davide cammina → Davide non cammina. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Davide cammina → Davide non cammina. Anna cucina →",
+          "target": " Anna non cucina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Sofia beve il tè → Sofia non beve il tè, Davide cammina → Davide non cammina. Matteo lavora →",
+          "target": " Matteo non lavora"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Chiara sorride → Chiara non sorride. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Chiara sorride → Chiara non sorride. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Chiara sorride → Chiara non sorride. Anna cucina →",
+          "target": " Anna non cucina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Chiara sorride → Chiara non sorride. Giulia canta →",
+          "target": " Giulia non canta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Marta ascolta → Marta non ascolta. Giulia canta →",
+          "target": " Giulia non canta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Marta ascolta → Marta non ascolta. Sara nuota →",
+          "target": " Sara non nuota"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Marta ascolta → Marta non ascolta. Anna cucina →",
+          "target": " Anna non cucina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Davide cammina → Davide non cammina, Marta ascolta → Marta non ascolta. Giorgio parla →",
+          "target": " Giorgio non parla"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Nicola arriva → Nicola non arriva. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Nicola arriva → Nicola non arriva. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Nicola arriva → Nicola non arriva. Luca legge →",
+          "target": " Luca non legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Nicola arriva → Nicola non arriva. Sara nuota →",
+          "target": " Sara non nuota"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Laura risponde → Laura non risponde. Maria corre →",
+          "target": " Maria non corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Laura risponde → Laura non risponde. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Laura risponde → Laura non risponde. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Laura risponde → Laura non risponde. Stefano guida →",
+          "target": " Stefano non guida"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Matteo lavora → Matteo non lavora. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Matteo lavora → Matteo non lavora. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Matteo lavora → Matteo non lavora. Nicola arriva →",
+          "target": " Nicola non arriva"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Fabio parte → Fabio non parte, Matteo lavora → Matteo non lavora. Simone salta →",
+          "target": " Simone non salta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Stefano guida → Stefano non guida, Davide cammina → Davide non cammina. Elena studia →",
+          "target": " Elena non studia"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Stefano guida → Stefano non guida, Davide cammina → Davide non cammina. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Stefano guida → Stefano non guida, Davide cammina → Davide non cammina. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Stefano guida → Stefano non guida, Davide cammina → Davide non cammina. Maria corre →",
+          "target": " Maria non corre"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Andrea compra il pane → Andrea non compra il pane. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Andrea compra il pane → Andrea non compra il pane. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Andrea compra il pane → Andrea non compra il pane. Marco scrive →",
+          "target": " Marco non scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Chiara sorride → Chiara non sorride, Andrea compra il pane → Andrea non compra il pane. Alice disegna →",
+          "target": " Alice non disegna"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Simone salta → Simone non salta, Nicola arriva → Nicola non arriva. Maria corre →",
+          "target": " Maria non corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Simone salta → Simone non salta, Nicola arriva → Nicola non arriva. Marta ascolta →",
+          "target": " Marta non ascolta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Simone salta → Simone non salta, Nicola arriva → Nicola non arriva. Laura risponde →",
+          "target": " Laura non risponde"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Simone salta → Simone non salta, Nicola arriva → Nicola non arriva. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Anna cucina → Anna non cucina, Sofia beve il tè → Sofia non beve il tè. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Anna cucina → Anna non cucina, Sofia beve il tè → Sofia non beve il tè. Giulia canta →",
+          "target": " Giulia non canta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Anna cucina → Anna non cucina, Sofia beve il tè → Sofia non beve il tè. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Anna cucina → Anna non cucina, Sofia beve il tè → Sofia non beve il tè. Marco scrive →",
+          "target": " Marco non scrive"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Marta ascolta → Marta non ascolta. Chiara sorride →",
+          "target": " Chiara non sorride"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Marta ascolta → Marta non ascolta. Sara nuota →",
+          "target": " Sara non nuota"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Marta ascolta → Marta non ascolta. Alice disegna →",
+          "target": " Alice non disegna"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Elena studia → Elena non studia, Marta ascolta → Marta non ascolta. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Elena studia → Elena non studia. Giorgio parla →",
+          "target": " Giorgio non parla"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Elena studia → Elena non studia. Pietro guarda il film →",
+          "target": " Pietro non guarda il film"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Elena studia → Elena non studia. Anna cucina →",
+          "target": " Anna non cucina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Marta ascolta → Marta non ascolta, Elena studia → Elena non studia. Stefano guida →",
+          "target": " Stefano non guida"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Nicola arriva → Nicola non arriva. Luca legge →",
+          "target": " Luca non legge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Nicola arriva → Nicola non arriva. Fabio parte →",
+          "target": " Fabio non parte"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Nicola arriva → Nicola non arriva. Davide cammina →",
+          "target": " Davide non cammina"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Roberto chiude la finestra → Roberto non chiude la finestra, Nicola arriva → Nicola non arriva. Anna cucina →",
+          "target": " Anna non cucina"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Davide cammina → Davide non cammina. Sara nuota →",
+          "target": " Sara non nuota"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Davide cammina → Davide non cammina. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Davide cammina → Davide non cammina. Simone salta →",
+          "target": " Simone non salta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Maria corre → Maria non corre, Davide cammina → Davide non cammina. Giulia canta →",
+          "target": " Giulia non canta"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Stefano guida → Stefano non guida. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Stefano guida → Stefano non guida. Paolo dorme →",
+          "target": " Paolo non dorme"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Stefano guida → Stefano non guida. Laura risponde →",
+          "target": " Laura non risponde"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Giulia canta → Giulia non canta, Stefano guida → Stefano non guida. Sara nuota →",
+          "target": " Sara non nuota"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Pietro guarda il film → Pietro non guarda il film, Elena studia → Elena non studia. Fabio parte →",
+          "target": " Fabio non parte"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Pietro guarda il film → Pietro non guarda il film, Elena studia → Elena non studia. Marco scrive →",
+          "target": " Marco non scrive"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Pietro guarda il film → Pietro non guarda il film, Elena studia → Elena non studia. Simone salta →",
+          "target": " Simone non salta"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Pietro guarda il film → Pietro non guarda il film, Elena studia → Elena non studia. Paolo dorme →",
+          "target": " Paolo non dorme"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Paolo dorme → Paolo non dorme. Laura risponde →",
+          "target": " Laura non risponde"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Paolo dorme → Paolo non dorme. Maria corre →",
+          "target": " Maria non corre"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Paolo dorme → Paolo non dorme. Roberto chiude la finestra →",
+          "target": " Roberto non chiude la finestra"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: Matteo lavora → Matteo non lavora, Paolo dorme → Paolo non dorme. Andrea compra il pane →",
+          "target": " Andrea non compra il pane"
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

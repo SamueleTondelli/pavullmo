@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "typical_object_colors",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico del carbone è",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del carbone è",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del carbone è",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del carbone è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico del carbone è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        },
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del carbone è",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del carbone è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico del carbone è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        },
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del carbone è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico del carbone è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del carbone è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        },
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del cielo sereno è",
+          "target": " azzurro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di un limone maturo è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del lapislazzuli è",
+          "target": " blu."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del sangue è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di un'ametista è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico del cioccolato fondente è",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico dell'erba fresca è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico della neve fresca è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        },
+        {
+          "context": "Il colore tipico di un elefante è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico dei chicchi di caffè tostati è",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di una banana matura è",
+          "target": " giallo."
+        },
+        {
+          "context": "Il colore tipico di una carota è",
+          "target": " arancione."
+        },
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico di una melanzana matura è",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico della cenere è",
+          "target": " grigio."
+        },
+        {
+          "context": "Il colore tipico di un fenicottero è",
+          "target": " rosa."
+        },
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        },
+        {
+          "context": "Il colore tipico di un'arancia è",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il colore tipico del latte è",
+          "target": " bianco."
+        },
+        {
+          "context": "Il colore tipico di uno smeraldo è",
+          "target": " verde."
+        },
+        {
+          "context": "Il colore tipico della fuliggine è",
+          "target": " nero."
+        },
+        {
+          "context": "Il colore tipico di un rubino è",
+          "target": " rosso."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

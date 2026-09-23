@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "id": "reasoning_spatial_ordering",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "labels": [
+      "Alfa", "Beta", "Gamma", "Delta", "Epsilon", "Zeta", "Eta", "Theta",
+      "Iota", "Kappa", "Lambda", "Mu", "Nu", "Xi", "Omicron", "Sigma",
+      "Tau", "Phi", "Psi", "Omega"
+    ]
+  },
+
+  "variables": {
+    "elements": {
+      "type": "sample",
+      "source": "labels",
+      "count": 4
+    },
+    "position_prompts": {
+      "type": "constant",
+      "value": [
+        "L'elemento più a sinistra",
+        "Il secondo elemento da sinistra",
+        "Il terzo elemento da sinistra",
+        "L'elemento più a destra"
+      ]
+    },
+    "query_index": {
+      "type": "constant",
+      "value": 0
+    }
+  },
+
+  "derived": {
+    "left_elements": {
+      "op": "slice",
+      "args": ["$elements", 0, 3]
+    },
+    "right_elements": {
+      "op": "slice",
+      "args": ["$elements", 1, 4]
+    },
+    "facts": {
+      "op": "pair_strings",
+      "args": ["$left_elements", " è a sinistra di ", "$right_elements"]
+    },
+    "query_prompt": {
+      "op": "item_at",
+      "args": ["$position_prompts", "$query_index"]
+    },
+    "answer": {
+      "op": "item_at",
+      "args": ["$elements", "$query_index"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$query_prompt", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Disponi mentalmente gli elementi: {facts|comma_list}. {query_prompt} è",
+      "target": " {answer}."
+    }
+  ]
+}

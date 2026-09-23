@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "id": "typical_object_colors",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "object_colors": [
+      {"object": "di una banana matura", "color": "giallo"},
+      {"object": "di un limone maturo", "color": "giallo"},
+
+      {"object": "di una carota", "color": "arancione"},
+      {"object": "di un'arancia", "color": "arancione"},
+
+      {"object": "del carbone", "color": "nero"},
+      {"object": "della fuliggine", "color": "nero"},
+
+      {"object": "della neve fresca", "color": "bianco"},
+      {"object": "del latte", "color": "bianco"},
+
+      {"object": "del sangue", "color": "rosso"},
+      {"object": "di un rubino", "color": "rosso"},
+
+      {"object": "dell'erba fresca", "color": "verde"},
+      {"object": "di uno smeraldo", "color": "verde"},
+
+      {"object": "del cielo sereno", "color": "azzurro"},
+      {"object": "del lapislazzuli", "color": "blu"},
+
+      {"object": "di un'ametista", "color": "viola"},
+      {"object": "di una melanzana matura", "color": "viola"},
+
+      {"object": "di un fenicottero", "color": "rosa"},
+
+      {"object": "di un elefante", "color": "grigio"},
+      {"object": "della cenere", "color": "grigio"},
+
+      {"object": "del cioccolato fondente", "color": "marrone"},
+      {"object": "dei chicchi di caffè tostati", "color": "marrone"}
+    ]
+  },
+
+  "variables": {
+    "fact": {
+      "type": "choice",
+      "source": "object_colors"
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "fact",
+        "operation": "resample_distinct"
+      }
+    ],
+    "unique_on": ["$fact.object", "$fact.color"]
+  },
+
+  "templates": [
+    {
+      "context": "Il colore tipico {fact.object} è",
+      "target": " {fact.color}."
+    }
+  ]
+}

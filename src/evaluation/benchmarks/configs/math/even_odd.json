@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "even_odd",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "variables": {
+    "number": {
+      "type": "integer",
+      "min": 0,
+      "max": 98,
+      "step": 2
+    },
+    "parity": {
+      "type": "constant",
+      "value": "pari"
+    }
+  },
+
+  "contrast_set": {
+    "size": 2,
+    "mutations": [
+      {
+        "variable": "number",
+        "operation": "offset",
+        "values": [0, 1]
+      },
+      {
+        "variable": "parity",
+        "operation": "replace",
+        "values": ["pari", "dispari"]
+      }
+    ],
+    "unique_on": ["$number", "$parity"]
+  },
+
+  "templates": [
+    {
+      "context": "Il numero {number} è",
+      "target": " {parity}."
+    }
+  ]
+}

@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "select_sequence_position",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quarto elemento è",
+          "target": " tazza."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il secondo elemento è",
+          "target": " libro."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il settimo elemento è",
+          "target": " sasso."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il primo elemento è",
+          "target": " mela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il primo elemento è",
+          "target": " banana."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, l'ultimo elemento è",
+          "target": " forbice."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il settimo elemento è",
+          "target": " legno."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il secondo elemento è",
+          "target": " mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il quarto elemento è",
+          "target": " pasta."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il sesto elemento è",
+          "target": " grandine."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il settimo elemento è",
+          "target": " giacca."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il quinto elemento è",
+          "target": " bicicletta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il quinto elemento è",
+          "target": " rosa."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il settimo elemento è",
+          "target": " pietra."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il primo elemento è",
+          "target": " pera."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il secondo elemento è",
+          "target": " quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il terzo elemento è",
+          "target": " forchetta."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il secondo elemento è",
+          "target": " giornale."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, l'ultimo elemento è",
+          "target": " righello."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il primo elemento è",
+          "target": " arancia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il sesto elemento è",
+          "target": " neve."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il settimo elemento è",
+          "target": " camicia."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il terzo elemento è",
+          "target": " scala."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quinto elemento è",
+          "target": " autobus."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il secondo elemento è",
+          "target": " libro."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quarto elemento è",
+          "target": " tazza."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il primo elemento è",
+          "target": " mela."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quinto elemento è",
+          "target": " fiore."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il quarto elemento è",
+          "target": " caraffa."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il sesto elemento è",
+          "target": " gettone."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il primo elemento è",
+          "target": " banana."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il settimo elemento è",
+          "target": " legno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il quarto elemento è",
+          "target": " riso."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il settimo elemento è",
+          "target": " cappello."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il primo elemento è",
+          "target": " leone."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, l'ultimo elemento è",
+          "target": " albero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il terzo elemento è",
+          "target": " coltello."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, l'ultimo elemento è",
+          "target": " gomma."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il settimo elemento è",
+          "target": " mattone."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il secondo elemento è",
+          "target": " lettera."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il quarto elemento è",
+          "target": " pane."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il secondo elemento è",
+          "target": " sole."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, l'ultimo elemento è",
+          "target": " foglia."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il sesto elemento è",
+          "target": " luna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il sesto elemento è",
+          "target": " grandine."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il settimo elemento è",
+          "target": " giacca."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il primo elemento è",
+          "target": " tigre."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il secondo elemento è",
+          "target": " fiume."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il quinto elemento è",
+          "target": " tulipano."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il primo elemento è",
+          "target": " arancia."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il secondo elemento è",
+          "target": " giornale."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, l'ultimo elemento è",
+          "target": " righello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il settimo elemento è",
+          "target": " pietra."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il sesto elemento è",
+          "target": " biglietto."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il quarto elemento è",
+          "target": " piatto."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il secondo elemento è",
+          "target": " quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il quinto elemento è",
+          "target": " nave."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il sesto elemento è",
+          "target": " nuvola."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, l'ultimo elemento è",
+          "target": " ramo."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il quarto elemento è",
+          "target": " latte."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il terzo elemento è",
+          "target": " forchetta."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il quinto elemento è",
+          "target": " tulipano."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il quarto elemento è",
+          "target": " bottiglia."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il primo elemento è",
+          "target": " arancia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il terzo elemento è",
+          "target": " porta."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il settimo elemento è",
+          "target": " scarpa."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il sesto elemento è",
+          "target": " luna."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il quarto elemento è",
+          "target": " pane."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, l'ultimo elemento è",
+          "target": " radice."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quinto elemento è",
+          "target": " autobus."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il terzo elemento è",
+          "target": " scala."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il settimo elemento è",
+          "target": " camicia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il sesto elemento è",
+          "target": " luna."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il primo elemento è",
+          "target": " gatto."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il terzo elemento è",
+          "target": " porta."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il quarto elemento è",
+          "target": " pane."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il quinto elemento è",
+          "target": " giglio."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, l'ultimo elemento è",
+          "target": " gomma."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il secondo elemento è",
+          "target": " lettera."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il settimo elemento è",
+          "target": " mattone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il terzo elemento è",
+          "target": " finestra."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, l'ultimo elemento è",
+          "target": " albero."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il secondo elemento è",
+          "target": " mare."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il quinto elemento è",
+          "target": " aereo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, l'ultimo elemento è",
+          "target": " forbice."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il primo elemento è",
+          "target": " banana."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il settimo elemento è",
+          "target": " legno."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il terzo elemento è",
+          "target": " cucchiaio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il quarto elemento è",
+          "target": " piatto."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il quinto elemento è",
+          "target": " rosa."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il primo elemento è",
+          "target": " pera."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il sesto elemento è",
+          "target": " biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il terzo elemento è",
+          "target": " porta."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il sesto elemento è",
+          "target": " luna."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il quarto elemento è",
+          "target": " pane."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il quinto elemento è",
+          "target": " treno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il quarto elemento è",
+          "target": " riso."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il quinto elemento è",
+          "target": " aereo."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il sesto elemento è",
+          "target": " pioggia."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il secondo elemento è",
+          "target": " mare."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, l'ultimo elemento è",
+          "target": " radice."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quinto elemento è",
+          "target": " autobus."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quarto elemento è",
+          "target": " formaggio."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il primo elemento è",
+          "target": " cavallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il sesto elemento è",
+          "target": " biglietto."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il primo elemento è",
+          "target": " pera."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il quinto elemento è",
+          "target": " rosa."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, l'ultimo elemento è",
+          "target": " matita."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il primo elemento è",
+          "target": " banana."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, l'ultimo elemento è",
+          "target": " forbice."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il sesto elemento è",
+          "target": " gettone."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il settimo elemento è",
+          "target": " legno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il sesto elemento è",
+          "target": " luna."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il primo elemento è",
+          "target": " gatto."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il quinto elemento è",
+          "target": " treno."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il secondo elemento è",
+          "target": " sole."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il terzo elemento è",
+          "target": " coltello."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il sesto elemento è",
+          "target": " medaglia."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il quinto elemento è",
+          "target": " giglio."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il settimo elemento è",
+          "target": " mattone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il settimo elemento è",
+          "target": " pietra."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il secondo elemento è",
+          "target": " quaderno."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il primo elemento è",
+          "target": " pera."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il sesto elemento è",
+          "target": " biglietto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il settimo elemento è",
+          "target": " conchiglia."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il quarto elemento è",
+          "target": " bottiglia."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il sesto elemento è",
+          "target": " francobollo."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il primo elemento è",
+          "target": " arancia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il sesto elemento è",
+          "target": " moneta."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il settimo elemento è",
+          "target": " sasso."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il primo elemento è",
+          "target": " mela."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il secondo elemento è",
+          "target": " libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il terzo elemento è",
+          "target": " anello."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il quarto elemento è",
+          "target": " piatto."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il secondo elemento è",
+          "target": " quaderno."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, l'ultimo elemento è",
+          "target": " matita."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, l'ultimo elemento è",
+          "target": " matita."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il settimo elemento è",
+          "target": " pietra."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il quinto elemento è",
+          "target": " rosa."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il primo elemento è",
+          "target": " pera."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il secondo elemento è",
+          "target": " fiume."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il settimo elemento è",
+          "target": " giacca."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, l'ultimo elemento è",
+          "target": " seme."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il sesto elemento è",
+          "target": " grandine."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il quarto elemento è",
+          "target": " vaso."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il settimo elemento è",
+          "target": " mattone."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, l'ultimo elemento è",
+          "target": " gomma."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il primo elemento è",
+          "target": " limone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il settimo elemento è",
+          "target": " camicia."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il terzo elemento è",
+          "target": " scala."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quarto elemento è",
+          "target": " formaggio."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, l'ultimo elemento è",
+          "target": " radice."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il terzo elemento è",
+          "target": " tenda."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il secondo elemento è",
+          "target": " fiume."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, l'ultimo elemento è",
+          "target": " seme."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il settimo elemento è",
+          "target": " giacca."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il sesto elemento è",
+          "target": " gettone."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il primo elemento è",
+          "target": " banana."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il settimo elemento è",
+          "target": " legno."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il quinto elemento è",
+          "target": " margherita."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il primo elemento è",
+          "target": " tigre."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il quinto elemento è",
+          "target": " bicicletta."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, l'ultimo elemento è",
+          "target": " seme."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il secondo elemento è",
+          "target": " fiume."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il quarto elemento è",
+          "target": " caraffa."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, l'ultimo elemento è",
+          "target": " forbice."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il primo elemento è",
+          "target": " banana."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il quinto elemento è",
+          "target": " margherita."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il secondo elemento è",
+          "target": " mappa."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il quarto elemento è",
+          "target": " caraffa."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il sesto elemento è",
+          "target": " gettone."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il quinto elemento è",
+          "target": " margherita."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il sesto elemento è",
+          "target": " pioggia."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il secondo elemento è",
+          "target": " mare."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il terzo elemento è",
+          "target": " finestra."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il quarto elemento è",
+          "target": " riso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il sesto elemento è",
+          "target": " pioggia."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il settimo elemento è",
+          "target": " cappello."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il primo elemento è",
+          "target": " leone."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, l'ultimo elemento è",
+          "target": " albero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il secondo elemento è",
+          "target": " mappa."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il quinto elemento è",
+          "target": " margherita."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, l'ultimo elemento è",
+          "target": " forbice."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il settimo elemento è",
+          "target": " legno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il secondo elemento è",
+          "target": " stella."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, l'ultimo elemento è",
+          "target": " ramo."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il terzo elemento è",
+          "target": " borsa."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il sesto elemento è",
+          "target": " nuvola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il primo elemento è",
+          "target": " limone."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il sesto elemento è",
+          "target": " medaglia."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il quinto elemento è",
+          "target": " giglio."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il terzo elemento è",
+          "target": " coltello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il secondo elemento è",
+          "target": " stella."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il primo elemento è",
+          "target": " cane."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il sesto elemento è",
+          "target": " nuvola."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il quinto elemento è",
+          "target": " nave."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il quarto elemento è",
+          "target": " riso."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il sesto elemento è",
+          "target": " pioggia."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il terzo elemento è",
+          "target": " finestra."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il secondo elemento è",
+          "target": " mare."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il quinto elemento è",
+          "target": " bicicletta."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il settimo elemento è",
+          "target": " giacca."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il primo elemento è",
+          "target": " tigre."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il sesto elemento è",
+          "target": " grandine."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il primo elemento è",
+          "target": " leone."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il terzo elemento è",
+          "target": " finestra."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il secondo elemento è",
+          "target": " mare."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il settimo elemento è",
+          "target": " cappello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il primo elemento è",
+          "target": " limone."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, l'ultimo elemento è",
+          "target": " gomma."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il settimo elemento è",
+          "target": " mattone."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il secondo elemento è",
+          "target": " lettera."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il settimo elemento è",
+          "target": " conchiglia."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il secondo elemento è",
+          "target": " giornale."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il primo elemento è",
+          "target": " arancia."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il terzo elemento è",
+          "target": " forchetta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quarto elemento è",
+          "target": " tazza."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il sesto elemento è",
+          "target": " moneta."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il secondo elemento è",
+          "target": " libro."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il primo elemento è",
+          "target": " mela."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il terzo elemento è",
+          "target": " tenda."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il secondo elemento è",
+          "target": " fiume."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il settimo elemento è",
+          "target": " giacca."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il sesto elemento è",
+          "target": " grandine."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il sesto elemento è",
+          "target": " moneta."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il settimo elemento è",
+          "target": " sasso."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quarto elemento è",
+          "target": " tazza."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il secondo elemento è",
+          "target": " libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il settimo elemento è",
+          "target": " guanto."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, l'ultimo elemento è",
+          "target": " ramo."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il primo elemento è",
+          "target": " cane."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il quarto elemento è",
+          "target": " latte."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il sesto elemento è",
+          "target": " biglietto."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il terzo elemento è",
+          "target": " anello."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il secondo elemento è",
+          "target": " quaderno."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, l'ultimo elemento è",
+          "target": " matita."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il sesto elemento è",
+          "target": " biglietto."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il terzo elemento è",
+          "target": " anello."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il primo elemento è",
+          "target": " pera."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il settimo elemento è",
+          "target": " pietra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il sesto elemento è",
+          "target": " grandine."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il primo elemento è",
+          "target": " tigre."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il settimo elemento è",
+          "target": " giacca."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il terzo elemento è",
+          "target": " tenda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il primo elemento è",
+          "target": " banana."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, l'ultimo elemento è",
+          "target": " forbice."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il quinto elemento è",
+          "target": " margherita."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il quarto elemento è",
+          "target": " caraffa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il secondo elemento è",
+          "target": " giornale."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il quarto elemento è",
+          "target": " bottiglia."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il quinto elemento è",
+          "target": " tulipano."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, l'ultimo elemento è",
+          "target": " righello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il primo elemento è",
+          "target": " mela."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quinto elemento è",
+          "target": " fiore."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il settimo elemento è",
+          "target": " sasso."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il secondo elemento è",
+          "target": " libro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il sesto elemento è",
+          "target": " neve."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quinto elemento è",
+          "target": " autobus."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il terzo elemento è",
+          "target": " scala."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il primo elemento è",
+          "target": " cavallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il settimo elemento è",
+          "target": " giacca."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il terzo elemento è",
+          "target": " tenda."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il quarto elemento è",
+          "target": " pasta."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, l'ultimo elemento è",
+          "target": " seme."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il settimo elemento è",
+          "target": " pietra."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il sesto elemento è",
+          "target": " biglietto."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, l'ultimo elemento è",
+          "target": " matita."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il secondo elemento è",
+          "target": " quaderno."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quinto elemento è",
+          "target": " autobus."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il terzo elemento è",
+          "target": " scala."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il secondo elemento è",
+          "target": " vento."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quarto elemento è",
+          "target": " formaggio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, l'ultimo elemento è",
+          "target": " gomma."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il sesto elemento è",
+          "target": " medaglia."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il secondo elemento è",
+          "target": " lettera."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il quinto elemento è",
+          "target": " giglio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il quinto elemento è",
+          "target": " nave."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, l'ultimo elemento è",
+          "target": " ramo."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il sesto elemento è",
+          "target": " nuvola."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il settimo elemento è",
+          "target": " guanto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il quinto elemento è",
+          "target": " treno."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il secondo elemento è",
+          "target": " sole."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il settimo elemento è",
+          "target": " scarpa."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il sesto elemento è",
+          "target": " luna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, l'ultimo elemento è",
+          "target": " penna."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quinto elemento è",
+          "target": " fiore."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il primo elemento è",
+          "target": " mela."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quarto elemento è",
+          "target": " tazza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il settimo elemento è",
+          "target": " legno."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il quarto elemento è",
+          "target": " caraffa."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, l'ultimo elemento è",
+          "target": " forbice."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il secondo elemento è",
+          "target": " mappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il settimo elemento è",
+          "target": " sasso."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il secondo elemento è",
+          "target": " libro."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, l'ultimo elemento è",
+          "target": " penna."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quinto elemento è",
+          "target": " fiore."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il secondo elemento è",
+          "target": " libro."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quarto elemento è",
+          "target": " tazza."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, l'ultimo elemento è",
+          "target": " penna."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il settimo elemento è",
+          "target": " sasso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, l'ultimo elemento è",
+          "target": " gomma."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il secondo elemento è",
+          "target": " lettera."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il sesto elemento è",
+          "target": " medaglia."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il quarto elemento è",
+          "target": " vaso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il quinto elemento è",
+          "target": " aereo."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il settimo elemento è",
+          "target": " cappello."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, l'ultimo elemento è",
+          "target": " albero."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il quarto elemento è",
+          "target": " riso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il secondo elemento è",
+          "target": " mare."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il sesto elemento è",
+          "target": " pioggia."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il terzo elemento è",
+          "target": " finestra."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, l'ultimo elemento è",
+          "target": " albero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il secondo elemento è",
+          "target": " giornale."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, l'ultimo elemento è",
+          "target": " righello."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il settimo elemento è",
+          "target": " conchiglia."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il sesto elemento è",
+          "target": " francobollo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il secondo elemento è",
+          "target": " stella."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il quarto elemento è",
+          "target": " latte."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il settimo elemento è",
+          "target": " guanto."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il terzo elemento è",
+          "target": " borsa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quarto elemento è",
+          "target": " formaggio."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il settimo elemento è",
+          "target": " camicia."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, l'ultimo elemento è",
+          "target": " radice."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il sesto elemento è",
+          "target": " neve."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, l'ultimo elemento è",
+          "target": " forbice."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il primo elemento è",
+          "target": " banana."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il terzo elemento è",
+          "target": " cucchiaio."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il sesto elemento è",
+          "target": " gettone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, l'ultimo elemento è",
+          "target": " radice."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il secondo elemento è",
+          "target": " vento."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il terzo elemento è",
+          "target": " scala."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quarto elemento è",
+          "target": " formaggio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il sesto elemento è",
+          "target": " moneta."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, l'ultimo elemento è",
+          "target": " penna."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il settimo elemento è",
+          "target": " sasso."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quarto elemento è",
+          "target": " tazza."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il primo elemento è",
+          "target": " limone."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il quarto elemento è",
+          "target": " vaso."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il quinto elemento è",
+          "target": " giglio."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il sesto elemento è",
+          "target": " medaglia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il terzo elemento è",
+          "target": " porta."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il settimo elemento è",
+          "target": " scarpa."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il quarto elemento è",
+          "target": " pane."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il secondo elemento è",
+          "target": " sole."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il sesto elemento è",
+          "target": " pioggia."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il secondo elemento è",
+          "target": " mare."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il quarto elemento è",
+          "target": " riso."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il terzo elemento è",
+          "target": " finestra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il settimo elemento è",
+          "target": " camicia."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il terzo elemento è",
+          "target": " scala."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il primo elemento è",
+          "target": " cavallo."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quarto elemento è",
+          "target": " formaggio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il sesto elemento è",
+          "target": " grandine."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il secondo elemento è",
+          "target": " fiume."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, l'ultimo elemento è",
+          "target": " seme."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il primo elemento è",
+          "target": " tigre."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quarto elemento è",
+          "target": " tazza."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il settimo elemento è",
+          "target": " sasso."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il primo elemento è",
+          "target": " mela."
+        },
+        {
+          "context": "Nella sequenza mela, libro, chiave, tazza, fiore, moneta, sasso, penna, il quinto elemento è",
+          "target": " fiore."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, l'ultimo elemento è",
+          "target": " matita."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il sesto elemento è",
+          "target": " biglietto."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il primo elemento è",
+          "target": " pera."
+        },
+        {
+          "context": "Nella sequenza pera, quaderno, anello, piatto, rosa, biglietto, pietra, matita, il quinto elemento è",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il sesto elemento è",
+          "target": " medaglia."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il secondo elemento è",
+          "target": " lettera."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, il quinto elemento è",
+          "target": " giglio."
+        },
+        {
+          "context": "Nella sequenza limone, lettera, coltello, vaso, giglio, medaglia, mattone, gomma, l'ultimo elemento è",
+          "target": " gomma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il secondo elemento è",
+          "target": " stella."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il quinto elemento è",
+          "target": " nave."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il primo elemento è",
+          "target": " cane."
+        },
+        {
+          "context": "Nella sequenza cane, stella, borsa, latte, nave, nuvola, guanto, ramo, il terzo elemento è",
+          "target": " borsa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il secondo elemento è",
+          "target": " vento."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quinto elemento è",
+          "target": " autobus."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il sesto elemento è",
+          "target": " neve."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, l'ultimo elemento è",
+          "target": " radice."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il primo elemento è",
+          "target": " leone."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il terzo elemento è",
+          "target": " finestra."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il quinto elemento è",
+          "target": " aereo."
+        },
+        {
+          "context": "Nella sequenza leone, mare, finestra, riso, aereo, pioggia, cappello, albero, il quarto elemento è",
+          "target": " riso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il primo elemento è",
+          "target": " gatto."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il settimo elemento è",
+          "target": " scarpa."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il quarto elemento è",
+          "target": " pane."
+        },
+        {
+          "context": "Nella sequenza gatto, sole, porta, pane, treno, luna, scarpa, foglia, il sesto elemento è",
+          "target": " luna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, l'ultimo elemento è",
+          "target": " radice."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il sesto elemento è",
+          "target": " neve."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il secondo elemento è",
+          "target": " vento."
+        },
+        {
+          "context": "Nella sequenza cavallo, vento, scala, formaggio, autobus, neve, camicia, radice, il quarto elemento è",
+          "target": " formaggio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, l'ultimo elemento è",
+          "target": " seme."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il quarto elemento è",
+          "target": " pasta."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il settimo elemento è",
+          "target": " giacca."
+        },
+        {
+          "context": "Nella sequenza tigre, fiume, tenda, pasta, bicicletta, grandine, giacca, seme, il quinto elemento è",
+          "target": " bicicletta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il secondo elemento è",
+          "target": " giornale."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il terzo elemento è",
+          "target": " forchetta."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, il quarto elemento è",
+          "target": " bottiglia."
+        },
+        {
+          "context": "Nella sequenza arancia, giornale, forchetta, bottiglia, tulipano, francobollo, conchiglia, righello, l'ultimo elemento è",
+          "target": " righello."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il sesto elemento è",
+          "target": " gettone."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il primo elemento è",
+          "target": " banana."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il quarto elemento è",
+          "target": " caraffa."
+        },
+        {
+          "context": "Nella sequenza banana, mappa, cucchiaio, caraffa, margherita, gettone, legno, forbice, il terzo elemento è",
+          "target": " cucchiaio."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "id": "reasoning_transitive_ordering",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "people": [
+      "Luca", "Paolo", "Marco", "Davide", "Matteo", "Simone", "Fabio", "Andrea",
+      "Giorgio", "Stefano", "Alessandro", "Roberto", "Federico", "Nicola", "Pietro",
+      "Tommaso", "Francesco", "Emanuele", "Riccardo", "Michele"
+    ]
+  },
+
+  "variables": {
+    "people": {
+      "type": "sample",
+      "source": "people",
+      "count": 4
+    },
+    "rank_prompts": {
+      "type": "constant",
+      "value": [
+        "La persona più alta di tutte",
+        "La persona al secondo posto per altezza",
+        "La persona al terzo posto per altezza",
+        "La persona più bassa di tutte"
+      ]
+    },
+    "query_index": {
+      "type": "constant",
+      "value": 0
+    }
+  },
+
+  "derived": {
+    "higher_people": {
+      "op": "slice",
+      "args": ["$people", 0, 3]
+    },
+    "lower_people": {
+      "op": "slice",
+      "args": ["$people", 1, 4]
+    },
+    "facts": {
+      "op": "pair_strings",
+      "args": ["$higher_people", " è più alto di ", "$lower_people"]
+    },
+    "query_prompt": {
+      "op": "item_at",
+      "args": ["$rank_prompts", "$query_index"]
+    },
+    "answer": {
+      "op": "item_at",
+      "args": ["$people", "$query_index"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$query_prompt", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Considera queste informazioni: {facts|comma_list}. {query_prompt} è",
+      "target": " {answer}."
+    }
+  ]
+}

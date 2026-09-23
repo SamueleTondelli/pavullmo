@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "id": "integer_sequence_completion",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "variables": {
+    "start": {
+      "type": "integer",
+      "min": 0,
+      "max": 962
+    },
+    "sequence_length": {
+      "type": "integer",
+      "min": 4,
+      "max": 8
+    }
+  },
+
+  "derived": {
+    "end": {
+      "op": "add",
+      "args": [
+        "$start",
+        {
+          "op": "subtract",
+          "args": ["$sequence_length", 1]
+        }
+      ]
+    },
+    "sequence": {
+      "op": "integer_range",
+      "args": ["$start", "$end"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "start",
+        "operation": "offset",
+        "values": [0, 10, 20, 30]
+      }
+    ],
+    "unique_on": ["$start", "$end", "$sequence"]
+  },
+
+  "templates": [
+    {
+      "context": "I numeri interi in ordine da {start} a {end} sono:",
+      "target": " {sequence|comma_list}"
+    }
+  ]
+}

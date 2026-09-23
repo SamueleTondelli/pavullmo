@@ -1,0 +1,48 @@
+ICL
+arbitrary_mappings                knowledge > web > balanced
+object_location_bindings          balanced > web > knowledge
+person_object_bindings            web > knowledge > balanced
+person_profiles                   web > knowledge > balanced
+state_updates                     balanced > web > knowledge
+overall                           web > knowledge > balanced
+
+KNOWLEDGE
+country_capitals                  knowledge > balanced > web
+typical_object_colors             balanced > knowledge > web
+landmark_cities                   web > knowledge > balanced
+regions_city                      knowledge > web > balanced
+entity_taxonomy                   balanced > knowledge > web
+overall                           knowledge > balanced > web
+
+LANGUAGE-MANIPULATION
+few_shot_affirmative_to_negative  knowledge > balanced > web
+few_shot_first_to_third_person    balanced > web > knowledge
+few_shot_masculine_to_feminine    knowledge > balanced > web
+few_shot_present_to_future        knowledge > web > balanced
+few_shot_singular_to_plural       balanced > knowledge > web
+overall                           knowledge > balanced > web
+
+MATH
+addition_subtraction              web > balanced > knowledge
+even_odd                          web > balanced > knowledge
+minimum_maximum                   web > knowledge > balanced
+single_digit_multiplication       knowledge > web > balanced
+integer_sequence_completion       balanced > web > knowledge
+overall                           web > balanced > knowledge
+
+MATH-LANGUAGES
+count_items_by_property           balanced > web > knowledge
+count_sequence_occurences         balanced > knowledge > web
+count_repeated_objects            balanced > knowledge > web
+digits_words_conversion           knowledge > balanced > web
+select_sequence_position          web > knowledge > balanced
+overall                           balanced > knowledge > web
+
+REASONING
+reasoning_constraint_elimination  balanced = knowledge > web (really bad, score = 0.33%)
+reasoning_transitive_ordering     web > balanced > knowledge
+reasoning_rule_chaining           web > balanced > knowledge
+reasoning_spatial_ordering        balanced > knowledge > web
+reasoning_temporal_ordering       balanced > knowledge > web
+overall                           balanced > web > knowledge
+

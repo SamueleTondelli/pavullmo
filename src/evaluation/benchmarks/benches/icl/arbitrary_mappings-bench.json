@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "icl_arbitrary_mappings",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, dax significa blu, keld significa verde, nup significa rosa, benu significa marrone. La parola dax significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, dax significa blu, keld significa verde, nup significa rosa, benu significa marrone. La parola keld significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, dax significa blu, keld significa verde, nup significa rosa, benu significa marrone. La parola nup significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, dax significa blu, keld significa verde, nup significa rosa, benu significa marrone. La parola benu significa",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, fep significa giallo, dax significa rosa, lun significa grigio, bren significa rosso. La parola fep significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, fep significa giallo, dax significa rosa, lun significa grigio, bren significa rosso. La parola dax significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, fep significa giallo, dax significa rosa, lun significa grigio, bren significa rosso. La parola lun significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, fep significa giallo, dax significa rosa, lun significa grigio, bren significa rosso. La parola bren significa",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, benu significa grigio, gref significa nero, nup significa rosso, wim significa blu. La parola benu significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, benu significa grigio, gref significa nero, nup significa rosso, wim significa blu. La parola gref significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, benu significa grigio, gref significa nero, nup significa rosso, wim significa blu. La parola nup significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, benu significa grigio, gref significa nero, nup significa rosso, wim significa blu. La parola wim significa",
+          "target": " blu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, rimo significa bianco, keld significa verde, miv significa marrone, bren significa arancione. La parola rimo significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa bianco, keld significa verde, miv significa marrone, bren significa arancione. La parola keld significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa bianco, keld significa verde, miv significa marrone, bren significa arancione. La parola miv significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa bianco, keld significa verde, miv significa marrone, bren significa arancione. La parola bren significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, satek significa azzurro, larp significa viola, keld significa rosa, fep significa verde. La parola satek significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, satek significa azzurro, larp significa viola, keld significa rosa, fep significa verde. La parola larp significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, satek significa azzurro, larp significa viola, keld significa rosa, fep significa verde. La parola keld significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, satek significa azzurro, larp significa viola, keld significa rosa, fep significa verde. La parola fep significa",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, lun significa grigio, benu significa giallo, vash significa verde, satek significa rosso. La parola lun significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, lun significa grigio, benu significa giallo, vash significa verde, satek significa rosso. La parola benu significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, lun significa grigio, benu significa giallo, vash significa verde, satek significa rosso. La parola vash significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, lun significa grigio, benu significa giallo, vash significa verde, satek significa rosso. La parola satek significa",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, vash significa arancione, lun significa nero, nup significa viola, zorp significa bianco. La parola vash significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, vash significa arancione, lun significa nero, nup significa viola, zorp significa bianco. La parola lun significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, vash significa arancione, lun significa nero, nup significa viola, zorp significa bianco. La parola nup significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, vash significa arancione, lun significa nero, nup significa viola, zorp significa bianco. La parola zorp significa",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, satek significa azzurro, larp significa marrone, bren significa verde, keld significa blu. La parola satek significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, satek significa azzurro, larp significa marrone, bren significa verde, keld significa blu. La parola larp significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, satek significa azzurro, larp significa marrone, bren significa verde, keld significa blu. La parola bren significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, satek significa azzurro, larp significa marrone, bren significa verde, keld significa blu. La parola keld significa",
+          "target": " blu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, tal significa marrone, wim significa rosa, pulo significa giallo, keld significa bianco. La parola tal significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, tal significa marrone, wim significa rosa, pulo significa giallo, keld significa bianco. La parola wim significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, tal significa marrone, wim significa rosa, pulo significa giallo, keld significa bianco. La parola pulo significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, tal significa marrone, wim significa rosa, pulo significa giallo, keld significa bianco. La parola keld significa",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, nup significa nero, fep significa verde, rimo significa giallo, pulo significa bianco. La parola nup significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, nup significa nero, fep significa verde, rimo significa giallo, pulo significa bianco. La parola fep significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, nup significa nero, fep significa verde, rimo significa giallo, pulo significa bianco. La parola rimo significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, nup significa nero, fep significa verde, rimo significa giallo, pulo significa bianco. La parola pulo significa",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, narel significa nero, pulo significa blu, wim significa giallo, miv significa rosa. La parola narel significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, narel significa nero, pulo significa blu, wim significa giallo, miv significa rosa. La parola pulo significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, narel significa nero, pulo significa blu, wim significa giallo, miv significa rosa. La parola wim significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, narel significa nero, pulo significa blu, wim significa giallo, miv significa rosa. La parola miv significa",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, zos significa giallo, gref significa blu, pulo significa rosa, satek significa viola. La parola zos significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, zos significa giallo, gref significa blu, pulo significa rosa, satek significa viola. La parola gref significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, zos significa giallo, gref significa blu, pulo significa rosa, satek significa viola. La parola pulo significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, zos significa giallo, gref significa blu, pulo significa rosa, satek significa viola. La parola satek significa",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, fep significa marrone, zorp significa arancione, miv significa grigio, tal significa verde. La parola fep significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, fep significa marrone, zorp significa arancione, miv significa grigio, tal significa verde. La parola zorp significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, fep significa marrone, zorp significa arancione, miv significa grigio, tal significa verde. La parola miv significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, fep significa marrone, zorp significa arancione, miv significa grigio, tal significa verde. La parola tal significa",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, pulo significa rosa, wim significa rosso, tovik significa verde, keld significa azzurro. La parola pulo significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, pulo significa rosa, wim significa rosso, tovik significa verde, keld significa azzurro. La parola wim significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, pulo significa rosa, wim significa rosso, tovik significa verde, keld significa azzurro. La parola tovik significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, pulo significa rosa, wim significa rosso, tovik significa verde, keld significa azzurro. La parola keld significa",
+          "target": " azzurro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, rimo significa blu, zorp significa viola, vash significa rosso, gref significa nero. La parola rimo significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa blu, zorp significa viola, vash significa rosso, gref significa nero. La parola zorp significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa blu, zorp significa viola, vash significa rosso, gref significa nero. La parola vash significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa blu, zorp significa viola, vash significa rosso, gref significa nero. La parola gref significa",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, tovik significa grigio, zorp significa giallo, vash significa blu, larp significa bianco. La parola tovik significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, tovik significa grigio, zorp significa giallo, vash significa blu, larp significa bianco. La parola zorp significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, tovik significa grigio, zorp significa giallo, vash significa blu, larp significa bianco. La parola vash significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, tovik significa grigio, zorp significa giallo, vash significa blu, larp significa bianco. La parola larp significa",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, benu significa viola, tovik significa rosso, dax significa verde, rimo significa bianco. La parola benu significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, benu significa viola, tovik significa rosso, dax significa verde, rimo significa bianco. La parola tovik significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, benu significa viola, tovik significa rosso, dax significa verde, rimo significa bianco. La parola dax significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, benu significa viola, tovik significa rosso, dax significa verde, rimo significa bianco. La parola rimo significa",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, nup significa verde, fep significa viola, larp significa azzurro, lun significa rosa. La parola nup significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, nup significa verde, fep significa viola, larp significa azzurro, lun significa rosa. La parola fep significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, nup significa verde, fep significa viola, larp significa azzurro, lun significa rosa. La parola larp significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, nup significa verde, fep significa viola, larp significa azzurro, lun significa rosa. La parola lun significa",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, miv significa nero, narel significa rosa, benu significa grigio, tal significa arancione. La parola miv significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, miv significa nero, narel significa rosa, benu significa grigio, tal significa arancione. La parola narel significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, miv significa nero, narel significa rosa, benu significa grigio, tal significa arancione. La parola benu significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, miv significa nero, narel significa rosa, benu significa grigio, tal significa arancione. La parola tal significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, benu significa marrone, bren significa azzurro, vash significa bianco, pulo significa viola. La parola benu significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, benu significa marrone, bren significa azzurro, vash significa bianco, pulo significa viola. La parola bren significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, benu significa marrone, bren significa azzurro, vash significa bianco, pulo significa viola. La parola vash significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, benu significa marrone, bren significa azzurro, vash significa bianco, pulo significa viola. La parola pulo significa",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, zorp significa bianco, nup significa rosso, zos significa grigio, lun significa rosa. La parola zorp significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, zorp significa bianco, nup significa rosso, zos significa grigio, lun significa rosa. La parola nup significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, zorp significa bianco, nup significa rosso, zos significa grigio, lun significa rosa. La parola zos significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, zorp significa bianco, nup significa rosso, zos significa grigio, lun significa rosa. La parola lun significa",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, zos significa azzurro, nup significa marrone, dax significa rosso, lun significa giallo. La parola zos significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, zos significa azzurro, nup significa marrone, dax significa rosso, lun significa giallo. La parola nup significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, zos significa azzurro, nup significa marrone, dax significa rosso, lun significa giallo. La parola dax significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, zos significa azzurro, nup significa marrone, dax significa rosso, lun significa giallo. La parola lun significa",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, fep significa giallo, rimo significa nero, lun significa viola, tovik significa azzurro. La parola fep significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, fep significa giallo, rimo significa nero, lun significa viola, tovik significa azzurro. La parola rimo significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, fep significa giallo, rimo significa nero, lun significa viola, tovik significa azzurro. La parola lun significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, fep significa giallo, rimo significa nero, lun significa viola, tovik significa azzurro. La parola tovik significa",
+          "target": " azzurro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, zos significa viola, larp significa arancione, narel significa giallo, nup significa verde. La parola zos significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, zos significa viola, larp significa arancione, narel significa giallo, nup significa verde. La parola larp significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, zos significa viola, larp significa arancione, narel significa giallo, nup significa verde. La parola narel significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, zos significa viola, larp significa arancione, narel significa giallo, nup significa verde. La parola nup significa",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, gref significa viola, satek significa rosso, larp significa verde, benu significa marrone. La parola gref significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, gref significa viola, satek significa rosso, larp significa verde, benu significa marrone. La parola satek significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, gref significa viola, satek significa rosso, larp significa verde, benu significa marrone. La parola larp significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, gref significa viola, satek significa rosso, larp significa verde, benu significa marrone. La parola benu significa",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, rimo significa giallo, zorp significa rosa, nup significa viola, bren significa blu. La parola rimo significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa giallo, zorp significa rosa, nup significa viola, bren significa blu. La parola zorp significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa giallo, zorp significa rosa, nup significa viola, bren significa blu. La parola nup significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa giallo, zorp significa rosa, nup significa viola, bren significa blu. La parola bren significa",
+          "target": " blu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, tal significa verde, keld significa viola, wim significa rosa, nup significa azzurro. La parola tal significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, tal significa verde, keld significa viola, wim significa rosa, nup significa azzurro. La parola keld significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, tal significa verde, keld significa viola, wim significa rosa, nup significa azzurro. La parola wim significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, tal significa verde, keld significa viola, wim significa rosa, nup significa azzurro. La parola nup significa",
+          "target": " azzurro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, benu significa blu, dax significa arancione, lun significa viola, nup significa grigio. La parola benu significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, benu significa blu, dax significa arancione, lun significa viola, nup significa grigio. La parola dax significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, benu significa blu, dax significa arancione, lun significa viola, nup significa grigio. La parola lun significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, benu significa blu, dax significa arancione, lun significa viola, nup significa grigio. La parola nup significa",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, pulo significa rosso, fep significa arancione, tal significa nero, larp significa viola. La parola pulo significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, pulo significa rosso, fep significa arancione, tal significa nero, larp significa viola. La parola fep significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, pulo significa rosso, fep significa arancione, tal significa nero, larp significa viola. La parola tal significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, pulo significa rosso, fep significa arancione, tal significa nero, larp significa viola. La parola larp significa",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, gref significa giallo, benu significa nero, narel significa azzurro, miv significa rosso. La parola gref significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, gref significa giallo, benu significa nero, narel significa azzurro, miv significa rosso. La parola benu significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, gref significa giallo, benu significa nero, narel significa azzurro, miv significa rosso. La parola narel significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, gref significa giallo, benu significa nero, narel significa azzurro, miv significa rosso. La parola miv significa",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, rimo significa rosa, fep significa azzurro, zos significa blu, narel significa rosso. La parola rimo significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa rosa, fep significa azzurro, zos significa blu, narel significa rosso. La parola fep significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa rosa, fep significa azzurro, zos significa blu, narel significa rosso. La parola zos significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa rosa, fep significa azzurro, zos significa blu, narel significa rosso. La parola narel significa",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, tal significa arancione, lun significa verde, zos significa grigio, nup significa giallo. La parola tal significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, tal significa arancione, lun significa verde, zos significa grigio, nup significa giallo. La parola lun significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, tal significa arancione, lun significa verde, zos significa grigio, nup significa giallo. La parola zos significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, tal significa arancione, lun significa verde, zos significa grigio, nup significa giallo. La parola nup significa",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, larp significa bianco, lun significa nero, gref significa giallo, tovik significa azzurro. La parola larp significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, larp significa bianco, lun significa nero, gref significa giallo, tovik significa azzurro. La parola lun significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, larp significa bianco, lun significa nero, gref significa giallo, tovik significa azzurro. La parola gref significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, larp significa bianco, lun significa nero, gref significa giallo, tovik significa azzurro. La parola tovik significa",
+          "target": " azzurro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, keld significa viola, pulo significa bianco, miv significa verde, vash significa rosso. La parola keld significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, keld significa viola, pulo significa bianco, miv significa verde, vash significa rosso. La parola pulo significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, keld significa viola, pulo significa bianco, miv significa verde, vash significa rosso. La parola miv significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, keld significa viola, pulo significa bianco, miv significa verde, vash significa rosso. La parola vash significa",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, larp significa rosa, zos significa giallo, zorp significa azzurro, lun significa nero. La parola larp significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, larp significa rosa, zos significa giallo, zorp significa azzurro, lun significa nero. La parola zos significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, larp significa rosa, zos significa giallo, zorp significa azzurro, lun significa nero. La parola zorp significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, larp significa rosa, zos significa giallo, zorp significa azzurro, lun significa nero. La parola lun significa",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, satek significa nero, lun significa blu, nup significa viola, larp significa rosa. La parola satek significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, satek significa nero, lun significa blu, nup significa viola, larp significa rosa. La parola lun significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, satek significa nero, lun significa blu, nup significa viola, larp significa rosa. La parola nup significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, satek significa nero, lun significa blu, nup significa viola, larp significa rosa. La parola larp significa",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, larp significa marrone, tovik significa verde, dax significa blu, vash significa nero. La parola larp significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, larp significa marrone, tovik significa verde, dax significa blu, vash significa nero. La parola tovik significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, larp significa marrone, tovik significa verde, dax significa blu, vash significa nero. La parola dax significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, larp significa marrone, tovik significa verde, dax significa blu, vash significa nero. La parola vash significa",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, zorp significa nero, benu significa grigio, miv significa giallo, keld significa bianco. La parola zorp significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, zorp significa nero, benu significa grigio, miv significa giallo, keld significa bianco. La parola benu significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, zorp significa nero, benu significa grigio, miv significa giallo, keld significa bianco. La parola miv significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, zorp significa nero, benu significa grigio, miv significa giallo, keld significa bianco. La parola keld significa",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, keld significa rosso, tovik significa verde, narel significa arancione, larp significa nero. La parola keld significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, keld significa rosso, tovik significa verde, narel significa arancione, larp significa nero. La parola tovik significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, keld significa rosso, tovik significa verde, narel significa arancione, larp significa nero. La parola narel significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, keld significa rosso, tovik significa verde, narel significa arancione, larp significa nero. La parola larp significa",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, dax significa blu, rimo significa viola, miv significa rosa, keld significa arancione. La parola dax significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, dax significa blu, rimo significa viola, miv significa rosa, keld significa arancione. La parola rimo significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, dax significa blu, rimo significa viola, miv significa rosa, keld significa arancione. La parola miv significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, dax significa blu, rimo significa viola, miv significa rosa, keld significa arancione. La parola keld significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, zorp significa bianco, lun significa grigio, miv significa rosa, fep significa blu. La parola zorp significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, zorp significa bianco, lun significa grigio, miv significa rosa, fep significa blu. La parola lun significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, zorp significa bianco, lun significa grigio, miv significa rosa, fep significa blu. La parola miv significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, zorp significa bianco, lun significa grigio, miv significa rosa, fep significa blu. La parola fep significa",
+          "target": " blu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, miv significa rosso, fep significa bianco, vash significa giallo, satek significa grigio. La parola miv significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, miv significa rosso, fep significa bianco, vash significa giallo, satek significa grigio. La parola fep significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, miv significa rosso, fep significa bianco, vash significa giallo, satek significa grigio. La parola vash significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, miv significa rosso, fep significa bianco, vash significa giallo, satek significa grigio. La parola satek significa",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, satek significa giallo, benu significa blu, gref significa marrone, miv significa arancione. La parola satek significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, satek significa giallo, benu significa blu, gref significa marrone, miv significa arancione. La parola benu significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, satek significa giallo, benu significa blu, gref significa marrone, miv significa arancione. La parola gref significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, satek significa giallo, benu significa blu, gref significa marrone, miv significa arancione. La parola miv significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, tal significa nero, rimo significa blu, gref significa verde, nup significa arancione. La parola tal significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, tal significa nero, rimo significa blu, gref significa verde, nup significa arancione. La parola rimo significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, tal significa nero, rimo significa blu, gref significa verde, nup significa arancione. La parola gref significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, tal significa nero, rimo significa blu, gref significa verde, nup significa arancione. La parola nup significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, narel significa bianco, nup significa nero, bren significa giallo, wim significa grigio. La parola narel significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, narel significa bianco, nup significa nero, bren significa giallo, wim significa grigio. La parola nup significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, narel significa bianco, nup significa nero, bren significa giallo, wim significa grigio. La parola bren significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, narel significa bianco, nup significa nero, bren significa giallo, wim significa grigio. La parola wim significa",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, bren significa verde, pulo significa nero, rimo significa bianco, keld significa rosa. La parola bren significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, bren significa verde, pulo significa nero, rimo significa bianco, keld significa rosa. La parola pulo significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, bren significa verde, pulo significa nero, rimo significa bianco, keld significa rosa. La parola rimo significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, bren significa verde, pulo significa nero, rimo significa bianco, keld significa rosa. La parola keld significa",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, benu significa nero, rimo significa blu, dax significa grigio, zorp significa azzurro. La parola benu significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, benu significa nero, rimo significa blu, dax significa grigio, zorp significa azzurro. La parola rimo significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, benu significa nero, rimo significa blu, dax significa grigio, zorp significa azzurro. La parola dax significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, benu significa nero, rimo significa blu, dax significa grigio, zorp significa azzurro. La parola zorp significa",
+          "target": " azzurro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, zorp significa arancione, gref significa grigio, satek significa rosa, rimo significa verde. La parola zorp significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, zorp significa arancione, gref significa grigio, satek significa rosa, rimo significa verde. La parola gref significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, zorp significa arancione, gref significa grigio, satek significa rosa, rimo significa verde. La parola satek significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, zorp significa arancione, gref significa grigio, satek significa rosa, rimo significa verde. La parola rimo significa",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, zos significa azzurro, bren significa arancione, keld significa rosso, fep significa rosa. La parola zos significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, zos significa azzurro, bren significa arancione, keld significa rosso, fep significa rosa. La parola bren significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, zos significa azzurro, bren significa arancione, keld significa rosso, fep significa rosa. La parola keld significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, zos significa azzurro, bren significa arancione, keld significa rosso, fep significa rosa. La parola fep significa",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, satek significa grigio, gref significa bianco, lun significa verde, rimo significa nero. La parola satek significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, satek significa grigio, gref significa bianco, lun significa verde, rimo significa nero. La parola gref significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, satek significa grigio, gref significa bianco, lun significa verde, rimo significa nero. La parola lun significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, satek significa grigio, gref significa bianco, lun significa verde, rimo significa nero. La parola rimo significa",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, gref significa rosa, rimo significa blu, pulo significa giallo, vash significa arancione. La parola gref significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, gref significa rosa, rimo significa blu, pulo significa giallo, vash significa arancione. La parola rimo significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, gref significa rosa, rimo significa blu, pulo significa giallo, vash significa arancione. La parola pulo significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, gref significa rosa, rimo significa blu, pulo significa giallo, vash significa arancione. La parola vash significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, tal significa rosa, zos significa rosso, vash significa nero, pulo significa grigio. La parola tal significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, tal significa rosa, zos significa rosso, vash significa nero, pulo significa grigio. La parola zos significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, tal significa rosa, zos significa rosso, vash significa nero, pulo significa grigio. La parola vash significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, tal significa rosa, zos significa rosso, vash significa nero, pulo significa grigio. La parola pulo significa",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, gref significa viola, zos significa azzurro, rimo significa giallo, wim significa rosa. La parola gref significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, gref significa viola, zos significa azzurro, rimo significa giallo, wim significa rosa. La parola zos significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, gref significa viola, zos significa azzurro, rimo significa giallo, wim significa rosa. La parola rimo significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, gref significa viola, zos significa azzurro, rimo significa giallo, wim significa rosa. La parola wim significa",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, tal significa marrone, lun significa azzurro, vash significa grigio, tovik significa bianco. La parola tal significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, tal significa marrone, lun significa azzurro, vash significa grigio, tovik significa bianco. La parola lun significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, tal significa marrone, lun significa azzurro, vash significa grigio, tovik significa bianco. La parola vash significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, tal significa marrone, lun significa azzurro, vash significa grigio, tovik significa bianco. La parola tovik significa",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, nup significa blu, vash significa rosso, larp significa marrone, bren significa giallo. La parola nup significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, nup significa blu, vash significa rosso, larp significa marrone, bren significa giallo. La parola vash significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, nup significa blu, vash significa rosso, larp significa marrone, bren significa giallo. La parola larp significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, nup significa blu, vash significa rosso, larp significa marrone, bren significa giallo. La parola bren significa",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, larp significa marrone, lun significa grigio, wim significa giallo, gref significa arancione. La parola larp significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, larp significa marrone, lun significa grigio, wim significa giallo, gref significa arancione. La parola lun significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, larp significa marrone, lun significa grigio, wim significa giallo, gref significa arancione. La parola wim significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, larp significa marrone, lun significa grigio, wim significa giallo, gref significa arancione. La parola gref significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, pulo significa verde, nup significa arancione, miv significa giallo, dax significa blu. La parola pulo significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, pulo significa verde, nup significa arancione, miv significa giallo, dax significa blu. La parola nup significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, pulo significa verde, nup significa arancione, miv significa giallo, dax significa blu. La parola miv significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, pulo significa verde, nup significa arancione, miv significa giallo, dax significa blu. La parola dax significa",
+          "target": " blu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, fep significa viola, benu significa blu, nup significa azzurro, zorp significa rosa. La parola fep significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, fep significa viola, benu significa blu, nup significa azzurro, zorp significa rosa. La parola benu significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, fep significa viola, benu significa blu, nup significa azzurro, zorp significa rosa. La parola nup significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, fep significa viola, benu significa blu, nup significa azzurro, zorp significa rosa. La parola zorp significa",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, wim significa blu, tovik significa viola, gref significa marrone, larp significa nero. La parola wim significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, wim significa blu, tovik significa viola, gref significa marrone, larp significa nero. La parola tovik significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, wim significa blu, tovik significa viola, gref significa marrone, larp significa nero. La parola gref significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, wim significa blu, tovik significa viola, gref significa marrone, larp significa nero. La parola larp significa",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, keld significa nero, tovik significa viola, narel significa verde, nup significa azzurro. La parola keld significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, keld significa nero, tovik significa viola, narel significa verde, nup significa azzurro. La parola tovik significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, keld significa nero, tovik significa viola, narel significa verde, nup significa azzurro. La parola narel significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, keld significa nero, tovik significa viola, narel significa verde, nup significa azzurro. La parola nup significa",
+          "target": " azzurro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, keld significa blu, rimo significa azzurro, zos significa giallo, lun significa arancione. La parola keld significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, keld significa blu, rimo significa azzurro, zos significa giallo, lun significa arancione. La parola rimo significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, keld significa blu, rimo significa azzurro, zos significa giallo, lun significa arancione. La parola zos significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, keld significa blu, rimo significa azzurro, zos significa giallo, lun significa arancione. La parola lun significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, bren significa bianco, lun significa rosa, gref significa viola, benu significa arancione. La parola bren significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, bren significa bianco, lun significa rosa, gref significa viola, benu significa arancione. La parola lun significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, bren significa bianco, lun significa rosa, gref significa viola, benu significa arancione. La parola gref significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, bren significa bianco, lun significa rosa, gref significa viola, benu significa arancione. La parola benu significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, bren significa grigio, gref significa arancione, pulo significa viola, dax significa rosso. La parola bren significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, bren significa grigio, gref significa arancione, pulo significa viola, dax significa rosso. La parola gref significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, bren significa grigio, gref significa arancione, pulo significa viola, dax significa rosso. La parola pulo significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, bren significa grigio, gref significa arancione, pulo significa viola, dax significa rosso. La parola dax significa",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, vash significa viola, pulo significa giallo, gref significa nero, nup significa arancione. La parola vash significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, vash significa viola, pulo significa giallo, gref significa nero, nup significa arancione. La parola pulo significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, vash significa viola, pulo significa giallo, gref significa nero, nup significa arancione. La parola gref significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, vash significa viola, pulo significa giallo, gref significa nero, nup significa arancione. La parola nup significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, dax significa azzurro, pulo significa blu, rimo significa viola, zos significa marrone. La parola dax significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, dax significa azzurro, pulo significa blu, rimo significa viola, zos significa marrone. La parola pulo significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, dax significa azzurro, pulo significa blu, rimo significa viola, zos significa marrone. La parola rimo significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, dax significa azzurro, pulo significa blu, rimo significa viola, zos significa marrone. La parola zos significa",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, pulo significa marrone, zos significa arancione, dax significa blu, lun significa viola. La parola pulo significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, pulo significa marrone, zos significa arancione, dax significa blu, lun significa viola. La parola zos significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, pulo significa marrone, zos significa arancione, dax significa blu, lun significa viola. La parola dax significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, pulo significa marrone, zos significa arancione, dax significa blu, lun significa viola. La parola lun significa",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, fep significa giallo, keld significa viola, pulo significa bianco, rimo significa grigio. La parola fep significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, fep significa giallo, keld significa viola, pulo significa bianco, rimo significa grigio. La parola keld significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, fep significa giallo, keld significa viola, pulo significa bianco, rimo significa grigio. La parola pulo significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, fep significa giallo, keld significa viola, pulo significa bianco, rimo significa grigio. La parola rimo significa",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, keld significa viola, gref significa rosso, larp significa rosa, lun significa marrone. La parola keld significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, keld significa viola, gref significa rosso, larp significa rosa, lun significa marrone. La parola gref significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, keld significa viola, gref significa rosso, larp significa rosa, lun significa marrone. La parola larp significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, keld significa viola, gref significa rosso, larp significa rosa, lun significa marrone. La parola lun significa",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, nup significa giallo, lun significa azzurro, fep significa rosso, dax significa blu. La parola nup significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, nup significa giallo, lun significa azzurro, fep significa rosso, dax significa blu. La parola lun significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, nup significa giallo, lun significa azzurro, fep significa rosso, dax significa blu. La parola fep significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, nup significa giallo, lun significa azzurro, fep significa rosso, dax significa blu. La parola dax significa",
+          "target": " blu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, miv significa viola, narel significa nero, zorp significa bianco, bren significa blu. La parola miv significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, miv significa viola, narel significa nero, zorp significa bianco, bren significa blu. La parola narel significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, miv significa viola, narel significa nero, zorp significa bianco, bren significa blu. La parola zorp significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, miv significa viola, narel significa nero, zorp significa bianco, bren significa blu. La parola bren significa",
+          "target": " blu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, tal significa nero, vash significa grigio, zorp significa arancione, dax significa marrone. La parola tal significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, tal significa nero, vash significa grigio, zorp significa arancione, dax significa marrone. La parola vash significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, tal significa nero, vash significa grigio, zorp significa arancione, dax significa marrone. La parola zorp significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, tal significa nero, vash significa grigio, zorp significa arancione, dax significa marrone. La parola dax significa",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, lun significa azzurro, zos significa nero, nup significa grigio, zorp significa verde. La parola lun significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, lun significa azzurro, zos significa nero, nup significa grigio, zorp significa verde. La parola zos significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, lun significa azzurro, zos significa nero, nup significa grigio, zorp significa verde. La parola nup significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, lun significa azzurro, zos significa nero, nup significa grigio, zorp significa verde. La parola zorp significa",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, satek significa verde, benu significa rosa, gref significa bianco, larp significa rosso. La parola satek significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, satek significa verde, benu significa rosa, gref significa bianco, larp significa rosso. La parola benu significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, satek significa verde, benu significa rosa, gref significa bianco, larp significa rosso. La parola gref significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, satek significa verde, benu significa rosa, gref significa bianco, larp significa rosso. La parola larp significa",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, narel significa marrone, zorp significa viola, gref significa blu, satek significa arancione. La parola narel significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, narel significa marrone, zorp significa viola, gref significa blu, satek significa arancione. La parola zorp significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, narel significa marrone, zorp significa viola, gref significa blu, satek significa arancione. La parola gref significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, narel significa marrone, zorp significa viola, gref significa blu, satek significa arancione. La parola satek significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, tovik significa viola, keld significa arancione, benu significa grigio, narel significa nero. La parola tovik significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, tovik significa viola, keld significa arancione, benu significa grigio, narel significa nero. La parola keld significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, tovik significa viola, keld significa arancione, benu significa grigio, narel significa nero. La parola benu significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, tovik significa viola, keld significa arancione, benu significa grigio, narel significa nero. La parola narel significa",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, nup significa giallo, lun significa viola, keld significa grigio, wim significa arancione. La parola nup significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, nup significa giallo, lun significa viola, keld significa grigio, wim significa arancione. La parola lun significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, nup significa giallo, lun significa viola, keld significa grigio, wim significa arancione. La parola keld significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, nup significa giallo, lun significa viola, keld significa grigio, wim significa arancione. La parola wim significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, dax significa viola, narel significa giallo, rimo significa bianco, tal significa nero. La parola dax significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, dax significa viola, narel significa giallo, rimo significa bianco, tal significa nero. La parola narel significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, dax significa viola, narel significa giallo, rimo significa bianco, tal significa nero. La parola rimo significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, dax significa viola, narel significa giallo, rimo significa bianco, tal significa nero. La parola tal significa",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, keld significa rosa, larp significa giallo, benu significa verde, dax significa marrone. La parola keld significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, keld significa rosa, larp significa giallo, benu significa verde, dax significa marrone. La parola larp significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, keld significa rosa, larp significa giallo, benu significa verde, dax significa marrone. La parola benu significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, keld significa rosa, larp significa giallo, benu significa verde, dax significa marrone. La parola dax significa",
+          "target": " marrone."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, narel significa marrone, benu significa viola, nup significa azzurro, larp significa rosso. La parola narel significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, narel significa marrone, benu significa viola, nup significa azzurro, larp significa rosso. La parola benu significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, narel significa marrone, benu significa viola, nup significa azzurro, larp significa rosso. La parola nup significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, narel significa marrone, benu significa viola, nup significa azzurro, larp significa rosso. La parola larp significa",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, vash significa nero, nup significa marrone, pulo significa grigio, zos significa bianco. La parola vash significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, vash significa nero, nup significa marrone, pulo significa grigio, zos significa bianco. La parola nup significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, vash significa nero, nup significa marrone, pulo significa grigio, zos significa bianco. La parola pulo significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, vash significa nero, nup significa marrone, pulo significa grigio, zos significa bianco. La parola zos significa",
+          "target": " bianco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, benu significa azzurro, tovik significa rosa, satek significa bianco, gref significa grigio. La parola benu significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, benu significa azzurro, tovik significa rosa, satek significa bianco, gref significa grigio. La parola tovik significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, benu significa azzurro, tovik significa rosa, satek significa bianco, gref significa grigio. La parola satek significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, benu significa azzurro, tovik significa rosa, satek significa bianco, gref significa grigio. La parola gref significa",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, keld significa verde, vash significa giallo, larp significa bianco, nup significa azzurro. La parola keld significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, keld significa verde, vash significa giallo, larp significa bianco, nup significa azzurro. La parola vash significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, keld significa verde, vash significa giallo, larp significa bianco, nup significa azzurro. La parola larp significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, keld significa verde, vash significa giallo, larp significa bianco, nup significa azzurro. La parola nup significa",
+          "target": " azzurro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, bren significa azzurro, larp significa grigio, narel significa rosa, keld significa nero. La parola bren significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, bren significa azzurro, larp significa grigio, narel significa rosa, keld significa nero. La parola larp significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, bren significa azzurro, larp significa grigio, narel significa rosa, keld significa nero. La parola narel significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, bren significa azzurro, larp significa grigio, narel significa rosa, keld significa nero. La parola keld significa",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, bren significa blu, vash significa nero, nup significa rosso, satek significa rosa. La parola bren significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, bren significa blu, vash significa nero, nup significa rosso, satek significa rosa. La parola vash significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, bren significa blu, vash significa nero, nup significa rosso, satek significa rosa. La parola nup significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, bren significa blu, vash significa nero, nup significa rosso, satek significa rosa. La parola satek significa",
+          "target": " rosa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, keld significa azzurro, fep significa blu, zos significa viola, vash significa verde. La parola keld significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, keld significa azzurro, fep significa blu, zos significa viola, vash significa verde. La parola fep significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, keld significa azzurro, fep significa blu, zos significa viola, vash significa verde. La parola zos significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, keld significa azzurro, fep significa blu, zos significa viola, vash significa verde. La parola vash significa",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, zos significa viola, vash significa bianco, narel significa blu, benu significa rosso. La parola zos significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, zos significa viola, vash significa bianco, narel significa blu, benu significa rosso. La parola vash significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, zos significa viola, vash significa bianco, narel significa blu, benu significa rosso. La parola narel significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, zos significa viola, vash significa bianco, narel significa blu, benu significa rosso. La parola benu significa",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, narel significa viola, zorp significa verde, lun significa grigio, pulo significa rosso. La parola narel significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, narel significa viola, zorp significa verde, lun significa grigio, pulo significa rosso. La parola zorp significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, narel significa viola, zorp significa verde, lun significa grigio, pulo significa rosso. La parola lun significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, narel significa viola, zorp significa verde, lun significa grigio, pulo significa rosso. La parola pulo significa",
+          "target": " rosso."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, miv significa giallo, zos significa verde, vash significa rosa, lun significa arancione. La parola miv significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, miv significa giallo, zos significa verde, vash significa rosa, lun significa arancione. La parola zos significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, miv significa giallo, zos significa verde, vash significa rosa, lun significa arancione. La parola vash significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, miv significa giallo, zos significa verde, vash significa rosa, lun significa arancione. La parola lun significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, tovik significa nero, pulo significa grigio, wim significa arancione, benu significa azzurro. La parola tovik significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, tovik significa nero, pulo significa grigio, wim significa arancione, benu significa azzurro. La parola pulo significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, tovik significa nero, pulo significa grigio, wim significa arancione, benu significa azzurro. La parola wim significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, tovik significa nero, pulo significa grigio, wim significa arancione, benu significa azzurro. La parola benu significa",
+          "target": " azzurro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, larp significa nero, zorp significa marrone, bren significa verde, benu significa blu. La parola larp significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, larp significa nero, zorp significa marrone, bren significa verde, benu significa blu. La parola zorp significa",
+          "target": " marrone."
+        },
+        {
+          "context": "Nel codice inventato, larp significa nero, zorp significa marrone, bren significa verde, benu significa blu. La parola bren significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, larp significa nero, zorp significa marrone, bren significa verde, benu significa blu. La parola benu significa",
+          "target": " blu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, tal significa rosso, benu significa arancione, lun significa viola, larp significa grigio. La parola tal significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, tal significa rosso, benu significa arancione, lun significa viola, larp significa grigio. La parola benu significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, tal significa rosso, benu significa arancione, lun significa viola, larp significa grigio. La parola lun significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, tal significa rosso, benu significa arancione, lun significa viola, larp significa grigio. La parola larp significa",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, fep significa azzurro, nup significa viola, vash significa verde, benu significa giallo. La parola fep significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, fep significa azzurro, nup significa viola, vash significa verde, benu significa giallo. La parola nup significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, fep significa azzurro, nup significa viola, vash significa verde, benu significa giallo. La parola vash significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, fep significa azzurro, nup significa viola, vash significa verde, benu significa giallo. La parola benu significa",
+          "target": " giallo."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, zos significa rosa, bren significa giallo, gref significa blu, zorp significa nero. La parola zos significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, zos significa rosa, bren significa giallo, gref significa blu, zorp significa nero. La parola bren significa",
+          "target": " giallo."
+        },
+        {
+          "context": "Nel codice inventato, zos significa rosa, bren significa giallo, gref significa blu, zorp significa nero. La parola gref significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, zos significa rosa, bren significa giallo, gref significa blu, zorp significa nero. La parola zorp significa",
+          "target": " nero."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, lun significa grigio, fep significa azzurro, tal significa nero, vash significa viola. La parola lun significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, lun significa grigio, fep significa azzurro, tal significa nero, vash significa viola. La parola fep significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, lun significa grigio, fep significa azzurro, tal significa nero, vash significa viola. La parola tal significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, lun significa grigio, fep significa azzurro, tal significa nero, vash significa viola. La parola vash significa",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, wim significa rosa, vash significa azzurro, pulo significa viola, keld significa grigio. La parola wim significa",
+          "target": " rosa."
+        },
+        {
+          "context": "Nel codice inventato, wim significa rosa, vash significa azzurro, pulo significa viola, keld significa grigio. La parola vash significa",
+          "target": " azzurro."
+        },
+        {
+          "context": "Nel codice inventato, wim significa rosa, vash significa azzurro, pulo significa viola, keld significa grigio. La parola pulo significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, wim significa rosa, vash significa azzurro, pulo significa viola, keld significa grigio. La parola keld significa",
+          "target": " grigio."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, larp significa grigio, fep significa nero, gref significa rosso, rimo significa verde. La parola larp significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, larp significa grigio, fep significa nero, gref significa rosso, rimo significa verde. La parola fep significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, larp significa grigio, fep significa nero, gref significa rosso, rimo significa verde. La parola gref significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, larp significa grigio, fep significa nero, gref significa rosso, rimo significa verde. La parola rimo significa",
+          "target": " verde."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, zos significa grigio, larp significa rosso, dax significa blu, keld significa viola. La parola zos significa",
+          "target": " grigio."
+        },
+        {
+          "context": "Nel codice inventato, zos significa grigio, larp significa rosso, dax significa blu, keld significa viola. La parola larp significa",
+          "target": " rosso."
+        },
+        {
+          "context": "Nel codice inventato, zos significa grigio, larp significa rosso, dax significa blu, keld significa viola. La parola dax significa",
+          "target": " blu."
+        },
+        {
+          "context": "Nel codice inventato, zos significa grigio, larp significa rosso, dax significa blu, keld significa viola. La parola keld significa",
+          "target": " viola."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, keld significa verde, tal significa viola, gref significa bianco, narel significa arancione. La parola keld significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, keld significa verde, tal significa viola, gref significa bianco, narel significa arancione. La parola tal significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, keld significa verde, tal significa viola, gref significa bianco, narel significa arancione. La parola gref significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, keld significa verde, tal significa viola, gref significa bianco, narel significa arancione. La parola narel significa",
+          "target": " arancione."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, rimo significa arancione, zorp significa viola, tal significa nero, larp significa azzurro. La parola rimo significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa arancione, zorp significa viola, tal significa nero, larp significa azzurro. La parola zorp significa",
+          "target": " viola."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa arancione, zorp significa viola, tal significa nero, larp significa azzurro. La parola tal significa",
+          "target": " nero."
+        },
+        {
+          "context": "Nel codice inventato, rimo significa arancione, zorp significa viola, tal significa nero, larp significa azzurro. La parola larp significa",
+          "target": " azzurro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Nel codice inventato, wim significa bianco, lun significa verde, rimo significa arancione, keld significa rosa. La parola wim significa",
+          "target": " bianco."
+        },
+        {
+          "context": "Nel codice inventato, wim significa bianco, lun significa verde, rimo significa arancione, keld significa rosa. La parola lun significa",
+          "target": " verde."
+        },
+        {
+          "context": "Nel codice inventato, wim significa bianco, lun significa verde, rimo significa arancione, keld significa rosa. La parola rimo significa",
+          "target": " arancione."
+        },
+        {
+          "context": "Nel codice inventato, wim significa bianco, lun significa verde, rimo significa arancione, keld significa rosa. La parola keld significa",
+          "target": " rosa."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

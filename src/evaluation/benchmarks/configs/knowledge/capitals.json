@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "id": "country_capitals",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "country_capitals": [
+      {"country": "Italia", "capital": "Roma"},
+      {"country": "Francia", "capital": "Parigi"},
+      {"country": "Germania", "capital": "Berlino"},
+      {"country": "Spagna", "capital": "Madrid"},
+      {"country": "Portogallo", "capital": "Lisbona"},
+      {"country": "Inghilterra", "capital": "Londra"},
+      {"country": "Scozia", "capital": "Edimburgo"},
+      {"country": "Irlanda", "capital": "Dublino"},
+      {"country": "Russia", "capital": "Mosca"},
+      {"country": "Ucraina", "capital": "Kiev"},
+      {"country": "Polona", "capital": "Varsavia"},
+      {"country": "Paesi Bassi", "capital": "Amsterdam"},
+      {"country": "Danimarca", "capital": "Copenaghen"},
+      {"country": "Svezia", "capital": "Stoccolma"},
+      {"country": "Norvegia", "capital": "Oslo"},
+      {"country": "Finlandia", "capital": "Helsinki"},
+      {"country": "Stati Uniti d'America", "capital": "Washington, D.C."},
+      {"country": "Canada", "capital": "Ottawa"},
+      {"country": "Messico", "capital": "Città del Messico"},
+      {"country": "Brasile", "capital": "Brasilia"},
+      {"country": "Argentina", "capital": "Buenos Aires"},
+      {"country": "Cina", "capital": "Pechino"},
+      {"country": "Giappone", "capital": "Tokyo"},
+      {"country": "Corea del Sud", "capital": "Seoul"},
+      {"country": "India", "capital": "Nuova Delhi"},
+      {"country": "Egitto", "capital": "il Cairo"},
+      {"country": "Marocco", "capital": "Rabat"}
+    ]
+  },
+
+  "variables": {
+    "fact": {
+      "type": "choice",
+      "source": "country_capitals"
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "fact",
+        "operation": "resample_distinct"
+      }
+    ],
+    "unique_on": ["$fact.country", "$fact.capital"]
+  },
+
+  "templates": [
+    {
+      "context": "La capitale di {fact.country} è",
+      "target": " {fact.capital}."
+    }
+  ]
+}

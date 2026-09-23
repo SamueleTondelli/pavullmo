@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "id": "reasoning_rule_chaining",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "entities": [
+      "Nimo", "Taro", "Lume", "Savi", "Reko", "Pimo", "Daro", "Vela",
+      "Ciro", "Fano", "Gira", "Melo", "Naro", "Pela", "Rivo", "Seno",
+      "Timo", "Varo", "Zeno", "Biro"
+    ],
+    "groups": [
+      "gruppo A", "gruppo B", "gruppo C", "gruppo D", "gruppo E", "gruppo F",
+      "gruppo G", "gruppo H", "gruppo I", "gruppo L", "gruppo M", "gruppo N"
+    ],
+    "markers": [
+      "rosso", "verde", "blu", "giallo", "nero", "bianco",
+      "arancione", "viola", "rosa", "grigio", "marrone", "azzurro"
+    ],
+    "codes": [
+      "K1", "K2", "K3", "K4", "K5", "K6", "K7", "K8", "K9", "K10",
+      "K11", "K12", "K13", "K14", "K15", "K16"
+    ]
+  },
+
+  "variables": {
+    "entities": {"type": "sample", "source": "entities", "count": 4},
+    "groups": {"type": "sample", "source": "groups", "count": 4},
+    "markers": {"type": "sample", "source": "markers", "count": 4},
+    "codes": {"type": "sample", "source": "codes", "count": 4},
+    "query_index": {"type": "constant", "value": 0}
+  },
+
+  "derived": {
+    "entity_groups": {
+      "op": "pair_strings",
+      "args": ["$entities", " appartiene al ", "$groups"]
+    },
+    "group_markers": {
+      "op": "pair_strings",
+      "args": ["$groups", " ha il simbolo ", "$markers"]
+    },
+    "marker_codes": {
+      "op": "pair_strings",
+      "args": ["$markers", " corrisponde al codice ", "$codes"]
+    },
+    "rules": {
+      "op": "concatenate",
+      "args": ["$entity_groups", "$group_markers", "$marker_codes"]
+    },
+    "query_entity": {
+      "op": "item_at",
+      "args": ["$entities", "$query_index"]
+    },
+    "answer": {
+      "op": "item_at",
+      "args": ["$codes", "$query_index"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$query_entity", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Applica tutte le associazioni in catena: {rules|comma_list}. Il codice assegnato a {query_entity} è",
+      "target": " {answer}."
+    }
+  ]
+}

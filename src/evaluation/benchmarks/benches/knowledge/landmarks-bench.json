@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "landmark_cities",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova l'Atomium è",
+          "target": " Bruxelles."
+        },
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova il Big Ben è",
+          "target": " Londra."
+        },
+        {
+          "context": "La città in cui si trova la Torre Eiffel è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La città in cui si trova la Porta di Brandeburgo è",
+          "target": " Berlino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Museo Guggenheim progettato da Frank Gehry è",
+          "target": " Bilbao."
+        },
+        {
+          "context": "La città in cui si trova la Torre Eiffel è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        },
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        },
+        {
+          "context": "La città in cui si trova il Colosseo è",
+          "target": " Roma."
+        },
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Taj Mahal è",
+          "target": " Agra."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        },
+        {
+          "context": "La città in cui si trova la Cattedrale di Santa Maria del Fiore è",
+          "target": " Firenze."
+        },
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        },
+        {
+          "context": "La città in cui si trova il Ponte di Rialto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        },
+        {
+          "context": "La città in cui si trova il Big Ben è",
+          "target": " Londra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        },
+        {
+          "context": "La città in cui si trova la Porta di Brandeburgo è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La città in cui si trova il Cremlino è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La città in cui si trova la Mole Antonelliana è",
+          "target": " Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Big Ben è",
+          "target": " Londra."
+        },
+        {
+          "context": "La città in cui si trova l'Atomium è",
+          "target": " Bruxelles."
+        },
+        {
+          "context": "La città in cui si trova il Cremlino è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La città in cui si trova la Porta di Brandeburgo è",
+          "target": " Berlino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        },
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        },
+        {
+          "context": "La città in cui si trova la Mole Antonelliana è",
+          "target": " Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Ponte di Rialto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        },
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        },
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        },
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Statua della Libertà è",
+          "target": " New York."
+        },
+        {
+          "context": "La città in cui si trova l'Atomium è",
+          "target": " Bruxelles."
+        },
+        {
+          "context": "La città in cui si trova il Big Ben è",
+          "target": " Londra."
+        },
+        {
+          "context": "La città in cui si trova il Palazzo di Schönbrunn è",
+          "target": " Vienna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        },
+        {
+          "context": "La città in cui si trova il Palazzo di Schönbrunn è",
+          "target": " Vienna."
+        },
+        {
+          "context": "La città in cui si trova il Palacio de Bellas Artes è",
+          "target": " Città del Messico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Taj Mahal è",
+          "target": " Agra."
+        },
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        },
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Grande Palazzo Reale è",
+          "target": " Bangkok."
+        },
+        {
+          "context": "La città in cui si trova la Mole Antonelliana è",
+          "target": " Torino."
+        },
+        {
+          "context": "La città in cui si trova l'Atomium è",
+          "target": " Bruxelles."
+        },
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Statua della Libertà è",
+          "target": " New York."
+        },
+        {
+          "context": "La città in cui si trova il Burj Khalifa è",
+          "target": " Dubai."
+        },
+        {
+          "context": "La città in cui si trova il Taj Mahal è",
+          "target": " Agra."
+        },
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        },
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        },
+        {
+          "context": "La città in cui si trova il Colosseo è",
+          "target": " Roma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Cattedrale di Santa Maria del Fiore è",
+          "target": " Firenze."
+        },
+        {
+          "context": "La città in cui si trova il Burj Khalifa è",
+          "target": " Dubai."
+        },
+        {
+          "context": "La città in cui si trova il Cremlino è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Colosseo è",
+          "target": " Roma."
+        },
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        },
+        {
+          "context": "La città in cui si trova il Museo Guggenheim progettato da Frank Gehry è",
+          "target": " Bilbao."
+        },
+        {
+          "context": "La città in cui si trova il Golden Gate Bridge è",
+          "target": " San Francisco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Museo Guggenheim progettato da Frank Gehry è",
+          "target": " Bilbao."
+        },
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        },
+        {
+          "context": "La città in cui si trova il Taj Mahal è",
+          "target": " Agra."
+        },
+        {
+          "context": "La città in cui si trova la Mole Antonelliana è",
+          "target": " Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Palazzo di Schönbrunn è",
+          "target": " Vienna."
+        },
+        {
+          "context": "La città in cui si trova il Palacio de Bellas Artes è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La città in cui si trova la Torre Eiffel è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La città in cui si trova il Burj Khalifa è",
+          "target": " Dubai."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova la Statua della Libertà è",
+          "target": " New York."
+        },
+        {
+          "context": "La città in cui si trova la Porta di Brandeburgo è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La città in cui si trova il Palacio de Bellas Artes è",
+          "target": " Città del Messico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        },
+        {
+          "context": "La città in cui si trova il Gateway Arch è",
+          "target": " Saint Louis."
+        },
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        },
+        {
+          "context": "La città in cui si trova la Torre di Belém è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La città in cui si trova il Grande Palazzo Reale è",
+          "target": " Bangkok."
+        },
+        {
+          "context": "La città in cui si trova la Mole Antonelliana è",
+          "target": " Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Burj Khalifa è",
+          "target": " Dubai."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova l'Atomium è",
+          "target": " Bruxelles."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova l'Atomium è",
+          "target": " Bruxelles."
+        },
+        {
+          "context": "La città in cui si trova il Colosseo è",
+          "target": " Roma."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova la Statua della Libertà è",
+          "target": " New York."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Big Ben è",
+          "target": " Londra."
+        },
+        {
+          "context": "La città in cui si trova la Cattedrale di Santa Maria del Fiore è",
+          "target": " Firenze."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova il Museo Guggenheim progettato da Frank Gehry è",
+          "target": " Bilbao."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Palacio de Bellas Artes è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        },
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        },
+        {
+          "context": "La città in cui si trova il Gateway Arch è",
+          "target": " Saint Louis."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        },
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        },
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        },
+        {
+          "context": "La città in cui si trova la Statua della Libertà è",
+          "target": " New York."
+        },
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Cattedrale di Santa Maria del Fiore è",
+          "target": " Firenze."
+        },
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova il Golden Gate Bridge è",
+          "target": " San Francisco."
+        },
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova la Casa Bianca è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        },
+        {
+          "context": "La città in cui si trova la Statua della Libertà è",
+          "target": " New York."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        },
+        {
+          "context": "La città in cui si trova il Palacio de Bellas Artes è",
+          "target": " Città del Messico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Grande Palazzo Reale è",
+          "target": " Bangkok."
+        },
+        {
+          "context": "La città in cui si trova la Statua della Libertà è",
+          "target": " New York."
+        },
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        },
+        {
+          "context": "La città in cui si trova il Cremlino è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        },
+        {
+          "context": "La città in cui si trova il Cremlino è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        },
+        {
+          "context": "La città in cui si trova la Statua della Libertà è",
+          "target": " New York."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Statua della Libertà è",
+          "target": " New York."
+        },
+        {
+          "context": "La città in cui si trova il Gateway Arch è",
+          "target": " Saint Louis."
+        },
+        {
+          "context": "La città in cui si trova il Museo Guggenheim progettato da Frank Gehry è",
+          "target": " Bilbao."
+        },
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Porta di Brandeburgo è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La città in cui si trova il Golden Gate Bridge è",
+          "target": " San Francisco."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova il Big Ben è",
+          "target": " Londra."
+        },
+        {
+          "context": "La città in cui si trova la Porta di Brandeburgo è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        },
+        {
+          "context": "La città in cui si trova il Palazzo di Schönbrunn è",
+          "target": " Vienna."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Torre di Belém è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        },
+        {
+          "context": "La città in cui si trova il Palazzo di Schönbrunn è",
+          "target": " Vienna."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        },
+        {
+          "context": "La città in cui si trova il Museo Guggenheim progettato da Frank Gehry è",
+          "target": " Bilbao."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Ponte di Rialto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova la Mole Antonelliana è",
+          "target": " Torino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Casa Bianca è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La città in cui si trova la Torre di Belém è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La città in cui si trova il Colosseo è",
+          "target": " Roma."
+        },
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Burj Khalifa è",
+          "target": " Dubai."
+        },
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        },
+        {
+          "context": "La città in cui si trova il Taj Mahal è",
+          "target": " Agra."
+        },
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Cattedrale di Santa Maria del Fiore è",
+          "target": " Firenze."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        },
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        },
+        {
+          "context": "La città in cui si trova il Museo Guggenheim progettato da Frank Gehry è",
+          "target": " Bilbao."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Statua della Libertà è",
+          "target": " New York."
+        },
+        {
+          "context": "La città in cui si trova la Porta di Brandeburgo è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Cattedrale di Santa Maria del Fiore è",
+          "target": " Firenze."
+        },
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        },
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        },
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Colosseo è",
+          "target": " Roma."
+        },
+        {
+          "context": "La città in cui si trova il Burj Khalifa è",
+          "target": " Dubai."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova il Taj Mahal è",
+          "target": " Agra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Taj Mahal è",
+          "target": " Agra."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        },
+        {
+          "context": "La città in cui si trova il Big Ben è",
+          "target": " Londra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Big Ben è",
+          "target": " Londra."
+        },
+        {
+          "context": "La città in cui si trova il Ponte di Rialto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        },
+        {
+          "context": "La città in cui si trova il Taj Mahal è",
+          "target": " Agra."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Torre Eiffel è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La città in cui si trova il Golden Gate Bridge è",
+          "target": " San Francisco."
+        },
+        {
+          "context": "La città in cui si trova la Cattedrale di Santa Maria del Fiore è",
+          "target": " Firenze."
+        },
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        },
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        },
+        {
+          "context": "La città in cui si trova il Big Ben è",
+          "target": " Londra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        },
+        {
+          "context": "La città in cui si trova il Ponte di Rialto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "La città in cui si trova la Torre di Belém è",
+          "target": " Lisbona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Torre Eiffel è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        },
+        {
+          "context": "La città in cui si trova il Grande Palazzo Reale è",
+          "target": " Bangkok."
+        },
+        {
+          "context": "La città in cui si trova la Cattedrale di Santa Maria del Fiore è",
+          "target": " Firenze."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        },
+        {
+          "context": "La città in cui si trova il Ponte di Rialto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "La città in cui si trova il Museo Guggenheim progettato da Frank Gehry è",
+          "target": " Bilbao."
+        },
+        {
+          "context": "La città in cui si trova il Grande Palazzo Reale è",
+          "target": " Bangkok."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Burj Khalifa è",
+          "target": " Dubai."
+        },
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        },
+        {
+          "context": "La città in cui si trova il Golden Gate Bridge è",
+          "target": " San Francisco."
+        },
+        {
+          "context": "La città in cui si trova il Big Ben è",
+          "target": " Londra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Ponte di Rialto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "La città in cui si trova il Palazzo di Schönbrunn è",
+          "target": " Vienna."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova il Museo Guggenheim progettato da Frank Gehry è",
+          "target": " Bilbao."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        },
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        },
+        {
+          "context": "La città in cui si trova il Big Ben è",
+          "target": " Londra."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Mole Antonelliana è",
+          "target": " Torino."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova la Cattedrale di Santa Maria del Fiore è",
+          "target": " Firenze."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Torre di Belém è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La città in cui si trova il Museo Guggenheim progettato da Frank Gehry è",
+          "target": " Bilbao."
+        },
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        },
+        {
+          "context": "La città in cui si trova il Palazzo di Schönbrunn è",
+          "target": " Vienna."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        },
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        },
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        },
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Grande Palazzo Reale è",
+          "target": " Bangkok."
+        },
+        {
+          "context": "La città in cui si trova il Colosseo è",
+          "target": " Roma."
+        },
+        {
+          "context": "La città in cui si trova la Torre di Belém è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La città in cui si trova il Cremlino è",
+          "target": " Mosca."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Palazzo di Schönbrunn è",
+          "target": " Vienna."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        },
+        {
+          "context": "La città in cui si trova la Casa Bianca è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Porta di Brandeburgo è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La città in cui si trova il Cremlino è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La città in cui si trova il Museo Guggenheim progettato da Frank Gehry è",
+          "target": " Bilbao."
+        },
+        {
+          "context": "La città in cui si trova la Cattedrale di Santa Maria del Fiore è",
+          "target": " Firenze."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Torre di Belém è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La città in cui si trova l'Atomium è",
+          "target": " Bruxelles."
+        },
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        },
+        {
+          "context": "La città in cui si trova il Taj Mahal è",
+          "target": " Agra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova il Gateway Arch è",
+          "target": " Saint Louis."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        },
+        {
+          "context": "La città in cui si trova il Palacio de Bellas Artes è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La città in cui si trova il Grande Palazzo Reale è",
+          "target": " Bangkok."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova l'Atomium è",
+          "target": " Bruxelles."
+        },
+        {
+          "context": "La città in cui si trova il Golden Gate Bridge è",
+          "target": " San Francisco."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova il Burj Khalifa è",
+          "target": " Dubai."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        },
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Casa Bianca è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La città in cui si trova il Museo Guggenheim progettato da Frank Gehry è",
+          "target": " Bilbao."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        },
+        {
+          "context": "La città in cui si trova il Palacio de Bellas Artes è",
+          "target": " Città del Messico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Casa Bianca è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova il Cremlino è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Palazzo di Schönbrunn è",
+          "target": " Vienna."
+        },
+        {
+          "context": "La città in cui si trova la Porta di Brandeburgo è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        },
+        {
+          "context": "La città in cui si trova il Taj Mahal è",
+          "target": " Agra."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Taj Mahal è",
+          "target": " Agra."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        },
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        },
+        {
+          "context": "La città in cui si trova la Statua della Libertà è",
+          "target": " New York."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Torre Eiffel è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        },
+        {
+          "context": "La città in cui si trova il Gateway Arch è",
+          "target": " Saint Louis."
+        },
+        {
+          "context": "La città in cui si trova il Colosseo è",
+          "target": " Roma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        },
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        },
+        {
+          "context": "La città in cui si trova l'Atomium è",
+          "target": " Bruxelles."
+        },
+        {
+          "context": "La città in cui si trova il Palacio de Bellas Artes è",
+          "target": " Città del Messico."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova il Palacio de Bellas Artes è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La città in cui si trova la Torre Eiffel è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        },
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        },
+        {
+          "context": "La città in cui si trova la Torre Eiffel è",
+          "target": " Parigi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Porta di Brandeburgo è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        },
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        },
+        {
+          "context": "La città in cui si trova il Palazzo di Schönbrunn è",
+          "target": " Vienna."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Cattedrale di Santa Maria del Fiore è",
+          "target": " Firenze."
+        },
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        },
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        },
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Gateway Arch è",
+          "target": " Saint Louis."
+        },
+        {
+          "context": "La città in cui si trova la Torre Eiffel è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La città in cui si trova la Statua della Libertà è",
+          "target": " New York."
+        },
+        {
+          "context": "La città in cui si trova il Ponte di Rialto è",
+          "target": " Venezia."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Big Ben è",
+          "target": " Londra."
+        },
+        {
+          "context": "La città in cui si trova la Torre Eiffel è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova il Cristo Redentore è",
+          "target": " Rio de Janeiro."
+        },
+        {
+          "context": "La città in cui si trova il Gateway Arch è",
+          "target": " Saint Louis."
+        },
+        {
+          "context": "La città in cui si trova il Burj Khalifa è",
+          "target": " Dubai."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Ponte Carlo è",
+          "target": " Praga."
+        },
+        {
+          "context": "La città in cui si trova la Mole Antonelliana è",
+          "target": " Torino."
+        },
+        {
+          "context": "La città in cui si trova la Città Proibita è",
+          "target": " Pechino."
+        },
+        {
+          "context": "La città in cui si trova il Burj Khalifa è",
+          "target": " Dubai."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        },
+        {
+          "context": "La città in cui si trova la Torre Eiffel è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La città in cui si trova la Torre di Belém è",
+          "target": " Lisbona."
+        },
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        },
+        {
+          "context": "La città in cui si trova la Torre di Belém è",
+          "target": " Lisbona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Ponte di Rialto è",
+          "target": " Venezia."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova la Mole Antonelliana è",
+          "target": " Torino."
+        },
+        {
+          "context": "La città in cui si trova la Sagrada Família è",
+          "target": " Barcellona."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        },
+        {
+          "context": "La città in cui si trova il Palacio de Bellas Artes è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La città in cui si trova l'Acropoli è",
+          "target": " Atene."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Taj Mahal è",
+          "target": " Agra."
+        },
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova il Golden Gate Bridge è",
+          "target": " San Francisco."
+        },
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Tempio del Loto è",
+          "target": " Nuova Delhi."
+        },
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        },
+        {
+          "context": "La città in cui si trova il Palazzo di Schönbrunn è",
+          "target": " Vienna."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Casa Bianca è",
+          "target": " Washington, D.C.."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova il Cloud Gate è",
+          "target": " Chicago."
+        },
+        {
+          "context": "La città in cui si trova le Torri Petronas è",
+          "target": " Kuala Lumpur."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Palacio de Bellas Artes è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La città in cui si trova il Palazzo di Schönbrunn è",
+          "target": " Vienna."
+        },
+        {
+          "context": "La città in cui si trova il Golden Gate Bridge è",
+          "target": " San Francisco."
+        },
+        {
+          "context": "La città in cui si trova la CN Tower è",
+          "target": " Toronto."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Cattedrale di Santa Maria del Fiore è",
+          "target": " Firenze."
+        },
+        {
+          "context": "La città in cui si trova la Basilica di Santa Sofia è",
+          "target": " Istanbul."
+        },
+        {
+          "context": "La città in cui si trova il Colosseo è",
+          "target": " Roma."
+        },
+        {
+          "context": "La città in cui si trova lo Space Needle è",
+          "target": " Seattle."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova il Gateway of India è",
+          "target": " Mumbai."
+        },
+        {
+          "context": "La città in cui si trova il Palacio de Bellas Artes è",
+          "target": " Città del Messico."
+        },
+        {
+          "context": "La città in cui si trova l'Alhambra è",
+          "target": " Granada."
+        },
+        {
+          "context": "La città in cui si trova il Gateway Arch è",
+          "target": " Saint Louis."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "La città in cui si trova la Torre Eiffel è",
+          "target": " Parigi."
+        },
+        {
+          "context": "La città in cui si trova la Porta di Brandeburgo è",
+          "target": " Berlino."
+        },
+        {
+          "context": "La città in cui si trova il Cremlino è",
+          "target": " Mosca."
+        },
+        {
+          "context": "La città in cui si trova l'Atomium è",
+          "target": " Bruxelles."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "id": "few_shot_affirmative_to_negative",
+  "language": "it",
+
+  "generation": {"sets": 100, "seed": 42},
+
+  "sources": {
+    "transformations": [
+      {"input": "Maria corre", "output": "Maria non corre"},
+      {"input": "Luca legge", "output": "Luca non legge"},
+      {"input": "Anna cucina", "output": "Anna non cucina"},
+      {"input": "Paolo dorme", "output": "Paolo non dorme"},
+      {"input": "Giulia canta", "output": "Giulia non canta"},
+      {"input": "Marco scrive", "output": "Marco non scrive"},
+      {"input": "Sara nuota", "output": "Sara non nuota"},
+      {"input": "Davide cammina", "output": "Davide non cammina"},
+      {"input": "Elena studia", "output": "Elena non studia"},
+      {"input": "Matteo lavora", "output": "Matteo non lavora"},
+      {"input": "Chiara sorride", "output": "Chiara non sorride"},
+      {"input": "Fabio parte", "output": "Fabio non parte"},
+      {"input": "Marta ascolta", "output": "Marta non ascolta"},
+      {"input": "Giorgio parla", "output": "Giorgio non parla"},
+      {"input": "Alice disegna", "output": "Alice non disegna"},
+      {"input": "Stefano guida", "output": "Stefano non guida"},
+      {"input": "Irene balla", "output": "Irene non balla"},
+      {"input": "Nicola arriva", "output": "Nicola non arriva"},
+      {"input": "Laura risponde", "output": "Laura non risponde"},
+      {"input": "Simone salta", "output": "Simone non salta"},
+      {"input": "Sofia beve il tè", "output": "Sofia non beve il tè"},
+      {"input": "Andrea compra il pane", "output": "Andrea non compra il pane"},
+      {"input": "Pietro guarda il film", "output": "Pietro non guarda il film"},
+      {"input": "Roberto chiude la finestra", "output": "Roberto non chiude la finestra"}
+    ]
+  },
+
+  "variables": {
+    "examples": {"type": "sample", "source": "transformations", "count": 6},
+    "query_index": {"type": "constant", "value": 2}
+  },
+
+  "derived": {
+    "inputs": {"op": "pluck", "args": ["$examples", "input"]},
+    "outputs": {"op": "pluck", "args": ["$examples", "output"]},
+    "demo_inputs": {"op": "slice", "args": ["$inputs", 0, 2]},
+    "demo_outputs": {"op": "slice", "args": ["$outputs", 0, 2]},
+    "demonstrations": {
+      "op": "pair_strings",
+      "args": ["$demo_inputs", " → ", "$demo_outputs"]
+    },
+    "query_input": {"op": "item_at", "args": ["$inputs", "$query_index"]},
+    "answer": {"op": "item_at", "args": ["$outputs", "$query_index"]}
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [2, 3, 4, 5]
+      }
+    ],
+    "unique_on": ["$query_input", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Segui la trasformazione mostrata negli esempi: {demonstrations|comma_list}. {query_input} →",
+      "target": " {answer}"
+    }
+  ]
+}

@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "few_shot_singular_to_plural",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatti, arancia → arance. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatti, arancia → arance. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatti, arancia → arance. camicia →",
+          "target": " camicie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatti, arancia → arance. fiore →",
+          "target": " fiori"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, arancia → arance. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, arancia → arance. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, arancia → arance. mano →",
+          "target": " mani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, arancia → arance. chiave →",
+          "target": " chiavi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatti, libro → libri. quaderno →",
+          "target": " quaderni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatti, libro → libri. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatti, libro → libri. stazione →",
+          "target": " stazioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatti, libro → libri. uovo →",
+          "target": " uova"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: canzone → canzoni, quaderno → quaderni. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: canzone → canzoni, quaderno → quaderni. problema →",
+          "target": " problemi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: canzone → canzoni, quaderno → quaderni. città →",
+          "target": " città"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: canzone → canzoni, quaderno → quaderni. bar →",
+          "target": " bar"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, notte → notti. mano →",
+          "target": " mani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, notte → notti. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, notte → notti. spiaggia →",
+          "target": " spiagge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, notte → notti. gatto →",
+          "target": " gatti"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: amico → amici, chiave → chiavi. mela →",
+          "target": " mele"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: amico → amici, chiave → chiavi. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: amico → amici, chiave → chiavi. fiore →",
+          "target": " fiori"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: amico → amici, chiave → chiavi. quaderno →",
+          "target": " quaderni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, libro → libri. penna →",
+          "target": " penne"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, libro → libri. bar →",
+          "target": " bar"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, libro → libri. casa →",
+          "target": " case"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, libro → libri. spiaggia →",
+          "target": " spiagge"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: spiaggia → spiagge, cane → cani. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: spiaggia → spiagge, cane → cani. notte →",
+          "target": " notti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: spiaggia → spiagge, cane → cani. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: spiaggia → spiagge, cane → cani. tavolo →",
+          "target": " tavoli"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: libro → libri, canzone → canzoni. treno →",
+          "target": " treni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: libro → libri, canzone → canzoni. camicia →",
+          "target": " camicie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: libro → libri, canzone → canzoni. problema →",
+          "target": " problemi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: libro → libri, canzone → canzoni. uovo →",
+          "target": " uova"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mano → mani, quaderno → quaderni. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mano → mani, quaderno → quaderni. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mano → mani, quaderno → quaderni. cane →",
+          "target": " cani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mano → mani, quaderno → quaderni. uomo →",
+          "target": " uomini"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: valigia → valigie, treno → treni. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: valigia → valigie, treno → treni. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: valigia → valigie, treno → treni. tavolo →",
+          "target": " tavoli"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: valigia → valigie, treno → treni. penna →",
+          "target": " penne"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, problema → problemi. camicia →",
+          "target": " camicie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, problema → problemi. casa →",
+          "target": " case"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, problema → problemi. bicchiere →",
+          "target": " bicchieri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, problema → problemi. città →",
+          "target": " città"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, uomo → uomini. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, uomo → uomini. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, uomo → uomini. cinema →",
+          "target": " cinema"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, uomo → uomini. problema →",
+          "target": " problemi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, problema → problemi. bicchiere →",
+          "target": " bicchieri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, problema → problemi. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, problema → problemi. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, problema → problemi. ragazzo →",
+          "target": " ragazzi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, penna → penne. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, penna → penne. problema →",
+          "target": " problemi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, penna → penne. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, penna → penne. canzone →",
+          "target": " canzoni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, mela → mele. camicia →",
+          "target": " camicie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, mela → mele. valigia →",
+          "target": " valigie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, mela → mele. città →",
+          "target": " città"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, mela → mele. cane →",
+          "target": " cani"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, cane → cani. spiaggia →",
+          "target": " spiagge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, cane → cani. mela →",
+          "target": " mele"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, cane → cani. penna →",
+          "target": " penne"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, cane → cani. albero →",
+          "target": " alberi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, mano → mani. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, mano → mani. mela →",
+          "target": " mele"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, mano → mani. bar →",
+          "target": " bar"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, mano → mani. problema →",
+          "target": " problemi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: penna → penne, cinema → cinema. problema →",
+          "target": " problemi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: penna → penne, cinema → cinema. notte →",
+          "target": " notti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: penna → penne, cinema → cinema. fiore →",
+          "target": " fiori"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: penna → penne, cinema → cinema. albero →",
+          "target": " alberi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, arancia → arance. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, arancia → arance. città →",
+          "target": " città"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, arancia → arance. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, arancia → arance. cinema →",
+          "target": " cinema"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, mano → mani. penna →",
+          "target": " penne"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, mano → mani. casa →",
+          "target": " case"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, mano → mani. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, mano → mani. fiore →",
+          "target": " fiori"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: libro → libri, valigia → valigie. cane →",
+          "target": " cani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: libro → libri, valigia → valigie. tavolo →",
+          "target": " tavoli"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: libro → libri, valigia → valigie. fiore →",
+          "target": " fiori"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: libro → libri, valigia → valigie. problema →",
+          "target": " problemi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: spiaggia → spiagge, uomo → uomini. chiave →",
+          "target": " chiavi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: spiaggia → spiagge, uomo → uomini. uovo →",
+          "target": " uova"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: spiaggia → spiagge, uomo → uomini. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: spiaggia → spiagge, uomo → uomini. penna →",
+          "target": " penne"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, notte → notti. stazione →",
+          "target": " stazioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, notte → notti. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, notte → notti. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, notte → notti. gatto →",
+          "target": " gatti"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, cinema → cinema. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, cinema → cinema. valigia →",
+          "target": " valigie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, cinema → cinema. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, cinema → cinema. camicia →",
+          "target": " camicie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, treno → treni. chiave →",
+          "target": " chiavi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, treno → treni. bicchiere →",
+          "target": " bicchieri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, treno → treni. notte →",
+          "target": " notti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, treno → treni. gatto →",
+          "target": " gatti"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: stazione → stazioni, valigia → valigie. bicchiere →",
+          "target": " bicchieri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: stazione → stazioni, valigia → valigie. bar →",
+          "target": " bar"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: stazione → stazioni, valigia → valigie. tavolo →",
+          "target": " tavoli"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: stazione → stazioni, valigia → valigie. problema →",
+          "target": " problemi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, problema → problemi. stazione →",
+          "target": " stazioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, problema → problemi. uovo →",
+          "target": " uova"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, problema → problemi. quaderno →",
+          "target": " quaderni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, problema → problemi. fiore →",
+          "target": " fiori"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: valigia → valigie, bicchiere → bicchieri. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: valigia → valigie, bicchiere → bicchieri. bar →",
+          "target": " bar"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: valigia → valigie, bicchiere → bicchieri. stazione →",
+          "target": " stazioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: valigia → valigie, bicchiere → bicchieri. gatto →",
+          "target": " gatti"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lezione → lezioni, gatto → gatti. tavolo →",
+          "target": " tavoli"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lezione → lezioni, gatto → gatti. casa →",
+          "target": " case"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lezione → lezioni, gatto → gatti. spiaggia →",
+          "target": " spiagge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lezione → lezioni, gatto → gatti. treno →",
+          "target": " treni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, ragazzo → ragazzi. mano →",
+          "target": " mani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, ragazzo → ragazzi. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, ragazzo → ragazzi. camicia →",
+          "target": " camicie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, ragazzo → ragazzi. arancia →",
+          "target": " arance"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, libro → libri. valigia →",
+          "target": " valigie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, libro → libri. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, libro → libri. città →",
+          "target": " città"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, libro → libri. fiore →",
+          "target": " fiori"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, lezione → lezioni. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, lezione → lezioni. bicchiere →",
+          "target": " bicchieri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, lezione → lezioni. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, lezione → lezioni. stazione →",
+          "target": " stazioni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, canzone → canzoni. valigia →",
+          "target": " valigie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, canzone → canzoni. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, canzone → canzoni. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, canzone → canzoni. bar →",
+          "target": " bar"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: penna → penne, uomo → uomini. problema →",
+          "target": " problemi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: penna → penne, uomo → uomini. casa →",
+          "target": " case"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: penna → penne, uomo → uomini. notte →",
+          "target": " notti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: penna → penne, uomo → uomini. stazione →",
+          "target": " stazioni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, ragazzo → ragazzi. cinema →",
+          "target": " cinema"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, ragazzo → ragazzi. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, ragazzo → ragazzi. mela →",
+          "target": " mele"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, ragazzo → ragazzi. gatto →",
+          "target": " gatti"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mano → mani, ragazzo → ragazzi. gatto →",
+          "target": " gatti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mano → mani, ragazzo → ragazzi. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mano → mani, ragazzo → ragazzi. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mano → mani, ragazzo → ragazzi. problema →",
+          "target": " problemi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, libro → libri. cane →",
+          "target": " cani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, libro → libri. mela →",
+          "target": " mele"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, libro → libri. cinema →",
+          "target": " cinema"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, libro → libri. stazione →",
+          "target": " stazioni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, uomo → uomini. lezione →",
+          "target": " lezioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, uomo → uomini. quaderno →",
+          "target": " quaderni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, uomo → uomini. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, uomo → uomini. fiore →",
+          "target": " fiori"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, spiaggia → spiagge. lezione →",
+          "target": " lezioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, spiaggia → spiagge. cinema →",
+          "target": " cinema"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, spiaggia → spiagge. chiave →",
+          "target": " chiavi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, spiaggia → spiagge. quaderno →",
+          "target": " quaderni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, uomo → uomini. chiave →",
+          "target": " chiavi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, uomo → uomini. casa →",
+          "target": " case"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, uomo → uomini. città →",
+          "target": " città"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, uomo → uomini. spiaggia →",
+          "target": " spiagge"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: città → città, arancia → arance. cane →",
+          "target": " cani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: città → città, arancia → arance. uomo →",
+          "target": " uomini"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: città → città, arancia → arance. problema →",
+          "target": " problemi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: città → città, arancia → arance. spiaggia →",
+          "target": " spiagge"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, penna → penne. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, penna → penne. mela →",
+          "target": " mele"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, penna → penne. spiaggia →",
+          "target": " spiagge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, penna → penne. tavolo →",
+          "target": " tavoli"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, bar → bar. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, bar → bar. notte →",
+          "target": " notti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, bar → bar. fiore →",
+          "target": " fiori"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, bar → bar. chiave →",
+          "target": " chiavi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, notte → notti. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, notte → notti. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, notte → notti. cinema →",
+          "target": " cinema"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, notte → notti. canzone →",
+          "target": " canzoni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, problema → problemi. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, problema → problemi. camicia →",
+          "target": " camicie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, problema → problemi. gatto →",
+          "target": " gatti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, problema → problemi. libro →",
+          "target": " libri"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bicchiere → bicchieri, chiave → chiavi. lezione →",
+          "target": " lezioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bicchiere → bicchieri, chiave → chiavi. città →",
+          "target": " città"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bicchiere → bicchieri, chiave → chiavi. quaderno →",
+          "target": " quaderni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bicchiere → bicchieri, chiave → chiavi. penna →",
+          "target": " penne"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bicchiere → bicchieri, penna → penne. gatto →",
+          "target": " gatti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bicchiere → bicchieri, penna → penne. cinema →",
+          "target": " cinema"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bicchiere → bicchieri, penna → penne. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bicchiere → bicchieri, penna → penne. notte →",
+          "target": " notti"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: chiave → chiavi, amico → amici. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: chiave → chiavi, amico → amici. spiaggia →",
+          "target": " spiagge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: chiave → chiavi, amico → amici. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: chiave → chiavi, amico → amici. uomo →",
+          "target": " uomini"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: fiore → fiori, quaderno → quaderni. treno →",
+          "target": " treni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: fiore → fiori, quaderno → quaderni. cinema →",
+          "target": " cinema"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: fiore → fiori, quaderno → quaderni. cane →",
+          "target": " cani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: fiore → fiori, quaderno → quaderni. mano →",
+          "target": " mani"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: arancia → arance, mela → mele. cane →",
+          "target": " cani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: arancia → arance, mela → mele. città →",
+          "target": " città"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: arancia → arance, mela → mele. mano →",
+          "target": " mani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: arancia → arance, mela → mele. lezione →",
+          "target": " lezioni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, stazione → stazioni. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, stazione → stazioni. bicchiere →",
+          "target": " bicchieri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, stazione → stazioni. città →",
+          "target": " città"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, stazione → stazioni. uovo →",
+          "target": " uova"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, città → città. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, città → città. penna →",
+          "target": " penne"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, città → città. tavolo →",
+          "target": " tavoli"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, città → città. mano →",
+          "target": " mani"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mano → mani, uovo → uova. cane →",
+          "target": " cani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mano → mani, uovo → uova. cinema →",
+          "target": " cinema"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mano → mani, uovo → uova. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mano → mani, uovo → uova. chiave →",
+          "target": " chiavi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bar → bar, albero → alberi. quaderno →",
+          "target": " quaderni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bar → bar, albero → alberi. uomo →",
+          "target": " uomini"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bar → bar, albero → alberi. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: bar → bar, albero → alberi. mela →",
+          "target": " mele"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, penna → penne. fiore →",
+          "target": " fiori"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, penna → penne. uomo →",
+          "target": " uomini"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, penna → penne. problema →",
+          "target": " problemi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, penna → penne. treno →",
+          "target": " treni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mela → mele, valigia → valigie. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mela → mele, valigia → valigie. gatto →",
+          "target": " gatti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mela → mele, valigia → valigie. notte →",
+          "target": " notti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: mela → mele, valigia → valigie. uovo →",
+          "target": " uova"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: libro → libri, canzone → canzoni. quaderno →",
+          "target": " quaderni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: libro → libri, canzone → canzoni. stazione →",
+          "target": " stazioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: libro → libri, canzone → canzoni. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: libro → libri, canzone → canzoni. fiore →",
+          "target": " fiori"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, libro → libri. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, libro → libri. casa →",
+          "target": " case"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, libro → libri. treno →",
+          "target": " treni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, libro → libri. bicchiere →",
+          "target": " bicchieri"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, canzone → canzoni. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, canzone → canzoni. treno →",
+          "target": " treni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, canzone → canzoni. uovo →",
+          "target": " uova"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, canzone → canzoni. problema →",
+          "target": " problemi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, camicia → camicie. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, camicia → camicie. treno →",
+          "target": " treni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, camicia → camicie. bar →",
+          "target": " bar"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, camicia → camicie. tavolo →",
+          "target": " tavoli"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, tavolo → tavoli. cinema →",
+          "target": " cinema"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, tavolo → tavoli. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, tavolo → tavoli. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, tavolo → tavoli. fiore →",
+          "target": " fiori"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: treno → treni, uovo → uova. quaderno →",
+          "target": " quaderni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: treno → treni, uovo → uova. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: treno → treni, uovo → uova. mela →",
+          "target": " mele"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: treno → treni, uovo → uova. città →",
+          "target": " città"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: stazione → stazioni, lezione → lezioni. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: stazione → stazioni, lezione → lezioni. cane →",
+          "target": " cani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: stazione → stazioni, lezione → lezioni. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: stazione → stazioni, lezione → lezioni. problema →",
+          "target": " problemi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, albero → alberi. cane →",
+          "target": " cani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, albero → alberi. gatto →",
+          "target": " gatti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, albero → alberi. mela →",
+          "target": " mele"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, albero → alberi. valigia →",
+          "target": " valigie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: problema → problemi, albero → alberi. bicchiere →",
+          "target": " bicchieri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: problema → problemi, albero → alberi. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: problema → problemi, albero → alberi. notte →",
+          "target": " notti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: problema → problemi, albero → alberi. canzone →",
+          "target": " canzoni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: canzone → canzoni, gatto → gatti. tavolo →",
+          "target": " tavoli"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: canzone → canzoni, gatto → gatti. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: canzone → canzoni, gatto → gatti. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: canzone → canzoni, gatto → gatti. fiore →",
+          "target": " fiori"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, casa → case. mano →",
+          "target": " mani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, casa → case. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, casa → case. fiore →",
+          "target": " fiori"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, casa → case. chiave →",
+          "target": " chiavi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, treno → treni. casa →",
+          "target": " case"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, treno → treni. spiaggia →",
+          "target": " spiagge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, treno → treni. bar →",
+          "target": " bar"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, treno → treni. città →",
+          "target": " città"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, ragazzo → ragazzi. bar →",
+          "target": " bar"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, ragazzo → ragazzi. tavolo →",
+          "target": " tavoli"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, ragazzo → ragazzi. casa →",
+          "target": " case"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, ragazzo → ragazzi. valigia →",
+          "target": " valigie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, arancia → arance. fiore →",
+          "target": " fiori"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, arancia → arance. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, arancia → arance. bicchiere →",
+          "target": " bicchieri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, arancia → arance. spiaggia →",
+          "target": " spiagge"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatti, bicchiere → bicchieri. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatti, bicchiere → bicchieri. mela →",
+          "target": " mele"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatti, bicchiere → bicchieri. spiaggia →",
+          "target": " spiagge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: gatto → gatti, bicchiere → bicchieri. chiave →",
+          "target": " chiavi"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, bicchiere → bicchieri. spiaggia →",
+          "target": " spiagge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, bicchiere → bicchieri. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, bicchiere → bicchieri. tavolo →",
+          "target": " tavoli"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: albero → alberi, bicchiere → bicchieri. penna →",
+          "target": " penne"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: città → città, lezione → lezioni. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: città → città, lezione → lezioni. quaderno →",
+          "target": " quaderni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: città → città, lezione → lezioni. notte →",
+          "target": " notti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: città → città, lezione → lezioni. casa →",
+          "target": " case"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, spiaggia → spiagge. città →",
+          "target": " città"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, spiaggia → spiagge. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, spiaggia → spiagge. bar →",
+          "target": " bar"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, spiaggia → spiagge. gatto →",
+          "target": " gatti"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: penna → penne, mela → mele. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: penna → penne, mela → mele. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: penna → penne, mela → mele. valigia →",
+          "target": " valigie"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: penna → penne, mela → mele. città →",
+          "target": " città"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: problema → problemi, stazione → stazioni. penna →",
+          "target": " penne"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: problema → problemi, stazione → stazioni. uomo →",
+          "target": " uomini"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: problema → problemi, stazione → stazioni. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: problema → problemi, stazione → stazioni. mela →",
+          "target": " mele"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, cinema → cinema. albero →",
+          "target": " alberi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, cinema → cinema. bicchiere →",
+          "target": " bicchieri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, cinema → cinema. mano →",
+          "target": " mani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, cinema → cinema. città →",
+          "target": " città"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, uovo → uova. chiave →",
+          "target": " chiavi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, uovo → uova. casa →",
+          "target": " case"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, uovo → uova. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: tavolo → tavoli, uovo → uova. mela →",
+          "target": " mele"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, stazione → stazioni. tavolo →",
+          "target": " tavoli"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, stazione → stazioni. penna →",
+          "target": " penne"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, stazione → stazioni. mano →",
+          "target": " mani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, stazione → stazioni. quaderno →",
+          "target": " quaderni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, amico → amici. chiave →",
+          "target": " chiavi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, amico → amici. gatto →",
+          "target": " gatti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, amico → amici. stazione →",
+          "target": " stazioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cane → cani, amico → amici. canzone →",
+          "target": " canzoni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: casa → case, chiave → chiavi. libro →",
+          "target": " libri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: casa → case, chiave → chiavi. uomo →",
+          "target": " uomini"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: casa → case, chiave → chiavi. mela →",
+          "target": " mele"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: casa → case, chiave → chiavi. uovo →",
+          "target": " uova"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, città → città. tavolo →",
+          "target": " tavoli"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, città → città. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, città → città. treno →",
+          "target": " treni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, città → città. stazione →",
+          "target": " stazioni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, chiave → chiavi. mela →",
+          "target": " mele"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, chiave → chiavi. penna →",
+          "target": " penne"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, chiave → chiavi. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, chiave → chiavi. treno →",
+          "target": " treni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, chiave → chiavi. uomo →",
+          "target": " uomini"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, chiave → chiavi. penna →",
+          "target": " penne"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, chiave → chiavi. città →",
+          "target": " città"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: quaderno → quaderni, chiave → chiavi. arancia →",
+          "target": " arance"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, mano → mani. treno →",
+          "target": " treni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, mano → mani. penna →",
+          "target": " penne"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, mano → mani. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, mano → mani. gatto →",
+          "target": " gatti"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: treno → treni, quaderno → quaderni. chiave →",
+          "target": " chiavi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: treno → treni, quaderno → quaderni. spiaggia →",
+          "target": " spiagge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: treno → treni, quaderno → quaderni. mano →",
+          "target": " mani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: treno → treni, quaderno → quaderni. uovo →",
+          "target": " uova"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, bar → bar. cinema →",
+          "target": " cinema"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, bar → bar. uomo →",
+          "target": " uomini"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, bar → bar. quaderno →",
+          "target": " quaderni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, bar → bar. stazione →",
+          "target": " stazioni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: spiaggia → spiagge, cinema → cinema. bar →",
+          "target": " bar"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: spiaggia → spiagge, cinema → cinema. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: spiaggia → spiagge, cinema → cinema. bicchiere →",
+          "target": " bicchieri"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: spiaggia → spiagge, cinema → cinema. uomo →",
+          "target": " uomini"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: treno → treni, stazione → stazioni. uomo →",
+          "target": " uomini"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: treno → treni, stazione → stazioni. problema →",
+          "target": " problemi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: treno → treni, stazione → stazioni. uovo →",
+          "target": " uova"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: treno → treni, stazione → stazioni. mela →",
+          "target": " mele"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, valigia → valigie. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, valigia → valigie. uomo →",
+          "target": " uomini"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, valigia → valigie. treno →",
+          "target": " treni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: camicia → camicie, valigia → valigie. città →",
+          "target": " città"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: fiore → fiori, gatto → gatti. cane →",
+          "target": " cani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: fiore → fiori, gatto → gatti. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: fiore → fiori, gatto → gatti. lezione →",
+          "target": " lezioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: fiore → fiori, gatto → gatti. uovo →",
+          "target": " uova"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, chiave → chiavi. problema →",
+          "target": " problemi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, chiave → chiavi. mano →",
+          "target": " mani"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, chiave → chiavi. quaderno →",
+          "target": " quaderni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: notte → notti, chiave → chiavi. amico →",
+          "target": " amici"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lezione → lezioni, penna → penne. ragazzo →",
+          "target": " ragazzi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lezione → lezioni, penna → penne. fiore →",
+          "target": " fiori"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lezione → lezioni, penna → penne. problema →",
+          "target": " problemi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: lezione → lezioni, penna → penne. amico →",
+          "target": " amici"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, valigia → valigie. città →",
+          "target": " città"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, valigia → valigie. bar →",
+          "target": " bar"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, valigia → valigie. tavolo →",
+          "target": " tavoli"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, valigia → valigie. camicia →",
+          "target": " camicie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, bicchiere → bicchieri. spiaggia →",
+          "target": " spiagge"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, bicchiere → bicchieri. amico →",
+          "target": " amici"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, bicchiere → bicchieri. stazione →",
+          "target": " stazioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: ragazzo → ragazzi, bicchiere → bicchieri. notte →",
+          "target": " notti"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: canzone → canzoni, ragazzo → ragazzi. città →",
+          "target": " città"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: canzone → canzoni, ragazzo → ragazzi. tavolo →",
+          "target": " tavoli"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: canzone → canzoni, ragazzo → ragazzi. notte →",
+          "target": " notti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: canzone → canzoni, ragazzo → ragazzi. fiore →",
+          "target": " fiori"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, stazione → stazioni. canzone →",
+          "target": " canzoni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, stazione → stazioni. uovo →",
+          "target": " uova"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, stazione → stazioni. mela →",
+          "target": " mele"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uomo → uomini, stazione → stazioni. valigia →",
+          "target": " valigie"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, camicia → camicie. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, camicia → camicie. stazione →",
+          "target": " stazioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, camicia → camicie. chiave →",
+          "target": " chiavi"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: uovo → uova, camicia → camicie. canzone →",
+          "target": " canzoni"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, bicchiere → bicchieri. arancia →",
+          "target": " arance"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, bicchiere → bicchieri. lezione →",
+          "target": " lezioni"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, bicchiere → bicchieri. notte →",
+          "target": " notti"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: cinema → cinema, bicchiere → bicchieri. albero →",
+          "target": " alberi"
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

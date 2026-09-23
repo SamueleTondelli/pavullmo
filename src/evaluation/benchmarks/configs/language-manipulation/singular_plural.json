@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "id": "few_shot_singular_to_plural",
+  "language": "it",
+
+  "generation": {"sets": 100, "seed": 42},
+
+  "sources": {
+    "transformations": [
+      {"input": "gatto", "output": "gatti"},
+      {"input": "cane", "output": "cani"},
+      {"input": "libro", "output": "libri"},
+      {"input": "tavolo", "output": "tavoli"},
+      {"input": "fiore", "output": "fiori"},
+      {"input": "bicchiere", "output": "bicchieri"},
+      {"input": "quaderno", "output": "quaderni"},
+      {"input": "ragazzo", "output": "ragazzi"},
+      {"input": "albero", "output": "alberi"},
+      {"input": "treno", "output": "treni"},
+      {"input": "mela", "output": "mele"},
+      {"input": "casa", "output": "case"},
+      {"input": "penna", "output": "penne"},
+      {"input": "chiave", "output": "chiavi"},
+      {"input": "notte", "output": "notti"},
+      {"input": "lezione", "output": "lezioni"},
+      {"input": "stazione", "output": "stazioni"},
+      {"input": "canzone", "output": "canzoni"},
+      {"input": "mano", "output": "mani"},
+      {"input": "uovo", "output": "uova"},
+      {"input": "problema", "output": "problemi"},
+      {"input": "uomo", "output": "uomini"},
+      {"input": "amico", "output": "amici"},
+      {"input": "arancia", "output": "arance"},
+      {"input": "valigia", "output": "valigie"},
+      {"input": "spiaggia", "output": "spiagge"},
+      {"input": "camicia", "output": "camicie"},
+      {"input": "città", "output": "città"},
+      {"input": "cinema", "output": "cinema"},
+      {"input": "bar", "output": "bar"}
+    ]
+  },
+
+  "variables": {
+    "examples": {
+      "type": "sample",
+      "source": "transformations",
+      "count": 6
+    },
+    "query_index": {"type": "constant", "value": 2}
+  },
+
+  "derived": {
+    "inputs": {"op": "pluck", "args": ["$examples", "input"]},
+    "outputs": {"op": "pluck", "args": ["$examples", "output"]},
+    "demo_inputs": {"op": "slice", "args": ["$inputs", 0, 2]},
+    "demo_outputs": {"op": "slice", "args": ["$outputs", 0, 2]},
+    "demonstrations": {
+      "op": "pair_strings",
+      "args": ["$demo_inputs", " → ", "$demo_outputs"]
+    },
+    "query_input": {"op": "item_at", "args": ["$inputs", "$query_index"]},
+    "answer": {"op": "item_at", "args": ["$outputs", "$query_index"]}
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [2, 3, 4, 5]
+      }
+    ],
+    "unique_on": ["$query_input", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Segui la trasformazione mostrata negli esempi: {demonstrations|comma_list}. {query_input} →",
+      "target": " {answer}"
+    }
+  ]
+}

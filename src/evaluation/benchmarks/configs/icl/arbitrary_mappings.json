@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "id": "icl_arbitrary_mappings",
+  "language": "it",
+
+  "generation": {
+    "sets": 100,
+    "seed": 42
+  },
+
+  "sources": {
+    "nonce_words": [
+      "dax", "fep", "lun", "zorp", "miv", "tal", "bren", "nup",
+      "keld", "vash", "rimo", "satek", "pulo", "gref", "wim", "narel",
+      "tovik", "benu", "zos", "larp"
+    ],
+    "meanings": [
+      "rosso", "verde", "blu", "giallo", "nero", "bianco",
+      "arancione", "viola", "rosa", "grigio", "marrone", "azzurro"
+    ]
+  },
+
+  "variables": {
+    "keys": {
+      "type": "sample",
+      "source": "nonce_words",
+      "count": 4
+    },
+    "values": {
+      "type": "sample",
+      "source": "meanings",
+      "count": 4
+    },
+    "query_index": {
+      "type": "constant",
+      "value": 0
+    }
+  },
+
+  "derived": {
+    "bindings": {
+      "op": "pair_strings",
+      "args": ["$keys", " significa ", "$values"]
+    },
+    "query_key": {
+      "op": "item_at",
+      "args": ["$keys", "$query_index"]
+    },
+    "answer": {
+      "op": "item_at",
+      "args": ["$values", "$query_index"]
+    }
+  },
+
+  "contrast_set": {
+    "size": 4,
+    "mutations": [
+      {
+        "variable": "query_index",
+        "operation": "replace",
+        "values": [0, 1, 2, 3]
+      }
+    ],
+    "unique_on": ["$query_key", "$answer"]
+  },
+
+  "templates": [
+    {
+      "context": "Nel codice inventato, {bindings|comma_list}. La parola {query_key} significa",
+      "target": " {answer}."
+    }
+  ]
+}

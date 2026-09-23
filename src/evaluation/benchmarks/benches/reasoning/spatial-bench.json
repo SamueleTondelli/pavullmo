@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "reasoning_spatial_ordering",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Iota, Iota è a sinistra di Theta, Theta è a sinistra di Phi. L'elemento più a sinistra è",
+          "target": " Alfa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Iota, Iota è a sinistra di Theta, Theta è a sinistra di Phi. Il secondo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Iota, Iota è a sinistra di Theta, Theta è a sinistra di Phi. Il terzo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Iota, Iota è a sinistra di Theta, Theta è a sinistra di Phi. L'elemento più a destra è",
+          "target": " Phi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Phi, Phi è a sinistra di Gamma, Gamma è a sinistra di Xi. L'elemento più a sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Phi, Phi è a sinistra di Gamma, Gamma è a sinistra di Xi. Il secondo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Phi, Phi è a sinistra di Gamma, Gamma è a sinistra di Xi. Il terzo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Phi, Phi è a sinistra di Gamma, Gamma è a sinistra di Xi. L'elemento più a destra è",
+          "target": " Xi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Gamma, Gamma è a sinistra di Eta, Eta è a sinistra di Theta. L'elemento più a sinistra è",
+          "target": " Alfa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Gamma, Gamma è a sinistra di Eta, Eta è a sinistra di Theta. Il secondo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Gamma, Gamma è a sinistra di Eta, Eta è a sinistra di Theta. Il terzo elemento da sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Gamma, Gamma è a sinistra di Eta, Eta è a sinistra di Theta. L'elemento più a destra è",
+          "target": " Theta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Eta, Eta è a sinistra di Omega, Omega è a sinistra di Xi. L'elemento più a sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Eta, Eta è a sinistra di Omega, Omega è a sinistra di Xi. Il secondo elemento da sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Eta, Eta è a sinistra di Omega, Omega è a sinistra di Xi. Il terzo elemento da sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Eta, Eta è a sinistra di Omega, Omega è a sinistra di Xi. L'elemento più a destra è",
+          "target": " Xi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Psi, Psi è a sinistra di Iota, Iota è a sinistra di Alfa. L'elemento più a sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Psi, Psi è a sinistra di Iota, Iota è a sinistra di Alfa. Il secondo elemento da sinistra è",
+          "target": " Psi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Psi, Psi è a sinistra di Iota, Iota è a sinistra di Alfa. Il terzo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Psi, Psi è a sinistra di Iota, Iota è a sinistra di Alfa. L'elemento più a destra è",
+          "target": " Alfa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Lambda, Lambda è a sinistra di Iota, Iota è a sinistra di Epsilon. L'elemento più a sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Lambda, Lambda è a sinistra di Iota, Iota è a sinistra di Epsilon. Il secondo elemento da sinistra è",
+          "target": " Lambda."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Lambda, Lambda è a sinistra di Iota, Iota è a sinistra di Epsilon. Il terzo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Lambda, Lambda è a sinistra di Iota, Iota è a sinistra di Epsilon. L'elemento più a destra è",
+          "target": " Epsilon."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Delta, Delta è a sinistra di Gamma, Gamma è a sinistra di Nu. L'elemento più a sinistra è",
+          "target": " Lambda."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Delta, Delta è a sinistra di Gamma, Gamma è a sinistra di Nu. Il secondo elemento da sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Delta, Delta è a sinistra di Gamma, Gamma è a sinistra di Nu. Il terzo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Delta, Delta è a sinistra di Gamma, Gamma è a sinistra di Nu. L'elemento più a destra è",
+          "target": " Nu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Omega, Omega è a sinistra di Iota, Iota è a sinistra di Beta. L'elemento più a sinistra è",
+          "target": " Mu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Omega, Omega è a sinistra di Iota, Iota è a sinistra di Beta. Il secondo elemento da sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Omega, Omega è a sinistra di Iota, Iota è a sinistra di Beta. Il terzo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Omega, Omega è a sinistra di Iota, Iota è a sinistra di Beta. L'elemento più a destra è",
+          "target": " Beta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Delta, Delta è a sinistra di Nu, Nu è a sinistra di Gamma. L'elemento più a sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Delta, Delta è a sinistra di Nu, Nu è a sinistra di Gamma. Il secondo elemento da sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Delta, Delta è a sinistra di Nu, Nu è a sinistra di Gamma. Il terzo elemento da sinistra è",
+          "target": " Nu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Delta, Delta è a sinistra di Nu, Nu è a sinistra di Gamma. L'elemento più a destra è",
+          "target": " Gamma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Mu, Mu è a sinistra di Eta, Eta è a sinistra di Gamma. L'elemento più a sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Mu, Mu è a sinistra di Eta, Eta è a sinistra di Gamma. Il secondo elemento da sinistra è",
+          "target": " Mu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Mu, Mu è a sinistra di Eta, Eta è a sinistra di Gamma. Il terzo elemento da sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Mu, Mu è a sinistra di Eta, Eta è a sinistra di Gamma. L'elemento più a destra è",
+          "target": " Gamma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Kappa, Kappa è a sinistra di Gamma, Gamma è a sinistra di Omega. L'elemento più a sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Kappa, Kappa è a sinistra di Gamma, Gamma è a sinistra di Omega. Il secondo elemento da sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Kappa, Kappa è a sinistra di Gamma, Gamma è a sinistra di Omega. Il terzo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Kappa, Kappa è a sinistra di Gamma, Gamma è a sinistra di Omega. L'elemento più a destra è",
+          "target": " Omega."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Nu è a sinistra di Iota, Iota è a sinistra di Omicron, Omicron è a sinistra di Mu. L'elemento più a sinistra è",
+          "target": " Nu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Nu è a sinistra di Iota, Iota è a sinistra di Omicron, Omicron è a sinistra di Mu. Il secondo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Nu è a sinistra di Iota, Iota è a sinistra di Omicron, Omicron è a sinistra di Mu. Il terzo elemento da sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Nu è a sinistra di Iota, Iota è a sinistra di Omicron, Omicron è a sinistra di Mu. L'elemento più a destra è",
+          "target": " Mu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Omega, Omega è a sinistra di Eta, Eta è a sinistra di Iota. L'elemento più a sinistra è",
+          "target": " Mu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Omega, Omega è a sinistra di Eta, Eta è a sinistra di Iota. Il secondo elemento da sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Omega, Omega è a sinistra di Eta, Eta è a sinistra di Iota. Il terzo elemento da sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Omega, Omega è a sinistra di Eta, Eta è a sinistra di Iota. L'elemento più a destra è",
+          "target": " Iota."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Zeta, Zeta è a sinistra di Phi, Phi è a sinistra di Theta. L'elemento più a sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Zeta, Zeta è a sinistra di Phi, Phi è a sinistra di Theta. Il secondo elemento da sinistra è",
+          "target": " Zeta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Zeta, Zeta è a sinistra di Phi, Phi è a sinistra di Theta. Il terzo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Zeta, Zeta è a sinistra di Phi, Phi è a sinistra di Theta. L'elemento più a destra è",
+          "target": " Theta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Nu, Nu è a sinistra di Iota, Iota è a sinistra di Theta. L'elemento più a sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Nu, Nu è a sinistra di Iota, Iota è a sinistra di Theta. Il secondo elemento da sinistra è",
+          "target": " Nu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Nu, Nu è a sinistra di Iota, Iota è a sinistra di Theta. Il terzo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Nu, Nu è a sinistra di Iota, Iota è a sinistra di Theta. L'elemento più a destra è",
+          "target": " Theta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Theta, Theta è a sinistra di Omega, Omega è a sinistra di Lambda. L'elemento più a sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Theta, Theta è a sinistra di Omega, Omega è a sinistra di Lambda. Il secondo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Theta, Theta è a sinistra di Omega, Omega è a sinistra di Lambda. Il terzo elemento da sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Theta, Theta è a sinistra di Omega, Omega è a sinistra di Lambda. L'elemento più a destra è",
+          "target": " Lambda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Gamma, Gamma è a sinistra di Eta, Eta è a sinistra di Lambda. L'elemento più a sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Gamma, Gamma è a sinistra di Eta, Eta è a sinistra di Lambda. Il secondo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Gamma, Gamma è a sinistra di Eta, Eta è a sinistra di Lambda. Il terzo elemento da sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Gamma, Gamma è a sinistra di Eta, Eta è a sinistra di Lambda. L'elemento più a destra è",
+          "target": " Lambda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Nu, Nu è a sinistra di Omicron, Omicron è a sinistra di Epsilon. L'elemento più a sinistra è",
+          "target": " Sigma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Nu, Nu è a sinistra di Omicron, Omicron è a sinistra di Epsilon. Il secondo elemento da sinistra è",
+          "target": " Nu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Nu, Nu è a sinistra di Omicron, Omicron è a sinistra di Epsilon. Il terzo elemento da sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Nu, Nu è a sinistra di Omicron, Omicron è a sinistra di Epsilon. L'elemento più a destra è",
+          "target": " Epsilon."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Theta, Theta è a sinistra di Phi, Phi è a sinistra di Iota. L'elemento più a sinistra è",
+          "target": " Epsilon."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Theta, Theta è a sinistra di Phi, Phi è a sinistra di Iota. Il secondo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Theta, Theta è a sinistra di Phi, Phi è a sinistra di Iota. Il terzo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Theta, Theta è a sinistra di Phi, Phi è a sinistra di Iota. L'elemento più a destra è",
+          "target": " Iota."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Nu, Nu è a sinistra di Mu, Mu è a sinistra di Theta. L'elemento più a sinistra è",
+          "target": " Psi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Nu, Nu è a sinistra di Mu, Mu è a sinistra di Theta. Il secondo elemento da sinistra è",
+          "target": " Nu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Nu, Nu è a sinistra di Mu, Mu è a sinistra di Theta. Il terzo elemento da sinistra è",
+          "target": " Mu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Nu, Nu è a sinistra di Mu, Mu è a sinistra di Theta. L'elemento più a destra è",
+          "target": " Theta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Tau è a sinistra di Sigma, Sigma è a sinistra di Gamma, Gamma è a sinistra di Beta. L'elemento più a sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Tau è a sinistra di Sigma, Sigma è a sinistra di Gamma, Gamma è a sinistra di Beta. Il secondo elemento da sinistra è",
+          "target": " Sigma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Tau è a sinistra di Sigma, Sigma è a sinistra di Gamma, Gamma è a sinistra di Beta. Il terzo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Tau è a sinistra di Sigma, Sigma è a sinistra di Gamma, Gamma è a sinistra di Beta. L'elemento più a destra è",
+          "target": " Beta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Zeta, Zeta è a sinistra di Xi, Xi è a sinistra di Gamma. L'elemento più a sinistra è",
+          "target": " Epsilon."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Zeta, Zeta è a sinistra di Xi, Xi è a sinistra di Gamma. Il secondo elemento da sinistra è",
+          "target": " Zeta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Zeta, Zeta è a sinistra di Xi, Xi è a sinistra di Gamma. Il terzo elemento da sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Zeta, Zeta è a sinistra di Xi, Xi è a sinistra di Gamma. L'elemento più a destra è",
+          "target": " Gamma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Nu è a sinistra di Omicron, Omicron è a sinistra di Tau, Tau è a sinistra di Iota. L'elemento più a sinistra è",
+          "target": " Nu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Nu è a sinistra di Omicron, Omicron è a sinistra di Tau, Tau è a sinistra di Iota. Il secondo elemento da sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Nu è a sinistra di Omicron, Omicron è a sinistra di Tau, Tau è a sinistra di Iota. Il terzo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Nu è a sinistra di Omicron, Omicron è a sinistra di Tau, Tau è a sinistra di Iota. L'elemento più a destra è",
+          "target": " Iota."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Phi, Phi è a sinistra di Iota, Iota è a sinistra di Lambda. L'elemento più a sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Phi, Phi è a sinistra di Iota, Iota è a sinistra di Lambda. Il secondo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Phi, Phi è a sinistra di Iota, Iota è a sinistra di Lambda. Il terzo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Phi, Phi è a sinistra di Iota, Iota è a sinistra di Lambda. L'elemento più a destra è",
+          "target": " Lambda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Kappa è a sinistra di Xi, Xi è a sinistra di Zeta, Zeta è a sinistra di Omicron. L'elemento più a sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Kappa è a sinistra di Xi, Xi è a sinistra di Zeta, Zeta è a sinistra di Omicron. Il secondo elemento da sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Kappa è a sinistra di Xi, Xi è a sinistra di Zeta, Zeta è a sinistra di Omicron. Il terzo elemento da sinistra è",
+          "target": " Zeta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Kappa è a sinistra di Xi, Xi è a sinistra di Zeta, Zeta è a sinistra di Omicron. L'elemento più a destra è",
+          "target": " Omicron."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Tau, Tau è a sinistra di Zeta, Zeta è a sinistra di Psi. L'elemento più a sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Tau, Tau è a sinistra di Zeta, Zeta è a sinistra di Psi. Il secondo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Tau, Tau è a sinistra di Zeta, Zeta è a sinistra di Psi. Il terzo elemento da sinistra è",
+          "target": " Zeta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Tau, Tau è a sinistra di Zeta, Zeta è a sinistra di Psi. L'elemento più a destra è",
+          "target": " Psi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Kappa è a sinistra di Tau, Tau è a sinistra di Eta, Eta è a sinistra di Epsilon. L'elemento più a sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Kappa è a sinistra di Tau, Tau è a sinistra di Eta, Eta è a sinistra di Epsilon. Il secondo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Kappa è a sinistra di Tau, Tau è a sinistra di Eta, Eta è a sinistra di Epsilon. Il terzo elemento da sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Kappa è a sinistra di Tau, Tau è a sinistra di Eta, Eta è a sinistra di Epsilon. L'elemento più a destra è",
+          "target": " Epsilon."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Zeta è a sinistra di Phi, Phi è a sinistra di Tau, Tau è a sinistra di Alfa. L'elemento più a sinistra è",
+          "target": " Zeta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Zeta è a sinistra di Phi, Phi è a sinistra di Tau, Tau è a sinistra di Alfa. Il secondo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Zeta è a sinistra di Phi, Phi è a sinistra di Tau, Tau è a sinistra di Alfa. Il terzo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Zeta è a sinistra di Phi, Phi è a sinistra di Tau, Tau è a sinistra di Alfa. L'elemento più a destra è",
+          "target": " Alfa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Alfa, Alfa è a sinistra di Delta, Delta è a sinistra di Mu. L'elemento più a sinistra è",
+          "target": " Sigma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Alfa, Alfa è a sinistra di Delta, Delta è a sinistra di Mu. Il secondo elemento da sinistra è",
+          "target": " Alfa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Alfa, Alfa è a sinistra di Delta, Delta è a sinistra di Mu. Il terzo elemento da sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Alfa, Alfa è a sinistra di Delta, Delta è a sinistra di Mu. L'elemento più a destra è",
+          "target": " Mu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Beta, Beta è a sinistra di Omega, Omega è a sinistra di Gamma. L'elemento più a sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Beta, Beta è a sinistra di Omega, Omega è a sinistra di Gamma. Il secondo elemento da sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Beta, Beta è a sinistra di Omega, Omega è a sinistra di Gamma. Il terzo elemento da sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Beta, Beta è a sinistra di Omega, Omega è a sinistra di Gamma. L'elemento più a destra è",
+          "target": " Gamma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Gamma, Gamma è a sinistra di Phi, Phi è a sinistra di Epsilon. L'elemento più a sinistra è",
+          "target": " Sigma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Gamma, Gamma è a sinistra di Phi, Phi è a sinistra di Epsilon. Il secondo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Gamma, Gamma è a sinistra di Phi, Phi è a sinistra di Epsilon. Il terzo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Gamma, Gamma è a sinistra di Phi, Phi è a sinistra di Epsilon. L'elemento più a destra è",
+          "target": " Epsilon."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Phi, Phi è a sinistra di Zeta, Zeta è a sinistra di Iota. L'elemento più a sinistra è",
+          "target": " Sigma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Phi, Phi è a sinistra di Zeta, Zeta è a sinistra di Iota. Il secondo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Phi, Phi è a sinistra di Zeta, Zeta è a sinistra di Iota. Il terzo elemento da sinistra è",
+          "target": " Zeta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Phi, Phi è a sinistra di Zeta, Zeta è a sinistra di Iota. L'elemento più a destra è",
+          "target": " Iota."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Phi, Phi è a sinistra di Omega, Omega è a sinistra di Kappa. L'elemento più a sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Phi, Phi è a sinistra di Omega, Omega è a sinistra di Kappa. Il secondo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Phi, Phi è a sinistra di Omega, Omega è a sinistra di Kappa. Il terzo elemento da sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Phi, Phi è a sinistra di Omega, Omega è a sinistra di Kappa. L'elemento più a destra è",
+          "target": " Kappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Omicron, Omicron è a sinistra di Tau, Tau è a sinistra di Psi. L'elemento più a sinistra è",
+          "target": " Mu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Omicron, Omicron è a sinistra di Tau, Tau è a sinistra di Psi. Il secondo elemento da sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Omicron, Omicron è a sinistra di Tau, Tau è a sinistra di Psi. Il terzo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Omicron, Omicron è a sinistra di Tau, Tau è a sinistra di Psi. L'elemento più a destra è",
+          "target": " Psi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Omega, Omega è a sinistra di Gamma, Gamma è a sinistra di Lambda. L'elemento più a sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Omega, Omega è a sinistra di Gamma, Gamma è a sinistra di Lambda. Il secondo elemento da sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Omega, Omega è a sinistra di Gamma, Gamma è a sinistra di Lambda. Il terzo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Omega, Omega è a sinistra di Gamma, Gamma è a sinistra di Lambda. L'elemento più a destra è",
+          "target": " Lambda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Phi, Phi è a sinistra di Theta, Theta è a sinistra di Omega. L'elemento più a sinistra è",
+          "target": " Psi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Phi, Phi è a sinistra di Theta, Theta è a sinistra di Omega. Il secondo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Phi, Phi è a sinistra di Theta, Theta è a sinistra di Omega. Il terzo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Phi, Phi è a sinistra di Theta, Theta è a sinistra di Omega. L'elemento più a destra è",
+          "target": " Omega."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Gamma è a sinistra di Beta, Beta è a sinistra di Theta, Theta è a sinistra di Omega. L'elemento più a sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Gamma è a sinistra di Beta, Beta è a sinistra di Theta, Theta è a sinistra di Omega. Il secondo elemento da sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Gamma è a sinistra di Beta, Beta è a sinistra di Theta, Theta è a sinistra di Omega. Il terzo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Gamma è a sinistra di Beta, Beta è a sinistra di Theta, Theta è a sinistra di Omega. L'elemento più a destra è",
+          "target": " Omega."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Gamma, Gamma è a sinistra di Tau, Tau è a sinistra di Theta. L'elemento più a sinistra è",
+          "target": " Lambda."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Gamma, Gamma è a sinistra di Tau, Tau è a sinistra di Theta. Il secondo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Gamma, Gamma è a sinistra di Tau, Tau è a sinistra di Theta. Il terzo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Gamma, Gamma è a sinistra di Tau, Tau è a sinistra di Theta. L'elemento più a destra è",
+          "target": " Theta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Eta, Eta è a sinistra di Phi, Phi è a sinistra di Epsilon. L'elemento più a sinistra è",
+          "target": " Sigma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Eta, Eta è a sinistra di Phi, Phi è a sinistra di Epsilon. Il secondo elemento da sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Eta, Eta è a sinistra di Phi, Phi è a sinistra di Epsilon. Il terzo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Eta, Eta è a sinistra di Phi, Phi è a sinistra di Epsilon. L'elemento più a destra è",
+          "target": " Epsilon."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Sigma, Sigma è a sinistra di Xi, Xi è a sinistra di Eta. L'elemento più a sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Sigma, Sigma è a sinistra di Xi, Xi è a sinistra di Eta. Il secondo elemento da sinistra è",
+          "target": " Sigma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Sigma, Sigma è a sinistra di Xi, Xi è a sinistra di Eta. Il terzo elemento da sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Sigma, Sigma è a sinistra di Xi, Xi è a sinistra di Eta. L'elemento più a destra è",
+          "target": " Eta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Xi, Xi è a sinistra di Mu, Mu è a sinistra di Psi. L'elemento più a sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Xi, Xi è a sinistra di Mu, Mu è a sinistra di Psi. Il secondo elemento da sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Xi, Xi è a sinistra di Mu, Mu è a sinistra di Psi. Il terzo elemento da sinistra è",
+          "target": " Mu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Xi, Xi è a sinistra di Mu, Mu è a sinistra di Psi. L'elemento più a destra è",
+          "target": " Psi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Beta, Beta è a sinistra di Delta, Delta è a sinistra di Psi. L'elemento più a sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Beta, Beta è a sinistra di Delta, Delta è a sinistra di Psi. Il secondo elemento da sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Beta, Beta è a sinistra di Delta, Delta è a sinistra di Psi. Il terzo elemento da sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Beta, Beta è a sinistra di Delta, Delta è a sinistra di Psi. L'elemento più a destra è",
+          "target": " Psi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Delta, Delta è a sinistra di Theta, Theta è a sinistra di Eta. L'elemento più a sinistra è",
+          "target": " Lambda."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Delta, Delta è a sinistra di Theta, Theta è a sinistra di Eta. Il secondo elemento da sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Delta, Delta è a sinistra di Theta, Theta è a sinistra di Eta. Il terzo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Delta, Delta è a sinistra di Theta, Theta è a sinistra di Eta. L'elemento più a destra è",
+          "target": " Eta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Omicron, Omicron è a sinistra di Epsilon, Epsilon è a sinistra di Xi. L'elemento più a sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Omicron, Omicron è a sinistra di Epsilon, Epsilon è a sinistra di Xi. Il secondo elemento da sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Omicron, Omicron è a sinistra di Epsilon, Epsilon è a sinistra di Xi. Il terzo elemento da sinistra è",
+          "target": " Epsilon."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Omicron, Omicron è a sinistra di Epsilon, Epsilon è a sinistra di Xi. L'elemento più a destra è",
+          "target": " Xi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Omicron, Omicron è a sinistra di Theta, Theta è a sinistra di Gamma. L'elemento più a sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Omicron, Omicron è a sinistra di Theta, Theta è a sinistra di Gamma. Il secondo elemento da sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Omicron, Omicron è a sinistra di Theta, Theta è a sinistra di Gamma. Il terzo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Omicron, Omicron è a sinistra di Theta, Theta è a sinistra di Gamma. L'elemento più a destra è",
+          "target": " Gamma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Delta, Delta è a sinistra di Beta, Beta è a sinistra di Alfa. L'elemento più a sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Delta, Delta è a sinistra di Beta, Beta è a sinistra di Alfa. Il secondo elemento da sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Delta, Delta è a sinistra di Beta, Beta è a sinistra di Alfa. Il terzo elemento da sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Delta, Delta è a sinistra di Beta, Beta è a sinistra di Alfa. L'elemento più a destra è",
+          "target": " Alfa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Zeta, Zeta è a sinistra di Xi, Xi è a sinistra di Sigma. L'elemento più a sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Zeta, Zeta è a sinistra di Xi, Xi è a sinistra di Sigma. Il secondo elemento da sinistra è",
+          "target": " Zeta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Zeta, Zeta è a sinistra di Xi, Xi è a sinistra di Sigma. Il terzo elemento da sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Zeta, Zeta è a sinistra di Xi, Xi è a sinistra di Sigma. L'elemento più a destra è",
+          "target": " Sigma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Nu, Nu è a sinistra di Beta, Beta è a sinistra di Zeta. L'elemento più a sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Nu, Nu è a sinistra di Beta, Beta è a sinistra di Zeta. Il secondo elemento da sinistra è",
+          "target": " Nu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Nu, Nu è a sinistra di Beta, Beta è a sinistra di Zeta. Il terzo elemento da sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Nu, Nu è a sinistra di Beta, Beta è a sinistra di Zeta. L'elemento più a destra è",
+          "target": " Zeta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Nu, Nu è a sinistra di Iota, Iota è a sinistra di Omicron. L'elemento più a sinistra è",
+          "target": " Alfa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Nu, Nu è a sinistra di Iota, Iota è a sinistra di Omicron. Il secondo elemento da sinistra è",
+          "target": " Nu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Nu, Nu è a sinistra di Iota, Iota è a sinistra di Omicron. Il terzo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Nu, Nu è a sinistra di Iota, Iota è a sinistra di Omicron. L'elemento più a destra è",
+          "target": " Omicron."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Phi, Phi è a sinistra di Sigma, Sigma è a sinistra di Epsilon. L'elemento più a sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Phi, Phi è a sinistra di Sigma, Sigma è a sinistra di Epsilon. Il secondo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Phi, Phi è a sinistra di Sigma, Sigma è a sinistra di Epsilon. Il terzo elemento da sinistra è",
+          "target": " Sigma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Phi, Phi è a sinistra di Sigma, Sigma è a sinistra di Epsilon. L'elemento più a destra è",
+          "target": " Epsilon."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Kappa è a sinistra di Eta, Eta è a sinistra di Beta, Beta è a sinistra di Phi. L'elemento più a sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Kappa è a sinistra di Eta, Eta è a sinistra di Beta, Beta è a sinistra di Phi. Il secondo elemento da sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Kappa è a sinistra di Eta, Eta è a sinistra di Beta, Beta è a sinistra di Phi. Il terzo elemento da sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Kappa è a sinistra di Eta, Eta è a sinistra di Beta, Beta è a sinistra di Phi. L'elemento più a destra è",
+          "target": " Phi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Omega, Omega è a sinistra di Sigma, Sigma è a sinistra di Tau. L'elemento più a sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Omega, Omega è a sinistra di Sigma, Sigma è a sinistra di Tau. Il secondo elemento da sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Omega, Omega è a sinistra di Sigma, Sigma è a sinistra di Tau. Il terzo elemento da sinistra è",
+          "target": " Sigma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Omega, Omega è a sinistra di Sigma, Sigma è a sinistra di Tau. L'elemento più a destra è",
+          "target": " Tau."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Tau, Tau è a sinistra di Gamma, Gamma è a sinistra di Zeta. L'elemento più a sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Tau, Tau è a sinistra di Gamma, Gamma è a sinistra di Zeta. Il secondo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Tau, Tau è a sinistra di Gamma, Gamma è a sinistra di Zeta. Il terzo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Tau, Tau è a sinistra di Gamma, Gamma è a sinistra di Zeta. L'elemento più a destra è",
+          "target": " Zeta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Gamma, Gamma è a sinistra di Theta, Theta è a sinistra di Nu. L'elemento più a sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Gamma, Gamma è a sinistra di Theta, Theta è a sinistra di Nu. Il secondo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Gamma, Gamma è a sinistra di Theta, Theta è a sinistra di Nu. Il terzo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Gamma, Gamma è a sinistra di Theta, Theta è a sinistra di Nu. L'elemento più a destra è",
+          "target": " Nu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Theta, Theta è a sinistra di Beta, Beta è a sinistra di Gamma. L'elemento più a sinistra è",
+          "target": " Psi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Theta, Theta è a sinistra di Beta, Beta è a sinistra di Gamma. Il secondo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Theta, Theta è a sinistra di Beta, Beta è a sinistra di Gamma. Il terzo elemento da sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Theta, Theta è a sinistra di Beta, Beta è a sinistra di Gamma. L'elemento più a destra è",
+          "target": " Gamma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Omega, Omega è a sinistra di Tau, Tau è a sinistra di Lambda. L'elemento più a sinistra è",
+          "target": " Psi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Omega, Omega è a sinistra di Tau, Tau è a sinistra di Lambda. Il secondo elemento da sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Omega, Omega è a sinistra di Tau, Tau è a sinistra di Lambda. Il terzo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Omega, Omega è a sinistra di Tau, Tau è a sinistra di Lambda. L'elemento più a destra è",
+          "target": " Lambda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Lambda, Lambda è a sinistra di Theta, Theta è a sinistra di Iota. L'elemento più a sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Lambda, Lambda è a sinistra di Theta, Theta è a sinistra di Iota. Il secondo elemento da sinistra è",
+          "target": " Lambda."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Lambda, Lambda è a sinistra di Theta, Theta è a sinistra di Iota. Il terzo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Lambda, Lambda è a sinistra di Theta, Theta è a sinistra di Iota. L'elemento più a destra è",
+          "target": " Iota."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Kappa, Kappa è a sinistra di Omicron, Omicron è a sinistra di Lambda. L'elemento più a sinistra è",
+          "target": " Epsilon."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Kappa, Kappa è a sinistra di Omicron, Omicron è a sinistra di Lambda. Il secondo elemento da sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Kappa, Kappa è a sinistra di Omicron, Omicron è a sinistra di Lambda. Il terzo elemento da sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Kappa, Kappa è a sinistra di Omicron, Omicron è a sinistra di Lambda. L'elemento più a destra è",
+          "target": " Lambda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Omicron, Omicron è a sinistra di Delta, Delta è a sinistra di Gamma. L'elemento più a sinistra è",
+          "target": " Alfa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Omicron, Omicron è a sinistra di Delta, Delta è a sinistra di Gamma. Il secondo elemento da sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Omicron, Omicron è a sinistra di Delta, Delta è a sinistra di Gamma. Il terzo elemento da sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Omicron, Omicron è a sinistra di Delta, Delta è a sinistra di Gamma. L'elemento più a destra è",
+          "target": " Gamma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Tau è a sinistra di Iota, Iota è a sinistra di Epsilon, Epsilon è a sinistra di Mu. L'elemento più a sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Tau è a sinistra di Iota, Iota è a sinistra di Epsilon, Epsilon è a sinistra di Mu. Il secondo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Tau è a sinistra di Iota, Iota è a sinistra di Epsilon, Epsilon è a sinistra di Mu. Il terzo elemento da sinistra è",
+          "target": " Epsilon."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Tau è a sinistra di Iota, Iota è a sinistra di Epsilon, Epsilon è a sinistra di Mu. L'elemento più a destra è",
+          "target": " Mu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Mu, Mu è a sinistra di Kappa, Kappa è a sinistra di Zeta. L'elemento più a sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Mu, Mu è a sinistra di Kappa, Kappa è a sinistra di Zeta. Il secondo elemento da sinistra è",
+          "target": " Mu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Mu, Mu è a sinistra di Kappa, Kappa è a sinistra di Zeta. Il terzo elemento da sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Mu, Mu è a sinistra di Kappa, Kappa è a sinistra di Zeta. L'elemento più a destra è",
+          "target": " Zeta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Kappa, Kappa è a sinistra di Tau, Tau è a sinistra di Alfa. L'elemento più a sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Kappa, Kappa è a sinistra di Tau, Tau è a sinistra di Alfa. Il secondo elemento da sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Kappa, Kappa è a sinistra di Tau, Tau è a sinistra di Alfa. Il terzo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Kappa, Kappa è a sinistra di Tau, Tau è a sinistra di Alfa. L'elemento più a destra è",
+          "target": " Alfa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Epsilon, Epsilon è a sinistra di Iota, Iota è a sinistra di Omega. L'elemento più a sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Epsilon, Epsilon è a sinistra di Iota, Iota è a sinistra di Omega. Il secondo elemento da sinistra è",
+          "target": " Epsilon."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Epsilon, Epsilon è a sinistra di Iota, Iota è a sinistra di Omega. Il terzo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Epsilon, Epsilon è a sinistra di Iota, Iota è a sinistra di Omega. L'elemento più a destra è",
+          "target": " Omega."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Epsilon, Epsilon è a sinistra di Iota, Iota è a sinistra di Kappa. L'elemento più a sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Epsilon, Epsilon è a sinistra di Iota, Iota è a sinistra di Kappa. Il secondo elemento da sinistra è",
+          "target": " Epsilon."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Epsilon, Epsilon è a sinistra di Iota, Iota è a sinistra di Kappa. Il terzo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Epsilon, Epsilon è a sinistra di Iota, Iota è a sinistra di Kappa. L'elemento più a destra è",
+          "target": " Kappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Eta, Eta è a sinistra di Iota, Iota è a sinistra di Tau. L'elemento più a sinistra è",
+          "target": " Lambda."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Eta, Eta è a sinistra di Iota, Iota è a sinistra di Tau. Il secondo elemento da sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Eta, Eta è a sinistra di Iota, Iota è a sinistra di Tau. Il terzo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Eta, Eta è a sinistra di Iota, Iota è a sinistra di Tau. L'elemento più a destra è",
+          "target": " Tau."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Beta, Beta è a sinistra di Gamma, Gamma è a sinistra di Xi. L'elemento più a sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Beta, Beta è a sinistra di Gamma, Gamma è a sinistra di Xi. Il secondo elemento da sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Beta, Beta è a sinistra di Gamma, Gamma è a sinistra di Xi. Il terzo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Beta, Beta è a sinistra di Gamma, Gamma è a sinistra di Xi. L'elemento più a destra è",
+          "target": " Xi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Alfa, Alfa è a sinistra di Lambda, Lambda è a sinistra di Epsilon. L'elemento più a sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Alfa, Alfa è a sinistra di Lambda, Lambda è a sinistra di Epsilon. Il secondo elemento da sinistra è",
+          "target": " Alfa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Alfa, Alfa è a sinistra di Lambda, Lambda è a sinistra di Epsilon. Il terzo elemento da sinistra è",
+          "target": " Lambda."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Alfa, Alfa è a sinistra di Lambda, Lambda è a sinistra di Epsilon. L'elemento più a destra è",
+          "target": " Epsilon."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Zeta è a sinistra di Omicron, Omicron è a sinistra di Phi, Phi è a sinistra di Xi. L'elemento più a sinistra è",
+          "target": " Zeta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Zeta è a sinistra di Omicron, Omicron è a sinistra di Phi, Phi è a sinistra di Xi. Il secondo elemento da sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Zeta è a sinistra di Omicron, Omicron è a sinistra di Phi, Phi è a sinistra di Xi. Il terzo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Zeta è a sinistra di Omicron, Omicron è a sinistra di Phi, Phi è a sinistra di Xi. L'elemento più a destra è",
+          "target": " Xi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Gamma, Gamma è a sinistra di Epsilon, Epsilon è a sinistra di Beta. L'elemento più a sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Gamma, Gamma è a sinistra di Epsilon, Epsilon è a sinistra di Beta. Il secondo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Gamma, Gamma è a sinistra di Epsilon, Epsilon è a sinistra di Beta. Il terzo elemento da sinistra è",
+          "target": " Epsilon."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Gamma, Gamma è a sinistra di Epsilon, Epsilon è a sinistra di Beta. L'elemento più a destra è",
+          "target": " Beta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Phi, Phi è a sinistra di Epsilon, Epsilon è a sinistra di Xi. L'elemento più a sinistra è",
+          "target": " Psi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Phi, Phi è a sinistra di Epsilon, Epsilon è a sinistra di Xi. Il secondo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Phi, Phi è a sinistra di Epsilon, Epsilon è a sinistra di Xi. Il terzo elemento da sinistra è",
+          "target": " Epsilon."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Psi è a sinistra di Phi, Phi è a sinistra di Epsilon, Epsilon è a sinistra di Xi. L'elemento più a destra è",
+          "target": " Xi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Kappa, Kappa è a sinistra di Mu, Mu è a sinistra di Omega. L'elemento più a sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Kappa, Kappa è a sinistra di Mu, Mu è a sinistra di Omega. Il secondo elemento da sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Kappa, Kappa è a sinistra di Mu, Mu è a sinistra di Omega. Il terzo elemento da sinistra è",
+          "target": " Mu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Kappa, Kappa è a sinistra di Mu, Mu è a sinistra di Omega. L'elemento più a destra è",
+          "target": " Omega."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Theta, Theta è a sinistra di Delta, Delta è a sinistra di Mu. L'elemento più a sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Theta, Theta è a sinistra di Delta, Delta è a sinistra di Mu. Il secondo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Theta, Theta è a sinistra di Delta, Delta è a sinistra di Mu. Il terzo elemento da sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Theta, Theta è a sinistra di Delta, Delta è a sinistra di Mu. L'elemento più a destra è",
+          "target": " Mu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Epsilon, Epsilon è a sinistra di Theta, Theta è a sinistra di Zeta. L'elemento più a sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Epsilon, Epsilon è a sinistra di Theta, Theta è a sinistra di Zeta. Il secondo elemento da sinistra è",
+          "target": " Epsilon."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Epsilon, Epsilon è a sinistra di Theta, Theta è a sinistra di Zeta. Il terzo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Epsilon, Epsilon è a sinistra di Theta, Theta è a sinistra di Zeta. L'elemento più a destra è",
+          "target": " Zeta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Alfa, Alfa è a sinistra di Zeta, Zeta è a sinistra di Lambda. L'elemento più a sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Alfa, Alfa è a sinistra di Zeta, Zeta è a sinistra di Lambda. Il secondo elemento da sinistra è",
+          "target": " Alfa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Alfa, Alfa è a sinistra di Zeta, Zeta è a sinistra di Lambda. Il terzo elemento da sinistra è",
+          "target": " Zeta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Alfa, Alfa è a sinistra di Zeta, Zeta è a sinistra di Lambda. L'elemento più a destra è",
+          "target": " Lambda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Iota, Iota è a sinistra di Zeta, Zeta è a sinistra di Delta. L'elemento più a sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Iota, Iota è a sinistra di Zeta, Zeta è a sinistra di Delta. Il secondo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Iota, Iota è a sinistra di Zeta, Zeta è a sinistra di Delta. Il terzo elemento da sinistra è",
+          "target": " Zeta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Iota, Iota è a sinistra di Zeta, Zeta è a sinistra di Delta. L'elemento più a destra è",
+          "target": " Delta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Sigma, Sigma è a sinistra di Theta, Theta è a sinistra di Eta. L'elemento più a sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Sigma, Sigma è a sinistra di Theta, Theta è a sinistra di Eta. Il secondo elemento da sinistra è",
+          "target": " Sigma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Sigma, Sigma è a sinistra di Theta, Theta è a sinistra di Eta. Il terzo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Sigma, Sigma è a sinistra di Theta, Theta è a sinistra di Eta. L'elemento più a destra è",
+          "target": " Eta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Kappa, Kappa è a sinistra di Theta, Theta è a sinistra di Phi. L'elemento più a sinistra è",
+          "target": " Mu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Kappa, Kappa è a sinistra di Theta, Theta è a sinistra di Phi. Il secondo elemento da sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Kappa, Kappa è a sinistra di Theta, Theta è a sinistra di Phi. Il terzo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Kappa, Kappa è a sinistra di Theta, Theta è a sinistra di Phi. L'elemento più a destra è",
+          "target": " Phi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Nu, Nu è a sinistra di Lambda, Lambda è a sinistra di Iota. L'elemento più a sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Nu, Nu è a sinistra di Lambda, Lambda è a sinistra di Iota. Il secondo elemento da sinistra è",
+          "target": " Nu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Nu, Nu è a sinistra di Lambda, Lambda è a sinistra di Iota. Il terzo elemento da sinistra è",
+          "target": " Lambda."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Eta è a sinistra di Nu, Nu è a sinistra di Lambda, Lambda è a sinistra di Iota. L'elemento più a destra è",
+          "target": " Iota."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Mu, Mu è a sinistra di Tau, Tau è a sinistra di Nu. L'elemento più a sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Mu, Mu è a sinistra di Tau, Tau è a sinistra di Nu. Il secondo elemento da sinistra è",
+          "target": " Mu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Mu, Mu è a sinistra di Tau, Tau è a sinistra di Nu. Il terzo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Mu, Mu è a sinistra di Tau, Tau è a sinistra di Nu. L'elemento più a destra è",
+          "target": " Nu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Delta, Delta è a sinistra di Iota, Iota è a sinistra di Zeta. L'elemento più a sinistra è",
+          "target": " Alfa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Delta, Delta è a sinistra di Iota, Iota è a sinistra di Zeta. Il secondo elemento da sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Delta, Delta è a sinistra di Iota, Iota è a sinistra di Zeta. Il terzo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Delta, Delta è a sinistra di Iota, Iota è a sinistra di Zeta. L'elemento più a destra è",
+          "target": " Zeta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Delta, Delta è a sinistra di Xi, Xi è a sinistra di Mu. L'elemento più a sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Delta, Delta è a sinistra di Xi, Xi è a sinistra di Mu. Il secondo elemento da sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Delta, Delta è a sinistra di Xi, Xi è a sinistra di Mu. Il terzo elemento da sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Delta, Delta è a sinistra di Xi, Xi è a sinistra di Mu. L'elemento più a destra è",
+          "target": " Mu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Tau, Tau è a sinistra di Delta, Delta è a sinistra di Nu. L'elemento più a sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Tau, Tau è a sinistra di Delta, Delta è a sinistra di Nu. Il secondo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Tau, Tau è a sinistra di Delta, Delta è a sinistra di Nu. Il terzo elemento da sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Tau, Tau è a sinistra di Delta, Delta è a sinistra di Nu. L'elemento più a destra è",
+          "target": " Nu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Beta, Beta è a sinistra di Xi, Xi è a sinistra di Alfa. L'elemento più a sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Beta, Beta è a sinistra di Xi, Xi è a sinistra di Alfa. Il secondo elemento da sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Beta, Beta è a sinistra di Xi, Xi è a sinistra di Alfa. Il terzo elemento da sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Iota è a sinistra di Beta, Beta è a sinistra di Xi, Xi è a sinistra di Alfa. L'elemento più a destra è",
+          "target": " Alfa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Xi, Xi è a sinistra di Gamma, Gamma è a sinistra di Lambda. L'elemento più a sinistra è",
+          "target": " Mu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Xi, Xi è a sinistra di Gamma, Gamma è a sinistra di Lambda. Il secondo elemento da sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Xi, Xi è a sinistra di Gamma, Gamma è a sinistra di Lambda. Il terzo elemento da sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Mu è a sinistra di Xi, Xi è a sinistra di Gamma, Gamma è a sinistra di Lambda. L'elemento più a destra è",
+          "target": " Lambda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Kappa, Kappa è a sinistra di Tau, Tau è a sinistra di Psi. L'elemento più a sinistra è",
+          "target": " Delta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Kappa, Kappa è a sinistra di Tau, Tau è a sinistra di Psi. Il secondo elemento da sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Kappa, Kappa è a sinistra di Tau, Tau è a sinistra di Psi. Il terzo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Delta è a sinistra di Kappa, Kappa è a sinistra di Tau, Tau è a sinistra di Psi. L'elemento più a destra è",
+          "target": " Psi."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Nu, Nu è a sinistra di Kappa, Kappa è a sinistra di Epsilon. L'elemento più a sinistra è",
+          "target": " Lambda."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Nu, Nu è a sinistra di Kappa, Kappa è a sinistra di Epsilon. Il secondo elemento da sinistra è",
+          "target": " Nu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Nu, Nu è a sinistra di Kappa, Kappa è a sinistra di Epsilon. Il terzo elemento da sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Lambda è a sinistra di Nu, Nu è a sinistra di Kappa, Kappa è a sinistra di Epsilon. L'elemento più a destra è",
+          "target": " Epsilon."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Nu, Nu è a sinistra di Zeta, Zeta è a sinistra di Kappa. L'elemento più a sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Nu, Nu è a sinistra di Zeta, Zeta è a sinistra di Kappa. Il secondo elemento da sinistra è",
+          "target": " Nu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Nu, Nu è a sinistra di Zeta, Zeta è a sinistra di Kappa. Il terzo elemento da sinistra è",
+          "target": " Zeta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Nu, Nu è a sinistra di Zeta, Zeta è a sinistra di Kappa. L'elemento più a destra è",
+          "target": " Kappa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Alfa, Alfa è a sinistra di Kappa, Kappa è a sinistra di Omega. L'elemento più a sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Alfa, Alfa è a sinistra di Kappa, Kappa è a sinistra di Omega. Il secondo elemento da sinistra è",
+          "target": " Alfa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Alfa, Alfa è a sinistra di Kappa, Kappa è a sinistra di Omega. Il terzo elemento da sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Phi è a sinistra di Alfa, Alfa è a sinistra di Kappa, Kappa è a sinistra di Omega. L'elemento più a destra è",
+          "target": " Omega."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Psi, Psi è a sinistra di Lambda, Lambda è a sinistra di Omicron. L'elemento più a sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Psi, Psi è a sinistra di Lambda, Lambda è a sinistra di Omicron. Il secondo elemento da sinistra è",
+          "target": " Psi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Psi, Psi è a sinistra di Lambda, Lambda è a sinistra di Omicron. Il terzo elemento da sinistra è",
+          "target": " Lambda."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Psi, Psi è a sinistra di Lambda, Lambda è a sinistra di Omicron. L'elemento più a destra è",
+          "target": " Omicron."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Eta, Eta è a sinistra di Tau, Tau è a sinistra di Sigma. L'elemento più a sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Eta, Eta è a sinistra di Tau, Tau è a sinistra di Sigma. Il secondo elemento da sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Eta, Eta è a sinistra di Tau, Tau è a sinistra di Sigma. Il terzo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Eta, Eta è a sinistra di Tau, Tau è a sinistra di Sigma. L'elemento più a destra è",
+          "target": " Sigma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Gamma è a sinistra di Kappa, Kappa è a sinistra di Tau, Tau è a sinistra di Lambda. L'elemento più a sinistra è",
+          "target": " Gamma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Gamma è a sinistra di Kappa, Kappa è a sinistra di Tau, Tau è a sinistra di Lambda. Il secondo elemento da sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Gamma è a sinistra di Kappa, Kappa è a sinistra di Tau, Tau è a sinistra di Lambda. Il terzo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Gamma è a sinistra di Kappa, Kappa è a sinistra di Tau, Tau è a sinistra di Lambda. L'elemento più a destra è",
+          "target": " Lambda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Kappa, Kappa è a sinistra di Omega, Omega è a sinistra di Eta. L'elemento più a sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Kappa, Kappa è a sinistra di Omega, Omega è a sinistra di Eta. Il secondo elemento da sinistra è",
+          "target": " Kappa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Kappa, Kappa è a sinistra di Omega, Omega è a sinistra di Eta. Il terzo elemento da sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Theta è a sinistra di Kappa, Kappa è a sinistra di Omega, Omega è a sinistra di Eta. L'elemento più a destra è",
+          "target": " Eta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Beta, Beta è a sinistra di Theta, Theta è a sinistra di Sigma. L'elemento più a sinistra è",
+          "target": " Alfa."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Beta, Beta è a sinistra di Theta, Theta è a sinistra di Sigma. Il secondo elemento da sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Beta, Beta è a sinistra di Theta, Theta è a sinistra di Sigma. Il terzo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Alfa è a sinistra di Beta, Beta è a sinistra di Theta, Theta è a sinistra di Sigma. L'elemento più a destra è",
+          "target": " Sigma."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Xi, Xi è a sinistra di Eta, Eta è a sinistra di Nu. L'elemento più a sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Xi, Xi è a sinistra di Eta, Eta è a sinistra di Nu. Il secondo elemento da sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Xi, Xi è a sinistra di Eta, Eta è a sinistra di Nu. Il terzo elemento da sinistra è",
+          "target": " Eta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omicron è a sinistra di Xi, Xi è a sinistra di Eta, Eta è a sinistra di Nu. L'elemento più a destra è",
+          "target": " Nu."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Nu è a sinistra di Theta, Theta è a sinistra di Epsilon, Epsilon è a sinistra di Alfa. L'elemento più a sinistra è",
+          "target": " Nu."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Nu è a sinistra di Theta, Theta è a sinistra di Epsilon, Epsilon è a sinistra di Alfa. Il secondo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Nu è a sinistra di Theta, Theta è a sinistra di Epsilon, Epsilon è a sinistra di Alfa. Il terzo elemento da sinistra è",
+          "target": " Epsilon."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Nu è a sinistra di Theta, Theta è a sinistra di Epsilon, Epsilon è a sinistra di Alfa. L'elemento più a destra è",
+          "target": " Alfa."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Theta, Theta è a sinistra di Zeta, Zeta è a sinistra di Tau. L'elemento più a sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Theta, Theta è a sinistra di Zeta, Zeta è a sinistra di Tau. Il secondo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Theta, Theta è a sinistra di Zeta, Zeta è a sinistra di Tau. Il terzo elemento da sinistra è",
+          "target": " Zeta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Xi è a sinistra di Theta, Theta è a sinistra di Zeta, Zeta è a sinistra di Tau. L'elemento più a destra è",
+          "target": " Tau."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Phi, Phi è a sinistra di Theta, Theta è a sinistra di Delta. L'elemento più a sinistra è",
+          "target": " Beta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Phi, Phi è a sinistra di Theta, Theta è a sinistra di Delta. Il secondo elemento da sinistra è",
+          "target": " Phi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Phi, Phi è a sinistra di Theta, Theta è a sinistra di Delta. Il terzo elemento da sinistra è",
+          "target": " Theta."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Beta è a sinistra di Phi, Phi è a sinistra di Theta, Theta è a sinistra di Delta. L'elemento più a destra è",
+          "target": " Delta."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Omicron, Omicron è a sinistra di Tau, Tau è a sinistra di Lambda. L'elemento più a sinistra è",
+          "target": " Epsilon."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Omicron, Omicron è a sinistra di Tau, Tau è a sinistra di Lambda. Il secondo elemento da sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Omicron, Omicron è a sinistra di Tau, Tau è a sinistra di Lambda. Il terzo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Epsilon è a sinistra di Omicron, Omicron è a sinistra di Tau, Tau è a sinistra di Lambda. L'elemento più a destra è",
+          "target": " Lambda."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Tau, Tau è a sinistra di Xi, Xi è a sinistra di Omicron. L'elemento più a sinistra è",
+          "target": " Omega."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Tau, Tau è a sinistra di Xi, Xi è a sinistra di Omicron. Il secondo elemento da sinistra è",
+          "target": " Tau."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Tau, Tau è a sinistra di Xi, Xi è a sinistra di Omicron. Il terzo elemento da sinistra è",
+          "target": " Xi."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Omega è a sinistra di Tau, Tau è a sinistra di Xi, Xi è a sinistra di Omicron. L'elemento più a destra è",
+          "target": " Omicron."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Omicron, Omicron è a sinistra di Iota, Iota è a sinistra di Theta. L'elemento più a sinistra è",
+          "target": " Sigma."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Omicron, Omicron è a sinistra di Iota, Iota è a sinistra di Theta. Il secondo elemento da sinistra è",
+          "target": " Omicron."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Omicron, Omicron è a sinistra di Iota, Iota è a sinistra di Theta. Il terzo elemento da sinistra è",
+          "target": " Iota."
+        },
+        {
+          "context": "Disponi mentalmente gli elementi: Sigma è a sinistra di Omicron, Omicron è a sinistra di Iota, Iota è a sinistra di Theta. L'elemento più a destra è",
+          "target": " Theta."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

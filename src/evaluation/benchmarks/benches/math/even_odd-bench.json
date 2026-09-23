@@ -1,0 +1,1207 @@
+{
+  "version": 1,
+  "id": "even_odd",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Il numero 2 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 3 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 30 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 31 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 16 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 17 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 86 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 87 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 74 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 75 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 4 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 5 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 10 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 11 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 28 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 29 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 70 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 71 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 90 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 91 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 28 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 29 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 74 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 75 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 0 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 1 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 88 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 89 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 42 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 43 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 18 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 19 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 96 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 97 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 12 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 13 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 48 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 49 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 44 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 45 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 76 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 77 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 4 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 5 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 68 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 69 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 48 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 49 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 70 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 71 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 80 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 81 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 72 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 73 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 90 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 91 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 4 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 5 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 98 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 99 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 10 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 11 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 12 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 13 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 34 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 35 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 80 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 81 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 20 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 21 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 44 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 45 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 84 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 85 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 88 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 89 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 76 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 77 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 68 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 69 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 20 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 21 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 48 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 49 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 80 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 81 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 86 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 87 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 98 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 99 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 28 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 29 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 40 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 41 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 34 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 35 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 26 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 27 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 26 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 27 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 50 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 51 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 18 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 19 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 16 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 17 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 94 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 95 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 94 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 95 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 74 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 75 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 46 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 47 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 16 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 17 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 10 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 11 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 14 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 15 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 80 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 81 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 86 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 87 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 76 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 77 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 48 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 49 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 76 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 77 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 66 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 67 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 70 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 71 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 86 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 87 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 86 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 87 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 98 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 99 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 14 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 15 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 54 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 55 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 58 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 59 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 92 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 93 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 64 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 65 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 64 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 65 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 80 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 81 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 80 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 81 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 18 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 19 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 96 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 97 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 68 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 69 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 76 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 77 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 62 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 63 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 14 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 15 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 38 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 39 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 6 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 7 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 72 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 73 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 10 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 11 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 8 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 9 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 16 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 17 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 70 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 71 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 32 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 33 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 26 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 27 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 90 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 91 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 50 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 51 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 56 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 57 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 14 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 15 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 28 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 29 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 42 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 43 è",
+          "target": " dispari."
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Il numero 74 è",
+          "target": " pari."
+        },
+        {
+          "context": "Il numero 75 è",
+          "target": " dispari."
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}

@@ -1,0 +1,2007 @@
+{
+  "version": 1,
+  "id": "few_shot_present_to_future",
+  "sets": [
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io apro → io aprirò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io apro → io aprirò. io scelgo →",
+          "target": " io sceglierò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io apro → io aprirò. io leggo →",
+          "target": " io leggerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io apro → io aprirò. io corro →",
+          "target": " io correrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → io avrò, io dico → io dirò. io bevo →",
+          "target": " io berrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → io avrò, io dico → io dirò. io mangio →",
+          "target": " io mangerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → io avrò, io dico → io dirò. io dormo →",
+          "target": " io dormirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → io avrò, io dico → io dirò. io parlo →",
+          "target": " io parlerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io esco → io uscirò. io mangio →",
+          "target": " io mangerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io esco → io uscirò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io esco → io uscirò. io parlo →",
+          "target": " io parlerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io esco → io uscirò. io salgo →",
+          "target": " io salirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io posso → io potrò. io ho →",
+          "target": " io avrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io posso → io potrò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io posso → io potrò. io mangio →",
+          "target": " io mangerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io posso → io potrò. io scrivo →",
+          "target": " io scriverò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io apro → io aprirò. io leggo →",
+          "target": " io leggerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io apro → io aprirò. io parlo →",
+          "target": " io parlerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io apro → io aprirò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io apro → io aprirò. io corro →",
+          "target": " io correrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io corro → io correrò. io vengo →",
+          "target": " io verrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io corro → io correrò. io scelgo →",
+          "target": " io sceglierò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io corro → io correrò. io esco →",
+          "target": " io uscirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io corro → io correrò. io apro →",
+          "target": " io aprirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io posso → io potrò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io posso → io potrò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io posso → io potrò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io posso → io potrò. io dormo →",
+          "target": " io dormirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io esco → io uscirò. io vengo →",
+          "target": " io verrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io esco → io uscirò. io ho →",
+          "target": " io avrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io esco → io uscirò. io parlo →",
+          "target": " io parlerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io esco → io uscirò. io dormo →",
+          "target": " io dormirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io ascolto → io ascolterò. io chiudo →",
+          "target": " io chiuderò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io ascolto → io ascolterò. io dormo →",
+          "target": " io dormirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io ascolto → io ascolterò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io ascolto → io ascolterò. io corro →",
+          "target": " io correrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io posso → io potrò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io posso → io potrò. io vengo →",
+          "target": " io verrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io posso → io potrò. io scrivo →",
+          "target": " io scriverò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io posso → io potrò. io scelgo →",
+          "target": " io sceglierò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io scelgo → io sceglierò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io scelgo → io sceglierò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io scelgo → io sceglierò. io dormo →",
+          "target": " io dormirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io scelgo → io sceglierò. io scrivo →",
+          "target": " io scriverò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → io scriverò, io posso → io potrò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → io scriverò, io posso → io potrò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → io scriverò, io posso → io potrò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → io scriverò, io posso → io potrò. io ascolto →",
+          "target": " io ascolterò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io ascolto → io ascolterò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io ascolto → io ascolterò. io vado →",
+          "target": " io andrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io ascolto → io ascolterò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io ascolto → io ascolterò. io apro →",
+          "target": " io aprirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io ho → io avrò. io vado →",
+          "target": " io andrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io ho → io avrò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io ho → io avrò. io voglio →",
+          "target": " io vorrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io ho → io avrò. io faccio →",
+          "target": " io farò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io apro → io aprirò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io apro → io aprirò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io apro → io aprirò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io apro → io aprirò. io esco →",
+          "target": " io uscirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io ho → io avrò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io ho → io avrò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io ho → io avrò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io ho → io avrò. io vengo →",
+          "target": " io verrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io so → io saprò. io voglio →",
+          "target": " io vorrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io so → io saprò. io dormo →",
+          "target": " io dormirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io so → io saprò. io bevo →",
+          "target": " io berrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io so → io saprò. io corro →",
+          "target": " io correrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io scrivo → io scriverò. io scelgo →",
+          "target": " io sceglierò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io scrivo → io scriverò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io scrivo → io scriverò. io esco →",
+          "target": " io uscirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io scrivo → io scriverò. io dormo →",
+          "target": " io dormirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io esco → io uscirò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io esco → io uscirò. io so →",
+          "target": " io saprò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io esco → io uscirò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io esco → io uscirò. io sono →",
+          "target": " io sarò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io corro → io correrò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io corro → io correrò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io corro → io correrò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io corro → io correrò. io vado →",
+          "target": " io andrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io dico → io dirò. io scrivo →",
+          "target": " io scriverò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io dico → io dirò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io dico → io dirò. io mangio →",
+          "target": " io mangerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io dico → io dirò. io apro →",
+          "target": " io aprirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io corro → io correrò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io corro → io correrò. io chiudo →",
+          "target": " io chiuderò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io corro → io correrò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io corro → io correrò. io parlo →",
+          "target": " io parlerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io scrivo → io scriverò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io scrivo → io scriverò. io so →",
+          "target": " io saprò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io scrivo → io scriverò. io mangio →",
+          "target": " io mangerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io scrivo → io scriverò. io vado →",
+          "target": " io andrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io corro → io correrò. io vengo →",
+          "target": " io verrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io corro → io correrò. io chiudo →",
+          "target": " io chiuderò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io corro → io correrò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io corro → io correrò. io bevo →",
+          "target": " io berrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → io avrò, io dormo → io dormirò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → io avrò, io dormo → io dormirò. io voglio →",
+          "target": " io vorrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → io avrò, io dormo → io dormirò. io scelgo →",
+          "target": " io sceglierò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → io avrò, io dormo → io dormirò. io sono →",
+          "target": " io sarò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io scelgo → io sceglierò. io voglio →",
+          "target": " io vorrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io scelgo → io sceglierò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io scelgo → io sceglierò. io scrivo →",
+          "target": " io scriverò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io scelgo → io sceglierò. io apro →",
+          "target": " io aprirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io sono → io sarò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io sono → io sarò. io chiudo →",
+          "target": " io chiuderò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io sono → io sarò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io sono → io sarò. io vengo →",
+          "target": " io verrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io posso → io potrò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io posso → io potrò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io posso → io potrò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io posso → io potrò. io dormo →",
+          "target": " io dormirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io ho → io avrò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io ho → io avrò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io ho → io avrò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io ho → io avrò. io salgo →",
+          "target": " io salirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → io dormirò, io finisco → io finirò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → io dormirò, io finisco → io finirò. io bevo →",
+          "target": " io berrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → io dormirò, io finisco → io finirò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → io dormirò, io finisco → io finirò. io capisco →",
+          "target": " io capirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io dormo → io dormirò. io so →",
+          "target": " io saprò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io dormo → io dormirò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io dormo → io dormirò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io dormo → io dormirò. io voglio →",
+          "target": " io vorrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → io sarò, io leggo → io leggerò. io ho →",
+          "target": " io avrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → io sarò, io leggo → io leggerò. io scelgo →",
+          "target": " io sceglierò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → io sarò, io leggo → io leggerò. io voglio →",
+          "target": " io vorrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → io sarò, io leggo → io leggerò. io ascolto →",
+          "target": " io ascolterò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → io dirò, io parlo → io parlerò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → io dirò, io parlo → io parlerò. io scelgo →",
+          "target": " io sceglierò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → io dirò, io parlo → io parlerò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → io dirò, io parlo → io parlerò. io vengo →",
+          "target": " io verrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → io dirò, io posso → io potrò. io bevo →",
+          "target": " io berrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → io dirò, io posso → io potrò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → io dirò, io posso → io potrò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → io dirò, io posso → io potrò. io scelgo →",
+          "target": " io sceglierò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io vado → io andrò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io vado → io andrò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io vado → io andrò. io parlo →",
+          "target": " io parlerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io vado → io andrò. io esco →",
+          "target": " io uscirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io dico → io dirò. io scrivo →",
+          "target": " io scriverò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io dico → io dirò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io dico → io dirò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io dico → io dirò. io ascolto →",
+          "target": " io ascolterò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io sono → io sarò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io sono → io sarò. io bevo →",
+          "target": " io berrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io sono → io sarò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io sono → io sarò. io mangio →",
+          "target": " io mangerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io scrivo → io scriverò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io scrivo → io scriverò. io voglio →",
+          "target": " io vorrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io scrivo → io scriverò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io scrivo → io scriverò. io parlo →",
+          "target": " io parlerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io scrivo → io scriverò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io scrivo → io scriverò. io mangio →",
+          "target": " io mangerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io scrivo → io scriverò. io scelgo →",
+          "target": " io sceglierò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io scrivo → io scriverò. io apro →",
+          "target": " io aprirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io dico → io dirò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io dico → io dirò. io voglio →",
+          "target": " io vorrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io dico → io dirò. io leggo →",
+          "target": " io leggerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io dico → io dirò. io parlo →",
+          "target": " io parlerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io bevo → io berrò. io ho →",
+          "target": " io avrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io bevo → io berrò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io bevo → io berrò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io bevo → io berrò. io vado →",
+          "target": " io andrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io ho → io avrò. io voglio →",
+          "target": " io vorrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io ho → io avrò. io so →",
+          "target": " io saprò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io ho → io avrò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io ho → io avrò. io scrivo →",
+          "target": " io scriverò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io dormo → io dormirò. io scrivo →",
+          "target": " io scriverò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io dormo → io dormirò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io dormo → io dormirò. io esco →",
+          "target": " io uscirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io dormo → io dormirò. io salgo →",
+          "target": " io salirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io corro → io correrò. io ho →",
+          "target": " io avrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io corro → io correrò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io corro → io correrò. io scelgo →",
+          "target": " io sceglierò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io corro → io correrò. io bevo →",
+          "target": " io berrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → io dirò, io scelgo → io sceglierò. io ho →",
+          "target": " io avrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → io dirò, io scelgo → io sceglierò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → io dirò, io scelgo → io sceglierò. io so →",
+          "target": " io saprò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dico → io dirò, io scelgo → io sceglierò. io vado →",
+          "target": " io andrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io scelgo → io sceglierò. io vado →",
+          "target": " io andrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io scelgo → io sceglierò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io scelgo → io sceglierò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io scelgo → io sceglierò. io faccio →",
+          "target": " io farò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io salgo → io salirò. io chiudo →",
+          "target": " io chiuderò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io salgo → io salirò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io salgo → io salirò. io vado →",
+          "target": " io andrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io salgo → io salirò. io dormo →",
+          "target": " io dormirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io esco → io uscirò. io ho →",
+          "target": " io avrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io esco → io uscirò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io esco → io uscirò. io dormo →",
+          "target": " io dormirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io esco → io uscirò. io sono →",
+          "target": " io sarò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io apro → io aprirò. io leggo →",
+          "target": " io leggerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io apro → io aprirò. io vengo →",
+          "target": " io verrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io apro → io aprirò. io dormo →",
+          "target": " io dormirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io apro → io aprirò. io ascolto →",
+          "target": " io ascolterò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io scrivo → io scriverò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io scrivo → io scriverò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io scrivo → io scriverò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io scrivo → io scriverò. io so →",
+          "target": " io saprò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io sono → io sarò. io chiudo →",
+          "target": " io chiuderò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io sono → io sarò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io sono → io sarò. io leggo →",
+          "target": " io leggerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io sono → io sarò. io apro →",
+          "target": " io aprirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → io correrò, io sono → io sarò. io leggo →",
+          "target": " io leggerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → io correrò, io sono → io sarò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → io correrò, io sono → io sarò. io chiudo →",
+          "target": " io chiuderò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → io correrò, io sono → io sarò. io parlo →",
+          "target": " io parlerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io scelgo → io sceglierò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io scelgo → io sceglierò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io scelgo → io sceglierò. io so →",
+          "target": " io saprò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io scelgo → io sceglierò. io voglio →",
+          "target": " io vorrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io dormo → io dormirò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io dormo → io dormirò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io dormo → io dormirò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io bevo → io berrò, io dormo → io dormirò. io capisco →",
+          "target": " io capirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io leggo → io leggerò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io leggo → io leggerò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io leggo → io leggerò. io scrivo →",
+          "target": " io scriverò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io leggo → io leggerò. io posso →",
+          "target": " io potrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → io sarò, io mangio → io mangerò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → io sarò, io mangio → io mangerò. io dormo →",
+          "target": " io dormirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → io sarò, io mangio → io mangerò. io leggo →",
+          "target": " io leggerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io sono → io sarò, io mangio → io mangerò. io capisco →",
+          "target": " io capirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io ho → io avrò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io ho → io avrò. io leggo →",
+          "target": " io leggerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io ho → io avrò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io ho → io avrò. io salgo →",
+          "target": " io salirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io vengo → io verrò. io bevo →",
+          "target": " io berrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io vengo → io verrò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io vengo → io verrò. io parlo →",
+          "target": " io parlerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io vengo → io verrò. io ascolto →",
+          "target": " io ascolterò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io sono → io sarò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io sono → io sarò. io esco →",
+          "target": " io uscirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io sono → io sarò. io leggo →",
+          "target": " io leggerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io sono → io sarò. io ascolto →",
+          "target": " io ascolterò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → io scriverò, io dico → io dirò. io mangio →",
+          "target": " io mangerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → io scriverò, io dico → io dirò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → io scriverò, io dico → io dirò. io vado →",
+          "target": " io andrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scrivo → io scriverò, io dico → io dirò. io finisco →",
+          "target": " io finirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io scrivo → io scriverò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io scrivo → io scriverò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io scrivo → io scriverò. io bevo →",
+          "target": " io berrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io scrivo → io scriverò. io voglio →",
+          "target": " io vorrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io posso → io potrò. io vengo →",
+          "target": " io verrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io posso → io potrò. io chiudo →",
+          "target": " io chiuderò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io posso → io potrò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io posso → io potrò. io esco →",
+          "target": " io uscirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io parlo → io parlerò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io parlo → io parlerò. io vado →",
+          "target": " io andrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io parlo → io parlerò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io parlo → io parlerò. io dormo →",
+          "target": " io dormirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io salgo → io salirò. io so →",
+          "target": " io saprò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io salgo → io salirò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io salgo → io salirò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io salgo → io salirò. io vado →",
+          "target": " io andrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → io correrò, io apro → io aprirò. io scrivo →",
+          "target": " io scriverò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → io correrò, io apro → io aprirò. io ho →",
+          "target": " io avrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → io correrò, io apro → io aprirò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io corro → io correrò, io apro → io aprirò. io bevo →",
+          "target": " io berrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → io uscirò, io dico → io dirò. io vengo →",
+          "target": " io verrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → io uscirò, io dico → io dirò. io vado →",
+          "target": " io andrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → io uscirò, io dico → io dirò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → io uscirò, io dico → io dirò. io so →",
+          "target": " io saprò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io ho → io avrò. io parlo →",
+          "target": " io parlerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io ho → io avrò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io ho → io avrò. io bevo →",
+          "target": " io berrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io ho → io avrò. io dico →",
+          "target": " io dirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io sono → io sarò. io scelgo →",
+          "target": " io sceglierò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io sono → io sarò. io parlo →",
+          "target": " io parlerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io sono → io sarò. io vengo →",
+          "target": " io verrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io sono → io sarò. io dico →",
+          "target": " io dirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io vado → io andrò. io esco →",
+          "target": " io uscirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io vado → io andrò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io vado → io andrò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io vado → io andrò. io chiudo →",
+          "target": " io chiuderò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io dico → io dirò. io vado →",
+          "target": " io andrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io dico → io dirò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io dico → io dirò. io chiudo →",
+          "target": " io chiuderò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io dico → io dirò. io sono →",
+          "target": " io sarò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io dico → io dirò. io scelgo →",
+          "target": " io sceglierò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io dico → io dirò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io dico → io dirò. io scrivo →",
+          "target": " io scriverò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io parlo → io parlerò, io dico → io dirò. io ho →",
+          "target": " io avrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io sono → io sarò. io mangio →",
+          "target": " io mangerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io sono → io sarò. io chiudo →",
+          "target": " io chiuderò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io sono → io sarò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io sono → io sarò. io parlo →",
+          "target": " io parlerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → io avrò, io esco → io uscirò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → io avrò, io esco → io uscirò. io vado →",
+          "target": " io andrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → io avrò, io esco → io uscirò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ho → io avrò, io esco → io uscirò. io finisco →",
+          "target": " io finirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io parlo → io parlerò. io so →",
+          "target": " io saprò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io parlo → io parlerò. io voglio →",
+          "target": " io vorrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io parlo → io parlerò. io scrivo →",
+          "target": " io scriverò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io parlo → io parlerò. io dormo →",
+          "target": " io dormirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io scelgo → io sceglierò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io scelgo → io sceglierò. io esco →",
+          "target": " io uscirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io scelgo → io sceglierò. io vado →",
+          "target": " io andrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io so → io saprò, io scelgo → io sceglierò. io dormo →",
+          "target": " io dormirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io chiudo → io chiuderò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io chiudo → io chiuderò. io parlo →",
+          "target": " io parlerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io chiudo → io chiuderò. io leggo →",
+          "target": " io leggerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io scelgo → io sceglierò, io chiudo → io chiuderò. io mangio →",
+          "target": " io mangerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io voglio → io vorrò. io esco →",
+          "target": " io uscirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io voglio → io vorrò. io dormo →",
+          "target": " io dormirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io voglio → io vorrò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io voglio → io vorrò. io dico →",
+          "target": " io dirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → io finirò, io capisco → io capirò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → io finirò, io capisco → io capirò. io voglio →",
+          "target": " io vorrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → io finirò, io capisco → io capirò. io scelgo →",
+          "target": " io sceglierò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → io finirò, io capisco → io capirò. io ascolto →",
+          "target": " io ascolterò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io finisco → io finirò. io mangio →",
+          "target": " io mangerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io finisco → io finirò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io finisco → io finirò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io finisco → io finirò. io ascolto →",
+          "target": " io ascolterò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → io finirò, io so → io saprò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → io finirò, io so → io saprò. io bevo →",
+          "target": " io berrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → io finirò, io so → io saprò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → io finirò, io so → io saprò. io ascolto →",
+          "target": " io ascolterò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io leggo → io leggerò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io leggo → io leggerò. io so →",
+          "target": " io saprò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io leggo → io leggerò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io leggo → io leggerò. io vado →",
+          "target": " io andrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → io uscirò, io so → io saprò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → io uscirò, io so → io saprò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → io uscirò, io so → io saprò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → io uscirò, io so → io saprò. io scrivo →",
+          "target": " io scriverò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io apro → io aprirò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io apro → io aprirò. io salgo →",
+          "target": " io salirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io apro → io aprirò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io posso → io potrò, io apro → io aprirò. io so →",
+          "target": " io saprò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io ascolto → io ascolterò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io ascolto → io ascolterò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io ascolto → io ascolterò. io dormo →",
+          "target": " io dormirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io salgo → io salirò, io ascolto → io ascolterò. io chiudo →",
+          "target": " io chiuderò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io vado → io andrò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io vado → io andrò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io vado → io andrò. io dormo →",
+          "target": " io dormirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io vado → io andrò. io leggo →",
+          "target": " io leggerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io faccio → io farò. io leggo →",
+          "target": " io leggerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io faccio → io farò. io parlo →",
+          "target": " io parlerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io faccio → io farò. io dormo →",
+          "target": " io dormirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io ascolto → io ascolterò, io faccio → io farò. io dico →",
+          "target": " io dirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io sono → io sarò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io sono → io sarò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io sono → io sarò. io bevo →",
+          "target": " io berrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io sono → io sarò. io parlo →",
+          "target": " io parlerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io ho → io avrò. io mangio →",
+          "target": " io mangerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io ho → io avrò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io ho → io avrò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io ho → io avrò. io voglio →",
+          "target": " io vorrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io chiudo → io chiuderò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io chiudo → io chiuderò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io chiudo → io chiuderò. io sono →",
+          "target": " io sarò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vengo → io verrò, io chiudo → io chiuderò. io esco →",
+          "target": " io uscirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io voglio → io vorrò, io ascolto → io ascolterò. io apro →",
+          "target": " io aprirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io voglio → io vorrò, io ascolto → io ascolterò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io voglio → io vorrò, io ascolto → io ascolterò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io voglio → io vorrò, io ascolto → io ascolterò. io mangio →",
+          "target": " io mangerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io scelgo → io sceglierò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io scelgo → io sceglierò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io scelgo → io sceglierò. io scrivo →",
+          "target": " io scriverò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io vado → io andrò, io scelgo → io sceglierò. io posso →",
+          "target": " io potrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → io uscirò, io sono → io sarò. io mangio →",
+          "target": " io mangerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → io uscirò, io sono → io sarò. io faccio →",
+          "target": " io farò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → io uscirò, io sono → io sarò. io ho →",
+          "target": " io avrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io esco → io uscirò, io sono → io sarò. io capisco →",
+          "target": " io capirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → io dormirò, io salgo → io salirò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → io dormirò, io salgo → io salirò. io leggo →",
+          "target": " io leggerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → io dormirò, io salgo → io salirò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io dormo → io dormirò, io salgo → io salirò. io scrivo →",
+          "target": " io scriverò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io faccio → io farò. io vado →",
+          "target": " io andrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io faccio → io farò. io parlo →",
+          "target": " io parlerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io faccio → io farò. io posso →",
+          "target": " io potrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io apro → io aprirò, io faccio → io farò. io scelgo →",
+          "target": " io sceglierò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io apro → io aprirò. io dico →",
+          "target": " io dirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io apro → io aprirò. io finisco →",
+          "target": " io finirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io apro → io aprirò. io dormo →",
+          "target": " io dormirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io faccio → io farò, io apro → io aprirò. io voglio →",
+          "target": " io vorrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io sono → io sarò. io bevo →",
+          "target": " io berrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io sono → io sarò. io vengo →",
+          "target": " io verrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io sono → io sarò. io ascolto →",
+          "target": " io ascolterò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io capisco → io capirò, io sono → io sarò. io dormo →",
+          "target": " io dormirò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io ascolto → io ascolterò. io parlo →",
+          "target": " io parlerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io ascolto → io ascolterò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io ascolto → io ascolterò. io esco →",
+          "target": " io uscirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io mangio → io mangerò, io ascolto → io ascolterò. io leggo →",
+          "target": " io leggerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io voglio → io vorrò. io scelgo →",
+          "target": " io sceglierò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io voglio → io vorrò. io corro →",
+          "target": " io correrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io voglio → io vorrò. io ho →",
+          "target": " io avrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io leggo → io leggerò, io voglio → io vorrò. io parlo →",
+          "target": " io parlerò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → io finirò, io apro → io aprirò. io vengo →",
+          "target": " io verrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → io finirò, io apro → io aprirò. io scrivo →",
+          "target": " io scriverò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → io finirò, io apro → io aprirò. io esco →",
+          "target": " io uscirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io finisco → io finirò, io apro → io aprirò. io corro →",
+          "target": " io correrò"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io corro → io correrò. io ho →",
+          "target": " io avrò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io corro → io correrò. io mangio →",
+          "target": " io mangerò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io corro → io correrò. io capisco →",
+          "target": " io capirò"
+        },
+        {
+          "context": "Segui la trasformazione mostrata negli esempi: io chiudo → io chiuderò, io corro → io correrò. io scelgo →",
+          "target": " io sceglierò"
+        }
+      ]
+    }
+  ],
+  "language": "it"
+}
