@@ -1,48 +1,48 @@
-ICL
-arbitrary_mappings                knowledge > web > balanced
-object_location_bindings          balanced > web > knowledge
-person_object_bindings            web > knowledge > balanced
-person_profiles                   web > knowledge > balanced
-state_updates                     balanced > web > knowledge
-overall                           web > knowledge > balanced
+Category: icl
+arbitrary_mappings-bench-scores.json              : web: 0.42667, knw: 0.39250, bal: 0.34667, 
+object_locations-bench-scores.json                : bal: 0.31667, knw: 0.28667, web: 0.27750, 
+person_objects-bench-scores.json                  : web: 0.33000, knw: 0.32750, bal: 0.32583, 
+person_profiles-bench-scores.json                 : web: 0.35750, knw: 0.33167, bal: 0.33000, 
+state_updates-bench-scores.json                   : bal: 0.29083, web: 0.29083, knw: 0.28167, 
+overall                                           : web: 0.33650, knw: 0.32400, bal: 0.32200, 
 
-KNOWLEDGE
-country_capitals                  knowledge > balanced > web
-typical_object_colors             balanced > knowledge > web
-landmark_cities                   web > knowledge > balanced
-regions_city                      knowledge > web > balanced
-entity_taxonomy                   balanced > knowledge > web
-overall                           knowledge > balanced > web
+Category: knowledge
+capitals-bench-scores.json                        : knw: 0.60917, bal: 0.58167, web: 0.46583, 
+colors-bench-scores.json                          : knw: 0.33833, web: 0.30333, bal: 0.29583, 
+landmarks-bench-scores.json                       : knw: 0.35417, web: 0.35083, bal: 0.30417, 
+regions-bench-scores.json                         : knw: 0.69667, web: 0.62083, bal: 0.56917, 
+taxonomy-bench-scores.json                        : knw: 0.35000, bal: 0.33333, web: 0.31500, 
+overall                                           : knw: 0.46967, bal: 0.41683, web: 0.41117, 
 
-LANGUAGE-MANIPULATION
-few_shot_affirmative_to_negative  knowledge > balanced > web
-few_shot_first_to_third_person    balanced > web > knowledge
-few_shot_masculine_to_feminine    knowledge > balanced > web
-few_shot_present_to_future        knowledge > web > balanced
-few_shot_singular_to_plural       balanced > knowledge > web
-overall                           knowledge > balanced > web
+Category: language-manipulation
+affirmative_negative-bench-scores.json            : knw: 0.84917, web: 0.79250, bal: 0.78250, 
+first_to_third_person-bench-scores.json           : web: 0.64417, bal: 0.61750, knw: 0.61333, 
+masculine_feminine-bench-scores.json              : knw: 0.64750, bal: 0.63917, web: 0.60083, 
+present_future-bench-scores.json                  : knw: 0.47583, web: 0.45500, bal: 0.43667, 
+singular_plural-bench-scores.json                 : bal: 0.73583, knw: 0.71333, web: 0.69750, 
+overall                                           : knw: 0.65983, bal: 0.64233, web: 0.63800, 
 
-MATH
-addition_subtraction              web > balanced > knowledge
-even_odd                          web > balanced > knowledge
-minimum_maximum                   web > knowledge > balanced
-single_digit_multiplication       knowledge > web > balanced
-integer_sequence_completion       balanced > web > knowledge
-overall                           web > balanced > knowledge
+Category: math
+addition_subtraction-bench-scores.json            : web: 0.25000, knw: 0.24500, bal: 0.24167, 
+even_odd-bench-scores.json                        : web: 0.25000, bal: 0.22500, knw: 0.13500, 
+min_max-bench-scores.json                         : web: 0.47417, knw: 0.46667, bal: 0.43333, 
+multiplication-bench-scores.json                  : knw: 0.44000, web: 0.34750, bal: 0.31333, 
+sequence_completion-bench-scores.json             : bal: 0.64250, web: 0.63583, knw: 0.50500, 
+overall                                           : web: 0.39150, bal: 0.37117, knw: 0.35833, 
 
-MATH-LANGUAGES
-count_items_by_property           balanced > web > knowledge
-count_sequence_occurences         balanced > knowledge > web
-count_repeated_objects            balanced > knowledge > web
-digits_words_conversion           knowledge > balanced > web
-select_sequence_position          web > knowledge > balanced
-overall                           balanced > knowledge > web
+Category: math-languages
+count_by_property-bench-scores.json               : bal: 0.31583, web: 0.26417, knw: 0.23917, 
+count_occurrences-bench-scores.json               : knw: 0.32333, web: 0.24750, bal: 0.24250, 
+count_repeated_objects-bench-scores.json          : knw: 0.30000, web: 0.29500, bal: 0.23250, 
+digits_words-bench-scores.json                    : knw: 0.27500, web: 0.25833, bal: 0.24750, 
+select_position-bench-scores.json                 : knw: 0.28083, web: 0.25167, bal: 0.18167, 
+overall                                           : knw: 0.28367, web: 0.26333, bal: 0.24400, 
 
-REASONING
-reasoning_constraint_elimination  balanced = knowledge > web (really bad, score = 0.33%)
-reasoning_transitive_ordering     web > balanced > knowledge
-reasoning_rule_chaining           web > balanced > knowledge
-reasoning_spatial_ordering        balanced > knowledge > web
-reasoning_temporal_ordering       balanced > knowledge > web
-overall                           balanced > web > knowledge
+Category: reasoning
+constraint_elimination-bench-scores.json          : bal: 0.00333, web: 0.00167, knw: 0.00083, 
+ordering-bench-scores.json                        : web: 0.19667, bal: 0.19583, knw: 0.12333, 
+rule_chaining-bench-scores.json                   : bal: 0.25917, web: 0.25417, knw: 0.25167, 
+spatial-bench-scores.json                         : bal: 0.32667, knw: 0.24417, web: 0.23083, 
+temporal-bench-scores.json                        : bal: 0.27417, web: 0.27083, knw: 0.23167, 
+overall                                           : bal: 0.21183, web: 0.19083, knw: 0.17033, 
 

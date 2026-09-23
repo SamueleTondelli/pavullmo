@@ -1,7 +1,8 @@
 """Score a generated synthetic benchmark with a PavuLLMo checkpoint.
 
 For every contrast set this script computes the complete matrix
-S[i,j] = log P(target[j] | context[i]) and derives column-wise metrics.
+S[i,j] = log P(target[j] | context[i]) and derives context-based,
+target-based, and bidirectional metrics.
 """
 
 from __future__ import annotations
@@ -277,18 +278,34 @@ def score_pairs(
     return scores
 
 
+def comparison_credit(correct: float, alternative: float) -> float:
+    if correct > alternative:
+        return 1.0
+    if correct == alternative:
+        return 0.5
+    return 0.0
+
+
 def set_metrics(
-    score_matrix: list[list[float]], target_token_counts: list[int]
+    score_matrix: list[list[float]],
+    mean_token_logprob_matrix: list[list[float]],
+    target_token_counts: list[int],
 ) -> dict[str, Any]:
     size = len(score_matrix)
-    wins = 0
-    ties = 0
+    context_wins = 0
+    context_ties = 0
+    target_wins = 0
+    target_ties = 0
+    bidirectional_wins = 0
+    bidirectional_credit = 0.0
     comparisons = size * (size - 1)
     retrieval_credits: list[float] = []
     reciprocal_ranks: list[float] = []
     margins: list[float] = []
     per_token_margins: list[float] = []
-    perfect = True
+    context_perfect = True
+    target_perfect = True
+    bidirectional_perfect = True
 
     for target_index in range(size):
         diagonal = score_matrix[target_index][target_index]
@@ -297,14 +314,36 @@ def set_metrics(
             for context_index in range(size)
             if context_index != target_index
         ]
-        for distractor in distractors:
-            if diagonal > distractor:
-                wins += 1
-            elif diagonal == distractor:
-                ties += 1
-                perfect = False
-            else:
-                perfect = False
+
+        for other_index in range(size):
+            if other_index == target_index:
+                continue
+
+            context_credit = comparison_credit(
+                diagonal,
+                score_matrix[other_index][target_index],
+            )
+            target_credit = comparison_credit(
+                mean_token_logprob_matrix[target_index][target_index],
+                mean_token_logprob_matrix[target_index][other_index],
+            )
+            joint_credit = context_credit * target_credit
+
+            if context_credit == 1.0:
+                context_wins += 1
+            elif context_credit == 0.5:
+                context_ties += 1
+            if target_credit == 1.0:
+                target_wins += 1
+            elif target_credit == 0.5:
+                target_ties += 1
+            if joint_credit == 1.0:
+                bidirectional_wins += 1
+
+            context_perfect &= context_credit == 1.0
+            target_perfect &= target_credit == 1.0
+            bidirectional_perfect &= joint_credit == 1.0
+            bidirectional_credit += joint_credit
 
         greater = sum(value > diagonal for value in distractors)
         equal = sum(value == diagonal for value in distractors)
@@ -316,11 +355,31 @@ def set_metrics(
         margins.append(margin)
         per_token_margins.append(margin / target_token_counts[target_index])
 
-    pairwise_credit = wins + 0.5 * ties
+    context_credit = context_wins + 0.5 * context_ties
+    target_credit = target_wins + 0.5 * target_ties
     return {
-        "pairwise_accuracy": pairwise_credit / comparisons,
-        "pairwise_wins": wins,
-        "pairwise_ties": ties,
+        "context_based_accuracy": context_wins / comparisons,
+        "context_based_wins": context_wins,
+        "context_based_ties": context_ties,
+        "context_based_comparisons": comparisons,
+        "context_based_tie_adjusted_accuracy": context_credit / comparisons,
+        "target_based_accuracy": target_wins / comparisons,
+        "target_based_wins": target_wins,
+        "target_based_ties": target_ties,
+        "target_based_comparisons": comparisons,
+        "target_based_tie_adjusted_accuracy": target_credit / comparisons,
+        "bidirectional_accuracy": bidirectional_wins / comparisons,
+        "bidirectional_wins": bidirectional_wins,
+        "bidirectional_credit": bidirectional_credit,
+        "bidirectional_comparisons": comparisons,
+        "bidirectional_tie_adjusted_accuracy": (
+            bidirectional_credit / comparisons
+        ),
+        # Backwards-compatible aliases for the original context comparison,
+        # which awards half credit to ties.
+        "pairwise_accuracy": context_credit / comparisons,
+        "pairwise_wins": context_wins,
+        "pairwise_ties": context_ties,
         "pairwise_comparisons": comparisons,
         "context_retrieval_accuracy": sum(retrieval_credits) / size,
         "mean_reciprocal_rank": sum(reciprocal_ranks) / size,
@@ -328,7 +387,11 @@ def set_metrics(
         "mean_worst_distractor_margin_per_token": (
             sum(per_token_margins) / size
         ),
-        "perfect_set": perfect,
+        "context_perfect_set": context_perfect,
+        "target_perfect_set": target_perfect,
+        "bidirectional_perfect_set": bidirectional_perfect,
+        # Backwards-compatible alias for context_perfect_set.
+        "perfect_set": context_perfect,
     }
 
 
@@ -338,19 +401,80 @@ def mean(values: list[float]) -> float:
 
 def aggregate_metrics(set_results: list[dict[str, Any]]) -> dict[str, Any]:
     metrics = [result["metrics"] for result in set_results]
-    total_wins = sum(metric["pairwise_wins"] for metric in metrics)
-    total_ties = sum(metric["pairwise_ties"] for metric in metrics)
+    context_wins = sum(metric["context_based_wins"] for metric in metrics)
+    context_ties = sum(metric["context_based_ties"] for metric in metrics)
+    target_wins = sum(metric["target_based_wins"] for metric in metrics)
+    target_ties = sum(metric["target_based_ties"] for metric in metrics)
+    bidirectional_wins = sum(
+        metric["bidirectional_wins"] for metric in metrics
+    )
+    bidirectional_credit = sum(
+        metric["bidirectional_credit"] for metric in metrics
+    )
     total_comparisons = sum(metric["pairwise_comparisons"] for metric in metrics)
+    macro_context_accuracy = mean(
+        [metric["context_based_accuracy"] for metric in metrics]
+    )
+    micro_context_accuracy = context_wins / total_comparisons
+    macro_pairwise_accuracy = mean(
+        [metric["pairwise_accuracy"] for metric in metrics]
+    )
+    micro_pairwise_accuracy = (
+        context_wins + 0.5 * context_ties
+    ) / total_comparisons
     return {
+        # Preserve the original primary metric and names for compatibility.
         "primary_metric": "macro_pairwise_accuracy",
-        "macro_pairwise_accuracy": mean(
-            [metric["pairwise_accuracy"] for metric in metrics]
+        "macro_context_based_accuracy": macro_context_accuracy,
+        "micro_context_based_accuracy": micro_context_accuracy,
+        "context_based_wins": context_wins,
+        "context_based_ties": context_ties,
+        "context_based_comparisons": total_comparisons,
+        "macro_context_based_tie_adjusted_accuracy": mean(
+            [
+                metric["context_based_tie_adjusted_accuracy"]
+                for metric in metrics
+            ]
         ),
-        "micro_pairwise_accuracy": (
-            total_wins + 0.5 * total_ties
+        "micro_context_based_tie_adjusted_accuracy": micro_pairwise_accuracy,
+        "macro_target_based_accuracy": mean(
+            [metric["target_based_accuracy"] for metric in metrics]
+        ),
+        "micro_target_based_accuracy": target_wins / total_comparisons,
+        "target_based_wins": target_wins,
+        "target_based_ties": target_ties,
+        "target_based_comparisons": total_comparisons,
+        "macro_target_based_tie_adjusted_accuracy": mean(
+            [
+                metric["target_based_tie_adjusted_accuracy"]
+                for metric in metrics
+            ]
+        ),
+        "micro_target_based_tie_adjusted_accuracy": (
+            target_wins + 0.5 * target_ties
         ) / total_comparisons,
-        "pairwise_wins": total_wins,
-        "pairwise_ties": total_ties,
+        "macro_bidirectional_accuracy": mean(
+            [metric["bidirectional_accuracy"] for metric in metrics]
+        ),
+        "micro_bidirectional_accuracy": bidirectional_wins / total_comparisons,
+        "bidirectional_wins": bidirectional_wins,
+        "bidirectional_credit": bidirectional_credit,
+        "bidirectional_comparisons": total_comparisons,
+        "macro_bidirectional_tie_adjusted_accuracy": mean(
+            [
+                metric["bidirectional_tie_adjusted_accuracy"]
+                for metric in metrics
+            ]
+        ),
+        "micro_bidirectional_tie_adjusted_accuracy": (
+            bidirectional_credit / total_comparisons
+        ),
+        # Backwards-compatible names for the original context comparison,
+        # which awards half credit to ties.
+        "macro_pairwise_accuracy": macro_pairwise_accuracy,
+        "micro_pairwise_accuracy": micro_pairwise_accuracy,
+        "pairwise_wins": context_wins,
+        "pairwise_ties": context_ties,
         "pairwise_comparisons": total_comparisons,
         "macro_context_retrieval_accuracy": mean(
             [metric["context_retrieval_accuracy"] for metric in metrics]
@@ -369,6 +493,15 @@ def aggregate_metrics(set_results: list[dict[str, Any]]) -> dict[str, Any]:
         ),
         "perfect_set_accuracy": mean(
             [float(metric["perfect_set"]) for metric in metrics]
+        ),
+        "context_perfect_set_accuracy": mean(
+            [float(metric["context_perfect_set"]) for metric in metrics]
+        ),
+        "target_perfect_set_accuracy": mean(
+            [float(metric["target_perfect_set"]) for metric in metrics]
+        ),
+        "bidirectional_perfect_set_accuracy": mean(
+            [float(metric["bidirectional_perfect_set"]) for metric in metrics]
         ),
     }
 
@@ -422,10 +555,63 @@ def build_set_results(
                 "score_matrix": score_matrix,
                 "mean_token_logprob_matrix": mean_matrix,
                 "token_logprobs": token_logprobs,
-                "metrics": set_metrics(score_matrix, target_token_counts),
+                "metrics": set_metrics(
+                    score_matrix,
+                    mean_matrix,
+                    target_token_counts,
+                ),
             }
         )
     return results
+
+
+def build_score_report(
+    benchmark: dict[str, Any],
+    set_results: list[dict[str, Any]],
+    metrics: dict[str, Any],
+    *,
+    checkpoint: Path,
+    tokenizer: Path,
+    device: torch.device,
+) -> dict[str, Any]:
+    report: dict[str, Any] = {
+        "version": 1,
+        "benchmark_id": benchmark["id"],
+        "checkpoint": str(checkpoint),
+        "tokenizer": str(tokenizer),
+        "device": str(device),
+        "scoring": {
+            "score_matrix_axes": "rows=contexts, columns=targets",
+            "pair_score": "sum of target-token conditional log-probabilities",
+            "context_based_comparison": (
+                "full-target log-probability; matched context versus "
+                "alternative context for the same target"
+            ),
+            "target_based_comparison": (
+                "mean target-token log-probability; matched target versus "
+                "alternative target for the same context"
+            ),
+            "bidirectional_credit": (
+                "context comparison credit multiplied by target comparison "
+                "credit for each ordered contrast"
+            ),
+            "includes_eos": False,
+            "accuracy_ties": "strict accuracies count ties as failures",
+            "tie_adjusted_credit": 0.5,
+        },
+        "metrics": metrics,
+        "sets": set_results,
+    }
+    if "language" in benchmark:
+        report["language"] = benchmark["language"]
+    return report
+
+
+def write_score_report(report: dict[str, Any], output: Path) -> None:
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with output.open("w", encoding="utf-8") as file:
+        json.dump(report, file, ensure_ascii=False, indent=2)
+        file.write("\n")
 
 
 def main() -> None:
@@ -470,29 +656,15 @@ def main() -> None:
             tokenizer,
         )
         metrics = aggregate_metrics(set_results)
-        report: dict[str, Any] = {
-            "version": 1,
-            "benchmark_id": benchmark["id"],
-            "checkpoint": str(args.checkpoint),
-            "tokenizer": str(args.tokenizer),
-            "device": str(device),
-            "scoring": {
-                "score_matrix_axes": "rows=contexts, columns=targets",
-                "pair_score": "sum of target-token conditional log-probabilities",
-                "target_normalization": "none",
-                "includes_eos": False,
-                "tie_credit": 0.5,
-            },
-            "metrics": metrics,
-            "sets": set_results,
-        }
-        if "language" in benchmark:
-            report["language"] = benchmark["language"]
-
-        args.output.parent.mkdir(parents=True, exist_ok=True)
-        with args.output.open("w", encoding="utf-8") as file:
-            json.dump(report, file, ensure_ascii=False, indent=2)
-            file.write("\n")
+        report = build_score_report(
+            benchmark,
+            set_results,
+            metrics,
+            checkpoint=args.checkpoint,
+            tokenizer=args.tokenizer,
+            device=device,
+        )
+        write_score_report(report, args.output)
     except (
         OSError,
         json.JSONDecodeError,
@@ -504,13 +676,35 @@ def main() -> None:
         raise SystemExit(f"error: {error}") from error
 
     print(f"Benchmark: {benchmark['id']} ({len(set_results)} sets)")
-    print(f"Macro pairwise accuracy: {metrics['macro_pairwise_accuracy']:.6f}")
+    print(
+        "Context-based accuracy: "
+        f"{metrics['macro_context_based_accuracy']:.6f}"
+    )
+    print(
+        "Target-based accuracy: "
+        f"{metrics['macro_target_based_accuracy']:.6f}"
+    )
+    print(
+        "Bidirectional accuracy: "
+        f"{metrics['macro_bidirectional_accuracy']:.6f}"
+    )
     print(
         "Context retrieval accuracy: "
         f"{metrics['macro_context_retrieval_accuracy']:.6f}"
     )
     print(f"Mean reciprocal rank: {metrics['macro_mean_reciprocal_rank']:.6f}")
-    print(f"Perfect-set accuracy: {metrics['perfect_set_accuracy']:.6f}")
+    print(
+        "Context perfect-set accuracy: "
+        f"{metrics['context_perfect_set_accuracy']:.6f}"
+    )
+    print(
+        "Target perfect-set accuracy: "
+        f"{metrics['target_perfect_set_accuracy']:.6f}"
+    )
+    print(
+        "Bidirectional perfect-set accuracy: "
+        f"{metrics['bidirectional_perfect_set_accuracy']:.6f}"
+    )
     print(f"Report: {args.output}")
 
 
