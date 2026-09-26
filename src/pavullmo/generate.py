@@ -77,6 +77,12 @@ def load_model(
             any(".attn.q_proj." in name for name in state_dict),
         )
     )
+    canon_layers = bool(
+        hyperparameters.get(
+            "CANON_LAYERS",
+            any(".ca.weight" in name for name in state_dict),
+        )
+    )
 
     model = DecoderTransformer(
         vocab_size=int(hyperparameters["VOCAB_SIZE"]),
@@ -89,6 +95,7 @@ def load_model(
         rope_base=float(hyperparameters["ROPE_BASE"]),
         qk_norm=bool(hyperparameters["QK_NORM"]),
         split_qkv_projections=split_qkv_projections,
+        canon_layers=canon_layers,
     )
 
     model.load_state_dict(state_dict)

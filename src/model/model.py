@@ -5,6 +5,40 @@ import torch.nn.functional as F
 
 INITIALIZATION_RECIPES = frozenset({"pytorch_default", "olmo", "gpt_scaled"})
 BASE_INITIALIZATION_STD = 0.02
+CANON_KERNEL_SIZE = 4
+
+
+class CanonLayer(nn.Conv1d):
+    """Causal depthwise convolution with an explicit residual connection."""
+
+    def __init__(self, channels: int, kernel_size: int = CANON_KERNEL_SIZE):
+        if channels <= 0:
+            raise ValueError("channels must be positive")
+        if kernel_size <= 0:
+            raise ValueError("kernel_size must be positive")
+        super().__init__(
+            in_channels=channels,
+            out_channels=channels,
+            kernel_size=kernel_size,
+            groups=channels,
+            padding=kernel_size - 1,
+            bias=False,
+        )
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        if x.ndim != 3:
+            raise ValueError("Canon input must have shape [batch, sequence, channels]")
+        if x.size(-1) != self.in_channels:
+            raise ValueError(
+                f"expected {self.in_channels} channels, got {x.size(-1)}"
+            )
+
+        sequence_length = x.size(1)
+        convolved = super().forward(x.transpose(1, 2))
+        # Conv1d pads both sides. Keeping the first sequence_length outputs makes
+        # the receptive field causal: output t only sees inputs t-k+1 through t.
+        convolved = convolved[..., :sequence_length].transpose(1, 2)
+        return x + convolved
 
 
 class RoPE(nn.Module):
@@ -82,6 +116,7 @@ class CausalSelfAttention(nn.Module):
         rope_base: float = 10000.0,
         qk_norm: bool = False,
         split_qkv_projections: bool = False,
+        canon_layers: bool = False,
     ):
         super().__init__()
         if num_heads <= 0:
@@ -110,6 +145,8 @@ class CausalSelfAttention(nn.Module):
         self.num_heads = num_heads
         self.embed_dimension = embed_dimension
 
+        self.cb = CanonLayer(3 * embed_dimension) if canon_layers else None
+
     def forward(self, x):
         if self.split_qkv_projections:
             qkv_weight = torch.cat(
@@ -127,15 +164,46 @@ class CausalSelfAttention(nn.Module):
             query_projected = self.c_attn(x)
 
         batch_size = query_projected.size(0)
+        sequence_length = query_projected.size(1)
         head_dim = self.embed_dimension // self.num_heads
 
         query, key, value = query_projected.chunk(3, -1)
-        query = query.view(batch_size, -1, self.num_heads, head_dim).transpose(1, 2)
-        key = key.view(batch_size, -1, self.num_heads, head_dim).transpose(1, 2)
-        value = value.view(batch_size, -1, self.num_heads, head_dim).transpose(1, 2)
+        query = query.view(
+            batch_size, sequence_length, self.num_heads, head_dim
+        ).transpose(1, 2)
+        key = key.view(
+            batch_size, sequence_length, self.num_heads, head_dim
+        ).transpose(1, 2)
 
         query = self.q_norm(query)
         key = self.k_norm(key)
+
+        if self.cb is not None:
+            # Canon-B acts jointly on the normalized Q, K, and V projections.
+            # Move Q/K back to dimension-last before applying the sequence mixer.
+            projected = torch.cat(
+                [
+                    query.transpose(1, 2).reshape(
+                        batch_size, sequence_length, self.embed_dimension
+                    ),
+                    key.transpose(1, 2).reshape(
+                        batch_size, sequence_length, self.embed_dimension
+                    ),
+                    value,
+                ],
+                dim=-1,
+            )
+            query, key, value = self.cb(projected).chunk(3, dim=-1)
+            query = query.view(
+                batch_size, sequence_length, self.num_heads, head_dim
+            ).transpose(1, 2)
+            key = key.view(
+                batch_size, sequence_length, self.num_heads, head_dim
+            ).transpose(1, 2)
+
+        value = value.view(
+            batch_size, sequence_length, self.num_heads, head_dim
+        ).transpose(1, 2)
         query = self.rope(query)
         key = self.rope(key)
 
@@ -157,18 +225,20 @@ class CausalSelfAttention(nn.Module):
 
 
 class SwiGLUFFN(nn.Module):
-    def __init__(
-        self,
-        dim,
-        hidden_dim,
-    ):
+    def __init__(self, dim, hidden_dim, canon_layers: bool = False):
         super().__init__()
         self.w1 = nn.Linear(dim, hidden_dim)
         self.w2 = nn.Linear(hidden_dim, dim)
         self.w3 = nn.Linear(dim, hidden_dim)
+        self.cd = CanonLayer(hidden_dim * 2) if canon_layers else None
 
     def forward(self, x):
-        return self.w2(F.silu(self.w1(x)) * self.w3(x))
+        gate = self.w1(x)
+        up = self.w3(x)
+        if self.cd is not None:
+            cat = torch.cat([gate, up], dim=-1)
+            gate, up = self.cd(cat).chunk(2, dim=-1)
+        return self.w2(F.silu(gate) * up)
 
 
 class TransformerBlock(nn.Module):
@@ -182,6 +252,7 @@ class TransformerBlock(nn.Module):
         rope_base: float = 10000.0,
         qk_norm: bool = False,
         split_qkv_projections: bool = False,
+        canon_layers: bool = False,
     ):
         super().__init__()
         self.embed_dim = embed_dim
@@ -195,22 +266,32 @@ class TransformerBlock(nn.Module):
             rope_base=rope_base,
             qk_norm=qk_norm,
             split_qkv_projections=split_qkv_projections,
+            canon_layers=canon_layers,
         )
         self.attn_dropout = nn.Dropout(dropout)
 
         self.ffn_norm = nn.RMSNorm(embed_dim)
-        self.ffn = SwiGLUFFN(embed_dim, ffn_dim)
+        self.ffn = SwiGLUFFN(embed_dim, ffn_dim, canon_layers=canon_layers)
         self.ffn_dropout = nn.Dropout(dropout)
+
+        self.canon_layers = canon_layers
+        if canon_layers:
+            self.ca = CanonLayer(embed_dim)
+            self.cc = CanonLayer(embed_dim)
 
     def forward(self, x):
         pre_attn = x
         x = self.attn_norm(x)
+        if self.canon_layers:
+            x = self.ca(x)
         x = self.attn(x)
         x = self.attn_dropout(x)
         x = pre_attn + x
 
         pre_ffn = x
         x = self.ffn_norm(x)
+        if self.canon_layers:
+            x = self.cc(x)
         x = self.ffn(x)
         x = self.ffn_dropout(x)
         return pre_ffn + x
@@ -231,6 +312,7 @@ class DecoderTransformer(nn.Module):
         initialization_std: float = BASE_INITIALIZATION_STD,
         qk_norm: bool = False,
         split_qkv_projections: bool = False,
+        canon_layers: bool = False,
     ):
         super().__init__()
         initialization = initialization.strip().lower()
@@ -256,6 +338,7 @@ class DecoderTransformer(nn.Module):
                 rope_base=rope_base,
                 qk_norm=qk_norm,
                 split_qkv_projections=split_qkv_projections,
+                canon_layers=canon_layers,
             )
             for _ in range(n_blocks)
         )
@@ -285,6 +368,9 @@ class DecoderTransformer(nn.Module):
                     nn.init.zeros_(module.bias)
             elif isinstance(module, nn.RMSNorm):
                 module.reset_parameters()
+
+        # Canon layers intentionally retain Conv1d's default fan-in
+        # initialization instead of the transformer's linear-layer std.
 
         if self.initialization == "gpt_scaled":
             residual_std = self.initialization_std / (2 * self.n_blocks) ** 0.5

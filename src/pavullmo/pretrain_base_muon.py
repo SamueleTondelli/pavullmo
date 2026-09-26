@@ -53,6 +53,7 @@ INITIALIZATION = os.environ.get("INITIALIZATION", "pytorch_default").strip().low
 INITIALIZATION_STD = float(os.environ.get("INITIALIZATION_STD", 0.02))
 QK_NORM = env_bool("QK_NORM", False)
 SPLIT_QKV_PROJECTIONS = env_bool("SPLIT_QKV_PROJECTIONS", False)
+CANON_LAYERS = env_bool("CANON_LAYERS", False)
 
 # Training hyperparameters.
 LR = float(os.environ.get("LR", 1e-3))
@@ -997,6 +998,7 @@ def main() -> None:
         initialization_std=INITIALIZATION_STD,
         qk_norm=QK_NORM,
         split_qkv_projections=SPLIT_QKV_PROJECTIONS,
+        canon_layers=CANON_LAYERS,
     ).to(device)
 
     optimizer_adam_parameter_groups = build_adamw_parameter_groups(model)
@@ -1104,6 +1106,7 @@ def main() -> None:
         "INITIALIZATION_STD": INITIALIZATION_STD,
         "QK_NORM": QK_NORM,
         "SPLIT_QKV_PROJECTIONS": SPLIT_QKV_PROJECTIONS,
+        "CANON_LAYERS": CANON_LAYERS,
         "LR": LR,
         "MIN_LR": MIN_LR,
         "LR_SCHEDULER": LR_SCHEDULER,
@@ -1153,6 +1156,7 @@ def main() -> None:
         "initialization_std": INITIALIZATION_STD,
         "qk_norm": QK_NORM,
         "split_qkv_projections": SPLIT_QKV_PROJECTIONS,
+        "canon_layers": CANON_LAYERS,
         "sequence_length": SEQ_LEN,
         "micro_batch_size": BATCH_SIZE,
         "gradient_accumulation_steps": GRAD_ACCUM_STEPS,
