@@ -53,6 +53,7 @@ INITIALIZATION = os.environ.get("INITIALIZATION", "pytorch_default").strip().low
 INITIALIZATION_STD = float(os.environ.get("INITIALIZATION_STD", 0.02))
 QK_NORM = env_bool("QK_NORM", False)
 SPLIT_QKV_PROJECTIONS = env_bool("SPLIT_QKV_PROJECTIONS", False)
+CANON_LAYERS = env_bool("CANON_LAYERS", False)
 
 # Training hyperparameters.
 LR = float(os.environ.get("LR", 1e-3))
@@ -95,18 +96,18 @@ if DATASET_PREFIX and not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*", DATASET_PR
         "only letters, digits, '.', '_', and '-'"
     )
 DATASET_DIR = Path(
-    os.environ.get("DATASET_DIR", str(PROJECT_DIR / "dataset" / "ds"))
+    os.environ.get("DATASET_DIR", str(PROJECT_DIR / "artifacts" / "datasets"))
 ).expanduser()
 NUM_WORKERS = int(os.environ.get("NUM_WORKERS", 4))
 PIN_MEMORY = env_bool("PIN_MEMORY", True)
 VALIDATION_INTERVAL = int(os.environ.get("VALIDATION_INTERVAL", 20))
 VALIDATION_STEPS = int(os.environ.get("VALIDATION_STEPS", 20))
-LOG_DIR = Path(os.environ.get("LOG_DIR", str(PROJECT_DIR / "runs"))).expanduser()
+LOG_DIR = Path(os.environ.get("LOG_DIR", str(PROJECT_DIR / "artifacts" / "runs"))).expanduser()
 RUNS_CSV = Path(
-    os.environ.get("RUNS_CSV", str(SCRIPT_DIR / "pretrain_runs.csv"))
+    os.environ.get("RUNS_CSV", str(PROJECT_DIR / "artifacts" / "results" / "pretrain_runs.csv"))
 ).expanduser()
 MODEL_OUTPUT_DIR = Path(
-    os.environ.get("MODEL_OUTPUT_DIR", str(PROJECT_DIR / "models"))
+    os.environ.get("MODEL_OUTPUT_DIR", str(PROJECT_DIR / "artifacts" / "models"))
 ).expanduser()
 TRAIN_SCRIPT = os.environ.get("TRAIN_SCRIPT", Path(__file__).name)
 TENSORBOARD_FLUSH_SECS = int(os.environ.get("TENSORBOARD_FLUSH_SECS", 5))
@@ -997,6 +998,7 @@ def main() -> None:
         initialization_std=INITIALIZATION_STD,
         qk_norm=QK_NORM,
         split_qkv_projections=SPLIT_QKV_PROJECTIONS,
+        canon_layers=CANON_LAYERS,
     ).to(device)
 
     optimizer_adam_parameter_groups = build_adamw_parameter_groups(model)
@@ -1104,6 +1106,7 @@ def main() -> None:
         "INITIALIZATION_STD": INITIALIZATION_STD,
         "QK_NORM": QK_NORM,
         "SPLIT_QKV_PROJECTIONS": SPLIT_QKV_PROJECTIONS,
+        "CANON_LAYERS": CANON_LAYERS,
         "LR": LR,
         "MIN_LR": MIN_LR,
         "LR_SCHEDULER": LR_SCHEDULER,
@@ -1153,6 +1156,7 @@ def main() -> None:
         "initialization_std": INITIALIZATION_STD,
         "qk_norm": QK_NORM,
         "split_qkv_projections": SPLIT_QKV_PROJECTIONS,
+        "canon_layers": CANON_LAYERS,
         "sequence_length": SEQ_LEN,
         "micro_batch_size": BATCH_SIZE,
         "gradient_accumulation_steps": GRAD_ACCUM_STEPS,

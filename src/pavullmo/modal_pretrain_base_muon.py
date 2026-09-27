@@ -32,7 +32,11 @@ DATASET_MOUNT_PATH = "/datasets"
 OUTPUT_MOUNT_PATH = "/outputs"
 TENSORBOARD_PORT = 6006
 REMOTE_RUNS_CSV = Path(OUTPUT_MOUNT_PATH) / "pretrain_runs.csv"
-LOCAL_RUNS_CSV = Path(__file__).resolve().with_name("pretrain_runs.csv")
+LOCAL_RUNS_CSV = (
+    Path(__file__).resolve().parents[2] / "artifacts" / "results" / "pretrain_runs.csv"
+    if modal.is_local()
+    else REMOTE_RUNS_CSV
+)
 RUN_RESULT_FIELDS = (
     "experiment_name",
     "dataset_variant",
@@ -70,6 +74,7 @@ PRETRAIN_ENVIRONMENT_VARIABLES = (
     "INITIALIZATION_STD",
     "QK_NORM",
     "SPLIT_QKV_PROJECTIONS",
+    "CANON_LAYERS",
     "LR",
     "MIN_LR",
     "LR_SCHEDULER",
