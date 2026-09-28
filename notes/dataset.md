@@ -140,3 +140,108 @@ with production data, creates production splits, or tokenizes text.
 The shared GlotLID model must already be prepared. Collection is not scheduled
 and starts only when this command is run. `extra_dataset.run()` is the main
 interface; `--status` performs no collection.
+
+## Web-quality audit and next filters
+
+The `balanced_1b_10m_10m` audit found a distributed explicit SEO-spam network,
+not one dominant adult domain. The conservative successor policy quarantines a
+domain when it contributes at least two densely explicit chunks and at least 50%
+of its selected chunks are densely explicit; all `bakeca.it` subdomains are also
+excluded. Keep the parent immutable and record domain provenance for retained and
+replacement documents.
+
+The first sanitized successor is
+`artifacts/documents/balanced_1b_10m_10m_sanitized_v1/`. It is a document pool,
+not yet a retokenized 1B/10M/10M training artifact. Its web provenance is in
+`web_provenance.parquet`, and the exact selected replacements are in
+`replacements.jsonl`. The 300-document review page at
+`artifacts/analysis/document_explorer.html` samples 100 retained web, 100
+replacement web, 50 Wikipedia, and 50 educational-PDF documents; labels and
+notes remain in the browser until exported. The original web still has
+117,538 distinct retained domains after quarantine, including large shares
+from `fanpage.it`, `it.topwar.ru`, and `ilgiornale.it`. Dense explicit-marker
+chunks remain, especially in `sbandieratoridovara.it`; domain filtering is
+therefore a first pass, not a final safety certificate.
+The train-web lexical audit fell from 18,336/602,045 dense explicit-marker
+chunks (3.05%) in the parent to 1,260/620,781 (0.20%) in this successor.
+These are heuristic signals, not human-labeled adult-content rates.
+
+The second sanitized successor is
+`artifacts/documents/balanced_1b_10m_10m_sanitized_v2/`, built from the
+original frozen selection with the additional conservative site rule in
+`src/dataset/refine_web_quarantine.py`. Its versioned evidence and exact
+1,252-domain quarantine are under `artifacts/analysis/domain_replacement_v2/`.
+The rule adds 187 hostnames based on explicit hostname patterns or repeated
+dense explicit markers (at least 3 dense chunks, at least 5% of a site's
+chunks dense, and at least 20% containing a strong marker). It removes 18,337
+original train-web documents and selects 40,425 replacement documents from
+the deduplicated extra pool across multiple site categories. The replacement
+selection and provenance are recorded in `replacements.jsonl` and
+`web_provenance.parquet`; no quarantined hostname remains. All 26 document
+shard checksums, split assignments, and deduplication index references were
+verified. The train-web lexical audit is in
+`artifacts/analysis/adult_content_sanitized_v2/`: 1,002/623,869 (0.161%)
+chunks still meet its dense explicit-marker heuristic. This rule is not a
+document-level adult-content filter or a safety guarantee.
+
+The corresponding 16K-tokenizer balanced token artifact is built with:
+
+```sh
+.venv/bin/python src/dataset/build_dataset.py \
+  --documents-dir artifacts/documents/balanced_1b_10m_10m_sanitized_v2 \
+  --tokenizer artifacts/tokenizers/production_16k/tokenizer.model \
+  --output-dir artifacts/datasets/balanced_sanitized_v2_16k \
+  --mix balanced --train-tokens 1000000000 \
+  --validation-tokens 10000000 --test-tokens 10000000
+```
+
+This leaves all prior document pools and token artifacts untouched. Inspect
+the three `metadata.json` files for final token counts and shard hashes before
+training; the path is a distinct candidate and is not the default dataset path.
+
+For a complete source-site inventory, run
+`.venv/bin/python src/dataset/inventory_websites.py --output-dir artifacts/analysis/website_inventory_next`
+with a new output directory.
+The resulting `websites.csv` has one row per source type and URL hostname for
+all accepted documents in the reusable pool, original frozen selection,
+sanitized successor, and isolated extra pool. Counts are distinct documents;
+subdomains remain separate except for `www.`, and the columns preserve the
+three train/validation/test partitions. Three example URLs and document IDs
+per row support manual review. Blank decision/notes columns are for reviewers;
+editing the inventory does not filter any corpus.
+To inspect one hostname in the sanitized corpus, run the document explorer with
+`--hostname site.example --samples 100 --output artifacts/analysis/site-example-review.html`;
+repeat `--hostname` to combine sites. This is a read-only seeded sample, not a
+filtering decision.
+
+The next filtering iteration should be staged and ablated rather than folded into
+one opaque score:
+
+1. URL/domain deny rules for confirmed spam networks and adult paths, versioned
+   with evidence and counts.
+2. Existing language, prose, exact-document and exact-chunk checks.
+3. Template/repetition checks at line, paragraph and word n-gram level; specifically
+   measure dominant repeated spans across unrelated domains.
+4. Near-duplicate MinHash over language-tokenized word 5-grams, evaluated both
+   within acquisition shards and globally. Do not assume the most aggressive scope
+   is best.
+5. A lightweight Italian quality classifier trained from manually reviewed
+   positive/negative documents, with held-out labels and small-model pretraining
+   ablations before promotion.
+6. Seeded human review of random accepted and rejected documents, stratified by
+   source/domain and including boundary-score examples.
+
+This ordering follows the reproducible lessons from FineWeb/FineWeb2, RefinedWeb,
+Dolma, DataComp-LM and MADLAD-400: combine provenance, simple interpretable rules,
+repetition handling, deduplication and empirical model-based filtering; retain
+manual audits; and validate thresholds per language. In particular, FineWeb
+reported that more cross-dump or line-level deduplication was not automatically
+better, while DataComp-LM found that a small learned quality filter was a strong
+baseline. Relevant primary references:
+
+- [FineWeb technical report](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1)
+- [FineWeb2](https://arxiv.org/abs/2506.20920)
+- [RefinedWeb](https://arxiv.org/abs/2306.01116)
+- [Dolma](https://arxiv.org/abs/2402.00159)
+- [DataComp-LM](https://arxiv.org/abs/2406.11794)
+- [MADLAD-400](https://arxiv.org/abs/2309.04662)
