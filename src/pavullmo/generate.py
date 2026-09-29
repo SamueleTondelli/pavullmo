@@ -77,7 +77,15 @@ def load_model(
         dropout=float(hyperparameters["DROPOUT"]),
         seq_len=int(hyperparameters["SEQ_LEN"]),
         rope_base=float(hyperparameters["ROPE_BASE"]),
+        initialization=str(
+            hyperparameters.get("INITIALIZATION", "pytorch_default")
+        ),
+        initialization_std=float(hyperparameters.get("INITIALIZATION_STD", 0.02)),
         qk_norm=bool(hyperparameters["QK_NORM"]),
+        split_qkv_projections=bool(
+            hyperparameters.get("SPLIT_QKV_PROJECTIONS", False)
+        ),
+        canon_layers=bool(hyperparameters.get("CANON_LAYERS", False)),
     )
 
     state_dict = checkpoint.get("model_state_dict")
