@@ -113,6 +113,8 @@ PRETRAIN_ENVIRONMENT_VARIABLES = (
     "DIAGNOSTICS_INTERVAL",
     "COMPILE_MODEL",
     "COMPILE_MODE",
+    "SAVE_TRAINING_STATE",
+    "RESUME_CHECKPOINT",
 )
 
 image = modal.Image.debian_slim(python_version="3.12")

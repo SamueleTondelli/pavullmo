@@ -26,6 +26,19 @@ sys.path.insert(0, str(MODEL_DIR))
 
 from model import DecoderTransformer
 
+if __package__:
+    from .training_checkpoint import (
+        EpochBatchSampler,
+        capture_training_state,
+        restore_training_state,
+    )
+else:
+    from training_checkpoint import (
+        EpochBatchSampler,
+        capture_training_state,
+        restore_training_state,
+    )
+
 
 def env_bool(name: str, default: bool) -> bool:
     value = os.environ.get(name)
@@ -114,6 +127,8 @@ TENSORBOARD_FLUSH_SECS = int(os.environ.get("TENSORBOARD_FLUSH_SECS", 5))
 DIAGNOSTICS_INTERVAL = int(os.environ.get("DIAGNOSTICS_INTERVAL", 100))
 COMPILE_MODEL = env_bool("COMPILE_MODEL", True)
 COMPILE_MODE = os.environ.get("COMPILE_MODE", "default")
+SAVE_TRAINING_STATE = env_bool("SAVE_TRAINING_STATE", False)
+RESUME_CHECKPOINT = os.environ.get("RESUME_CHECKPOINT", "").strip()
 
 
 class TokenBlockDataset(Dataset[tuple[torch.Tensor, torch.Tensor]]):
@@ -326,6 +341,7 @@ def build_loader(
     *,
     shuffle: bool,
     generator: torch.Generator | None = None,
+    batch_sampler: EpochBatchSampler | None = None,
 ) -> DataLoader[tuple[torch.Tensor, torch.Tensor]]:
     fixed_sample = dataset.evaluation_starts is not None
     if fixed_sample:
@@ -347,6 +363,12 @@ def build_loader(
         "persistent_workers": NUM_WORKERS > 0,
         "generator": generator,
     }
+    if batch_sampler is not None:
+        if not shuffle or fixed_sample:
+            raise ValueError("a resumable batch sampler requires shuffled training data")
+        for name in ("batch_size", "shuffle", "drop_last"):
+            kwargs.pop(name)
+        kwargs["batch_sampler"] = batch_sampler
     if NUM_WORKERS > 0:
         kwargs["prefetch_factor"] = 2
     return DataLoader(**kwargs)
@@ -829,8 +851,9 @@ def save_final_model(
     train_loss: float,
     val_loss: float,
     hyperparameters: dict[str, object],
+    training_state: dict[str, Any] | None = None,
 ) -> Path:
-    """Atomically save final model weights and the configuration that made them."""
+    """Atomically save final weights, configuration, and optional resumable state."""
 
     if Path(experiment_name).name != experiment_name or experiment_name in {"", "."}:
         raise ValueError(
@@ -841,7 +864,7 @@ def save_final_model(
     model_path = output_dir / f"{experiment_name}.pt"
     temporary_path = output_dir / f".{experiment_name}.{os.getpid()}.tmp"
     checkpoint = {
-        "format_version": 1,
+        "format_version": 2 if training_state is not None else 1,
         "model_state_dict": model.state_dict(),
         "experiment_name": experiment_name,
         "dataset_variant": dataset_variant,
@@ -851,6 +874,9 @@ def save_final_model(
         "hyperparameters": hyperparameters,
         "config": config_string(hyperparameters),
     }
+
+    if training_state is not None:
+        checkpoint["training_state"] = training_state
 
     try:
         torch.save(checkpoint, temporary_path)
@@ -964,12 +990,19 @@ def main() -> None:
         )
 
     data_generator = torch.Generator().manual_seed(SEED)
+    validation_generator = torch.Generator().manual_seed(SEED)
+    train_batch_sampler = EpochBatchSampler(len(train_dataset), BATCH_SIZE, SEED)
     train_loader = build_loader(
         train_dataset,
         shuffle=True,
         generator=data_generator,
+        batch_sampler=train_batch_sampler,
     )
-    validation_loader = build_loader(validation_dataset, shuffle=False)
+    # Loader worker seeds use dedicated generators, so constructing an iterator
+    # during resume or validation cannot perturb the model's dropout RNG stream.
+    validation_loader = build_loader(
+        validation_dataset, shuffle=False, generator=validation_generator
+    )
 
     optimizer_steps_per_epoch = len(train_loader) // GRAD_ACCUM_STEPS
     available_steps = EPOCHS * optimizer_steps_per_epoch
@@ -1016,7 +1049,6 @@ def main() -> None:
         weight_decay=0.0,
         fused=True,
     )
-    scheduler_adam = build_scheduler(optimizer_adam, total_steps)
 
     optimizer_muon = torch.optim.Muon(
         optimizer_muon_parameter_groups,
@@ -1033,7 +1065,80 @@ def main() -> None:
         ns_steps=MUON_NS_ITERS,
         adjust_lr_fn=MUON_ADJUST_LR_FN,
     )
+
+    hyperparameters: dict[str, object] = {
+        "VOCAB_SIZE": VOCAB_SIZE,
+        "N_BLOCKS": N_BLOCKS,
+        "EMBED_DIM": EMBED_DIM,
+        "ATTN_HEADS": ATTN_HEADS,
+        "FFN_DIM": FFN_DIM,
+        "SEQ_LEN": SEQ_LEN,
+        "ROPE_BASE": ROPE_BASE,
+        "INITIALIZATION": INITIALIZATION,
+        "INITIALIZATION_STD": INITIALIZATION_STD,
+        "QK_NORM": QK_NORM,
+        "SPLIT_QKV_PROJECTIONS": SPLIT_QKV_PROJECTIONS,
+        "CANON_LAYERS": CANON_LAYERS,
+        "LR": LR,
+        "MIN_LR": MIN_LR,
+        "LR_SCHEDULER": LR_SCHEDULER,
+        "WSD_DECAY_FRACTION": WSD_DECAY_FRACTION,
+        "ADAM_BETA1": ADAM_BETA1,
+        "ADAM_BETA2": ADAM_BETA2,
+        "ADAM_EPS": ADAM_EPS,
+        "NORM_LR_MULTIPLIER": NORM_LR_MULTIPLIER,
+        "WARMUP_STEPS": WARMUP_STEPS,
+        "BATCH_SIZE": BATCH_SIZE,
+        "GRAD_ACCUM_STEPS": GRAD_ACCUM_STEPS,
+        "EPOCHS": EPOCHS,
+        "MAX_STEPS": MAX_STEPS,
+        "DROPOUT": DROPOUT,
+        "WEIGHT_DECAY": WEIGHT_DECAY,
+        "Z_LOSS_COEFFICIENT": Z_LOSS_COEFFICIENT,
+        "MAX_GRAD_NORM": MAX_GRAD_NORM,
+        "SEED": SEED,
+        "DATASET_PREFIX": DATASET_PREFIX,
+        "DATASET_VARIANT": DATASET_VARIANT,
+        "VALIDATION_INTERVAL": VALIDATION_INTERVAL,
+        "VALIDATION_STEPS": VALIDATION_STEPS,
+        "DIAGNOSTICS_INTERVAL": DIAGNOSTICS_INTERVAL,
+        "COMPILE_MODEL": COMPILE_MODEL,
+        "COMPILE_MODE": COMPILE_MODE,
+        "SAVE_TRAINING_STATE": SAVE_TRAINING_STATE,
+        "RESUME_CHECKPOINT": RESUME_CHECKPOINT,
+        "MUON_LR_MULTIPLIER": MUON_LR_MULTIPLIER,
+        "MUON_WEIGHT_DECAY": MUON_WEIGHT_DECAY,
+        "MUON_MOMENTUM": MUON_MOMENTUM,
+        "MUON_NESTEROV": MUON_NESTEROV,
+        "MUON_ADJUST_LR_FN": MUON_ADJUST_LR_FN,
+        "MUON_EPS": MUON_EPS,
+        "MUON_NS_ITERS": MUON_NS_ITERS,
+        "MUON_NS_COEFFICIENT_A": MUON_NS_COEFFICIENT_A,
+        "MUON_NS_COEFFICIENT_B": MUON_NS_COEFFICIENT_B,
+        "MUON_NS_COEFFICIENT_C": MUON_NS_COEFFICIENT_C,
+    }
+    optimizers = {"adamw": optimizer_adam, "muon": optimizer_muon}
+    dataset_metadata = {
+        "train": train_dataset.metadata,
+        "validation": validation_dataset.metadata,
+    }
+    resume_state = None
+    if RESUME_CHECKPOINT:
+        resume_state = restore_training_state(
+            Path(RESUME_CHECKPOINT).expanduser(),
+            model,
+            optimizers,
+            hyperparameters=hyperparameters,
+        )
+        print(
+            f"Loaded {RESUME_CHECKPOINT} (saved step {resume_state['global_step']}); "
+            f"starting a new {total_steps}-step run",
+            flush=True,
+        )
+    scheduler_adam = build_scheduler(optimizer_adam, total_steps)
     scheduler_muon = build_scheduler(optimizer_muon, total_steps)
+    schedulers = {"adamw": scheduler_adam, "muon": scheduler_muon}
+    initial_step = 0
 
     train_model = (
         torch.compile(model, mode=COMPILE_MODE, dynamic=False)
@@ -1094,55 +1199,6 @@ def main() -> None:
     muon_adjusted_peak_learning_rate_max = (
         LR * MUON_LR_MULTIPLIER * max(muon_lr_adjustments)
     )
-    hyperparameters: dict[str, object] = {
-        "VOCAB_SIZE": VOCAB_SIZE,
-        "N_BLOCKS": N_BLOCKS,
-        "EMBED_DIM": EMBED_DIM,
-        "ATTN_HEADS": ATTN_HEADS,
-        "FFN_DIM": FFN_DIM,
-        "SEQ_LEN": SEQ_LEN,
-        "ROPE_BASE": ROPE_BASE,
-        "INITIALIZATION": INITIALIZATION,
-        "INITIALIZATION_STD": INITIALIZATION_STD,
-        "QK_NORM": QK_NORM,
-        "SPLIT_QKV_PROJECTIONS": SPLIT_QKV_PROJECTIONS,
-        "CANON_LAYERS": CANON_LAYERS,
-        "LR": LR,
-        "MIN_LR": MIN_LR,
-        "LR_SCHEDULER": LR_SCHEDULER,
-        "WSD_DECAY_FRACTION": WSD_DECAY_FRACTION,
-        "ADAM_BETA1": ADAM_BETA1,
-        "ADAM_BETA2": ADAM_BETA2,
-        "ADAM_EPS": ADAM_EPS,
-        "NORM_LR_MULTIPLIER": NORM_LR_MULTIPLIER,
-        "WARMUP_STEPS": WARMUP_STEPS,
-        "BATCH_SIZE": BATCH_SIZE,
-        "GRAD_ACCUM_STEPS": GRAD_ACCUM_STEPS,
-        "EPOCHS": EPOCHS,
-        "MAX_STEPS": MAX_STEPS,
-        "DROPOUT": DROPOUT,
-        "WEIGHT_DECAY": WEIGHT_DECAY,
-        "Z_LOSS_COEFFICIENT": Z_LOSS_COEFFICIENT,
-        "MAX_GRAD_NORM": MAX_GRAD_NORM,
-        "SEED": SEED,
-        "DATASET_PREFIX": DATASET_PREFIX,
-        "DATASET_VARIANT": DATASET_VARIANT,
-        "VALIDATION_INTERVAL": VALIDATION_INTERVAL,
-        "VALIDATION_STEPS": VALIDATION_STEPS,
-        "DIAGNOSTICS_INTERVAL": DIAGNOSTICS_INTERVAL,
-        "COMPILE_MODEL": COMPILE_MODEL,
-        "COMPILE_MODE": COMPILE_MODE,
-        "MUON_LR_MULTIPLIER": MUON_LR_MULTIPLIER,
-        "MUON_WEIGHT_DECAY": MUON_WEIGHT_DECAY,
-        "MUON_MOMENTUM": MUON_MOMENTUM,
-        "MUON_NESTEROV": MUON_NESTEROV,
-        "MUON_ADJUST_LR_FN": MUON_ADJUST_LR_FN,
-        "MUON_EPS": MUON_EPS,
-        "MUON_NS_ITERS": MUON_NS_ITERS,
-        "MUON_NS_COEFFICIENT_A": MUON_NS_COEFFICIENT_A,
-        "MUON_NS_COEFFICIENT_B": MUON_NS_COEFFICIENT_B,
-        "MUON_NS_COEFFICIENT_C": MUON_NS_COEFFICIENT_C,
-    }
     settings = {
         "experiment_name": EXPERIMENT_NAME,
         "dataset_prefix": DATASET_PREFIX,
@@ -1195,6 +1251,10 @@ def main() -> None:
         "train_script": TRAIN_SCRIPT,
         "compile_model": COMPILE_MODEL,
         "compile_mode": COMPILE_MODE,
+        "save_training_state": SAVE_TRAINING_STATE,
+        "resume_checkpoint": RESUME_CHECKPOINT,
+        "initial_step": initial_step,
+        "source_checkpoint_step": resume_state["global_step"] if resume_state else None,
         "seed": SEED,
         "muon_lr_multiplier": MUON_LR_MULTIPLIER,
         "muon_peak_learning_rate": LR * MUON_LR_MULTIPLIER,
@@ -1214,16 +1274,16 @@ def main() -> None:
         ],
     }
     print(json.dumps(settings, indent=2), flush=True)
-    writer.add_text("configuration", json.dumps(settings, indent=2), 0)
-    writer.add_scalar("model/parameter_count", parameter_count, 0)
-    writer.add_scalar("model/trainable_parameter_count", trainable_parameter_count, 0)
-    writer.add_scalar("model/optimized_parameter_count", optimized_parameter_count, 0)
-    writer.add_scalar("model/adamw_parameter_count", adamw_parameter_count, 0)
-    writer.add_scalar("model/muon_parameter_count", muon_parameter_count, 0)
+    writer.add_text("configuration", json.dumps(settings, indent=2), initial_step)
+    writer.add_scalar("model/parameter_count", parameter_count, initial_step)
+    writer.add_scalar("model/trainable_parameter_count", trainable_parameter_count, initial_step)
+    writer.add_scalar("model/optimized_parameter_count", optimized_parameter_count, initial_step)
+    writer.add_scalar("model/adamw_parameter_count", adamw_parameter_count, initial_step)
+    writer.add_scalar("model/muon_parameter_count", muon_parameter_count, initial_step)
     writer.add_scalar(
         "model/muon_parameter_fraction",
         muon_parameter_count / max(trainable_parameter_count, 1),
-        0,
+        initial_step,
     )
 
     initial_parameter_norm, initial_parameter_rms, _ = tensor_collection_stats(
@@ -1235,19 +1295,19 @@ def main() -> None:
     muon_parameter_norm, muon_parameter_rms, _ = tensor_collection_stats(
         optimizer_muon_parameter_groups[0]["params"]
     )
-    writer.add_scalar("diagnostics/parameter_norm", initial_parameter_norm, 0)
-    writer.add_scalar("diagnostics/parameter_rms", initial_parameter_rms, 0)
-    writer.add_scalar("diagnostics/embedding_norm", embedding_norm, 0)
-    writer.add_scalar("diagnostics/embedding_rms", embedding_rms, 0)
-    writer.add_scalar("optimizer/muon/parameter_norm", muon_parameter_norm, 0)
-    writer.add_scalar("optimizer/muon/parameter_rms", muon_parameter_rms, 0)
+    writer.add_scalar("diagnostics/parameter_norm", initial_parameter_norm, initial_step)
+    writer.add_scalar("diagnostics/parameter_rms", initial_parameter_rms, initial_step)
+    writer.add_scalar("diagnostics/embedding_norm", embedding_norm, initial_step)
+    writer.add_scalar("diagnostics/embedding_rms", embedding_rms, initial_step)
+    writer.add_scalar("optimizer/muon/parameter_norm", muon_parameter_norm, initial_step)
+    writer.add_scalar("optimizer/muon/parameter_rms", muon_parameter_rms, initial_step)
 
     print(f"Total model parameters: {parameter_count:,}")
     print(f"\tTrainable: {trainable_parameter_count:,}")
     print(f"\tAdamW: {adamw_parameter_count:,}")
     print(f"\tMuon: {muon_parameter_count:,}")
 
-    global_step = 0
+    global_step = initial_step
     tokens_seen = 0
     clipped_steps = 0
     tokens_per_step = BATCH_SIZE * GRAD_ACCUM_STEPS * SEQ_LEN
@@ -1260,6 +1320,7 @@ def main() -> None:
     model.train()
     try:
         for epoch in range(EPOCHS):
+            train_batch_sampler.set_epoch(epoch)
             train_iterator = iter(train_loader)
             for _ in range(optimizer_steps_per_epoch):
                 if global_step >= total_steps:
@@ -1584,6 +1645,21 @@ def main() -> None:
 
     if final_train_loss is None or final_validation_loss is None:
         raise RuntimeError("training completed without final loss values")
+    training_state = None
+    if SAVE_TRAINING_STATE:
+        training_state = capture_training_state(
+            model,
+            optimizers,
+            schedulers,
+            global_step=global_step,
+            total_steps=total_steps,
+            tokens_seen=tokens_seen,
+            clipped_steps=clipped_steps,
+            optimizer_steps_per_epoch=optimizer_steps_per_epoch,
+            dataset_metadata=dataset_metadata,
+            data_generator=data_generator,
+            validation_generator=validation_generator,
+        )
     model_path = save_final_model(
         model,
         MODEL_OUTPUT_DIR,
@@ -1593,6 +1669,7 @@ def main() -> None:
         train_loss=final_train_loss,
         val_loss=final_validation_loss,
         hyperparameters=hyperparameters,
+        training_state=training_state,
     )
     print(f"final model saved to {model_path}", flush=True)
     append_run_result(

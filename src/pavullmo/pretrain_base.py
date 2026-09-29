@@ -26,6 +26,19 @@ sys.path.insert(0, str(MODEL_DIR))
 
 from model import DecoderTransformer
 
+if __package__:
+    from .training_checkpoint import (
+        EpochBatchSampler,
+        capture_training_state,
+        restore_training_state,
+    )
+else:
+    from training_checkpoint import (
+        EpochBatchSampler,
+        capture_training_state,
+        restore_training_state,
+    )
+
 
 def env_bool(name: str, default: bool) -> bool:
     value = os.environ.get(name)
@@ -104,6 +117,8 @@ TENSORBOARD_FLUSH_SECS = int(os.environ.get("TENSORBOARD_FLUSH_SECS", 5))
 DIAGNOSTICS_INTERVAL = int(os.environ.get("DIAGNOSTICS_INTERVAL", 100))
 COMPILE_MODEL = env_bool("COMPILE_MODEL", True)
 COMPILE_MODE = os.environ.get("COMPILE_MODE", "default")
+SAVE_TRAINING_STATE = env_bool("SAVE_TRAINING_STATE", False)
+RESUME_CHECKPOINT = os.environ.get("RESUME_CHECKPOINT", "").strip()
 
 
 class TokenBlockDataset(Dataset[tuple[torch.Tensor, torch.Tensor]]):
@@ -294,6 +309,7 @@ def build_loader(
     *,
     shuffle: bool,
     generator: torch.Generator | None = None,
+    batch_sampler: EpochBatchSampler | None = None,
 ) -> DataLoader[tuple[torch.Tensor, torch.Tensor]]:
     fixed_sample = dataset.evaluation_starts is not None
     if fixed_sample:
@@ -315,6 +331,12 @@ def build_loader(
         "persistent_workers": NUM_WORKERS > 0,
         "generator": generator,
     }
+    if batch_sampler is not None:
+        if not shuffle or fixed_sample:
+            raise ValueError("a resumable batch sampler requires shuffled training data")
+        for name in ("batch_size", "shuffle", "drop_last"):
+            kwargs.pop(name)
+        kwargs["batch_sampler"] = batch_sampler
     if NUM_WORKERS > 0:
         kwargs["prefetch_factor"] = 2
     return DataLoader(**kwargs)
@@ -553,8 +575,9 @@ def save_final_model(
     train_loss: float,
     val_loss: float,
     hyperparameters: dict[str, object],
+    training_state: dict[str, Any] | None = None,
 ) -> Path:
-    """Atomically save final model weights and the configuration that made them."""
+    """Atomically save final weights, configuration, and optional resumable state."""
 
     if Path(experiment_name).name != experiment_name or experiment_name in {"", "."}:
         raise ValueError(
@@ -565,7 +588,7 @@ def save_final_model(
     model_path = output_dir / f"{experiment_name}.pt"
     temporary_path = output_dir / f".{experiment_name}.{os.getpid()}.tmp"
     checkpoint = {
-        "format_version": 1,
+        "format_version": 2 if training_state is not None else 1,
         "model_state_dict": model.state_dict(),
         "experiment_name": experiment_name,
         "dataset_variant": dataset_variant,
@@ -575,6 +598,9 @@ def save_final_model(
         "hyperparameters": hyperparameters,
         "config": config_string(hyperparameters),
     }
+
+    if training_state is not None:
+        checkpoint["training_state"] = training_state
 
     try:
         torch.save(checkpoint, temporary_path)
@@ -688,12 +714,19 @@ def main() -> None:
         )
 
     data_generator = torch.Generator().manual_seed(SEED)
+    validation_generator = torch.Generator().manual_seed(SEED)
+    train_batch_sampler = EpochBatchSampler(len(train_dataset), BATCH_SIZE, SEED)
     train_loader = build_loader(
         train_dataset,
         shuffle=True,
         generator=data_generator,
+        batch_sampler=train_batch_sampler,
     )
-    validation_loader = build_loader(validation_dataset, shuffle=False)
+    # Loader worker seeds use dedicated generators, so constructing an iterator
+    # during resume or validation cannot perturb the model's dropout RNG stream.
+    validation_loader = build_loader(
+        validation_dataset, shuffle=False, generator=validation_generator
+    )
 
     optimizer_steps_per_epoch = len(train_loader) // GRAD_ACCUM_STEPS
     available_steps = EPOCHS * optimizer_steps_per_epoch
@@ -734,28 +767,6 @@ def main() -> None:
         weight_decay=0.0,
         fused=True,
     )
-    scheduler = build_scheduler(optimizer, total_steps)
-    train_model = (
-        torch.compile(model, mode=COMPILE_MODE, dynamic=False)
-        if COMPILE_MODEL
-        else model
-    )
-
-    run_dir = LOG_DIR / EXPERIMENT_NAME
-    writer = SummaryWriter(
-        log_dir=run_dir,
-        flush_secs=TENSORBOARD_FLUSH_SECS,
-    )
-    parameter_count = sum(parameter.numel() for parameter in model.parameters())
-    decayed_parameter_count = sum(
-        parameter.numel() for parameter in optimizer_parameter_groups[0]["params"]
-    )
-    no_decay_parameter_count = sum(
-        parameter.numel() for parameter in optimizer_parameter_groups[1]["params"]
-    )
-    norm_parameter_count = sum(
-        parameter.numel() for parameter in optimizer_parameter_groups[2]["params"]
-    )
     hyperparameters: dict[str, object] = {
         "VOCAB_SIZE": VOCAB_SIZE,
         "N_BLOCKS": N_BLOCKS,
@@ -794,7 +805,52 @@ def main() -> None:
         "DIAGNOSTICS_INTERVAL": DIAGNOSTICS_INTERVAL,
         "COMPILE_MODEL": COMPILE_MODEL,
         "COMPILE_MODE": COMPILE_MODE,
+        "SAVE_TRAINING_STATE": SAVE_TRAINING_STATE,
+        "RESUME_CHECKPOINT": RESUME_CHECKPOINT,
     }
+    optimizers = {"adamw": optimizer}
+    dataset_metadata = {
+        "train": train_dataset.metadata,
+        "validation": validation_dataset.metadata,
+    }
+    resume_state = None
+    if RESUME_CHECKPOINT:
+        resume_state = restore_training_state(
+            Path(RESUME_CHECKPOINT).expanduser(),
+            model,
+            optimizers,
+            hyperparameters=hyperparameters,
+        )
+        print(
+            f"Loaded {RESUME_CHECKPOINT} (saved step {resume_state['global_step']}); "
+            f"starting a new {total_steps}-step run",
+            flush=True,
+        )
+    scheduler = build_scheduler(optimizer, total_steps)
+    schedulers = {"adamw": scheduler}
+    initial_step = 0
+
+    train_model = (
+        torch.compile(model, mode=COMPILE_MODE, dynamic=False)
+        if COMPILE_MODEL
+        else model
+    )
+
+    run_dir = LOG_DIR / EXPERIMENT_NAME
+    writer = SummaryWriter(
+        log_dir=run_dir,
+        flush_secs=TENSORBOARD_FLUSH_SECS,
+    )
+    parameter_count = sum(parameter.numel() for parameter in model.parameters())
+    decayed_parameter_count = sum(
+        parameter.numel() for parameter in optimizer_parameter_groups[0]["params"]
+    )
+    no_decay_parameter_count = sum(
+        parameter.numel() for parameter in optimizer_parameter_groups[1]["params"]
+    )
+    norm_parameter_count = sum(
+        parameter.numel() for parameter in optimizer_parameter_groups[2]["params"]
+    )
     settings = {
         "experiment_name": EXPERIMENT_NAME,
         "dataset_prefix": DATASET_PREFIX,
@@ -841,11 +897,15 @@ def main() -> None:
         "train_script": TRAIN_SCRIPT,
         "compile_model": COMPILE_MODEL,
         "compile_mode": COMPILE_MODE,
+        "save_training_state": SAVE_TRAINING_STATE,
+        "resume_checkpoint": RESUME_CHECKPOINT,
+        "initial_step": initial_step,
+        "source_checkpoint_step": resume_state["global_step"] if resume_state else None,
         "seed": SEED,
     }
     print(json.dumps(settings, indent=2), flush=True)
-    writer.add_text("configuration", json.dumps(settings, indent=2), 0)
-    writer.add_scalar("model/parameter_count", parameter_count, 0)
+    writer.add_text("configuration", json.dumps(settings, indent=2), initial_step)
+    writer.add_scalar("model/parameter_count", parameter_count, initial_step)
 
     initial_parameter_norm, initial_parameter_rms, _ = tensor_collection_stats(
         list(model.parameters())
@@ -853,17 +913,17 @@ def main() -> None:
     embedding_norm, embedding_rms, _ = tensor_collection_stats(
         [model.embeddings.weight]
     )
-    writer.add_scalar("diagnostics/parameter_norm", initial_parameter_norm, 0)
-    writer.add_scalar("diagnostics/parameter_rms", initial_parameter_rms, 0)
-    writer.add_scalar("diagnostics/embedding_norm", embedding_norm, 0)
-    writer.add_scalar("diagnostics/embedding_rms", embedding_rms, 0)
+    writer.add_scalar("diagnostics/parameter_norm", initial_parameter_norm, initial_step)
+    writer.add_scalar("diagnostics/parameter_rms", initial_parameter_rms, initial_step)
+    writer.add_scalar("diagnostics/embedding_norm", embedding_norm, initial_step)
+    writer.add_scalar("diagnostics/embedding_rms", embedding_rms, initial_step)
 
     total_params = sum(p.numel() for p in model.parameters())
     print(f"Total model parameters: {total_params}")
     trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"\tTrainable: {trainable_params}")
 
-    global_step = 0
+    global_step = initial_step
     tokens_seen = 0
     clipped_steps = 0
     tokens_per_step = BATCH_SIZE * GRAD_ACCUM_STEPS * SEQ_LEN
@@ -876,6 +936,7 @@ def main() -> None:
     model.train()
     try:
         for epoch in range(EPOCHS):
+            train_batch_sampler.set_epoch(epoch)
             train_iterator = iter(train_loader)
             for _ in range(optimizer_steps_per_epoch):
                 if global_step >= total_steps:
@@ -1121,6 +1182,21 @@ def main() -> None:
 
     if final_train_loss is None or final_validation_loss is None:
         raise RuntimeError("training completed without final loss values")
+    training_state = None
+    if SAVE_TRAINING_STATE:
+        training_state = capture_training_state(
+            model,
+            optimizers,
+            schedulers,
+            global_step=global_step,
+            total_steps=total_steps,
+            tokens_seen=tokens_seen,
+            clipped_steps=clipped_steps,
+            optimizer_steps_per_epoch=optimizer_steps_per_epoch,
+            dataset_metadata=dataset_metadata,
+            data_generator=data_generator,
+            validation_generator=validation_generator,
+        )
     model_path = save_final_model(
         model,
         MODEL_OUTPUT_DIR,
@@ -1130,6 +1206,7 @@ def main() -> None:
         train_loss=final_train_loss,
         val_loss=final_validation_loss,
         hyperparameters=hyperparameters,
+        training_state=training_state,
     )
     print(f"final model saved to {model_path}", flush=True)
     append_run_result(
