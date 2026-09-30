@@ -9,7 +9,11 @@ CANON_KERNEL_SIZE = 4
 
 
 class CanonLayer(nn.Conv1d):
-    """Causal depthwise convolution with an explicit residual connection."""
+    """Residual causal depthwise convolution using causal-conv1d on CUDA.
+
+    Retain Conv1d's parameter layout and initialization for existing checkpoints.
+    CPU inputs and kernel sizes/dtypes unsupported by the CUDA kernel use Conv1d.
+    """
 
     def __init__(self, channels: int, kernel_size: int = CANON_KERNEL_SIZE):
         if channels <= 0:
@@ -33,11 +37,41 @@ class CanonLayer(nn.Conv1d):
                 f"expected {self.in_channels} channels, got {x.size(-1)}"
             )
 
-        sequence_length = x.size(1)
-        convolved = super().forward(x.transpose(1, 2))
-        # Conv1d pads both sides. Keeping the first sequence_length outputs makes
-        # the receptive field causal: output t only sees inputs t-k+1 through t.
-        convolved = convolved[..., :sequence_length].transpose(1, 2)
+        inputs = x.transpose(1, 2)
+        supported_dtypes = (torch.float32, torch.float16, torch.bfloat16)
+        if (
+            x.is_cuda
+            and self.kernel_size[0] in (2, 3, 4)
+            and x.dtype in supported_dtypes
+            and self.weight.dtype in supported_dtypes
+        ):
+            # Import only on CUDA so CPU use needs no CUDA extension installed.
+            from causal_conv1d import causal_conv1d_fn
+
+            # The custom op does not autocast itself. Keep parameters in FP32
+            # while computing with the activation dtype selected by training.
+            if torch.is_autocast_enabled("cuda"):
+                inputs = inputs.to(torch.get_autocast_dtype("cuda"))
+            # PyTorch 2.9 cannot trace the package's mutable custom op with a
+            # noncontiguous output. Its output inherits the input's layout.
+            # The eager channel-last kernel also needs alignment to 8.
+            if torch.compiler.is_compiling() or (
+                inputs.stride(1) == 1
+                and inputs.stride(2) > 1
+                and (
+                    self.in_channels % 8 != 0
+                    or inputs.stride(0) % 8 != 0
+                    or inputs.stride(2) % 8 != 0
+                )
+            ):
+                inputs = inputs.contiguous()
+            convolved = causal_conv1d_fn(
+                inputs, self.weight.squeeze(1), bias=None, activation=None
+            )
+        else:
+            # Conv1d pads both sides; truncation keeps only causal outputs.
+            convolved = super().forward(inputs)[..., :x.size(1)]
+        convolved = convolved.transpose(1, 2)
         return x + convolved
 
 

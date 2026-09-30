@@ -3,6 +3,20 @@
 # PavuLLMo
 
 ## Setup
+Install the locked dependencies with `uv sync` (`uv sync --extra cloud` for Modal).
+On Linux x86_64, `causal-conv1d` uses the upstream prebuilt wheel for Python 3.12,
+PyTorch 2.9, CUDA 12, and the C++11 ABI. This avoids an isolated source build
+selecting a different PyTorch version and requires no local CUDA toolkit or GCC
+configuration. If the pinned Python/PyTorch/CUDA stack changes, update the wheel
+URL in `pyproject.toml` to match and regenerate `uv.lock`.
+
+`CanonLayer` uses `causal_conv1d_fn` on CUDA for kernel sizes 2–4 and
+FP32/FP16/BF16 inputs, with BF16 autocast and FP32 training parameters. Its residual
+connection, weight shape, and initialization remain compatible with existing
+checkpoints. CPU inputs and unsupported kernel sizes/dtypes use PyTorch Conv1d.
+Compiled runs use sequence-contiguous kernel inputs to support PyTorch 2.9's
+custom-op tracing requirements.
+
 After setting up the uv project/venv and the modal cli, create the local tokenized dataset with
 
 ```bash
