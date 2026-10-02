@@ -56,9 +56,10 @@ EXPERIMENT_NAME = os.environ.get("EXPERIMENT_NAME", "pavullmo_base")
 
 # Architecture hyperparameters.
 VOCAB_SIZE = int(os.environ.get("VOCAB_SIZE", 16000))
-N_BLOCKS = int(os.environ.get("N_BLOCKS", 12))
+N_BLOCKS = int(os.environ.get("N_BLOCKS", 13))
 EMBED_DIM = int(os.environ.get("EMBED_DIM", 512))
 ATTN_HEADS = int(os.environ.get("ATTN_HEADS", 8))
+KV_HEADS = int(os.environ.get("KV_HEADS", 2))
 FFN_DIM = int(os.environ.get("FFN_DIM", 1536))
 SEQ_LEN = int(os.environ.get("SEQ_LEN", 1024))
 ROPE_BASE = float(os.environ.get("ROPE_BASE", 10000.0))
@@ -747,6 +748,7 @@ def main() -> None:
         n_blocks=N_BLOCKS,
         embed_dim=EMBED_DIM,
         attn_heads=ATTN_HEADS,
+        num_kv_heads=KV_HEADS,
         ffn_dim=FFN_DIM,
         dropout=DROPOUT,
         seq_len=SEQ_LEN,
@@ -772,6 +774,7 @@ def main() -> None:
         "N_BLOCKS": N_BLOCKS,
         "EMBED_DIM": EMBED_DIM,
         "ATTN_HEADS": ATTN_HEADS,
+        "KV_HEADS": KV_HEADS,
         "FFN_DIM": FFN_DIM,
         "SEQ_LEN": SEQ_LEN,
         "ROPE_BASE": ROPE_BASE,

@@ -112,7 +112,7 @@ def capture_training_state(
 # Context length, RoPE base, dropout, optimizer, schedule, and data settings may
 # change because RESUME_CHECKPOINT starts a new training phase.
 ARCHITECTURE_SETTINGS = {
-    "VOCAB_SIZE", "N_BLOCKS", "EMBED_DIM", "ATTN_HEADS", "FFN_DIM",
+    "VOCAB_SIZE", "N_BLOCKS", "EMBED_DIM", "ATTN_HEADS", "KV_HEADS", "FFN_DIM",
     "QK_NORM", "SPLIT_QKV_PROJECTIONS", "CANON_LAYERS",
 }
 

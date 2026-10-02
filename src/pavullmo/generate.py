@@ -89,6 +89,9 @@ def load_model(
         n_blocks=int(hyperparameters["N_BLOCKS"]),
         embed_dim=int(hyperparameters["EMBED_DIM"]),
         attn_heads=int(hyperparameters["ATTN_HEADS"]),
+        num_kv_heads=int(
+            hyperparameters.get("KV_HEADS", hyperparameters["ATTN_HEADS"])
+        ),
         ffn_dim=int(hyperparameters["FFN_DIM"]),
         dropout=float(hyperparameters["DROPOUT"]),
         seq_len=int(hyperparameters["SEQ_LEN"]),

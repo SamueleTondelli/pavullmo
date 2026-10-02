@@ -69,6 +69,7 @@ PRETRAIN_ENVIRONMENT_VARIABLES = (
     "N_BLOCKS",
     "EMBED_DIM",
     "ATTN_HEADS",
+    "KV_HEADS",
     "FFN_DIM",
     "SEQ_LEN",
     "ROPE_BASE",
