@@ -13,7 +13,7 @@ import torch
 import torch.nn.functional as F
 from pydantic import ValidationError
 
-from config import ModelConfig
+from config import ModelConfig, PretrainingConfig
 from model import DecoderTransformer
 from pavullmo.generate import load_model
 from pavullmo.migrate_checkpoint_config import migrate_checkpoint_config
@@ -61,20 +61,31 @@ class GQAConfigTests(unittest.TestCase):
                 self.assertEqual(model.layers[0].attn.num_kv_heads, heads or 4)
 
     def test_legacy_gqa_migration_preserves_logits_and_infers_missing_heads(self):
-        for heads, split, metadata in itertools.product((1, 2, 4), (False, True), ('recorded', 'missing', 'none')):
+        for heads, split, metadata in itertools.product(
+            (1, 2, 4), (False, True), ('recorded', 'kv_heads', 'missing', 'none')
+        ):
             with self.subTest(heads=heads, split=split, metadata=metadata), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
+                run_dir = root / 'runs' / 'legacy'
+                models_dir = root / 'models'
+                run_dir.mkdir(parents=True)
+                models_dir.mkdir(parents=True)
                 config = model_config(num_kv_heads=heads, split_qkv_projections=split,
                                       canon_layers=True, qk_norm=True)
                 model = DecoderTransformer(config).eval()
                 values = {name.upper(): value for name, value in config.to_dict().items()}
-                if metadata == 'missing':
+                if metadata == 'kv_heads':
+                    values['KV_HEADS'] = values.pop('NUM_KV_HEADS')
+                elif metadata == 'missing':
                     values.pop('NUM_KV_HEADS')
                 elif metadata == 'none':
                     values['NUM_KV_HEADS'] = None
-                torch.save({'hyperparameters': values, 'model_state_dict': model.state_dict()}, root / 'legacy.pt')
-                migrate_checkpoint_config(root / 'legacy.pt')
-                loaded, _, _ = load_model(root, torch.device('cpu'))
+                torch.save(
+                    {'global_step': 0, 'hyperparameters': values, 'model_state_dict': model.state_dict()},
+                    models_dir / 'legacy.pt',
+                )
+                migrate_checkpoint_config(run_dir, models_dir=models_dir)
+                loaded, _, _ = load_model(run_dir, torch.device('cpu'))
                 inputs = torch.tensor([[1, 4, 7, 2]])
                 with torch.inference_mode():
                     torch.testing.assert_close(loaded(inputs), model(inputs), rtol=0, atol=0)
@@ -97,17 +108,62 @@ class GQAConfigTests(unittest.TestCase):
         finally:
             case.tearDown()
 
+    def test_default_model_deepened_with_gqa_and_35m_preset_uses_mqa(self):
+        defaults = ModelConfig()
+        self.assertEqual(defaults.n_blocks, 13)
+        self.assertEqual(defaults.num_kv_heads, 2)
+        preset = PretrainingConfig.load(
+            Path(__file__).resolve().parents[1] / "src/pavullmo/configs/35m_config.toml",
+            overrides={"name": "test"},
+        )
+        self.assertEqual(preset.model.attn_heads, 7)
+        self.assertEqual(preset.model.num_kv_heads, 1)
+
     def test_mha_signature_from_before_gqa_config_is_accepted(self):
         case = fixtures.TrainerTests()
         case.setUp()
         try:
-            trainer = case.trainer()
+            trainer = case.trainer(case.config().with_overrides({'model.num_kv_heads': 0}))
             state = trainer.state_dict()
             state['training_signature']['model'].pop('num_kv_heads')
             trainer.load_state_dict(state)
             self.assertEqual(trainer.global_step, 0)
         finally:
             case.tearDown()
+
+
+@unittest.skipUnless(torch.cuda.is_available(), "requires CUDA")
+class GroupedQueryAttentionCudaTests(unittest.TestCase):
+    def test_canon_grouped_attention_compiles_with_bf16_gradients(self):
+        for split in (False, True):
+            with self.subTest(split=split):
+                torch.manual_seed(0)
+                model = DecoderTransformer(model_config(
+                    num_kv_heads=2,
+                    qk_norm=True,
+                    split_qkv_projections=split,
+                    canon_layers=True,
+                )).cuda()
+                tokens = torch.randint(0, 32, (2, 8), device="cuda")
+                with torch.autocast("cuda", dtype=torch.bfloat16):
+                    expected = model(tokens)
+                expected.float().square().mean().backward()
+                expected_grads = {
+                    name: parameter.grad.clone()
+                    for name, parameter in model.named_parameters()
+                }
+                model.zero_grad(set_to_none=True)
+                compiled = torch.compile(model, fullgraph=True, dynamic=False)
+                with torch.autocast("cuda", dtype=torch.bfloat16):
+                    actual = compiled(tokens)
+                actual.float().square().mean().backward()
+                torch.testing.assert_close(actual, expected, atol=0.05, rtol=0.03)
+                for name, parameter in model.named_parameters():
+                    self.assertEqual(parameter.dtype, torch.float32)
+                    self.assertTrue(torch.isfinite(parameter.grad).all(), name)
+                    torch.testing.assert_close(
+                        parameter.grad, expected_grads[name], atol=0.01, rtol=0.05
+                    )
 
 
 if __name__ == '__main__':

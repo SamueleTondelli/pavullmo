@@ -31,7 +31,7 @@ def model_config(**overrides):
 
 class ModelConfigConstructorTests(unittest.TestCase):
     def test_model_and_layers_accept_config_and_preserve_shapes(self):
-        config = model_config(qk_norm=True, attn_bias=True, canon_layers=True, canon_kernel_size=5)
+        config = model_config(num_kv_heads=0, qk_norm=True, attn_bias=True, canon_layers=True, canon_kernel_size=5)
         inputs = torch.randn(2, 8, 16)
         for layer in (CanonLayer(config), CausalSelfAttention(config), SwiGLUFFN(config), TransformerBlock(config)):
             self.assertEqual(layer(inputs).shape, inputs.shape)

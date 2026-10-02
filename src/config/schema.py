@@ -14,10 +14,10 @@ from .base import Config
 
 class ModelConfig(Config):
     vocab_size: int = Field(default=16000, gt=0)
-    n_blocks: int = Field(default=12, gt=0)
+    n_blocks: int = Field(default=13, gt=0)
     embed_dim: int = Field(default=512, gt=0)
     attn_heads: int = Field(default=8, gt=0)
-    num_kv_heads: int = Field(default=0, ge=0, description="Zero uses attn_heads (MHA).")
+    num_kv_heads: int = Field(default=2, ge=0, description="Zero uses attn_heads (MHA).")
     ffn_dim: int = Field(default=1536, gt=0)
     seq_len: int = Field(default=1024, gt=0)
     dropout: float = Field(default=0.0, ge=0, le=1)

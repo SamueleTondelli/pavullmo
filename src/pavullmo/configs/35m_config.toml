@@ -4,5 +4,6 @@
 n_blocks = 11
 embed_dim = 448
 attn_heads = 7
+num_kv_heads = 1
 ffn_dim = 1216
 seq_len = 1024

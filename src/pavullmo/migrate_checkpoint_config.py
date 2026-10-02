@@ -26,8 +26,13 @@ def legacy_model_config(
     for name, field in ModelConfig.model_fields.items():
         key = name.upper()
         if key not in hyperparameters:
-            continue
+            if name == "num_kv_heads" and "KV_HEADS" in hyperparameters:
+                key = "KV_HEADS"
+            else:
+                continue
         value = hyperparameters[key]
+        if name == "num_kv_heads" and value is None:
+            continue  # Legacy metadata uses None when K/V heads were omitted.
         if isinstance(value, str):
             value = value.strip()
             if field.annotation is bool:
@@ -71,6 +76,30 @@ def legacy_model_config(
         if name not in settings:
             settings[name] = value
             logger.debug("Recovered model.{}={} from checkpoint weights", name, value)
+    if "num_kv_heads" not in settings:
+        embed_dim = int(settings["embed_dim"])
+        attn_heads = int(settings["attn_heads"])
+        if attn_heads <= 0 or embed_dim <= 0 or embed_dim % attn_heads:
+            raise ValueError("EMBED_DIM must be positive and divisible by ATTN_HEADS")
+        if settings.get("split_qkv_projections"):
+            projection = state.get("layers.0.attn.k_proj.weight")
+            if projection is None:
+                raise ValueError("checkpoint is missing its key projection")
+            kv_width = projection.shape[0]
+        else:
+            projection = state.get("layers.0.attn.c_attn.weight")
+            if projection is None:
+                raise ValueError("checkpoint is missing its QKV projection")
+            kv_rows = projection.shape[0] - embed_dim
+            if kv_rows <= 0 or kv_rows % 2:
+                raise ValueError("fused QKV projection must have equal K and V widths")
+            kv_width = kv_rows // 2
+        head_dim = embed_dim // attn_heads
+        kv_heads, remainder = divmod(kv_width, head_dim)
+        if remainder or kv_heads <= 0 or attn_heads % kv_heads:
+            raise ValueError("checkpoint K/V width is incompatible with model.attn_heads")
+        settings["num_kv_heads"] = 0 if kv_heads == attn_heads else kv_heads
+        logger.debug("Recovered model.num_kv_heads={} from checkpoint weights", settings["num_kv_heads"])
     return ModelConfig.from_dict(settings)
 
 
