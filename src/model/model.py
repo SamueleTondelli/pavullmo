@@ -151,35 +151,47 @@ class CausalSelfAttention(nn.Module):
         qk_norm: bool = False,
         split_qkv_projections: bool = False,
         canon_layers: bool = False,
+        num_kv_heads: int | None = None,
     ):
         super().__init__()
         if num_heads <= 0:
             raise ValueError("num_heads must be positive")
         if embed_dimension % num_heads != 0:
             raise ValueError("embed_dimension must be divisible by num_heads")
+        if num_kv_heads is None:
+            num_kv_heads = num_heads
+        if num_kv_heads <= 0 or num_heads % num_kv_heads != 0:
+            raise ValueError("num_kv_heads must be positive and divide num_heads")
         if not 0.0 <= dropout <= 1.0:
             raise ValueError("dropout must be between 0 and 1")
 
         head_dim = embed_dimension // num_heads
+        kv_dimension = num_kv_heads * head_dim
         self.rope = RoPE(seq_len, head_dim, base=rope_base)
         self.q_norm = nn.RMSNorm(head_dim) if qk_norm else nn.Identity()
         self.k_norm = nn.RMSNorm(head_dim) if qk_norm else nn.Identity()
         self.split_qkv_projections = split_qkv_projections
         if split_qkv_projections:
             self.q_proj = nn.Linear(embed_dimension, embed_dimension, bias=bias)
-            self.k_proj = nn.Linear(embed_dimension, embed_dimension, bias=bias)
-            self.v_proj = nn.Linear(embed_dimension, embed_dimension, bias=bias)
+            self.k_proj = nn.Linear(embed_dimension, kv_dimension, bias=bias)
+            self.v_proj = nn.Linear(embed_dimension, kv_dimension, bias=bias)
         else:
             # Preserve the original parameter layout and checkpoint keys.
-            self.c_attn = nn.Linear(embed_dimension, 3 * embed_dimension, bias=bias)
+            self.c_attn = nn.Linear(
+                embed_dimension, embed_dimension + 2 * kv_dimension, bias=bias
+            )
         # output projection
         self.c_proj = nn.Linear(embed_dimension, embed_dimension, bias=bias)
         # regularization
         self.dropout = dropout
         self.num_heads = num_heads
+        self.num_kv_heads = num_kv_heads
         self.embed_dimension = embed_dimension
+        self.kv_dimension = kv_dimension
 
-        self.cb = CanonLayer(3 * embed_dimension) if canon_layers else None
+        self.cb = (
+            CanonLayer(embed_dimension + 2 * kv_dimension) if canon_layers else None
+        )
 
     def forward(self, x):
         if self.split_qkv_projections:
@@ -201,12 +213,14 @@ class CausalSelfAttention(nn.Module):
         sequence_length = query_projected.size(1)
         head_dim = self.embed_dimension // self.num_heads
 
-        query, key, value = query_projected.chunk(3, -1)
+        query, key, value = query_projected.split(
+            (self.embed_dimension, self.kv_dimension, self.kv_dimension), dim=-1
+        )
         query = query.view(
             batch_size, sequence_length, self.num_heads, head_dim
         ).transpose(1, 2)
         key = key.view(
-            batch_size, sequence_length, self.num_heads, head_dim
+            batch_size, sequence_length, self.num_kv_heads, head_dim
         ).transpose(1, 2)
 
         query = self.q_norm(query)
@@ -221,22 +235,24 @@ class CausalSelfAttention(nn.Module):
                         batch_size, sequence_length, self.embed_dimension
                     ),
                     key.transpose(1, 2).reshape(
-                        batch_size, sequence_length, self.embed_dimension
+                        batch_size, sequence_length, self.kv_dimension
                     ),
                     value,
                 ],
                 dim=-1,
             )
-            query, key, value = self.cb(projected).chunk(3, dim=-1)
+            query, key, value = self.cb(projected).split(
+                (self.embed_dimension, self.kv_dimension, self.kv_dimension), dim=-1
+            )
             query = query.view(
                 batch_size, sequence_length, self.num_heads, head_dim
             ).transpose(1, 2)
             key = key.view(
-                batch_size, sequence_length, self.num_heads, head_dim
+                batch_size, sequence_length, self.num_kv_heads, head_dim
             ).transpose(1, 2)
 
         value = value.view(
-            batch_size, sequence_length, self.num_heads, head_dim
+            batch_size, sequence_length, self.num_kv_heads, head_dim
         ).transpose(1, 2)
         query = self.rope(query)
         key = self.rope(key)
@@ -253,6 +269,7 @@ class CausalSelfAttention(nn.Module):
             attn_mask=None,
             dropout_p=dropout,
             is_causal=True,
+            enable_gqa=self.num_kv_heads != self.num_heads,
         )
         y = y.transpose(1, 2).reshape(batch_size, -1, self.embed_dimension)
         return self.c_proj(y)
@@ -287,6 +304,7 @@ class TransformerBlock(nn.Module):
         qk_norm: bool = False,
         split_qkv_projections: bool = False,
         canon_layers: bool = False,
+        num_kv_heads: int | None = None,
     ):
         super().__init__()
         self.embed_dim = embed_dim
@@ -301,6 +319,7 @@ class TransformerBlock(nn.Module):
             qk_norm=qk_norm,
             split_qkv_projections=split_qkv_projections,
             canon_layers=canon_layers,
+            num_kv_heads=num_kv_heads,
         )
         self.attn_dropout = nn.Dropout(dropout)
 
@@ -347,6 +366,7 @@ class DecoderTransformer(nn.Module):
         qk_norm: bool = False,
         split_qkv_projections: bool = False,
         canon_layers: bool = False,
+        num_kv_heads: int | None = None,
     ):
         super().__init__()
         initialization = initialization.strip().lower()
@@ -373,6 +393,7 @@ class DecoderTransformer(nn.Module):
                 qk_norm=qk_norm,
                 split_qkv_projections=split_qkv_projections,
                 canon_layers=canon_layers,
+                num_kv_heads=num_kv_heads,
             )
             for _ in range(n_blocks)
         )

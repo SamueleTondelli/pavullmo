@@ -22,6 +22,7 @@ MODEL_DIR = SCRIPT_DIR.parent / "model"
 sys.path.insert(0, str(MODEL_DIR))
 
 from model import DecoderTransformer
+from model_checkpoint import load_checkpoint_model
 
 
 def env_bool(name: str, default: bool) -> bool:
@@ -211,49 +212,7 @@ def load_model(
     checkpoint_path: Path,
     device: torch.device,
 ) -> tuple[DecoderTransformer, dict[str, object]]:
-    if not checkpoint_path.is_file():
-        raise FileNotFoundError(f"model checkpoint not found: {checkpoint_path}")
-
-    checkpoint = torch.load(
-        checkpoint_path,
-        map_location="cpu",
-        weights_only=True,
-    )
-    if not isinstance(checkpoint, dict):
-        raise ValueError("checkpoint must contain a dictionary")
-
-    hyperparameters = checkpoint.get("hyperparameters")
-    if not isinstance(hyperparameters, dict):
-        raise ValueError("checkpoint does not contain a hyperparameters mapping")
-
-    state_dict = checkpoint.get("model_state_dict")
-    if not isinstance(state_dict, dict):
-        raise ValueError("checkpoint does not contain a model_state_dict")
-    split_qkv_projections = bool(
-        hyperparameters.get(
-            "SPLIT_QKV_PROJECTIONS",
-            any(".attn.q_proj." in name for name in state_dict),
-        )
-    )
-
-    model = DecoderTransformer(
-        vocab_size=int(hyperparameters["VOCAB_SIZE"]),
-        n_blocks=int(hyperparameters["N_BLOCKS"]),
-        embed_dim=int(hyperparameters["EMBED_DIM"]),
-        attn_heads=int(hyperparameters["ATTN_HEADS"]),
-        ffn_dim=int(hyperparameters["FFN_DIM"]),
-        dropout=float(hyperparameters["DROPOUT"]),
-        seq_len=int(hyperparameters["SEQ_LEN"]),
-        rope_base=float(hyperparameters["ROPE_BASE"]),
-        qk_norm=bool(hyperparameters["QK_NORM"]),
-        split_qkv_projections=split_qkv_projections,
-    )
-
-    model.load_state_dict(state_dict)
-    model.to(device)
-    model.eval()
-
-    return model, hyperparameters
+    return load_checkpoint_model(checkpoint_path, device)
 
 
 def parse_args() -> argparse.Namespace:
