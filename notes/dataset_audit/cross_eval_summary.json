@@ -1,0 +1,554 @@
+{
+  "old": {
+    "old/train": {
+      "web": {
+        "loss": 3.272574510425329,
+        "block_standard_error": 0.041593085624930005,
+        "blocks": 64
+      },
+      "wiki": {
+        "loss": 2.878662785515189,
+        "block_standard_error": 0.049757368798834994,
+        "blocks": 64
+      },
+      "books": {
+        "loss": 4.367150325328112,
+        "block_standard_error": 0.06135335914623551,
+        "blocks": 64
+      },
+      "edu_pdf": {
+        "loss": 3.0533286966383457,
+        "block_standard_error": 0.05771520025381133,
+        "blocks": 64
+      },
+      "weighted_loss": 3.368858165666461
+    },
+    "old/validation": {
+      "web": {
+        "loss": 3.224465249106288,
+        "block_standard_error": 0.029244310903870606,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 2.9061784739606082,
+        "block_standard_error": 0.0348507274536016,
+        "blocks": 128
+      },
+      "books": {
+        "loss": 4.279528476297855,
+        "block_standard_error": 0.04702868120263734,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.1081544309854507,
+        "block_standard_error": 0.03447503679699235,
+        "blocks": 128
+      },
+      "weighted_loss": 3.3485583758912982
+    },
+    "old/test": {
+      "web": {
+        "loss": 3.2511915750801563,
+        "block_standard_error": 0.028926330100758797,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 2.980384888127446,
+        "block_standard_error": 0.02867353857935687,
+        "blocks": 128
+      },
+      "books": {
+        "loss": 4.339682841673493,
+        "block_standard_error": 0.05010595743814087,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.1767399329692125,
+        "block_standard_error": 0.030904197061293347,
+        "blocks": 128
+      },
+      "weighted_loss": 3.399838162586093
+    },
+    "sanitized/train": {
+      "web": {
+        "loss": 3.1850892268121243,
+        "block_standard_error": 0.04123760569747994,
+        "blocks": 64
+      },
+      "wiki": {
+        "loss": 3.0654537342488766,
+        "block_standard_error": 0.02469153119428125,
+        "blocks": 64
+      },
+      "edu_pdf": {
+        "loss": 3.291357785463333,
+        "block_standard_error": 0.03305492283449475,
+        "blocks": 64
+      },
+      "weighted_loss": 3.1817474933341146
+    },
+    "sanitized/validation": {
+      "web": {
+        "loss": 3.2919907364994287,
+        "block_standard_error": 0.038681368787941824,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 3.036011403426528,
+        "block_standard_error": 0.017824364125018248,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.2344623785465956,
+        "block_standard_error": 0.02291075422725772,
+        "blocks": 128
+      },
+      "weighted_loss": 3.2136138137429953
+    },
+    "sanitized/test": {
+      "web": {
+        "loss": 3.3434560857713223,
+        "block_standard_error": 0.03872766479664367,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 3.06340354681015,
+        "block_standard_error": 0.01929707755762985,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.278156692162156,
+        "block_standard_error": 0.02025110583112946,
+        "blocks": 128
+      },
+      "weighted_loss": 3.2571181026287377
+    },
+    "finesynth/train": {
+      "web": {
+        "loss": 3.2746534012258053,
+        "block_standard_error": 0.05360789073732421,
+        "blocks": 64
+      },
+      "wiki": {
+        "loss": 3.0612992718815804,
+        "block_standard_error": 0.025776335605403492,
+        "blocks": 64
+      },
+      "edu_pdf": {
+        "loss": 3.1852608602494,
+        "block_standard_error": 0.036496882584793604,
+        "blocks": 64
+      },
+      "synth": {
+        "loss": 2.9856304281856865,
+        "block_standard_error": 0.04892743483739974,
+        "blocks": 64
+      },
+      "weighted_loss": 3.1562994725536555
+    },
+    "finesynth/validation": {
+      "web": {
+        "loss": 3.19633143953979,
+        "block_standard_error": 0.03202225360736964,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 3.10937325283885,
+        "block_standard_error": 0.016975920662224694,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.250979643315077,
+        "block_standard_error": 0.022219774783998007,
+        "blocks": 128
+      },
+      "weighted_loss": 3.188253943808377
+    },
+    "finesynth/test": {
+      "web": {
+        "loss": 3.2651366349309683,
+        "block_standard_error": 0.03612153786216144,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 3.0713010244071484,
+        "block_standard_error": 0.017269883363612487,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.2705912347882986,
+        "block_standard_error": 0.02489882462743921,
+        "blocks": 128
+      },
+      "weighted_loss": 3.218041382264346
+    }
+  },
+  "sanitized": {
+    "old/train": {
+      "web": {
+        "loss": 3.3497780822217464,
+        "block_standard_error": 0.03947229242033383,
+        "blocks": 64
+      },
+      "wiki": {
+        "loss": 3.1239434629678726,
+        "block_standard_error": 0.03932588735601657,
+        "blocks": 64
+      },
+      "books": {
+        "loss": 5.7347797974944115,
+        "block_standard_error": 0.09975150374876693,
+        "blocks": 64
+      },
+      "edu_pdf": {
+        "loss": 3.1882135905325413,
+        "block_standard_error": 0.048542976475013454,
+        "blocks": 64
+      },
+      "weighted_loss": 3.749298603087664
+    },
+    "old/validation": {
+      "web": {
+        "loss": 3.269015083089471,
+        "block_standard_error": 0.029965567115489703,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 3.040039587765932,
+        "block_standard_error": 0.028320812564862265,
+        "blocks": 128
+      },
+      "books": {
+        "loss": 5.485823543742299,
+        "block_standard_error": 0.07564861323118702,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.210833126679063,
+        "block_standard_error": 0.03471180223187835,
+        "blocks": 128
+      },
+      "weighted_loss": 3.6549452848732473
+    },
+    "old/test": {
+      "web": {
+        "loss": 3.300518175587058,
+        "block_standard_error": 0.03043250423948474,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 3.1266070641577244,
+        "block_standard_error": 0.0281469385939464,
+        "blocks": 128
+      },
+      "books": {
+        "loss": 5.66161023452878,
+        "block_standard_error": 0.07838176768180456,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.2862584814429283,
+        "block_standard_error": 0.03296980797978993,
+        "blocks": 128
+      },
+      "weighted_loss": 3.7351024262607098
+    },
+    "sanitized/train": {
+      "web": {
+        "loss": 2.9755761064589024,
+        "block_standard_error": 0.05635187920768482,
+        "blocks": 64
+      },
+      "wiki": {
+        "loss": 2.9193340688943863,
+        "block_standard_error": 0.028591614049004066,
+        "blocks": 64
+      },
+      "edu_pdf": {
+        "loss": 3.243741922080517,
+        "block_standard_error": 0.03426618079607184,
+        "blocks": 64
+      },
+      "weighted_loss": 3.028557050973177
+    },
+    "sanitized/validation": {
+      "web": {
+        "loss": 2.9024453153833747,
+        "block_standard_error": 0.059549769594099376,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 2.949213584885001,
+        "block_standard_error": 0.020820323913525465,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.2290408350527287,
+        "block_standard_error": 0.022709846454427352,
+        "blocks": 128
+      },
+      "weighted_loss": 2.99578626267612
+    },
+    "sanitized/test": {
+      "web": {
+        "loss": 2.9551653238013387,
+        "block_standard_error": 0.057273914248954824,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 2.97701308876276,
+        "block_standard_error": 0.021654834323849917,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.2673291862010956,
+        "block_standard_error": 0.022246175729209845,
+        "blocks": 128
+      },
+      "weighted_loss": 3.0386682306416333
+    },
+    "finesynth/train": {
+      "web": {
+        "loss": 2.902234800159931,
+        "block_standard_error": 0.08233710549591378,
+        "blocks": 64
+      },
+      "wiki": {
+        "loss": 2.9184314981102943,
+        "block_standard_error": 0.03161137224717725,
+        "blocks": 64
+      },
+      "edu_pdf": {
+        "loss": 3.1361090037971735,
+        "block_standard_error": 0.03756429973378634,
+        "blocks": 64
+      },
+      "synth": {
+        "loss": 2.9356140005402267,
+        "block_standard_error": 0.051437632346785604,
+        "blocks": 64
+      },
+      "weighted_loss": 2.9589248205535115
+    },
+    "finesynth/validation": {
+      "web": {
+        "loss": 2.916789099574089,
+        "block_standard_error": 0.05098540007333711,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 3.02461264654994,
+        "block_standard_error": 0.018281217116190164,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.231174321845174,
+        "block_standard_error": 0.022519426693316885,
+        "blocks": 128
+      },
+      "weighted_loss": 3.022341291885823
+    },
+    "finesynth/test": {
+      "web": {
+        "loss": 2.985736159607768,
+        "block_standard_error": 0.05094829914966571,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 2.980784060433507,
+        "block_standard_error": 0.020859142315390558,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.2544065229594707,
+        "block_standard_error": 0.02538284933006169,
+        "blocks": 128
+      },
+      "weighted_loss": 3.0516657256521285
+    }
+  },
+  "finesynth": {
+    "old/train": {
+      "web": {
+        "loss": 3.37319091334939,
+        "block_standard_error": 0.0392803301762003,
+        "blocks": 64
+      },
+      "wiki": {
+        "loss": 3.1063560992479324,
+        "block_standard_error": 0.03684346956032226,
+        "blocks": 64
+      },
+      "books": {
+        "loss": 5.756127670407295,
+        "block_standard_error": 0.09870353167739414,
+        "blocks": 64
+      },
+      "edu_pdf": {
+        "loss": 3.201633468270302,
+        "block_standard_error": 0.049137659408131584,
+        "blocks": 64
+      },
+      "weighted_loss": 3.7620998129248617
+    },
+    "old/validation": {
+      "web": {
+        "loss": 3.2866237238049507,
+        "block_standard_error": 0.029814728335453806,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 3.0328998742625117,
+        "block_standard_error": 0.02819574491913792,
+        "blocks": 128
+      },
+      "books": {
+        "loss": 5.509973546490073,
+        "block_standard_error": 0.07471228700089194,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.2176767718046904,
+        "block_standard_error": 0.0339078589841003,
+        "blocks": 128
+      },
+      "weighted_loss": 3.6667595280334355
+    },
+    "old/test": {
+      "web": {
+        "loss": 3.325951009988785,
+        "block_standard_error": 0.03028086406247257,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 3.1324696857482195,
+        "block_standard_error": 0.027795007046428805,
+        "blocks": 128
+      },
+      "books": {
+        "loss": 5.684628419578075,
+        "block_standard_error": 0.07777569227527698,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.292220998555422,
+        "block_standard_error": 0.032128563474611224,
+        "blocks": 128
+      },
+      "weighted_loss": 3.7522442247718573
+    },
+    "sanitized/train": {
+      "web": {
+        "loss": 3.0017809364944696,
+        "block_standard_error": 0.056022122247231985,
+        "blocks": 64
+      },
+      "wiki": {
+        "loss": 2.9208731651306152,
+        "block_standard_error": 0.02863253090489156,
+        "blocks": 64
+      },
+      "edu_pdf": {
+        "loss": 3.248599085956812,
+        "block_standard_error": 0.03433628549013127,
+        "blocks": 64
+      },
+      "weighted_loss": 3.0432585310190916
+    },
+    "sanitized/validation": {
+      "web": {
+        "loss": 2.9471045760437846,
+        "block_standard_error": 0.058983993689524894,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 2.9607678297907114,
+        "block_standard_error": 0.020154493555695954,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.2418972179293633,
+        "block_standard_error": 0.02278964053046026,
+        "blocks": 128
+      },
+      "weighted_loss": 3.024218549951911
+    },
+    "sanitized/test": {
+      "web": {
+        "loss": 2.99530606623739,
+        "block_standard_error": 0.05680958085543184,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 2.9889469984918833,
+        "block_standard_error": 0.021041150577226633,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.285427164286375,
+        "block_standard_error": 0.022285796181932317,
+        "blocks": 128
+      },
+      "weighted_loss": 3.0662465738132596
+    },
+    "finesynth/train": {
+      "web": {
+        "loss": 2.940290763042867,
+        "block_standard_error": 0.08215969838862122,
+        "blocks": 64
+      },
+      "wiki": {
+        "loss": 2.9154535681009293,
+        "block_standard_error": 0.02987329674784609,
+        "blocks": 64
+      },
+      "edu_pdf": {
+        "loss": 3.159240987151861,
+        "block_standard_error": 0.03708001983867049,
+        "blocks": 64
+      },
+      "synth": {
+        "loss": 2.294647518196143,
+        "block_standard_error": 0.044372695926478634,
+        "blocks": 64
+      },
+      "weighted_loss": 2.8499847199069337
+    },
+    "finesynth/validation": {
+      "web": {
+        "loss": 2.9473747154697776,
+        "block_standard_error": 0.05000255065541868,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 3.036861337721348,
+        "block_standard_error": 0.017759771634607596,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.2445524986833334,
+        "block_standard_error": 0.022660730796410476,
+        "blocks": 128
+      },
+      "weighted_loss": 3.044040816836059
+    },
+    "finesynth/test": {
+      "web": {
+        "loss": 3.0183681016787887,
+        "block_standard_error": 0.0507802862477742,
+        "blocks": 128
+      },
+      "wiki": {
+        "loss": 2.9897075686603785,
+        "block_standard_error": 0.020693600667920115,
+        "blocks": 128
+      },
+      "edu_pdf": {
+        "loss": 3.2760839872062206,
+        "block_standard_error": 0.025203876057779403,
+        "blocks": 128
+      },
+      "weighted_loss": 3.075631939806044
+    }
+  }
+}

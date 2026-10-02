@@ -1,0 +1,293 @@
+{
+  "method": "A lower bound on long verbatim overlap, not a semantic near-duplicate audit.\n\n    Fingerprint 128-token windows at stride 128 relative to each encoded chunk.\n    Different token alignment can hide an overlap; matched windows are exact.\n    ",
+  "window_tokens": 128,
+  "stride": 128,
+  "evaluation_windows": {
+    "old/validation": 73839,
+    "old/test": 74141,
+    "sanitized/validation": 73942,
+    "sanitized/test": 73954,
+    "finesynth/validation": 73811,
+    "finesynth/test": 73850
+  },
+  "matches": {
+    "old/train": {
+      "old/validation": {
+        "windows": 50,
+        "chunks": 22,
+        "evaluation_token_fraction_lower_bound": 0.00064
+      },
+      "old/test": {
+        "windows": 67,
+        "chunks": 23,
+        "evaluation_token_fraction_lower_bound": 0.0008576
+      },
+      "sanitized/validation": {
+        "windows": 8,
+        "chunks": 6,
+        "evaluation_token_fraction_lower_bound": 0.0001024
+      },
+      "sanitized/test": {
+        "windows": 4,
+        "chunks": 4,
+        "evaluation_token_fraction_lower_bound": 5.12e-05
+      },
+      "finesynth/validation": {
+        "windows": 15,
+        "chunks": 7,
+        "evaluation_token_fraction_lower_bound": 0.000192
+      },
+      "finesynth/test": {
+        "windows": 3,
+        "chunks": 3,
+        "evaluation_token_fraction_lower_bound": 3.84e-05
+      }
+    },
+    "sanitized/train": {
+      "old/validation": {
+        "windows": 11,
+        "chunks": 9,
+        "evaluation_token_fraction_lower_bound": 0.0001408
+      },
+      "old/test": {
+        "windows": 8,
+        "chunks": 3,
+        "evaluation_token_fraction_lower_bound": 0.0001024
+      },
+      "sanitized/validation": {
+        "windows": 51,
+        "chunks": 31,
+        "evaluation_token_fraction_lower_bound": 0.0006528
+      },
+      "sanitized/test": {
+        "windows": 66,
+        "chunks": 30,
+        "evaluation_token_fraction_lower_bound": 0.0008448
+      },
+      "finesynth/validation": {
+        "windows": 62,
+        "chunks": 35,
+        "evaluation_token_fraction_lower_bound": 0.0007936
+      },
+      "finesynth/test": {
+        "windows": 64,
+        "chunks": 28,
+        "evaluation_token_fraction_lower_bound": 0.0008192
+      }
+    },
+    "finesynth/train": {
+      "old/validation": {
+        "windows": 7,
+        "chunks": 7,
+        "evaluation_token_fraction_lower_bound": 8.96e-05
+      },
+      "old/test": {
+        "windows": 8,
+        "chunks": 3,
+        "evaluation_token_fraction_lower_bound": 0.0001024
+      },
+      "sanitized/validation": {
+        "windows": 49,
+        "chunks": 29,
+        "evaluation_token_fraction_lower_bound": 0.0006272
+      },
+      "sanitized/test": {
+        "windows": 63,
+        "chunks": 28,
+        "evaluation_token_fraction_lower_bound": 0.0008064
+      },
+      "finesynth/validation": {
+        "windows": 60,
+        "chunks": 33,
+        "evaluation_token_fraction_lower_bound": 0.000768
+      },
+      "finesynth/test": {
+        "windows": 62,
+        "chunks": 27,
+        "evaluation_token_fraction_lower_bound": 0.0007936
+      }
+    }
+  },
+  "examples": [
+    {
+      "train": "old/train",
+      "train_start": 5656797,
+      "evaluation": "old/test",
+      "evaluation_start": 8870516
+    },
+    {
+      "train": "old/train",
+      "train_start": 5656925,
+      "evaluation": "old/test",
+      "evaluation_start": 8870644
+    },
+    {
+      "train": "old/train",
+      "train_start": 6425442,
+      "evaluation": "old/test",
+      "evaluation_start": 191041
+    },
+    {
+      "train": "old/train",
+      "train_start": 7310232,
+      "evaluation": "old/validation",
+      "evaluation_start": 742751
+    },
+    {
+      "train": "old/train",
+      "train_start": 23346862,
+      "evaluation": "old/test",
+      "evaluation_start": 437986
+    },
+    {
+      "train": "old/train",
+      "train_start": 25274906,
+      "evaluation": "old/validation",
+      "evaluation_start": 735167
+    },
+    {
+      "train": "old/train",
+      "train_start": 26191271,
+      "evaluation": "old/validation",
+      "evaluation_start": 739285
+    },
+    {
+      "train": "old/train",
+      "train_start": 26191399,
+      "evaluation": "old/validation",
+      "evaluation_start": 739413
+    },
+    {
+      "train": "old/train",
+      "train_start": 26191527,
+      "evaluation": "old/validation",
+      "evaluation_start": 739541
+    },
+    {
+      "train": "old/train",
+      "train_start": 26309777,
+      "evaluation": "old/validation",
+      "evaluation_start": 557663
+    },
+    {
+      "train": "old/train",
+      "train_start": 26309777,
+      "evaluation": "old/test",
+      "evaluation_start": 613292
+    },
+    {
+      "train": "old/train",
+      "train_start": 26309777,
+      "evaluation": "old/test",
+      "evaluation_start": 3026811
+    },
+    {
+      "train": "old/train",
+      "train_start": 26639639,
+      "evaluation": "old/test",
+      "evaluation_start": 588324
+    },
+    {
+      "train": "old/train",
+      "train_start": 26639767,
+      "evaluation": "old/test",
+      "evaluation_start": 588452
+    },
+    {
+      "train": "old/train",
+      "train_start": 26639895,
+      "evaluation": "old/test",
+      "evaluation_start": 588580
+    },
+    {
+      "train": "old/train",
+      "train_start": 26640023,
+      "evaluation": "old/test",
+      "evaluation_start": 588708
+    },
+    {
+      "train": "old/train",
+      "train_start": 26640151,
+      "evaluation": "old/test",
+      "evaluation_start": 588836
+    },
+    {
+      "train": "old/train",
+      "train_start": 26640279,
+      "evaluation": "old/test",
+      "evaluation_start": 588964
+    },
+    {
+      "train": "old/train",
+      "train_start": 33275619,
+      "evaluation": "old/test",
+      "evaluation_start": 805726
+    },
+    {
+      "train": "old/train",
+      "train_start": 33275747,
+      "evaluation": "old/test",
+      "evaluation_start": 805854
+    },
+    {
+      "train": "old/train",
+      "train_start": 38207986,
+      "evaluation": "old/validation",
+      "evaluation_start": 1131217
+    },
+    {
+      "train": "old/train",
+      "train_start": 38217064,
+      "evaluation": "old/validation",
+      "evaluation_start": 909612
+    },
+    {
+      "train": "old/train",
+      "train_start": 39102694,
+      "evaluation": "old/validation",
+      "evaluation_start": 1596678
+    },
+    {
+      "train": "old/train",
+      "train_start": 40788559,
+      "evaluation": "old/validation",
+      "evaluation_start": 1252175
+    },
+    {
+      "train": "old/train",
+      "train_start": 42249548,
+      "evaluation": "old/test",
+      "evaluation_start": 914927
+    },
+    {
+      "train": "old/train",
+      "train_start": 42249676,
+      "evaluation": "old/test",
+      "evaluation_start": 915055
+    },
+    {
+      "train": "old/train",
+      "train_start": 51982447,
+      "evaluation": "old/validation",
+      "evaluation_start": 3050520
+    },
+    {
+      "train": "old/train",
+      "train_start": 71056405,
+      "evaluation": "sanitized/validation",
+      "evaluation_start": 4627426
+    },
+    {
+      "train": "old/train",
+      "train_start": 76610329,
+      "evaluation": "old/test",
+      "evaluation_start": 1129153
+    },
+    {
+      "train": "old/train",
+      "train_start": 76610457,
+      "evaluation": "old/test",
+      "evaluation_start": 1129281
+    }
+  ]
+}

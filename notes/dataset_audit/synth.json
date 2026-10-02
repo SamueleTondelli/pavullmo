@@ -1,0 +1,139 @@
+{
+  "rows": 2453575,
+  "exercises": {
+    "memorization": 2409585,
+    "constrained writing": 22113,
+    "creative writing": 20854,
+    "editing": 1023
+  },
+  "models": {
+    "qwen-3-8b-memorization": 2409585,
+    "qwen-3-8b-constrained-writing": 22113,
+    "qwen-3-8b-creative-writing": 20854,
+    "qwen-3-8b-editing": 1023
+  },
+  "unique_seed_urls": 47578,
+  "top_seed_urls": [
+    [
+      "https://en.wikipedia.org/wiki/Alcohol_(drug)",
+      1074
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Women%27s_suffrage",
+      1030
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Controlled-access_highway",
+      980
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Frankfurt",
+      970
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Ferdinand_Marcos",
+      951
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Breastfeeding",
+      877
+    ],
+    [
+      "https://en.wikipedia.org/wiki/High-speed_rail",
+      857
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Donald_Trump",
+      842
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Analytic_philosophy",
+      835
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Iran%E2%80%93Iraq_War",
+      830
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Xiamen",
+      828
+    ],
+    [
+      "https://en.wikipedia.org/wiki/History_of_economic_thought",
+      800
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Carnival",
+      799
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Elevator",
+      792
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Scythians",
+      771
+    ],
+    [
+      "https://en.wikipedia.org/wiki/International_Space_Station",
+      769
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Apollo",
+      761
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Munich",
+      760
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Chloroplast",
+      751
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Soybean",
+      750
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Computer_security",
+      748
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Orphanage",
+      740
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Town",
+      740
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Marriage",
+      731
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Chengdu",
+      729
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Indian_cuisine",
+      712
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Poisson_point_process",
+      711
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Debit_card",
+      710
+    ],
+    [
+      "https://en.wikipedia.org/wiki/American_frontier",
+      702
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Liverpool",
+      700
+    ]
+  ],
+  "note": "Full local Italian SYNTH pool; encoded 200M-token subset may differ"
+}

@@ -1,0 +1,1330 @@
+{
+  "method": "Attribute paired model loss differences to visible web topic groups.\n\nTopic flags are deliberately broad: legitimate finance/vaping prose is included.\nDecoded flagged samples are saved for manual semantic review. This is a\ndescriptive grouping discovered after looking at losses, not an unbiased test\nof filtering effectiveness on a held-out benchmark.\n",
+  "groups": {
+    "old/train": {
+      "other": {
+        "blocks": 64,
+        "fraction": 1.0,
+        "losses": {
+          "old": 3.272574510425329,
+          "sanitized": 3.3497780822217464,
+          "finesynth": 3.37319091334939
+        }
+      },
+      "contribution_to_sanitized_web_loss_gain": {
+        "other": -0.07720357179641724
+      }
+    },
+    "old/validation": {
+      "finance_or_vaping": {
+        "blocks": 6,
+        "fraction": 0.046875,
+        "losses": {
+          "old": 3.2960193157196045,
+          "sanitized": 3.367406447728475,
+          "finesynth": 3.3941529194513955
+        }
+      },
+      "other": {
+        "blocks": 122,
+        "fraction": 0.953125,
+        "losses": {
+          "old": 3.220946196649895,
+          "sanitized": 3.2641761635170607,
+          "finesynth": 3.2813354027075845
+        }
+      },
+      "contribution_to_sanitized_web_loss_gain": {
+        "finance_or_vaping": -0.003346271812915809,
+        "other": -0.04120356217026724
+      }
+    },
+    "old/test": {
+      "finance_or_vaping": {
+        "blocks": 5,
+        "fraction": 0.0390625,
+        "losses": {
+          "old": 3.336002254486084,
+          "sanitized": 3.3510347843170165,
+          "finesynth": 3.383890914916992
+        }
+      },
+      "other": {
+        "blocks": 123,
+        "fraction": 0.9609375,
+        "losses": {
+          "old": 3.2477439864864195,
+          "sanitized": 3.2984646549069785,
+          "finesynth": 3.323595729300646
+        }
+      },
+      "contribution_to_sanitized_web_loss_gain": {
+        "finance_or_vaping": -0.0005872081965208054,
+        "other": -0.048739392310380915
+      }
+    },
+    "sanitized/train": {
+      "finance_or_vaping": {
+        "blocks": 7,
+        "fraction": 0.109375,
+        "losses": {
+          "old": 3.216697488512312,
+          "sanitized": 2.4292824949537004,
+          "finesynth": 2.4906630345753262
+        }
+      },
+      "other": {
+        "blocks": 57,
+        "fraction": 0.890625,
+        "losses": {
+          "old": 3.1812075104629782,
+          "sanitized": 3.0426647955911204,
+          "finesynth": 3.0645498016424346
+        }
+      },
+      "contribution_to_sanitized_web_loss_gain": {
+        "finance_or_vaping": 0.08612351492047313,
+        "other": 0.12338960543274842
+      }
+    },
+    "sanitized/validation": {
+      "finance_or_vaping": {
+        "blocks": 28,
+        "fraction": 0.21875,
+        "losses": {
+          "old": 3.2159376314708163,
+          "sanitized": 2.0124502905777524,
+          "finesynth": 2.07960393173354
+        }
+      },
+      "other": {
+        "blocks": 100,
+        "fraction": 0.78125,
+        "losses": {
+          "old": 3.3132856059074403,
+          "sanitized": 3.151643922328949,
+          "finesynth": 3.1900047564506533
+        }
+      },
+      "contribution_to_sanitized_web_loss_gain": {
+        "finance_or_vaping": 0.26326285582035774,
+        "other": 0.12628256529569615
+      }
+    },
+    "sanitized/test": {
+      "finance_or_vaping": {
+        "blocks": 25,
+        "fraction": 0.1953125,
+        "losses": {
+          "old": 3.177928342819214,
+          "sanitized": 2.0333903551101686,
+          "finesynth": 2.0917488622665403
+        }
+      },
+      "other": {
+        "blocks": 103,
+        "fraction": 0.8046875,
+        "losses": {
+          "old": 3.3836327224101836,
+          "sanitized": 3.178897112318613,
+          "finesynth": 3.2146160672011885
+        }
+      },
+      "contribution_to_sanitized_web_loss_gain": {
+        "finance_or_vaping": 0.22354257572442293,
+        "other": 0.16474818624556062
+      }
+    },
+    "finesynth/train": {
+      "finance_or_vaping": {
+        "blocks": 14,
+        "fraction": 0.21875,
+        "losses": {
+          "old": 3.025559135845729,
+          "sanitized": 2.0926887137549266,
+          "finesynth": 2.1310093700885773
+        }
+      },
+      "other": {
+        "blocks": 50,
+        "fraction": 0.78125,
+        "losses": {
+          "old": 3.3443997955322264,
+          "sanitized": 3.1289077043533324,
+          "finesynth": 3.1668895530700683
+        }
+      },
+      "contribution_to_sanitized_web_loss_gain": {
+        "finance_or_vaping": 0.20406540483236307,
+        "other": 0.16835319623351094
+      }
+    },
+    "finesynth/validation": {
+      "finance_or_vaping": {
+        "blocks": 27,
+        "fraction": 0.2109375,
+        "losses": {
+          "old": 3.1895658704969616,
+          "sanitized": 2.3599944997716835,
+          "finesynth": 2.423199075239676
+        }
+      },
+      "other": {
+        "blocks": 101,
+        "fraction": 0.7890625,
+        "losses": {
+          "old": 3.1981400570066847,
+          "sanitized": 3.0656351807093856,
+          "finesynth": 3.0875008767194085
+        }
+      },
+      "contribution_to_sanitized_web_loss_gain": {
+        "finance_or_vaping": 0.17498771101236335,
+        "other": 0.10455462895333759
+      }
+    },
+    "finesynth/test": {
+      "finance_or_vaping": {
+        "blocks": 13,
+        "fraction": 0.1015625,
+        "losses": {
+          "old": 3.050136712881235,
+          "sanitized": 1.8520560264587402,
+          "finesynth": 1.9072235639278705
+        }
+      },
+      "other": {
+        "blocks": 115,
+        "fraction": 0.8984375,
+        "losses": {
+          "old": 3.289440973945286,
+          "sanitized": 3.11389130509418,
+          "finesynth": 3.1439757450767187
+        }
+      },
+      "contribution_to_sanitized_web_loss_gain": {
+        "finance_or_vaping": 0.12168006971478464,
+        "other": 0.15772040560841577
+      }
+    }
+  },
+  "flagged_examples": [
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 3145728,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.006791830062866,
+        "sanitized": 2.893685817718506,
+        "finesynth": 2.909102439880371
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 3001344,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0273749828338623,
+        "sanitized": 1.244648814201355,
+        "finesynth": 1.309013843536377
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 3725312,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.9653282165527344,
+        "sanitized": 1.350327491760254,
+        "finesynth": 1.4130103588104248
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 3532800,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0017459392547607,
+        "sanitized": 1.3789016008377075,
+        "finesynth": 1.424163818359375
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 3276800,
+      "flags": [
+        "vaping"
+      ],
+      "losses": {
+        "old": 4.486696720123291,
+        "sanitized": 2.4919583797454834,
+        "finesynth": 2.680878162384033
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 3742720,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.280496120452881,
+        "sanitized": 3.1134581565856934,
+        "finesynth": 3.1769309043884277
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 789504,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.362637996673584,
+        "sanitized": 2.2459778785705566,
+        "finesynth": 2.3008553981781006
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 1635328,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.1048202514648438,
+        "sanitized": 1.306830883026123,
+        "finesynth": 1.3839119672775269
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 495616,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.950754404067993,
+        "sanitized": 1.319214940071106,
+        "finesynth": 1.3776881694793701
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 2963456,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.2453689575195312,
+        "sanitized": 2.79608416557312,
+        "finesynth": 2.8277134895324707
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 296960,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0034990310668945,
+        "sanitized": 1.298551321029663,
+        "finesynth": 1.346516489982605
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 952320,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.2806406021118164,
+        "sanitized": 3.0595405101776123,
+        "finesynth": 3.096696138381958
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 3696640,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0953803062438965,
+        "sanitized": 1.759469985961914,
+        "finesynth": 1.7784309387207031
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 2936832,
+      "flags": [
+        "vaping"
+      ],
+      "losses": {
+        "old": 4.585704803466797,
+        "sanitized": 2.552212715148926,
+        "finesynth": 2.742158889770508
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 1354752,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.014873504638672,
+        "sanitized": 1.3370070457458496,
+        "finesynth": 1.4208965301513672
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 4020224,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.017220973968506,
+        "sanitized": 2.953547477722168,
+        "finesynth": 2.9903273582458496
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 563200,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.8234171867370605,
+        "sanitized": 1.6659584045410156,
+        "finesynth": 1.7137466669082642
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 2965504,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0678462982177734,
+        "sanitized": 1.4078035354614258,
+        "finesynth": 1.4804790019989014
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 847872,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.724863052368164,
+        "sanitized": 1.2977993488311768,
+        "finesynth": 1.345790147781372
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 1451008,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.9635066986083984,
+        "sanitized": 2.7217164039611816,
+        "finesynth": 2.7878670692443848
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 3794944,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.991964817047119,
+        "sanitized": 1.3707056045532227,
+        "finesynth": 1.4195094108581543
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 4986880,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.876535415649414,
+        "sanitized": 2.7555410861968994,
+        "finesynth": 2.7839980125427246
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 2908160,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.067603826522827,
+        "sanitized": 1.5339186191558838,
+        "finesynth": 1.606471061706543
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 3534848,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.05381441116333,
+        "sanitized": 2.6730422973632812,
+        "finesynth": 2.742011070251465
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 1068032,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.100707769393921,
+        "sanitized": 1.3105695247650146,
+        "finesynth": 1.3888943195343018
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 484352,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.9211840629577637,
+        "sanitized": 1.2784144878387451,
+        "finesynth": 1.3814661502838135
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 225280,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.038874387741089,
+        "sanitized": 2.2291858196258545,
+        "finesynth": 2.2856929302215576
+      }
+    },
+    {
+      "artifact": "sanitized/validation",
+      "start_token": 3713024,
+      "flags": [
+        "vaping"
+      ],
+      "losses": {
+        "old": 3.9866011142730713,
+        "sanitized": 3.002535820007324,
+        "finesynth": 3.114689350128174
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 1267712,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0634992122650146,
+        "sanitized": 3.037964105606079,
+        "finesynth": 3.008723020553589
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 4882432,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0046167373657227,
+        "sanitized": 1.3287779092788696,
+        "finesynth": 1.3927191495895386
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 2017280,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.717440605163574,
+        "sanitized": 3.122788906097412,
+        "finesynth": 3.2103004455566406
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 3023872,
+      "flags": [
+        "vaping"
+      ],
+      "losses": {
+        "old": 4.057867527008057,
+        "sanitized": 2.594723701477051,
+        "finesynth": 2.7626729011535645
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 2866176,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.1047253608703613,
+        "sanitized": 1.374366283416748,
+        "finesynth": 1.4259791374206543
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 278528,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.714118719100952,
+        "sanitized": 2.407566785812378,
+        "finesynth": 2.5214426517486572
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 3547136,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.9700770378112793,
+        "sanitized": 1.4556915760040283,
+        "finesynth": 1.5189906358718872
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 1124352,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.5160179138183594,
+        "sanitized": 1.8818193674087524,
+        "finesynth": 1.9025613069534302
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 4852736,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.178025245666504,
+        "sanitized": 2.7544503211975098,
+        "finesynth": 2.8233518600463867
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 1326080,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.09999418258667,
+        "sanitized": 1.6912319660186768,
+        "finesynth": 1.716539740562439
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 3140608,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.8379592895507812,
+        "sanitized": 1.322169303894043,
+        "finesynth": 1.3712594509124756
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 556032,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.9116873741149902,
+        "sanitized": 1.2968494892120361,
+        "finesynth": 1.3683385848999023
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 2440192,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.9025774002075195,
+        "sanitized": 1.2945865392684937,
+        "finesynth": 1.372452974319458
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 3701760,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0382518768310547,
+        "sanitized": 1.3355836868286133,
+        "finesynth": 1.4421789646148682
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 629760,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.235276937484741,
+        "sanitized": 2.559818744659424,
+        "finesynth": 2.5607540607452393
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 762880,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.4783778190612793,
+        "sanitized": 2.9261646270751953,
+        "finesynth": 2.944827079772949
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 4092928,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.2286252975463867,
+        "sanitized": 3.192878007888794,
+        "finesynth": 3.17000412940979
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 3130368,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0379366874694824,
+        "sanitized": 1.3616745471954346,
+        "finesynth": 1.4159249067306519
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 4608000,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.1013827323913574,
+        "sanitized": 1.3366663455963135,
+        "finesynth": 1.3815075159072876
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 4218880,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0161311626434326,
+        "sanitized": 1.3374145030975342,
+        "finesynth": 1.4011523723602295
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 185344,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.918499231338501,
+        "sanitized": 1.337539553642273,
+        "finesynth": 1.3718305826187134
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 4922368,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.499255657196045,
+        "sanitized": 3.4517624378204346,
+        "finesynth": 3.5054593086242676
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 358400,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0455832481384277,
+        "sanitized": 2.39798641204834,
+        "finesynth": 2.4317126274108887
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 2495488,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.636747360229492,
+        "sanitized": 1.8802529573440552,
+        "finesynth": 1.8999006748199463
+      }
+    },
+    {
+      "artifact": "sanitized/test",
+      "start_token": 3993600,
+      "flags": [
+        "finance",
+        "vaping"
+      ],
+      "losses": {
+        "old": 4.133533954620361,
+        "sanitized": 2.1540307998657227,
+        "finesynth": 2.3731374740600586
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 1360896,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.191351890563965,
+        "sanitized": 1.3730279207229614,
+        "finesynth": 1.448765516281128
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 2942976,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.2593131065368652,
+        "sanitized": 3.218773365020752,
+        "finesynth": 3.255716323852539
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 3841024,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.8252179622650146,
+        "sanitized": 2.5726511478424072,
+        "finesynth": 2.5507874488830566
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 3060736,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.5754010677337646,
+        "sanitized": 3.5595099925994873,
+        "finesynth": 3.5394082069396973
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 3462144,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0184855461120605,
+        "sanitized": 2.170644760131836,
+        "finesynth": 2.218193292617798
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 3099648,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0016698837280273,
+        "sanitized": 2.162524461746216,
+        "finesynth": 2.2091169357299805
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 2179072,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.8822109699249268,
+        "sanitized": 1.2121387720108032,
+        "finesynth": 1.278465747833252
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 913408,
+      "flags": [
+        "vaping"
+      ],
+      "losses": {
+        "old": 4.424639701843262,
+        "sanitized": 2.4927525520324707,
+        "finesynth": 2.6733908653259277
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 3174400,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.2689170837402344,
+        "sanitized": 2.424685001373291,
+        "finesynth": 2.4463682174682617
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 3132416,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0231575965881348,
+        "sanitized": 1.4237686395645142,
+        "finesynth": 1.4957687854766846
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 1646592,
+      "flags": [
+        "vaping"
+      ],
+      "losses": {
+        "old": 3.8621902465820312,
+        "sanitized": 2.2444024085998535,
+        "finesynth": 2.851677894592285
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 4513792,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.9744863510131836,
+        "sanitized": 1.3253183364868164,
+        "finesynth": 1.3769421577453613
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 1444864,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0319132804870605,
+        "sanitized": 1.3142889738082886,
+        "finesynth": 1.399035096168518
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 244736,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.038633346557617,
+        "sanitized": 2.8556830883026123,
+        "finesynth": 2.8768415451049805
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 3361792,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.952871561050415,
+        "sanitized": 2.8222813606262207,
+        "finesynth": 2.8693032264709473
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 3430400,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.220334053039551,
+        "sanitized": 3.1223526000976562,
+        "finesynth": 3.1279377937316895
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 4334592,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.259387969970703,
+        "sanitized": 3.2482566833496094,
+        "finesynth": 3.263047218322754
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 3079168,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.4503355026245117,
+        "sanitized": 3.351577043533325,
+        "finesynth": 3.3997271060943604
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 4015104,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.418478488922119,
+        "sanitized": 3.424257278442383,
+        "finesynth": 3.4613306522369385
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 4127744,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.105551242828369,
+        "sanitized": 1.3448669910430908,
+        "finesynth": 1.4298734664916992
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 868352,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.6722004413604736,
+        "sanitized": 2.3515686988830566,
+        "finesynth": 2.3233320713043213
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 1736704,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.922017812728882,
+        "sanitized": 1.270806074142456,
+        "finesynth": 1.3391399383544922
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 2633728,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.176696300506592,
+        "sanitized": 1.9123704433441162,
+        "finesynth": 1.9628937244415283
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 275456,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.2246246337890625,
+        "sanitized": 2.8603529930114746,
+        "finesynth": 2.8889293670654297
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 0,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.137125253677368,
+        "sanitized": 3.1729509830474854,
+        "finesynth": 3.1791436672210693
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 4474880,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.056011199951172,
+        "sanitized": 1.3838343620300293,
+        "finesynth": 1.438399314880371
+      }
+    },
+    {
+      "artifact": "finesynth/validation",
+      "start_token": 4070400,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.1450560092926025,
+        "sanitized": 3.1042065620422363,
+        "finesynth": 3.1228394508361816
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 3300352,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.05700421333313,
+        "sanitized": 1.3097245693206787,
+        "finesynth": 1.3864820003509521
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 583680,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0403294563293457,
+        "sanitized": 2.0219223499298096,
+        "finesynth": 2.0894484519958496
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 1949696,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.863255262374878,
+        "sanitized": 1.2494325637817383,
+        "finesynth": 1.297919511795044
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 2056192,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.357459306716919,
+        "sanitized": 3.3778092861175537,
+        "finesynth": 3.3732824325561523
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 1342464,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.978876829147339,
+        "sanitized": 1.9618525505065918,
+        "finesynth": 2.043161392211914
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 2694144,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.8602519035339355,
+        "sanitized": 1.2829086780548096,
+        "finesynth": 1.3538577556610107
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 2803712,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.4537110328674316,
+        "sanitized": 2.879945755004883,
+        "finesynth": 2.9360861778259277
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 36864,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.9354288578033447,
+        "sanitized": 1.237872838973999,
+        "finesynth": 1.2796382904052734
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 1005568,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0657641887664795,
+        "sanitized": 1.6029727458953857,
+        "finesynth": 1.680511474609375
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 3344384,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.939411163330078,
+        "sanitized": 1.260644555091858,
+        "finesynth": 1.3365893363952637
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 3415040,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.0014750957489014,
+        "sanitized": 1.4136070013046265,
+        "finesynth": 1.4599891901016235
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 98304,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 2.871955633163452,
+        "sanitized": 1.28773832321167,
+        "finesynth": 1.3749053478240967
+      }
+    },
+    {
+      "artifact": "finesynth/test",
+      "start_token": 3005440,
+      "flags": [
+        "finance"
+      ],
+      "losses": {
+        "old": 3.2268543243408203,
+        "sanitized": 3.1902971267700195,
+        "finesynth": 3.182034969329834
+      }
+    }
+  ]
+}

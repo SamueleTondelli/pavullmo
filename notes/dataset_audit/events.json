@@ -1,0 +1,425 @@
+{
+  "old": {
+    "validation/loss": {
+      "first": [
+        149.0,
+        6.007863521575928
+      ],
+      "final": [
+        61035.0,
+        3.3339805603027344
+      ],
+      "minimum": [
+        61035.0,
+        3.3339805603027344
+      ],
+      "duplicates": 0
+    },
+    "diagnostics/parameter_norm": {
+      "first": [
+        0.0,
+        149.14541625976562
+      ],
+      "final": [
+        61035.0,
+        1472.0587158203125
+      ],
+      "minimum": [
+        1.0,
+        149.1450958251953
+      ],
+      "duplicates": 0
+    },
+    "diagnostics/embedding_norm": {
+      "first": [
+        0.0,
+        54.18286895751953
+      ],
+      "final": [
+        61035.0,
+        1298.9334716796875
+      ],
+      "minimum": [
+        1.0,
+        54.182098388671875
+      ],
+      "duplicates": 0
+    },
+    "optimizer/muon/parameter_norm": {
+      "first": [
+        0.0,
+        87.15831756591797
+      ],
+      "final": [
+        61035.0,
+        678.1240234375
+      ],
+      "minimum": [
+        30.0,
+        87.15666961669922
+      ],
+      "duplicates": 0
+    },
+    "train/loss": {
+      "first": [
+        1.0,
+        9.789295196533203
+      ],
+      "final": [
+        61035.0,
+        3.517965316772461
+      ],
+      "minimum": [
+        53897.0,
+        2.841721534729004
+      ],
+      "duplicates": 0,
+      "last_1000_step_mean": 3.397743355512619
+    },
+    "train/gradient_clipped": {
+      "first": [
+        1.0,
+        1.0
+      ],
+      "final": [
+        61035.0,
+        0.0
+      ],
+      "minimum": [
+        99.0,
+        0.0
+      ],
+      "duplicates": 0,
+      "whole_run_fraction": 0.002588678627017285,
+      "late_fraction": 0.0003722935240521211
+    },
+    "train/tokens_seen": {
+      "first": [
+        1.0,
+        16384.0
+      ],
+      "final": [
+        61035.0,
+        999997440.0
+      ],
+      "minimum": [
+        1.0,
+        16384.0
+      ],
+      "duplicates": 0
+    },
+    "optimizer/muon/update_to_parameter_norm": {
+      "first": [
+        1.0,
+        0.00011306485976092517
+      ],
+      "final": [
+        61035.0,
+        0.0
+      ],
+      "minimum": [
+        61035.0,
+        0.0
+      ],
+      "duplicates": 0
+    },
+    "optimizer/adamw/update_to_parameter_norm": {
+      "first": [
+        1.0,
+        0.000245382689172402
+      ],
+      "final": [
+        61035.0,
+        0.0
+      ],
+      "minimum": [
+        61035.0,
+        0.0
+      ],
+      "duplicates": 0
+    },
+    "configuration": "{\n  \"experiment_name\": \"35m_balanced_1b\",\n  \"dataset_prefix\": \"\",\n  \"dataset_variant\": \"balanced_1b\",\n  \"train_tokens\": 1000000000,\n  \"validation_tokens\": 10000000,\n  \"parameters\": 34191744,\n  \"trainable_parameters\": 34191744,\n  \"optimized_parameters\": 34191744,\n  \"initialization\": \"gpt_scaled\",\n  \"initialization_std\": 0.02,\n  \"qk_norm\": true,\n  \"split_qkv_projections\": true,\n  \"sequence_length\": 1024,\n  \"micro_batch_size\": 16,\n  \"gradient_accumulation_steps\": 1,\n  \"effective_batch_size\": 16,\n  \"epochs\": 1,\n  \"max_steps\": 0,\n  \"total_steps\": 61035,\n  \"learning_rate\": 0.00242,\n  \"minimum_learning_rate\": 0.0,\n  \"lr_scheduler\": \"wsd\",\n  \"wsd_decay_fraction\": 0.4,\n  \"wsd_stable_steps\": 36489,\n  \"wsd_decay_steps\": 24327,\n  \"adam_beta1\": 0.9,\n  \"adam_beta2\": 0.99,\n  \"adam_epsilon\": 1e-08,\n  \"norm_learning_rate_multiplier\": 1.0,\n  \"norm_learning_rate\": 0.00242,\n  \"warmup_steps\": 219,\n  \"weight_decay\": 0.05,\n  \"z_loss_coefficient\": 0.0,\n  \"adamw_parameters\": 7383424,\n  \"adamw_decayed_parameters\": 0,\n  \"adamw_no_decay_parameters\": 7371712,\n  \"adamw_norm_parameters\": 11712,\n  \"muon_parameters\": 26808320,\n  \"muon_parameter_fraction\": 0.7840582802678916,\n  \"max_gradient_norm\": 1.0,\n  \"validation_interval\": 149,\n  \"validation_steps\": 7,\n  \"diagnostics_interval\": 30,\n  \"tensorboard_flush_seconds\": 5,\n  \"runs_csv\": \"/home/samuele/Desktop/pavullmo/src/pavullmo/pretrain_runs.csv\",\n  \"model_output_dir\": \"/home/samuele/Desktop/pavullmo/models\",\n  \"train_script\": \"pretrain_base_muon.py\",\n  \"compile_model\": true,\n  \"compile_mode\": \"default\",\n  \"seed\": 42,\n  \"muon_lr_multiplier\": 1.0,\n  \"muon_peak_learning_rate\": 0.00242,\n  \"muon_minimum_learning_rate\": 0.0,\n  \"muon_adjusted_peak_learning_rate_min\": 0.010244349076442096,\n  \"muon_adjusted_peak_learning_rate_max\": 0.01687765670938949,\n  \"muon_weight_decay\": 0.0375,\n  \"muon_momentum\": 0.95,\n  \"muon_nesterov\": true,\n  \"muon_adjust_lr_fn\": \"match_rms_adamw\",\n  \"muon_epsilon\": 1e-07,\n  \"muon_ns_iters\": 5,\n  \"muon_ns_coefficients\": [\n    3.4445,\n    -4.775,\n    2.0315\n  ]\n}"
+  },
+  "sanitized": {
+    "validation/loss": {
+      "first": [
+        149.0,
+        5.662381172180176
+      ],
+      "final": [
+        61035.0,
+        2.8078818321228027
+      ],
+      "minimum": [
+        61035.0,
+        2.8078818321228027
+      ],
+      "duplicates": 0
+    },
+    "diagnostics/parameter_norm": {
+      "first": [
+        0.0,
+        149.14541625976562
+      ],
+      "final": [
+        61035.0,
+        1596.935302734375
+      ],
+      "minimum": [
+        1.0,
+        149.14511108398438
+      ],
+      "duplicates": 0
+    },
+    "diagnostics/embedding_norm": {
+      "first": [
+        0.0,
+        54.18286895751953
+      ],
+      "final": [
+        61035.0,
+        1439.77294921875
+      ],
+      "minimum": [
+        1.0,
+        54.18214416503906
+      ],
+      "duplicates": 0
+    },
+    "optimizer/muon/parameter_norm": {
+      "first": [
+        0.0,
+        87.15831756591797
+      ],
+      "final": [
+        61035.0,
+        676.7950439453125
+      ],
+      "minimum": [
+        30.0,
+        87.15544128417969
+      ],
+      "duplicates": 0
+    },
+    "train/loss": {
+      "first": [
+        1.0,
+        9.78148078918457
+      ],
+      "final": [
+        61035.0,
+        2.764761447906494
+      ],
+      "minimum": [
+        60742.0,
+        2.505075454711914
+      ],
+      "duplicates": 0,
+      "last_1000_step_mean": 3.0202370204925537
+    },
+    "train/gradient_clipped": {
+      "first": [
+        1.0,
+        1.0
+      ],
+      "final": [
+        61035.0,
+        0.0
+      ],
+      "minimum": [
+        88.0,
+        0.0
+      ],
+      "duplicates": 0,
+      "whole_run_fraction": 0.0016711722782010322,
+      "late_fraction": 1.9594396002743217e-05
+    },
+    "train/tokens_seen": {
+      "first": [
+        1.0,
+        16384.0
+      ],
+      "final": [
+        61035.0,
+        999997440.0
+      ],
+      "minimum": [
+        1.0,
+        16384.0
+      ],
+      "duplicates": 0
+    },
+    "optimizer/muon/update_to_parameter_norm": {
+      "first": [
+        1.0,
+        0.00011292424460407346
+      ],
+      "final": [
+        61035.0,
+        0.0
+      ],
+      "minimum": [
+        61035.0,
+        0.0
+      ],
+      "duplicates": 0
+    },
+    "optimizer/adamw/update_to_parameter_norm": {
+      "first": [
+        1.0,
+        0.000245557923335582
+      ],
+      "final": [
+        61035.0,
+        0.0
+      ],
+      "minimum": [
+        61035.0,
+        0.0
+      ],
+      "duplicates": 0
+    },
+    "configuration": "{\n  \"experiment_name\": \"35m_newbalsanitized_1b\",\n  \"dataset_prefix\": \"\",\n  \"dataset_variant\": \"balanced\",\n  \"train_tokens\": 1000000000,\n  \"validation_tokens\": 10000000,\n  \"parameters\": 34191744,\n  \"trainable_parameters\": 34191744,\n  \"optimized_parameters\": 34191744,\n  \"initialization\": \"gpt_scaled\",\n  \"initialization_std\": 0.02,\n  \"qk_norm\": true,\n  \"split_qkv_projections\": true,\n  \"canon_layers\": false,\n  \"sequence_length\": 1024,\n  \"micro_batch_size\": 16,\n  \"gradient_accumulation_steps\": 1,\n  \"effective_batch_size\": 16,\n  \"epochs\": 1,\n  \"max_steps\": 0,\n  \"total_steps\": 61035,\n  \"learning_rate\": 0.00242,\n  \"minimum_learning_rate\": 0.0,\n  \"lr_scheduler\": \"wsd\",\n  \"wsd_decay_fraction\": 0.4,\n  \"wsd_stable_steps\": 36489,\n  \"wsd_decay_steps\": 24327,\n  \"adam_beta1\": 0.9,\n  \"adam_beta2\": 0.99,\n  \"adam_epsilon\": 1e-08,\n  \"norm_learning_rate_multiplier\": 1.0,\n  \"norm_learning_rate\": 0.00242,\n  \"warmup_steps\": 219,\n  \"weight_decay\": 0.05,\n  \"z_loss_coefficient\": 0.0,\n  \"adamw_parameters\": 7383424,\n  \"adamw_decayed_parameters\": 0,\n  \"adamw_no_decay_parameters\": 7371712,\n  \"adamw_norm_parameters\": 11712,\n  \"muon_parameters\": 26808320,\n  \"muon_parameter_fraction\": 0.7840582802678916,\n  \"max_gradient_norm\": 1.0,\n  \"validation_interval\": 149,\n  \"validation_steps\": 7,\n  \"diagnostics_interval\": 30,\n  \"tensorboard_flush_seconds\": 5,\n  \"runs_csv\": \"/home/samuele/Desktop/pavullmo/artifacts/results/pretrain_runs.csv\",\n  \"model_output_dir\": \"/home/samuele/Desktop/pavullmo/artifacts/models\",\n  \"train_script\": \"pretrain_base_muon.py\",\n  \"compile_model\": true,\n  \"compile_mode\": \"default\",\n  \"seed\": 42,\n  \"muon_lr_multiplier\": 1.0,\n  \"muon_peak_learning_rate\": 0.00242,\n  \"muon_minimum_learning_rate\": 0.0,\n  \"muon_adjusted_peak_learning_rate_min\": 0.010244349076442096,\n  \"muon_adjusted_peak_learning_rate_max\": 0.01687765670938949,\n  \"muon_weight_decay\": 0.0375,\n  \"muon_momentum\": 0.95,\n  \"muon_nesterov\": true,\n  \"muon_adjust_lr_fn\": \"match_rms_adamw\",\n  \"muon_epsilon\": 1e-07,\n  \"muon_ns_iters\": 5,\n  \"muon_ns_coefficients\": [\n    3.4445,\n    -4.775,\n    2.0315\n  ]\n}"
+  },
+  "finesynth": {
+    "validation/loss": {
+      "first": [
+        149.0,
+        5.73892879486084
+      ],
+      "final": [
+        61035.0,
+        2.9390676021575928
+      ],
+      "minimum": [
+        61035.0,
+        2.9390676021575928
+      ],
+      "duplicates": 0
+    },
+    "diagnostics/parameter_norm": {
+      "first": [
+        0.0,
+        149.14541625976562
+      ],
+      "final": [
+        61035.0,
+        1676.8511962890625
+      ],
+      "minimum": [
+        1.0,
+        149.1450653076172
+      ],
+      "duplicates": 6
+    },
+    "diagnostics/embedding_norm": {
+      "first": [
+        0.0,
+        54.18286895751953
+      ],
+      "final": [
+        61035.0,
+        1528.2529296875
+      ],
+      "minimum": [
+        1.0,
+        54.182003021240234
+      ],
+      "duplicates": 6
+    },
+    "optimizer/muon/parameter_norm": {
+      "first": [
+        0.0,
+        87.15831756591797
+      ],
+      "final": [
+        61035.0,
+        676.1278686523438
+      ],
+      "minimum": [
+        1.0,
+        87.15830993652344
+      ],
+      "duplicates": 6
+    },
+    "train/loss": {
+      "first": [
+        1.0,
+        9.788646697998047
+      ],
+      "final": [
+        61035.0,
+        2.8478121757507324
+      ],
+      "minimum": [
+        60900.0,
+        2.429823398590088
+      ],
+      "duplicates": 149,
+      "last_1000_step_mean": 2.9183928165435793
+    },
+    "train/gradient_clipped": {
+      "first": [
+        1.0,
+        1.0
+      ],
+      "final": [
+        61035.0,
+        0.0
+      ],
+      "minimum": [
+        90.0,
+        0.0
+      ],
+      "duplicates": 149,
+      "whole_run_fraction": 0.0022446137462111904,
+      "late_fraction": 0.0005682374840795532
+    },
+    "train/tokens_seen": {
+      "first": [
+        1.0,
+        16384.0
+      ],
+      "final": [
+        61035.0,
+        999997440.0
+      ],
+      "minimum": [
+        1.0,
+        16384.0
+      ],
+      "duplicates": 149
+    },
+    "optimizer/muon/update_to_parameter_norm": {
+      "first": [
+        1.0,
+        0.00011216399434488267
+      ],
+      "final": [
+        61035.0,
+        0.0
+      ],
+      "minimum": [
+        61035.0,
+        0.0
+      ],
+      "duplicates": 5
+    },
+    "optimizer/adamw/update_to_parameter_norm": {
+      "first": [
+        1.0,
+        0.0002452265180181712
+      ],
+      "final": [
+        61035.0,
+        0.0
+      ],
+      "minimum": [
+        61035.0,
+        0.0
+      ],
+      "duplicates": 5
+    },
+    "configuration": "{\n  \"experiment_name\": \"35m_finesynth_1b\",\n  \"dataset_prefix\": \"finesynth\",\n  \"dataset_variant\": \"mix\",\n  \"train_tokens\": 1000000000,\n  \"validation_tokens\": 10000000,\n  \"parameters\": 34191744,\n  \"trainable_parameters\": 34191744,\n  \"optimized_parameters\": 34191744,\n  \"initialization\": \"gpt_scaled\",\n  \"initialization_std\": 0.02,\n  \"qk_norm\": true,\n  \"split_qkv_projections\": true,\n  \"canon_layers\": false,\n  \"sequence_length\": 1024,\n  \"micro_batch_size\": 16,\n  \"gradient_accumulation_steps\": 1,\n  \"effective_batch_size\": 16,\n  \"epochs\": 1,\n  \"max_steps\": 0,\n  \"total_steps\": 61035,\n  \"learning_rate\": 0.00242,\n  \"minimum_learning_rate\": 0.0,\n  \"lr_scheduler\": \"wsd\",\n  \"wsd_decay_fraction\": 0.4,\n  \"wsd_stable_steps\": 36489,\n  \"wsd_decay_steps\": 24327,\n  \"adam_beta1\": 0.9,\n  \"adam_beta2\": 0.99,\n  \"adam_epsilon\": 1e-08,\n  \"norm_learning_rate_multiplier\": 1.0,\n  \"norm_learning_rate\": 0.00242,\n  \"warmup_steps\": 219,\n  \"weight_decay\": 0.05,\n  \"z_loss_coefficient\": 0.0,\n  \"adamw_parameters\": 7383424,\n  \"adamw_decayed_parameters\": 0,\n  \"adamw_no_decay_parameters\": 7371712,\n  \"adamw_norm_parameters\": 11712,\n  \"muon_parameters\": 26808320,\n  \"muon_parameter_fraction\": 0.7840582802678916,\n  \"max_gradient_norm\": 1.0,\n  \"validation_interval\": 149,\n  \"validation_steps\": 7,\n  \"diagnostics_interval\": 30,\n  \"tensorboard_flush_seconds\": 5,\n  \"runs_csv\": \"/home/samuele/Desktop/pavullmo/artifacts/results/pretrain_runs.csv\",\n  \"model_output_dir\": \"/home/samuele/Desktop/pavullmo/artifacts/models\",\n  \"train_script\": \"pretrain_base_muon.py\",\n  \"compile_model\": true,\n  \"compile_mode\": \"default\",\n  \"save_training_state\": false,\n  \"resume_checkpoint\": \"\",\n  \"initial_step\": 0,\n  \"source_checkpoint_step\": null,\n  \"seed\": 42,\n  \"muon_lr_multiplier\": 1.0,\n  \"muon_peak_learning_rate\": 0.00242,\n  \"muon_minimum_learning_rate\": 0.0,\n  \"muon_adjusted_peak_learning_rate_min\": 0.010244349076442096,\n  \"muon_adjusted_peak_learning_rate_max\": 0.01687765670938949,\n  \"muon_weight_decay\": 0.0375,\n  \"muon_momentum\": 0.95,\n  \"muon_nesterov\": true,\n  \"muon_adjust_lr_fn\": \"match_rms_adamw\",\n  \"muon_epsilon\": 1e-07,\n  \"muon_ns_iters\": 5,\n  \"muon_ns_coefficients\": [\n    3.4445,\n    -4.775,\n    2.0315\n  ]\n}"
+  }
+}

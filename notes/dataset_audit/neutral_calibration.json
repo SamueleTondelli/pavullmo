@@ -1,0 +1,1356 @@
+{
+  "settings": {
+    "prefix": [
+      "",
+      "Risposta:"
+    ],
+    "batch_size": 32
+  },
+  "method": "Diagnose benchmark target priors with independently scored neutral prefixes.\n\nSubtract mean target-token log P(target | prefix) with fixed coefficient one.\nNo alternative contexts or task-specific calibration tuning are used.\n",
+  "models": {
+    "old": {
+      "": {
+        "categories": {
+          "icl": {
+            "raw_target": 0.523,
+            "calibrated_target": 0.5165,
+            "raw_bidirectional": 0.3386666666666666,
+            "calibrated_bidirectional": 0.32733333333333325
+          },
+          "knowledge": {
+            "raw_target": 0.6565000000000001,
+            "calibrated_target": 0.7175,
+            "raw_bidirectional": 0.5241666666666667,
+            "calibrated_bidirectional": 0.5846666666666666
+          },
+          "language-manipulation": {
+            "raw_target": 0.7673333333333334,
+            "calibrated_target": 0.7658333333333334,
+            "raw_bidirectional": 0.739,
+            "calibrated_bidirectional": 0.7424999999999999
+          },
+          "math": {
+            "raw_target": 0.5715,
+            "calibrated_target": 0.6133333333333333,
+            "raw_bidirectional": 0.3826666666666666,
+            "calibrated_bidirectional": 0.438
+          },
+          "math-languages": {
+            "raw_target": 0.5033333333333334,
+            "calibrated_target": 0.5005,
+            "raw_bidirectional": 0.2656666666666667,
+            "calibrated_bidirectional": 0.26966666666666667
+          },
+          "reasoning": {
+            "raw_target": 0.454,
+            "calibrated_target": 0.4585,
+            "raw_bidirectional": 0.20949999999999996,
+            "calibrated_bidirectional": 0.21183333333333337
+          }
+        },
+        "benchmarks": {
+          "icl/arbitrary_mappings-bench-scores.json": {
+            "raw_target": 0.53,
+            "calibrated_target": 0.5216666666666667,
+            "raw_bidirectional": 0.36333333333333334,
+            "calibrated_bidirectional": 0.3283333333333333
+          },
+          "icl/object_locations-bench-scores.json": {
+            "raw_target": 0.5191666666666667,
+            "calibrated_target": 0.5183333333333334,
+            "raw_bidirectional": 0.3066666666666667,
+            "calibrated_bidirectional": 0.30416666666666664
+          },
+          "icl/person_objects-bench-scores.json": {
+            "raw_target": 0.5233333333333333,
+            "calibrated_target": 0.5133333333333333,
+            "raw_bidirectional": 0.34666666666666657,
+            "calibrated_bidirectional": 0.3341666666666667
+          },
+          "icl/person_profiles-bench-scores.json": {
+            "raw_target": 0.5299999999999999,
+            "calibrated_target": 0.5225,
+            "raw_bidirectional": 0.38249999999999995,
+            "calibrated_bidirectional": 0.37249999999999983
+          },
+          "icl/state_updates-bench-scores.json": {
+            "raw_target": 0.5125,
+            "calibrated_target": 0.5066666666666667,
+            "raw_bidirectional": 0.29416666666666663,
+            "calibrated_bidirectional": 0.2975
+          },
+          "knowledge/capitals-bench-scores.json": {
+            "raw_target": 0.7416666666666667,
+            "calibrated_target": 0.8041666666666666,
+            "raw_bidirectional": 0.6858333333333333,
+            "calibrated_bidirectional": 0.7491666666666665
+          },
+          "knowledge/colors-bench-scores.json": {
+            "raw_target": 0.5341666666666667,
+            "calibrated_target": 0.5316666666666667,
+            "raw_bidirectional": 0.3108333333333333,
+            "calibrated_bidirectional": 0.32666666666666666
+          },
+          "knowledge/landmarks-bench-scores.json": {
+            "raw_target": 0.56,
+            "calibrated_target": 0.6675,
+            "raw_bidirectional": 0.395,
+            "calibrated_bidirectional": 0.45833333333333337
+          },
+          "knowledge/regions-bench-scores.json": {
+            "raw_target": 0.8841666666666668,
+            "calibrated_target": 0.9508333333333333,
+            "raw_bidirectional": 0.8641666666666667,
+            "calibrated_bidirectional": 0.9241666666666666
+          },
+          "knowledge/taxonomy-bench-scores.json": {
+            "raw_target": 0.5624999999999999,
+            "calibrated_target": 0.6333333333333333,
+            "raw_bidirectional": 0.365,
+            "calibrated_bidirectional": 0.465
+          },
+          "language-manipulation/affirmative_negative-bench-scores.json": {
+            "raw_target": 0.8233333333333335,
+            "calibrated_target": 0.8725000000000002,
+            "raw_bidirectional": 0.8225,
+            "calibrated_bidirectional": 0.8691666666666668
+          },
+          "language-manipulation/first_to_third_person-bench-scores.json": {
+            "raw_target": 0.7825,
+            "calibrated_target": 0.7599999999999999,
+            "raw_bidirectional": 0.7558333333333332,
+            "calibrated_bidirectional": 0.7341666666666665
+          },
+          "language-manipulation/masculine_feminine-bench-scores.json": {
+            "raw_target": 0.7133333333333333,
+            "calibrated_target": 0.6916666666666668,
+            "raw_bidirectional": 0.6975,
+            "calibrated_bidirectional": 0.6658333333333333
+          },
+          "language-manipulation/present_future-bench-scores.json": {
+            "raw_target": 0.7533333333333333,
+            "calibrated_target": 0.6566666666666666,
+            "raw_bidirectional": 0.6591666666666666,
+            "calibrated_bidirectional": 0.6016666666666667
+          },
+          "language-manipulation/singular_plural-bench-scores.json": {
+            "raw_target": 0.7641666666666669,
+            "calibrated_target": 0.8483333333333333,
+            "raw_bidirectional": 0.7600000000000001,
+            "calibrated_bidirectional": 0.8416666666666667
+          },
+          "math/addition_subtraction-bench-scores.json": {
+            "raw_target": 0.48666666666666664,
+            "calibrated_target": 0.485,
+            "raw_bidirectional": 0.24,
+            "calibrated_bidirectional": 0.24166666666666672
+          },
+          "math/even_odd-bench-scores.json": {
+            "raw_target": 0.5,
+            "calibrated_target": 0.5,
+            "raw_bidirectional": 0.185,
+            "calibrated_bidirectional": 0.27
+          },
+          "math/min_max-bench-scores.json": {
+            "raw_target": 0.5933333333333334,
+            "calibrated_target": 0.6675,
+            "raw_bidirectional": 0.45083333333333336,
+            "calibrated_bidirectional": 0.5258333333333334
+          },
+          "math/multiplication-bench-scores.json": {
+            "raw_target": 0.5583333333333332,
+            "calibrated_target": 0.5725,
+            "raw_bidirectional": 0.3725,
+            "calibrated_bidirectional": 0.36666666666666664
+          },
+          "math/sequence_completion-bench-scores.json": {
+            "raw_target": 0.7191666666666666,
+            "calibrated_target": 0.8416666666666667,
+            "raw_bidirectional": 0.6649999999999998,
+            "calibrated_bidirectional": 0.7858333333333333
+          },
+          "math-languages/count_by_property-bench-scores.json": {
+            "raw_target": 0.4966666666666667,
+            "calibrated_target": 0.49333333333333335,
+            "raw_bidirectional": 0.2325,
+            "calibrated_bidirectional": 0.25
+          },
+          "math-languages/count_occurrences-bench-scores.json": {
+            "raw_target": 0.5016666666666667,
+            "calibrated_target": 0.4958333333333333,
+            "raw_bidirectional": 0.24999999999999997,
+            "calibrated_bidirectional": 0.24833333333333335
+          },
+          "math-languages/count_repeated_objects-bench-scores.json": {
+            "raw_target": 0.51,
+            "calibrated_target": 0.5016666666666666,
+            "raw_bidirectional": 0.3191666666666667,
+            "calibrated_bidirectional": 0.35166666666666674
+          },
+          "math-languages/digits_words-bench-scores.json": {
+            "raw_target": 0.51,
+            "calibrated_target": 0.51,
+            "raw_bidirectional": 0.29583333333333334,
+            "calibrated_bidirectional": 0.2783333333333333
+          },
+          "math-languages/select_position-bench-scores.json": {
+            "raw_target": 0.49833333333333335,
+            "calibrated_target": 0.5016666666666666,
+            "raw_bidirectional": 0.23083333333333333,
+            "calibrated_bidirectional": 0.22
+          },
+          "reasoning/constraint_elimination-bench-scores.json": {
+            "raw_target": 0.265,
+            "calibrated_target": 0.2875,
+            "raw_bidirectional": 0.01,
+            "calibrated_bidirectional": 0.004166666666666667
+          },
+          "reasoning/ordering-bench-scores.json": {
+            "raw_target": 0.5033333333333334,
+            "calibrated_target": 0.4958333333333333,
+            "raw_bidirectional": 0.27,
+            "calibrated_bidirectional": 0.2541666666666667
+          },
+          "reasoning/rule_chaining-bench-scores.json": {
+            "raw_target": 0.495,
+            "calibrated_target": 0.5008333333333334,
+            "raw_bidirectional": 0.24,
+            "calibrated_bidirectional": 0.2875
+          },
+          "reasoning/spatial-bench-scores.json": {
+            "raw_target": 0.5091666666666668,
+            "calibrated_target": 0.5075000000000001,
+            "raw_bidirectional": 0.285,
+            "calibrated_bidirectional": 0.2966666666666667
+          },
+          "reasoning/temporal-bench-scores.json": {
+            "raw_target": 0.4975,
+            "calibrated_target": 0.5008333333333334,
+            "raw_bidirectional": 0.2425,
+            "calibrated_bidirectional": 0.2166666666666667
+          }
+        },
+        "unique_targets": 1325
+      },
+      "Risposta:": {
+        "categories": {
+          "icl": {
+            "raw_target": 0.523,
+            "calibrated_target": 0.5153333333333333,
+            "raw_bidirectional": 0.3386666666666666,
+            "calibrated_bidirectional": 0.335
+          },
+          "knowledge": {
+            "raw_target": 0.6565000000000001,
+            "calibrated_target": 0.6874999999999999,
+            "raw_bidirectional": 0.5241666666666667,
+            "calibrated_bidirectional": 0.5728333333333333
+          },
+          "language-manipulation": {
+            "raw_target": 0.7673333333333334,
+            "calibrated_target": 0.7673333333333334,
+            "raw_bidirectional": 0.739,
+            "calibrated_bidirectional": 0.744
+          },
+          "math": {
+            "raw_target": 0.5715,
+            "calibrated_target": 0.6026666666666667,
+            "raw_bidirectional": 0.3826666666666666,
+            "calibrated_bidirectional": 0.42699999999999994
+          },
+          "math-languages": {
+            "raw_target": 0.5033333333333334,
+            "calibrated_target": 0.5048333333333332,
+            "raw_bidirectional": 0.2656666666666667,
+            "calibrated_bidirectional": 0.2713333333333333
+          },
+          "reasoning": {
+            "raw_target": 0.454,
+            "calibrated_target": 0.4615,
+            "raw_bidirectional": 0.20949999999999996,
+            "calibrated_bidirectional": 0.22149999999999997
+          }
+        },
+        "benchmarks": {
+          "icl/arbitrary_mappings-bench-scores.json": {
+            "raw_target": 0.53,
+            "calibrated_target": 0.5225000000000001,
+            "raw_bidirectional": 0.36333333333333334,
+            "calibrated_bidirectional": 0.3458333333333334
+          },
+          "icl/object_locations-bench-scores.json": {
+            "raw_target": 0.5191666666666667,
+            "calibrated_target": 0.5108333333333334,
+            "raw_bidirectional": 0.3066666666666667,
+            "calibrated_bidirectional": 0.31250000000000006
+          },
+          "icl/person_objects-bench-scores.json": {
+            "raw_target": 0.5233333333333333,
+            "calibrated_target": 0.5075000000000001,
+            "raw_bidirectional": 0.34666666666666657,
+            "calibrated_bidirectional": 0.3349999999999999
+          },
+          "icl/person_profiles-bench-scores.json": {
+            "raw_target": 0.5299999999999999,
+            "calibrated_target": 0.5308333333333334,
+            "raw_bidirectional": 0.38249999999999995,
+            "calibrated_bidirectional": 0.3866666666666667
+          },
+          "icl/state_updates-bench-scores.json": {
+            "raw_target": 0.5125,
+            "calibrated_target": 0.505,
+            "raw_bidirectional": 0.29416666666666663,
+            "calibrated_bidirectional": 0.295
+          },
+          "knowledge/capitals-bench-scores.json": {
+            "raw_target": 0.7416666666666667,
+            "calibrated_target": 0.775,
+            "raw_bidirectional": 0.6858333333333333,
+            "calibrated_bidirectional": 0.7424999999999998
+          },
+          "knowledge/colors-bench-scores.json": {
+            "raw_target": 0.5341666666666667,
+            "calibrated_target": 0.5225,
+            "raw_bidirectional": 0.3108333333333333,
+            "calibrated_bidirectional": 0.3666666666666666
+          },
+          "knowledge/landmarks-bench-scores.json": {
+            "raw_target": 0.56,
+            "calibrated_target": 0.6291666666666667,
+            "raw_bidirectional": 0.395,
+            "calibrated_bidirectional": 0.43749999999999994
+          },
+          "knowledge/regions-bench-scores.json": {
+            "raw_target": 0.8841666666666668,
+            "calibrated_target": 0.9224999999999999,
+            "raw_bidirectional": 0.8641666666666667,
+            "calibrated_bidirectional": 0.8958333333333333
+          },
+          "knowledge/taxonomy-bench-scores.json": {
+            "raw_target": 0.5624999999999999,
+            "calibrated_target": 0.5883333333333333,
+            "raw_bidirectional": 0.365,
+            "calibrated_bidirectional": 0.4216666666666667
+          },
+          "language-manipulation/affirmative_negative-bench-scores.json": {
+            "raw_target": 0.8233333333333335,
+            "calibrated_target": 0.8983333333333334,
+            "raw_bidirectional": 0.8225,
+            "calibrated_bidirectional": 0.8958333333333333
+          },
+          "language-manipulation/first_to_third_person-bench-scores.json": {
+            "raw_target": 0.7825,
+            "calibrated_target": 0.7375000000000002,
+            "raw_bidirectional": 0.7558333333333332,
+            "calibrated_bidirectional": 0.7133333333333334
+          },
+          "language-manipulation/masculine_feminine-bench-scores.json": {
+            "raw_target": 0.7133333333333333,
+            "calibrated_target": 0.6925,
+            "raw_bidirectional": 0.6975,
+            "calibrated_bidirectional": 0.665
+          },
+          "language-manipulation/present_future-bench-scores.json": {
+            "raw_target": 0.7533333333333333,
+            "calibrated_target": 0.6833333333333331,
+            "raw_bidirectional": 0.6591666666666666,
+            "calibrated_bidirectional": 0.6275
+          },
+          "language-manipulation/singular_plural-bench-scores.json": {
+            "raw_target": 0.7641666666666669,
+            "calibrated_target": 0.825,
+            "raw_bidirectional": 0.7600000000000001,
+            "calibrated_bidirectional": 0.8183333333333332
+          },
+          "math/addition_subtraction-bench-scores.json": {
+            "raw_target": 0.48666666666666664,
+            "calibrated_target": 0.4966666666666667,
+            "raw_bidirectional": 0.24,
+            "calibrated_bidirectional": 0.26499999999999996
+          },
+          "math/even_odd-bench-scores.json": {
+            "raw_target": 0.5,
+            "calibrated_target": 0.5,
+            "raw_bidirectional": 0.185,
+            "calibrated_bidirectional": 0.27
+          },
+          "math/min_max-bench-scores.json": {
+            "raw_target": 0.5933333333333334,
+            "calibrated_target": 0.5958333333333333,
+            "raw_bidirectional": 0.45083333333333336,
+            "calibrated_bidirectional": 0.46083333333333343
+          },
+          "math/multiplication-bench-scores.json": {
+            "raw_target": 0.5583333333333332,
+            "calibrated_target": 0.6083333333333334,
+            "raw_bidirectional": 0.3725,
+            "calibrated_bidirectional": 0.37583333333333335
+          },
+          "math/sequence_completion-bench-scores.json": {
+            "raw_target": 0.7191666666666666,
+            "calibrated_target": 0.8124999999999999,
+            "raw_bidirectional": 0.6649999999999998,
+            "calibrated_bidirectional": 0.7633333333333333
+          },
+          "math-languages/count_by_property-bench-scores.json": {
+            "raw_target": 0.4966666666666667,
+            "calibrated_target": 0.4966666666666667,
+            "raw_bidirectional": 0.2325,
+            "calibrated_bidirectional": 0.24166666666666667
+          },
+          "math-languages/count_occurrences-bench-scores.json": {
+            "raw_target": 0.5016666666666667,
+            "calibrated_target": 0.5016666666666667,
+            "raw_bidirectional": 0.24999999999999997,
+            "calibrated_bidirectional": 0.2608333333333333
+          },
+          "math-languages/count_repeated_objects-bench-scores.json": {
+            "raw_target": 0.51,
+            "calibrated_target": 0.5066666666666667,
+            "raw_bidirectional": 0.3191666666666667,
+            "calibrated_bidirectional": 0.30416666666666664
+          },
+          "math-languages/digits_words-bench-scores.json": {
+            "raw_target": 0.51,
+            "calibrated_target": 0.5175000000000001,
+            "raw_bidirectional": 0.29583333333333334,
+            "calibrated_bidirectional": 0.2858333333333334
+          },
+          "math-languages/select_position-bench-scores.json": {
+            "raw_target": 0.49833333333333335,
+            "calibrated_target": 0.5016666666666666,
+            "raw_bidirectional": 0.23083333333333333,
+            "calibrated_bidirectional": 0.26416666666666666
+          },
+          "reasoning/constraint_elimination-bench-scores.json": {
+            "raw_target": 0.265,
+            "calibrated_target": 0.295,
+            "raw_bidirectional": 0.01,
+            "calibrated_bidirectional": 0.006666666666666666
+          },
+          "reasoning/ordering-bench-scores.json": {
+            "raw_target": 0.5033333333333334,
+            "calibrated_target": 0.5025000000000001,
+            "raw_bidirectional": 0.27,
+            "calibrated_bidirectional": 0.2833333333333333
+          },
+          "reasoning/rule_chaining-bench-scores.json": {
+            "raw_target": 0.495,
+            "calibrated_target": 0.5,
+            "raw_bidirectional": 0.24,
+            "calibrated_bidirectional": 0.29083333333333333
+          },
+          "reasoning/spatial-bench-scores.json": {
+            "raw_target": 0.5091666666666668,
+            "calibrated_target": 0.5125,
+            "raw_bidirectional": 0.285,
+            "calibrated_bidirectional": 0.29250000000000004
+          },
+          "reasoning/temporal-bench-scores.json": {
+            "raw_target": 0.4975,
+            "calibrated_target": 0.4975,
+            "raw_bidirectional": 0.2425,
+            "calibrated_bidirectional": 0.2341666666666667
+          }
+        },
+        "unique_targets": 1325
+      }
+    },
+    "sanitized": {
+      "": {
+        "categories": {
+          "icl": {
+            "raw_target": 0.5121666666666667,
+            "calibrated_target": 0.5106666666666666,
+            "raw_bidirectional": 0.31199999999999994,
+            "calibrated_bidirectional": 0.3135
+          },
+          "knowledge": {
+            "raw_target": 0.6313333333333333,
+            "calibrated_target": 0.6706666666666667,
+            "raw_bidirectional": 0.4934999999999999,
+            "calibrated_bidirectional": 0.5573333333333335
+          },
+          "language-manipulation": {
+            "raw_target": 0.7046666666666666,
+            "calibrated_target": 0.6996666666666668,
+            "raw_bidirectional": 0.6608333333333334,
+            "calibrated_bidirectional": 0.6649999999999999
+          },
+          "math": {
+            "raw_target": 0.5785,
+            "calibrated_target": 0.5988333333333333,
+            "raw_bidirectional": 0.40183333333333326,
+            "calibrated_bidirectional": 0.41966666666666674
+          },
+          "math-languages": {
+            "raw_target": 0.5018333333333332,
+            "calibrated_target": 0.5,
+            "raw_bidirectional": 0.26149999999999995,
+            "calibrated_bidirectional": 0.2665
+          },
+          "reasoning": {
+            "raw_target": 0.43966666666666665,
+            "calibrated_target": 0.457,
+            "raw_bidirectional": 0.188,
+            "calibrated_bidirectional": 0.18316666666666664
+          }
+        },
+        "benchmarks": {
+          "icl/arbitrary_mappings-bench-scores.json": {
+            "raw_target": 0.5208333333333334,
+            "calibrated_target": 0.5258333333333334,
+            "raw_bidirectional": 0.35416666666666663,
+            "calibrated_bidirectional": 0.35999999999999993
+          },
+          "icl/object_locations-bench-scores.json": {
+            "raw_target": 0.5149999999999999,
+            "calibrated_target": 0.5,
+            "raw_bidirectional": 0.3041666666666666,
+            "calibrated_bidirectional": 0.3075
+          },
+          "icl/person_objects-bench-scores.json": {
+            "raw_target": 0.5091666666666668,
+            "calibrated_target": 0.5108333333333333,
+            "raw_bidirectional": 0.2975,
+            "calibrated_bidirectional": 0.3083333333333334
+          },
+          "icl/person_profiles-bench-scores.json": {
+            "raw_target": 0.5083333333333333,
+            "calibrated_target": 0.5133333333333333,
+            "raw_bidirectional": 0.32416666666666666,
+            "calibrated_bidirectional": 0.315
+          },
+          "icl/state_updates-bench-scores.json": {
+            "raw_target": 0.5075,
+            "calibrated_target": 0.5033333333333334,
+            "raw_bidirectional": 0.2799999999999999,
+            "calibrated_bidirectional": 0.2766666666666666
+          },
+          "knowledge/capitals-bench-scores.json": {
+            "raw_target": 0.7391666666666667,
+            "calibrated_target": 0.7608333333333335,
+            "raw_bidirectional": 0.6841666666666667,
+            "calibrated_bidirectional": 0.7150000000000002
+          },
+          "knowledge/colors-bench-scores.json": {
+            "raw_target": 0.51,
+            "calibrated_target": 0.5333333333333333,
+            "raw_bidirectional": 0.26583333333333337,
+            "calibrated_bidirectional": 0.36749999999999994
+          },
+          "knowledge/landmarks-bench-scores.json": {
+            "raw_target": 0.5625,
+            "calibrated_target": 0.6108333333333333,
+            "raw_bidirectional": 0.38749999999999984,
+            "calibrated_bidirectional": 0.4266666666666667
+          },
+          "knowledge/regions-bench-scores.json": {
+            "raw_target": 0.7849999999999998,
+            "calibrated_target": 0.8416666666666667,
+            "raw_bidirectional": 0.7391666666666665,
+            "calibrated_bidirectional": 0.8016666666666667
+          },
+          "knowledge/taxonomy-bench-scores.json": {
+            "raw_target": 0.56,
+            "calibrated_target": 0.6066666666666667,
+            "raw_bidirectional": 0.3908333333333333,
+            "calibrated_bidirectional": 0.47583333333333333
+          },
+          "language-manipulation/affirmative_negative-bench-scores.json": {
+            "raw_target": 0.8558333333333333,
+            "calibrated_target": 0.8525000000000001,
+            "raw_bidirectional": 0.8558333333333333,
+            "calibrated_bidirectional": 0.8508333333333334
+          },
+          "language-manipulation/first_to_third_person-bench-scores.json": {
+            "raw_target": 0.6966666666666664,
+            "calibrated_target": 0.6541666666666666,
+            "raw_bidirectional": 0.6675,
+            "calibrated_bidirectional": 0.6266666666666666
+          },
+          "language-manipulation/masculine_feminine-bench-scores.json": {
+            "raw_target": 0.6416666666666666,
+            "calibrated_target": 0.6550000000000001,
+            "raw_bidirectional": 0.6,
+            "calibrated_bidirectional": 0.6008333333333333
+          },
+          "language-manipulation/present_future-bench-scores.json": {
+            "raw_target": 0.6458333333333333,
+            "calibrated_target": 0.6175,
+            "raw_bidirectional": 0.5441666666666667,
+            "calibrated_bidirectional": 0.5566666666666668
+          },
+          "language-manipulation/singular_plural-bench-scores.json": {
+            "raw_target": 0.6833333333333332,
+            "calibrated_target": 0.7191666666666666,
+            "raw_bidirectional": 0.6366666666666666,
+            "calibrated_bidirectional": 0.69
+          },
+          "math/addition_subtraction-bench-scores.json": {
+            "raw_target": 0.5033333333333334,
+            "calibrated_target": 0.49833333333333335,
+            "raw_bidirectional": 0.26833333333333337,
+            "calibrated_bidirectional": 0.2725
+          },
+          "math/even_odd-bench-scores.json": {
+            "raw_target": 0.5,
+            "calibrated_target": 0.505,
+            "raw_bidirectional": 0.255,
+            "calibrated_bidirectional": 0.26
+          },
+          "math/min_max-bench-scores.json": {
+            "raw_target": 0.6016666666666667,
+            "calibrated_target": 0.6416666666666667,
+            "raw_bidirectional": 0.4649999999999999,
+            "calibrated_bidirectional": 0.4866666666666668
+          },
+          "math/multiplication-bench-scores.json": {
+            "raw_target": 0.5275,
+            "calibrated_target": 0.5416666666666666,
+            "raw_bidirectional": 0.2833333333333333,
+            "calibrated_bidirectional": 0.29083333333333333
+          },
+          "math/sequence_completion-bench-scores.json": {
+            "raw_target": 0.76,
+            "calibrated_target": 0.8075,
+            "raw_bidirectional": 0.7375,
+            "calibrated_bidirectional": 0.7883333333333334
+          },
+          "math-languages/count_by_property-bench-scores.json": {
+            "raw_target": 0.5,
+            "calibrated_target": 0.5066666666666667,
+            "raw_bidirectional": 0.2608333333333333,
+            "calibrated_bidirectional": 0.2866666666666666
+          },
+          "math-languages/count_occurrences-bench-scores.json": {
+            "raw_target": 0.5075,
+            "calibrated_target": 0.495,
+            "raw_bidirectional": 0.24833333333333332,
+            "calibrated_bidirectional": 0.26916666666666667
+          },
+          "math-languages/count_repeated_objects-bench-scores.json": {
+            "raw_target": 0.5041666666666667,
+            "calibrated_target": 0.49916666666666665,
+            "raw_bidirectional": 0.2941666666666667,
+            "calibrated_bidirectional": 0.23333333333333336
+          },
+          "math-languages/digits_words-bench-scores.json": {
+            "raw_target": 0.4983333333333333,
+            "calibrated_target": 0.4908333333333333,
+            "raw_bidirectional": 0.24999999999999997,
+            "calibrated_bidirectional": 0.22833333333333328
+          },
+          "math-languages/select_position-bench-scores.json": {
+            "raw_target": 0.4991666666666667,
+            "calibrated_target": 0.5083333333333333,
+            "raw_bidirectional": 0.25416666666666665,
+            "calibrated_bidirectional": 0.31500000000000006
+          },
+          "reasoning/constraint_elimination-bench-scores.json": {
+            "raw_target": 0.2125,
+            "calibrated_target": 0.285,
+            "raw_bidirectional": 0.0075,
+            "calibrated_bidirectional": 0.004166666666666667
+          },
+          "reasoning/ordering-bench-scores.json": {
+            "raw_target": 0.5008333333333334,
+            "calibrated_target": 0.4975,
+            "raw_bidirectional": 0.20166666666666663,
+            "calibrated_bidirectional": 0.21166666666666667
+          },
+          "reasoning/rule_chaining-bench-scores.json": {
+            "raw_target": 0.495,
+            "calibrated_target": 0.49833333333333335,
+            "raw_bidirectional": 0.24583333333333335,
+            "calibrated_bidirectional": 0.25916666666666666
+          },
+          "reasoning/spatial-bench-scores.json": {
+            "raw_target": 0.49666666666666665,
+            "calibrated_target": 0.5025,
+            "raw_bidirectional": 0.2433333333333333,
+            "calibrated_bidirectional": 0.2125
+          },
+          "reasoning/temporal-bench-scores.json": {
+            "raw_target": 0.49333333333333335,
+            "calibrated_target": 0.5016666666666667,
+            "raw_bidirectional": 0.24166666666666664,
+            "calibrated_bidirectional": 0.22833333333333333
+          }
+        },
+        "unique_targets": 1325
+      },
+      "Risposta:": {
+        "categories": {
+          "icl": {
+            "raw_target": 0.5121666666666667,
+            "calibrated_target": 0.5098333333333332,
+            "raw_bidirectional": 0.31199999999999994,
+            "calibrated_bidirectional": 0.31166666666666665
+          },
+          "knowledge": {
+            "raw_target": 0.6313333333333333,
+            "calibrated_target": 0.6463333333333333,
+            "raw_bidirectional": 0.4934999999999999,
+            "calibrated_bidirectional": 0.5431666666666667
+          },
+          "language-manipulation": {
+            "raw_target": 0.7046666666666666,
+            "calibrated_target": 0.7233333333333333,
+            "raw_bidirectional": 0.6608333333333334,
+            "calibrated_bidirectional": 0.6858333333333334
+          },
+          "math": {
+            "raw_target": 0.5785,
+            "calibrated_target": 0.5925,
+            "raw_bidirectional": 0.40183333333333326,
+            "calibrated_bidirectional": 0.4163333333333334
+          },
+          "math-languages": {
+            "raw_target": 0.5018333333333332,
+            "calibrated_target": 0.5031666666666667,
+            "raw_bidirectional": 0.26149999999999995,
+            "calibrated_bidirectional": 0.26116666666666666
+          },
+          "reasoning": {
+            "raw_target": 0.43966666666666665,
+            "calibrated_target": 0.4536666666666667,
+            "raw_bidirectional": 0.188,
+            "calibrated_bidirectional": 0.18566666666666665
+          }
+        },
+        "benchmarks": {
+          "icl/arbitrary_mappings-bench-scores.json": {
+            "raw_target": 0.5208333333333334,
+            "calibrated_target": 0.5316666666666667,
+            "raw_bidirectional": 0.35416666666666663,
+            "calibrated_bidirectional": 0.36749999999999994
+          },
+          "icl/object_locations-bench-scores.json": {
+            "raw_target": 0.5149999999999999,
+            "calibrated_target": 0.5025,
+            "raw_bidirectional": 0.3041666666666666,
+            "calibrated_bidirectional": 0.30666666666666664
+          },
+          "icl/person_objects-bench-scores.json": {
+            "raw_target": 0.5091666666666668,
+            "calibrated_target": 0.505,
+            "raw_bidirectional": 0.2975,
+            "calibrated_bidirectional": 0.29833333333333334
+          },
+          "icl/person_profiles-bench-scores.json": {
+            "raw_target": 0.5083333333333333,
+            "calibrated_target": 0.5075,
+            "raw_bidirectional": 0.32416666666666666,
+            "calibrated_bidirectional": 0.315
+          },
+          "icl/state_updates-bench-scores.json": {
+            "raw_target": 0.5075,
+            "calibrated_target": 0.5025,
+            "raw_bidirectional": 0.2799999999999999,
+            "calibrated_bidirectional": 0.27083333333333337
+          },
+          "knowledge/capitals-bench-scores.json": {
+            "raw_target": 0.7391666666666667,
+            "calibrated_target": 0.7275000000000001,
+            "raw_bidirectional": 0.6841666666666667,
+            "calibrated_bidirectional": 0.6825
+          },
+          "knowledge/colors-bench-scores.json": {
+            "raw_target": 0.51,
+            "calibrated_target": 0.5533333333333332,
+            "raw_bidirectional": 0.26583333333333337,
+            "calibrated_bidirectional": 0.4116666666666666
+          },
+          "knowledge/landmarks-bench-scores.json": {
+            "raw_target": 0.5625,
+            "calibrated_target": 0.5875,
+            "raw_bidirectional": 0.38749999999999984,
+            "calibrated_bidirectional": 0.40833333333333327
+          },
+          "knowledge/regions-bench-scores.json": {
+            "raw_target": 0.7849999999999998,
+            "calibrated_target": 0.7691666666666667,
+            "raw_bidirectional": 0.7391666666666665,
+            "calibrated_bidirectional": 0.7516666666666667
+          },
+          "knowledge/taxonomy-bench-scores.json": {
+            "raw_target": 0.56,
+            "calibrated_target": 0.5941666666666667,
+            "raw_bidirectional": 0.3908333333333333,
+            "calibrated_bidirectional": 0.46166666666666667
+          },
+          "language-manipulation/affirmative_negative-bench-scores.json": {
+            "raw_target": 0.8558333333333333,
+            "calibrated_target": 0.8816666666666666,
+            "raw_bidirectional": 0.8558333333333333,
+            "calibrated_bidirectional": 0.88
+          },
+          "language-manipulation/first_to_third_person-bench-scores.json": {
+            "raw_target": 0.6966666666666664,
+            "calibrated_target": 0.6774999999999999,
+            "raw_bidirectional": 0.6675,
+            "calibrated_bidirectional": 0.6525
+          },
+          "language-manipulation/masculine_feminine-bench-scores.json": {
+            "raw_target": 0.6416666666666666,
+            "calibrated_target": 0.6883333333333335,
+            "raw_bidirectional": 0.6,
+            "calibrated_bidirectional": 0.6383333333333333
+          },
+          "language-manipulation/present_future-bench-scores.json": {
+            "raw_target": 0.6458333333333333,
+            "calibrated_target": 0.6608333333333334,
+            "raw_bidirectional": 0.5441666666666667,
+            "calibrated_bidirectional": 0.5841666666666668
+          },
+          "language-manipulation/singular_plural-bench-scores.json": {
+            "raw_target": 0.6833333333333332,
+            "calibrated_target": 0.7083333333333333,
+            "raw_bidirectional": 0.6366666666666666,
+            "calibrated_bidirectional": 0.6741666666666666
+          },
+          "math/addition_subtraction-bench-scores.json": {
+            "raw_target": 0.5033333333333334,
+            "calibrated_target": 0.4891666666666667,
+            "raw_bidirectional": 0.26833333333333337,
+            "calibrated_bidirectional": 0.2683333333333333
+          },
+          "math/even_odd-bench-scores.json": {
+            "raw_target": 0.5,
+            "calibrated_target": 0.505,
+            "raw_bidirectional": 0.255,
+            "calibrated_bidirectional": 0.26
+          },
+          "math/min_max-bench-scores.json": {
+            "raw_target": 0.6016666666666667,
+            "calibrated_target": 0.6241666666666668,
+            "raw_bidirectional": 0.4649999999999999,
+            "calibrated_bidirectional": 0.4675000000000001
+          },
+          "math/multiplication-bench-scores.json": {
+            "raw_target": 0.5275,
+            "calibrated_target": 0.5641666666666666,
+            "raw_bidirectional": 0.2833333333333333,
+            "calibrated_bidirectional": 0.32583333333333336
+          },
+          "math/sequence_completion-bench-scores.json": {
+            "raw_target": 0.76,
+            "calibrated_target": 0.7799999999999998,
+            "raw_bidirectional": 0.7375,
+            "calibrated_bidirectional": 0.76
+          },
+          "math-languages/count_by_property-bench-scores.json": {
+            "raw_target": 0.5,
+            "calibrated_target": 0.5,
+            "raw_bidirectional": 0.2608333333333333,
+            "calibrated_bidirectional": 0.2
+          },
+          "math-languages/count_occurrences-bench-scores.json": {
+            "raw_target": 0.5075,
+            "calibrated_target": 0.5016666666666667,
+            "raw_bidirectional": 0.24833333333333332,
+            "calibrated_bidirectional": 0.26166666666666666
+          },
+          "math-languages/count_repeated_objects-bench-scores.json": {
+            "raw_target": 0.5041666666666667,
+            "calibrated_target": 0.4975,
+            "raw_bidirectional": 0.2941666666666667,
+            "calibrated_bidirectional": 0.29000000000000004
+          },
+          "math-languages/digits_words-bench-scores.json": {
+            "raw_target": 0.4983333333333333,
+            "calibrated_target": 0.5175000000000001,
+            "raw_bidirectional": 0.24999999999999997,
+            "calibrated_bidirectional": 0.26166666666666666
+          },
+          "math-languages/select_position-bench-scores.json": {
+            "raw_target": 0.4991666666666667,
+            "calibrated_target": 0.49916666666666665,
+            "raw_bidirectional": 0.25416666666666665,
+            "calibrated_bidirectional": 0.2925
+          },
+          "reasoning/constraint_elimination-bench-scores.json": {
+            "raw_target": 0.2125,
+            "calibrated_target": 0.2625,
+            "raw_bidirectional": 0.0075,
+            "calibrated_bidirectional": 0.003333333333333333
+          },
+          "reasoning/ordering-bench-scores.json": {
+            "raw_target": 0.5008333333333334,
+            "calibrated_target": 0.49666666666666665,
+            "raw_bidirectional": 0.20166666666666663,
+            "calibrated_bidirectional": 0.2058333333333333
+          },
+          "reasoning/rule_chaining-bench-scores.json": {
+            "raw_target": 0.495,
+            "calibrated_target": 0.5016666666666667,
+            "raw_bidirectional": 0.24583333333333335,
+            "calibrated_bidirectional": 0.2683333333333333
+          },
+          "reasoning/spatial-bench-scores.json": {
+            "raw_target": 0.49666666666666665,
+            "calibrated_target": 0.5016666666666667,
+            "raw_bidirectional": 0.2433333333333333,
+            "calibrated_bidirectional": 0.22583333333333333
+          },
+          "reasoning/temporal-bench-scores.json": {
+            "raw_target": 0.49333333333333335,
+            "calibrated_target": 0.5058333333333334,
+            "raw_bidirectional": 0.24166666666666664,
+            "calibrated_bidirectional": 0.225
+          }
+        },
+        "unique_targets": 1325
+      }
+    },
+    "finesynth": {
+      "": {
+        "categories": {
+          "icl": {
+            "raw_target": 0.5091666666666667,
+            "calibrated_target": 0.5086666666666667,
+            "raw_bidirectional": 0.30616666666666664,
+            "calibrated_bidirectional": 0.29800000000000004
+          },
+          "knowledge": {
+            "raw_target": 0.6801666666666666,
+            "calibrated_target": 0.7065,
+            "raw_bidirectional": 0.5543333333333333,
+            "calibrated_bidirectional": 0.6245
+          },
+          "language-manipulation": {
+            "raw_target": 0.6823333333333332,
+            "calibrated_target": 0.6943333333333334,
+            "raw_bidirectional": 0.6281666666666667,
+            "calibrated_bidirectional": 0.6411666666666667
+          },
+          "math": {
+            "raw_target": 0.5645,
+            "calibrated_target": 0.5813333333333334,
+            "raw_bidirectional": 0.3866666666666667,
+            "calibrated_bidirectional": 0.40166666666666667
+          },
+          "math-languages": {
+            "raw_target": 0.5003333333333333,
+            "calibrated_target": 0.5026666666666667,
+            "raw_bidirectional": 0.25816666666666666,
+            "calibrated_bidirectional": 0.23850000000000002
+          },
+          "reasoning": {
+            "raw_target": 0.4615,
+            "calibrated_target": 0.46733333333333327,
+            "raw_bidirectional": 0.20666666666666664,
+            "calibrated_bidirectional": 0.21116666666666667
+          }
+        },
+        "benchmarks": {
+          "icl/arbitrary_mappings-bench-scores.json": {
+            "raw_target": 0.5116666666666666,
+            "calibrated_target": 0.515,
+            "raw_bidirectional": 0.275,
+            "calibrated_bidirectional": 0.2625
+          },
+          "icl/object_locations-bench-scores.json": {
+            "raw_target": 0.5,
+            "calibrated_target": 0.5075,
+            "raw_bidirectional": 0.2941666666666667,
+            "calibrated_bidirectional": 0.2691666666666667
+          },
+          "icl/person_objects-bench-scores.json": {
+            "raw_target": 0.5125,
+            "calibrated_target": 0.5033333333333334,
+            "raw_bidirectional": 0.32583333333333336,
+            "calibrated_bidirectional": 0.33083333333333337
+          },
+          "icl/person_profiles-bench-scores.json": {
+            "raw_target": 0.5116666666666666,
+            "calibrated_target": 0.5141666666666667,
+            "raw_bidirectional": 0.3558333333333332,
+            "calibrated_bidirectional": 0.3500000000000001
+          },
+          "icl/state_updates-bench-scores.json": {
+            "raw_target": 0.51,
+            "calibrated_target": 0.5033333333333333,
+            "raw_bidirectional": 0.28,
+            "calibrated_bidirectional": 0.2775
+          },
+          "knowledge/capitals-bench-scores.json": {
+            "raw_target": 0.8466666666666666,
+            "calibrated_target": 0.8316666666666666,
+            "raw_bidirectional": 0.8291666666666667,
+            "calibrated_bidirectional": 0.8208333333333333
+          },
+          "knowledge/colors-bench-scores.json": {
+            "raw_target": 0.5441666666666667,
+            "calibrated_target": 0.5441666666666667,
+            "raw_bidirectional": 0.31166666666666665,
+            "calibrated_bidirectional": 0.4175
+          },
+          "knowledge/landmarks-bench-scores.json": {
+            "raw_target": 0.6416666666666666,
+            "calibrated_target": 0.6725,
+            "raw_bidirectional": 0.5183333333333334,
+            "calibrated_bidirectional": 0.5841666666666667
+          },
+          "knowledge/regions-bench-scores.json": {
+            "raw_target": 0.7491666666666665,
+            "calibrated_target": 0.8191666666666668,
+            "raw_bidirectional": 0.6724999999999999,
+            "calibrated_bidirectional": 0.7491666666666668
+          },
+          "knowledge/taxonomy-bench-scores.json": {
+            "raw_target": 0.6191666666666666,
+            "calibrated_target": 0.6650000000000001,
+            "raw_bidirectional": 0.44,
+            "calibrated_bidirectional": 0.5508333333333334
+          },
+          "language-manipulation/affirmative_negative-bench-scores.json": {
+            "raw_target": 0.6991666666666667,
+            "calibrated_target": 0.7741666666666667,
+            "raw_bidirectional": 0.6816666666666668,
+            "calibrated_bidirectional": 0.7191666666666666
+          },
+          "language-manipulation/first_to_third_person-bench-scores.json": {
+            "raw_target": 0.6758333333333333,
+            "calibrated_target": 0.6599999999999998,
+            "raw_bidirectional": 0.6108333333333333,
+            "calibrated_bidirectional": 0.6075
+          },
+          "language-manipulation/masculine_feminine-bench-scores.json": {
+            "raw_target": 0.6691666666666667,
+            "calibrated_target": 0.6433333333333333,
+            "raw_bidirectional": 0.6099999999999999,
+            "calibrated_bidirectional": 0.5808333333333333
+          },
+          "language-manipulation/present_future-bench-scores.json": {
+            "raw_target": 0.6333333333333334,
+            "calibrated_target": 0.6258333333333332,
+            "raw_bidirectional": 0.5141666666666667,
+            "calibrated_bidirectional": 0.5425
+          },
+          "language-manipulation/singular_plural-bench-scores.json": {
+            "raw_target": 0.7341666666666665,
+            "calibrated_target": 0.7683333333333334,
+            "raw_bidirectional": 0.7241666666666667,
+            "calibrated_bidirectional": 0.7558333333333336
+          },
+          "math/addition_subtraction-bench-scores.json": {
+            "raw_target": 0.4958333333333333,
+            "calibrated_target": 0.49,
+            "raw_bidirectional": 0.25916666666666666,
+            "calibrated_bidirectional": 0.25416666666666665
+          },
+          "math/even_odd-bench-scores.json": {
+            "raw_target": 0.5,
+            "calibrated_target": 0.505,
+            "raw_bidirectional": 0.225,
+            "calibrated_bidirectional": 0.23
+          },
+          "math/min_max-bench-scores.json": {
+            "raw_target": 0.5841666666666666,
+            "calibrated_target": 0.6416666666666666,
+            "raw_bidirectional": 0.46,
+            "calibrated_bidirectional": 0.51
+          },
+          "math/multiplication-bench-scores.json": {
+            "raw_target": 0.5275,
+            "calibrated_target": 0.5241666666666667,
+            "raw_bidirectional": 0.31000000000000005,
+            "calibrated_bidirectional": 0.31250000000000006
+          },
+          "math/sequence_completion-bench-scores.json": {
+            "raw_target": 0.7150000000000002,
+            "calibrated_target": 0.7458333333333332,
+            "raw_bidirectional": 0.6791666666666668,
+            "calibrated_bidirectional": 0.7016666666666665
+          },
+          "math-languages/count_by_property-bench-scores.json": {
+            "raw_target": 0.5041666666666668,
+            "calibrated_target": 0.49916666666666665,
+            "raw_bidirectional": 0.29666666666666663,
+            "calibrated_bidirectional": 0.24666666666666667
+          },
+          "math-languages/count_occurrences-bench-scores.json": {
+            "raw_target": 0.4983333333333333,
+            "calibrated_target": 0.5016666666666667,
+            "raw_bidirectional": 0.22083333333333333,
+            "calibrated_bidirectional": 0.2016666666666667
+          },
+          "math-languages/count_repeated_objects-bench-scores.json": {
+            "raw_target": 0.4966666666666667,
+            "calibrated_target": 0.5025,
+            "raw_bidirectional": 0.27666666666666667,
+            "calibrated_bidirectional": 0.2483333333333333
+          },
+          "math-languages/digits_words-bench-scores.json": {
+            "raw_target": 0.5058333333333334,
+            "calibrated_target": 0.5033333333333334,
+            "raw_bidirectional": 0.285,
+            "calibrated_bidirectional": 0.2808333333333333
+          },
+          "math-languages/select_position-bench-scores.json": {
+            "raw_target": 0.4966666666666667,
+            "calibrated_target": 0.5066666666666666,
+            "raw_bidirectional": 0.21166666666666664,
+            "calibrated_bidirectional": 0.215
+          },
+          "reasoning/constraint_elimination-bench-scores.json": {
+            "raw_target": 0.3233333333333333,
+            "calibrated_target": 0.34333333333333327,
+            "raw_bidirectional": 0.01583333333333333,
+            "calibrated_bidirectional": 0.015
+          },
+          "reasoning/ordering-bench-scores.json": {
+            "raw_target": 0.495,
+            "calibrated_target": 0.5008333333333334,
+            "raw_bidirectional": 0.3233333333333333,
+            "calibrated_bidirectional": 0.32916666666666666
+          },
+          "reasoning/rule_chaining-bench-scores.json": {
+            "raw_target": 0.49583333333333335,
+            "calibrated_target": 0.49666666666666665,
+            "raw_bidirectional": 0.22916666666666663,
+            "calibrated_bidirectional": 0.24833333333333335
+          },
+          "reasoning/spatial-bench-scores.json": {
+            "raw_target": 0.5033333333333334,
+            "calibrated_target": 0.5016666666666666,
+            "raw_bidirectional": 0.2583333333333333,
+            "calibrated_bidirectional": 0.26416666666666666
+          },
+          "reasoning/temporal-bench-scores.json": {
+            "raw_target": 0.49,
+            "calibrated_target": 0.49416666666666664,
+            "raw_bidirectional": 0.20666666666666667,
+            "calibrated_bidirectional": 0.19916666666666663
+          }
+        },
+        "unique_targets": 1325
+      },
+      "Risposta:": {
+        "categories": {
+          "icl": {
+            "raw_target": 0.5091666666666667,
+            "calibrated_target": 0.5078333333333334,
+            "raw_bidirectional": 0.30616666666666664,
+            "calibrated_bidirectional": 0.29466666666666663
+          },
+          "knowledge": {
+            "raw_target": 0.6801666666666666,
+            "calibrated_target": 0.6780000000000002,
+            "raw_bidirectional": 0.5543333333333333,
+            "calibrated_bidirectional": 0.6036666666666666
+          },
+          "language-manipulation": {
+            "raw_target": 0.6823333333333332,
+            "calibrated_target": 0.6956666666666667,
+            "raw_bidirectional": 0.6281666666666667,
+            "calibrated_bidirectional": 0.643
+          },
+          "math": {
+            "raw_target": 0.5645,
+            "calibrated_target": 0.5858333333333333,
+            "raw_bidirectional": 0.3866666666666667,
+            "calibrated_bidirectional": 0.422
+          },
+          "math-languages": {
+            "raw_target": 0.5003333333333333,
+            "calibrated_target": 0.5026666666666666,
+            "raw_bidirectional": 0.25816666666666666,
+            "calibrated_bidirectional": 0.269
+          },
+          "reasoning": {
+            "raw_target": 0.4615,
+            "calibrated_target": 0.46749999999999997,
+            "raw_bidirectional": 0.20666666666666664,
+            "calibrated_bidirectional": 0.21333333333333332
+          }
+        },
+        "benchmarks": {
+          "icl/arbitrary_mappings-bench-scores.json": {
+            "raw_target": 0.5116666666666666,
+            "calibrated_target": 0.5116666666666666,
+            "raw_bidirectional": 0.275,
+            "calibrated_bidirectional": 0.26
+          },
+          "icl/object_locations-bench-scores.json": {
+            "raw_target": 0.5,
+            "calibrated_target": 0.505,
+            "raw_bidirectional": 0.2941666666666667,
+            "calibrated_bidirectional": 0.25583333333333336
+          },
+          "icl/person_objects-bench-scores.json": {
+            "raw_target": 0.5125,
+            "calibrated_target": 0.5041666666666667,
+            "raw_bidirectional": 0.32583333333333336,
+            "calibrated_bidirectional": 0.33083333333333337
+          },
+          "icl/person_profiles-bench-scores.json": {
+            "raw_target": 0.5116666666666666,
+            "calibrated_target": 0.5166666666666667,
+            "raw_bidirectional": 0.3558333333333332,
+            "calibrated_bidirectional": 0.34583333333333327
+          },
+          "icl/state_updates-bench-scores.json": {
+            "raw_target": 0.51,
+            "calibrated_target": 0.5016666666666666,
+            "raw_bidirectional": 0.28,
+            "calibrated_bidirectional": 0.2808333333333334
+          },
+          "knowledge/capitals-bench-scores.json": {
+            "raw_target": 0.8466666666666666,
+            "calibrated_target": 0.7616666666666668,
+            "raw_bidirectional": 0.8291666666666667,
+            "calibrated_bidirectional": 0.7475
+          },
+          "knowledge/colors-bench-scores.json": {
+            "raw_target": 0.5441666666666667,
+            "calibrated_target": 0.5475000000000001,
+            "raw_bidirectional": 0.31166666666666665,
+            "calibrated_bidirectional": 0.4258333333333333
+          },
+          "knowledge/landmarks-bench-scores.json": {
+            "raw_target": 0.6416666666666666,
+            "calibrated_target": 0.6041666666666667,
+            "raw_bidirectional": 0.5183333333333334,
+            "calibrated_bidirectional": 0.525
+          },
+          "knowledge/regions-bench-scores.json": {
+            "raw_target": 0.7491666666666665,
+            "calibrated_target": 0.8466666666666667,
+            "raw_bidirectional": 0.6724999999999999,
+            "calibrated_bidirectional": 0.7941666666666667
+          },
+          "knowledge/taxonomy-bench-scores.json": {
+            "raw_target": 0.6191666666666666,
+            "calibrated_target": 0.6299999999999999,
+            "raw_bidirectional": 0.44,
+            "calibrated_bidirectional": 0.5258333333333334
+          },
+          "language-manipulation/affirmative_negative-bench-scores.json": {
+            "raw_target": 0.6991666666666667,
+            "calibrated_target": 0.7875,
+            "raw_bidirectional": 0.6816666666666668,
+            "calibrated_bidirectional": 0.7333333333333333
+          },
+          "language-manipulation/first_to_third_person-bench-scores.json": {
+            "raw_target": 0.6758333333333333,
+            "calibrated_target": 0.6758333333333332,
+            "raw_bidirectional": 0.6108333333333333,
+            "calibrated_bidirectional": 0.6225
+          },
+          "language-manipulation/masculine_feminine-bench-scores.json": {
+            "raw_target": 0.6691666666666667,
+            "calibrated_target": 0.6166666666666667,
+            "raw_bidirectional": 0.6099999999999999,
+            "calibrated_bidirectional": 0.5533333333333333
+          },
+          "language-manipulation/present_future-bench-scores.json": {
+            "raw_target": 0.6333333333333334,
+            "calibrated_target": 0.6291666666666668,
+            "raw_bidirectional": 0.5141666666666667,
+            "calibrated_bidirectional": 0.5475000000000001
+          },
+          "language-manipulation/singular_plural-bench-scores.json": {
+            "raw_target": 0.7341666666666665,
+            "calibrated_target": 0.7691666666666667,
+            "raw_bidirectional": 0.7241666666666667,
+            "calibrated_bidirectional": 0.7583333333333334
+          },
+          "math/addition_subtraction-bench-scores.json": {
+            "raw_target": 0.4958333333333333,
+            "calibrated_target": 0.4875,
+            "raw_bidirectional": 0.25916666666666666,
+            "calibrated_bidirectional": 0.25499999999999995
+          },
+          "math/even_odd-bench-scores.json": {
+            "raw_target": 0.5,
+            "calibrated_target": 0.535,
+            "raw_bidirectional": 0.225,
+            "calibrated_bidirectional": 0.335
+          },
+          "math/min_max-bench-scores.json": {
+            "raw_target": 0.5841666666666666,
+            "calibrated_target": 0.6066666666666668,
+            "raw_bidirectional": 0.46,
+            "calibrated_bidirectional": 0.4883333333333333
+          },
+          "math/multiplication-bench-scores.json": {
+            "raw_target": 0.5275,
+            "calibrated_target": 0.53,
+            "raw_bidirectional": 0.31000000000000005,
+            "calibrated_bidirectional": 0.3041666666666667
+          },
+          "math/sequence_completion-bench-scores.json": {
+            "raw_target": 0.7150000000000002,
+            "calibrated_target": 0.77,
+            "raw_bidirectional": 0.6791666666666668,
+            "calibrated_bidirectional": 0.7275
+          },
+          "math-languages/count_by_property-bench-scores.json": {
+            "raw_target": 0.5041666666666668,
+            "calibrated_target": 0.5141666666666667,
+            "raw_bidirectional": 0.29666666666666663,
+            "calibrated_bidirectional": 0.29250000000000004
+          },
+          "math-languages/count_occurrences-bench-scores.json": {
+            "raw_target": 0.4983333333333333,
+            "calibrated_target": 0.4925,
+            "raw_bidirectional": 0.22083333333333333,
+            "calibrated_bidirectional": 0.21166666666666667
+          },
+          "math-languages/count_repeated_objects-bench-scores.json": {
+            "raw_target": 0.4966666666666667,
+            "calibrated_target": 0.4975,
+            "raw_bidirectional": 0.27666666666666667,
+            "calibrated_bidirectional": 0.28
+          },
+          "math-languages/digits_words-bench-scores.json": {
+            "raw_target": 0.5058333333333334,
+            "calibrated_target": 0.5100000000000001,
+            "raw_bidirectional": 0.285,
+            "calibrated_bidirectional": 0.31916666666666665
+          },
+          "math-languages/select_position-bench-scores.json": {
+            "raw_target": 0.4966666666666667,
+            "calibrated_target": 0.4991666666666667,
+            "raw_bidirectional": 0.21166666666666664,
+            "calibrated_bidirectional": 0.24166666666666667
+          },
+          "reasoning/constraint_elimination-bench-scores.json": {
+            "raw_target": 0.3233333333333333,
+            "calibrated_target": 0.3533333333333332,
+            "raw_bidirectional": 0.01583333333333333,
+            "calibrated_bidirectional": 0.013333333333333332
+          },
+          "reasoning/ordering-bench-scores.json": {
+            "raw_target": 0.495,
+            "calibrated_target": 0.49916666666666665,
+            "raw_bidirectional": 0.3233333333333333,
+            "calibrated_bidirectional": 0.33166666666666655
+          },
+          "reasoning/rule_chaining-bench-scores.json": {
+            "raw_target": 0.49583333333333335,
+            "calibrated_target": 0.49666666666666665,
+            "raw_bidirectional": 0.22916666666666663,
+            "calibrated_bidirectional": 0.25833333333333336
+          },
+          "reasoning/spatial-bench-scores.json": {
+            "raw_target": 0.5033333333333334,
+            "calibrated_target": 0.4958333333333333,
+            "raw_bidirectional": 0.2583333333333333,
+            "calibrated_bidirectional": 0.25999999999999995
+          },
+          "reasoning/temporal-bench-scores.json": {
+            "raw_target": 0.49,
+            "calibrated_target": 0.49250000000000005,
+            "raw_bidirectional": 0.20666666666666667,
+            "calibrated_bidirectional": 0.2033333333333333
+          }
+        },
+        "unique_targets": 1325
+      }
+    }
+  }
+}

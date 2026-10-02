@@ -1,0 +1,166 @@
+{
+  "settings": {
+    "blocks": 4096,
+    "sequence_length": 1024,
+    "batch_size": 8,
+    "seed": 1729,
+    "baseline_bins": 20,
+    "review_per_method": 12,
+    "reuse": true
+  },
+  "blocks": 4096,
+  "token_sample": 4194304,
+  "models": {
+    "old": "35m_balanced_1b",
+    "sanitized": "35m_newbalsanitized_1b"
+  },
+  "dataset": "artifacts/datasets/balanced_sanitized_v2_16k/train_balanced",
+  "source": "web",
+  "tokenizer": "artifacts/tokenizers/production_16k/tokenizer.model",
+  "mean_old_loss": 3.2752533372840844,
+  "mean_sanitized_loss": 2.9281484186067246,
+  "quantiles": {
+    "old_loss": {
+      "0.01": 2.2566172599792482,
+      "0.05": 2.698479950428009,
+      "0.5": 3.208554267883301,
+      "0.9": 3.7985990047454834,
+      "0.95": 4.155982732772827,
+      "0.99": 4.773298239707947
+    },
+    "delta": {
+      "0.01": -0.0698329448699951,
+      "0.05": -0.005611598491668701,
+      "0.5": 0.14078998565673828,
+      "0.9": 1.2280244827270508,
+      "0.95": 1.6451587975025177,
+      "0.99": 1.8491378843784332
+    },
+    "conditional_delta": {
+      "0.01": -0.5855048298835754,
+      "0.05": -0.18107014894485474,
+      "0.5": 0.0,
+      "0.9": 0.9198392629623413,
+      "0.95": 1.4586477279663086,
+      "0.99": 1.6278914391994483
+    }
+  },
+  "ranking": {
+    "old_loss": {
+      "0.01": {
+        "blocks": 41,
+        "cutoff": 4.776858329772949,
+        "finance_or_vaping_fraction": 0.04878048780487805,
+        "mean_old_loss": 4.976635083919618,
+        "mean_sanitized_loss": 4.074981538260856,
+        "mean_delta": 0.9016535456587629,
+        "fraction_of_total_positive_delta": 0.026139290561759364
+      },
+      "0.05": {
+        "blocks": 205,
+        "cutoff": 4.162496566772461,
+        "finance_or_vaping_fraction": 0.1951219512195122,
+        "mean_old_loss": 4.547394722263988,
+        "mean_sanitized_loss": 3.557707065489234,
+        "mean_delta": 0.9896876567747535,
+        "fraction_of_total_positive_delta": 0.14183750883253757
+      },
+      "0.1": {
+        "blocks": 410,
+        "cutoff": 3.798779010772705,
+        "finance_or_vaping_fraction": 0.16585365853658537,
+        "mean_old_loss": 4.253265193032055,
+        "mean_sanitized_loss": 3.5410521748589305,
+        "mean_delta": 0.7122130181731248,
+        "fraction_of_total_positive_delta": 0.204676390639963
+      },
+      "0.2": {
+        "blocks": 819,
+        "cutoff": 3.5296154022216797,
+        "finance_or_vaping_fraction": 0.11477411477411477,
+        "mean_old_loss": 3.9492606968233437,
+        "mean_sanitized_loss": 3.482411335385035,
+        "mean_delta": 0.46684936143830874,
+        "fraction_of_total_positive_delta": 0.26923492880068195
+      }
+    },
+    "delta": {
+      "0.01": {
+        "blocks": 41,
+        "cutoff": 1.8491647243499756,
+        "finance_or_vaping_fraction": 0.8292682926829268,
+        "mean_old_loss": 4.129090727829352,
+        "mean_sanitized_loss": 2.139470149831074,
+        "mean_delta": 1.9896205779982776,
+        "fraction_of_total_positive_delta": 0.05688356826481794
+      },
+      "0.05": {
+        "blocks": 205,
+        "cutoff": 1.645536184310913,
+        "finance_or_vaping_fraction": 0.9463414634146341,
+        "mean_old_loss": 3.3261488042226652,
+        "mean_sanitized_loss": 1.5506767296209567,
+        "mean_delta": 1.7754720746017083,
+        "fraction_of_total_positive_delta": 0.25380514273604293
+      },
+      "0.1": {
+        "blocks": 410,
+        "cutoff": 1.2284815311431885,
+        "finance_or_vaping_fraction": 0.9,
+        "mean_old_loss": 3.3078053776810807,
+        "mean_sanitized_loss": 1.6784707706149031,
+        "mean_delta": 1.6293346070661778,
+        "fraction_of_total_positive_delta": 0.46582935144612014
+      },
+      "0.2": {
+        "blocks": 819,
+        "cutoff": 0.505345344543457,
+        "finance_or_vaping_fraction": 0.6471306471306472,
+        "mean_old_loss": 3.442152526061322,
+        "mean_sanitized_loss": 2.215610661203899,
+        "mean_delta": 1.2265418648574233,
+        "fraction_of_total_positive_delta": 0.7004852403419592
+      }
+    },
+    "conditional_delta": {
+      "0.01": {
+        "blocks": 41,
+        "cutoff": 1.6317694187164307,
+        "finance_or_vaping_fraction": 0.975609756097561,
+        "mean_old_loss": 3.212358934123342,
+        "mean_sanitized_loss": 1.3717337003568324,
+        "mean_delta": 1.8406252337665092,
+        "fraction_of_total_positive_delta": 0.052623767713662215
+      },
+      "0.05": {
+        "blocks": 205,
+        "cutoff": 1.4589470624923706,
+        "finance_or_vaping_fraction": 0.9804878048780488,
+        "mean_old_loss": 3.0726289528172193,
+        "mean_sanitized_loss": 1.3526545675789439,
+        "mean_delta": 1.7199743852382754,
+        "fraction_of_total_positive_delta": 0.24587170397803454
+      },
+      "0.1": {
+        "blocks": 410,
+        "cutoff": 0.920722246170044,
+        "finance_or_vaping_fraction": 0.948780487804878,
+        "mean_old_loss": 3.1651397466659548,
+        "mean_sanitized_loss": 1.5669637142158137,
+        "mean_delta": 1.598176032450141,
+        "fraction_of_total_positive_delta": 0.4569210654854425
+      },
+      "0.2": {
+        "blocks": 819,
+        "cutoff": 0.2466592788696289,
+        "finance_or_vaping_fraction": 0.6752136752136753,
+        "mean_old_loss": 3.3063858679071596,
+        "mean_sanitized_loss": 2.128759123466827,
+        "mean_delta": 1.1776267444403326,
+        "fraction_of_total_positive_delta": 0.6725495286769484
+      }
+    }
+  },
+  "note": "Topic flag includes legitimate text. Ranking enrichment is not detector precision.",
+  "baseline_topic_fraction": 0.183349609375
+}

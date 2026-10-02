@@ -1,0 +1,2516 @@
+{
+  "old": {
+    "categories": {
+      "icl": {
+        "context": 0.6371666666666667,
+        "target": 0.523,
+        "bidirectional": 0.3386666666666666,
+        "centered_target": 0.7023333333333333,
+        "interaction_lift": 0.02895086090351855,
+        "target_bias_variance": 0.15237296499364206
+      },
+      "knowledge": {
+        "context": 0.7549999999999999,
+        "target": 0.6565000000000001,
+        "bidirectional": 0.5241666666666667,
+        "centered_target": 0.8051666666666666,
+        "interaction_lift": 0.4531403243936244,
+        "target_bias_variance": 0.6243834104660819
+      },
+      "language-manipulation": {
+        "context": 0.9593333333333334,
+        "target": 0.7673333333333334,
+        "bidirectional": 0.739,
+        "centered_target": 0.9861666666666666,
+        "interaction_lift": 0.9917687429357145,
+        "target_bias_variance": 1.4565345478894738
+      },
+      "math": {
+        "context": 0.6568333333333334,
+        "target": 0.5715,
+        "bidirectional": 0.3826666666666666,
+        "centered_target": 0.7163333333333334,
+        "interaction_lift": 0.083575339749366,
+        "target_bias_variance": 0.7818651066868052
+      },
+      "math-languages": {
+        "context": 0.5191666666666667,
+        "target": 0.5033333333333334,
+        "bidirectional": 0.2656666666666667,
+        "centered_target": 0.5475000000000001,
+        "interaction_lift": 0.004263929373025887,
+        "target_bias_variance": 0.5086781028858456
+      },
+      "reasoning": {
+        "context": 0.41516666666666663,
+        "target": 0.454,
+        "bidirectional": 0.20949999999999996,
+        "centered_target": 0.4241666666666667,
+        "interaction_lift": -0.07374919679760931,
+        "target_bias_variance": 0.3653120939457793
+      }
+    },
+    "benchmarks": {
+      "icl": [
+        {
+          "context": 0.6791666666666667,
+          "target": 0.53,
+          "bidirectional": 0.36333333333333334,
+          "centered_target": 0.7825,
+          "interaction_lift": 0.06681700840592385,
+          "target_bias_variance": 0.3048641604377788,
+          "benchmark": "arbitrary_mappings-bench-scores.json",
+          "benchmark_id": "icl_arbitrary_mappings",
+          "member_sha256": "67d267ba4b5e1f0809431c7e658be81429c15f3fc10297c81024d36144e146d5"
+        },
+        {
+          "context": 0.595,
+          "target": 0.5191666666666667,
+          "bidirectional": 0.3066666666666667,
+          "centered_target": 0.6549999999999998,
+          "interaction_lift": 0.01871611364398682,
+          "target_bias_variance": 0.22307176472646886,
+          "benchmark": "object_locations-bench-scores.json",
+          "benchmark_id": "icl_object_location_bindings",
+          "member_sha256": "0e4a5eefa4056e99a293fa2ff409db009bd960d8a70aa639b43154d1e3b9236f"
+        },
+        {
+          "context": 0.6258333333333332,
+          "target": 0.5233333333333333,
+          "bidirectional": 0.34666666666666657,
+          "centered_target": 0.6833333333333335,
+          "interaction_lift": 0.018567256937424333,
+          "target_bias_variance": 0.10698470056327344,
+          "benchmark": "person_objects-bench-scores.json",
+          "benchmark_id": "icl_person_object_bindings",
+          "member_sha256": "f70057619cf4358d1b52696860a7e493fcf52ccc4a15c0f049e52ae1472242e6"
+        },
+        {
+          "context": 0.7033333333333335,
+          "target": 0.5299999999999999,
+          "bidirectional": 0.38249999999999995,
+          "centered_target": 0.7683333333333333,
+          "interaction_lift": 0.027381885490956784,
+          "target_bias_variance": 0.05675688664105458,
+          "benchmark": "person_profiles-bench-scores.json",
+          "benchmark_id": "icl_person_profiles",
+          "member_sha256": "c6928bf607d4366c2b133a7a83e4b0681cb048b6d858d284e31c328359ebd3fc"
+        },
+        {
+          "context": 0.5825,
+          "target": 0.5125,
+          "bidirectional": 0.29416666666666663,
+          "centered_target": 0.6224999999999999,
+          "interaction_lift": 0.013272040039300936,
+          "target_bias_variance": 0.07018731259963445,
+          "benchmark": "state_updates-bench-scores.json",
+          "benchmark_id": "icl_state_updates",
+          "member_sha256": "52fe84ef0d4baa48ca100ed79251efa648d5297f70c7c123174667a94656096f"
+        }
+      ],
+      "knowledge": [
+        {
+          "context": 0.9058333333333333,
+          "target": 0.7416666666666667,
+          "bidirectional": 0.6858333333333333,
+          "centered_target": 0.9316666666666668,
+          "interaction_lift": 0.6230771809035823,
+          "target_bias_variance": 0.534127788562072,
+          "benchmark": "capitals-bench-scores.json",
+          "benchmark_id": "country_capitals",
+          "member_sha256": "c821272613059f5a683a93791f5c8217ebc26b87e56d28769c86675ec16618b8"
+        },
+        {
+          "context": 0.5616666666666668,
+          "target": 0.5341666666666667,
+          "bidirectional": 0.3108333333333333,
+          "centered_target": 0.6008333333333334,
+          "interaction_lift": 0.0392546349565188,
+          "target_bias_variance": 0.7131207230574644,
+          "benchmark": "colors-bench-scores.json",
+          "benchmark_id": "typical_object_colors",
+          "member_sha256": "4813d549b8442c684929a76383f0616f25291de00a8f0a0147ac46b037344b58"
+        },
+        {
+          "context": 0.6908333333333334,
+          "target": 0.56,
+          "bidirectional": 0.395,
+          "centered_target": 0.8174999999999999,
+          "interaction_lift": 0.21446130982750933,
+          "target_bias_variance": 0.947232821168634,
+          "benchmark": "landmarks-bench-scores.json",
+          "benchmark_id": "landmark_cities",
+          "member_sha256": "d083bb9c3fc0fdda38f1f05ea3252eb46129c375435ea817b72d4297e7dcb98c"
+        },
+        {
+          "context": 0.9733333333333333,
+          "target": 0.8841666666666668,
+          "bidirectional": 0.8641666666666667,
+          "centered_target": 0.9766666666666667,
+          "interaction_lift": 1.2416498293777307,
+          "target_bias_variance": 0.6292330919241512,
+          "benchmark": "regions-bench-scores.json",
+          "benchmark_id": "regions_city",
+          "member_sha256": "67925bf615fb432149dca46f0c94fa9d61bacf2840407a29fdd0662f3f876bdc"
+        },
+        {
+          "context": 0.6433333333333333,
+          "target": 0.5624999999999999,
+          "bidirectional": 0.365,
+          "centered_target": 0.6991666666666666,
+          "interaction_lift": 0.14725866690278053,
+          "target_bias_variance": 0.2982026276180882,
+          "benchmark": "taxonomy-bench-scores.json",
+          "benchmark_id": "entity_taxonomy",
+          "member_sha256": "afe254a8c0449b12c835eb032519a7b82e439f5f794f7bfb695c59e49ddcd91b"
+        }
+      ],
+      "language-manipulation": [
+        {
+          "context": 0.9966666666666666,
+          "target": 0.8233333333333335,
+          "bidirectional": 0.8225,
+          "centered_target": 1.0,
+          "interaction_lift": 0.9163599325063685,
+          "target_bias_variance": 0.5802296023106764,
+          "benchmark": "affirmative_negative-bench-scores.json",
+          "benchmark_id": "few_shot_affirmative_to_negative",
+          "member_sha256": "73e73a62e023fb366fb86b9df1df2d43d8e432ee698be73379f64099b06aa3d9"
+        },
+        {
+          "context": 0.9691666666666667,
+          "target": 0.7825,
+          "bidirectional": 0.7558333333333332,
+          "centered_target": 0.9958333333333335,
+          "interaction_lift": 0.7534355845053992,
+          "target_bias_variance": 0.432671099122222,
+          "benchmark": "first_to_third_person-bench-scores.json",
+          "benchmark_id": "few_shot_first_to_third_person",
+          "member_sha256": "4120f5bdfb4580c2804087d08eaf0779b49be10fd4d9e798eeaba728aeaafa40"
+        },
+        {
+          "context": 0.9608333333333333,
+          "target": 0.7133333333333333,
+          "bidirectional": 0.6975,
+          "centered_target": 0.9875,
+          "interaction_lift": 1.0299054112037025,
+          "target_bias_variance": 1.9115745466461413,
+          "benchmark": "masculine_feminine-bench-scores.json",
+          "benchmark_id": "few_shot_masculine_to_feminine",
+          "member_sha256": "a4795356760231e5fd999ea3990531a0b87c0ec7751d7bc144c64ccd545841b9"
+        },
+        {
+          "context": 0.8774999999999998,
+          "target": 0.7533333333333333,
+          "bidirectional": 0.6591666666666666,
+          "centered_target": 0.9475,
+          "interaction_lift": 0.3525320887565613,
+          "target_bias_variance": 0.176161815764567,
+          "benchmark": "present_future-bench-scores.json",
+          "benchmark_id": "few_shot_present_to_future",
+          "member_sha256": "d81efc02f42e96755d2dc031cfc1fd5e714e639b90bfd0d1449d236417e812f8"
+        },
+        {
+          "context": 0.9925,
+          "target": 0.7641666666666669,
+          "bidirectional": 0.7600000000000001,
+          "centered_target": 1.0,
+          "interaction_lift": 1.9066106977065402,
+          "target_bias_variance": 4.182035675603762,
+          "benchmark": "singular_plural-bench-scores.json",
+          "benchmark_id": "few_shot_singular_to_plural",
+          "member_sha256": "4da32853b81eacf68ac3d7113cc0f654fc2888e4fbd5a958f7a7c469f8462ee4"
+        }
+      ],
+      "math": [
+        {
+          "context": 0.5166666666666667,
+          "target": 0.48666666666666664,
+          "bidirectional": 0.24,
+          "centered_target": 0.48499999999999993,
+          "interaction_lift": 0.00778920978307724,
+          "target_bias_variance": 0.7169726547973813,
+          "benchmark": "addition_subtraction-bench-scores.json",
+          "benchmark_id": "addition_subtraction",
+          "member_sha256": "70d088306587ffe3831cb2c3d117f2b1aa5ecd56b828ab7ccecbe05c4d6aee5e"
+        },
+        {
+          "context": 0.455,
+          "target": 0.5,
+          "bidirectional": 0.185,
+          "centered_target": 0.55,
+          "interaction_lift": 0.005197591781616211,
+          "target_bias_variance": 1.0729874438562523,
+          "benchmark": "even_odd-bench-scores.json",
+          "benchmark_id": "even_odd",
+          "member_sha256": "939999b607203c4e10873aa78a2ec682a2bd3a6367e244a3cf674cc1878acd94"
+        },
+        {
+          "context": 0.7483333333333333,
+          "target": 0.5933333333333334,
+          "bidirectional": 0.45083333333333336,
+          "centered_target": 0.9458333333333334,
+          "interaction_lift": 0.16746296733617783,
+          "target_bias_variance": 1.642021144226434,
+          "benchmark": "min_max-bench-scores.json",
+          "benchmark_id": "minimum_maximum",
+          "member_sha256": "8e77c222a058694472e8329cfdfd5b8770a738392b9a37a921a177264edfd997"
+        },
+        {
+          "context": 0.645,
+          "target": 0.5583333333333332,
+          "bidirectional": 0.3725,
+          "centered_target": 0.6333333333333333,
+          "interaction_lift": 0.12320722699165344,
+          "target_bias_variance": 0.440472819513149,
+          "benchmark": "multiplication-bench-scores.json",
+          "benchmark_id": "single_digit_multiplication",
+          "member_sha256": "590f210fe4264e125748da2ced796a3057003b38fccac10dadae6f6256cfa85f"
+        },
+        {
+          "context": 0.9191666666666667,
+          "target": 0.7191666666666666,
+          "bidirectional": 0.6649999999999998,
+          "centered_target": 0.9675,
+          "interaction_lift": 0.11421970285430529,
+          "target_bias_variance": 0.03687147104080929,
+          "benchmark": "sequence_completion-bench-scores.json",
+          "benchmark_id": "integer_sequence_completion",
+          "member_sha256": "ec218f360fc21df4253c8dac401c06767891b3ea7a9119fe39be2385575080aa"
+        }
+      ],
+      "math-languages": [
+        {
+          "context": 0.44083333333333335,
+          "target": 0.4966666666666667,
+          "bidirectional": 0.2325,
+          "centered_target": 0.42750000000000005,
+          "interaction_lift": -0.0025028491020202635,
+          "target_bias_variance": 0.3747997470835445,
+          "benchmark": "count_by_property-bench-scores.json",
+          "benchmark_id": "count_items_by_property",
+          "member_sha256": "eb3fa389fb649291247983ba5ddc8d6b54b5eafc4a2bb2f18e4b6439c4ddffd9"
+        },
+        {
+          "context": 0.5033333333333333,
+          "target": 0.5016666666666667,
+          "bidirectional": 0.24999999999999997,
+          "centered_target": 0.545,
+          "interaction_lift": 0.0017252299189567566,
+          "target_bias_variance": 0.11272936833619251,
+          "benchmark": "count_occurrences-bench-scores.json",
+          "benchmark_id": "count_sequence_occurrences",
+          "member_sha256": "dfd37642e9595010bc1a4881f5dabe35b37b6876b6c7224a495867f893052456"
+        },
+        {
+          "context": 0.5775000000000001,
+          "target": 0.51,
+          "bidirectional": 0.3191666666666667,
+          "centered_target": 0.6266666666666667,
+          "interaction_lift": 0.006137343943119049,
+          "target_bias_variance": 0.12208090921104517,
+          "benchmark": "count_repeated_objects-bench-scores.json",
+          "benchmark_id": "count_repeated_objects",
+          "member_sha256": "22652b4dfa62fd7f897b8206433e3ce749cc606e42f5465a1b5c9ea2f70cafda"
+        },
+        {
+          "context": 0.5783333333333335,
+          "target": 0.51,
+          "bidirectional": 0.29583333333333334,
+          "centered_target": 0.6575,
+          "interaction_lift": 0.022669594536224972,
+          "target_bias_variance": 0.5861660208377422,
+          "benchmark": "digits_words-bench-scores.json",
+          "benchmark_id": "digits_words_conversion",
+          "member_sha256": "731ee5c77ea5c80334b32ad0ae82d4a394e10679d311bfd5c2d12233cca03b14"
+        },
+        {
+          "context": 0.4958333333333333,
+          "target": 0.49833333333333335,
+          "bidirectional": 0.23083333333333333,
+          "centered_target": 0.4808333333333333,
+          "interaction_lift": -0.00670967243115108,
+          "target_bias_variance": 1.347614468960703,
+          "benchmark": "select_position-bench-scores.json",
+          "benchmark_id": "select_sequence_position",
+          "member_sha256": "72c4483d8619533cfb3d7b10e9b0962b55430d738bd7411de1ad6149897293e3"
+        }
+      ],
+      "reasoning": [
+        {
+          "context": 0.010833333333333332,
+          "target": 0.265,
+          "bidirectional": 0.01,
+          "centered_target": 0.003333333333333333,
+          "interaction_lift": -0.38440328267216683,
+          "target_bias_variance": 0.1911065320483525,
+          "benchmark": "constraint_elimination-bench-scores.json",
+          "benchmark_id": "reasoning_constraint_elimination",
+          "member_sha256": "9f46c88f3ee03bd5f12e9fa3fe5a668a4b254697954872523f92590474f12f20"
+        },
+        {
+          "context": 0.4850000000000001,
+          "target": 0.5033333333333334,
+          "bidirectional": 0.27,
+          "centered_target": 0.4975,
+          "interaction_lift": -0.001320369839668274,
+          "target_bias_variance": 0.22310192539779916,
+          "benchmark": "ordering-bench-scores.json",
+          "benchmark_id": "reasoning_transitive_ordering",
+          "member_sha256": "c26f82af689c72b02a16292b31136beafb63f608d0fb7f1d718621b9a01b2328"
+        },
+        {
+          "context": 0.5075,
+          "target": 0.495,
+          "bidirectional": 0.24,
+          "centered_target": 0.5316666666666667,
+          "interaction_lift": 0.0038555399576822792,
+          "target_bias_variance": 0.305538773136774,
+          "benchmark": "rule_chaining-bench-scores.json",
+          "benchmark_id": "reasoning_rule_chaining",
+          "member_sha256": "421cf156d64dd59c230394e77454d0193bc528a121dded9ac74bb59d5f07de5c"
+        },
+        {
+          "context": 0.5708333333333333,
+          "target": 0.5091666666666668,
+          "bidirectional": 0.285,
+          "centered_target": 0.6241666666666668,
+          "interaction_lift": 0.020287752221028008,
+          "target_bias_variance": 0.5944524853148586,
+          "benchmark": "spatial-bench-scores.json",
+          "benchmark_id": "reasoning_spatial_ordering",
+          "member_sha256": "3603defe61e0a4b71846033dba41ff3ca1423cb180baeaa81dfefc80a536a9f3"
+        },
+        {
+          "context": 0.5016666666666666,
+          "target": 0.4975,
+          "bidirectional": 0.2425,
+          "centered_target": 0.4641666666666667,
+          "interaction_lift": -0.0071656236549218185,
+          "target_bias_variance": 0.512360753831112,
+          "benchmark": "temporal-bench-scores.json",
+          "benchmark_id": "reasoning_temporal_ordering",
+          "member_sha256": "3d488c64a787b58c18e9fa026d2c5bdb95a4f3d1c73b4c3d71d3def3f9233239"
+        }
+      ]
+    },
+    "overall": {
+      "context": 0.657111111111111,
+      "target": 0.5792777777777779,
+      "bidirectional": 0.40994444444444444,
+      "centered_target": 0.6969444444444445,
+      "interaction_lift": 0.24799166675960663,
+      "target_bias_variance": 0.6481910378112713
+    }
+  },
+  "sanitized": {
+    "categories": {
+      "icl": {
+        "context": 0.6023333333333334,
+        "target": 0.5121666666666667,
+        "bidirectional": 0.31199999999999994,
+        "centered_target": 0.6726666666666665,
+        "interaction_lift": 0.024328730104698076,
+        "target_bias_variance": 0.24595840888330792
+      },
+      "knowledge": {
+        "context": 0.7733333333333332,
+        "target": 0.6313333333333333,
+        "bidirectional": 0.4934999999999999,
+        "centered_target": 0.8475000000000001,
+        "interaction_lift": 0.3410485903325535,
+        "target_bias_variance": 0.5997372557941898
+      },
+      "language-manipulation": {
+        "context": 0.9351666666666667,
+        "target": 0.7046666666666666,
+        "bidirectional": 0.6608333333333334,
+        "centered_target": 0.9773333333333334,
+        "interaction_lift": 0.6884137601960273,
+        "target_bias_variance": 1.4079365507477632
+      },
+      "math": {
+        "context": 0.6608333333333334,
+        "target": 0.5785,
+        "bidirectional": 0.40183333333333326,
+        "centered_target": 0.7320000000000001,
+        "interaction_lift": 0.0922535438532148,
+        "target_bias_variance": 2.1635629864757915
+      },
+      "math-languages": {
+        "context": 0.5079999999999999,
+        "target": 0.5018333333333332,
+        "bidirectional": 0.26149999999999995,
+        "centered_target": 0.5316666666666666,
+        "interaction_lift": 0.0024490687608718763,
+        "target_bias_variance": 0.5338807451055552
+      },
+      "reasoning": {
+        "context": 0.4081666666666667,
+        "target": 0.43966666666666665,
+        "bidirectional": 0.188,
+        "centered_target": 0.4078333333333333,
+        "interaction_lift": -0.07854060105184713,
+        "target_bias_variance": 0.4075844738256976
+      }
+    },
+    "benchmarks": {
+      "icl": [
+        {
+          "context": 0.67,
+          "target": 0.5208333333333334,
+          "bidirectional": 0.35416666666666663,
+          "centered_target": 0.7533333333333334,
+          "interaction_lift": 0.07141114521026613,
+          "target_bias_variance": 0.6394665966356489,
+          "benchmark": "arbitrary_mappings-bench-scores.json",
+          "benchmark_id": "icl_arbitrary_mappings",
+          "member_sha256": "67d267ba4b5e1f0809431c7e658be81429c15f3fc10297c81024d36144e146d5"
+        },
+        {
+          "context": 0.5641666666666666,
+          "target": 0.5149999999999999,
+          "bidirectional": 0.3041666666666666,
+          "centered_target": 0.6191666666666666,
+          "interaction_lift": 0.013741767677522821,
+          "target_bias_variance": 0.2458538964880458,
+          "benchmark": "object_locations-bench-scores.json",
+          "benchmark_id": "icl_object_location_bindings",
+          "member_sha256": "0e4a5eefa4056e99a293fa2ff409db009bd960d8a70aa639b43154d1e3b9236f"
+        },
+        {
+          "context": 0.6058333333333333,
+          "target": 0.5091666666666668,
+          "bidirectional": 0.2975,
+          "centered_target": 0.7091666666666666,
+          "interaction_lift": 0.01265368752678235,
+          "target_bias_variance": 0.1447781872851743,
+          "benchmark": "person_objects-bench-scores.json",
+          "benchmark_id": "icl_person_object_bindings",
+          "member_sha256": "f70057619cf4358d1b52696860a7e493fcf52ccc4a15c0f049e52ae1472242e6"
+        },
+        {
+          "context": 0.615,
+          "target": 0.5083333333333333,
+          "bidirectional": 0.32416666666666666,
+          "centered_target": 0.7166666666666666,
+          "interaction_lift": 0.016226617975130923,
+          "target_bias_variance": 0.09523438375976405,
+          "benchmark": "person_profiles-bench-scores.json",
+          "benchmark_id": "icl_person_profiles",
+          "member_sha256": "c6928bf607d4366c2b133a7a83e4b0681cb048b6d858d284e31c328359ebd3fc"
+        },
+        {
+          "context": 0.5566666666666666,
+          "target": 0.5075,
+          "bidirectional": 0.2799999999999999,
+          "centered_target": 0.565,
+          "interaction_lift": 0.0076104321337881545,
+          "target_bias_variance": 0.10445898024790651,
+          "benchmark": "state_updates-bench-scores.json",
+          "benchmark_id": "icl_state_updates",
+          "member_sha256": "52fe84ef0d4baa48ca100ed79251efa648d5297f70c7c123174667a94656096f"
+        }
+      ],
+      "knowledge": [
+        {
+          "context": 0.9233333333333333,
+          "target": 0.7391666666666667,
+          "bidirectional": 0.6841666666666667,
+          "centered_target": 0.9658333333333334,
+          "interaction_lift": 0.5132417996653489,
+          "target_bias_variance": 0.46687346935492074,
+          "benchmark": "capitals-bench-scores.json",
+          "benchmark_id": "country_capitals",
+          "member_sha256": "c821272613059f5a683a93791f5c8217ebc26b87e56d28769c86675ec16618b8"
+        },
+        {
+          "context": 0.5683333333333332,
+          "target": 0.51,
+          "bidirectional": 0.26583333333333337,
+          "centered_target": 0.78,
+          "interaction_lift": 0.08842547483245536,
+          "target_bias_variance": 0.8710838753248976,
+          "benchmark": "colors-bench-scores.json",
+          "benchmark_id": "typical_object_colors",
+          "member_sha256": "4813d549b8442c684929a76383f0616f25291de00a8f0a0147ac46b037344b58"
+        },
+        {
+          "context": 0.7091666666666666,
+          "target": 0.5625,
+          "bidirectional": 0.38749999999999984,
+          "centered_target": 0.7716666666666664,
+          "interaction_lift": 0.2091722911780789,
+          "target_bias_variance": 0.8280230536164079,
+          "benchmark": "landmarks-bench-scores.json",
+          "benchmark_id": "landmark_cities",
+          "member_sha256": "d083bb9c3fc0fdda38f1f05ea3252eb46129c375435ea817b72d4297e7dcb98c"
+        },
+        {
+          "context": 0.9483333333333333,
+          "target": 0.7849999999999998,
+          "bidirectional": 0.7391666666666665,
+          "centered_target": 0.9841666666666667,
+          "interaction_lift": 0.7255435999234517,
+          "target_bias_variance": 0.5162091309510656,
+          "benchmark": "regions-bench-scores.json",
+          "benchmark_id": "regions_city",
+          "member_sha256": "67925bf615fb432149dca46f0c94fa9d61bacf2840407a29fdd0662f3f876bdc"
+        },
+        {
+          "context": 0.7174999999999998,
+          "target": 0.56,
+          "bidirectional": 0.3908333333333333,
+          "centered_target": 0.7358333333333333,
+          "interaction_lift": 0.16885978606343266,
+          "target_bias_variance": 0.3164967497236566,
+          "benchmark": "taxonomy-bench-scores.json",
+          "benchmark_id": "entity_taxonomy",
+          "member_sha256": "afe254a8c0449b12c835eb032519a7b82e439f5f794f7bfb695c59e49ddcd91b"
+        }
+      ],
+      "language-manipulation": [
+        {
+          "context": 0.9983333333333334,
+          "target": 0.8558333333333333,
+          "bidirectional": 0.8558333333333333,
+          "centered_target": 1.0,
+          "interaction_lift": 0.8845475510302045,
+          "target_bias_variance": 0.41338817508340947,
+          "benchmark": "affirmative_negative-bench-scores.json",
+          "benchmark_id": "few_shot_affirmative_to_negative",
+          "member_sha256": "73e73a62e023fb366fb86b9df1df2d43d8e432ee698be73379f64099b06aa3d9"
+        },
+        {
+          "context": 0.9591666666666667,
+          "target": 0.6966666666666664,
+          "bidirectional": 0.6675,
+          "centered_target": 0.995,
+          "interaction_lift": 0.44863835940758384,
+          "target_bias_variance": 0.4269900456980951,
+          "benchmark": "first_to_third_person-bench-scores.json",
+          "benchmark_id": "few_shot_first_to_third_person",
+          "member_sha256": "4120f5bdfb4580c2804087d08eaf0779b49be10fd4d9e798eeaba728aeaafa40"
+        },
+        {
+          "context": 0.9241666666666666,
+          "target": 0.6416666666666666,
+          "bidirectional": 0.6,
+          "centered_target": 0.9650000000000002,
+          "interaction_lift": 0.6999036927024521,
+          "target_bias_variance": 2.3002477540240474,
+          "benchmark": "masculine_feminine-bench-scores.json",
+          "benchmark_id": "few_shot_masculine_to_feminine",
+          "member_sha256": "a4795356760231e5fd999ea3990531a0b87c0ec7751d7bc144c64ccd545841b9"
+        },
+        {
+          "context": 0.8558333333333333,
+          "target": 0.6458333333333333,
+          "bidirectional": 0.5441666666666667,
+          "centered_target": 0.9408333333333333,
+          "interaction_lift": 0.26225104808807376,
+          "target_bias_variance": 0.31137791079410027,
+          "benchmark": "present_future-bench-scores.json",
+          "benchmark_id": "few_shot_present_to_future",
+          "member_sha256": "d81efc02f42e96755d2dc031cfc1fd5e714e639b90bfd0d1449d236417e812f8"
+        },
+        {
+          "context": 0.9383333333333335,
+          "target": 0.6833333333333332,
+          "bidirectional": 0.6366666666666666,
+          "centered_target": 0.9858333333333333,
+          "interaction_lift": 1.146728149751822,
+          "target_bias_variance": 3.587678868139164,
+          "benchmark": "singular_plural-bench-scores.json",
+          "benchmark_id": "few_shot_singular_to_plural",
+          "member_sha256": "4da32853b81eacf68ac3d7113cc0f654fc2888e4fbd5a958f7a7c469f8462ee4"
+        }
+      ],
+      "math": [
+        {
+          "context": 0.5175,
+          "target": 0.5033333333333334,
+          "bidirectional": 0.26833333333333337,
+          "centered_target": 0.49583333333333335,
+          "interaction_lift": 0.014599519670009614,
+          "target_bias_variance": 0.6181920141576493,
+          "benchmark": "addition_subtraction-bench-scores.json",
+          "benchmark_id": "addition_subtraction",
+          "member_sha256": "70d088306587ffe3831cb2c3d117f2b1aa5ecd56b828ab7ccecbe05c4d6aee5e"
+        },
+        {
+          "context": 0.54,
+          "target": 0.5,
+          "bidirectional": 0.255,
+          "centered_target": 0.67,
+          "interaction_lift": 0.027423065900802613,
+          "target_bias_variance": 6.317208428615993,
+          "benchmark": "even_odd-bench-scores.json",
+          "benchmark_id": "even_odd",
+          "member_sha256": "939999b607203c4e10873aa78a2ec682a2bd3a6367e244a3cf674cc1878acd94"
+        },
+        {
+          "context": 0.7158333333333334,
+          "target": 0.6016666666666667,
+          "bidirectional": 0.4649999999999999,
+          "centered_target": 0.9075000000000002,
+          "interaction_lift": 0.1757311886548996,
+          "target_bias_variance": 2.9792239397821247,
+          "benchmark": "min_max-bench-scores.json",
+          "benchmark_id": "minimum_maximum",
+          "member_sha256": "8e77c222a058694472e8329cfdfd5b8770a738392b9a37a921a177264edfd997"
+        },
+        {
+          "context": 0.5625000000000001,
+          "target": 0.5275,
+          "bidirectional": 0.2833333333333333,
+          "centered_target": 0.5975,
+          "interaction_lift": 0.09497020930051804,
+          "target_bias_variance": 0.8373371030594796,
+          "benchmark": "multiplication-bench-scores.json",
+          "benchmark_id": "single_digit_multiplication",
+          "member_sha256": "590f210fe4264e125748da2ced796a3057003b38fccac10dadae6f6256cfa85f"
+        },
+        {
+          "context": 0.9683333333333333,
+          "target": 0.76,
+          "bidirectional": 0.7375,
+          "centered_target": 0.9891666666666667,
+          "interaction_lift": 0.14854373573984417,
+          "target_bias_variance": 0.06585344676371087,
+          "benchmark": "sequence_completion-bench-scores.json",
+          "benchmark_id": "integer_sequence_completion",
+          "member_sha256": "ec218f360fc21df4253c8dac401c06767891b3ea7a9119fe39be2385575080aa"
+        }
+      ],
+      "math-languages": [
+        {
+          "context": 0.5116666666666666,
+          "target": 0.5,
+          "bidirectional": 0.2608333333333333,
+          "centered_target": 0.5308333333333333,
+          "interaction_lift": 0.0016311481595039368,
+          "target_bias_variance": 0.19098900081677794,
+          "benchmark": "count_by_property-bench-scores.json",
+          "benchmark_id": "count_items_by_property",
+          "member_sha256": "eb3fa389fb649291247983ba5ddc8d6b54b5eafc4a2bb2f18e4b6439c4ddffd9"
+        },
+        {
+          "context": 0.5133333333333333,
+          "target": 0.5075,
+          "bidirectional": 0.24833333333333332,
+          "centered_target": 0.5366666666666667,
+          "interaction_lift": -0.0015110304951667785,
+          "target_bias_variance": 0.06615251513588519,
+          "benchmark": "count_occurrences-bench-scores.json",
+          "benchmark_id": "count_sequence_occurrences",
+          "member_sha256": "dfd37642e9595010bc1a4881f5dabe35b37b6876b6c7224a495867f893052456"
+        },
+        {
+          "context": 0.48499999999999993,
+          "target": 0.5041666666666667,
+          "bidirectional": 0.2941666666666667,
+          "centered_target": 0.5416666666666667,
+          "interaction_lift": -5.657076835632324e-06,
+          "target_bias_variance": 0.05360837728802523,
+          "benchmark": "count_repeated_objects-bench-scores.json",
+          "benchmark_id": "count_repeated_objects",
+          "member_sha256": "22652b4dfa62fd7f897b8206433e3ce749cc606e42f5465a1b5c9ea2f70cafda"
+        },
+        {
+          "context": 0.4966666666666667,
+          "target": 0.4983333333333333,
+          "bidirectional": 0.24999999999999997,
+          "centered_target": 0.51,
+          "interaction_lift": 0.005980297555526072,
+          "target_bias_variance": 0.9118535313989574,
+          "benchmark": "digits_words-bench-scores.json",
+          "benchmark_id": "digits_words_conversion",
+          "member_sha256": "731ee5c77ea5c80334b32ad0ae82d4a394e10679d311bfd5c2d12233cca03b14"
+        },
+        {
+          "context": 0.5333333333333333,
+          "target": 0.4991666666666667,
+          "bidirectional": 0.25416666666666665,
+          "centered_target": 0.5391666666666668,
+          "interaction_lift": 0.006150585661331784,
+          "target_bias_variance": 1.4468003008881303,
+          "benchmark": "select_position-bench-scores.json",
+          "benchmark_id": "select_sequence_position",
+          "member_sha256": "72c4483d8619533cfb3d7b10e9b0962b55430d738bd7411de1ad6149897293e3"
+        }
+      ],
+      "reasoning": [
+        {
+          "context": 0.009999999999999998,
+          "target": 0.2125,
+          "bidirectional": 0.0075,
+          "centered_target": 0.0008333333333333333,
+          "interaction_lift": -0.3961331849098205,
+          "target_bias_variance": 0.15320760520822885,
+          "benchmark": "constraint_elimination-bench-scores.json",
+          "benchmark_id": "reasoning_constraint_elimination",
+          "member_sha256": "9f46c88f3ee03bd5f12e9fa3fe5a668a4b254697954872523f92590474f12f20"
+        },
+        {
+          "context": 0.5108333333333334,
+          "target": 0.5008333333333334,
+          "bidirectional": 0.20166666666666663,
+          "centered_target": 0.5058333333333334,
+          "interaction_lift": 0.0023648433387279512,
+          "target_bias_variance": 0.2980455163361745,
+          "benchmark": "ordering-bench-scores.json",
+          "benchmark_id": "reasoning_transitive_ordering",
+          "member_sha256": "c26f82af689c72b02a16292b31136beafb63f608d0fb7f1d718621b9a01b2328"
+        },
+        {
+          "context": 0.49416666666666664,
+          "target": 0.495,
+          "bidirectional": 0.24583333333333335,
+          "centered_target": 0.4958333333333333,
+          "interaction_lift": -1.2448181708621941e-05,
+          "target_bias_variance": 0.3564314138000655,
+          "benchmark": "rule_chaining-bench-scores.json",
+          "benchmark_id": "reasoning_rule_chaining",
+          "member_sha256": "421cf156d64dd59c230394e77454d0193bc528a121dded9ac74bb59d5f07de5c"
+        },
+        {
+          "context": 0.5216666666666667,
+          "target": 0.49666666666666665,
+          "bidirectional": 0.2433333333333333,
+          "centered_target": 0.5508333333333333,
+          "interaction_lift": 0.006003619154294355,
+          "target_bias_variance": 0.599740328830507,
+          "benchmark": "spatial-bench-scores.json",
+          "benchmark_id": "reasoning_spatial_ordering",
+          "member_sha256": "3603defe61e0a4b71846033dba41ff3ca1423cb180baeaa81dfefc80a536a9f3"
+        },
+        {
+          "context": 0.5041666666666668,
+          "target": 0.49333333333333335,
+          "bidirectional": 0.24166666666666664,
+          "centered_target": 0.48583333333333345,
+          "interaction_lift": -0.004925834660728751,
+          "target_bias_variance": 0.6304975049535124,
+          "benchmark": "temporal-bench-scores.json",
+          "benchmark_id": "reasoning_temporal_ordering",
+          "member_sha256": "3d488c64a787b58c18e9fa026d2c5bdb95a4f3d1c73b4c3d71d3def3f9233239"
+        }
+      ]
+    },
+    "overall": {
+      "context": 0.6479722222222223,
+      "target": 0.5613611111111111,
+      "bidirectional": 0.3862777777777778,
+      "centered_target": 0.6948333333333334,
+      "interaction_lift": 0.1783255153659197,
+      "target_bias_variance": 0.8931100701387175
+    }
+  },
+  "finesynth": {
+    "categories": {
+      "icl": {
+        "context": 0.6131666666666666,
+        "target": 0.5091666666666667,
+        "bidirectional": 0.30616666666666664,
+        "centered_target": 0.6543333333333333,
+        "interaction_lift": 0.017761156201315298,
+        "target_bias_variance": 0.2221701638514836
+      },
+      "knowledge": {
+        "context": 0.8206666666666667,
+        "target": 0.6801666666666666,
+        "bidirectional": 0.5543333333333333,
+        "centered_target": 0.8818333333333335,
+        "interaction_lift": 0.4265357242186864,
+        "target_bias_variance": 0.5441589965008182
+      },
+      "language-manipulation": {
+        "context": 0.9151666666666667,
+        "target": 0.6823333333333332,
+        "bidirectional": 0.6281666666666667,
+        "centered_target": 0.9739999999999999,
+        "interaction_lift": 0.7320031335871844,
+        "target_bias_variance": 1.529774253492615
+      },
+      "math": {
+        "context": 0.6605,
+        "target": 0.5645,
+        "bidirectional": 0.3866666666666667,
+        "centered_target": 0.7253333333333334,
+        "interaction_lift": 0.08388693385213655,
+        "target_bias_variance": 1.7250821621601706
+      },
+      "math-languages": {
+        "context": 0.5025,
+        "target": 0.5003333333333333,
+        "bidirectional": 0.25816666666666666,
+        "centered_target": 0.5156666666666666,
+        "interaction_lift": 0.0032264218111832882,
+        "target_bias_variance": 0.5674873297174845
+      },
+      "reasoning": {
+        "context": 0.3958333333333333,
+        "target": 0.4615,
+        "bidirectional": 0.20666666666666664,
+        "centered_target": 0.36300000000000004,
+        "interaction_lift": -0.06457799872756005,
+        "target_bias_variance": 0.4928172136778196
+      }
+    },
+    "benchmarks": {
+      "icl": [
+        {
+          "context": 0.5708333333333333,
+          "target": 0.5116666666666666,
+          "bidirectional": 0.275,
+          "centered_target": 0.6408333333333335,
+          "interaction_lift": 0.03319476199150086,
+          "target_bias_variance": 0.41637580965647786,
+          "benchmark": "arbitrary_mappings-bench-scores.json",
+          "benchmark_id": "icl_arbitrary_mappings",
+          "member_sha256": "67d267ba4b5e1f0809431c7e658be81429c15f3fc10297c81024d36144e146d5"
+        },
+        {
+          "context": 0.5558333333333333,
+          "target": 0.5,
+          "bidirectional": 0.2941666666666667,
+          "centered_target": 0.6,
+          "interaction_lift": 0.009689919998248428,
+          "target_bias_variance": 0.2979969593591989,
+          "benchmark": "object_locations-bench-scores.json",
+          "benchmark_id": "icl_object_location_bindings",
+          "member_sha256": "0e4a5eefa4056e99a293fa2ff409db009bd960d8a70aa639b43154d1e3b9236f"
+        },
+        {
+          "context": 0.6425,
+          "target": 0.5125,
+          "bidirectional": 0.32583333333333336,
+          "centered_target": 0.6708333333333332,
+          "interaction_lift": 0.014039726391434661,
+          "target_bias_variance": 0.12546264474505792,
+          "benchmark": "person_objects-bench-scores.json",
+          "benchmark_id": "icl_person_object_bindings",
+          "member_sha256": "f70057619cf4358d1b52696860a7e493fcf52ccc4a15c0f049e52ae1472242e6"
+        },
+        {
+          "context": 0.7091666666666666,
+          "target": 0.5116666666666666,
+          "bidirectional": 0.3558333333333332,
+          "centered_target": 0.7458333333333332,
+          "interaction_lift": 0.021500316545130693,
+          "target_bias_variance": 0.16222015382022426,
+          "benchmark": "person_profiles-bench-scores.json",
+          "benchmark_id": "icl_person_profiles",
+          "member_sha256": "c6928bf607d4366c2b133a7a83e4b0681cb048b6d858d284e31c328359ebd3fc"
+        },
+        {
+          "context": 0.5874999999999999,
+          "target": 0.51,
+          "bidirectional": 0.28,
+          "centered_target": 0.6141666666666666,
+          "interaction_lift": 0.010381056080261847,
+          "target_bias_variance": 0.10879525167645891,
+          "benchmark": "state_updates-bench-scores.json",
+          "benchmark_id": "icl_state_updates",
+          "member_sha256": "52fe84ef0d4baa48ca100ed79251efa648d5297f70c7c123174667a94656096f"
+        }
+      ],
+      "knowledge": [
+        {
+          "context": 0.975,
+          "target": 0.8466666666666666,
+          "bidirectional": 0.8291666666666667,
+          "centered_target": 0.9666666666666669,
+          "interaction_lift": 0.7676402358611425,
+          "target_bias_variance": 0.4334555970982177,
+          "benchmark": "capitals-bench-scores.json",
+          "benchmark_id": "country_capitals",
+          "member_sha256": "c821272613059f5a683a93791f5c8217ebc26b87e56d28769c86675ec16618b8"
+        },
+        {
+          "context": 0.6425,
+          "target": 0.5441666666666667,
+          "bidirectional": 0.31166666666666665,
+          "centered_target": 0.7783333333333333,
+          "interaction_lift": 0.09269343159596127,
+          "target_bias_variance": 0.6281282263011252,
+          "benchmark": "colors-bench-scores.json",
+          "benchmark_id": "typical_object_colors",
+          "member_sha256": "4813d549b8442c684929a76383f0616f25291de00a8f0a0147ac46b037344b58"
+        },
+        {
+          "context": 0.8191666666666666,
+          "target": 0.6416666666666666,
+          "bidirectional": 0.5183333333333334,
+          "centered_target": 0.8675,
+          "interaction_lift": 0.35746564553181337,
+          "target_bias_variance": 0.5574121387781718,
+          "benchmark": "landmarks-bench-scores.json",
+          "benchmark_id": "landmark_cities",
+          "member_sha256": "d083bb9c3fc0fdda38f1f05ea3252eb46129c375435ea817b72d4297e7dcb98c"
+        },
+        {
+          "context": 0.9075,
+          "target": 0.7491666666666665,
+          "bidirectional": 0.6724999999999999,
+          "centered_target": 0.9691666666666667,
+          "interaction_lift": 0.7131921546260516,
+          "target_bias_variance": 0.8454259762198337,
+          "benchmark": "regions-bench-scores.json",
+          "benchmark_id": "regions_city",
+          "member_sha256": "67925bf615fb432149dca46f0c94fa9d61bacf2840407a29fdd0662f3f876bdc"
+        },
+        {
+          "context": 0.7591666666666668,
+          "target": 0.6191666666666666,
+          "bidirectional": 0.44,
+          "centered_target": 0.8275000000000001,
+          "interaction_lift": 0.20168715347846344,
+          "target_bias_variance": 0.2563730441067429,
+          "benchmark": "taxonomy-bench-scores.json",
+          "benchmark_id": "entity_taxonomy",
+          "member_sha256": "afe254a8c0449b12c835eb032519a7b82e439f5f794f7bfb695c59e49ddcd91b"
+        }
+      ],
+      "language-manipulation": [
+        {
+          "context": 0.935,
+          "target": 0.6991666666666667,
+          "bidirectional": 0.6816666666666668,
+          "centered_target": 0.995,
+          "interaction_lift": 0.6232526422646784,
+          "target_bias_variance": 0.6352342692120109,
+          "benchmark": "affirmative_negative-bench-scores.json",
+          "benchmark_id": "few_shot_affirmative_to_negative",
+          "member_sha256": "73e73a62e023fb366fb86b9df1df2d43d8e432ee698be73379f64099b06aa3d9"
+        },
+        {
+          "context": 0.9166666666666667,
+          "target": 0.6758333333333333,
+          "bidirectional": 0.6108333333333333,
+          "centered_target": 0.9925,
+          "interaction_lift": 0.4593284047643344,
+          "target_bias_variance": 0.5520123839930807,
+          "benchmark": "first_to_third_person-bench-scores.json",
+          "benchmark_id": "few_shot_first_to_third_person",
+          "member_sha256": "4120f5bdfb4580c2804087d08eaf0779b49be10fd4d9e798eeaba728aeaafa40"
+        },
+        {
+          "context": 0.8958333333333333,
+          "target": 0.6691666666666667,
+          "bidirectional": 0.6099999999999999,
+          "centered_target": 0.96,
+          "interaction_lift": 0.7448303076128165,
+          "target_bias_variance": 2.090797288459487,
+          "benchmark": "masculine_feminine-bench-scores.json",
+          "benchmark_id": "few_shot_masculine_to_feminine",
+          "member_sha256": "a4795356760231e5fd999ea3990531a0b87c0ec7751d7bc144c64ccd545841b9"
+        },
+        {
+          "context": 0.8441666666666666,
+          "target": 0.6333333333333334,
+          "bidirectional": 0.5141666666666667,
+          "centered_target": 0.9241666666666666,
+          "interaction_lift": 0.25179640844464307,
+          "target_bias_variance": 0.3090562618877263,
+          "benchmark": "present_future-bench-scores.json",
+          "benchmark_id": "few_shot_present_to_future",
+          "member_sha256": "d81efc02f42e96755d2dc031cfc1fd5e714e639b90bfd0d1449d236417e812f8"
+        },
+        {
+          "context": 0.9841666666666667,
+          "target": 0.7341666666666665,
+          "bidirectional": 0.7241666666666667,
+          "centered_target": 0.9983333333333334,
+          "interaction_lift": 1.5808079048494497,
+          "target_bias_variance": 4.061771063910771,
+          "benchmark": "singular_plural-bench-scores.json",
+          "benchmark_id": "few_shot_singular_to_plural",
+          "member_sha256": "4da32853b81eacf68ac3d7113cc0f654fc2888e4fbd5a958f7a7c469f8462ee4"
+        }
+      ],
+      "math": [
+        {
+          "context": 0.5125000000000001,
+          "target": 0.4958333333333333,
+          "bidirectional": 0.25916666666666666,
+          "centered_target": 0.4933333333333333,
+          "interaction_lift": 0.0069748139381408695,
+          "target_bias_variance": 0.8748867258423771,
+          "benchmark": "addition_subtraction-bench-scores.json",
+          "benchmark_id": "addition_subtraction",
+          "member_sha256": "70d088306587ffe3831cb2c3d117f2b1aa5ecd56b828ab7ccecbe05c4d6aee5e"
+        },
+        {
+          "context": 0.545,
+          "target": 0.5,
+          "bidirectional": 0.225,
+          "centered_target": 0.62,
+          "interaction_lift": 0.028553361892700194,
+          "target_bias_variance": 4.225001352021139,
+          "benchmark": "even_odd-bench-scores.json",
+          "benchmark_id": "even_odd",
+          "member_sha256": "939999b607203c4e10873aa78a2ec682a2bd3a6367e244a3cf674cc1878acd94"
+        },
+        {
+          "context": 0.7416666666666666,
+          "target": 0.5841666666666666,
+          "bidirectional": 0.46,
+          "centered_target": 0.9141666666666666,
+          "interaction_lift": 0.17889774411916734,
+          "target_bias_variance": 2.736328484298276,
+          "benchmark": "min_max-bench-scores.json",
+          "benchmark_id": "minimum_maximum",
+          "member_sha256": "8e77c222a058694472e8329cfdfd5b8770a738392b9a37a921a177264edfd997"
+        },
+        {
+          "context": 0.5641666666666667,
+          "target": 0.5275,
+          "bidirectional": 0.31000000000000005,
+          "centered_target": 0.6091666666666666,
+          "interaction_lift": 0.06763463735580444,
+          "target_bias_variance": 0.7255470974813124,
+          "benchmark": "multiplication-bench-scores.json",
+          "benchmark_id": "single_digit_multiplication",
+          "member_sha256": "590f210fe4264e125748da2ced796a3057003b38fccac10dadae6f6256cfa85f"
+        },
+        {
+          "context": 0.9391666666666666,
+          "target": 0.7150000000000002,
+          "bidirectional": 0.6791666666666668,
+          "centered_target": 0.99,
+          "interaction_lift": 0.13737411195486993,
+          "target_bias_variance": 0.06364715115774731,
+          "benchmark": "sequence_completion-bench-scores.json",
+          "benchmark_id": "integer_sequence_completion",
+          "member_sha256": "ec218f360fc21df4253c8dac401c06767891b3ea7a9119fe39be2385575080aa"
+        }
+      ],
+      "math-languages": [
+        {
+          "context": 0.5266666666666666,
+          "target": 0.5041666666666668,
+          "bidirectional": 0.29666666666666663,
+          "centered_target": 0.4966666666666667,
+          "interaction_lift": 0.0024107617139816286,
+          "target_bias_variance": 0.512833210010145,
+          "benchmark": "count_by_property-bench-scores.json",
+          "benchmark_id": "count_items_by_property",
+          "member_sha256": "eb3fa389fb649291247983ba5ddc8d6b54b5eafc4a2bb2f18e4b6439c4ddffd9"
+        },
+        {
+          "context": 0.455,
+          "target": 0.4983333333333333,
+          "bidirectional": 0.22083333333333333,
+          "centered_target": 0.4316666666666666,
+          "interaction_lift": -0.0019195106625556945,
+          "target_bias_variance": 0.07633739094997456,
+          "benchmark": "count_occurrences-bench-scores.json",
+          "benchmark_id": "count_sequence_occurrences",
+          "member_sha256": "dfd37642e9595010bc1a4881f5dabe35b37b6876b6c7224a495867f893052456"
+        },
+        {
+          "context": 0.5233333333333333,
+          "target": 0.4966666666666667,
+          "bidirectional": 0.27666666666666667,
+          "centered_target": 0.5574999999999999,
+          "interaction_lift": 0.0012685292959213256,
+          "target_bias_variance": 0.12426107024114696,
+          "benchmark": "count_repeated_objects-bench-scores.json",
+          "benchmark_id": "count_repeated_objects",
+          "member_sha256": "22652b4dfa62fd7f897b8206433e3ce749cc606e42f5465a1b5c9ea2f70cafda"
+        },
+        {
+          "context": 0.5283333333333333,
+          "target": 0.5058333333333334,
+          "bidirectional": 0.285,
+          "centered_target": 0.6058333333333333,
+          "interaction_lift": 0.018416783173878983,
+          "target_bias_variance": 0.7393319448163571,
+          "benchmark": "digits_words-bench-scores.json",
+          "benchmark_id": "digits_words_conversion",
+          "member_sha256": "731ee5c77ea5c80334b32ad0ae82d4a394e10679d311bfd5c2d12233cca03b14"
+        },
+        {
+          "context": 0.47916666666666663,
+          "target": 0.4966666666666667,
+          "bidirectional": 0.21166666666666664,
+          "centered_target": 0.4866666666666666,
+          "interaction_lift": -0.004044454465309805,
+          "target_bias_variance": 1.3846730325697985,
+          "benchmark": "select_position-bench-scores.json",
+          "benchmark_id": "select_sequence_position",
+          "member_sha256": "72c4483d8619533cfb3d7b10e9b0962b55430d738bd7411de1ad6149897293e3"
+        }
+      ],
+      "reasoning": [
+        {
+          "context": 0.021666666666666664,
+          "target": 0.3233333333333333,
+          "bidirectional": 0.01583333333333333,
+          "centered_target": 0.0008333333333333333,
+          "interaction_lift": -0.2972507312893867,
+          "target_bias_variance": 0.25423627530724696,
+          "benchmark": "constraint_elimination-bench-scores.json",
+          "benchmark_id": "reasoning_constraint_elimination",
+          "member_sha256": "9f46c88f3ee03bd5f12e9fa3fe5a668a4b254697954872523f92590474f12f20"
+        },
+        {
+          "context": 0.49583333333333324,
+          "target": 0.495,
+          "bidirectional": 0.3233333333333333,
+          "centered_target": 0.4825000000000001,
+          "interaction_lift": -0.0033897680044174196,
+          "target_bias_variance": 0.2604567102290282,
+          "benchmark": "ordering-bench-scores.json",
+          "benchmark_id": "reasoning_transitive_ordering",
+          "member_sha256": "c26f82af689c72b02a16292b31136beafb63f608d0fb7f1d718621b9a01b2328"
+        },
+        {
+          "context": 0.4891666666666667,
+          "target": 0.49583333333333335,
+          "bidirectional": 0.22916666666666663,
+          "centered_target": 0.45333333333333337,
+          "interaction_lift": -0.0014508703847726412,
+          "target_bias_variance": 0.5546788875679446,
+          "benchmark": "rule_chaining-bench-scores.json",
+          "benchmark_id": "reasoning_rule_chaining",
+          "member_sha256": "421cf156d64dd59c230394e77454d0193bc528a121dded9ac74bb59d5f07de5c"
+        },
+        {
+          "context": 0.48166666666666663,
+          "target": 0.5033333333333334,
+          "bidirectional": 0.2583333333333333,
+          "centered_target": 0.4841666666666667,
+          "interaction_lift": -0.0050330172975857936,
+          "target_bias_variance": 0.8992429822890524,
+          "benchmark": "spatial-bench-scores.json",
+          "benchmark_id": "reasoning_spatial_ordering",
+          "member_sha256": "3603defe61e0a4b71846033dba41ff3ca1423cb180baeaa81dfefc80a536a9f3"
+        },
+        {
+          "context": 0.49083333333333334,
+          "target": 0.49,
+          "bidirectional": 0.20666666666666667,
+          "centered_target": 0.3941666666666667,
+          "interaction_lift": -0.015765606661637618,
+          "target_bias_variance": 0.4954712129958256,
+          "benchmark": "temporal-bench-scores.json",
+          "benchmark_id": "reasoning_temporal_ordering",
+          "member_sha256": "3d488c64a787b58c18e9fa026d2c5bdb95a4f3d1c73b4c3d71d3def3f9233239"
+        }
+      ]
+    },
+    "overall": {
+      "context": 0.6513055555555556,
+      "target": 0.5663333333333334,
+      "bidirectional": 0.3900277777777777,
+      "centered_target": 0.6856944444444445,
+      "interaction_lift": 0.19980589515715763,
+      "target_bias_variance": 0.8469150199000653
+    }
+  },
+  "new_unsanitized": {
+    "categories": {
+      "icl": {
+        "context": 0.5968333333333333,
+        "target": 0.51,
+        "bidirectional": 0.31466666666666665,
+        "centered_target": 0.6483333333333333,
+        "interaction_lift": 0.018193741407517408,
+        "target_bias_variance": 0.25002183721855403
+      },
+      "knowledge": {
+        "context": 0.7430000000000001,
+        "target": 0.6038333333333334,
+        "bidirectional": 0.45450000000000007,
+        "centered_target": 0.8343333333333334,
+        "interaction_lift": 0.26179478263741446,
+        "target_bias_variance": 0.5653117908761132
+      },
+      "language-manipulation": {
+        "context": 0.9088333333333333,
+        "target": 0.6743333333333335,
+        "bidirectional": 0.6155,
+        "centered_target": 0.9693333333333334,
+        "interaction_lift": 0.678630495143788,
+        "target_bias_variance": 1.4376982489076902
+      },
+      "math": {
+        "context": 0.6555000000000002,
+        "target": 0.5738333333333333,
+        "bidirectional": 0.4025,
+        "centered_target": 0.6993333333333334,
+        "interaction_lift": 0.08472450199593137,
+        "target_bias_variance": 1.507274043613846
+      },
+      "math-languages": {
+        "context": 0.5146666666666667,
+        "target": 0.49899999999999994,
+        "bidirectional": 0.26033333333333336,
+        "centered_target": 0.5196666666666667,
+        "interaction_lift": 0.0019846739093462656,
+        "target_bias_variance": 0.5419832462592884
+      },
+      "reasoning": {
+        "context": 0.38916666666666677,
+        "target": 0.4415,
+        "bidirectional": 0.17966666666666667,
+        "centered_target": 0.3285,
+        "interaction_lift": -0.11706424454549949,
+        "target_bias_variance": 0.5476432762033548
+      }
+    },
+    "benchmarks": {
+      "icl": [
+        {
+          "context": 0.6475,
+          "target": 0.5108333333333334,
+          "bidirectional": 0.3441666666666666,
+          "centered_target": 0.7016666666666667,
+          "interaction_lift": 0.04484671878814698,
+          "target_bias_variance": 0.5983929807038777,
+          "benchmark": "arbitrary_mappings-bench-scores.json",
+          "benchmark_id": "icl_arbitrary_mappings",
+          "member_sha256": "67d267ba4b5e1f0809431c7e658be81429c15f3fc10297c81024d36144e146d5"
+        },
+        {
+          "context": 0.5575,
+          "target": 0.5091666666666667,
+          "bidirectional": 0.29666666666666663,
+          "centered_target": 0.625,
+          "interaction_lift": 0.015269717520901121,
+          "target_bias_variance": 0.2740799462499174,
+          "benchmark": "object_locations-bench-scores.json",
+          "benchmark_id": "icl_object_location_bindings",
+          "member_sha256": "0e4a5eefa4056e99a293fa2ff409db009bd960d8a70aa639b43154d1e3b9236f"
+        },
+        {
+          "context": 0.62,
+          "target": 0.5133333333333333,
+          "bidirectional": 0.3033333333333333,
+          "centered_target": 0.6666666666666664,
+          "interaction_lift": 0.013885173236330366,
+          "target_bias_variance": 0.20389850520467853,
+          "benchmark": "person_objects-bench-scores.json",
+          "benchmark_id": "icl_person_object_bindings",
+          "member_sha256": "f70057619cf4358d1b52696860a7e493fcf52ccc4a15c0f049e52ae1472242e6"
+        },
+        {
+          "context": 0.6208333333333332,
+          "target": 0.515,
+          "bidirectional": 0.33166666666666667,
+          "centered_target": 0.6858333333333334,
+          "interaction_lift": 0.013694678534827557,
+          "target_bias_variance": 0.06577163484584778,
+          "benchmark": "person_profiles-bench-scores.json",
+          "benchmark_id": "icl_person_profiles",
+          "member_sha256": "c6928bf607d4366c2b133a7a83e4b0681cb048b6d858d284e31c328359ebd3fc"
+        },
+        {
+          "context": 0.5383333333333333,
+          "target": 0.5016666666666666,
+          "bidirectional": 0.2975,
+          "centered_target": 0.5625,
+          "interaction_lift": 0.003272418957381021,
+          "target_bias_variance": 0.10796611908844893,
+          "benchmark": "state_updates-bench-scores.json",
+          "benchmark_id": "icl_state_updates",
+          "member_sha256": "52fe84ef0d4baa48ca100ed79251efa648d5297f70c7c123174667a94656096f"
+        }
+      ],
+      "knowledge": [
+        {
+          "context": 0.9283333333333335,
+          "target": 0.7575000000000003,
+          "bidirectional": 0.7008333333333335,
+          "centered_target": 0.9650000000000002,
+          "interaction_lift": 0.5726367666224639,
+          "target_bias_variance": 0.39234296411872793,
+          "benchmark": "capitals-bench-scores.json",
+          "benchmark_id": "country_capitals",
+          "member_sha256": "c821272613059f5a683a93791f5c8217ebc26b87e56d28769c86675ec16618b8"
+        },
+        {
+          "context": 0.5883333333333334,
+          "target": 0.5266666666666667,
+          "bidirectional": 0.325,
+          "centered_target": 0.6599999999999998,
+          "interaction_lift": 0.04728610900044443,
+          "target_bias_variance": 0.6381901873940128,
+          "benchmark": "colors-bench-scores.json",
+          "benchmark_id": "typical_object_colors",
+          "member_sha256": "4813d549b8442c684929a76383f0616f25291de00a8f0a0147ac46b037344b58"
+        },
+        {
+          "context": 0.7033333333333333,
+          "target": 0.5766666666666667,
+          "bidirectional": 0.40666666666666673,
+          "centered_target": 0.8175000000000001,
+          "interaction_lift": 0.24041840839811734,
+          "target_bias_variance": 0.704468081706743,
+          "benchmark": "landmarks-bench-scores.json",
+          "benchmark_id": "landmark_cities",
+          "member_sha256": "d083bb9c3fc0fdda38f1f05ea3252eb46129c375435ea817b72d4297e7dcb98c"
+        },
+        {
+          "context": 0.8466666666666667,
+          "target": 0.5941666666666666,
+          "bidirectional": 0.5133333333333333,
+          "centered_target": 0.9625,
+          "interaction_lift": 0.2701748839716116,
+          "target_bias_variance": 0.7826898009576919,
+          "benchmark": "regions-bench-scores.json",
+          "benchmark_id": "regions_city",
+          "member_sha256": "67925bf615fb432149dca46f0c94fa9d61bacf2840407a29fdd0662f3f876bdc"
+        },
+        {
+          "context": 0.6483333333333333,
+          "target": 0.5641666666666666,
+          "bidirectional": 0.3266666666666667,
+          "centered_target": 0.7666666666666666,
+          "interaction_lift": 0.17845774519443514,
+          "target_bias_variance": 0.3088679202033901,
+          "benchmark": "taxonomy-bench-scores.json",
+          "benchmark_id": "entity_taxonomy",
+          "member_sha256": "afe254a8c0449b12c835eb032519a7b82e439f5f794f7bfb695c59e49ddcd91b"
+        }
+      ],
+      "language-manipulation": [
+        {
+          "context": 0.9725,
+          "target": 0.7341666666666667,
+          "bidirectional": 0.7258333333333334,
+          "centered_target": 1.0,
+          "interaction_lift": 0.6937511715434845,
+          "target_bias_variance": 0.6242936954519752,
+          "benchmark": "affirmative_negative-bench-scores.json",
+          "benchmark_id": "few_shot_affirmative_to_negative",
+          "member_sha256": "73e73a62e023fb366fb86b9df1df2d43d8e432ee698be73379f64099b06aa3d9"
+        },
+        {
+          "context": 0.8516666666666667,
+          "target": 0.6466666666666666,
+          "bidirectional": 0.5416666666666667,
+          "centered_target": 0.9841666666666667,
+          "interaction_lift": 0.3877318147818247,
+          "target_bias_variance": 0.539954708504882,
+          "benchmark": "first_to_third_person-bench-scores.json",
+          "benchmark_id": "few_shot_first_to_third_person",
+          "member_sha256": "4120f5bdfb4580c2804087d08eaf0779b49be10fd4d9e798eeaba728aeaafa40"
+        },
+        {
+          "context": 0.9041666666666666,
+          "target": 0.6575000000000002,
+          "bidirectional": 0.6141666666666667,
+          "centered_target": 0.9475,
+          "interaction_lift": 0.6844356941680112,
+          "target_bias_variance": 1.9255324091659158,
+          "benchmark": "masculine_feminine-bench-scores.json",
+          "benchmark_id": "few_shot_masculine_to_feminine",
+          "member_sha256": "a4795356760231e5fd999ea3990531a0b87c0ec7751d7bc144c64ccd545841b9"
+        },
+        {
+          "context": 0.8466666666666667,
+          "target": 0.6258333333333334,
+          "bidirectional": 0.5083333333333333,
+          "centered_target": 0.925,
+          "interaction_lift": 0.24681767279903094,
+          "target_bias_variance": 0.32968811178830637,
+          "benchmark": "present_future-bench-scores.json",
+          "benchmark_id": "few_shot_present_to_future",
+          "member_sha256": "d81efc02f42e96755d2dc031cfc1fd5e714e639b90bfd0d1449d236417e812f8"
+        },
+        {
+          "context": 0.9691666666666666,
+          "target": 0.7074999999999999,
+          "bidirectional": 0.6875,
+          "centered_target": 0.9900000000000001,
+          "interaction_lift": 1.3804161224265894,
+          "target_bias_variance": 3.7690223196273718,
+          "benchmark": "singular_plural-bench-scores.json",
+          "benchmark_id": "few_shot_singular_to_plural",
+          "member_sha256": "4da32853b81eacf68ac3d7113cc0f654fc2888e4fbd5a958f7a7c469f8462ee4"
+        }
+      ],
+      "math": [
+        {
+          "context": 0.4941666666666667,
+          "target": 0.495,
+          "bidirectional": 0.2425,
+          "centered_target": 0.48083333333333333,
+          "interaction_lift": 0.006338685005903244,
+          "target_bias_variance": 1.1060172665529309,
+          "benchmark": "addition_subtraction-bench-scores.json",
+          "benchmark_id": "addition_subtraction",
+          "member_sha256": "70d088306587ffe3831cb2c3d117f2b1aa5ecd56b828ab7ccecbe05c4d6aee5e"
+        },
+        {
+          "context": 0.545,
+          "target": 0.5,
+          "bidirectional": 0.29,
+          "centered_target": 0.55,
+          "interaction_lift": 0.012541690468788147,
+          "target_bias_variance": 3.088292195535298,
+          "benchmark": "even_odd-bench-scores.json",
+          "benchmark_id": "even_odd",
+          "member_sha256": "939999b607203c4e10873aa78a2ec682a2bd3a6367e244a3cf674cc1878acd94"
+        },
+        {
+          "context": 0.7358333333333335,
+          "target": 0.61,
+          "bidirectional": 0.4558333333333333,
+          "centered_target": 0.91,
+          "interaction_lift": 0.22536981761455535,
+          "target_bias_variance": 2.583455313891654,
+          "benchmark": "min_max-bench-scores.json",
+          "benchmark_id": "minimum_maximum",
+          "member_sha256": "8e77c222a058694472e8329cfdfd5b8770a738392b9a37a921a177264edfd997"
+        },
+        {
+          "context": 0.5433333333333333,
+          "target": 0.5258333333333334,
+          "bidirectional": 0.31416666666666665,
+          "centered_target": 0.56,
+          "interaction_lift": 0.044933911114931106,
+          "target_bias_variance": 0.6929094452529825,
+          "benchmark": "multiplication-bench-scores.json",
+          "benchmark_id": "single_digit_multiplication",
+          "member_sha256": "590f210fe4264e125748da2ced796a3057003b38fccac10dadae6f6256cfa85f"
+        },
+        {
+          "context": 0.9591666666666667,
+          "target": 0.7383333333333334,
+          "bidirectional": 0.71,
+          "centered_target": 0.9958333333333332,
+          "interaction_lift": 0.134438405775479,
+          "target_bias_variance": 0.06569599683636432,
+          "benchmark": "sequence_completion-bench-scores.json",
+          "benchmark_id": "integer_sequence_completion",
+          "member_sha256": "ec218f360fc21df4253c8dac401c06767891b3ea7a9119fe39be2385575080aa"
+        }
+      ],
+      "math-languages": [
+        {
+          "context": 0.5525000000000001,
+          "target": 0.4883333333333333,
+          "bidirectional": 0.29583333333333334,
+          "centered_target": 0.5533333333333333,
+          "interaction_lift": 0.0012408265471458436,
+          "target_bias_variance": 0.23474823293613414,
+          "benchmark": "count_by_property-bench-scores.json",
+          "benchmark_id": "count_items_by_property",
+          "member_sha256": "eb3fa389fb649291247983ba5ddc8d6b54b5eafc4a2bb2f18e4b6439c4ddffd9"
+        },
+        {
+          "context": 0.48750000000000004,
+          "target": 0.495,
+          "bidirectional": 0.17499999999999996,
+          "centered_target": 0.4808333333333333,
+          "interaction_lift": -0.0008038391172885895,
+          "target_bias_variance": 0.09739381310698039,
+          "benchmark": "count_occurrences-bench-scores.json",
+          "benchmark_id": "count_sequence_occurrences",
+          "member_sha256": "dfd37642e9595010bc1a4881f5dabe35b37b6876b6c7224a495867f893052456"
+        },
+        {
+          "context": 0.535,
+          "target": 0.5133333333333333,
+          "bidirectional": 0.35583333333333345,
+          "centered_target": 0.5541666666666667,
+          "interaction_lift": 0.006689284741878509,
+          "target_bias_variance": 0.03952913048973749,
+          "benchmark": "count_repeated_objects-bench-scores.json",
+          "benchmark_id": "count_repeated_objects",
+          "member_sha256": "22652b4dfa62fd7f897b8206433e3ce749cc606e42f5465a1b5c9ea2f70cafda"
+        },
+        {
+          "context": 0.5408333333333333,
+          "target": 0.505,
+          "bidirectional": 0.26749999999999996,
+          "centered_target": 0.5441666666666667,
+          "interaction_lift": 0.011371494342883424,
+          "target_bias_variance": 1.0805214165462187,
+          "benchmark": "digits_words-bench-scores.json",
+          "benchmark_id": "digits_words_conversion",
+          "member_sha256": "731ee5c77ea5c80334b32ad0ae82d4a394e10679d311bfd5c2d12233cca03b14"
+        },
+        {
+          "context": 0.4575000000000001,
+          "target": 0.49333333333333335,
+          "bidirectional": 0.20749999999999996,
+          "centered_target": 0.46583333333333343,
+          "interaction_lift": -0.008574396967887858,
+          "target_bias_variance": 1.2577236382173715,
+          "benchmark": "select_position-bench-scores.json",
+          "benchmark_id": "select_sequence_position",
+          "member_sha256": "72c4483d8619533cfb3d7b10e9b0962b55430d738bd7411de1ad6149897293e3"
+        }
+      ],
+      "reasoning": [
+        {
+          "context": 0.005833333333333333,
+          "target": 0.23,
+          "bidirectional": 0.005833333333333333,
+          "centered_target": 0.0,
+          "interaction_lift": -0.4895459532340368,
+          "target_bias_variance": 0.22115845055830025,
+          "benchmark": "constraint_elimination-bench-scores.json",
+          "benchmark_id": "reasoning_constraint_elimination",
+          "member_sha256": "9f46c88f3ee03bd5f12e9fa3fe5a668a4b254697954872523f92590474f12f20"
+        },
+        {
+          "context": 0.53,
+          "target": 0.48833333333333334,
+          "bidirectional": 0.2008333333333333,
+          "centered_target": 0.29416666666666663,
+          "interaction_lift": -0.07122269332408905,
+          "target_bias_variance": 0.49099068434414633,
+          "benchmark": "ordering-bench-scores.json",
+          "benchmark_id": "reasoning_transitive_ordering",
+          "member_sha256": "c26f82af689c72b02a16292b31136beafb63f608d0fb7f1d718621b9a01b2328"
+        },
+        {
+          "context": 0.4975,
+          "target": 0.49833333333333335,
+          "bidirectional": 0.2316666666666667,
+          "centered_target": 0.4891666666666667,
+          "interaction_lift": 0.0012410354117552036,
+          "target_bias_variance": 0.7352014317877127,
+          "benchmark": "rule_chaining-bench-scores.json",
+          "benchmark_id": "reasoning_rule_chaining",
+          "member_sha256": "421cf156d64dd59c230394e77454d0193bc528a121dded9ac74bb59d5f07de5c"
+        },
+        {
+          "context": 0.43916666666666687,
+          "target": 0.49999999999999994,
+          "bidirectional": 0.2666666666666666,
+          "centered_target": 0.4549999999999999,
+          "interaction_lift": -0.010130461553732545,
+          "target_bias_variance": 0.6402756385996895,
+          "benchmark": "spatial-bench-scores.json",
+          "benchmark_id": "reasoning_spatial_ordering",
+          "member_sha256": "3603defe61e0a4b71846033dba41ff3ca1423cb180baeaa81dfefc80a536a9f3"
+        },
+        {
+          "context": 0.4733333333333334,
+          "target": 0.49083333333333334,
+          "bidirectional": 0.19333333333333333,
+          "centered_target": 0.40416666666666673,
+          "interaction_lift": -0.01566315002739429,
+          "target_bias_variance": 0.6505901757269253,
+          "benchmark": "temporal-bench-scores.json",
+          "benchmark_id": "reasoning_temporal_ordering",
+          "member_sha256": "3d488c64a787b58c18e9fa026d2c5bdb95a4f3d1c73b4c3d71d3def3f9233239"
+        }
+      ]
+    },
+    "overall": {
+      "context": 0.6346666666666667,
+      "target": 0.5504166666666667,
+      "bidirectional": 0.37119444444444455,
+      "centered_target": 0.6665833333333334,
+      "interaction_lift": 0.15471065842474965,
+      "target_bias_variance": 0.8083220738464746
+    }
+  },
+  "old_1b5": {
+    "categories": {
+      "icl": {
+        "context": 0.6066666666666667,
+        "target": 0.5115,
+        "bidirectional": 0.30416666666666664,
+        "centered_target": 0.6676666666666667,
+        "interaction_lift": 0.01796900756971704,
+        "target_bias_variance": 0.18369680280889775
+      },
+      "knowledge": {
+        "context": 0.7591666666666667,
+        "target": 0.6433333333333333,
+        "bidirectional": 0.5053333333333333,
+        "centered_target": 0.8046666666666666,
+        "interaction_lift": 0.40055624303448767,
+        "target_bias_variance": 0.6514318749392796
+      },
+      "language-manipulation": {
+        "context": 0.983,
+        "target": 0.8210000000000001,
+        "bidirectional": 0.8094999999999999,
+        "centered_target": 0.9951666666666668,
+        "interaction_lift": 1.204929939581525,
+        "target_bias_variance": 1.4344485590165241
+      },
+      "math": {
+        "context": 0.6591666666666667,
+        "target": 0.5831666666666667,
+        "bidirectional": 0.41800000000000004,
+        "centered_target": 0.6995,
+        "interaction_lift": 0.09321941782085127,
+        "target_bias_variance": 1.422365698441515
+      },
+      "math-languages": {
+        "context": 0.5021666666666668,
+        "target": 0.5038333333333334,
+        "bidirectional": 0.26116666666666666,
+        "centered_target": 0.5305000000000001,
+        "interaction_lift": 0.0006091269562641919,
+        "target_bias_variance": 0.5430303297706939
+      },
+      "reasoning": {
+        "context": 0.3843333333333333,
+        "target": 0.44799999999999995,
+        "bidirectional": 0.18316666666666664,
+        "centered_target": 0.38966666666666655,
+        "interaction_lift": -0.08098818574945134,
+        "target_bias_variance": 0.3416809594299894
+      }
+    },
+    "benchmarks": {
+      "icl": [
+        {
+          "context": 0.6316666666666666,
+          "target": 0.5108333333333333,
+          "bidirectional": 0.30749999999999994,
+          "centered_target": 0.6858333333333334,
+          "interaction_lift": 0.03383462161322437,
+          "target_bias_variance": 0.36218414118619535,
+          "benchmark": "arbitrary_mappings-bench-scores.json",
+          "benchmark_id": "icl_arbitrary_mappings",
+          "member_sha256": "67d267ba4b5e1f0809431c7e658be81429c15f3fc10297c81024d36144e146d5"
+        },
+        {
+          "context": 0.575,
+          "target": 0.5141666666666667,
+          "bidirectional": 0.30750000000000005,
+          "centered_target": 0.6675000000000001,
+          "interaction_lift": 0.017410600496899527,
+          "target_bias_variance": 0.24402670389565395,
+          "benchmark": "object_locations-bench-scores.json",
+          "benchmark_id": "icl_object_location_bindings",
+          "member_sha256": "0e4a5eefa4056e99a293fa2ff409db009bd960d8a70aa639b43154d1e3b9236f"
+        },
+        {
+          "context": 0.6441666666666666,
+          "target": 0.5133333333333333,
+          "bidirectional": 0.31916666666666665,
+          "centered_target": 0.6833333333333335,
+          "interaction_lift": 0.014061576912800472,
+          "target_bias_variance": 0.11323334810205152,
+          "benchmark": "person_objects-bench-scores.json",
+          "benchmark_id": "icl_person_object_bindings",
+          "member_sha256": "f70057619cf4358d1b52696860a7e493fcf52ccc4a15c0f049e52ae1472242e6"
+        },
+        {
+          "context": 0.6249999999999999,
+          "target": 0.5108333333333334,
+          "bidirectional": 0.3133333333333333,
+          "centered_target": 0.7100000000000002,
+          "interaction_lift": 0.015664488442005627,
+          "target_bias_variance": 0.09018290397339677,
+          "benchmark": "person_profiles-bench-scores.json",
+          "benchmark_id": "icl_person_profiles",
+          "member_sha256": "c6928bf607d4366c2b133a7a83e4b0681cb048b6d858d284e31c328359ebd3fc"
+        },
+        {
+          "context": 0.5575,
+          "target": 0.5083333333333334,
+          "bidirectional": 0.2733333333333334,
+          "centered_target": 0.5916666666666667,
+          "interaction_lift": 0.008873750383655203,
+          "target_bias_variance": 0.10885691688719117,
+          "benchmark": "state_updates-bench-scores.json",
+          "benchmark_id": "icl_state_updates",
+          "member_sha256": "52fe84ef0d4baa48ca100ed79251efa648d5297f70c7c123174667a94656096f"
+        }
+      ],
+      "knowledge": [
+        {
+          "context": 0.9275,
+          "target": 0.6908333333333333,
+          "bidirectional": 0.6525000000000002,
+          "centered_target": 0.9591666666666667,
+          "interaction_lift": 0.5402465319832165,
+          "target_bias_variance": 0.6464599755717864,
+          "benchmark": "capitals-bench-scores.json",
+          "benchmark_id": "country_capitals",
+          "member_sha256": "c821272613059f5a683a93791f5c8217ebc26b87e56d28769c86675ec16618b8"
+        },
+        {
+          "context": 0.5041666666666667,
+          "target": 0.535,
+          "bidirectional": 0.27499999999999997,
+          "centered_target": 0.5433333333333333,
+          "interaction_lift": 0.013637707094351414,
+          "target_bias_variance": 0.7339755307738283,
+          "benchmark": "colors-bench-scores.json",
+          "benchmark_id": "typical_object_colors",
+          "member_sha256": "4813d549b8442c684929a76383f0616f25291de00a8f0a0147ac46b037344b58"
+        },
+        {
+          "context": 0.7141666666666667,
+          "target": 0.5791666666666666,
+          "bidirectional": 0.4099999999999999,
+          "centered_target": 0.7841666666666669,
+          "interaction_lift": 0.23954242475969456,
+          "target_bias_variance": 0.938856811989618,
+          "benchmark": "landmarks-bench-scores.json",
+          "benchmark_id": "landmark_cities",
+          "member_sha256": "d083bb9c3fc0fdda38f1f05ea3252eb46129c375435ea817b72d4297e7dcb98c"
+        },
+        {
+          "context": 0.9500000000000002,
+          "target": 0.8066666666666665,
+          "bidirectional": 0.7674999999999998,
+          "centered_target": 0.9875,
+          "interaction_lift": 0.9730947321951389,
+          "target_bias_variance": 0.6916866869295766,
+          "benchmark": "regions-bench-scores.json",
+          "benchmark_id": "regions_city",
+          "member_sha256": "67925bf615fb432149dca46f0c94fa9d61bacf2840407a29fdd0662f3f876bdc"
+        },
+        {
+          "context": 0.7,
+          "target": 0.605,
+          "bidirectional": 0.42166666666666663,
+          "centered_target": 0.7491666666666669,
+          "interaction_lift": 0.2362598191400369,
+          "target_bias_variance": 0.2461803694315882,
+          "benchmark": "taxonomy-bench-scores.json",
+          "benchmark_id": "entity_taxonomy",
+          "member_sha256": "afe254a8c0449b12c835eb032519a7b82e439f5f794f7bfb695c59e49ddcd91b"
+        }
+      ],
+      "language-manipulation": [
+        {
+          "context": 0.9983333333333334,
+          "target": 0.925,
+          "bidirectional": 0.9241666666666667,
+          "centered_target": 1.0,
+          "interaction_lift": 1.3414527236102598,
+          "target_bias_variance": 0.4650672740778131,
+          "benchmark": "affirmative_negative-bench-scores.json",
+          "benchmark_id": "few_shot_affirmative_to_negative",
+          "member_sha256": "73e73a62e023fb366fb86b9df1df2d43d8e432ee698be73379f64099b06aa3d9"
+        },
+        {
+          "context": 0.9908333333333335,
+          "target": 0.8408333333333333,
+          "bidirectional": 0.8341666666666666,
+          "centered_target": 1.0,
+          "interaction_lift": 0.9065760219097139,
+          "target_bias_variance": 0.4584648256287519,
+          "benchmark": "first_to_third_person-bench-scores.json",
+          "benchmark_id": "few_shot_first_to_third_person",
+          "member_sha256": "4120f5bdfb4580c2804087d08eaf0779b49be10fd4d9e798eeaba728aeaafa40"
+        },
+        {
+          "context": 0.975,
+          "target": 0.7241666666666667,
+          "bidirectional": 0.7116666666666667,
+          "centered_target": 0.9916666666666666,
+          "interaction_lift": 1.0640696071088314,
+          "target_bias_variance": 2.052353575752315,
+          "benchmark": "masculine_feminine-bench-scores.json",
+          "benchmark_id": "few_shot_masculine_to_feminine",
+          "member_sha256": "a4795356760231e5fd999ea3990531a0b87c0ec7751d7bc144c64ccd545841b9"
+        },
+        {
+          "context": 0.9558333333333334,
+          "target": 0.8116666666666669,
+          "bidirectional": 0.7775,
+          "centered_target": 0.9866666666666667,
+          "interaction_lift": 0.5832321089009445,
+          "target_bias_variance": 0.23413844445880944,
+          "benchmark": "present_future-bench-scores.json",
+          "benchmark_id": "few_shot_present_to_future",
+          "member_sha256": "d81efc02f42e96755d2dc031cfc1fd5e714e639b90bfd0d1449d236417e812f8"
+        },
+        {
+          "context": 0.995,
+          "target": 0.8033333333333332,
+          "bidirectional": 0.8,
+          "centered_target": 0.9975,
+          "interaction_lift": 2.1293192363778757,
+          "target_bias_variance": 3.9622186751649315,
+          "benchmark": "singular_plural-bench-scores.json",
+          "benchmark_id": "few_shot_singular_to_plural",
+          "member_sha256": "4da32853b81eacf68ac3d7113cc0f654fc2888e4fbd5a958f7a7c469f8462ee4"
+        }
+      ],
+      "math": [
+        {
+          "context": 0.5158333333333333,
+          "target": 0.4925,
+          "bidirectional": 0.24749999999999997,
+          "centered_target": 0.49333333333333335,
+          "interaction_lift": 0.006662956923246383,
+          "target_bias_variance": 0.6799378866018526,
+          "benchmark": "addition_subtraction-bench-scores.json",
+          "benchmark_id": "addition_subtraction",
+          "member_sha256": "70d088306587ffe3831cb2c3d117f2b1aa5ecd56b828ab7ccecbe05c4d6aee5e"
+        },
+        {
+          "context": 0.545,
+          "target": 0.5,
+          "bidirectional": 0.295,
+          "centered_target": 0.57,
+          "interaction_lift": 0.012113093733787536,
+          "target_bias_variance": 2.985474961670219,
+          "benchmark": "even_odd-bench-scores.json",
+          "benchmark_id": "even_odd",
+          "member_sha256": "939999b607203c4e10873aa78a2ec682a2bd3a6367e244a3cf674cc1878acd94"
+        },
+        {
+          "context": 0.7241666666666667,
+          "target": 0.5875,
+          "bidirectional": 0.44416666666666677,
+          "centered_target": 0.9116666666666667,
+          "interaction_lift": 0.19082009077072143,
+          "target_bias_variance": 2.9280042432688607,
+          "benchmark": "min_max-bench-scores.json",
+          "benchmark_id": "minimum_maximum",
+          "member_sha256": "8e77c222a058694472e8329cfdfd5b8770a738392b9a37a921a177264edfd997"
+        },
+        {
+          "context": 0.5458333333333334,
+          "target": 0.5566666666666668,
+          "bidirectional": 0.35083333333333333,
+          "centered_target": 0.5308333333333333,
+          "interaction_lift": 0.08958680763840675,
+          "target_bias_variance": 0.47542084206928875,
+          "benchmark": "multiplication-bench-scores.json",
+          "benchmark_id": "single_digit_multiplication",
+          "member_sha256": "590f210fe4264e125748da2ced796a3057003b38fccac10dadae6f6256cfa85f"
+        },
+        {
+          "context": 0.965,
+          "target": 0.7791666666666667,
+          "bidirectional": 0.7525000000000002,
+          "centered_target": 0.9916666666666666,
+          "interaction_lift": 0.16691414003809427,
+          "target_bias_variance": 0.04299055859735504,
+          "benchmark": "sequence_completion-bench-scores.json",
+          "benchmark_id": "integer_sequence_completion",
+          "member_sha256": "ec218f360fc21df4253c8dac401c06767891b3ea7a9119fe39be2385575080aa"
+        }
+      ],
+      "math-languages": [
+        {
+          "context": 0.5,
+          "target": 0.5075,
+          "bidirectional": 0.2858333333333334,
+          "centered_target": 0.5133333333333333,
+          "interaction_lift": 0.0005117763578891755,
+          "target_bias_variance": 0.17301455247124145,
+          "benchmark": "count_by_property-bench-scores.json",
+          "benchmark_id": "count_items_by_property",
+          "member_sha256": "eb3fa389fb649291247983ba5ddc8d6b54b5eafc4a2bb2f18e4b6439c4ddffd9"
+        },
+        {
+          "context": 0.5266666666666666,
+          "target": 0.5008333333333332,
+          "bidirectional": 0.23083333333333336,
+          "centered_target": 0.5950000000000001,
+          "interaction_lift": 0.0026587168872356415,
+          "target_bias_variance": 0.14898107381115422,
+          "benchmark": "count_occurrences-bench-scores.json",
+          "benchmark_id": "count_sequence_occurrences",
+          "member_sha256": "dfd37642e9595010bc1a4881f5dabe35b37b6876b6c7224a495867f893052456"
+        },
+        {
+          "context": 0.5033333333333334,
+          "target": 0.5108333333333334,
+          "bidirectional": 0.2875,
+          "centered_target": 0.5558333333333334,
+          "interaction_lift": 0.002530325949192047,
+          "target_bias_variance": 0.14093989335796336,
+          "benchmark": "count_repeated_objects-bench-scores.json",
+          "benchmark_id": "count_repeated_objects",
+          "member_sha256": "22652b4dfa62fd7f897b8206433e3ce749cc606e42f5465a1b5c9ea2f70cafda"
+        },
+        {
+          "context": 0.5308333333333334,
+          "target": 0.51,
+          "bidirectional": 0.2575,
+          "centered_target": 0.5933333333333333,
+          "interaction_lift": 0.012756454239288935,
+          "target_bias_variance": 0.8817244299801631,
+          "benchmark": "digits_words-bench-scores.json",
+          "benchmark_id": "digits_words_conversion",
+          "member_sha256": "731ee5c77ea5c80334b32ad0ae82d4a394e10679d311bfd5c2d12233cca03b14"
+        },
+        {
+          "context": 0.45,
+          "target": 0.49,
+          "bidirectional": 0.24416666666666664,
+          "centered_target": 0.3950000000000001,
+          "interaction_lift": -0.01541163865228484,
+          "target_bias_variance": 1.3704916992329474,
+          "benchmark": "select_position-bench-scores.json",
+          "benchmark_id": "select_sequence_position",
+          "member_sha256": "72c4483d8619533cfb3d7b10e9b0962b55430d738bd7411de1ad6149897293e3"
+        }
+      ],
+      "reasoning": [
+        {
+          "context": 0.01333333333333333,
+          "target": 0.2733333333333333,
+          "bidirectional": 0.012499999999999997,
+          "centered_target": 0.0016666666666666666,
+          "interaction_lift": -0.37834482945998515,
+          "target_bias_variance": 0.19973947843687356,
+          "benchmark": "constraint_elimination-bench-scores.json",
+          "benchmark_id": "reasoning_constraint_elimination",
+          "member_sha256": "9f46c88f3ee03bd5f12e9fa3fe5a668a4b254697954872523f92590474f12f20"
+        },
+        {
+          "context": 0.4425,
+          "target": 0.48666666666666664,
+          "bidirectional": 0.2125,
+          "centered_target": 0.4225,
+          "interaction_lift": -0.02297674387693405,
+          "target_bias_variance": 0.2145505527212206,
+          "benchmark": "ordering-bench-scores.json",
+          "benchmark_id": "reasoning_transitive_ordering",
+          "member_sha256": "c26f82af689c72b02a16292b31136beafb63f608d0fb7f1d718621b9a01b2328"
+        },
+        {
+          "context": 0.5166666666666666,
+          "target": 0.49583333333333335,
+          "bidirectional": 0.26833333333333337,
+          "centered_target": 0.5499999999999998,
+          "interaction_lift": 0.004162146051724734,
+          "target_bias_variance": 0.6131455036881,
+          "benchmark": "rule_chaining-bench-scores.json",
+          "benchmark_id": "reasoning_rule_chaining",
+          "member_sha256": "421cf156d64dd59c230394e77454d0193bc528a121dded9ac74bb59d5f07de5c"
+        },
+        {
+          "context": 0.46,
+          "target": 0.4816666666666666,
+          "bidirectional": 0.18916666666666668,
+          "centered_target": 0.44249999999999995,
+          "interaction_lift": -0.012442153468728075,
+          "target_bias_variance": 0.30198491860834964,
+          "benchmark": "spatial-bench-scores.json",
+          "benchmark_id": "reasoning_spatial_ordering",
+          "member_sha256": "3603defe61e0a4b71846033dba41ff3ca1423cb180baeaa81dfefc80a536a9f3"
+        },
+        {
+          "context": 0.4891666666666667,
+          "target": 0.5025,
+          "bidirectional": 0.2333333333333333,
+          "centered_target": 0.5316666666666666,
+          "interaction_lift": 0.004660652006665863,
+          "target_bias_variance": 0.37898434369540324,
+          "benchmark": "temporal-bench-scores.json",
+          "benchmark_id": "reasoning_temporal_ordering",
+          "member_sha256": "3d488c64a787b58c18e9fa026d2c5bdb95a4f3d1c73b4c3d71d3def3f9233239"
+        }
+      ]
+    },
+    "overall": {
+      "context": 0.6490833333333333,
+      "target": 0.585138888888889,
+      "bidirectional": 0.4135555555555555,
+      "centered_target": 0.6811944444444444,
+      "interaction_lift": 0.27271592486889895,
+      "target_bias_variance": 0.7627757040678166
+    }
+  },
+  "synth_only": {
+    "categories": {
+      "icl": {
+        "context": 0.5638333333333334,
+        "target": 0.5035000000000001,
+        "bidirectional": 0.27666666666666667,
+        "centered_target": 0.6061666666666666,
+        "interaction_lift": 0.015097794268575906,
+        "target_bias_variance": 0.7050406745533853
+      },
+      "knowledge": {
+        "context": 0.7356666666666666,
+        "target": 0.6261666666666668,
+        "bidirectional": 0.4823333333333334,
+        "centered_target": 0.8171666666666668,
+        "interaction_lift": 0.34002165180785315,
+        "target_bias_variance": 0.801013133585956
+      },
+      "language-manipulation": {
+        "context": 0.8388333333333333,
+        "target": 0.6536666666666667,
+        "bidirectional": 0.5511666666666667,
+        "centered_target": 0.9035,
+        "interaction_lift": 0.7878842493159431,
+        "target_bias_variance": 1.63600195408656
+      },
+      "math": {
+        "context": 0.6973333333333332,
+        "target": 0.5961666666666667,
+        "bidirectional": 0.43333333333333324,
+        "centered_target": 0.7655,
+        "interaction_lift": 0.15046272108111955,
+        "target_bias_variance": 1.372927689733649
+      },
+      "math-languages": {
+        "context": 0.5263333333333333,
+        "target": 0.501,
+        "bidirectional": 0.2955,
+        "centered_target": 0.5638333333333334,
+        "interaction_lift": 0.0059651949147383285,
+        "target_bias_variance": 0.6016789058843997
+      },
+      "reasoning": {
+        "context": 0.4913333333333334,
+        "target": 0.47766666666666663,
+        "bidirectional": 0.256,
+        "centered_target": 0.4618333333333332,
+        "interaction_lift": -0.030925048794349035,
+        "target_bias_variance": 0.6141306502787256
+      }
+    },
+    "benchmarks": {
+      "icl": [
+        {
+          "context": 0.5950000000000001,
+          "target": 0.5091666666666667,
+          "bidirectional": 0.3058333333333333,
+          "centered_target": 0.6533333333333333,
+          "interaction_lift": 0.03311981324354808,
+          "target_bias_variance": 1.8083389171512634,
+          "benchmark": "arbitrary_mappings-bench-scores.json",
+          "benchmark_id": "icl_arbitrary_mappings",
+          "member_sha256": "67d267ba4b5e1f0809431c7e658be81429c15f3fc10297c81024d36144e146d5"
+        },
+        {
+          "context": 0.5183333333333333,
+          "target": 0.5016666666666666,
+          "bidirectional": 0.26416666666666666,
+          "centered_target": 0.5241666666666667,
+          "interaction_lift": 0.002826597365594945,
+          "target_bias_variance": 0.9010954955825414,
+          "benchmark": "object_locations-bench-scores.json",
+          "benchmark_id": "icl_object_location_bindings",
+          "member_sha256": "0e4a5eefa4056e99a293fa2ff409db009bd960d8a70aa639b43154d1e3b9236f"
+        },
+        {
+          "context": 0.5966666666666667,
+          "target": 0.5083333333333333,
+          "bidirectional": 0.25916666666666666,
+          "centered_target": 0.6641666666666667,
+          "interaction_lift": 0.01775698859492939,
+          "target_bias_variance": 0.3433877328975851,
+          "benchmark": "person_objects-bench-scores.json",
+          "benchmark_id": "icl_person_object_bindings",
+          "member_sha256": "f70057619cf4358d1b52696860a7e493fcf52ccc4a15c0f049e52ae1472242e6"
+        },
+        {
+          "context": 0.585,
+          "target": 0.5025000000000001,
+          "bidirectional": 0.29666666666666663,
+          "centered_target": 0.6358333333333334,
+          "interaction_lift": 0.015642269341955114,
+          "target_bias_variance": 0.3158081935579494,
+          "benchmark": "person_profiles-bench-scores.json",
+          "benchmark_id": "icl_person_profiles",
+          "member_sha256": "c6928bf607d4366c2b133a7a83e4b0681cb048b6d858d284e31c328359ebd3fc"
+        },
+        {
+          "context": 0.5241666666666667,
+          "target": 0.49583333333333335,
+          "bidirectional": 0.25750000000000006,
+          "centered_target": 0.5533333333333333,
+          "interaction_lift": 0.006143302796852006,
+          "target_bias_variance": 0.15657303357758717,
+          "benchmark": "state_updates-bench-scores.json",
+          "benchmark_id": "icl_state_updates",
+          "member_sha256": "52fe84ef0d4baa48ca100ed79251efa648d5297f70c7c123174667a94656096f"
+        }
+      ],
+      "knowledge": [
+        {
+          "context": 0.9708333333333333,
+          "target": 0.7966666666666667,
+          "bidirectional": 0.7783333333333334,
+          "centered_target": 0.9825,
+          "interaction_lift": 0.8053435847659907,
+          "target_bias_variance": 0.6786777635929242,
+          "benchmark": "capitals-bench-scores.json",
+          "benchmark_id": "country_capitals",
+          "member_sha256": "c821272613059f5a683a93791f5c8217ebc26b87e56d28769c86675ec16618b8"
+        },
+        {
+          "context": 0.5566666666666666,
+          "target": 0.5291666666666667,
+          "bidirectional": 0.3275,
+          "centered_target": 0.5666666666666667,
+          "interaction_lift": 0.0313980357050896,
+          "target_bias_variance": 0.6501137364805979,
+          "benchmark": "colors-bench-scores.json",
+          "benchmark_id": "typical_object_colors",
+          "member_sha256": "4813d549b8442c684929a76383f0616f25291de00a8f0a0147ac46b037344b58"
+        },
+        {
+          "context": 0.7558333333333332,
+          "target": 0.6158333333333333,
+          "bidirectional": 0.48416666666666663,
+          "centered_target": 0.8458333333333334,
+          "interaction_lift": 0.35356612238004087,
+          "target_bias_variance": 1.1208866383482603,
+          "benchmark": "landmarks-bench-scores.json",
+          "benchmark_id": "landmark_cities",
+          "member_sha256": "d083bb9c3fc0fdda38f1f05ea3252eb46129c375435ea817b72d4297e7dcb98c"
+        },
+        {
+          "context": 0.5774999999999999,
+          "target": 0.5558333333333334,
+          "bidirectional": 0.31583333333333335,
+          "centered_target": 0.7891666666666669,
+          "interaction_lift": 0.22869145733118063,
+          "target_bias_variance": 1.152004563725591,
+          "benchmark": "regions-bench-scores.json",
+          "benchmark_id": "regions_city",
+          "member_sha256": "67925bf615fb432149dca46f0c94fa9d61bacf2840407a29fdd0662f3f876bdc"
+        },
+        {
+          "context": 0.8175,
+          "target": 0.6333333333333333,
+          "bidirectional": 0.5058333333333335,
+          "centered_target": 0.9016666666666666,
+          "interaction_lift": 0.28110905885696413,
+          "target_bias_variance": 0.4033829657824068,
+          "benchmark": "taxonomy-bench-scores.json",
+          "benchmark_id": "entity_taxonomy",
+          "member_sha256": "afe254a8c0449b12c835eb032519a7b82e439f5f794f7bfb695c59e49ddcd91b"
+        }
+      ],
+      "language-manipulation": [
+        {
+          "context": 0.9758333333333333,
+          "target": 0.6808333333333333,
+          "bidirectional": 0.6675,
+          "centered_target": 1.0,
+          "interaction_lift": 0.8077775624209926,
+          "target_bias_variance": 1.4589818803052512,
+          "benchmark": "affirmative_negative-bench-scores.json",
+          "benchmark_id": "few_shot_affirmative_to_negative",
+          "member_sha256": "73e73a62e023fb366fb86b9df1df2d43d8e432ee698be73379f64099b06aa3d9"
+        },
+        {
+          "context": 0.6916666666666665,
+          "target": 0.5783333333333334,
+          "bidirectional": 0.36500000000000005,
+          "centered_target": 0.8616666666666667,
+          "interaction_lift": 0.20744824578364696,
+          "target_bias_variance": 0.6144300449459158,
+          "benchmark": "first_to_third_person-bench-scores.json",
+          "benchmark_id": "few_shot_first_to_third_person",
+          "member_sha256": "4120f5bdfb4580c2804087d08eaf0779b49be10fd4d9e798eeaba728aeaafa40"
+        },
+        {
+          "context": 0.905,
+          "target": 0.6891666666666668,
+          "bidirectional": 0.6308333333333332,
+          "centered_target": 0.9533333333333333,
+          "interaction_lift": 0.9161925682425499,
+          "target_bias_variance": 2.047170119374199,
+          "benchmark": "masculine_feminine-bench-scores.json",
+          "benchmark_id": "few_shot_masculine_to_feminine",
+          "member_sha256": "a4795356760231e5fd999ea3990531a0b87c0ec7751d7bc144c64ccd545841b9"
+        },
+        {
+          "context": 0.64,
+          "target": 0.5366666666666666,
+          "bidirectional": 0.32166666666666666,
+          "centered_target": 0.705,
+          "interaction_lift": 0.08069635465741154,
+          "target_bias_variance": 0.3960541188677133,
+          "benchmark": "present_future-bench-scores.json",
+          "benchmark_id": "few_shot_present_to_future",
+          "member_sha256": "d81efc02f42e96755d2dc031cfc1fd5e714e639b90bfd0d1449d236417e812f8"
+        },
+        {
+          "context": 0.9816666666666667,
+          "target": 0.7833333333333333,
+          "bidirectional": 0.7708333333333333,
+          "centered_target": 0.9975,
+          "interaction_lift": 1.9273065154751143,
+          "target_bias_variance": 3.663373606939721,
+          "benchmark": "singular_plural-bench-scores.json",
+          "benchmark_id": "few_shot_singular_to_plural",
+          "member_sha256": "4da32853b81eacf68ac3d7113cc0f654fc2888e4fbd5a958f7a7c469f8462ee4"
+        }
+      ],
+      "math": [
+        {
+          "context": 0.5158333333333334,
+          "target": 0.48583333333333334,
+          "bidirectional": 0.27166666666666667,
+          "centered_target": 0.525,
+          "interaction_lift": 0.02074717193841934,
+          "target_bias_variance": 0.6381594200937566,
+          "benchmark": "addition_subtraction-bench-scores.json",
+          "benchmark_id": "addition_subtraction",
+          "member_sha256": "70d088306587ffe3831cb2c3d117f2b1aa5ecd56b828ab7ccecbe05c4d6aee5e"
+        },
+        {
+          "context": 0.61,
+          "target": 0.5,
+          "bidirectional": 0.235,
+          "centered_target": 0.74,
+          "interaction_lift": 0.029657678604125978,
+          "target_bias_variance": 2.155882431205296,
+          "benchmark": "even_odd-bench-scores.json",
+          "benchmark_id": "even_odd",
+          "member_sha256": "939999b607203c4e10873aa78a2ec682a2bd3a6367e244a3cf674cc1878acd94"
+        },
+        {
+          "context": 0.7549999999999999,
+          "target": 0.64,
+          "bidirectional": 0.5116666666666666,
+          "centered_target": 0.9199999999999998,
+          "interaction_lift": 0.3609952285885811,
+          "target_bias_variance": 2.9607427383156124,
+          "benchmark": "min_max-bench-scores.json",
+          "benchmark_id": "minimum_maximum",
+          "member_sha256": "8e77c222a058694472e8329cfdfd5b8770a738392b9a37a921a177264edfd997"
+        },
+        {
+          "context": 0.6341666666666665,
+          "target": 0.5916666666666667,
+          "bidirectional": 0.4058333333333334,
+          "centered_target": 0.6441666666666666,
+          "interaction_lift": 0.1594671116769314,
+          "target_bias_variance": 1.0446249295406278,
+          "benchmark": "multiplication-bench-scores.json",
+          "benchmark_id": "single_digit_multiplication",
+          "member_sha256": "590f210fe4264e125748da2ced796a3057003b38fccac10dadae6f6256cfa85f"
+        },
+        {
+          "context": 0.9716666666666667,
+          "target": 0.7633333333333333,
+          "bidirectional": 0.7424999999999998,
+          "centered_target": 0.9983333333333333,
+          "interaction_lift": 0.18144641459754,
+          "target_bias_variance": 0.06522892951295232,
+          "benchmark": "sequence_completion-bench-scores.json",
+          "benchmark_id": "integer_sequence_completion",
+          "member_sha256": "ec218f360fc21df4253c8dac401c06767891b3ea7a9119fe39be2385575080aa"
+        }
+      ],
+      "math-languages": [
+        {
+          "context": 0.5375,
+          "target": 0.4966666666666667,
+          "bidirectional": 0.2808333333333334,
+          "centered_target": 0.5375,
+          "interaction_lift": 0.0006548073887825012,
+          "target_bias_variance": 0.42670834436623606,
+          "benchmark": "count_by_property-bench-scores.json",
+          "benchmark_id": "count_items_by_property",
+          "member_sha256": "eb3fa389fb649291247983ba5ddc8d6b54b5eafc4a2bb2f18e4b6439c4ddffd9"
+        },
+        {
+          "context": 0.47916666666666663,
+          "target": 0.5041666666666668,
+          "bidirectional": 0.2708333333333333,
+          "centered_target": 0.5275000000000001,
+          "interaction_lift": 0.0009043866395950317,
+          "target_bias_variance": 0.35372590386802394,
+          "benchmark": "count_occurrences-bench-scores.json",
+          "benchmark_id": "count_sequence_occurrences",
+          "member_sha256": "dfd37642e9595010bc1a4881f5dabe35b37b6876b6c7224a495867f893052456"
+        },
+        {
+          "context": 0.5299999999999999,
+          "target": 0.4966666666666667,
+          "bidirectional": 0.3283333333333334,
+          "centered_target": 0.6216666666666666,
+          "interaction_lift": 0.00896290510892868,
+          "target_bias_variance": 0.18349499014637263,
+          "benchmark": "count_repeated_objects-bench-scores.json",
+          "benchmark_id": "count_repeated_objects",
+          "member_sha256": "22652b4dfa62fd7f897b8206433e3ce749cc606e42f5465a1b5c9ea2f70cafda"
+        },
+        {
+          "context": 0.5425,
+          "target": 0.5141666666666667,
+          "bidirectional": 0.29833333333333334,
+          "centered_target": 0.6475,
+          "interaction_lift": 0.024897606184085198,
+          "target_bias_variance": 0.6115231623657008,
+          "benchmark": "digits_words-bench-scores.json",
+          "benchmark_id": "digits_words_conversion",
+          "member_sha256": "731ee5c77ea5c80334b32ad0ae82d4a394e10679d311bfd5c2d12233cca03b14"
+        },
+        {
+          "context": 0.5425,
+          "target": 0.49333333333333335,
+          "bidirectional": 0.29916666666666664,
+          "centered_target": 0.4850000000000001,
+          "interaction_lift": -0.005593730747699765,
+          "target_bias_variance": 1.432942128675665,
+          "benchmark": "select_position-bench-scores.json",
+          "benchmark_id": "select_sequence_position",
+          "member_sha256": "72c4483d8619533cfb3d7b10e9b0962b55430d738bd7411de1ad6149897293e3"
+        }
+      ],
+      "reasoning": [
+        {
+          "context": 0.16333333333333333,
+          "target": 0.32666666666666666,
+          "bidirectional": 0.08166666666666667,
+          "centered_target": 0.07083333333333333,
+          "interaction_lift": -0.2943443746467431,
+          "target_bias_variance": 0.21856761273203798,
+          "benchmark": "constraint_elimination-bench-scores.json",
+          "benchmark_id": "reasoning_constraint_elimination",
+          "member_sha256": "9f46c88f3ee03bd5f12e9fa3fe5a668a4b254697954872523f92590474f12f20"
+        },
+        {
+          "context": 0.5416666666666667,
+          "target": 0.505,
+          "bidirectional": 0.29333333333333333,
+          "centered_target": 0.5291666666666666,
+          "interaction_lift": 0.01753770187497139,
+          "target_bias_variance": 0.9298540061102273,
+          "benchmark": "ordering-bench-scores.json",
+          "benchmark_id": "reasoning_transitive_ordering",
+          "member_sha256": "c26f82af689c72b02a16292b31136beafb63f608d0fb7f1d718621b9a01b2328"
+        },
+        {
+          "context": 0.52,
+          "target": 0.495,
+          "bidirectional": 0.25500000000000006,
+          "centered_target": 0.49083333333333323,
+          "interaction_lift": 0.0002162185311317466,
+          "target_bias_variance": 0.557081880573557,
+          "benchmark": "rule_chaining-bench-scores.json",
+          "benchmark_id": "reasoning_rule_chaining",
+          "member_sha256": "421cf156d64dd59c230394e77454d0193bc528a121dded9ac74bb59d5f07de5c"
+        },
+        {
+          "context": 0.5716666666666667,
+          "target": 0.5158333333333334,
+          "bidirectional": 0.31416666666666665,
+          "centered_target": 0.5808333333333333,
+          "interaction_lift": 0.02246385229627293,
+          "target_bias_variance": 0.5972859795817935,
+          "benchmark": "spatial-bench-scores.json",
+          "benchmark_id": "reasoning_spatial_ordering",
+          "member_sha256": "3603defe61e0a4b71846033dba41ff3ca1423cb180baeaa81dfefc80a536a9f3"
+        },
+        {
+          "context": 0.6600000000000003,
+          "target": 0.5458333333333333,
+          "bidirectional": 0.33583333333333326,
+          "centered_target": 0.6375,
+          "interaction_lift": 0.09950135797262191,
+          "target_bias_variance": 0.7678637723960128,
+          "benchmark": "temporal-bench-scores.json",
+          "benchmark_id": "reasoning_temporal_ordering",
+          "member_sha256": "3d488c64a787b58c18e9fa026d2c5bdb95a4f3d1c73b4c3d71d3def3f9233239"
+        }
+      ]
+    },
+    "overall": {
+      "context": 0.6422222222222222,
+      "target": 0.5596944444444444,
+      "bidirectional": 0.3825,
+      "centered_target": 0.6863333333333332,
+      "interaction_lift": 0.2114177604323135,
+      "target_bias_variance": 0.9551321680204459
+    }
+  },
+  "comparisons": {
+    "sanitized-minus-old": {
+      "icl": {
+        "delta": -0.026666666666666672,
+        "paired_item_bootstrap_95pct": [
+          -0.04116666666666667,
+          -0.011662500000000022
+        ]
+      },
+      "knowledge": {
+        "delta": -0.030666666666666786,
+        "paired_item_bootstrap_95pct": [
+          -0.044166666666666674,
+          -0.017166666666666663
+        ]
+      },
+      "language-manipulation": {
+        "delta": -0.0781666666666666,
+        "paired_item_bootstrap_95pct": [
+          -0.09150416666666665,
+          -0.06449583333333334
+        ]
+      },
+      "math": {
+        "delta": 0.019166666666666665,
+        "paired_item_bootstrap_95pct": [
+          0.0031666666666666683,
+          0.03517083333333331
+        ]
+      },
+      "math-languages": {
+        "delta": -0.004166666666666763,
+        "paired_item_bootstrap_95pct": [
+          -0.01850833333333333,
+          0.010004166666666646
+        ]
+      },
+      "reasoning": {
+        "delta": -0.021499999999999964,
+        "paired_item_bootstrap_95pct": [
+          -0.033833333333333326,
+          -0.009495833333333354
+        ]
+      }
+    },
+    "finesynth-minus-sanitized": {
+      "icl": {
+        "delta": -0.0058333333333333015,
+        "paired_item_bootstrap_95pct": [
+          -0.020504166666666674,
+          0.009674999999999954
+        ]
+      },
+      "knowledge": {
+        "delta": 0.06083333333333346,
+        "paired_item_bootstrap_95pct": [
+          0.04816666666666666,
+          0.07400000000000001
+        ]
+      },
+      "language-manipulation": {
+        "delta": -0.03266666666666673,
+        "paired_item_bootstrap_95pct": [
+          -0.04750000000000001,
+          -0.01816666666666667
+        ]
+      },
+      "math": {
+        "delta": -0.01516666666666655,
+        "paired_item_bootstrap_95pct": [
+          -0.03233333333333334,
+          0.001999999999999999
+        ]
+      },
+      "math-languages": {
+        "delta": -0.0033333333333332993,
+        "paired_item_bootstrap_95pct": [
+          -0.019499999999999997,
+          0.012999999999999998
+        ]
+      },
+      "reasoning": {
+        "delta": 0.018666666666666637,
+        "paired_item_bootstrap_95pct": [
+          0.006500000000000004,
+          0.030500000000000006
+        ]
+      }
+    }
+  }
+}

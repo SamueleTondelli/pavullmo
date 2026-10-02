@@ -1,0 +1,475 @@
+{
+  "method": "all complete encoded BOS/EOS chunks, BLAKE2b-128 content-token digest; quota-truncated chunks excluded",
+  "chunks": {
+    "old/train": {
+      "count": 822462,
+      "duplicate_occurrences": 0,
+      "token_length_quantiles": [
+        134.0,
+        597.0,
+        3771.0,
+        5441.0
+      ]
+    },
+    "old/validation": {
+      "count": 8285,
+      "duplicate_occurrences": 0,
+      "token_length_quantiles": [
+        109.40000000000009,
+        559.0,
+        3831.4000000000015,
+        5243.439999999999
+      ]
+    },
+    "old/test": {
+      "count": 7708,
+      "duplicate_occurrences": 0,
+      "token_length_quantiles": [
+        161.0,
+        643.5,
+        3860.0,
+        5188.790000000001
+      ]
+    },
+    "sanitized/train": {
+      "count": 849610,
+      "duplicate_occurrences": 0,
+      "token_length_quantiles": [
+        354.0,
+        747.0,
+        2966.0,
+        4019.0
+      ]
+    },
+    "sanitized/validation": {
+      "count": 8038,
+      "duplicate_occurrences": 0,
+      "token_length_quantiles": [
+        355.0,
+        795.5,
+        3301.0,
+        4069.670000000001
+      ]
+    },
+    "sanitized/test": {
+      "count": 8151,
+      "duplicate_occurrences": 0,
+      "token_length_quantiles": [
+        360.0,
+        786.0,
+        3216.0,
+        4033.0
+      ]
+    },
+    "finesynth/train": {
+      "count": 1264661,
+      "duplicate_occurrences": 0,
+      "token_length_quantiles": [
+        272.0,
+        427.0,
+        1892.0,
+        3912.0
+      ]
+    },
+    "finesynth/validation": {
+      "count": 8311,
+      "duplicate_occurrences": 0,
+      "token_length_quantiles": [
+        354.0,
+        765.0,
+        3220.0,
+        4050.499999999998
+      ]
+    },
+    "finesynth/test": {
+      "count": 8358,
+      "duplicate_occurrences": 0,
+      "token_length_quantiles": [
+        355.0,
+        760.0,
+        3159.3,
+        4036.4300000000003
+      ]
+    }
+  },
+  "exact_overlap": {
+    "old/train": {
+      "old/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/train": {
+        "chunks": 2,
+        "tokens": 772,
+        "token_fraction": 7.72e-07
+      },
+      "sanitized/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/train": {
+        "chunks": 4,
+        "tokens": 4137,
+        "token_fraction": 4.137e-06
+      },
+      "finesynth/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      }
+    },
+    "old/validation": {
+      "old/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      }
+    },
+    "old/test": {
+      "old/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      }
+    },
+    "sanitized/train": {
+      "old/train": {
+        "chunks": 2,
+        "tokens": 772,
+        "token_fraction": 7.72e-07
+      },
+      "old/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/train": {
+        "chunks": 653147,
+        "tokens": 762110255,
+        "token_fraction": 0.762110255
+      },
+      "finesynth/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      }
+    },
+    "sanitized/validation": {
+      "old/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/validation": {
+        "chunks": 7600,
+        "tokens": 9382842,
+        "token_fraction": 0.9382842
+      },
+      "finesynth/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      }
+    },
+    "sanitized/test": {
+      "old/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/test": {
+        "chunks": 7753,
+        "tokens": 9452283,
+        "token_fraction": 0.9452283
+      }
+    },
+    "finesynth/train": {
+      "old/train": {
+        "chunks": 4,
+        "tokens": 4137,
+        "token_fraction": 4.137e-06
+      },
+      "old/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/train": {
+        "chunks": 653147,
+        "tokens": 762110255,
+        "token_fraction": 0.762110255
+      },
+      "sanitized/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      }
+    },
+    "finesynth/validation": {
+      "old/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/validation": {
+        "chunks": 7600,
+        "tokens": 9382842,
+        "token_fraction": 0.9382842
+      },
+      "sanitized/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      }
+    },
+    "finesynth/test": {
+      "old/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "old/test": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "sanitized/test": {
+        "chunks": 7753,
+        "tokens": 9452283,
+        "token_fraction": 0.9452283
+      },
+      "finesynth/train": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      },
+      "finesynth/validation": {
+        "chunks": 0,
+        "tokens": 0,
+        "token_fraction": 0.0
+      }
+    }
+  }
+}
