@@ -363,32 +363,59 @@ class PretrainingTrainer(GenericTrainer[PretrainingConfig]):
         self._running = True
         self.train_model.train()
         iterator = None
+        started = None
+        window_step = self.global_step
+        window_tokens = self.tokens_seen
+
+        def log_throughput() -> None:
+            nonlocal started, window_step, window_tokens
+            if started is None:
+                return
+            # Drain queued optimizer work only at measurement boundaries.
+            # Allocator statistics themselves do not require synchronization.
+            if self.device.type == "cuda":
+                torch.cuda.synchronize(self.device)
+            elapsed = time.perf_counter() - started
+            self.writer.add_scalar("train/tokens_per_second",
+                                   (self.tokens_seen - window_tokens) / elapsed, self.global_step)
+            started = None
+            window_step = self.global_step
+            window_tokens = self.tokens_seen
+
         try:
             with self._stop_signals():
+                if (self.device.type == "cuda" and self.global_step < self.total_steps
+                        and not self._stop_requested):
+                    # Exclude component setup or checkpoint restoration from timing.
+                    torch.cuda.synchronize(self.device)
                 while self.global_step < self.total_steps and not self._stop_requested:
+                    if started is None:
+                        started = time.perf_counter()
                     if iterator is None:
                         iterator = self._train_iterator()
-                    started = time.perf_counter()
                     metrics = self._update(iterator)
                     if self.next_batch == 0:
                         iterator = None
                     if self.device.type == "cuda":
-                        torch.cuda.synchronize(self.device)
                         metrics["runtime/cuda_peak_allocated_bytes"] = torch.cuda.max_memory_allocated(self.device)
-                    elapsed = time.perf_counter() - started
-                    metrics["train/tokens_per_second"] = (self.config.training.batch_size * self.config.model.seq_len
-                                                         * self.config.training.grad_accum_steps / elapsed)
                     for name, value in metrics.items():
                         self.writer.add_scalar(name, value, self.global_step)
                     logger.info("step={}/{} train_loss={:.6f} gradient_norm={:.6f} lr={:.6g}",
                                 self.global_step, self.total_steps, self.train_loss,
                                 metrics["train/gradient_norm"], metrics["train/learning_rate"])
-                    if (self.global_step % self.config.evaluation.interval_steps == 0
-                            or self.global_step == self.total_steps):
-                        self.validate()
+                    validate = (self.global_step % self.config.evaluation.interval_steps == 0
+                                or self.global_step == self.total_steps)
                     interval = self.config.checkpoint.interval_steps
-                    if interval and self.global_step % interval == 0 and self.global_step < self.total_steps:
+                    checkpoint = interval and self.global_step % interval == 0 and self.global_step < self.total_steps
+                    if (self.global_step - window_step >= self.config.logging.throughput_interval_steps
+                            or validate or checkpoint or self._stop_requested):
+                        log_throughput()
+                    if validate:
+                        self.validate()
+                    if checkpoint:
                         self.save_checkpoint()
+                # A stop may arrive between updates rather than during one.
+                log_throughput()
                 if self.global_step == self.total_steps:
                     if self.validation_loss is None or self.last_validation_step != self.global_step:
                         self.validate()

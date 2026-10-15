@@ -48,6 +48,7 @@ class ConfigTests(unittest.TestCase):
         self.assertEqual(config.training.batch_size, 16)
         self.assertEqual(config.training.grad_accum_steps, 1)
         self.assertEqual(config.model.embed_dim, 512)
+        self.assertEqual(config.logging.throughput_interval_steps, 20)
         self.assertEqual(config.to_dict()["optimizer"]["muon"]["ns_iters"], 5)
         for value in ("16", True, 0):
             with self.subTest(value=value), self.assertRaises(ValidationError):
