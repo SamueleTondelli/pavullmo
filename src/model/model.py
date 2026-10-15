@@ -2,13 +2,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+from config import ModelConfig
 
-INITIALIZATION_RECIPES = frozenset({"pytorch_default", "olmo", "gpt_scaled"})
-BASE_INITIALIZATION_STD = 0.02
 CANON_KERNEL_SIZE = 4
 
 
-class CanonLayer(nn.Conv1d):
+class CausalDepthwiseConv(nn.Conv1d):
     """Residual causal depthwise convolution using causal-conv1d on CUDA.
 
     Retain Conv1d's parameter layout and initialization for existing checkpoints.
@@ -75,17 +74,35 @@ class CanonLayer(nn.Conv1d):
         return x + convolved
 
 
+class CanonLayer(CausalDepthwiseConv):
+    """Canon-A/C operate on the residual embedding width."""
+
+    def __init__(self, config: ModelConfig):
+        super().__init__(config.embed_dim, config.canon_kernel_size)
+
+
+class CanonAttentionLayer(CausalDepthwiseConv):
+    """Canon-B operates on concatenated Q, K and V projections."""
+
+    def __init__(self, config: ModelConfig):
+        kv_heads = config.num_kv_heads or config.attn_heads
+        kv_dimension = kv_heads * (config.embed_dim // config.attn_heads)
+        super().__init__(config.embed_dim + 2 * kv_dimension, config.canon_kernel_size)
+
+
+class CanonFFNLayer(CausalDepthwiseConv):
+    """Canon-D operates on concatenated gate and up projections."""
+
+    def __init__(self, config: ModelConfig):
+        super().__init__(2 * config.ffn_dim, config.canon_kernel_size)
+
+
 class RoPE(nn.Module):
-    def __init__(self, seq_len: int, head_dim: int, base: float = 10000.0):
+    def __init__(self, config: ModelConfig):
         super().__init__()
-
-        if seq_len <= 0:
-            raise ValueError("seq_len must be positive")
-        if head_dim <= 0 or head_dim % 2 != 0:
-            raise ValueError("head_dim must be a positive, even number")
-        if base <= 0:
-            raise ValueError("base must be positive")
-
+        seq_len = config.seq_len
+        head_dim = config.embed_dim // config.attn_heads
+        base = config.rope_base
         self.seq_len = seq_len
         self.head_dim = head_dim
 
@@ -140,58 +157,35 @@ class RoPE(nn.Module):
 
 
 class CausalSelfAttention(nn.Module):
-    def __init__(
-        self,
-        num_heads: int,
-        embed_dimension: int,
-        bias: bool = False,
-        dropout: float = 0.0,
-        seq_len: int = 2048,
-        rope_base: float = 10000.0,
-        qk_norm: bool = False,
-        split_qkv_projections: bool = False,
-        canon_layers: bool = False,
-        num_kv_heads: int | None = None,
-    ):
+    def __init__(self, config: ModelConfig):
         super().__init__()
-        if num_heads <= 0:
-            raise ValueError("num_heads must be positive")
-        if embed_dimension % num_heads != 0:
-            raise ValueError("embed_dimension must be divisible by num_heads")
-        if num_kv_heads is None:
-            num_kv_heads = num_heads
-        if num_kv_heads <= 0 or num_heads % num_kv_heads != 0:
-            raise ValueError("num_kv_heads must be positive and divide num_heads")
-        if not 0.0 <= dropout <= 1.0:
-            raise ValueError("dropout must be between 0 and 1")
-
+        num_heads = config.attn_heads
+        embed_dimension = config.embed_dim
+        bias = config.attn_bias
         head_dim = embed_dimension // num_heads
+        num_kv_heads = config.num_kv_heads or num_heads
         kv_dimension = num_kv_heads * head_dim
-        self.rope = RoPE(seq_len, head_dim, base=rope_base)
-        self.q_norm = nn.RMSNorm(head_dim) if qk_norm else nn.Identity()
-        self.k_norm = nn.RMSNorm(head_dim) if qk_norm else nn.Identity()
-        self.split_qkv_projections = split_qkv_projections
-        if split_qkv_projections:
+        self.rope = RoPE(config)
+        self.q_norm = nn.RMSNorm(head_dim) if config.qk_norm else nn.Identity()
+        self.k_norm = nn.RMSNorm(head_dim) if config.qk_norm else nn.Identity()
+        self.split_qkv_projections = config.split_qkv_projections
+        if config.split_qkv_projections:
             self.q_proj = nn.Linear(embed_dimension, embed_dimension, bias=bias)
             self.k_proj = nn.Linear(embed_dimension, kv_dimension, bias=bias)
             self.v_proj = nn.Linear(embed_dimension, kv_dimension, bias=bias)
         else:
             # Preserve the original parameter layout and checkpoint keys.
-            self.c_attn = nn.Linear(
-                embed_dimension, embed_dimension + 2 * kv_dimension, bias=bias
-            )
+            self.c_attn = nn.Linear(embed_dimension, embed_dimension + 2 * kv_dimension, bias=bias)
         # output projection
         self.c_proj = nn.Linear(embed_dimension, embed_dimension, bias=bias)
         # regularization
-        self.dropout = dropout
+        self.dropout = config.dropout
         self.num_heads = num_heads
         self.num_kv_heads = num_kv_heads
-        self.embed_dimension = embed_dimension
         self.kv_dimension = kv_dimension
+        self.embed_dimension = embed_dimension
 
-        self.cb = (
-            CanonLayer(embed_dimension + 2 * kv_dimension) if canon_layers else None
-        )
+        self.cb = CanonAttentionLayer(config) if config.canon_layers else None
 
     def forward(self, x):
         if self.split_qkv_projections:
@@ -214,7 +208,7 @@ class CausalSelfAttention(nn.Module):
         head_dim = self.embed_dimension // self.num_heads
 
         query, key, value = query_projected.split(
-            (self.embed_dimension, self.kv_dimension, self.kv_dimension), dim=-1
+            (self.embed_dimension, self.kv_dimension, self.kv_dimension), dim=-1,
         )
         query = query.view(
             batch_size, sequence_length, self.num_heads, head_dim
@@ -242,7 +236,7 @@ class CausalSelfAttention(nn.Module):
                 dim=-1,
             )
             query, key, value = self.cb(projected).split(
-                (self.embed_dimension, self.kv_dimension, self.kv_dimension), dim=-1
+                (self.embed_dimension, self.kv_dimension, self.kv_dimension), dim=-1,
             )
             query = query.view(
                 batch_size, sequence_length, self.num_heads, head_dim
@@ -276,12 +270,14 @@ class CausalSelfAttention(nn.Module):
 
 
 class SwiGLUFFN(nn.Module):
-    def __init__(self, dim, hidden_dim, canon_layers: bool = False):
+    def __init__(self, config: ModelConfig):
         super().__init__()
+        dim = config.embed_dim
+        hidden_dim = config.ffn_dim
         self.w1 = nn.Linear(dim, hidden_dim)
         self.w2 = nn.Linear(hidden_dim, dim)
         self.w3 = nn.Linear(dim, hidden_dim)
-        self.cd = CanonLayer(hidden_dim * 2) if canon_layers else None
+        self.cd = CanonFFNLayer(config) if config.canon_layers else None
 
     def forward(self, x):
         gate = self.w1(x)
@@ -293,44 +289,22 @@ class SwiGLUFFN(nn.Module):
 
 
 class TransformerBlock(nn.Module):
-    def __init__(
-        self,
-        embed_dim: int,
-        attn_heads: int,
-        ffn_dim: int,
-        dropout: float,
-        seq_len: int = 2048,
-        rope_base: float = 10000.0,
-        qk_norm: bool = False,
-        split_qkv_projections: bool = False,
-        canon_layers: bool = False,
-        num_kv_heads: int | None = None,
-    ):
+    def __init__(self, config: ModelConfig):
         super().__init__()
+        embed_dim = config.embed_dim
         self.embed_dim = embed_dim
         self.attn_norm = nn.RMSNorm(embed_dim)
-        self.attn = CausalSelfAttention(
-            attn_heads,
-            embed_dim,
-            bias=False,
-            dropout=dropout,
-            seq_len=seq_len,
-            rope_base=rope_base,
-            qk_norm=qk_norm,
-            split_qkv_projections=split_qkv_projections,
-            canon_layers=canon_layers,
-            num_kv_heads=num_kv_heads,
-        )
-        self.attn_dropout = nn.Dropout(dropout)
+        self.attn = CausalSelfAttention(config)
+        self.attn_dropout = nn.Dropout(config.dropout)
 
         self.ffn_norm = nn.RMSNorm(embed_dim)
-        self.ffn = SwiGLUFFN(embed_dim, ffn_dim, canon_layers=canon_layers)
-        self.ffn_dropout = nn.Dropout(dropout)
+        self.ffn = SwiGLUFFN(config)
+        self.ffn_dropout = nn.Dropout(config.dropout)
 
-        self.canon_layers = canon_layers
-        if canon_layers:
-            self.ca = CanonLayer(embed_dim)
-            self.cc = CanonLayer(embed_dim)
+        self.canon_layers = config.canon_layers
+        if config.canon_layers:
+            self.ca = CanonLayer(config)
+            self.cc = CanonLayer(config)
 
     def forward(self, x):
         pre_attn = x
@@ -351,55 +325,22 @@ class TransformerBlock(nn.Module):
 
 
 class DecoderTransformer(nn.Module):
-    def __init__(
-        self,
-        vocab_size: int,
-        n_blocks: int,
-        embed_dim: int,
-        attn_heads: int,
-        ffn_dim: int,
-        dropout: float,
-        seq_len: int = 2048,
-        rope_base: float = 10000.0,
-        initialization: str = "pytorch_default",
-        initialization_std: float = BASE_INITIALIZATION_STD,
-        qk_norm: bool = False,
-        split_qkv_projections: bool = False,
-        canon_layers: bool = False,
-        num_kv_heads: int | None = None,
-    ):
+    def __init__(self, config: ModelConfig):
         super().__init__()
-        initialization = initialization.strip().lower()
-        if initialization not in INITIALIZATION_RECIPES:
-            choices = ", ".join(sorted(INITIALIZATION_RECIPES))
-            raise ValueError(
-                f"unknown initialization recipe {initialization!r}; choose from {choices}"
-            )
-        if initialization_std <= 0.0:
-            raise ValueError("initialization_std must be positive")
-
-        self.initialization = initialization
-        self.initialization_std = initialization_std
-        self.n_blocks = n_blocks
-        self.embeddings = nn.Embedding(vocab_size, embed_dim)
-        self.layers = nn.ModuleList(
-            TransformerBlock(
-                embed_dim,
-                attn_heads,
-                ffn_dim,
-                dropout,
-                seq_len=seq_len,
-                rope_base=rope_base,
-                qk_norm=qk_norm,
-                split_qkv_projections=split_qkv_projections,
-                canon_layers=canon_layers,
-                num_kv_heads=num_kv_heads,
-            )
-            for _ in range(n_blocks)
+        self.config = ModelConfig.model_validate(
+            config.to_dict(), context={"warn_unknown_config": False},
         )
-        self.norm = nn.RMSNorm(embed_dim)
+        config = self.config
+        self.initialization = config.initialization
+        self.initialization_std = config.initialization_std
+        self.n_blocks = config.n_blocks
+        self.embeddings = nn.Embedding(config.vocab_size, config.embed_dim)
+        self.layers = nn.ModuleList(
+            TransformerBlock(config) for _ in range(config.n_blocks)
+        )
+        self.norm = nn.RMSNorm(config.embed_dim)
 
-        if initialization != "pytorch_default":
+        if config.initialization != "pytorch_default":
             self.reset_parameters()
 
     @torch.no_grad()

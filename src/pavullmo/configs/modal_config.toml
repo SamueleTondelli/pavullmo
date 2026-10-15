@@ -1,0 +1,6 @@
+# Include explicitly for runs using the standard Modal Volume mounts.
+
+[runtime]
+dataset_dir = "/datasets"
+output_dir = "/outputs/runs"
+runs_csv = "/outputs/pretrain_runs.csv"

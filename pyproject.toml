@@ -18,6 +18,9 @@ dependencies = [
     "tensorboard==2.21.0",
     "torch==2.9.1",
     "tqdm>=4.70.0",
+    "loguru>=0.7,<1",
+    "pydantic>=2.12,<3",
+    "tomlkit>=0.13,<1",
 ]
 
 [project.optional-dependencies]
@@ -41,6 +44,9 @@ torch = [
 name = "pytorch-cu128"
 url = "https://download.pytorch.org/whl/cu128"
 explicit = true
+
+[tool.uv.build-backend]
+module-name = ["pavullmo", "components", "config", "model"]
 
 [build-system]
 requires = ["uv_build>=0.12.2,<0.13.0"]
