@@ -12,6 +12,10 @@ dependencies = [
     "tensorboard==2.21.0",
     "torch==2.9.1",
     "tqdm>=4.70.0",
+    "causal-conv1d==1.7.0; sys_platform == 'linux' and platform_machine == 'x86_64'",
+    "loguru>=0.7,<1",
+    "pydantic>=2.12,<3",
+    "tomlkit>=0.13,<1",
 ]
 
 [project.optional-dependencies]
@@ -27,11 +31,15 @@ pavullmo-check = "pavullmo.check_environment:main"
 torch = [
     { index = "pytorch-cu128", marker = "sys_platform == 'linux' and platform_machine == 'x86_64'" },
 ]
+causal-conv1d = { url = "https://github.com/Dao-AILab/causal-conv1d/releases/download/v1.7.0/causal_conv1d-1.7.0+cu12torch2.9cxx11abiTRUE-cp312-cp312-linux_x86_64.whl", marker = "sys_platform == 'linux' and platform_machine == 'x86_64'" }
 
 [[tool.uv.index]]
 name = "pytorch-cu128"
 url = "https://download.pytorch.org/whl/cu128"
 explicit = true
+
+[tool.uv.build-backend]
+module-name = ["pavullmo", "components", "config", "model"]
 
 [build-system]
 requires = ["uv_build>=0.12.2,<0.13.0"]
