@@ -132,6 +132,7 @@ class LoggingConfig(Config):
     enqueue: bool = False
     tensorboard_flush_secs: int = Field(default=5, gt=0)
     diagnostics_interval: int = Field(default=100, gt=0)
+    throughput_interval_steps: int = Field(default=20, gt=0)
 
 
 class CheckpointConfig(Config):

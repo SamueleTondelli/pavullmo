@@ -230,11 +230,19 @@ buffers outside graph storage for accumulation; validation uses the base model
 eagerly to accommodate its partial final batch.
 
 Cross-entropy, objective/z-loss, pre-clipping gradient norm, clipping frequency,
-learning rates used for each update, token count and throughput are written to
+learning rates used for each update and token count are written to
 TensorBoard at every completed step and summarized through Loguru. Parameter
 and pre-clipping gradient-group norms are written at the first/final update and
 every `logging.diagnostics_interval` updates. Split QKV retains the combined
 `gradient_groups/attention_qkv` metric and adds query/key/value metrics.
+
+TensorBoard throughput averages windows of `logging.throughput_interval_steps`
+updates (default 20). Windows also finish before validation/checkpointing and
+at completion or graceful stop, including partial windows. The wall-clock timer
+includes data loading and per-step logging but excludes validation/checkpoint
+pauses. CUDA synchronizes at timing boundaries rather than every update.
+`runtime/cuda_peak_allocated_bytes` still samples allocator statistics each
+update without synchronization; it reports the process lifetime peak.
 
 `validate()` evaluates the first `evaluation.steps` ordered batches, weighting
 cross-entropy by target tokens, including the partial last batch. It restores
