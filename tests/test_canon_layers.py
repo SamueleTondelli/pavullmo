@@ -6,12 +6,13 @@ from unittest.mock import patch
 import torch
 import torch.nn.functional as F
 
-from src.model.model import CanonLayer, DecoderTransformer
+from config import ModelConfig
+from src.model.model import CausalDepthwiseConv, DecoderTransformer
 
 
 class CanonLayerTests(unittest.TestCase):
     def test_depthwise_convolution_is_causal_and_residual(self):
-        layer = CanonLayer(1, kernel_size=4)
+        layer = CausalDepthwiseConv(1, kernel_size=4)
         with torch.no_grad():
             layer.weight.fill_(1.0)
 
@@ -29,7 +30,7 @@ class CanonLayerTests(unittest.TestCase):
     def test_canon_abcd_shapes_and_forward_for_both_qkv_layouts(self):
         for split_qkv in (False, True):
             with self.subTest(split_qkv=split_qkv):
-                model = DecoderTransformer(
+                model = DecoderTransformer(ModelConfig(
                     vocab_size=32,
                     n_blocks=1,
                     embed_dim=16,
@@ -40,7 +41,7 @@ class CanonLayerTests(unittest.TestCase):
                     qk_norm=True,
                     split_qkv_projections=split_qkv,
                     canon_layers=True,
-                )
+                ))
                 layer = model.layers[0]
                 self.assertEqual(tuple(layer.ca.weight.shape), (16, 1, 4))
                 self.assertEqual(tuple(layer.attn.cb.weight.shape), (48, 1, 4))
@@ -55,7 +56,7 @@ class CanonLayerTests(unittest.TestCase):
                     self.assertIsNotNone(canon.weight.grad)
 
     def test_full_model_does_not_leak_future_tokens(self):
-        model = DecoderTransformer(
+        model = DecoderTransformer(ModelConfig(
             vocab_size=32,
             n_blocks=2,
             embed_dim=16,
@@ -64,7 +65,7 @@ class CanonLayerTests(unittest.TestCase):
             dropout=0.0,
             seq_len=8,
             canon_layers=True,
-        ).eval()
+        )).eval()
         token_ids = torch.randint(0, 32, (1, 8))
         changed_future = token_ids.clone()
         changed_future[:, 5:] = (changed_future[:, 5:] + 1) % 32
@@ -82,7 +83,7 @@ class CanonLayerCudaTests(unittest.TestCase):
         for split_qkv in (False, True):
             with self.subTest(split_qkv=split_qkv):
                 torch.manual_seed(0)
-                model = DecoderTransformer(
+                model = DecoderTransformer(ModelConfig(
                     vocab_size=32,
                     n_blocks=1,
                     embed_dim=16,
@@ -93,7 +94,7 @@ class CanonLayerCudaTests(unittest.TestCase):
                     qk_norm=True,
                     split_qkv_projections=split_qkv,
                     canon_layers=True,
-                ).cuda()
+                )).cuda()
                 token_ids = torch.randint(0, 32, (2, 8), device="cuda")
                 with torch.autocast("cuda", dtype=torch.bfloat16):
                     expected = model(token_ids)
@@ -127,7 +128,7 @@ class CanonLayerCudaTests(unittest.TestCase):
                         with self.subTest(
                             dtype=dtype, channels=channels, width=width, layout=layout
                         ):
-                            layer = CanonLayer(channels, width).cuda()
+                            layer = CausalDepthwiseConv(channels, width).cuda()
                             if layout == "sequence_slice":
                                 x = torch.randn(
                                     2, 34, channels, device="cuda", dtype=dtype
@@ -176,7 +177,7 @@ class CanonLayerCudaTests(unittest.TestCase):
         from causal_conv1d import causal_conv1d_fn
 
         original = torch.nn.Conv1d(16, 16, 4, groups=16, padding=3, bias=False)
-        layer = CanonLayer(16).cuda()
+        layer = CausalDepthwiseConv(16).cuda()
         layer.load_state_dict(original.state_dict(), strict=True)
         self.assertEqual(tuple(layer.weight.shape), (16, 1, 4))
         x = torch.randn(2, 17, 16, device="cuda", requires_grad=True)
@@ -195,7 +196,7 @@ class CanonLayerCudaTests(unittest.TestCase):
     def test_kernel_preserves_causality_and_unsupported_widths(self):
         for width in (1, 4, 5):
             with self.subTest(width=width):
-                layer = CanonLayer(16, width).cuda()
+                layer = CausalDepthwiseConv(16, width).cuda()
                 x = torch.randn(2, 17, 16, device="cuda")
                 changed = x.clone()
                 changed[:, 8:] = -100

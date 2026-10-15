@@ -1,154 +1,236 @@
 # pavullmo
 
-This project aims to pretrain a small (~50M parameter) decoder-only language
-model for Italian. It is an early-stage `uv` project: the tokenizer, model,
-pre-tokenized datasets, and a local single-GPU pretraining loop are implemented.
+This project pretrains small decoder-only language models for Italian. It is a
+Python 3.12 `uv` project with tokenizer/dataset builders, a configurable model,
+and one shared single-GPU PretrainingTrainer used by local and Modal launchers.
 
 ## Data and tokenizer
 
-- The corpus is `gsarti/clean_mc4_it`, loaded from Hugging Face Datasets in
-  streaming mode. It provides `tiny`, `small`, `medium`, `large`, and `full`
-  variants; current tokenizer work uses `tiny`.
-- `src/dataset/tokenizer/train_tokenizer.py` trains a 16,000-token SentencePiece BPE on
-  up to 1,000,000 documents, with full character coverage and byte fallback.
-- Token IDs are fixed as UNK=0, BOS=1, EOS=2, and PAD=3. The vocabulary also
-  includes `<system>`, `<user>`, and `<assistant>`.
-- `src/dataset/tokenizer/count_tokens.py` samples the streamed corpus and extrapolates
-  token counts for each dataset variant from the dataset card's approximate
-  word counts.
-- `src/dataset/build_dataset.py` streams the `tiny` configuration once and creates
-  deterministic 10M-, 100M-, and 1B-token training prefixes plus the complete
-  validation split. Each nonempty document is encoded as
-  `[BOS, *content_tokens, EOS]`.
-- Generated artifacts live under `artifacts/datasets/` and are intentionally ignored by
-  Git. Tokens are flat, little-endian `uint16` streams in shards of at most 50M
-  tokens, with counts, hashes, tokenizer information, and source details in each
-  artifact's `metadata.json`.
+- `src/dataset/` owns dataset and tokenizer building scripts. FineWeb2 Italian
+  is the default source for `build_dataset.py`; `gsarti/clean_mc4_it` is also
+  available through its source CLI. Production pipelines build mixtures from
+  web, Wikipedia, books and educational PDFs.
+- `src/dataset/tokenizer/train_tokenizer.py` trains SentencePiece BPE from
+  streaming data or frozen documents. Vocabulary size, byte budget and model
+  prefix are explicit CLI inputs. It uses full character coverage and byte
+  fallback, with UNK=0, BOS=1, EOS=2 and PAD=3 plus `<system>`, `<user>` and
+  `<assistant>` symbols.
+- `build_dataset.py` creates deterministic 10M-, 100M- and 1B-token training
+  artifacts and validation. Each document is encoded as `[BOS, *content, EOS]`.
+- Generated artifacts live under `artifacts/datasets/` and are ignored by Git.
+  Tokens are flat little-endian uint16 streams in shards, accompanied by
+  `metadata.json` containing counts, hashes, tokenizer identity and source details.
+  Preserve this interface, including fixed evaluation sample offsets.
 
-## Model
+## Model and shared components
 
 - `src/model/model.py` implements a pre-normalized decoder-only Transformer
-  with RMSNorm, SwiGLU feed-forward layers, and causal scaled-dot-product
-  attention.
-- Rotary positional embeddings (RoPE) are applied to queries and keys. The
-  configured context length is a hard limit, and each attention head must have
-  an even dimension.
-- Set `SPLIT_QKV_PROJECTIONS=true` to store query, key, and value projections as
-  separate parameters while retaining one concatenated attention projection in
-  the forward pass. It defaults to false for compatibility with existing fused
-  QKV checkpoints.
-- Model inputs are integer token IDs with shape `[batch, sequence]`; outputs are
-  vocabulary logits with shape `[batch, sequence, vocab_size]`.
+  with RMSNorm, SwiGLU, RoPE and causal native scaled-dot-product attention.
+  The model and architectural layers take `ModelConfig`. Context length is a
+  hard limit; embedding dimension must divide evenly into attention heads and
+  each head dimension must be even.
+- `model.split_qkv_projections` selects separate query/key/value parameters
+  while retaining a concatenated attention projection in the forward pass.
+  Its default is false. Inputs are integer IDs shaped `[batch, sequence]` and
+  outputs are logits shaped `[batch, sequence, vocab_size]`.
+- All tuned model presets explicitly enable `model.split_qkv_projections`.
+- `src/components/` owns `GenericTrainer`, `PretrainingTrainer`,
+  `CheckpointManager`, the optimizer wrapper,
+  token dataset/loaders and shared diagnostic grouping. Launchers do not
+  duplicate training algorithms or depend on each other's implementation.
+- `GenericTrainer` in `generic_trainer.py` initializes shared model/optimizer,
+  compilation, logging/writer and checkpoint-manager components. Its constructor
+  takes a stage's `TrainerConfig` subclass plus an explicit seed and computed
+  `total_steps`; it preserves the concrete config type. It owns no training
+  loop, datasets, accumulation, stepping, evaluation or checkpoint state.
+- `GenericTrainer.forward_backward(microbatch, loss_fn, loss_kwargs=...)` performs
+  one forward and backward and returns a detached scalar loss. A tensor is
+  passed positionally; a mapping is expanded as model kwargs. The caller moves
+  inputs/targets to the device. The specialized loss supplies all normalization
+  and accumulation scaling. The helper marks compiled forward steps but never
+  clears/clips gradients or steps optimizers/schedules.
+- `PretrainingTrainer` takes only `PretrainingConfig`. It constructs components, validates matching
+  train/validation tokenizer hashes and vocabulary size, seeds Python/PyTorch/
+  CUDA, and computes the optimizer-step horizon from data length and run duration.
+- Startup logs dump each top-level config section as single-line TOML:
+  `GenericTrainer` owns the fields defined by `TrainerConfig`, while
+  `PretrainingTrainer` logs only its additional sections and retained extras.
+  Derive these groups from the config schema rather than forwarding lists.
+- Config fields are user-selected settings. Do not add computed state such as
+  scheduler total steps to config classes, or rewrite config values during setup.
+  Pass computed values directly to component constructors, for example
+  `Optimizer(config.optimizer, model, total_steps=total_steps)`.
+- The memory-mapped reader returns shifted input/target spans of context length.
+  Blocks share their boundary token, support cross-shard reads, and shuffle with
+  a deterministic epoch sampler. Prefetch does not advance the consumed cursor.
+  Training drops incomplete batches/accumulation groups. Validation is ordered,
+  retains partial final batches and checks complete fixed-sample coverage.
+- `optimizer.kind` selects AdamW or Muon for hidden matrices plus AdamW for
+  other parameters. Norms, biases and tied embeddings are excluded from decay.
+  Schedule settings are nested under `optimizer.schedule`, with warmup and
+  cosine or WSD decay. The wrapper exposes separate optimizer/scheduler steps.
 
-## Pretraining
+## Configuration and local training
 
-- `src/pavullmo/pretrain_base.py` is the local single-GPU next-token pretraining
-  entry point. It reads `artifacts/datasets/train_<variant>` and
-  `artifacts/datasets/validation` directly; it does not tokenize text during training.
-- The memory-mapped dataset loader constructs `sequence_length + 1` token spans
-  and returns shifted input/target tensors of shape `[sequence_length]`. Blocks
-  use a stride of `sequence_length`, so adjacent blocks share their boundary
-  token and no next-token transition is lost. Reads across shard boundaries are
-  supported.
-- Training uses fused AdamW, BF16 autocast, optional gradient accumulation,
-  gradient clipping, linear learning-rate warmup, and cosine decay to `MIN_LR`.
-  Model compilation is enabled by default with static shapes.
-- Train loss, pre-clipping gradient norm, and learning rate are logged after
-  every optimizer step. Validation loss is computed periodically over a fixed
-  number of validation batches. All metrics and the run configuration are
-  written to TensorBoard under `artifacts/runs/<experiment_name>` by default.
-- Diagnostic gradient logs retain `gradient_groups/attention_qkv` for both
-  layouts and additionally report query, key, and value norms when split QKV is
-  enabled.
-- After successful training, the final model checkpoint is written under
-  `MODEL_OUTPUT_DIR`. It contains the model state, final losses, global step,
-  dataset variant, hyperparameter mapping, and exact hyperparameter string.
-- The final train/validation losses, script name, dataset variant, experiment
-  name, model path, and complete hyperparameter string are appended to
-  `artifacts/results/pretrain_runs.csv`. Override the registry path with `RUNS_CSV`.
-- Every hyperparameter must be read from an environment variable; do not add a
-  hard-coded model, optimizer, data, schedule, evaluation, logging, or
-  compilation hyperparameter. Whenever a hyperparameter is added or changed,
-  also include it in the script's `hyperparameters` mapping so its exact
-  `NAME=value` setting is recorded in the CSV `config` column for every
-  successful run.
-- Important runtime controls include `DATASET_VARIANT`, `BATCH_SIZE`,
-  `GRAD_ACCUM_STEPS`, `EPOCHS`, `MAX_STEPS`, `VALIDATION_INTERVAL`,
-  `VALIDATION_STEPS`, `NUM_WORKERS`, `LOG_DIR`, `COMPILE_MODEL`, and
-  `COMPILE_MODE`.
-- Start the dashboard with
-  `.venv/bin/tensorboard --logdir artifacts/runs --port 6006`. TensorBoard events flush
-  every five seconds by default; configure this with
-  `TENSORBOARD_FLUSH_SECS`.
+- `src/config/` defines typed Pydantic config classes and generic TOML/dictionary
+  serialization. Add hyperparameters and defaults to `schema.py`; do not maintain
+  extra serialization or provider forwarding lists. All training settings come
+  from `PretrainingConfig`. Config classes do not inspect argument parsers.
+- `TrainerConfig` contains common name/model/optimizer/runtime/logging/checkpoint
+  sections; `PretrainingConfig` adds train_dataset/validation_dataset/training/
+  evaluation. Both dataset sections are independent `TokenDatasetConfig`
+  instances with an explicit artifact `path`. New training stages
+  define their own typed root subclasses. Existing TOML config/checkpoint
+  contents remain compatible with the Python class rename.
+- `PretrainingConfig.name` is mandatory, has no default and must be filename-safe. Use a
+  unique name for each experiment to avoid replacing checkpoints/mixing events.
+- Unknown config fields/sections are retained and produce Loguru warnings;
+  missing optional settings receive defaults. Explicit override paths reject
+  typos. Preserve this behavior so configs remain shareable across branches.
+- Presets under `src/pavullmo/configs/` are partial TOML files. Authored `extends`
+  lists compose recursively, relative to the declaring file. CLI `--extends`
+  appends semicolon-separated presets after existing includes. The main file's
+  own values win over includes; typed CLI `--override` assignments win last.
+  Composition happens before defaults/validation. Saved configs are standalone
+  TOML without include directives. Source files are never rewritten.
+- Both launchers accept file paths or bundled preset names, optionally omitting
+  `.toml`. Extra CLI includes search beside the main file, then the working
+  directory, then bundled presets. Local flags can be repeated. Quote whole
+  semicolon-separated arguments so the shell passes them intact.
+- `src/pavullmo/pretrain.py` is the local entry point. For example, from the root:
 
-## Modal data and pretraining
+  ```bash
+  uv run python src/pavullmo/pretrain.py --config 10m_tuned_config.toml \
+    --override 'name=trial;train_dataset.path=train_16k_195m;validation_dataset.path=validation_16k;optimizer.kind=muon_adamw'
+  ```
 
-- `src/dataset/create_modal_volume.py` validates the four generated dataset
-  artifacts and uploads them to the root of the `pavullmo-datasets` Modal
-  Volume. Existing files are not overwritten unless `--force` is passed.
-- Run the uploader locally with
-  `uv run --extra cloud python src/dataset/create_modal_volume.py`. The training
-  Volume root contains `train_10m`, `train_100m`, `train_1b`, and `validation`
-  directly, matching the layout expected by `DATASET_DIR`.
-- `src/pavullmo/modal_pretrain_base.py` wraps `pretrain_base.py` in a Modal App.
-  Its image is built from the frozen `uv.lock`, defaults to one L4, mounts the
-  dataset Volume read-only at `/datasets`, and creates or reuses the
-  `pavullmo-training` output Volume at `/outputs`.
-- Launch a run from the project root with
-  `uv run --extra cloud modal run src/pavullmo/modal_pretrain_base.py`. Use the
-  same hyperparameter environment variables as local pretraining and use
-  Modal's `--detach` option when the job must outlive the local terminal.
-- The wrapper forces `DATASET_DIR=/datasets`, `LOG_DIR=/outputs/runs`,
-  `MODEL_OUTPUT_DIR=/outputs/models`, and
-  `RUNS_CSV=/outputs/pretrain_runs.csv`. It forwards all other supported
-  pretraining environment variables before importing `pretrain_base.py`.
-- Each remote run starts TensorBoard in the training container and prints a
-  live Modal tunnel URL. The URL is public, remains active only for that run,
-  and sees event updates immediately. The output Volume is explicitly
-  committed when the function exits, including after a failed run so partial
-  diagnostic events are retained.
-- Modal infrastructure overrides are `MODAL_DATASET_VOLUME_NAME`,
-  `MODAL_OUTPUT_VOLUME_NAME`, `MODAL_GPU`, `MODAL_CPU`, `MODAL_MEMORY_MB`, and
-  `MODAL_TIMEOUT_SECONDS`. These configure infrastructure and are distinct from
-  recorded training hyperparameters.
-- Give every run a unique, filename-safe `EXPERIMENT_NAME`. Reusing a name
-  merges TensorBoard events and replaces `<experiment_name>.pt`, making older
-  CSV rows point at the replacement checkpoint.
-- Repeated sequential wrapper launches are suitable for a small sweep. Do not
-  launch runs concurrently against the same output Volume: each run currently
-  appends the same CSV and commits the same Volume, and concurrent writers can
-  lose updates. A parallel sweep must write one result file and checkpoint
-  directory per run, then have one coordinator merge the result files into the
-  CSV after all workers finish.
-- Keep local-only image construction inside `if modal.is_local()` because Modal
-  imports the wrapper again as `/root/modal_pretrain_base.py`. Apply
-  `.add_local_dir(...)` last in the image chain unless using `copy=True`.
+- `train_dataset.path` and `validation_dataset.path` are explicit artifact paths, relative to
+  `runtime.dataset_dir` or absolute. There is no prefix/variant path inference.
+  Legacy `[data] train=.../validation=...` configs migrate with a warning;
+  explicit new dataset fields take precedence and unknown legacy settings are
+  retained with warnings. Saved configs use the new dataset sections only
+  (plus any retained unknown settings).
+  Dataset/output/CSV paths come exclusively from the config, resolve relative
+  to the process working directory, and are never replaced by launchers.
+- Local defaults are `artifacts/datasets`, `artifacts/runs` and
+  `artifacts/results/pretrain_runs.csv`. Each run directory contains `config.toml`,
+  `tensorboard/` and `checkpoints/step_XXXXXXXX.pt`. Loguru's optional file sink
+  follows `logging.file`, independently of the output root.
+- Training uses BF16 autocast with FP32 parameters/optimizer state, optional
+  accumulation and z-loss, finite-loss/gradient checks and gradient clipping.
+  Compilation wraps the training forward model; validation uses the base model
+  eagerly and computes token-weighted cross-entropy over the configured batches.
+- Completed steps log loss/objective/z-loss, pre-clipping gradient norm, clipping
+  frequency, learning rates and throughput to TensorBoard and Loguru. Sparse
+  diagnostics include parameter/gradient-group norms. Split QKV retains the
+  combined `gradient_groups/attention_qkv` metric and adds query/key/value norms.
+- Successful runs append final metrics, checkpoint path and complete single-line TOML config
+  to `runtime.runs_csv`. The `dataset_variant` column contains the explicit
+  training artifact path. Use one writer per CSV. Start local TensorBoard with
+  `.venv/bin/tensorboard --logdir artifacts/runs --port 6006`.
+- Every config inherits `to_string()`/`from_string()` for the CSV representation:
+  `config = { ... }` uses nested TOML inline tables and escapes string line
+  breaks. `from_string()` also accepts older multiline TOML config values.
+  Regular config files and checkpoint `config_toml` still use `to_toml()`.
+  CSV appends recognize matching older multiline rows without rewriting them.
 
-## Environment
+## Checkpointing and resume
 
-- Use Python 3.12 and manage dependencies and the lockfile with `uv`.
-- Training dependencies are PyTorch 2.9.1 with its CUDA 12.8 wheels,
-  `datasets<4`, SentencePiece, tqdm, and TensorBoard 2.21.
-- The optional `cloud` extra provides the Modal client. Full training is
-  expected to run on a Modal L4 (24 GB); local smoke tests target an RTX 3070
-  (8 GB).
-- The pretraining script requires CUDA and a GPU for which
-  `torch.cuda.is_bf16_supported()` is true. Keep parameters and optimizer state
-  in FP32 and use BF16 through autocast rather than converting the model itself.
-- Use PyTorch's native scaled-dot-product attention. Its FlashAttention-2
-  backend works on both target GPUs; do not add the third-party `flash-attn`
-  package unless a concrete unsupported API is required.
+- PretrainingTrainer owns model/optimizer/scheduler state, progress, consumed data cursor,
+  losses and Python/PyTorch/CUDA/loader RNG streams. Checkpoints contain plain
+  state dictionaries and TOML configuration, not config/model Python instances
+  or compiled wrappers. The computed horizon belongs to checkpoint progress.
+- Save only after a completed optimizer update AND scheduler step, with no pending
+  accumulation; step zero is also valid. PretrainingTrainer enforces this boundary. Writes
+  use a same-directory temporary file, fsync and atomic replacement; retention
+  prunes only managed files after successful publication.
+- `checkpoint.interval_steps` controls periodic saves (zero disables them).
+  Completion and graceful stop still save. `checkpoint.keep_last` controls
+  retention. `checkpoint.save_training_state=false` exports weights/config only
+  and cannot provide a full resume.
+- `--resume <checkpoint>` reads the embedded config and restores the trajectory.
+  Model/optimizer/schedule/training/evaluation settings, data identities, horizon,
+  parameter assignments and device type/PyTorch version must match. Runtime
+  paths, logging, retention and the label may change through explicit overrides.
+  `--config` and `--resume` are mutually exclusive; `--extends` applies only to
+  `--config`. Resume does not require the original preset files.
+- `request_stop()`, or SIGINT/SIGTERM in the main thread, finishes the current
+  complete update, saves and returns. Failed/incomplete updates cannot be saved
+  or continued until a checkpoint is restored. Flush/close writers through the
+  PretrainingTrainer context manager. Keep RNG restoration last when changing resume code.
 
-Keep `pyproject.toml` and `uv.lock` synchronized, preserve the pinned GPU stack,
-and run `pavullmo-check` after changing PyTorch, CUDA-related dependencies, or
-GPU environment checks.
+## Modal data and training
+
+- `src/dataset/create_modal_volume.py` uploads validated artifacts to a Modal
+  dataset Volume; existing files require `--force` to overwrite. Run it with
+  `uv run --extra cloud python src/dataset/create_modal_volume.py`. Ensure the
+  selected Volume contains the artifact paths configured for training.
+- `src/pavullmo/pretrain_modal.py` uses the same PretrainingTrainer and resolved TOML as local
+  training. Its image uses frozen `uv.lock`, defaults to an L4, and mounts the
+  dataset Volume read-only at `/datasets` and output Volume at `/outputs`.
+- Explicitly include `modal_config.toml` to select `/datasets`, `/outputs/runs`
+  and `/outputs/pretrain_runs.csv`. The wrapper does not inject paths. Example:
+
+  ```bash
+  uv run --extra cloud modal run src/pavullmo/pretrain_modal.py \
+    --config 10m_tuned_config.toml --extends modal_config \
+    --override 'name=cloud_trial;train_dataset.path=train_16k_195m;validation_dataset.path=validation_16k;optimizer.kind=muon_adamw'
+  ```
+
+- Infrastructure flags are `--gpu`, `--cpu`, `--memory-mb`, `--timeout-seconds`,
+  `--dataset-volume`, `--output-volume` and `--no-tensorboard`; they stay outside
+  `PretrainingConfig`. Use `modal run --detach ...` for terminal-independent runs.
+- Modal reads `--resume` exactly as supplied in the remote container; prefer an
+  absolute checkpoint path under `/outputs`. Relative paths use its working
+  directory. The saved config must point to accessible remote inputs/outputs.
+- TensorBoard watches the configured output root through a public tunnel for the
+  run's lifetime. The output Volume is committed after every published checkpoint
+  and on function exit, including after failures. Persistence uses the small
+  runtime `CheckpointManager.after_save` callback, not provider code in PretrainingTrainer.
+- Use unique run names and sequential launches against a shared output Volume.
+  Parallel sweeps need separate output Volumes/registries and a coordinator merge
+  to avoid losing updates from concurrent CSV writers or Volume commits.
+- Keep local image construction inside `if modal.is_local()` because Modal also
+  imports the wrapper under `/root/pretrain_modal.py`. Apply `.add_local_dir(...)`
+  last in the image chain unless using `copy=True`.
+
+## Environment and verification
+
+- Use Python 3.12 and manage dependencies/lockfile with `uv`. Keep `pyproject.toml`
+  and `uv.lock` synchronized and preserve PyTorch 2.9.1 with CUDA 12.8 wheels,
+  `datasets<4`, SentencePiece, TensorBoard 2.21 and the pinned causal-conv1d wheel.
+  The optional `cloud` extra provides Modal. Config dependencies are Pydantic,
+  tomlkit and Loguru.
+- PretrainingTrainer requires CUDA with `torch.cuda.is_bf16_supported()`. Full runs target
+  a Modal L4 (24 GB); local smoke tests target an RTX 3070 (8 GB). Use BF16
+  autocast, not BF16 model parameters. Use native SDPA/FlashAttention-2; do not
+  add third-party flash-attn without a concrete unsupported API requirement.
+- Run `pavullmo-check` after changes to PyTorch, CUDA dependencies or GPU checks.
+  Run relevant tests with `.venv/bin/python -m unittest discover -s tests`.
+  CUDA and multiprocessing-loader tests need GPU access and local worker sockets.
 
 ## Repository ownership
 
-- `src/dataset/` owns dataset and tokenizer building scripts.
-- `src/` owns model, training, evaluation, and execution code.
-- `artifacts/` owns local generated artifacts and is ignored; keep downloads, tokenizer
-  artifacts, datasets, checkpoints, run registries, and logs here by default.
-- `notes/` retains project documentation and historical experiment evidence.
-- The src/dataset/training interface is token shards plus `metadata.json`; preserve
-  that format and existing CLI/environment overrides when changing paths.
+- `src/dataset/` owns dataset/tokenizer building; `src/config/` owns configuration;
+  `src/model/` owns model architecture; `src/components/` owns shared training;
+  `src/pavullmo/` owns local/cloud execution and generation entry points.
+- `generate.py` takes a saved model directory and a tokenizer path. It loads the
+  most recently published managed checkpoint under `checkpoints/`, or a single
+  legacy `.pt` beside `config.toml`. `--checkpoint` selects an absolute path or
+  a path relative to the supplied directory. Current checkpoints use their
+  embedded `[model]` config; legacy checkpoints use the directory's `[model]`.
+  Generation constructs only `ModelConfig` and the model, works on CPU/CUDA,
+  and does not require a valid full PretrainingConfig or accessible training datasets.
+- `migrate_checkpoint_config.py <legacy.pt>` writes a partial `[model]` TOML
+  config beside the checkpoint after validating weight keys/shapes. It recovers
+  missing layout flags from weights and leaves the `.pt` unchanged. Replacing
+  existing config files requires `--force`. Migrated configs support generation
+  only; they do not enable PretrainingTrainer resume. Multiple legacy checkpoints in one
+  directory require explicit selection and a matching shared model config.
+- Evaluation entry points still need adaptation to ModelConfig and
+  the current checkpoint payload; the shared PretrainingTrainer/config APIs are authoritative.
+- `artifacts/` owns generated datasets, tokenizers, checkpoints, registries, logs
+  and caches and is ignored by Git. `notes/` preserves documentation and historical
+  experiment evidence. Preserve artifacts and historical evidence when cleaning up.
+- Preserve the token-shard plus metadata dataset/training interface and existing
+  dataset-building CLI controls when changing paths.

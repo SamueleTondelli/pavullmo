@@ -1,18 +1,16 @@
 from __future__ import annotations
 
 import argparse
-import sys
 from contextlib import nullcontext
 from pathlib import Path
 
 import sentencepiece as spm
 import torch
+from loguru import logger
 
-
-SCRIPT_DIR = Path(__file__).resolve().parent
-MODEL_DIR = SCRIPT_DIR.parent / "model"
-sys.path.insert(0, str(MODEL_DIR))
-
+from components.checkpoint import CheckpointManager, model_state_from_checkpoint
+from config import CheckpointConfig, ModelConfig
+from config.serialization import parse_toml
 from model import DecoderTransformer
 
 
@@ -22,91 +20,82 @@ MAX_NEW_TOKENS = 1024
 TEMPERATURE = 0.8
 TOP_K = 50
 
-ARCHITECTURE_KEYS = (
-    "VOCAB_SIZE",
-    "N_BLOCKS",
-    "EMBED_DIM",
-    "ATTN_HEADS",
-    "FFN_DIM",
-    "SEQ_LEN",
-    "ROPE_BASE",
-    "DROPOUT",
-)
-
-
-def parse_args() -> argparse.Namespace:
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Interactively generate text with a PavuLLMo checkpoint."
     )
-    parser.add_argument("model", type=Path, help="path to the model checkpoint")
+    parser.add_argument("model_dir", type=Path, help="saved run or migrated model directory")
     parser.add_argument("tokenizer", type=Path, help="path to tokenizer")
-    return parser.parse_args()
+    parser.add_argument(
+        "--checkpoint", type=Path,
+        help="specific checkpoint, absolute or relative to the model directory",
+    )
+    return parser.parse_args(argv)
+
+
+def find_checkpoint(model_dir: Path, checkpoint: Path | None = None) -> Path:
+    """Select the latest managed save, or an unambiguous legacy checkpoint."""
+    if not model_dir.is_dir():
+        raise NotADirectoryError(f"model directory not found: {model_dir}")
+    if checkpoint is not None:
+        path = checkpoint.expanduser()
+        path = path if path.is_absolute() else model_dir / path
+        if not path.is_file():
+            raise FileNotFoundError(f"model checkpoint not found: {path}")
+        return path
+
+    directory = model_dir / "checkpoints"
+    if not directory.is_dir():
+        directory = model_dir
+    manager = CheckpointManager(CheckpointConfig(), directory)
+    try:
+        return manager.latest_checkpoint
+    except FileNotFoundError:
+        paths = sorted(path for path in directory.glob("*.pt") if path.is_file())
+        if not paths:
+            raise FileNotFoundError(f"no checkpoints in {directory}") from None
+        if len(paths) != 1:
+            raise ValueError(
+                f"multiple checkpoints in {directory}; select one with --checkpoint"
+            ) from None
+        return paths[0]
 
 
 def load_model(
-    checkpoint_path: Path,
+    model_dir: Path,
     device: torch.device,
+    *,
+    checkpoint: Path | None = None,
 ) -> tuple[DecoderTransformer, int, int]:
-    if not checkpoint_path.is_file():
-        raise FileNotFoundError(f"model checkpoint not found: {checkpoint_path}")
-
-    checkpoint = torch.load(
-        checkpoint_path,
-        map_location="cpu",
-        weights_only=True,
-    )
-    if not isinstance(checkpoint, dict):
-        raise ValueError("checkpoint must contain a dictionary")
-
-    hyperparameters = checkpoint.get("hyperparameters")
-    if not isinstance(hyperparameters, dict):
-        raise ValueError("checkpoint does not contain a hyperparameters mapping")
-
-    missing = [key for key in ARCHITECTURE_KEYS if key not in hyperparameters]
-    if missing:
-        raise ValueError(
-            "checkpoint is missing architecture settings: " + ", ".join(missing)
-        )
-
-    state_dict = checkpoint.get("model_state_dict")
-    if not isinstance(state_dict, dict):
-        raise ValueError("checkpoint does not contain a model_state_dict")
-    split_qkv_projections = bool(
-        hyperparameters.get(
-            "SPLIT_QKV_PROJECTIONS",
-            any(".attn.q_proj." in name for name in state_dict),
-        )
-    )
-    canon_layers = bool(
-        hyperparameters.get(
-            "CANON_LAYERS",
-            any(".ca.weight" in name for name in state_dict),
-        )
-    )
-
-    model = DecoderTransformer(
-        vocab_size=int(hyperparameters["VOCAB_SIZE"]),
-        n_blocks=int(hyperparameters["N_BLOCKS"]),
-        embed_dim=int(hyperparameters["EMBED_DIM"]),
-        attn_heads=int(hyperparameters["ATTN_HEADS"]),
-        ffn_dim=int(hyperparameters["FFN_DIM"]),
-        dropout=float(hyperparameters["DROPOUT"]),
-        seq_len=int(hyperparameters["SEQ_LEN"]),
-        rope_base=float(hyperparameters["ROPE_BASE"]),
-        qk_norm=bool(hyperparameters["QK_NORM"]),
-        split_qkv_projections=split_qkv_projections,
-        canon_layers=canon_layers,
-    )
-
+    model_dir = Path(model_dir).expanduser().resolve()
+    checkpoint_path = find_checkpoint(model_dir, checkpoint)
+    payload = torch.load(checkpoint_path, map_location="cpu", weights_only=True)
+    state_dict = model_state_from_checkpoint(payload)
+    if "trainer_state" in payload:
+        # The selected checkpoint's snapshot is authoritative even when a run
+        # directory has since been reused with a different config.toml.
+        text = payload.get("config_toml")
+        if not isinstance(text, str):
+            raise ValueError("checkpoint is missing its TOML configuration")
+    else:
+        config_path = model_dir / "config.toml"
+        if not config_path.is_file():
+            raise FileNotFoundError(
+                f"model config not found: {config_path}; run migrate_checkpoint_config.py first"
+            )
+        text = config_path.read_text(encoding="utf-8")
+    data = parse_toml(text)
+    if not isinstance(data.get("model"), dict):
+        raise ValueError("saved configuration must contain a [model] section")
+    config = ModelConfig.from_dict(data["model"])
+    # Release optimizer/RNG payloads before allocating the model.
+    del payload
+    model = DecoderTransformer(config)
     model.load_state_dict(state_dict)
     model.to(device)
     model.eval()
-
-    return (
-        model,
-        int(hyperparameters["VOCAB_SIZE"]),
-        int(hyperparameters["SEQ_LEN"]),
-    )
+    logger.info("Loaded model checkpoint {} on {}", checkpoint_path, device)
+    return model, config.vocab_size, config.seq_len
 
 
 def sample_next_token(logits: torch.Tensor, blocked_ids: set[int]) -> int:
@@ -171,7 +160,9 @@ def main() -> None:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     tokenizer = spm.SentencePieceProcessor(model_file=str(args.tokenizer))
-    model, vocab_size, sequence_length = load_model(args.model, device)
+    model, vocab_size, sequence_length = load_model(
+        args.model_dir, device, checkpoint=args.checkpoint,
+    )
     if tokenizer.vocab_size() != vocab_size:
         raise ValueError(
             f"tokenizer vocabulary size {tokenizer.vocab_size()} does not match "
@@ -180,7 +171,6 @@ def main() -> None:
     if tokenizer.bos_id() < 0 or tokenizer.eos_id() < 0:
         raise ValueError("tokenizer must define both BOS and EOS tokens")
 
-    print(f"Loaded {args.model} on {device}.")
     print("Enter a prompt. Press Ctrl-D or Ctrl-C to exit.")
 
     while True:

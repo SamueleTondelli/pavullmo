@@ -21,8 +21,8 @@ from tensorboard.backend.event_processing.event_accumulator import EventAccumula
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT / "src/pavullmo"))
-from pretrain_base_muon import gradient_group_name
+sys.path.insert(0, str(ROOT / "src"))
+from components.diagnostics import gradient_group_name
 
 RUNS = {
     "Original AdamW": "10m_tuned_tok16k_907m",

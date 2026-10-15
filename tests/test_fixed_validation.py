@@ -1,11 +1,12 @@
 """CPU checks for fixed source-stratified validation artifacts and readers."""
-import importlib
 import json
 from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
 
+from config import PretrainingConfig
+from components.data import TokenBlockDataset, TrainDataLoader, ValidationDataLoader
 from src.dataset.production_pipeline import TEST_MIX, build_artifact, fixed_validation_sample
 from src.dataset.build_dataset import ArtifactBuilder
 
@@ -47,36 +48,40 @@ class FixedValidationTests(unittest.TestCase):
             self.assertEqual(metadata['fixed_evaluation_sample']['blocks_by_source'], dict(web=4,wiki=2,books=2,edu_pdf=2))
             self.assertEqual(sum(s['tokens'] for s in metadata['shards']),1000)
 
-    def test_both_readers_preserve_spans_partial_batch_and_repeatability(self):
+    def test_shared_reader_preserves_spans_partial_batch_and_repeatability(self):
         with tempfile.TemporaryDirectory() as tmp:
             sizes=dict(web=400,wiki=200,books=200,edu_pdf=200)
             sample=fixed_validation_sample(sizes,TEST_MIX,block_count=10,sequence_length=8,seed=42)
             builder=ArtifactBuilder(Path(tmp),'validation',17,False)
             builder.writer.write(list(range(1000)))
             builder.finish({'fixed_evaluation_sample':sample})
-            for name in ['src.pavullmo.pretrain_base','src.pavullmo.pretrain_base_muon']:
-                module=importlib.import_module(name)
-                with self.subTest(reader=name), patch.multiple(module,BATCH_SIZE=4,VALIDATION_STEPS=3,NUM_WORKERS=0,PIN_MEMORY=False):
-                    dataset=module.TokenBlockDataset(Path(tmp)/'validation',8)
-                    self.assertEqual(len(dataset),10)
-                    for i,block in enumerate(sample['blocks']):
-                        x,y=dataset[i];start=block['start_token']
-                        self.assertEqual(x.tolist(),list(range(start,start+8)))
-                        self.assertEqual(y.tolist(),list(range(start+1,start+9)))
-                    loader=module.build_loader(dataset,shuffle=False)
-                    first=[x.tolist() for x,y in loader]
-                    self.assertEqual([len(x) for x in first],[4,4,2])
-                    self.assertEqual(first,[x.tolist() for x,y in loader])
-                    with patch.object(module,'VALIDATION_STEPS',2),self.assertRaisesRegex(ValueError,'complete fixed'):
-                        module.build_loader(dataset,shuffle=False)
-                    with self.assertRaises(ValueError):module.build_loader(dataset,shuffle=True)
-                    with self.assertRaisesRegex(ValueError,'SEQ_LEN'):module.TokenBlockDataset(Path(tmp)/'validation',4)
+            config = PretrainingConfig.from_dict({
+                'name': 'fixed', 'model': {'seq_len': 8},
+                'training': {'batch_size': 4}, 'evaluation': {'steps': 3},
+                'runtime': {'num_workers': 0, 'pin_memory': False},
+            })
+            dataset = TokenBlockDataset(Path(tmp) / 'validation', 8)
+            self.assertEqual(len(dataset), 10)
+            for i, block in enumerate(sample['blocks']):
+                x, y = dataset[i]
+                start = block['start_token']
+                self.assertEqual(x.tolist(), list(range(start, start + 8)))
+                self.assertEqual(y.tolist(), list(range(start + 1, start + 9)))
+            loader = ValidationDataLoader(Path(tmp) / 'validation', config)
+            first = [x.tolist() for x, y in loader]
+            self.assertEqual([len(x) for x in first], [4, 4, 2])
+            self.assertEqual(first, [x.tolist() for x, y in loader])
+            with self.assertRaisesRegex(ValueError, 'complete fixed'):
+                ValidationDataLoader(Path(tmp) / 'validation', config.with_overrides({'evaluation.steps': 2}))
+            with self.assertRaisesRegex(ValueError, 'must not be used as training'):
+                TrainDataLoader(Path(tmp) / 'validation', config)
+            with self.assertRaisesRegex(ValueError, 'model.seq_len'):
+                TokenBlockDataset(Path(tmp) / 'validation', 4)
             path=Path(tmp)/'validation/metadata.json'
             metadata=json.loads(path.read_text());del metadata['fixed_evaluation_sample'];path.write_text(json.dumps(metadata))
-            for name in ['src.pavullmo.pretrain_base','src.pavullmo.pretrain_base_muon']:
-                dataset=importlib.import_module(name).TokenBlockDataset(Path(tmp)/'validation',8)
-                self.assertEqual(len(dataset),124)
-                self.assertEqual(dataset[0][0].tolist(),list(range(8)))
+            dataset = TokenBlockDataset(Path(tmp) / 'validation', 8)
+            self.assertEqual(len(dataset), 124)
+            self.assertEqual(dataset[0][0].tolist(), list(range(8)))
 
 
 if __name__ == '__main__':

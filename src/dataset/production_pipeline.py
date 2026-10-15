@@ -3,7 +3,7 @@
 This is an intentionally conservative production baseline. It streams four provenance-clean
 source families, applies the same transparent text checks to each, reserves
 whole source documents for a deterministic shared test set, and writes token
-artifacts compatible with ``src/pavullmo/pretrain_base.py``.
+artifacts compatible with ``src/components/data.py``.
 
 The source families are general web, Wikipedia, public-domain books, and
 educational PDFs.  ``edu_pdf`` is deliberately not called "academic": a PDF

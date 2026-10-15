@@ -1,0 +1,8 @@
+# Partial preset: provide name and explicit data paths in your run config or --override.
+
+[model]
+n_blocks = 11
+embed_dim = 448
+attn_heads = 7
+ffn_dim = 1216
+seq_len = 1024

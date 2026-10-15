@@ -17,8 +17,6 @@ class RepositoryInterfaceTests(unittest.TestCase):
         modal = SimpleNamespace(is_local=lambda: True)
 
         wrappers = [
-            ('src/pavullmo/modal_pretrain_base.py', 'LOCAL_RUNS_CSV', 'pretrain_runs.csv'),
-            ('src/pavullmo/modal_pretrain_base_muon.py', 'LOCAL_RUNS_CSV', 'pretrain_runs.csv'),
             ('src/scaling/modal_evaluate_base.py', 'LOCAL_EVALUATIONS_CSV', 'scaling_loss.csv'),
         ]
         for relative, setting, filename in wrappers:
