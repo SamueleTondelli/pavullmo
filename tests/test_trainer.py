@@ -14,7 +14,7 @@ import tempfile
 import unittest
 from itertools import islice
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 import torch
 
@@ -386,6 +386,65 @@ class TrainerTests(unittest.TestCase):
         self.assertEqual(len(rows), 1)
         self.assertEqual(PretrainingConfig.from_string(rows[0]["config"]).to_dict(), trainer.config.to_dict())
         self.assertEqual(rows[0]["model_path"], str(trainer.checkpoints.latest_checkpoint))
+
+    def test_throughput_windows_exclude_pauses_and_sync_only_at_boundaries(self):
+        for device in ("cpu", "cuda"):
+            for stop_step in (None, 5):
+                with self.subTest(device=device, stop_step=stop_step):
+                    trainer = self.trainer(self.config().with_overrides({
+                        "training.max_steps": 8, "logging.throughput_interval_steps": 3,
+                        "evaluation.interval_steps": 6, "checkpoint.interval_steps": 4,
+                    }))
+                    # Exercise the real loop with deterministic update/pause times;
+                    # no GPU is needed to check where it would block on CUDA.
+                    trainer.device = torch.device(device)
+                    trainer.writer.close()
+                    trainer.writer = Mock()
+                    clock = [0.0]
+                    sync_steps = []
+
+                    def update(iterator):
+                        clock[0] += 1.0
+                        trainer.global_step += 1
+                        trainer.tokens_seen += 32
+                        trainer.next_batch = 1
+                        trainer.train_loss = 1.0
+                        return {"train/loss": 1.0, "train/gradient_norm": 0.5,
+                                "train/learning_rate": 0.01}
+
+                    def synchronize(device):
+                        sync_steps.append(trainer.global_step)
+                        clock[0] += 0.5  # Pending GPU work belongs in the window.
+
+                    def pause(*args):
+                        clock[0] += 100.0
+                        return self.root / "checkpoint.pt"
+
+                    def log(name, value, step):
+                        if name == "train/loss" and step == stop_step:
+                            trainer.request_stop()
+
+                    trainer.writer.add_scalar.side_effect = log
+                    with (patch.object(trainer, "_update", side_effect=update),
+                          patch.object(trainer, "validate", side_effect=pause),
+                          patch.object(trainer, "save_checkpoint", side_effect=pause),
+                          patch.object(trainer, "_append_result"),
+                          patch("components.pretraining_trainer.time.perf_counter", side_effect=lambda: clock[0]),
+                          patch("components.pretraining_trainer.torch.cuda.synchronize", side_effect=synchronize),
+                          patch("components.pretraining_trainer.torch.cuda.max_memory_allocated", return_value=1024) as memory):
+                        trainer.train()
+                    boundaries = [3, 4, 6, 8] if stop_step is None else [3, 4, 5]
+                    self.assertEqual(sync_steps, [0, *boundaries] if device == "cuda" else [])
+                    self.assertEqual(memory.call_count, (stop_step or 8) if device == "cuda" else 0)
+                    samples = [call.args for call in trainer.writer.add_scalar.call_args_list
+                               if call.args[0] == "train/tokens_per_second"]
+                    self.assertEqual([step for _, _, step in samples], boundaries)
+                    previous = 0
+                    for _, throughput, step in samples:
+                        steps = step - previous
+                        elapsed = steps + (0.5 if device == "cuda" else 0.0)
+                        self.assertAlmostEqual(throughput, steps * 32 / elapsed)
+                        previous = step
 
     def test_results_csv_uses_one_physical_line_and_recognizes_old_multiline_rows(self):
         config = PretrainingConfig.from_dict({

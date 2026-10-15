@@ -121,7 +121,12 @@ and one shared single-GPU PretrainingTrainer used by local and Modal launchers.
   Compilation wraps the training forward model; validation uses the base model
   eagerly and computes token-weighted cross-entropy over the configured batches.
 - Completed steps log loss/objective/z-loss, pre-clipping gradient norm, clipping
-  frequency, learning rates and throughput to TensorBoard and Loguru. Sparse
+  frequency and learning rates to TensorBoard and Loguru. TensorBoard throughput
+  averages training windows of `logging.throughput_interval_steps` updates
+  (default 20), also ending before validation/checkpointing and on completion
+  or graceful stop. Timing includes data loading and per-step logging but excludes
+  validation/checkpoint pauses. Explicit CUDA synchronization happens at timing
+  boundaries, not on every update; allocator peak sampling needs no sync. Sparse
   diagnostics include parameter/gradient-group norms. Split QKV retains the
   combined `gradient_groups/attention_qkv` metric and adds query/key/value norms.
 - Successful runs append final metrics, checkpoint path and complete single-line TOML config
