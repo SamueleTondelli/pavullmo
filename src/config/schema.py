@@ -119,6 +119,21 @@ class RuntimeConfig(Config):
         "max-autotune",
         "max-autotune-no-cudagraphs",
     ] = "default"
+    act_checkpoint_mem_budget: float = Field(
+        default=1.0,
+        ge=0,
+        le=1,
+        description="Saved activation memory budget for the compiled partitioner",
+    )
+
+    @model_validator(mode="after")
+    def validate_act_checkpoint(self) -> Self:
+        if not self.compile_model and self.act_checkpoint_mem_budget < 1.0:
+            logger.warning(
+                "Activation memory budget {} is ignored when runtime.compile_model=false.",
+                self.act_checkpoint_mem_budget,
+            )
+        return self
 
 
 class LoggingConfig(Config):

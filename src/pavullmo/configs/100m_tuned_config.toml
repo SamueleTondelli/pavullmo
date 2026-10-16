@@ -1,0 +1,41 @@
+# Partial preset: provide name and explicit data paths in your run config or --override.
+
+extends = ["100m_config.toml"]
+
+[model]
+vocab_size = 16384
+rope_base = 10000.0
+initialization = "gpt_scaled"
+initialization_std = 0.02
+qk_norm = true
+split_qkv_projections = true
+dropout = 0.0
+
+[optimizer]
+lr = 0.0021
+kind = "muon_adamw"
+
+[optimizer.schedule]
+min_lr = 0.0
+kind = "wsd"
+decay_fraction = 0.2
+warmup_steps = 219
+
+[optimizer.adamw]
+beta1 = 0.9
+beta2 = 0.9025
+eps = 1e-08
+weight_decay = 0.05
+
+[training]
+batch_size = 16
+grad_accum_steps = 1
+max_grad_norm = 1.0
+z_loss_coefficient = 0.0
+
+[evaluation]
+interval_steps = 149
+steps = 7
+
+[logging]
+diagnostics_interval = 30

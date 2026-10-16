@@ -202,6 +202,42 @@ except ModuleNotFoundError as error:
 
 @unittest.skipIf(pretrain_modal is None, "requires the cloud extra")
 class ModalEntrypointTests(unittest.TestCase):
+    def test_live_outputs_are_published_without_checkpoints_and_worker_stops_on_failure(self):
+        from threading import Event
+
+        published = Event()
+        volume = MagicMock()
+        volume.commit.side_effect = lambda: published.set()
+        with patch.object(pretrain_modal, "OUTPUT_COMMIT_SECONDS", 0.01):
+            with self.assertRaisesRegex(RuntimeError, "training failed"):
+                with pretrain_modal._publish_outputs(volume):
+                    self.assertTrue(published.wait(2), "outputs were not published during training")
+                    raise RuntimeError("training failed")
+            count = volume.commit.call_count
+            # The context joins the worker, so no later publication can race
+            # the wrapper's final commit or continue after training has failed.
+            self.assertGreaterEqual(count, 1)
+            published.clear()
+            self.assertFalse(published.wait(0.05))
+            self.assertEqual(volume.commit.call_count, count)
+
+    def test_live_output_publication_retries_after_transient_errors(self):
+        from threading import Event
+
+        published = Event()
+        volume = MagicMock()
+        def commit():
+            if volume.commit.call_count == 1:
+                raise RuntimeError("temporary")
+            published.set()
+
+        volume.commit.side_effect = commit
+        with patch.object(pretrain_modal, "OUTPUT_COMMIT_SECONDS", 0.01), \
+                patch.object(pretrain_modal.logger, "exception") as warning:
+            with pretrain_modal._publish_outputs(volume):
+                self.assertTrue(published.wait(2), "publication did not recover")
+            warning.assert_called_once()
+
     def test_local_dispatch_serializes_full_resolved_config_and_infrastructure(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "run.toml"
@@ -210,7 +246,8 @@ class ModalEntrypointTests(unittest.TestCase):
             function.remote.return_value = {"name": "cloud", "global_step": 2, "total_steps": 2, "checkpoint": "/outputs/run.pt"}
             datasets, outputs = MagicMock(), MagicMock()
             with patch.object(pretrain_modal.train_remote, "with_options", return_value=function) as options, \
-                    patch.object(pretrain_modal.modal.Volume, "from_name", side_effect=[datasets, outputs]) as volume:
+                    patch.object(pretrain_modal.modal.Volume, "from_name", side_effect=[datasets, outputs]) as volume, \
+                    patch.object(pretrain_modal, "ensure_tensorboard") as dashboard:
                 pretrain_modal.main(config=str(path), override="training.batch_size=16;optimizer.kind=muon_adamw",
                                  extends="modal_config", gpu="A10G", dataset_volume="tokens",
                                  output_volume="results", tensorboard=False)
@@ -223,7 +260,8 @@ class ModalEntrypointTests(unittest.TestCase):
             self.assertEqual(received.runtime.runs_csv, "/outputs/pretrain_runs.csv")
             self.assertEqual(received.model_extra["profiling"], {"enabled": True})
             self.assertNotIn("extends", received.to_dict())
-            self.assertEqual(args[1:], ("", {}, "results", False))
+            self.assertEqual(args[1:], ("", {}, "results"))
+            dashboard.assert_not_called()
             self.assertEqual(options.call_args.kwargs["gpu"], "A10G")
             datasets.with_mount_options.assert_called_once_with(read_only=True)
             self.assertEqual(options.call_args.kwargs["volumes"]["/outputs"], outputs)
@@ -242,23 +280,35 @@ class ModalEntrypointTests(unittest.TestCase):
                 volume.reset_mock()
                 if fail:
                     with self.assertRaisesRegex(RuntimeError, "failed"):
-                        pretrain_modal.train_remote.local(config.to_toml(), "", {}, "results", False)
+                        pretrain_modal.train_remote.local(config.to_toml(), "", {}, "results")
                 else:
-                    pretrain_modal.train_remote.local(config.to_toml(), "", {}, "results", False)
+                    pretrain_modal.train_remote.local(config.to_toml(), "", {}, "results")
                 kwargs = execute.call_args.kwargs
                 self.assertEqual(execute.call_args.args[0].to_dict(), config.to_dict())
                 self.assertEqual(kwargs["overrides"], {})
-                self.assertEqual(set(kwargs), {"resume", "overrides", "checkpoint_saved", "training_context"})
-                self.assertIsNone(kwargs["training_context"])
+                self.assertEqual(set(kwargs), {"resume", "overrides", "checkpoint_saved"})
                 self.assertEqual(kwargs["checkpoint_saved"], volume.commit)
                 volume.commit.assert_called_once_with()
 
     def test_resume_checkpoint_stays_remote_and_cli_overrides_are_forwarded(self):
         with patch.object(pretrain_modal.modal.Volume, "from_name"), patch.object(pretrain_modal, "run_training") as execute:
-            pretrain_modal.train_remote.local("", "runs/test/checkpoints/step_00000002.pt", {"name": "continued"}, "results", False)
+            pretrain_modal.train_remote.local("", "runs/test/checkpoints/step_00000002.pt", {"name": "continued"}, "results")
         self.assertIsNone(execute.call_args.args[0])
         self.assertEqual(execute.call_args.kwargs["resume"], Path("runs/test/checkpoints/step_00000002.pt"))
         self.assertEqual(execute.call_args.kwargs["overrides"]["name"], "continued")
+
+    def test_training_ensures_independent_dashboard_for_fresh_and_resumed_runs(self):
+        function = MagicMock()
+        function.remote.return_value = {"name": "cloud", "global_step": 2, "total_steps": 2,
+                                        "checkpoint": "/outputs/run.pt"}
+        for source in ({"config": "10m_tuned_config", "override": "name=cloud"},
+                       {"resume": "/outputs/run.pt"}):
+            with self.subTest(source=source), \
+                    patch.object(pretrain_modal.train_remote, "with_options", return_value=function), \
+                    patch.object(pretrain_modal.modal.Volume, "from_name"), \
+                    patch.object(pretrain_modal, "ensure_tensorboard", return_value="https://dashboard") as dashboard:
+                pretrain_modal.main(**source, output_volume="results")
+                dashboard.assert_called_once_with("results")
 
     def test_remote_module_can_import_from_modal_root_without_local_image_operations(self):
         from importlib.util import module_from_spec, spec_from_file_location

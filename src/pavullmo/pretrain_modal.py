@@ -2,24 +2,22 @@
 
 from __future__ import annotations
 
-import socket
-import subprocess
-import sys
-import time
 from contextlib import contextmanager
 from pathlib import Path
+from threading import Event, Thread
 from typing import Any
 
 import modal
 from loguru import logger
 
 from config import PretrainingConfig, configure_logging
+from pavullmo.modal_start_tensorboard import ensure_tensorboard
 from pavullmo.pretrain import parse_extends, parse_overrides, prepare_config, run_training
 
 DATASET_MOUNT = "/datasets"
 OUTPUT_MOUNT = "/outputs"
 SOURCE_ROOT = "/workspace/src"
-TENSORBOARD_PORT = 6006
+OUTPUT_COMMIT_SECONDS = 15
 
 image = modal.Image.debian_slim(python_version="3.12")
 if modal.is_local():
@@ -34,54 +32,43 @@ app = modal.App("pavullmo-train", image=image)
 
 
 @contextmanager
-def _live_tensorboard(log_dir: Path):
-    log_dir.mkdir(parents=True, exist_ok=True)
-    process = subprocess.Popen([
-        sys.executable, "-m", "tensorboard.main", "--logdir", str(log_dir),
-        "--host", "0.0.0.0", "--port", str(TENSORBOARD_PORT), "--reload_interval", "5",
-    ])
+def _publish_outputs(output_volume: modal.Volume):
+    """Publish live events even when periodic checkpoints are disabled."""
+    stopped = Event()
+
+    def publish() -> None:
+        while not stopped.wait(OUTPUT_COMMIT_SECONDS):
+            try:
+                output_volume.commit()
+            except Exception:
+                logger.exception("Unable to publish live outputs; retrying next interval")
+
+    worker = Thread(target=publish, daemon=True)
+    worker.start()
     try:
-        deadline = time.monotonic() + 30
-        while True:
-            if process.poll() is not None:
-                raise RuntimeError(f"TensorBoard exited during startup with code {process.returncode}")
-            try:
-                with socket.create_connection(("127.0.0.1", TENSORBOARD_PORT), timeout=0.5):
-                    break
-            except OSError:
-                if time.monotonic() >= deadline:
-                    raise TimeoutError("TensorBoard did not open its port in time")
-                time.sleep(0.25)
-        with modal.forward(TENSORBOARD_PORT) as tunnel:
-            logger.info("Live TensorBoard (public for this run): {}", tunnel.url)
-            yield
+        yield
     finally:
-        if process.poll() is None:
-            process.terminate()
-            try:
-                process.wait(timeout=10)
-            except subprocess.TimeoutExpired:
-                process.kill()
-                process.wait(timeout=5)
+        stopped.set()
+        worker.join()
 
 
 @app.function(max_containers=1, single_use_containers=True)
 def train_remote(
     config_toml: str, resume: str, overrides: dict[str, Any],
-    output_volume_name: str, tensorboard: bool,
+    output_volume_name: str,
 ) -> dict[str, Any]:
     """Use configured paths directly; mounts are provided by the Modal launcher."""
     configure_logging()
     output_volume = modal.Volume.from_name(output_volume_name)
     try:
         config = PretrainingConfig.from_toml(config_toml) if config_toml else None
-        return run_training(
-            config, resume=Path(resume) if resume else None, overrides=overrides,
-            checkpoint_saved=output_volume.commit,
-            training_context=_live_tensorboard if tensorboard else None,
-        )
+        with _publish_outputs(output_volume):
+            return run_training(
+                config, resume=Path(resume) if resume else None, overrides=overrides,
+                checkpoint_saved=output_volume.commit,
+            )
     finally:
-        # Also retain partial metrics when training or dashboard startup fails.
+        # Also retain partial metrics when training fails.
         output_volume.commit()
         logger.info("Committed outputs to Modal Volume '{}'", output_volume_name)
 
@@ -106,8 +93,10 @@ def main(
         gpu=gpu, cpu=cpu, memory=memory_mb, timeout=timeout_seconds,
         volumes={DATASET_MOUNT: datasets.with_mount_options(read_only=True), OUTPUT_MOUNT: outputs},
     )
+    if tensorboard:
+        logger.info("TensorBoard (public, persists across runs): {}", ensure_tensorboard(output_volume))
     logger.info("Starting Modal run with dataset Volume '{}' and output Volume '{}'", dataset_volume, output_volume)
     result = function.remote(run.to_toml() if run else "", resume, overrides if resume else {},
-                             output_volume, tensorboard)
+                             output_volume)
     logger.info("Run '{}' reached {}/{}; checkpoint on '{}': {}", result["name"],
                 result["global_step"], result["total_steps"], output_volume, result["checkpoint"])

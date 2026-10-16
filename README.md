@@ -93,8 +93,30 @@ from the run config: `--extends modal_config` loads `modal_config.toml`, which
 sets the dataset root, output root and CSV for those mounts. Explicit values in
 the main config or `--override` still take precedence. Put matching
 artifacts on the dataset Volume and choose output/CSV paths under `/outputs`
-for persistence. TensorBoard watches the configured output root through a public
-tunnel for the duration of the run.
+for persistence. Training starts TensorBoard in a separate persistent CPU App
+if that output Volume does not already have a dashboard. Its public URL stays
+the same across training runs, including resumed runs. It discovers event files
+anywhere under `/outputs`; logs stored outside that mount are not visible.
+The training wrapper publishes outputs every 15 seconds, including when periodic
+checkpoints are disabled. The dashboard refreshes its event mirror every 15 seconds
+and TensorBoard reloads it every 5 seconds. Allow for those intervals plus the
+writer's configured flush interval and the UI refresh interval when viewing updates.
+Publication also happens after checkpoints and at training exit.
+
+Start or retrieve the dashboard independently:
+
+```bash
+uv run --extra cloud modal run src/pavullmo/modal_start_tensorboard.py \
+  --output-volume pavullmo-training
+```
+
+The command prints the public URL and a `modal app stop <app-name>` command.
+Add `--restart` to redeploy updated dashboard code at the same URL, without
+restarting training. TensorBoard uses its bundled native data server to ingest
+historical events and new metrics efficiently.
+The dashboard keeps one CPU container running until that App is stopped, with
+ongoing CPU costs between runs. `--no-tensorboard` skips starting/retrieving it
+for a training launch and leaves any existing dashboard running.
 
 A small local sweep can stay a throwaway shell loop:
 

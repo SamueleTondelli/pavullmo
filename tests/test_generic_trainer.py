@@ -9,6 +9,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 import torch
+import torch._functorch.config as aot_config
 import torch.nn.functional as F
 from pydantic import Field
 
@@ -101,6 +102,29 @@ class GenericTrainerTests(unittest.TestCase):
             with self.subTest(loss_fn=loss_fn), self.assertRaisesRegex(ValueError, "scalar tensor"):
                 trainer.forward_backward(inputs, loss_fn)
             self.assertTrue(all(parameter.grad is None for parameter in trainer.model.parameters()))
+
+    def test_activation_memory_budget_covers_forward_backward_and_is_restored(self):
+        trainer, config = self.trainer()
+        trainer.config = config.with_overrides({
+            "runtime.compile_model": True, "runtime.act_checkpoint_mem_budget": 0.25,
+        })
+        observed = []
+        forward_hook = trainer.model.register_forward_pre_hook(
+            lambda *_: observed.append(("forward", aot_config.activation_memory_budget))
+        )
+        gradient_hook = trainer.model.embeddings.weight.register_hook(
+            lambda _: observed.append(("backward", aot_config.activation_memory_budget))
+        )
+        self.addCleanup(forward_hook.remove)
+        self.addCleanup(gradient_hook.remove)
+        inputs = torch.tensor([[1, 5, 6]])
+        with aot_config.patch(activation_memory_budget=0.75):
+            trainer.forward_backward(inputs, lambda outputs: outputs.square().mean())
+            self.assertEqual(observed, [("forward", 0.25), ("backward", 0.25)])
+            self.assertEqual(aot_config.activation_memory_budget, 0.75)
+            with self.assertRaisesRegex(ValueError, "scalar tensor"):
+                trainer.forward_backward(inputs, lambda outputs: outputs)
+            self.assertEqual(aot_config.activation_memory_budget, 0.75)
 
 
 if __name__ == "__main__":

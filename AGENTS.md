@@ -188,9 +188,18 @@ and one shared single-GPU PretrainingTrainer used by local and Modal launchers.
 - Modal reads `--resume` exactly as supplied in the remote container; prefer an
   absolute checkpoint path under `/outputs`. Relative paths use its working
   directory. The saved config must point to accessible remote inputs/outputs.
-- TensorBoard watches the configured output root through a public tunnel for the
-  run's lifetime. The output Volume is committed after every published checkpoint
-  and on function exit, including after failures. Persistence uses the small
+- `modal_start_tensorboard.py` starts or reuses a separate deployed CPU App per
+  output Volume, with a stable public TensorBoard URL across training runs.
+  `pretrain_modal.py` ensures it exists unless `--no-tensorboard` is supplied.
+  The dashboard watches event files anywhere under `/outputs`, mirrors only
+  events to local storage and reloads the read-only Volume every 15 seconds.
+  TensorBoard uses its bundled native data server. The standalone `--restart`
+  flag redeploys updated dashboard code at the same URL without touching training.
+  One CPU container stays warm until the dashboard App is stopped; the standalone
+  launcher prints its stop command. The Modal wrapper publishes outputs every
+  15 seconds even with periodic checkpoints disabled, and joins its publisher
+  before its final commit. The output Volume is also committed after every
+  published checkpoint and on function exit, including after failures. Persistence uses the small
   runtime `CheckpointManager.after_save` callback, not provider code in PretrainingTrainer.
 - Use unique run names and sequential launches against a shared output Volume.
   Parallel sweeps need separate output Volumes/registries and a coordinator merge

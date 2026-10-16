@@ -72,6 +72,24 @@ class ConfigTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unknown override path"):
             config.with_overrides({"train_dataset.paht": "typo"})
 
+    def test_activation_memory_budget_survives_overrides_and_round_trips(self):
+        config = PretrainingConfig(name="test")
+        self.assertEqual(config.runtime.act_checkpoint_mem_budget, 1.0)
+        for budget in (0.0, 0.25, 0.5, 0.75, 1.0):
+            with self.subTest(budget=budget):
+                changed = config.with_overrides({"runtime.act_checkpoint_mem_budget": budget})
+                self.assertEqual(changed.runtime.act_checkpoint_mem_budget, budget)
+                self.assertEqual(PretrainingConfig.from_dict(changed.to_dict()), changed)
+                self.assertEqual(PretrainingConfig.from_toml(changed.to_toml()), changed)
+        for budget in (-0.1, 1.1):
+            with self.subTest(budget=budget), self.assertRaises(ValidationError):
+                config.with_overrides({"runtime.act_checkpoint_mem_budget": budget})
+        eager = config.with_overrides({
+            "runtime.compile_model": False, "runtime.act_checkpoint_mem_budget": 0.5,
+        })
+        self.assertEqual(eager.runtime.act_checkpoint_mem_budget, 0.5)
+        self.assertTrue(any("ignored" in text for text in self.warnings()))
+
     def test_dataset_composition_round_trip_and_unknown_settings(self):
         self.write("datasets.toml", '[train_dataset]\npath="train-custom"\nfuture_option=true\n')
         source = self.write("experiment.toml", 'extends=["datasets.toml"]\nname="test"\n'
