@@ -13,6 +13,7 @@ from .schema import (
     PretrainingConfig,
     RuntimeConfig,
     ScheduleConfig,
+    SyntheticGenerationConfig,
     TokenDatasetConfig,
     TrainingConfig,
     TrainerConfig,
@@ -21,5 +22,5 @@ from .schema import (
 __all__ = [
     "Config", "AdamWConfig", "CheckpointConfig", "EvaluationConfig", "TokenDatasetConfig",
     "LoggingConfig", "ModelConfig", "MuonConfig", "OptimizerConfig", "PretrainingConfig",
-    "RuntimeConfig", "ScheduleConfig", "TrainingConfig", "TrainerConfig", "configure_logging",
+    "RuntimeConfig", "ScheduleConfig", "SyntheticGenerationConfig", "TrainingConfig", "TrainerConfig", "configure_logging",
 ]

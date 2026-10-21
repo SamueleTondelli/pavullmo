@@ -12,6 +12,12 @@ Existing TOML presets and checkpoint configurations keep the same fields.
 
 # PavuLLMo
 
+For offline teacher inference on Modal, see
+[synthetic text generation](notes/synthetic_generation.md). The launcher accepts
+`--config`, `--extends`, and `--override`, saves decoded text and a resolved TOML config in
+`pavullmo-training`, and reports generated characters per second.
+The launcher and TOML configs live under `src/synth-gen/`.
+
 ## Setup
 Install the locked dependencies with `uv sync` (`uv sync --extra cloud` for Modal).
 On Linux x86_64, `causal-conv1d` uses the upstream prebuilt wheel for Python 3.12,

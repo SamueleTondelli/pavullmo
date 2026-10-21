@@ -12,6 +12,87 @@ from pydantic import Field, model_validator
 from .base import Config
 
 
+class InferenceOptions(Config):
+    """Schema-defined options plus an explicit native API escape hatch."""
+
+    extra_kwargs: dict[str, Any] = Field(default_factory=dict)
+
+    @model_validator(mode="after")
+    def validate_extra_kwargs(self) -> Self:
+        duplicates = self.extra_kwargs.keys() & type(self).model_fields.keys()
+        if duplicates:
+            raise ValueError(f"set typed fields directly, not in extra_kwargs: {sorted(duplicates)}")
+        return self
+
+    def to_kwargs(self) -> dict[str, Any]:
+        """Forward declared settings only; retain unknown TOML fields without applying them."""
+        kwargs = dict(self.extra_kwargs)
+        for name, field in type(self).model_fields.items():
+            if name == "extra_kwargs":
+                continue
+            value = getattr(self, name)
+            if value == "" and (field.json_schema_extra or {}).get("omit_if_empty"):
+                continue
+            kwargs[name] = value
+        return kwargs
+
+
+class SyntheticEngineConfig(InferenceOptions):
+    performance_mode: Literal["throughput", "balanced", "interactivity"] = "throughput"
+    dtype: Literal["auto", "float16", "half", "bfloat16", "float", "float32"] = "auto"
+    max_model_len: int = Field(default=8192, gt=0)
+    max_num_seqs: int = Field(default=256, gt=0)
+    max_num_batched_tokens: int = Field(default=16384, gt=0)
+    gpu_memory_utilization: float = Field(default=0.9, gt=0, le=1)
+    enable_chunked_prefill: bool = True
+    language_model_only: bool = True
+    tensor_parallel_size: int = Field(default=1, gt=0)
+    quantization: str = Field(default="", json_schema_extra={"omit_if_empty": True})
+    revision: str = Field(default="", json_schema_extra={"omit_if_empty": True})
+    kv_cache_dtype: str = "auto"
+
+
+class SyntheticSamplingConfig(InferenceOptions):
+    max_tokens: int = Field(default=1024, gt=0)
+    temperature: float = Field(default=0.7, ge=0)
+    top_p: float = Field(default=0.9, gt=0, le=1)
+    top_k: int = Field(default=-1, ge=-1)
+    seed: int = Field(default=42, ge=0)
+    n: int = Field(default=1, gt=0)
+    stop: list[str] = Field(default_factory=list)
+
+
+class SyntheticChatTemplateConfig(InferenceOptions):
+    enable_thinking: bool = False
+
+
+class SyntheticGenerationConfig(Config):
+    """Offline teacher inference, independent of Pavullmo's training/tokenizer."""
+
+    name: str
+    model: str = Field(min_length=1)
+    prompts: str = Field(min_length=1)
+    prompt_mode: Literal["chat", "raw"] = "chat"
+    system_prompt: str = ""
+    chat_template_kwargs: SyntheticChatTemplateConfig = Field(default_factory=SyntheticChatTemplateConfig)
+    engine: SyntheticEngineConfig = Field(default_factory=SyntheticEngineConfig)
+    sampling: SyntheticSamplingConfig = Field(default_factory=SyntheticSamplingConfig)
+    batch_size: int = Field(default=4096, gt=0)
+    warmup_prompts: int = Field(default=8, ge=0)
+
+    @model_validator(mode="after")
+    def validate_inference(self) -> Self:
+        if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*", self.name):
+            raise ValueError("name must be filename-safe and start with a letter or digit")
+        if "model" in self.engine.to_kwargs() or "model" in (self.engine.model_extra or {}):
+            raise ValueError("select the model with model, not engine.model")
+        if self.engine.to_kwargs().get("skip_tokenizer_init") or self.sampling.to_kwargs().get("detokenize") is False:
+            raise ValueError("text generation requires the teacher tokenizer and detokenization")
+        if self.prompt_mode == "raw" and self.system_prompt:
+            raise ValueError("system_prompt requires prompt_mode=chat")
+        return self
+
+
 class ModelConfig(Config):
     vocab_size: int = Field(default=16000, gt=0)
     n_blocks: int = Field(default=12, gt=0)

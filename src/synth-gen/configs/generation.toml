@@ -1,0 +1,11 @@
+extends = ["synthetic_qwen35_4b.toml"]
+name = "qwen35-4b-toml-01"
+prompts = "artifacts/synthetic/prompts_100x100.jsonl"
+batch_size = 4096
+warmup_prompts = 8
+
+[engine]
+max_model_len = 8192
+max_num_seqs = 256
+max_num_batched_tokens = 16384
+gpu_memory_utilization = 0.9

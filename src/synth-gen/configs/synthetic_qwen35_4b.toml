@@ -1,0 +1,8 @@
+# Partial preset. Supply a unique name and prompts path in a run file or --override.
+model = "Qwen/Qwen3.5-4B"
+
+[sampling]
+max_tokens = 2048
+temperature = 0.7
+top_p = 0.8
+top_k = 20
