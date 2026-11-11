@@ -192,8 +192,181 @@ uv run --extra cloud modal volume get pavullmo-training \
 Use sequential jobs against a shared output Volume, consistent with pretraining's
 Volume publication policy. Keep validation/test documents out of prompt inputs.
 
+## First FP8 size comparison
+
+The initial representatives use official prequantized Qwen3 checkpoints:
+
+| Approximate bucket | Checkpoint | Reported parameters | Config preset |
+| --- | --- | --- | --- |
+| 1B | [Qwen3-1.7B-FP8](https://huggingface.co/Qwen/Qwen3-1.7B-FP8) | 1.7B | `throughput_qwen3_1_7b_fp8` |
+| 4B | [Qwen3-4B-Instruct-2507-FP8](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507-FP8) | 4.0B | `throughput_qwen3_4b_fp8` |
+| 7B | [Qwen3-8B-FP8](https://huggingface.co/Qwen/Qwen3-8B-FP8) | 8.2B | `throughput_qwen3_8b_fp8` |
+
+These are practical throughput representatives within approximate size buckets,
+all below 10B parameters. Using one dense architecture family reduces variation
+in inference support and kernel behavior. They are not a controlled quality
+scaling study: the 4B checkpoint has newer instruction tuning than the other two.
+The 1.7B and 8B models have thinking disabled through their templates; the 4B
+checkpoint is already non-thinking. Italian output quality still needs review.
+
+The presets extend `throughput_fp8.toml`, sharing prompts, output limit, sampling,
+seed, context limit, submission size, and initial concurrency. They explicitly
+select FP8 quantization while retaining BF16 for nonquantized operations and
+`kv_cache_dtype="auto"` (BF16 for these checkpoints). FP8 KV-cache storage is a
+separate experiment. The official checkpoints avoid quantizing BF16 weights
+during startup. vLLM documents native FP8 W8A8 on Ada/Hopper/Blackwell GPUs,
+including the L4/L40S/H100 hardware classes; Ampere GPUs use a different
+weight-only FP8 execution path. See [vLLM FP8 support](https://docs.vllm.ai/en/latest/features/quantization/llm_compressor/fp8/).
+
+`throughput_10k.toml` is a ready-to-run config for the 10,000-prompt input. It
+defaults to the 1.7B FP8 model and submits all 10,000 prompts in one call,
+avoiding intermediate submission drains. Select another model with CLI
+`--extends`, and set the run name and GPU concurrency with `--override`:
+
+```bash
+uv run --extra cloud modal run --detach src/synth-gen/generate_synthetic_modal.py \
+  --config throughput_10k \
+  --extends throughput_qwen3_4b_fp8 \
+  --override 'name=qwen3-4b-fp8-l40s-seqs512-01;engine.max_num_seqs=512' \
+  --gpu L40S
+```
+
+Use `throughput_qwen3_1_7b_fp8` or `throughput_qwen3_8b_fp8` for the other sizes.
+Here `batch_size=10000` is the submission size; `engine.max_num_seqs` is the
+active GPU sequence limit to sweep.
+
+For a first comparison, run each model on the same GPU, starting with L40S:
+
+```bash
+uv run --extra cloud modal run --detach src/synth-gen/generate_synthetic_modal.py \
+  --config throughput_qwen3_1_7b_fp8 --override 'name=qwen3-1p7b-fp8-l40s-01' --gpu L40S
+
+uv run --extra cloud modal run --detach src/synth-gen/generate_synthetic_modal.py \
+  --config throughput_qwen3_4b_fp8 --override 'name=qwen3-4b-fp8-l40s-01' --gpu L40S
+
+uv run --extra cloud modal run --detach src/synth-gen/generate_synthetic_modal.py \
+  --config throughput_qwen3_8b_fp8 --override 'name=qwen3-8b-fp8-l40s-01' --gpu L40S
+```
+
+Wait for each job to complete before starting the next on the shared output
+Volume. Sweep `engine.max_num_seqs` through 128, 256, and 512 after this common
+baseline; these are requested upper bounds, not guaranteed active batch sizes.
+Prefix caching is disabled because the 10,000-row input repeats 100 prompts.
+For quality inspection use `--override 'name=quality-trial;prompts=artifacts/synthetic/prompts_100.jsonl'`.
+Repeated inputs with a fixed sampling seed can produce repeated completions;
+they do not supply 10,000 independent quality examples.
+
+Parameter count approximates weight memory, but total serving VRAM and throughput
+do not transfer automatically between equally sized models. KV-head count,
+layer count, attention type, context lengths, precision, vocabulary, and runtime
+workspaces matter. For example, the Qwen3 4B and 8B configs both specify 36 layers,
+8 KV heads, and head dimension 128. With BF16 KV, their calculated cache footprint
+is the same 144 KiB per cached token, excluding allocator overhead, despite
+their different weight sizes. Sources: [4B config](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507-FP8/blob/main/config.json),
+[8B config](https://huggingface.co/Qwen/Qwen3-8B-FP8/blob/main/config.json).
+Treat these measurements as initial capacity estimates when switching model
+families, then check the new model's memory and batching behavior.
+
 API references: [vLLM offline inference](https://docs.vllm.ai/en/v0.32.0/serving/offline_inference/),
 [vLLM LLM API](https://docs.vllm.ai/en/v0.32.0/api/vllm/entrypoints/llm/),
 and [Modal Volumes](https://modal.com/docs/guide/volumes).
 For the inference toolchain, see [Modal's CUDA image guidance](https://modal.com/docs/guide/cuda)
 and [vLLM 0.32.0 release artifacts](https://github.com/vllm-project/vllm/releases/tag/v0.32.0).
+
+## Gemma 4 FP8 comparison
+
+`throughput_gemma4_e2b_fp8.toml` and `throughput_gemma4_e4b_fp8.toml`
+select the community [E2B](https://huggingface.co/axteam/gemma-4-E2B-it-FP8-dynamic)
+and [E4B](https://huggingface.co/axteam/gemma-4-E4B-it-FP8-dynamic)
+instruction checkpoints from axteam, pinned to their verified revisions. Their
+linear weights use per-channel FP8 with dynamic per-token FP8 activations;
+embeddings, norms, and excluded layers remain BF16. The presets override
+`engine.quantization="compressed-tensors"` to match the checkpoint format.
+This still executes FP8 W8A8; `"fp8"` is the loader for a different serialized
+format and must not be forced on these checkpoints.
+
+Use the same 10,000-prompt workload and L40S/concurrency settings as the Qwen
+sweep, changing only the model preset and unique run name:
+
+```bash
+uv run --extra cloud modal run src/synth-gen/generate_synthetic_modal.py \
+  --config src/synth-gen/configs/throughput_10k.toml \
+  --extends src/synth-gen/configs/throughput_gemma4_e2b_fp8.toml \
+  --override 'name=gemma4-e2b-fp8-l40s-seqs1024-01;engine.max_num_seqs=1024' \
+  --gpu l40s
+```
+
+Swap `e2b` for `e4b` for the second run, after the first completes. Both inherit
+the same sampling settings, 2,048-token output cap, BF16 KV cache, disabled
+thinking and prefix caching, and text-only engine setting. A reusable sequential
+launcher is saved locally at `artifacts/scripts/sweep_throughput_gemma4_synth_modal.sh`;
+its optional first argument sets the run-name suffix (default: UTC timestamp).
+
+Measured on 2026-10-25 with one L40S and `engine.max_num_seqs=1024`:
+
+| FP8 model | Generation chars/s | Remote job chars/s | Generated characters | Generation seconds |
+| --- | ---: | ---: | ---: | ---: |
+| Gemma 4 E2B | 63,163.95 | 37,080.79 | 22,811,878 | 361.153 |
+| Gemma 4 E4B | 35,209.01 | 23,979.16 | 22,103,355 | 627.776 |
+
+Each run completed all 10,000 prompts with nonempty outputs and no length-limit
+finishes. Recounting the saved JSONL reproduced both character totals exactly;
+the normalized prompt hashes and resolved workload settings match. These are
+one-run whole-submission averages. Generation chars/s excludes model loading,
+warmup and persistence; remote job chars/s includes those costs (as defined above).
+E2B delivered 1.79 times E4B's generation chars/s at this configuration.
+Quality has not been scored.
+
+The outputs and standalone TOML configs are saved in `pavullmo-training` under
+`/synthetic/synth_l40s_gemma4_e2b_1024_20261025T1616Z/` and
+`/synthetic/synth_l40s_gemma4_e4b_1024_20261025T1616Z/`. Local logs, downloaded
+outputs, config snapshots, metrics, validation counts and a report are in
+`artifacts/results/synthetic/gemma4_20261025T1616Z/`.
+
+### L40S concurrency and memory sweep
+
+The follow-up sweep on 2026-10-25 retained the same 10,000 prompts, submission
+size, sampling, output cap, model revisions, BF16 KV cache and token budget.
+It enabled statistics with `engine.extra_kwargs={disable_log_stats=false}`.
+The dictionary-valued override merges with the existing prefix-cache setting;
+individual keys inside `extra_kwargs` are not typed dotted override paths.
+
+| Model | `max_num_seqs` | `gpu_memory_utilization` | Generation chars/s | Outcome |
+| --- | ---: | ---: | ---: | --- |
+| E2B | 1,024 | 0.90 | 61,930.49 | Completed |
+| E2B | 1,536 | 0.90 | 63,116.43 | Completed |
+| E2B | 2,048 | 0.90 | **64,826.19** | Completed |
+| E4B | 512 | 0.90 | 34,771.36 | Completed |
+| E4B | 768 | 0.90 | 35,835.04 | Completed |
+| E4B | 1,024 | 0.90 | **36,451.50** | Completed |
+| E4B | 1,536 | 0.90 | 33,927.11 | Completed |
+| E2B | 2,048 | 0.95 | — | CUDA OOM during sampling initialization |
+| E4B | 1,024 | 0.95 | — | CUDA OOM during sampling initialization |
+
+Best measured settings were E2B at 2,048 and E4B at 1,024, both with a 0.90
+memory budget. E2B gained 4.68% over its new 1,024 baseline. E4B lost 6.93%
+when increasing from 1,024 to 1,536. At the 1,536 ceiling, E4B's KV cache was
+at least 99% full in 91.5% of samples with queued requests; average logged
+active requests were only 1,092. At 1,024, those figures were 1.8% and 1,020.
+Exact preemption counters were not emitted in the logs.
+
+Both 0.95 attempts failed before measured generation. E2B's FlashInfer
+logits-mask buffer needed 2 GiB with 1.15 GiB free; E4B's softmax needed 1 GiB
+with about 756 MiB free. Retain 0.90 for these tested settings so temporary
+sampling buffers have room. Larger E2B runs at 0.90 also logged allocation
+failures, then continued and completed; their logs are preserved.
+
+These are single measurements per point, and small differences need caution.
+Startup profiling produced different KV byte allocations across launches;
+the sweep compares the actual configurations rather than forcing fixed cache
+sizes. The seven completed runs produced 70,000 nonempty completions with
+verified character totals and complete prompt coverage. One E2B/2,048 output
+hit the 2,048-token cap. Quality has not been scored.
+
+The reusable sequential launcher is
+`artifacts/scripts/sweep_gemma4_concurrency.py`. Full logs, metrics, standalone
+TOML configs, downloaded outputs, CSV/JSON results and plots are under
+`artifacts/results/synthetic/gemma4_concurrency_20261025T155540Z/`; its
+`report.md` contains the exact Volume run paths and analysis. All outputs and
+failed-run metadata remain in `pavullmo-training:/synthetic/`. No benchmark
+containers were left running.

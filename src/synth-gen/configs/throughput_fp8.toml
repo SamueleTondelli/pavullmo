@@ -1,0 +1,32 @@
+# Shared workload for the first size comparison. Supply a unique run name.
+# Change prompts for later quality runs; the repeated file is a throughput load.
+prompts = "artifacts/synthetic/prompts_100x100.jsonl"
+prompt_mode = "chat"
+batch_size = 4096
+warmup_prompts = 8
+
+[chat_template_kwargs]
+enable_thinking = false
+
+[engine]
+performance_mode = "throughput"
+quantization = "fp8"
+# FP8 weights/activations; remaining operations and the initial KV cache use BF16.
+dtype = "bfloat16"
+kv_cache_dtype = "auto"
+max_model_len = 8192
+max_num_seqs = 256
+max_num_batched_tokens = 16384
+gpu_memory_utilization = 0.9
+
+[engine.extra_kwargs]
+# The input contains repeated prompts. Avoid measuring cached prefill reuse.
+enable_prefix_caching = false
+
+[sampling]
+max_tokens = 2048
+temperature = 0.7
+top_p = 0.8
+top_k = 20
+seed = 42
+n = 1

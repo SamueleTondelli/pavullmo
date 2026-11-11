@@ -1,0 +1,9 @@
+# Gemma 4 E4B instruction model, FP8 W8A8 (per-channel weights,
+# dynamic per-token activations). Embeddings/norms remain BF16.
+# https://huggingface.co/axteam/gemma-4-E4B-it-FP8-dynamic
+extends = ["throughput_fp8.toml"]
+model = "axteam/gemma-4-E4B-it-FP8-dynamic"
+
+[engine]
+quantization = "compressed-tensors"
+revision = "30d421a87bf399d1ac4702c619b5b56e187ed46c"

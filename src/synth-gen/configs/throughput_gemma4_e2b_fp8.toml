@@ -1,0 +1,11 @@
+# Gemma 4 E2B instruction model, FP8 W8A8 (per-channel weights,
+# dynamic per-token activations). Embeddings/norms remain BF16.
+# https://huggingface.co/axteam/gemma-4-E2B-it-FP8-dynamic
+extends = ["throughput_fp8.toml"]
+model = "axteam/gemma-4-E2B-it-FP8-dynamic"
+
+[engine]
+# These FP8 weights are serialized with compressed-tensors, unlike Qwen's
+# native fp8 checkpoints. This selects the loader, not a different precision.
+quantization = "compressed-tensors"
+revision = "5db498cb408abc27dfe87a885a25b0c6eff15d92"

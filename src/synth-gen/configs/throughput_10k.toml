@@ -1,0 +1,10 @@
+# Ready-to-run 10,000-prompt workload. Default model: Qwen3-1.7B-FP8.
+# Select another size with --extends throughput_qwen3_4b_fp8 (or ..._8b_fp8).
+# Give every sweep point a unique name through --override.
+extends = ["throughput_qwen3_1_7b_fp8.toml"]
+prompts = "artifacts/synthetic/prompts_100x100.jsonl"
+
+# Submit the entire input in one call so submission boundaries do not drain
+# the GPU during a sweep. engine.max_num_seqs controls active concurrency.
+batch_size = 10000
+warmup_prompts = 8

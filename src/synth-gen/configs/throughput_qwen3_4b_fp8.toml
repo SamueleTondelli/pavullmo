@@ -1,0 +1,4 @@
+# Middle size bucket: official 4.0B-parameter non-thinking FP8 checkpoint.
+# https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507-FP8
+extends = ["throughput_fp8.toml"]
+model = "Qwen/Qwen3-4B-Instruct-2507-FP8"

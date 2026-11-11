@@ -1,0 +1,4 @@
+# Large size bucket: official 8.2B-parameter FP8 checkpoint (under the 10B ceiling).
+# https://huggingface.co/Qwen/Qwen3-8B-FP8
+extends = ["throughput_fp8.toml"]
+model = "Qwen/Qwen3-8B-FP8"
