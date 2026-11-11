@@ -235,14 +235,19 @@ and one shared single-GPU PretrainingTrainer used by local and Modal launchers.
   embedded `[model]` config; legacy checkpoints use the directory's `[model]`.
   Generation constructs only `ModelConfig` and the model, works on CPU/CUDA,
   and does not require a valid full PretrainingConfig or accessible training datasets.
-- `migrate_checkpoint_config.py <legacy.pt>` writes a partial `[model]` TOML
-  config beside the checkpoint after validating weight keys/shapes. It recovers
-  missing layout flags from weights and leaves the `.pt` unchanged. Replacing
-  existing config files requires `--force`. Migrated configs support generation
-  only; they do not enable PretrainingTrainer resume. Multiple legacy checkpoints in one
-  directory require explicit selection and a matching shared model config.
-- Evaluation entry points still need adaptation to ModelConfig and
-  the current checkpoint payload; the shared PretrainingTrainer/config APIs are authoritative.
+- `migrate_checkpoint_config.py <run-directory>` selects `<run-name>.pt` from
+  the sibling `models/` directory, or `--models-dir`. After validating legacy
+  architecture/weights and the recorded global step, it writes partial `[model]`
+  `config.toml` and a current weights-only `checkpoints/step_XXXXXXXX.pt`, then
+  moves root TensorBoard events into `tensorboard/`. Preserve the original `.pt`.
+  Replacing config/checkpoint files requires `--force`; event collisions always
+  fail. Migration supports generation/evaluation only, not training resume.
+- `src/evaluation/evaluate_loss.py --model <run-directory> --dataset <artifact>`
+  reuses generation's model-only loader and optional `--checkpoint` selection.
+  It evaluates the complete artifact with the shared token reader, including
+  fixed sample offsets and partial final batches, on CPU or CUDA. Other evaluation
+  entry points still need adaptation to ModelConfig/current checkpoint payloads;
+  the shared PretrainingTrainer/config APIs are authoritative.
 - `artifacts/` owns generated datasets, tokenizers, checkpoints, registries, logs
   and caches and is ignored by Git. `notes/` preserves documentation and historical
   experiment evidence. Preserve artifacts and historical evidence when cleaning up.

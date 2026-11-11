@@ -334,14 +334,23 @@ weights-only checkpoints on CPU or CUDA without validating training paths or
 constructing a PretrainingTrainer. `--checkpoint` can select an absolute path or a path
 relative to the supplied directory.
 
-For legacy checkpoints, run `migrate_checkpoint_config.py <old.pt>` first.
-It writes a standalone, partial `config.toml` with a `[model]` section beside
-the checkpoint, translating recorded hyperparameters and recovering missing
-layout flags from weights. Weight keys/shapes are checked before publication.
-The checkpoint is unchanged; `--force` is required to replace an existing
-config. Legacy generation reads this sidecar config. One `.pt` is selected
-automatically; several require `--checkpoint`, and each must match the shared
-model config. Migration does not provide full training resume.
+For legacy runs, run `migrate_checkpoint_config.py <run-directory>` first.
+It selects `<run-name>.pt` from the `models/` directory beside `runs/` (or
+`--models-dir`), translates recorded architecture settings and recovers missing
+layout flags from weights. Keys/shapes and the recorded global step are checked
+before publication. It writes a standalone partial `config.toml` with `[model]`
+and a current weights-only checkpoint under `checkpoints/step_XXXXXXXX.pt`, and
+moves root TensorBoard event files into `tensorboard/`. The original checkpoint
+is preserved; `--force` is required to replace existing config/checkpoint files.
+Event collisions always fail to preserve historical evidence. Migration supports
+generation and evaluation, not full training resume.
+
+`evaluate_loss.py --model <run-directory> --dataset <artifact-directory>` uses
+the same model-only loader as generation, including optional `--checkpoint`
+selection. It supports CPU and CUDA, full and weights-only saves, and migrated
+runs without requiring a full training config or the original training datasets.
+It evaluates the complete selected artifact with the shared token reader,
+respecting fixed sample offsets and retaining the final partial batch.
 
 ## Presets and composition
 

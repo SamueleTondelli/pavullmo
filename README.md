@@ -173,20 +173,35 @@ PretrainingTrainer or requiring the training datasets. Full and weights-only che
 both work. Use `--checkpoint checkpoints/step_00001000.pt` to select a specific
 save; absolute checkpoint paths also work. Generation supports CUDA and CPU.
 
-For an older checkpoint, first write a model-only `config.toml` beside it:
+For an older run, migrate its directory first:
 
 ```bash
-uv run python src/pavullmo/migrate_checkpoint_config.py artifacts/models/old_run.pt
-uv run python src/pavullmo/generate.py artifacts/models \
-  artifacts/tokenizers/my_tokenizer/tokenizer.model --checkpoint old_run.pt
+uv run python src/pavullmo/migrate_checkpoint_config.py artifacts/runs/old_run
+uv run python src/pavullmo/generate.py artifacts/runs/old_run \
+  artifacts/tokenizers/my_tokenizer/tokenizer.model
 ```
 
-The helper converts embedded legacy hyperparameters, recovers missing parameter
-layout flags from the weights, and validates model keys/shapes before writing.
-It leaves the checkpoint unchanged. Existing configs require `--force` to replace.
-These partial configs support generation, not training resume. A directory with
-one legacy `.pt` needs no `--checkpoint`; multiple legacy files require selection.
-Each selected legacy checkpoint must match the directory's `[model]` config.
+The helper reads `artifacts/models/old_run.pt` (by default, the `models/`
+directory beside `runs/`), validates the legacy architecture and weights, and
+writes a model-only `config.toml` and a current weights-only checkpoint at
+`checkpoints/step_XXXXXXXX.pt`, using the recorded global step. It moves root
+TensorBoard event files into `tensorboard/` and preserves the original `.pt`.
+Use `--models-dir <directory>` for weights stored elsewhere. Existing configs
+or migrated checkpoints require `--force`; conflicting event files are never
+replaced. Migration supports generation and evaluation, not training resume.
+
+Loss evaluation accepts the same saved run directories and checkpoint selection:
+
+```bash
+uv run python src/evaluation/evaluate_loss.py --model artifacts/runs/old_run \
+  --dataset artifacts/datasets/validation_16k
+```
+
+Use `--checkpoint checkpoints/step_00001000.pt` to select a save. Evaluation reads
+only the model config, works on CPU or CUDA, and computes token-weighted loss over
+the complete dataset, including fixed evaluation offsets and partial final batches.
+`BATCH_SIZE`, `NUM_WORKERS`, `PIN_MEMORY` and `SEED` environment variables control
+the standalone evaluation loader. The dataset must use the model's tokenizer.
 
 ## Artifact interface
 

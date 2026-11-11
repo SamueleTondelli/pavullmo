@@ -34,7 +34,7 @@ def save_legacy(path, model, *, omitted=(), string_values=False):
     # a fabricated PretrainingConfig for resume.
     values["LR"] = 0.001
     torch.save({"format_version": 1, "hyperparameters": values,
-                "model_state_dict": model.state_dict()}, path)
+                "global_step": 12, "model_state_dict": model.state_dict()}, path)
 
 
 class SavedDirectoryTests(unittest.TestCase):
@@ -104,6 +104,17 @@ class SavedDirectoryTests(unittest.TestCase):
                 model_state_from_checkpoint(payload)
 
 
+def legacy_run(folder, model, **kwargs):
+    root = Path(folder)
+    run = root / "runs" / "old_run"
+    run.mkdir(parents=True)
+    models = root / "models"
+    models.mkdir()
+    checkpoint = models / f"{run.name}.pt"
+    save_legacy(checkpoint, model, **kwargs)
+    return run, checkpoint
+
+
 class LegacyMigrationTests(unittest.TestCase):
     def test_migration_and_loading_preserve_logits_across_layouts(self):
         layouts = [
@@ -115,19 +126,32 @@ class LegacyMigrationTests(unittest.TestCase):
         ]
         for settings in layouts:
             with self.subTest(settings=settings), tempfile.TemporaryDirectory() as folder:
-                root = Path(folder)
-                checkpoint = root / "old.pt"
                 original = DecoderTransformer(small_config(**settings)).eval()
-                save_legacy(checkpoint, original,
-                            omitted=("split_qkv_projections", "canon_layers", "canon_kernel_size", "attn_bias", "qk_norm"),
-                            string_values=True)
+                run, checkpoint = legacy_run(
+                    folder, original,
+                    omitted=("split_qkv_projections", "canon_layers", "canon_kernel_size", "attn_bias", "qk_norm"),
+                    string_values=True,
+                )
+                event = run / "events.out.tfevents.old"
+                event.write_bytes(b"historical events")
+                (run / "notes.txt").write_text("keep")
                 before = checkpoint.read_bytes()
-                config_path = migration.migrate_checkpoint_config(checkpoint)
+                config_path = migration.migrate_checkpoint_config(run)
+                self.assertEqual(config_path, run / "config.toml")
                 self.assertEqual(checkpoint.read_bytes(), before)
+                self.assertFalse(event.exists())
+                self.assertEqual((run / "tensorboard" / event.name).read_bytes(), b"historical events")
+                self.assertEqual((run / "notes.txt").read_text(), "keep")
                 data = tomllib.loads(config_path.read_text())
                 self.assertEqual(set(data), {"model"})
                 self.assertEqual(ModelConfig.from_dict(data["model"]), original.config)
-                loaded, vocab, context = generate.load_model(root, torch.device("cpu"))
+                migrated = generate.find_checkpoint(run)
+                self.assertEqual(migrated, run / "checkpoints/step_00000012.pt")
+                payload = CheckpointManager.read(migrated)
+                self.assertFalse(payload["full_state"])
+                self.assertEqual(payload["config_toml"], config_path.read_text())
+                self.assertEqual(payload["source_checkpoint"], str(checkpoint))
+                loaded, vocab, context = generate.load_model(run, torch.device("cpu"))
                 self.assertEqual((vocab, context), (32, 8))
                 inputs = torch.tensor([[1, 5, 7]])
                 torch.testing.assert_close(loaded(inputs), original(inputs), rtol=0, atol=0)
@@ -136,37 +160,84 @@ class LegacyMigrationTests(unittest.TestCase):
 
     def test_string_false_flags_and_overwrite_control(self):
         with tempfile.TemporaryDirectory() as folder:
-            root = Path(folder)
-            checkpoint = root / "old.pt"
-            model = DecoderTransformer(small_config())
-            save_legacy(checkpoint, model, string_values=True)
-            migration.migrate_checkpoint_config(checkpoint)
-            loaded, _, _ = generate.load_model(root, torch.device("cpu"))
+            run, checkpoint = legacy_run(folder, DecoderTransformer(small_config()), string_values=True)
+            migration.migrate_checkpoint_config(run)
+            loaded, _, _ = generate.load_model(run, torch.device("cpu"))
             self.assertFalse(loaded.config.qk_norm)
             self.assertFalse(loaded.config.split_qkv_projections)
             self.assertFalse(loaded.config.canon_layers)
-            path = root / "config.toml"
+            path = run / "config.toml"
             before = path.read_bytes()
             with self.assertRaises(FileExistsError):
-                migration.migrate_checkpoint_config(checkpoint)
+                migration.migrate_checkpoint_config(run)
             self.assertEqual(path.read_bytes(), before)
-            migration.migrate_checkpoint_config(checkpoint, force=True)
+            path.unlink()
+            with self.assertRaisesRegex(FileExistsError, "checkpoint already exists"):
+                migration.migrate_checkpoint_config(run)
+            migration.migrate_checkpoint_config(run, force=True)
             self.assertEqual(path.read_bytes(), before)
 
-    def test_missing_metadata_and_incompatible_weights_never_publish_config(self):
-        for omitted, altered in (("attn_heads", False), (None, True)):
-            with self.subTest(omitted=omitted), tempfile.TemporaryDirectory() as folder:
-                root = Path(folder)
-                checkpoint = root / "old.pt"
-                model = DecoderTransformer(small_config())
-                save_legacy(checkpoint, model, omitted=(omitted,) if omitted else ())
-                if altered:
-                    payload = torch.load(checkpoint, weights_only=True)
+    def test_invalid_checkpoints_never_change_run(self):
+        for problem in ("missing_architecture", "incompatible_weights", "missing_step", "negative_step"):
+            with self.subTest(problem=problem), tempfile.TemporaryDirectory() as folder:
+                run, checkpoint = legacy_run(folder, DecoderTransformer(small_config()))
+                payload = torch.load(checkpoint, weights_only=True)
+                if problem == "missing_architecture":
+                    del payload["hyperparameters"]["ATTN_HEADS"]
+                elif problem == "incompatible_weights":
                     payload["hyperparameters"]["SPLIT_QKV_PROJECTIONS"] = True
-                    torch.save(payload, checkpoint)
+                elif problem == "missing_step":
+                    del payload["global_step"]
+                else:
+                    payload["global_step"] = -1
+                torch.save(payload, checkpoint)
+                event = run / "events.out.tfevents.old"
+                event.write_text("keep")
                 with self.assertRaises((ValueError, RuntimeError)):
-                    migration.migrate_checkpoint_config(checkpoint)
-                self.assertFalse((root / "config.toml").exists())
+                    migration.migrate_checkpoint_config(run)
+                self.assertEqual(list(run.iterdir()), [event])
+
+    def test_explicit_models_directory_and_missing_paths(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            with self.assertRaises(NotADirectoryError):
+                migration.migrate_checkpoint_config(root / "missing")
+            run, checkpoint = legacy_run(folder, DecoderTransformer(small_config()))
+            elsewhere = root / "archived_models"
+            checkpoint.parent.rename(elsewhere)
+            with self.assertRaises(FileNotFoundError):
+                migration.migrate_checkpoint_config(run)
+            migration.migrate_checkpoint_config(run, models_dir=elsewhere)
+            self.assertTrue((run / "tensorboard").is_dir())
+
+    def test_event_collisions_preserve_both_files_even_with_force(self):
+        with tempfile.TemporaryDirectory() as folder:
+            run, _ = legacy_run(folder, DecoderTransformer(small_config()))
+            (run / "tensorboard").mkdir()
+            event = run / "events.out.tfevents.old"
+            target = run / "tensorboard" / event.name
+            event.write_text("source")
+            target.write_text("existing")
+            with self.assertRaisesRegex(FileExistsError, "TensorBoard event"):
+                migration.migrate_checkpoint_config(run, force=True)
+            self.assertEqual(event.read_text(), "source")
+            self.assertEqual(target.read_text(), "existing")
+            self.assertFalse((run / "config.toml").exists())
+            self.assertFalse((run / "checkpoints").exists())
+
+    def test_checkpoint_write_failure_keeps_original_events_and_no_partial_save(self):
+        with tempfile.TemporaryDirectory() as folder:
+            run, checkpoint = legacy_run(folder, DecoderTransformer(small_config()))
+            event = run / "events.out.tfevents.old"
+            event.write_text("keep")
+            before = checkpoint.read_bytes()
+            with patch.object(migration.torch, "save", side_effect=OSError("disk full")):
+                with self.assertRaisesRegex(OSError, "disk full"):
+                    migration.migrate_checkpoint_config(run)
+            self.assertEqual(checkpoint.read_bytes(), before)
+            self.assertEqual(event.read_text(), "keep")
+            self.assertFalse((run / "config.toml").exists())
+            self.assertEqual(list((run / "checkpoints").iterdir()), [])
 
     def test_old_checkpoint_requires_migration_and_strict_sidecar_config(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -178,7 +249,6 @@ class LegacyMigrationTests(unittest.TestCase):
             (root / "config.toml").write_text('name="partial"\n')
             with self.assertRaisesRegex(ValueError, r"\[model\]"):
                 generate.load_model(root, torch.device("cpu"))
-            migration.migrate_checkpoint_config(checkpoint, force=True)
             config = small_config().to_dict()
             config["vocab_size"] = 99
             (root / "config.toml").write_text(dump_toml({"model": config}))
@@ -192,7 +262,10 @@ class GenerationTests(unittest.TestCase):
         self.assertEqual(args.model_dir, Path("saved"))
         self.assertEqual(args.tokenizer, Path("tokenizer.model"))
         self.assertEqual(args.checkpoint, Path("old.pt"))
-        self.assertTrue(migration.parse_args(["old.pt", "--force"]).force)
+        args = migration.parse_args(["runs/old", "--models-dir", "weights", "--force"])
+        self.assertEqual(args.run_dir, Path("runs/old"))
+        self.assertEqual(args.models_dir, Path("weights"))
+        self.assertTrue(args.force)
 
     def test_generation_stops_at_eos_and_checks_context(self):
         tokenizer = SimpleNamespace(
@@ -210,9 +283,8 @@ class GenerationTests(unittest.TestCase):
 
     def test_interactive_main_loads_directory_and_validates_tokenizer(self):
         with tempfile.TemporaryDirectory() as folder:
-            root = Path(folder)
-            save_legacy(root / "old.pt", DecoderTransformer(small_config()))
-            migration.migrate_checkpoint_config(root / "old.pt")
+            root, _ = legacy_run(folder, DecoderTransformer(small_config()))
+            migration.migrate_checkpoint_config(root)
             tokenizer = SimpleNamespace(vocab_size=lambda: 32, bos_id=lambda: 1, eos_id=lambda: 2)
             with patch("sys.argv", ["generate", str(root), "tokenizer.model"]), \
                  patch.object(generate.torch.cuda, "is_available", return_value=False), \
