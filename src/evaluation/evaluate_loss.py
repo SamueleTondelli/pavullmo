@@ -104,6 +104,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--dataset", type=Path, required=True, help="path to dataset to test",
     )
+    parser.add_argument(
+        "--ema", action="store_true",
+        help="evaluate EMA shadow weights instead of raw model weights",
+    )
     return parser.parse_args(argv)
 
 
@@ -115,7 +119,9 @@ def main() -> None:
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(SEED)
 
-    model, _, sequence_length = load_model(args.model, device, checkpoint=args.checkpoint)
+    model, _, sequence_length = load_model(
+        args.model, device, checkpoint=args.checkpoint, use_ema=args.ema,
+    )
 
     validation_dataset = TokenBlockDataset(args.dataset.expanduser(), sequence_length)
 

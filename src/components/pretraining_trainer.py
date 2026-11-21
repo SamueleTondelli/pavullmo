@@ -56,10 +56,22 @@ def _matches_training_signature(saved: Any, config: PretrainingConfig) -> bool:
                 **optimizer, "schedule": {name: value for name, value in optimizer["schedule"].items()
                                           if name != "total_steps"},
             }}
-    # Refactor checkpoints from the MHA-only branch predate this field.
+    # Refactor checkpoints from the MHA-only branch predate these fields.
     if isinstance(saved, dict) and isinstance(saved.get("model"), dict):
         if "num_kv_heads" not in saved["model"]:
             saved = {**saved, "model": {**saved["model"], "num_kv_heads": 0}}
+    if isinstance(saved, dict) and isinstance(saved.get("optimizer"), dict):
+        adamw = saved["optimizer"].get("adamw")
+        if isinstance(adamw, dict) and "embedding_weight_decay" not in adamw:
+            saved = {**saved, "optimizer": {
+                **saved["optimizer"], "adamw": {**adamw, "embedding_weight_decay": False},
+            }}
+    if isinstance(saved, dict) and isinstance(saved.get("training"), dict):
+        training = saved["training"]
+        if "ema_decay" not in training or "ema_warmup" not in training:
+            saved = {**saved, "training": {
+                "ema_decay": 0.0, "ema_warmup": True, **training,
+            }}
     return saved == _training_signature(config)
 
 
@@ -121,6 +133,7 @@ class PretrainingTrainer(GenericTrainer[PretrainingConfig]):
         self.clipped_steps = 0
         self.train_loss: float | None = None
         self.validation_loss: float | None = None
+        self.ema_validation_loss: float | None = None
         self.best_validation_loss: float | None = None
         self.last_validation_step = 0
         self.source_checkpoint = ""
@@ -128,6 +141,10 @@ class PretrainingTrainer(GenericTrainer[PretrainingConfig]):
         self._running = False
         self._stop_requested = False
         self._epoch_loader_rng: torch.Tensor | None = None
+        self.ema_state: dict[str, torch.Tensor] | None = (
+            {name: value.detach().clone() for name, value in self.model.state_dict().items()}
+            if self.config.training.ema_decay > 0.0 else None
+        )
 
         for name, value in self.config.to_dict().items():
             if name not in TrainerConfig.model_fields:
@@ -264,6 +281,7 @@ class PretrainingTrainer(GenericTrainer[PretrainingConfig]):
         if "muon" in self.optimizer.optimizers:
             metrics["train/muon_learning_rate"] = self.optimizer.optimizers["muon"].param_groups[0]["lr"]
         self.optimizer.step_optimizer()
+        self._update_ema(next_step)
         self.optimizer.step_schedule()
         self.model.zero_grad(set_to_none=True)
         self.global_step = next_step
@@ -289,9 +307,20 @@ class PretrainingTrainer(GenericTrainer[PretrainingConfig]):
         return metrics
 
     @torch.no_grad()
-    def validate(self) -> float:
-        """Evaluate ordered batches, weighting cross-entropy by target tokens."""
-        self._assert_update_boundary()
+    def _update_ema(self, step: int) -> None:
+        if self.ema_state is None:
+            return
+        decay = self.config.training.ema_decay
+        if self.config.training.ema_warmup:
+            decay = min(decay, (1.0 + step) / (10.0 + step))
+        for name, value in self.model.state_dict().items():
+            if torch.is_floating_point(value):
+                self.ema_state[name].lerp_(value.detach(), 1.0 - decay)
+            else:
+                self.ema_state[name].copy_(value.detach())
+
+    @torch.no_grad()
+    def _evaluate_model(self) -> float:
         was_training = self.model.training
         self.model.eval()
         loss_sum = 0.0
@@ -315,10 +344,30 @@ class PretrainingTrainer(GenericTrainer[PretrainingConfig]):
         value = loss_sum / tokens
         if not math.isfinite(value):
             raise FloatingPointError(f"non-finite validation loss at step {self.global_step}")
+        return value
+
+    @torch.no_grad()
+    def validate(self) -> float:
+        """Evaluate ordered batches, weighting cross-entropy by target tokens."""
+        self._assert_update_boundary()
+        value = self._evaluate_model()
         self.validation_loss = value
         self.best_validation_loss = min(self.best_validation_loss, value) if self.best_validation_loss is not None else value
         self.last_validation_step = self.global_step
         self.writer.add_scalar("validation/loss", value, self.global_step)
+        if self.ema_state is not None:
+            raw_state = {name: tensor.detach().clone() for name, tensor in self.model.state_dict().items()}
+            try:
+                self.model.load_state_dict(self.ema_state, strict=True)
+                ema_value = self._evaluate_model()
+            finally:
+                self.model.load_state_dict(raw_state, strict=True)
+            self.ema_validation_loss = ema_value
+            self.writer.add_scalar("validation/ema_loss", ema_value, self.global_step)
+            self.writer.flush()
+            logger.info("step={}/{} validation_loss={:.6f} ema_validation_loss={:.6f}",
+                        self.global_step, self.total_steps, value, ema_value)
+            return value
         self.writer.flush()
         logger.info("step={}/{} validation_loss={:.6f}", self.global_step, self.total_steps, value)
         return value
@@ -403,17 +452,27 @@ class PretrainingTrainer(GenericTrainer[PretrainingConfig]):
                     logger.info("step={}/{} train_loss={:.6f} gradient_norm={:.6f} lr={:.6g}",
                                 self.global_step, self.total_steps, self.train_loss,
                                 metrics["train/gradient_norm"], metrics["train/learning_rate"])
+                    pre_decay = (
+                        self.config.checkpoint.save_pre_decay
+                        and self.optimizer.decay_start_step is not None
+                        and self.global_step == self.optimizer.decay_start_step
+                        and self.global_step < self.total_steps
+                    )
                     validate = (self.global_step % self.config.evaluation.interval_steps == 0
-                                or self.global_step == self.total_steps)
+                                or self.global_step == self.total_steps
+                                or pre_decay)
                     interval = self.config.checkpoint.interval_steps
-                    checkpoint = interval and self.global_step % interval == 0 and self.global_step < self.total_steps
+                    checkpoint = (
+                        (interval and self.global_step % interval == 0 and self.global_step < self.total_steps)
+                        or pre_decay
+                    )
                     if (self.global_step - window_step >= self.config.logging.throughput_interval_steps
                             or validate or checkpoint or self._stop_requested):
                         log_throughput()
                     if validate:
                         self.validate()
                     if checkpoint:
-                        self.save_checkpoint()
+                        self.save_checkpoint(protect=pre_decay)
                 # A stop may arrive between updates rather than during one.
                 log_throughput()
                 if self.global_step == self.total_steps:
@@ -436,7 +495,7 @@ class PretrainingTrainer(GenericTrainer[PretrainingConfig]):
     def state_dict(self) -> dict[str, Any]:
         """Capture only state, never Python instances or a compiled model."""
         self._assert_update_boundary()
-        return {
+        state = {
             "model": self.model.state_dict(),
             "model_training": self.model.training,
             "optimizers": {name: opt.state_dict() for name, opt in self.optimizer.optimizers.items()},
@@ -461,6 +520,9 @@ class PretrainingTrainer(GenericTrainer[PretrainingConfig]):
                 "epoch_iterator": self._epoch_loader_rng,
             },
         }
+        if self.ema_state is not None:
+            state["ema_model"] = {name: value.detach().clone() for name, value in self.ema_state.items()}
+        return state
 
     def _validate_state(self, state: dict[str, Any]) -> None:
         required = {
@@ -506,6 +568,13 @@ class PretrainingTrainer(GenericTrainer[PretrainingConfig]):
         for name, value in state["model"].items():
             if not isinstance(value, torch.Tensor) or value.shape != model_state[name].shape or value.dtype != model_state[name].dtype:
                 raise ValueError(f"checkpoint tensor shape/dtype differs for {name}")
+        if self.ema_state is not None:
+            ema_saved = state.get("ema_model")
+            if not isinstance(ema_saved, dict) or set(ema_saved) != set(model_state):
+                raise ValueError("checkpoint EMA model parameters are missing or differ")
+            for name, value in ema_saved.items():
+                if not isinstance(value, torch.Tensor) or value.shape != model_state[name].shape or value.dtype != model_state[name].dtype:
+                    raise ValueError(f"checkpoint EMA tensor shape/dtype differs for {name}")
         if type(state["model_training"]) is not bool:
             raise ValueError("checkpoint model training mode is invalid")
 
@@ -563,6 +632,10 @@ class PretrainingTrainer(GenericTrainer[PretrainingConfig]):
             raise RuntimeError("cannot load a checkpoint while training is running")
         self._validate_state(state)
         self.model.load_state_dict(state["model"], strict=True)
+        if self.ema_state is not None:
+            self.ema_state = {
+                name: value.to(self.device).clone() for name, value in state["ema_model"].items()
+            }
         for name, optimizer in self.optimizer.optimizers.items():
             optimizer.load_state_dict(state["optimizers"][name])
             self.optimizer.schedulers[name].load_state_dict(state["schedulers"][name])
@@ -590,9 +663,9 @@ class PretrainingTrainer(GenericTrainer[PretrainingConfig]):
         self.train_loader.generator.set_state(rng["train_loader"])
         self.validation_loader.generator.set_state(rng["validation_loader"])
 
-    def save_checkpoint(self) -> Path:
+    def save_checkpoint(self, *, protect: bool = False) -> Path:
         self.writer.flush()
-        return self.checkpoints.save(self)
+        return self.checkpoints.save(self, protect=protect)
 
     def load_checkpoint(self, path: str | Path | None = None) -> None:
         self.checkpoints.load(self, path)

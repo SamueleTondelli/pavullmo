@@ -84,6 +84,11 @@ def parse_args() -> argparse.Namespace:
         default="auto",
         help="evaluation device (default: auto)",
     )
+    parser.add_argument(
+        "--ema",
+        action="store_true",
+        help="score EMA shadow weights instead of raw model weights",
+    )
     return parser.parse_args()
 
 
@@ -631,7 +636,16 @@ def main() -> None:
         benchmark, sets = load_benchmark(args.benchmark)
         device = choose_device(args.device)
         tokenizer = spm.SentencePieceProcessor(model_file=str(args.tokenizer))
-        model, vocab_size, sequence_length = load_model(args.checkpoint, device)
+        ckpt = args.checkpoint.expanduser().resolve()
+        if ckpt.is_file():
+            model_dir = ckpt.parent.parent if ckpt.parent.name == "checkpoints" else ckpt.parent
+            model, vocab_size, sequence_length = load_model(
+                model_dir, device, checkpoint=ckpt, use_ema=args.ema,
+            )
+        else:
+            model, vocab_size, sequence_length = load_model(
+                ckpt, device, use_ema=args.ema,
+            )
         if tokenizer.vocab_size() != vocab_size:
             raise BenchmarkError(
                 f"tokenizer vocabulary size {tokenizer.vocab_size()} does not "

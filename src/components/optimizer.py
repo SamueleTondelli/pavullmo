@@ -9,7 +9,17 @@ import torch
 from loguru import logger
 from torch.optim.lr_scheduler import LambdaLR
 
-from config import OptimizerConfig
+from config import OptimizerConfig, ScheduleConfig
+
+
+def wsd_decay_start_step(schedule: ScheduleConfig, total_steps: int) -> int | None:
+    """Return the optimizer step immediately before WSD cooldown begins."""
+    if schedule.kind != "wsd":
+        return None
+    post_warmup_steps = total_steps - schedule.warmup_steps
+    decay_steps = max(1, math.ceil(post_warmup_steps * schedule.decay_fraction))
+    stable_steps = post_warmup_steps - decay_steps
+    return schedule.warmup_steps + stable_steps
 
 
 class Optimizer:
@@ -53,6 +63,7 @@ class Optimizer:
             name: _build_schedule(optimizer, config, total_steps)
             for name, optimizer in self.optimizers.items()
         }
+        self.decay_start_step = wsd_decay_start_step(config.schedule, total_steps)
         logger.info(
             "Configured {} for {} optimizer steps", config.kind, total_steps,
         )
@@ -87,12 +98,14 @@ def _parameter_groups(
     for name, parameter in model.named_parameters():
         if not parameter.requires_grad:
             continue
+        is_embedding = id(parameter) in embeddings or name == "embeddings.weight"
         if id(parameter) in norms or "_norm." in name or name == "norm.weight":
             norm.append(parameter)
-        elif (config.kind == "muon_adamw" and parameter.ndim == 2
-              and id(parameter) not in embeddings and name != "embeddings.weight"):
+        elif config.kind == "muon_adamw" and parameter.ndim == 2 and not is_embedding:
             muon.append(parameter)
-        elif parameter.ndim >= 2 and id(parameter) not in embeddings and name != "embeddings.weight":
+        elif is_embedding and config.adamw.embedding_weight_decay:
+            decay.append(parameter)
+        elif parameter.ndim >= 2 and not is_embedding:
             decay.append(parameter)
         else:
             no_decay.append(parameter)
@@ -124,6 +137,8 @@ def _build_schedule(optimizer: torch.optim.Optimizer, config: OptimizerConfig, t
     def multiplier(step: int) -> float:
         if schedule.warmup_steps and step < schedule.warmup_steps:
             return (step + 1) / schedule.warmup_steps
+        if schedule.kind == "constant":
+            return 1.0
         if schedule.kind == "cosine":
             progress = (step - schedule.warmup_steps) / max(1, post_warmup_steps - 1)
             progress = min(max(progress, 0.0), 1.0)

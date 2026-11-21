@@ -30,6 +30,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--checkpoint", type=Path,
         help="specific checkpoint, absolute or relative to the model directory",
     )
+    parser.add_argument(
+        "--ema", action="store_true",
+        help="load EMA shadow weights instead of raw model weights",
+    )
     return parser.parse_args(argv)
 
 
@@ -66,11 +70,12 @@ def load_model(
     device: torch.device,
     *,
     checkpoint: Path | None = None,
+    use_ema: bool = False,
 ) -> tuple[DecoderTransformer, int, int]:
     model_dir = Path(model_dir).expanduser().resolve()
     checkpoint_path = find_checkpoint(model_dir, checkpoint)
     payload = torch.load(checkpoint_path, map_location="cpu", weights_only=True)
-    state_dict = model_state_from_checkpoint(payload)
+    state_dict = model_state_from_checkpoint(payload, use_ema=use_ema)
     if "trainer_state" in payload:
         # The selected checkpoint's snapshot is authoritative even when a run
         # directory has since been reused with a different config.toml.
@@ -161,7 +166,7 @@ def main() -> None:
 
     tokenizer = spm.SentencePieceProcessor(model_file=str(args.tokenizer))
     model, vocab_size, sequence_length = load_model(
-        args.model_dir, device, checkpoint=args.checkpoint,
+        args.model_dir, device, checkpoint=args.checkpoint, use_ema=args.ema,
     )
     if tokenizer.vocab_size() != vocab_size:
         raise ValueError(

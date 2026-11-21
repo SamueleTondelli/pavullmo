@@ -29,7 +29,9 @@ class CheckpointTrainer(Protocol):
 FORMAT_VERSION = 1
 
 
-def model_state_from_checkpoint(payload: Any) -> dict[str, torch.Tensor]:
+def model_state_from_checkpoint(
+    payload: Any, *, use_ema: bool = False,
+) -> dict[str, torch.Tensor]:
     """Extract generation weights from current or legacy checkpoint payloads."""
     if not isinstance(payload, dict):
         raise ValueError("checkpoint must contain a dictionary")
@@ -37,8 +39,13 @@ def model_state_from_checkpoint(payload: Any) -> dict[str, torch.Tensor]:
         if payload.get("format_version") != FORMAT_VERSION:
             raise ValueError("unsupported Trainer checkpoint format")
         trainer_state = payload["trainer_state"]
-        state = trainer_state.get("model") if isinstance(trainer_state, dict) else None
+        key = "ema_model" if use_ema else "model"
+        state = trainer_state.get(key) if isinstance(trainer_state, dict) else None
+        if use_ema and state is None:
+            raise ValueError("checkpoint does not contain EMA model weights")
     else:
+        if use_ema:
+            raise ValueError("legacy checkpoints do not contain EMA model weights")
         state = payload.get("model_state_dict")
     if not isinstance(state, dict) or not state or any(
         not isinstance(name, str) or not isinstance(value, torch.Tensor)
@@ -74,6 +81,7 @@ class CheckpointManager:
         self.directory = Path(directory).expanduser().resolve()
         # Runtime hook for cloud persistence, independent of config/providers.
         self.after_save: Callable[[], None] | None = None
+        self._protected: set[Path] = set()
 
     def _checkpoints(self) -> list[Path]:
         paths = [path for path in self.directory.glob("step_*.pt")
@@ -88,13 +96,16 @@ class CheckpointManager:
             raise FileNotFoundError(f"no checkpoints in {self.directory}")
         return paths[-1]
 
-    def save(self, trainer: CheckpointTrainer) -> Path:
+    def save(self, trainer: CheckpointTrainer, *, protect: bool = False) -> Path:
         path = self.directory / f"step_{trainer.global_step:08d}.pt"
         temporary: Path | None = None
         try:
             state = trainer.state_dict()
             if not self.config.save_training_state:
-                state = {"model": state["model"]}
+                exported = {"model": state["model"]}
+                if "ema_model" in state:
+                    exported["ema_model"] = state["ema_model"]
+                state = exported
             payload = {
                 "format_version": FORMAT_VERSION,
                 "config_toml": trainer.config.to_toml(),
@@ -118,8 +129,10 @@ class CheckpointManager:
         finally:
             if temporary is not None:
                 temporary.unlink(missing_ok=True)
-        # Prune only after publishing successfully; unrelated files are untouched.
-        old = [item for item in self._checkpoints() if item != path]
+        if protect:
+            self._protected.add(path)
+        # Prune only after publishing successfully; unrelated and protected files are untouched.
+        old = [item for item in self._checkpoints() if item != path and item not in self._protected]
         for item in old[:max(0, len(old) - self.config.keep_last + 1)]:
             item.unlink()
             logger.debug("Removed old checkpoint {}", item)

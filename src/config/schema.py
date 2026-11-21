@@ -52,6 +52,7 @@ class AdamWConfig(Config):
     beta2: float = Field(default=0.95, ge=0, lt=1)
     eps: float = Field(default=1e-8, gt=0)
     weight_decay: float = Field(default=1e-5, ge=0)
+    embedding_weight_decay: bool = False
     fused: bool = True
 
 
@@ -71,7 +72,7 @@ class MuonConfig(Config):
 
 
 class ScheduleConfig(Config):
-    kind: Literal["cosine", "wsd"] = "cosine"
+    kind: Literal["cosine", "wsd", "constant"] = "cosine"
     min_lr: float = Field(default=0.0, ge=0)
     warmup_steps: int = Field(default=10, ge=0)
     decay_fraction: float = Field(default=0.2, gt=0, le=1)
@@ -99,6 +100,8 @@ class TrainingConfig(Config):
     max_steps: int = Field(default=0, ge=0, description="Zero means no step cap.")
     max_grad_norm: float = Field(default=1.0, gt=0)
     z_loss_coefficient: float = Field(default=0.0, ge=0)
+    ema_decay: float = Field(default=0.0, ge=0.0, lt=1.0, description="Zero disables weight EMA.")
+    ema_warmup: bool = True
     seed: int = Field(default=42, ge=0)
 
 
@@ -148,6 +151,7 @@ class CheckpointConfig(Config):
         description="Number of most recently saved checkpoint files to retain per run, including periodic, final and graceful-stop saves.",
     )
     save_training_state: bool = True
+    save_pre_decay: bool = False
 
 
 class TrainerConfig(Config):
