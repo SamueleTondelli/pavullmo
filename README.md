@@ -191,3 +191,44 @@ This branch keeps its existing clean_mc4_it dataset/tokenizer pipeline under
 branch's production data pipeline, analysis programs or evaluation tools.
 The example uses the 16,000-token base preset to match the usual tokenizer;
 tuned presets use 16,384 tokens and require matching dataset/tokenizer artifacts.
+
+## Experiment Tracker Webpage
+
+`docs/` contains a self-contained static experiment tracker (`docs/index.html`) backed by `docs/data/tracker.json` and its offline-compatible JS bundle `docs/data/tracker.js`. It presents three searchable, cross-linked tables:
+
+1. **Model & Optimizer Versions**: commit codes, parameter counts, architecture dimensions, tokenizer size/type, positional encoding, attention variant, and optimizer/schedule/batch hyperparameters.
+2. **Latest Training Runs**: date, test loss, validation loss, 30-task Italian synthetic benchmark scores (macro bidirectional accuracy across 6 categories), dataset name, and linked model & optimizer version.
+3. **Ablations & Studies**: documented architecture, optimizer, tokenizer, dataset-cleaning, and evaluation experiments with hypotheses, results, and conclusions.
+
+### Viewing locally
+
+Open `docs/index.html` directly in a browser (`file://` works out of the box via `docs/data/tracker.js`) or serve it over HTTP:
+
+```bash
+python3 -m http.server -d docs 8000
+```
+
+### Updating the tracker
+
+Use `tools/update_tracker.py` (Python standard library only) to validate, rebuild `docs/data/tracker.js`, or append new entries from training CSVs and evaluation JSONs:
+
+```bash
+# Append a run from pretrain_runs.csv and/or evaluation JSON
+python3 tools/update_tracker.py add-run \
+  --id my_run --name my_run --date 2026-11-22 \
+  --version-id v6-iclmax-35m --tokens "1.00B tok" \
+  --from-csv artifacts/results/pretrain_runs.csv --experiment my_run \
+  --eval-json artifacts/results/my_run_eval.json --eval-key final_ema
+
+# Rebuild docs/data/tracker.js after editing docs/data/tracker.json manually
+python3 tools/update_tracker.py build --touch-date
+
+# Validate JSON schema, foreign keys, and JS sync
+python3 tools/update_tracker.py validate
+```
+
+### Deploying on GitHub Pages (`main`)
+
+Once merged into `main`, enable GitHub Pages in **Settings -> Pages** using either:
+- **Source: GitHub Actions** (uses `.github/workflows/pages.yml`, which validates `docs/data/tracker.json` and deploys `docs/` on every push to `main`), or
+- **Source: Deploy from a branch** -> branch `main`, folder `/docs`.

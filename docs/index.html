@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PavuLLMo / TorteLLMini — Experiment Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <div class="eyebrow">Italian Small Language Models · Pretraining Registry</div>
+        <h1 id="project-title">PavuLLMo / TorteLLMini — Experiment Tracker</h1>
+        <p class="subtitle">
+          Chronological record of model &amp; optimizer configurations, milestone training runs, and documented ablations.
+        </p>
+      </div>
+      <div class="header-actions">
+        <span class="updated-pill" id="header-updated">Updated —</span>
+        <a id="repo-link" class="btn btn-ghost" href="https://github.com/SamueleTondelli/pavullmo" target="_blank" rel="noopener noreferrer">
+          GitHub Repo ↗
+        </a>
+        <button id="theme-toggle" class="btn btn-secondary" type="button" aria-label="Toggle color theme">
+          <span id="theme-icon" aria-hidden="true">◐</span>
+          <span id="theme-label">Dark mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="quick-nav" aria-label="Section navigation">
+    <div class="container quick-nav-inner">
+      <div class="nav-links">
+        <a href="#versions" class="nav-link">1. Model &amp; Optimizer Versions</a>
+        <a href="#runs" class="nav-link">2. Latest Training Runs</a>
+        <a href="#ablations" class="nav-link">3. Ablations &amp; Studies</a>
+      </div>
+      <div class="nav-meta" id="nav-summary-text">Loading registry…</div>
+    </div>
+  </nav>
+
+  <main class="container main-content">
+    <div id="load-error" class="error-banner" role="alert" hidden></div>
+
+    <section class="kpi-strip" aria-label="Summary metrics">
+      <div class="kpi-card">
+        <div class="kpi-label">Model Versions</div>
+        <div class="kpi-value" id="kpi-versions">—</div>
+        <div class="kpi-sub">tracked architectures</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Milestone Runs</div>
+        <div class="kpi-value" id="kpi-runs">—</div>
+        <div class="kpi-sub" id="kpi-runs-sub">curated runs</div>
+      </div>
+      <div class="kpi-card kpi-highlight">
+        <div class="kpi-label">Best 30-Bench Bidir. Acc</div>
+        <div class="kpi-value" id="kpi-best-bench">—</div>
+        <div class="kpi-sub" id="kpi-best-bench-sub">macro bidirectional acc</div>
+      </div>
+      <div class="kpi-card kpi-highlight">
+        <div class="kpi-label">Best 10M Test Loss (16k)</div>
+        <div class="kpi-value" id="kpi-best-test">—</div>
+        <div class="kpi-sub" id="kpi-best-test-sub">full 10M holdout</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Ablations</div>
+        <div class="kpi-value" id="kpi-ablations">—</div>
+        <div class="kpi-sub" id="kpi-ablations-sub">documented studies</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Last Updated</div>
+        <div class="kpi-value" id="kpi-updated">—</div>
+        <div class="kpi-sub">snapshot date</div>
+      </div>
+    </section>
+
+    <!-- Section 1: Model & Optimizer Versions -->
+    <section id="versions" class="tracker-section">
+      <div class="section-header">
+        <div>
+          <h2>1. Model &amp; Optimizer Versions</h2>
+          <p class="section-desc">
+            Architectural baselines, git commit codes, parameter counts, tokenizers, positional encodings, attention variants, and optimizer/schedule recipes. Click a version or its run count to filter Section 2.
+          </p>
+        </div>
+        <span class="count-badge" id="versions-count">0 versions</span>
+      </div>
+
+      <div class="toolbar">
+        <div class="search-wrap">
+          <label for="versions-search" class="sr-only">Filter model and optimizer versions</label>
+          <input id="versions-search" type="search" class="input-search" placeholder="Search version, commit, optimizer, attention, RoPE…">
+        </div>
+        <button id="versions-reset" type="button" class="btn btn-ghost btn-sm">Reset</button>
+      </div>
+
+      <div class="table-shell">
+        <div class="table-scroll">
+          <table class="data-table versions-table">
+            <thead>
+              <tr>
+                <th>Version &amp; Commit</th>
+                <th class="num-col">Params</th>
+                <th>Architecture</th>
+                <th>Tokenizer</th>
+                <th>Pos. Encoding</th>
+                <th>Attention Variant</th>
+                <th>Optimizer, Schedule &amp; Training</th>
+                <th class="num-col">Runs</th>
+              </tr>
+            </thead>
+            <tbody id="versions-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Latest Training Runs -->
+    <section id="runs" class="tracker-section">
+      <div class="section-header">
+        <div>
+          <h2>2. Latest Training Runs</h2>
+          <p class="section-desc">
+            Curated milestone and benchmark-evaluated runs. Click any row to inspect train loss, notes, and the 6-category synthetic benchmark breakdown.
+          </p>
+        </div>
+        <span class="count-badge" id="runs-count">0 runs</span>
+      </div>
+
+      <div class="metric-note" id="benchmark-note-box"></div>
+
+      <div class="toolbar runs-toolbar">
+        <div class="search-wrap">
+          <label for="runs-search" class="sr-only">Search training runs</label>
+          <input id="runs-search" type="search" class="input-search" placeholder="Search run name, dataset, notes, or version…">
+        </div>
+        <div class="filter-group">
+          <label for="runs-version-select" class="sr-only">Filter by model version</label>
+          <select id="runs-version-select" class="select-control">
+            <option value="">All model versions</option>
+          </select>
+          <label class="checkbox-pill">
+            <input id="runs-bench-only" type="checkbox">
+            <span>Benchmarked only</span>
+          </label>
+          <label class="checkbox-pill">
+            <input id="runs-test-only" type="checkbox">
+            <span>Has test loss</span>
+          </label>
+          <button id="runs-reset" type="button" class="btn btn-ghost btn-sm">Reset</button>
+        </div>
+      </div>
+
+      <div id="active-version-chip" class="active-chip-row" hidden>
+        <span class="active-chip">
+          Filtered to version: <strong id="active-version-label"></strong>
+          <button id="clear-version-chip" type="button" class="chip-close" aria-label="Clear version filter">×</button>
+        </span>
+      </div>
+
+      <div class="table-shell">
+        <div class="table-scroll">
+          <table class="data-table runs-table">
+            <thead>
+              <tr>
+                <th>
+                  <button type="button" class="sort-btn" data-sort="date">
+                    Date &amp; Run <span class="sort-ind" aria-hidden="true"></span>
+                  </button>
+                </th>
+                <th class="num-col">
+                  <button type="button" class="sort-btn" data-sort="test_loss" title="Held-out test cross-entropy (nats/token; lower is better)">
+                    Test Loss <span class="sort-ind" aria-hidden="true"></span>
+                  </button>
+                </th>
+                <th class="num-col">
+                  <button type="button" class="sort-btn" data-sort="val_loss" title="Validation cross-entropy (nats/token; lower is better)">
+                    Val Loss <span class="sort-ind" aria-hidden="true"></span>
+                  </button>
+                </th>
+                <th>
+                  <button type="button" class="sort-btn" data-sort="benchmarks" title="30-task Italian synthetic benchmark macro bidirectional accuracy (higher is better)">
+                    Benchmarks (Bidir. Acc) <span class="sort-ind" aria-hidden="true"></span>
+                  </button>
+                </th>
+                <th>Dataset</th>
+                <th>Model &amp; Optimizer Version</th>
+              </tr>
+            </thead>
+            <tbody id="runs-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Ablations & Studies -->
+    <section id="ablations" class="tracker-section">
+      <div class="section-header">
+        <div>
+          <h2>3. Ablations &amp; Studies</h2>
+          <p class="section-desc">
+            Controlled architecture, optimizer, tokenizer, dataset-cleaning, and evaluation experiments recorded across project notes and artifacts.
+          </p>
+        </div>
+        <span class="count-badge" id="ablations-count">0 ablations</span>
+      </div>
+
+      <div class="toolbar ablations-toolbar">
+        <div class="search-wrap">
+          <label for="ablations-search" class="sr-only">Search ablations</label>
+          <input id="ablations-search" type="search" class="input-search" placeholder="Search ablation ID, title, tested hypothesis, or conclusion…">
+        </div>
+        <div class="filter-group">
+          <label for="ablations-status-select" class="sr-only">Filter by outcome</label>
+          <select id="ablations-status-select" class="select-control">
+            <option value="">All outcomes</option>
+            <option value="Promoted">Promoted</option>
+            <option value="Rejected">Rejected</option>
+            <option value="Promising">Promising</option>
+            <option value="Mixed">Mixed</option>
+            <option value="Diagnostic">Diagnostic</option>
+          </select>
+          <button id="ablations-reset" type="button" class="btn btn-ghost btn-sm">Reset</button>
+        </div>
+      </div>
+
+      <div class="category-pills" id="ablations-category-pills" role="group" aria-label="Filter ablations by category">
+        <button type="button" class="pill-btn active" data-category="">All</button>
+        <button type="button" class="pill-btn" data-category="Architecture">Architecture</button>
+        <button type="button" class="pill-btn" data-category="Optimizer & Schedule">Optimizer &amp; Schedule</button>
+        <button type="button" class="pill-btn" data-category="Tokenizer">Tokenizer</button>
+        <button type="button" class="pill-btn" data-category="Dataset & Cleaning">Dataset &amp; Cleaning</button>
+        <button type="button" class="pill-btn" data-category="Evaluation">Evaluation</button>
+      </div>
+
+      <div class="table-shell">
+        <div class="table-scroll">
+          <table class="data-table ablations-table">
+            <thead>
+              <tr>
+                <th>ID &amp; Date</th>
+                <th>Ablation &amp; Source</th>
+                <th>What Was Tested</th>
+                <th>Key Results</th>
+                <th>Conclusion &amp; Outcome</th>
+              </tr>
+            </thead>
+            <tbody id="ablations-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>PavuLLMo / TorteLLMini</strong> · Static GitHub Pages tracker (<code>docs/</code>).
+      </div>
+      <div class="footer-cmd">
+        Update via CLI: <code>python3 tools/update_tracker.py add-run ...</code> &amp; <code>python3 tools/update_tracker.py validate</code>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/tracker.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
