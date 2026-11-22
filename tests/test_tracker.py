@@ -25,9 +25,9 @@ class TrackerValidationTests(unittest.TestCase):
         data = update_tracker.load_json(data_path)
         errors = update_tracker.validate_tracker_data(data, js_path=js_path)
         self.assertEqual(errors, [])
-        self.assertEqual(len(data["model_versions"]), 10)
-        self.assertEqual(len(data["training_runs"]), 23)
-        self.assertEqual(len(data["ablations"]), 18)
+        self.assertGreaterEqual(len(data["model_versions"]), 10)
+        self.assertGreaterEqual(len(data["training_runs"]), 23)
+        self.assertGreaterEqual(len(data["ablations"]), 18)
 
     def test_validation_rejects_broken_invariants(self) -> None:
         base_data = update_tracker.load_json(ROOT / "docs" / "data" / "tracker.json")

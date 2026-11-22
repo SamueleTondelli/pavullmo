@@ -210,7 +210,7 @@ python3 -m http.server -d docs 8000
 
 ### Updating the tracker
 
-Use `tools/update_tracker.py` (Python standard library only) to validate, rebuild `docs/data/tracker.js`, or append new entries from training CSVs and evaluation JSONs:
+Use `tools/update_tracker.py` (Python standard library only) to validate, rebuild `docs/data/tracker.js`, or append new entries from training CSVs and evaluation JSONs (see [docs/AGENT_UPDATE_GUIDE.md](docs/AGENT_UPDATE_GUIDE.md) for the full agent playbook):
 
 ```bash
 # Append a run from pretrain_runs.csv and/or evaluation JSON
